@@ -1,0 +1,116 @@
+.action {
+    .container {
+        padding: 6.5rem;
+    }
+    &_top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 6.5rem;
+    }
+    &_navigation {
+        display: flex;
+        gap: 3.2rem;
+        &-left, &-right {
+            cursor: pointer;
+            width: 8.6rem;
+            height: 8.6rem;
+        }
+    }
+    &_bottom {
+        display: grid;
+        grid-template-columns: 50rem 1fr;
+        gap: 6.7rem;
+    }
+    &_box {
+        &-title {
+            margin-bottom: 2.4rem;
+        }
+        &-text {
+            color: rgba(147, 156, 169, 1);
+        }
+    }
+    &_swiper {
+        overflow: hidden;
+        width: 100%;
+    }
+    &_slide {
+        &-top {
+            border-radius: 2rem;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            height: 31.5rem;
+            margin-bottom: 1.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &-bg {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+            }
+            &-img {
+                position: relative;
+                width: 20rem;
+                height: 20rem;
+                object-fit: contain;
+                transition: transform 0.5s;
+            }
+        }
+        &:hover {
+            .action_slide-top-img {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+@include small-tablet {
+    .action {
+        .container {
+            padding: 5rem 3.2rem;
+        }
+        &_top {
+            display: flex;
+            margin-bottom: 4.8rem;
+        }
+        &_navigation {
+            display: none;
+        }
+        &_bottom {
+            display: initial;
+        }
+        &_box {
+            margin-bottom: 4.8rem;
+            &-title {
+                margin-bottom: 3.2rem;
+                font-size: 4rem;
+            }
+            &-text {
+                font-size: 3rem;
+            }
+        }
+        &_swiper {
+            margin-bottom: 3.6rem;
+        }
+        &_slide {
+            &-top {
+                border-radius: 3.2rem;
+                height: 57rem;
+                margin-bottom: 3.2rem;
+                &-img {
+                    width: 39.6rem;
+                    height: 39.6rem;
+                }
+            }
+            .h5 {
+                font-size: 3.6rem;
+            }
+        }
+    }
+}

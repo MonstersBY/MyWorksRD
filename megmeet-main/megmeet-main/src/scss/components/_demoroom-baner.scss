@@ -1,0 +1,62 @@
+.demoroom-baner {
+    margin-top: 6rem;
+
+    .container {
+        width: 100%;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto 4rem;
+        width: 168rem;
+    }
+    &__title {
+        text-transform: uppercase;
+        width: fit-content;
+    }
+    &__text {
+        width: 82rem;
+    }
+    &__img {
+        height: 71.6rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@include small-tablet {
+    .demoroom-baner {
+        margin-top: 9.6rem;
+
+        .container {
+            padding: 0;
+        }
+    
+        &__top {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            gap: 4rem;
+            margin: 0 auto 12rem;
+            width: 100%;
+            padding: 0 2rem;
+        }
+        &__title {
+            text-transform: uppercase;
+            width: fit-content;
+        }
+        &__text {
+            width: 100%;
+            font-size: 3.6rem;
+        }
+        &__img {
+            height: 28rem;
+        }
+    }
+}

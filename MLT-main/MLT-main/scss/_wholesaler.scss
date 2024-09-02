@@ -1,0 +1,155 @@
+.wholesaler {
+    background-color: #121820;
+    margin-bottom: 0;
+}
+.wholesaler__container {
+    padding-bottom: 4rem;
+}
+.wholesaler__content {
+    display: flex;
+    justify-content: space-between;
+}
+.wholesaler__content .content-left {
+    width: 54.4rem;
+}
+.wholesaler__title {
+    color: #fff;
+    font-family: Gilroy;
+    font-size: 5.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 105%;
+    margin-bottom: 4rem;
+}
+.wholesaler__text {
+    color: #fff;
+    font-family: Gilroy;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 145%;
+    margin-bottom: 4rem;
+}
+.wholesaler__btn {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: #fff;
+    font-family: Gilroy;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 31.2px */
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+}
+.wholesaler__btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -4rem;
+    transform: translateY(-50%);
+    width: 3rem;
+    height: 2rem;
+    background-image: url('../img/sections/icons/icon-arrow-white.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.wholesaler__img {
+    width: 96rem;
+    height: 49.8rem;
+}
+
+@media (max-width: 48em) {
+    .wholesaler .wholesaler__container {
+        padding-bottom: 6rem;
+    }
+    .wholesaler .wholesaler__content {
+        flex-direction: column;
+        gap: 6rem;
+    }
+    .wholesaler .wholesaler__content .content-left {
+        width: 100%;
+    }
+    .wholesaler .wholesaler__title {
+        font-size: 5.4rem;
+        margin-bottom: 2.4rem;
+    }
+    .wholesaler .wholesaler__text {
+        font-size: 2.8rem;
+        margin-bottom: 4.6rem;
+    }
+    .wholesaler .wholesaler__btn {
+        font-size: 3.6rem;
+    }
+    .wholesaler .wholesaler__btn::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: -8rem;
+        transform: translateY(-50%);
+        width: 5.5rem;
+        height: 3.5rem;
+    }
+    .wholesaler .wholesaler__img {
+        width: 71rem;
+        height: 37rem;
+    }
+}
+.wholesaler._special-offers {
+    background-color: #fff;
+    padding-top: 5.3rem;
+}
+.wholesaler._special-offers .wholesaler__container {
+    padding-bottom: 6.6rem;
+}
+.wholesaler._special-offers .wholesaler__content .content-left {
+    width: 73.5rem;
+    padding-top: 8.8rem;
+}
+.wholesaler._special-offers .wholesaler__title {
+    color: #121820;
+}
+.wholesaler._special-offers .wholesaler__text {
+    color: #121820;
+    width: 50rem;
+}
+.wholesaler._special-offers .wholesaler__btn {
+    color: #121820;
+}
+.wholesaler._special-offers .wholesaler__btn::after {
+    background-image: url('../img/sections/icons/icon-arrow-blue.svg');
+}
+.wholesaler._special-offers .wholesaler__img {
+    width: 49.3rem;
+    margin-right: 20rem;
+}
+
+@media (max-width: 48em) {
+    .wholesaler._special-offers {
+        padding-top: 8rem;
+    }
+    .wholesaler._special-offers .wholesaler__container {
+        padding-bottom: 8rem;
+    }
+    .wholesaler._special-offers .wholesaler__content .content-left {
+        width: 100%;
+        padding-top: 0;
+    }
+    .wholesaler._special-offers .wholesaler__text {
+        width: 100%;
+    }
+    .wholesaler._special-offers .wholesaler__btn::after {
+        background-image: url('../img/sections/icons/icon-arrow-blue.svg');
+    }
+    .wholesaler._special-offers .wholesaler__img {
+        width: 71rem;
+        height: 62.4rem;
+        margin-right: 0;
+    }
+    .wholesaler._special-offers .wholesaler__img img {
+        width: 62.4rem;
+        margin: 0 auto;
+    }
+}

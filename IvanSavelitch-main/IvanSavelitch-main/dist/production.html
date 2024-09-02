@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Производство</title>
+  <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+  <body>
+    <div class="wrapper">
+      <div id="popup__lk" aria-hidden="true" class="popup popup--right">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.05078 7.05023L16.9503 16.9497" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M7.05078 16.9498L16.9503 7.05027" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__body-content-box-title-box">
+            <p class="popup__body-content-box-title txt60">Личный кабинет</p>
+            <p class="popup__body-content-box-desk txt18">Войдите в систему, чтобы добавить в избранное</p>
+          </div>
+          <form data-popup-message="#popup__code" data-dev="" action="" class="popup__body-form-wrapper">
+            <div class="popup__body-form-input-wrapper">
+              <div class="popup__body-form-input-box">
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--tel popup__body-form-input phone-mask txt18" type="text" placeholder="+ 7 (  ___  )  ___  -  __  -  __" data-placeholder="+ 7 (  ___  )  ___  -  __  -  __" data-validate="" data-required="tel" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите номер телефона</span>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="popup__body-btn">
+              <div class="popup__body-btn-img-box">
+                <img src="./assets/images/star.svg" alt="">
+              </div>
+              <p class="popup__body-btn-text txt36">Войти</p>
+              <div class="popup__body-btn-img-box">
+                <img src="./assets/images/star.svg" alt="">
+              </div>
+            </button>
+          </form>
+          <a href="#" class="popup__body-content-link">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__code" aria-hidden="true" class="popup popup--right">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.05078 7.05023L16.9503 16.9497" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M7.05078 16.9498L16.9503 7.05027" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__body-content-box-title-box">
+            <p class="popup__body-content-box-title txt60">Введите код</p>
+            <p class="popup__body-content-box-desk txt18">Через 30 секунд можно запросить код повторно</p>
+          </div>
+          <form data-popup-message="#popup__code" data-dev="" action="" class="popup__body-form-wrapper">
+            <div class="popup__body-form-input-wrapper">
+              <div class="popup__body-form-input-box">
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--code popup__body-form-input code-mask txt18" type="text" placeholder="___ ___" data-placeholder="___ ___" data-validate="" data-required="code" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите код из СМС</span>
+                </label>
+              </div>
+            </div>
+            <div class="popup__body-btn-box">
+              <button type="submit" class="popup__body-btn">
+                <div class="popup__body-btn-img-box">
+                  <img src="./assets/images/star.svg" alt="">
+                </div>
+                <p class="popup__body-btn-text txt36">Войти</p>
+                <div class="popup__body-btn-img-box">
+                  <img src="./assets/images/star.svg" alt="">
+                </div>
+              </button>
+              <button class="popup__body-btn-code" disabled="">Прислать повторно</button>
+            </div>
+          </form>
+          <a href="#" class="popup__body-content-link">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__success-application" aria-hidden="true" class="popup popup--big">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.05078 7.05023L16.9503 16.9497" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M7.05078 16.9498L16.9503 7.05027" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__bg">
+            <img src="./assets/images/modal-bg.svg" alt="">
+          </div>
+          <div class="popup__body-content-box-title-wrapper">
+            <div class="popup__body-content-box-title-box">
+              <p class="popup__body-content-box-title tl2">
+                Спасибо <br>
+                за заявку!
+              </p>
+              <div class="popup__body-content-box-title-img-box">
+                <img src="./assets/images/modal-img.webp" alt="">
+              </div>
+            </div>
+            <p class="popup__body-content-box-desk txt18">Совсем скоро мы с вами свяжемся!</p>
+          </div>
+          <button data-close="" type="submit" class="popup__body-btn">
+            <div class="popup__body-btn-img-box">
+              <img src="./assets/images/star.svg" alt="">
+            </div>
+            <p class="popup__body-btn-text txt36">вернуться на главную</p>
+            <div class="popup__body-btn-img-box">
+              <img src="./assets/images/star.svg" alt="">
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__success-order" aria-hidden="true" class="popup popup--big">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.05078 7.05023L16.9503 16.9497" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M7.05078 16.9498L16.9503 7.05027" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__bg">
+            <img src="./assets/images/modal-bg.svg" alt="">
+          </div>
+          <div class="popup__body-content-box-title-wrapper">
+            <p class="popup__body-content-box-desk popup__body-content-box-desk--order txt30">Заказ № 9203661507</p>
+            <div class="popup__body-content-box-title-box">
+              <p class="popup__body-content-box-title tl2">
+                Спасибо, <br>
+                что выбрали нас!
+              </p>
+              <div class="popup__body-content-box-title-img-box">
+                <img src="./assets/images/modal-img.webp" alt="">
+              </div>
+            </div>
+
+            <p class="popup__body-content-box-desk popup__body-content-box-desk--link txt18">
+              всю подробную информацию вы можете отследить в
+              <a href="#"> личном кабинете</a>
+            </p>
+          </div>
+          <button data-close="" type="submit" class="popup__body-btn">
+            <div class="popup__body-btn-img-box">
+              <img src="./assets/images/star.svg" alt="">
+            </div>
+            <p class="popup__body-btn-text txt36">вернуться на главную</p>
+            <div class="popup__body-btn-img-box">
+              <img src="./assets/images/star.svg" alt="">
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__feedback" aria-hidden="true" class="popup popup--big popup--big-feedback">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.05078 7.05023L16.9503 16.9497" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M7.05078 16.9498L16.9503 7.05027" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__bg">
+            <img src="./assets/images/modal-bg.svg" alt="">
+          </div>
+          <div class="popup__body-content-box-title-wrapper">
+            <p class="popup__body-content-box-title tl2">Обратная связь</p>
+          </div>
+
+          <form data-popup-message="#popup__success-application" data-dev="" action="" class="popup__body-form-wrapper">
+            <div class="popup__body-form-input-wrapper">
+              <div class="popup__body-form-input-box">
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--name popup__body-form-input txt18" type="text" placeholder="Ваше имя" data-validate="" data-required="" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите Ваше имя</span>
+                </label>
+
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--mail popup__body-form-input txt18" type="text" placeholder="E-mail" data-validate="" data-required="email" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите Ваш e-mail</span>
+                </label>
+
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--tel popup__body-form-input phone-mask txt18" type="text" placeholder="+ 7 (  ___  )  ___  -  __  -  __ " data-placeholder="+ 7 (  ___  )  ___  -  __  -  __ " data-validate="" data-required="tel" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите номер телефона</span>
+                </label>
+
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--textarea popup__body-form-input txt18" type="text" placeholder="Сообщение" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите Ваше имя</span>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="popup__body-btn">
+              <div class="popup__body-btn-img-box">
+                <img src="./assets/images/star.svg" alt="">
+              </div>
+              <p class="popup__body-btn-text txt36">Оставить заявку</p>
+              <div class="popup__body-btn-img-box">
+                <img src="./assets/images/star.svg" alt="">
+              </div>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="family-production__bg family-production__bg--anim"></div>
+      <main class="main-production" id="fullpage">
+        <header class="header header--anim">
+  <div class="container">
+    <div class="header__inner">
+      <a href="#" class="header__logo">
+        <div class="header__logo-img-box">
+          <img src="./assets/images/logo.svg" alt="">
+        </div>
+      </a>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link txt18">Каталог</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link txt18">Horeca</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link txt18">О компании</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link txt18">Новости</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link txt18">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__btn-box">
+        <a href="" class="header__btn" data-popup="#popup__lk">
+          <img src="./assets/images/profile.svg" alt="">
+        </a>
+        <a href="" class="header__btn">
+          <img src="./assets/images/heart.svg" alt="">
+        </a>
+        <a href="" class="header__btn">
+          <img src="./assets/images/shopping-bag.svg" alt="">
+        </a>
+        <button class="header__btn burger mobile">
+          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 12.1H22" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M2 4.09998H22" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M2 20.1H22" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="header__mob">
+    <div class="header__mob-bg" style="position: absolute">
+      <img src="./assets/images/main-hero-bg.svg" alt="">
+    </div>
+    <div class="header__mob-header">
+      <a href="#" class="header__logo">
+        <div class="header__logo-img-box">
+          <img src="./assets/images/logo.svg" alt="">
+        </div>
+      </a>
+      <button class="header__close-btn close-burger">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </button>
+    </div>
+    <nav class="header__mob-nav">
+      <ul class="header__mob-nav-list">
+        <li class="header__mob-nav-item">
+          <a href="#" class="header__mob-nav-link txt18">Каталог</a>
+        </li>
+        <li class="header__mob-nav-item">
+          <a href="#" class="header__mob-nav-link txt18">Horeca</a>
+        </li>
+        <li class="header__mob-nav-item">
+          <a href="#" class="header__mob-nav-link txt18">О компании</a>
+        </li>
+        <li class="header__mob-nav-item">
+          <a href="#" class="header__mob-nav-link txt18">Новости</a>
+        </li>
+        <li class="header__mob-nav-item">
+          <a href="#" class="header__mob-nav-link txt18">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+        <section class="production-hero section" data-anchor="production-hero">
+          <div class="container production-hero__container">
+            <div class="production-hero__inner">
+              <div class="production-hero__title-wrapper">
+                <div class="production-hero__title-box-wrapper">
+                  <div class="production-hero__title-box">
+                    <p class="production-hero__title tl2">Наше любимое производство</p>
+                    <p class="production-hero__title production-hero__title--main tl2">
+                      Наше любимое производство
+                    </p>
+                    <p class="production-hero__title tl2">Наше любимое производство</p>
+                  </div>
+                </div>
+                <div class="production-hero__title-img-wrapper">
+                  <div class="production-hero__title-img-box">
+                    <img src="./assets//images/production-gallery-1.webp" alt="" />
+                  </div>
+                  <div class="production-hero__title-img-box">
+                    <img src="./assets//images/production-gallery-2.webp" alt="" />
+                  </div>
+                  <div class="production-hero__title-img-box">
+                    <img src="./assets//images/production-gallery-3.webp" alt="" />
+                  </div>
+                  <div class="production-hero__title-img-box">
+                    <img src="./assets//images/production-gallery-4.webp" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="production-hero__info-row">
+                <div class="production-hero__info-favorite-box">
+                  <button class="production-hero__info-favorite-btn">
+                    <div class="production-hero__info-favorite-btn-svg-box">
+                      <svg
+                        width="28"
+                        height="28"
+                        viewBox="0 0 28 28"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19.1797 2.6167C17.173 2.6167 15.3422 3.41872 13.9997 4.71237C12.6571 3.41872 10.8264 2.6167 8.81967 2.6167C4.68106 2.6167 1.33301 5.98576 1.33301 10.1384C1.33301 11.6342 1.57199 13.0202 1.98717 14.3046C2.9808 17.4463 4.99533 19.9235 7.09309 21.7263C9.18502 23.5242 11.4167 24.7011 12.9495 25.2235C13.2867 25.3414 13.6676 25.3834 13.9997 25.3834C14.3317 25.3834 14.7127 25.3414 15.0499 25.2235C16.5826 24.7011 18.8143 23.5242 20.9063 21.7263C23.004 19.9235 25.0186 17.4463 26.0122 14.3046C26.4274 13.0202 26.6663 11.6342 26.6663 10.1384C26.6663 5.98576 23.3183 2.6167 19.1797 2.6167Z"
+                          fill="#D15834"
+                          stroke="white"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+                  <p class="production-hero__info-favorite-text txt18">
+                    Каждая порция мороженого - результат высокотехнологичного и кропотливого процесса
+                  </p>
+                </div>
+
+                <div class="production-hero__info-scroll-btn">
+                  <p class="production-hero__info-scroll-text txt30">scroll</p>
+                  <div class="production-hero__info-scroll-svg-box">
+                    <svg
+                      width="21"
+                      height="20"
+                      viewBox="0 0 21 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.25 11.1653C2.75 11.1653 8.75 12.6653 10.25 18.6653C11.75 12.6653 17.75 11.1653 19.25 11.1653"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        opacity="0.4"
+                        d="M1.25 1.16532C2.75 1.16532 8.75 2.66531 10.25 8.66531C11.75 2.66531 17.75 1.16531 19.25 1.16531"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <ul class="production-hero__info-list">
+                  <li class="production-hero__info-item txt30">современное оборудование</li>
+                  <li class="production-hero__info-item txt30">лучшие технологи</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="family-production section" data-anchor="family-production">
+  <div class="container family-production__container">
+    <div class="family-production__bg"></div>
+    <div class="family-production__inner">
+      <div class="family-production__family-row">
+        <p class="family-production__family-row-title family-production--anim-text tl2">
+          <span>Семейное производство</span>
+        </p>
+        <p class="family-production__family-row-text txt18">
+          <span>качество является главным приоритетом, воплощаясь в каждой детали и рецепте</span>
+        </p>
+      </div>
+      <div class="family-production__standard-row">
+        <ul class="family-production__standard-list">
+          <li class="family-production__standard-item txt30">европейский опыт</li>
+          <li class="family-production__standard-item txt30">семейные традиции</li>
+          <li class="family-production__standard-item txt30">идеальный вкус</li>
+        </ul>
+        <div class="family-production__standard-title-box">
+          <p class="family-production__standard-title family-production--anim-text tl2">
+            <span>стандарт</span>
+          </p>
+          <div class="family-production__standard-img-wrapper family-production--anim-img-box">
+            <div class="family-production__standard-img-box family-production--anim-img-second">
+              <img src="./assets/images/production-standart-1.webp" alt="">
+            </div>
+            <div class="family-production__standard-img-box family-production--anim-img-first">
+              <img src="./assets/images/production-standart-2.webp" alt="">
+            </div>
+          </div>
+          <div class="family-production__standard-text-box mobile">
+            <p class="family-production__img-text family-production--anim-img-text txt30 mobile">
+              <span>любовь к делу</span>
+            </p>
+            <p class="family-production__img-text family-production--anim-img-text txt30 mobile">
+              <span>опыт и инновации</span>
+            </p>
+          </div>
+          <p class="family-production__standard-title family-production--anim-text tl2">
+            <span>качества</span>
+          </p>
+
+        </div>
+      </div>
+      <div class="family-production__experience-row">
+        <p class="family-production__experience-title family-production--anim-text tl2">
+          <span>Профессио­нальный опыт </span>
+        </p>
+        <div class="family-production__experience-img-wrapper family-production--anim-img-box">
+          <div class="family-production__experience-img-box family-production--anim-img-third">
+            <img src="./assets/images/production-experience-2.webp" alt="">
+          </div>
+          <div class="family-production__experience-img-box family-production--anim-img-second">
+            <img src="./assets/images/production-experience-3.webp" alt="">
+          </div>
+          <div class="family-production__experience-img-box family-production--anim-img-first desktop">
+            <img src="./assets/images/production-experience-1.webp" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="family-production__img-row">
+        <div class="family-production__img-img-box">
+          <img src="./assets/images/production-img.webp" alt="">
+        </div>
+        <p class="family-production__img-text family-production--anim-img-text family-production__img-text--center txt30 desktop">
+          <span>любовь к делу</span>
+        </p>
+        <p class="family-production__img-text family-production--anim-img-text txt30 desktop">
+          <span>опыт и инновации</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <div class="production-num__item-wrapper production-num__item-wrapper--first section">
+          <div class="production-num__item">
+            <p class="production-num__num tl2">01</p>
+            <p class="production-num__text txt40">
+              Наше производство мороженого — это искусство, воплощенное в каждой упаковке. Мы гордимся тем,
+              что используем только лучшее сырье и ингредиенты, которые тщательно подбираются и одобряются
+              всеми членами нашей семьи. Для нас это не просто бизнес, это наше наследие, семейное достояние,
+              которым мы заботимся и развиваем с особым вниманием.
+            </p>
+          </div>
+        </div>
+        <div class="production-num__item-wrapper production-num__item-wrapper--second section">
+          <div class="production-num__item">
+            <p class="production-num__num tl2">02</p>
+            <p class="production-num__text txt40">
+              Наши рецепты — результат шести лет экспериментов и исследований, проведенных в ведущих
+              европейских странах: Италии, Голландии, Франции, Германии, Бельгии. Мы учились у лучших,
+              углублялись в традиции и секреты производства мороженого, чтобы придать нашему продукту
+              неповторимый вкус и качество.
+            </p>
+          </div>
+        </div>
+        <div
+          class="production-num__item-wrapper production-num__item-wrapper--third section"
+          data-anchor="production-num__item-last"
+        >
+          <div class="production-num__item">
+            <p class="production-num__num tl2">03</p>
+            <p class="production-num__text txt40">
+              Для производства мы используем самое лучшее и дорогое профессиональное оборудование, в основе
+              которого лежит итальянская и европейская технология. Это позволяет нам достичь идеального
+              сочетания текстуры и вкуса в каждом замороженном десерте. Кроме того, мы применяем особые
+              технологии приема сырья, его хранения, транспортировки и обслуживания на торговых точках, чтобы
+              каждый клиент мог наслаждаться нашим мороженым в его первозданном вкусе и свежести.
+            </p>
+          </div>
+        </div>
+        <section class="production-gallery section" data-anchor="production-gallery">
+          <div class="container">
+            <div class="production-gallery__inner">
+              <p class="production-gallery__title tl2">фотогаллерея производства</p>
+              <div class="production-gallery__content-box">
+                <div class="production-gallery__text-box">
+                  <p class="production-gallery__text txt30">
+                    Погрузитесь в мир нашего производства мороженого через нашу фотогалерею.
+                  </p>
+                  <div class="production-gallery__mobile-swiper-box mobile">
+                    <div class="production-gallery__mobile-swiper swiper">
+                      <div class="production-gallery__mobile-swiper-wrapper swiper-wrapper">
+                        <div class="production-gallery__mobile-swiper-slide swiper-slide">
+                          <div class="production-gallery__mobile-swiper-slide-img-box">
+                            <img src="./assets/images/production-gallery-1.webp" alt="" />
+                          </div>
+                        </div>
+                        <div class="production-gallery__mobile-swiper-slide swiper-slide">
+                          <div class="production-gallery__mobile-swiper-slide-img-box">
+                            <img src="./assets/images/production-gallery-2.webp" alt="" />
+                          </div>
+                        </div>
+                        <div class="production-gallery__mobile-swiper-slide swiper-slide">
+                          <div class="production-gallery__mobile-swiper-slide-img-box">
+                            <img src="./assets/images/production-gallery-3.webp" alt="" />
+                          </div>
+                        </div>
+                        <div class="production-gallery__mobile-swiper-slide swiper-slide">
+                          <div class="production-gallery__mobile-swiper-slide-img-box">
+                            <img src="./assets/images/production-gallery-4.webp" alt="" />
+                          </div>
+                        </div>
+                        <div class="production-gallery__mobile-swiper-slide swiper-slide">
+                          <div class="production-gallery__mobile-swiper-slide-img-box">
+                            <img src="./assets/images/production-gallery-5.webp" alt="" />
+                          </div>
+                        </div>
+                        <div class="production-gallery__mobile-swiper-slide swiper-slide">
+                          <div class="production-gallery__mobile-swiper-slide-img-box">
+                            <img src="./assets/images/production-gallery-6.webp" alt="" />
+                          </div>
+                        </div>
+                        <div class="production-gallery__mobile-swiper-slide swiper-slide">
+                          <div class="production-gallery__mobile-swiper-slide-img-box">
+                            <img src="./assets/images/production-gallery-7.webp" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="production-gallery__text txt30">
+                    Здесь вы найдете яркие кадры каждого этапа создания лучшего мороженого
+                  </p>
+                  <div class="production-gallery__mobile-swiper-btn-box mobile">
+                    <div
+                      class="production-gallery__mobile-swiper-btn production-gallery__mobile-swiper-btn--prev swiper-button swiper-button-prev"
+                    >
+                      <div class="production-gallery__mobile-swiper-btn-svg-box swiper-button-svg-box">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.5 21C9.5 19.5 8 13.5 2 12C8 10.5 9.5 4.5 9.5 3"
+                            stroke="#D15834"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            opacity="0.4"
+                            d="M19.5 21C19.5 19.5 18 13.5 12 12C18 10.5 19.5 4.5 19.5 3"
+                            stroke="#D15834"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div
+                      class="production-gallery__mobile-swiper-btn production-gallery__mobile-swiper-btn--next swiper-button swiper-button-next"
+                    >
+                      <div class="production-gallery__mobile-swiper-btn-svg-box swiper-button-svg-box">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.5 21C14.5 19.5 16 13.5 22 12C16 10.5 14.5 4.5 14.5 3"
+                            stroke="#D15834"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            opacity="0.4"
+                            d="M4.5 21C4.5 19.5 6 13.5 12 12C6 10.5 4.5 4.5 4.5 3"
+                            stroke="#D15834"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="production-gallery__swiper-box desktop">
+                  <div class="production-gallery__swiper-btn-box">
+                    <div
+                      class="production-gallery__swiper-btn production-gallery__swiper-btn--prev swiper-button swiper-button-prev"
+                    >
+                      <div class="production-gallery__swiper-btn-svg-box swiper-button-svg-box">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.5 21C9.5 19.5 8 13.5 2 12C8 10.5 9.5 4.5 9.5 3"
+                            stroke="#D15834"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            opacity="0.4"
+                            d="M19.5 21C19.5 19.5 18 13.5 12 12C18 10.5 19.5 4.5 19.5 3"
+                            stroke="#D15834"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div
+                      class="production-gallery__swiper-btn production-gallery__swiper-btn--next swiper-button swiper-button-next"
+                    >
+                      <div class="production-gallery__swiper-btn-svg-box swiper-button-svg-box">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.5 21C14.5 19.5 16 13.5 22 12C16 10.5 14.5 4.5 14.5 3"
+                            stroke="#D15834"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            opacity="0.4"
+                            d="M4.5 21C4.5 19.5 6 13.5 12 12C6 10.5 4.5 4.5 4.5 3"
+                            stroke="#D15834"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="production-gallery__swiper swiper">
+                    <div class="production-gallery__swiper-wrapper swiper-wrapper">
+                      <div class="production-gallery__swiper-slide swiper-slide">
+                        <div class="production-gallery__swiper-slide-img-box">
+                          <img src="./assets/images/production-gallery-1.webp" alt="" />
+                        </div>
+                      </div>
+                      <div class="production-gallery__swiper-slide swiper-slide">
+                        <div class="production-gallery__swiper-slide-img-box">
+                          <img src="./assets/images/production-gallery-2.webp" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="production-gallery__swiper swiper">
+                    <div class="production-gallery__swiper-wrapper swiper-wrapper">
+                      <div class="production-gallery__swiper-slide swiper-slide">
+                        <div class="production-gallery__swiper-slide-img-box">
+                          <img src="./assets/images/production-gallery-2.webp" alt="" />
+                        </div>
+                      </div>
+                      <div class="production-gallery__swiper-slide swiper-slide">
+                        <div class="production-gallery__swiper-slide-img-box">
+                          <img src="./assets/images/production-gallery-3.webp" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="production-gallery__swiper swiper">
+                    <div class="production-gallery__swiper-wrapper swiper-wrapper">
+                      <div class="production-gallery__swiper-slide swiper-slide">
+                        <div class="production-gallery__swiper-slide-img-box">
+                          <img src="./assets/images/production-gallery-3.webp" alt="" />
+                        </div>
+                      </div>
+                      <div class="production-gallery__swiper-slide swiper-slide">
+                        <div class="production-gallery__swiper-slide-img-box">
+                          <img src="./assets/images/production-gallery-4.webp" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="production-gallery__swiper swiper">
+                    <div class="production-gallery__swiper-wrapper swiper-wrapper">
+                      <div class="production-gallery__swiper-slide swiper-slide">
+                        <div class="production-gallery__swiper-slide-img-box">
+                          <img src="./assets/images/production-gallery-4.webp" alt="" />
+                        </div>
+                      </div>
+                      <div class="production-gallery__swiper-slide swiper-slide">
+                        <div class="production-gallery__swiper-slide-img-box">
+                          <img src="./assets/images/production-gallery-5.webp" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="production-gallery__swiper swiper">
+                    <div class="production-gallery__swiper-wrapper swiper-wrapper">
+                      <div class="production-gallery__swiper-slide swiper-slide">
+                        <div class="production-gallery__swiper-slide-img-box">
+                          <img src="./assets/images/production-gallery-5.webp" alt="" />
+                        </div>
+                      </div>
+                      <div class="production-gallery__swiper-slide swiper-slide">
+                        <div class="production-gallery__swiper-slide-img-box">
+                          <img src="./assets/images/production-gallery-6.webp" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="production-gallery__swiper swiper">
+                    <div class="production-gallery__swiper-wrapper swiper-wrapper">
+                      <div class="production-gallery__swiper-slide swiper-slide">
+                        <div class="production-gallery__swiper-slide-img-box">
+                          <img src="./assets/images/production-gallery-6.webp" alt="" />
+                        </div>
+                      </div>
+                      <div class="production-gallery__swiper-slide swiper-slide">
+                        <div class="production-gallery__swiper-slide-img-box">
+                          <img src="./assets/images/production-gallery-7.webp" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="production-gallery__swiper swiper">
+                    <div class="production-gallery__swiper-wrapper swiper-wrapper">
+                      <div class="production-gallery__swiper-slide swiper-slide">
+                        <div class="production-gallery__swiper-slide-img-box">
+                          <img src="./assets/images/production-gallery-7.webp" alt="" />
+                        </div>
+                      </div>
+                      <div class="production-gallery__swiper-slide swiper-slide">
+                        <div class="production-gallery__swiper-slide-img-box">
+                          <img src="./assets/images/production-gallery-1.webp" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="footer section footer--anim" data-anchor="footer">
+  <div class="container footer__container">
+    <div class="footer__inner">
+      <div class="footer__svg-wrapper">
+        <div class="footer__svg-box">
+          <img src="./assets/images/footer.svg" alt="">
+        </div>
+      </div>
+      <p class="footer__text tl2">FOOTER</p>
+    </div>
+  </div>
+</footer>
+
+      </main>
+    </div>
+  </body>
+</html>

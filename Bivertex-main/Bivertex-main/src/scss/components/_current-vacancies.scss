@@ -1,0 +1,839 @@
+.current-vacancies {
+  // .current-vacancies__inner
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+
+    @include small-tablet {
+      gap: 4.8rem;
+    }
+  }
+
+  // .current-vacancies__title
+
+  &__title {
+  }
+
+  // .current-vacancies__content-wrapper
+
+  &__content-wrapper {
+    display: flex;
+    gap: 26rem;
+    @include small-tablet {
+    }
+  }
+
+  // .current-vacancies__filters
+
+  &__filters {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 30rem;
+    flex-shrink: 0;
+    @include small-tablet {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: $light-grew;
+      z-index: 100;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 4.8rem 3.2rem;
+      transform: translateX(-150%);
+      transition: transform 0.5s;
+      gap: 6.4rem;
+      &.active {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  // .current-vacancies__filters-title-box
+
+  &__filters-title-box {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding-top: 1.6rem;
+    @include small-tablet {
+      justify-content: space-between;
+      padding-top: 0;
+    }
+  }
+
+  // .current-vacancies__filters-title-svg-box
+
+  &__filters-title-svg-box {
+    width: 3.2rem;
+    height: 3.2rem;
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__filters-title-close-svg-box {
+    width: 4.8rem;
+    height: 4.8rem;
+    @include small-tablet {
+      & svg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  // .current-vacancies__filters-title-text
+
+  &__filters-title-text {
+    @include small-tablet {
+      font-size: 4rem;
+    }
+  }
+
+  // .current-vacancies__filters-list-wrapper
+
+  &__filters-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-top: 2rem;
+
+    @include small-tablet {
+      //   height: calc(100% - 50rem);
+    }
+  }
+
+  // .current-vacancies__filters-list
+
+  &__filters-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    @include small-tablet {
+      height: calc(100% - 10rem);
+      padding-bottom: 5rem;
+      overflow: scroll;
+      gap: 6.4rem;
+    }
+  }
+
+  // .current-vacancies__filters-item
+
+  &__filters-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    user-select: none;
+    &.mobile {
+      display: none;
+      @include small-tablet {
+        display: flex;
+        gap: 4.8rem;
+      }
+    }
+  }
+
+  // .current-vacancies__filters-item-title
+
+  &__filters-item-title {
+  }
+
+  // .current-vacancies__filters-item-label-box
+
+  &__filters-item-label-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    @include small-tablet {
+      gap: 3.2rem;
+    }
+  }
+
+  // .current-vacancies__filter
+
+  &__filter {
+    cursor: pointer;
+    // padding-left: 3.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    @include small-tablet {
+      gap: 1.6rem;
+    }
+  }
+
+  &__input {
+    &--checkbox {
+      -webkit-appearance: none;
+      cursor: pointer;
+      width: 2.4rem;
+      height: 2.4rem;
+      position: relative;
+      @include small-tablet {
+        width: 4.8rem;
+        height: 4.8rem;
+      }
+    }
+
+    &--checkbox:before {
+      content: '';
+      width: 1.2rem;
+      height: 1.2rem;
+      background-color: $turquoise;
+      position: absolute;
+      z-index: 10;
+      border-radius: 0.25rem;
+      opacity: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: opacity 0.5s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include small-tablet {
+        width: 2.8rem;
+        height: 2.8rem;
+      }
+    }
+
+    &--checkbox:after {
+      content: '';
+      display: flex;
+      position: absolute;
+      width: 1.8rem;
+      height: 1.8rem;
+      border-radius: 0.5rem;
+      border: 0.2rem solid $grew;
+      background-color: transparent;
+      align-items: center;
+      justify-content: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: border 0.5s;
+      @include small-tablet {
+        width: 3.6rem;
+        height: 3.6rem;
+      }
+    }
+
+    &--checkbox:checked::before {
+      opacity: 1;
+      @include small-tablet {
+        content: '✓';
+      }
+    }
+
+    &--checkbox:checked::after {
+      border: 0.6rem solid $dark-blue;
+      @include small-tablet {
+        border: 0.5rem solid $dark-blue;
+      }
+    }
+
+    &--radio {
+      -webkit-appearance: none;
+      cursor: pointer;
+      width: 2.4rem;
+      height: 2.4rem;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include small-tablet {
+        width: 3.6rem;
+        height: 3.6rem;
+      }
+    }
+
+    &--radio:before {
+      content: '';
+      width: 1rem;
+      height: 1rem;
+      background-color: $turquoise;
+      position: absolute;
+      z-index: 10;
+      border-radius: 50%;
+      opacity: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: opacity 0.5s;
+      @include small-tablet {
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+    }
+
+    &--radio:after {
+      content: '';
+      display: flex;
+      position: absolute;
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 50%;
+      border: 0.2rem solid $grew;
+      background-color: transparent;
+      align-items: center;
+      justify-content: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: border 0.5s;
+      @include small-tablet {
+        width: 3.2rem;
+        height: 3.2rem;
+      }
+    }
+
+    &--radio:checked::before {
+      opacity: 1;
+    }
+
+    &--radio:checked::after {
+      border: 0.6rem solid $dark-blue;
+    }
+  }
+
+  &__filters-list-bottom-box {
+    @include small-tablet {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $white;
+      display: flex;
+      flex-direction: column;
+      padding: 4.8rem 3.2rem 5.6rem;
+      border-radius: 4rem 4rem 0 0;
+      box-shadow: 0.5rem 1.5rem 7rem 0 rgba(173, 178, 201, 0.35);
+      z-index: 10;
+    }
+  }
+
+  // .current-vacancies__filters-list-btn-box
+
+  &__filters-list-btn-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    @include small-tablet {
+      gap: 4.8rem;
+      align-items: center;
+    }
+  }
+
+  // .current-vacancies__filters-list-btn-enter
+
+  &__filters-list-btn-enter {
+    width: 30rem;
+    color: $dark-blue;
+    border-color: $dark-blue;
+    @include small-tablet {
+      width: 100%;
+      font-size: 2.8rem;
+    }
+  }
+
+  // .current-vacancies__filters-list-btn-remove
+
+  &__filters-list-btn-remove {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: $dark-blue;
+    @include small-tablet {
+      font-size: 2.4rem;
+      gap: 1.6rem;
+      font-weight: 700;
+
+      line-height: 130%;
+      text-transform: uppercase;
+      &:hover {
+        & .current-vacancies__link-svg-box {
+          &:nth-child(1) {
+            transform: translate(0, 0);
+          }
+          &:nth-child(2) {
+            transform: translate(0, 0);
+          }
+        }
+      }
+    }
+    &:hover {
+      & .current-vacancies__link-svg-box {
+        &:nth-child(1) {
+          transform: translate(100%, -100%);
+        }
+        &:nth-child(2) {
+          transform: translate(80%, -80%);
+        }
+      }
+    }
+  }
+
+  // .current-vacancies__link-svg-box
+  &__link-svg-wrapper {
+    width: 2.2rem;
+    height: 2.2rem;
+    overflow: hidden;
+    position: relative;
+    @include small-tablet {
+        width: 4.8rem;
+        height: 4.8rem;
+      }
+  }
+
+  &__link-svg-box {
+    display: block;
+    width: 2.2rem;
+    height: 2.2rem;
+    flex-shrink: 0;
+    transition: transform 0.3s;
+    &:nth-child(2) {
+      position: absolute;
+      left: -80%;
+      bottom: -80%;
+      @include small-tablet {
+        display: none;
+      }
+    }
+    & svg {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    @include small-tablet {
+      width: 4.8rem;
+      height: 4.8rem;
+    }
+  }
+
+  // .current-vacancies__content-box
+
+  &__content-box {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    flex-grow: 1;
+    @include small-tablet {
+      gap: 4.8rem;
+    }
+  }
+
+  // .current-vacancies__search-box
+
+  &__search-box {
+    display: flex;
+    align-items: center;
+    gap: 4.3rem;
+    @include small-tablet {
+      gap: 2.6rem;
+    }
+  }
+
+  // .current-vacancies__search-filter-btn
+
+  &__search-filter-btn {
+    @include small-tablet {
+      width: 4.8rem;
+      height: 4.8rem;
+      & svg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  // .current-vacancies__search-filter-btn-svg-box
+
+  &__search-filter-btn-svg-box {
+  }
+
+  // .current-vacancies__dropdown_search
+  &__dropdown_search {
+    flex-grow: 1;
+    & .form__dropdown_top.open {
+      & svg {
+        transform: rotate(0);
+      }
+    }
+  }
+
+  // .current-vacancies__label
+
+  &__label {
+  }
+
+  &__input-wrapper {
+    & input {
+      transition: padding-left 0.3s, padding-right 0.3s;
+      padding-left: 6.8rem;
+      padding-right: 3.2rem;
+      &:focus,
+      &:active {
+        padding-left: 3.2rem;
+        padding-right: 12rem;
+        & ~ .current-vacancies__dropdown--searsh {
+          opacity: 0;
+        }
+        & ~ .current-vacancies__dropdown--enter,
+        & ~ .current-vacancies__dropdown--close {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+
+    @include small-tablet {
+      & input {
+        padding-left: 10.4rem;
+        padding-right: 3.2rem;
+
+        max-height: 10rem;
+
+        &:focus,
+        &:active,
+        &:hover {
+          padding-left: 3.2rem;
+          padding-right: 20rem;
+
+          & ~ .current-vacancies__dropdown--searsh {
+            opacity: 0;
+          }
+          & ~ .current-vacancies__dropdown--enter,
+          & ~ .current-vacancies__dropdown--close {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+  // .current-vacancies__dropdown--searsh
+
+  &__dropdown--searsh {
+    position: absolute;
+    z-index: 5;
+    width: 2.4rem;
+    height: 2.4rem;
+    transition: opacity 0.3s;
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      & path {
+        stroke: none;
+      }
+    }
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3.2rem;
+
+    @include small-tablet {
+      width: 4.8rem;
+      height: 4.8rem;
+    }
+  }
+
+  // .current-vacancies__dropdown--close
+
+  &__dropdown--close {
+    position: absolute;
+    z-index: 5;
+    width: 2.4rem;
+    height: 2.4rem;
+    transition: opacity 0.3s, visibility 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      & path {
+        stroke: none;
+      }
+    }
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8rem;
+
+    @include small-tablet {
+      width: 4.8rem;
+      height: 4.8rem;
+      right: 13.2rem;
+    }
+  }
+
+  // .current-vacancies__dropdown--enter
+
+  &__dropdown--enter {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 6.4rem;
+    height: 6.4rem;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+    visibility: hidden;
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
+    @include small-tablet {
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+
+  // .current-vacancies__list-sort
+
+  &__list-sort {
+    width: 18.6rem;
+    position: relative;
+
+    &.active {
+      & .current-vacancies__list-sort-icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__list-sort-title-box {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    cursor: pointer;
+  }
+
+  // .current-vacancies__list-sort-icon
+
+  &__list-sort-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    transition: transform 0.3s;
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .current-vacancies__dropdown
+
+  &__dropdown {
+    width: 18.6rem;
+    display: flex;
+    background: $light-grew;
+    border: 0.1rem solid $black;
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    padding: 2rem;
+    flex-direction: column;
+    border-radius: 1.6rem;
+    gap: 1.6rem;
+  }
+
+  // .current-vacancies__list-filter
+
+  &__list-filter {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  // .current-vacancies__current-filters-box
+
+  &__current-filters-box.desktop {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    @include small-tablet {
+      display: none;
+    }
+  }
+  &__current-filters-box.mobile {
+    display: none;
+    flex-direction: column;
+    gap: 2rem;
+    @include small-tablet {
+      display: flex;
+      margin-bottom: 6.6rem;
+      gap: 4rem;
+    }
+  }
+
+  // .current-vacancies__current-filters-title
+
+  &__current-filters-title {
+  }
+
+  // .current-vacancies__current-filters-list
+
+  &__current-filters-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 111.5rem;
+    gap: 1.5rem 3.2rem;
+    // min-height: 2.52rem;
+    @include small-tablet {
+      width: 75rem;
+      margin: 0 -3.2rem;
+      overflow-x: scroll;
+      flex-wrap: nowrap;
+      padding: 0 3.2rem;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      &::-webkit-scrollbar-track {
+        display: none;
+      }
+      &::-webkit-scrollbar-thumb {
+        display: none;
+      }
+    }
+  }
+
+  // .current-vacancies__current-filters-item
+
+  &__current-filters-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    @include small-tablet {
+      gap: 1.6rem;
+    }
+  }
+
+  // .current-vacancies__current-filters-text
+
+  &__current-filters-text {
+    @include small-tablet {
+      white-space: nowrap;
+    }
+  }
+
+  // .current-vacancies__current-filters-remove-btn
+
+  &__current-filters-remove-btn {
+    width: 2.4rem;
+    height: 2.4rem;
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include small-tablet {
+      width: 4.8rem;
+      height: 4.8rem;
+    }
+  }
+
+  // .current-vacancies__vacancies-list
+
+  &__vacancies-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    @include small-tablet {
+      gap: 3.2rem;
+    }
+  }
+
+  // .current-vacancies__vacancies-item
+
+  &__vacancies-item {
+    padding: 4rem;
+    border-radius: 3rem;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    gap: 4.6rem;
+    justify-content: space-between;
+    @include small-tablet {
+      flex-direction: column;
+      gap: 3.2rem;
+      align-items: flex-start;
+    }
+  }
+
+  // .current-vacancies__vacancies-info
+
+  &__vacancies-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    @include small-tablet {
+      gap: 4.8rem;
+    }
+  }
+
+  // .current-vacancies__vacancies-title
+
+  &__vacancies-title {
+    @include small-tablet {
+      font-size: 4rem;
+    }
+  }
+
+  // .current-vacancies__vacancies-content-wrapper
+
+  &__vacancies-content-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3.2rem;
+    @include small-tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 3.2rem;
+    }
+  }
+
+  // .current-vacancies__vacancies-content-box
+
+  &__vacancies-content-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    @include small-tablet {
+      gap: 1.6rem;
+    }
+  }
+
+  // .current-vacancies__vacancies-content-title
+
+  &__vacancies-content-title {
+  }
+
+  // .current-vacancies__vacancies-content-desc
+
+  &__vacancies-content-desc {
+  }
+
+  // .current-vacancies__current-vacancies-link
+
+  &__current-vacancies-link {
+    width: 28.6rem;
+    @include small-tablet {
+      width: 100%;
+    }
+  }
+}

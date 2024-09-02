@@ -1,0 +1,239 @@
+.main-banner {
+  background-color: $main;
+  color: $Beige;
+  &.bg-1 {
+    overflow: hidden;
+    &::after {
+      width: 50rem;
+      height: 50rem;
+      top: 26rem;
+      right: 79rem;
+      right: calc(50% - 17rem);
+      @include small-tablet {
+        width: 49rem;
+        height: 49rem;
+        top: 49rem;
+        right: calc(50% - 40rem);
+        transform: rotate(103deg);
+      }
+    }
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 2.4rem;
+    @include small-tablet {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__info {
+    grid-column: span 6;
+    grid-row: span 6;
+    margin-top: 6.2rem;
+    @include small-tablet {
+      margin-top: 4.8rem;
+    }
+  }
+  &__slider {
+    grid-column: span 6;
+    grid-row: span 7;
+    position: relative;
+    @include small-tablet {
+      margin: 6.4rem 0;
+    }
+  }
+  &__sub {
+    grid-column: span 6;
+    grid-row: span 1;
+    z-index: 1;
+  }
+  &__subtitle {
+    margin: 3.2rem 0;
+    width: 36.2rem;
+    @include small-tablet {
+      width: 100%;
+    }
+  }
+  &__slide {
+    -webkit-mask-image: url(./assets/images/picture/main-banner__mask.svg);
+    mask-image: url(./assets/images/picture/main-banner__mask.svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    height: 81.4rem;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    @include small-tablet {
+      height: 74.6rem;
+    }
+    &-img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &-bottom {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      width: 45.8rem;
+      padding: 1rem 1.7rem 1rem 2.4rem;
+      margin: 2.4rem;
+      border-radius: 1.2rem;
+      background: rgba(0, 0, 0, 0.20);
+      -webkit-backdrop-filter: blur(7.5px);
+      backdrop-filter: blur(7.5px);
+      @include small-tablet {
+        width: 44.2rem;
+        padding: 1.6rem;
+      }
+    }
+    &-text {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      @include small-tablet {
+        gap: 1.6rem;
+      }
+    }
+    &-people {
+      display: flex;
+      @include small-tablet {
+        display: none;
+      }
+      &-img {
+        width: 4.3rem;
+        height: 4.3rem;
+        border-radius: 50%;
+        margin-left: -1rem;
+        &:nth-child(1) {
+          z-index: 3;
+        }
+        &:nth-child(2) {
+          z-index: 2;
+        }
+        &:nth-child(3) {
+          z-index: 1;
+        }
+        img {
+          border-radius: inherit;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  &__slider-nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    @include small-tablet {
+      width: 100%;
+      height: 100%;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+  &__fractions {
+    @include small-tablet {
+      margin-top: -1.5rem;
+      padding-left: 1.5rem;
+    }
+  }
+  &__navigation {
+    flex-direction: column;
+    z-index: 1;
+  }
+  &__btn-prev {
+    @include small-tablet {
+      display: none;
+    }
+  }
+  &__sub {
+    padding-top: 0.8rem;
+    border-top: solid 0.1rem $textAndLine;
+    display: flex;
+    align-items: center;
+    width: 60rem;
+    @include small-tablet {
+      width: 100%;
+      align-items: flex-start;
+    }
+    &-img {
+      padding: 0.8rem;
+      background-color: $blue;
+      border-radius: 1.2rem;
+      width: 6.2rem;
+      height: 6.2rem;
+      @include small-tablet {
+        width: 9.6rem;
+        height: 9.6rem;
+        min-width: 9.6rem;
+        border-radius: 1.6rem;
+        padding: 1.6rem;
+        margin-top: 1rem;
+      }
+    }
+    .line {
+      height: 100%;
+      border-left: solid 0.1rem $textAndLine;
+      margin: 0 1.4rem 0 1.6rem;
+      @include small-tablet {
+        height: 20rem;
+        margin: 0 2.7rem 0 2.8rem;
+      }
+    }
+    &-title {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      span {
+        @include small-tablet {
+          margin: 1.6rem 0;
+        }
+      }
+    }
+    &-link {
+      display: flex;
+      align-items: center;
+      @include small-tablet {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+    &-order {
+      color: $LightGreen;
+      @include small-tablet {
+        display: flex;
+        align-items: center;
+      }
+      span {
+        display: none;
+        @include small-tablet {
+          display: block;
+        }
+      }
+      svg {
+        width: 3.2rem;
+        height: 3.2rem;
+        min-width: 3.2rem;
+        margin-left: 2rem;
+        @include small-tablet {
+          width: 6.4rem;
+          height: 6.4rem;
+          margin-left: 1.6rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,339 @@
+.spindle-unit {
+  // .spindle-unit__container
+
+  &__container {
+    max-width: 192rem;
+    width: 100%;
+    @include small-tablet {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  // .spindle-unit__inner
+
+  &__inner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    @include small-tablet {
+      gap: 4.8rem;
+    }
+  }
+
+  // .spindle-unit__title
+
+  &__title {
+    width: 106rem;
+    margin-left: 6rem;
+    @include small-tablet {
+      margin-left: 3.2rem;
+      width: 68.6rem;
+    }
+  }
+
+  // .spindle-unit__swiper
+
+  &__swiper {
+    width: 100%;
+
+    margin: 0 !important;
+    @include small-tablet {
+      width: 75rem;
+    }
+  }
+
+  // .spindle-unit__swiper-wrapper
+
+  &__swiper-wrapper {
+  }
+
+  // .spindle-unit__swiper-slide
+
+  &__swiper-slide {
+  }
+
+  // .spindle-unit__swiper-slide-inner
+
+  &__swiper-slide-inner {
+    position: relative;
+    padding: 10rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80rem;
+    color: $white;
+    @include small-tablet {
+      height: 120rem;
+      padding: 3.2rem;
+      //   justify-content: flex-end;
+      //   gap: 4.8rem;
+    }
+  }
+
+  // .spindle-unit__swiper-slide-img-box
+
+  &__swiper-slide-img-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    & img,
+    & video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .spindle-unit__swiper-slide-title-box
+
+  &__swiper-slide-title-box {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: fit-content;
+    @include small-tablet {
+      gap: 4.8rem;
+    }
+  }
+
+  // .spindle-unit__swiper-slide-title
+
+  &__swiper-slide-title {
+    padding: 3.2rem 0;
+    border-top: 0.2rem solid $white;
+    border-bottom: 0.2rem solid $white;
+    @include small-tablet {
+      font-size: 3.2rem;
+    }
+  }
+
+  // .spindle-unit__swiper-slide-desc-box
+
+  &__swiper-slide-desc-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 67.3rem;
+    @include small-tablet {
+      gap: 2rem;
+      width: 68.6rem;
+    }
+  }
+
+  // .spindle-unit__swiper-slide-desc
+
+  &__swiper-slide-desc {
+  }
+
+  // .spindle-unit__btn
+
+  &__btn {
+    @include small-tablet {
+      font-size: 2.4rem;
+      gap: 1.6rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      line-height: 130%;
+      text-transform: uppercase;
+      gap: 0.8rem;
+    }
+  }
+
+  // .spindle-unit__link-svg-wrapper
+
+  &__link-svg-wrapper {
+    @include small-tablet {
+      overflow: hidden;
+      position: relative;
+    }
+  }
+
+  // .spindle-unit__link-svg-box
+
+  &__link-svg-box {
+    width: 4.8rem;
+    height: 4.8rem;
+    display: block;
+    flex-shrink: 0;
+    & svg {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+
+  // .spindle-unit__swiper-slide-point-box
+
+  &__swiper-slide-point-box {
+    position: absolute;
+    cursor: pointer;
+    &:hover {
+      .spindle-unit__swiper-slide-point-circle {
+      }
+      .spindle-unit__swiper-slide-point-text {
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+      }
+    }
+  }
+
+  // .spindle-unit__swiper-slide-point-circle
+
+  &__swiper-slide-point-circle {
+    width: 3.2rem;
+    height: 3.2rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 1.6rem;
+      height: 1.6rem;
+      background: $white;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  // .spindle-unit__swiper-slide-point-text
+
+  &__swiper-slide-point-text {
+    position: absolute;
+    padding: 1.9rem 2.8rem;
+    border-radius: 1.6rem;
+    background: $white;
+    color: $black;
+    width: max-content;
+    right: 11.6rem;
+    top: 25.9rem;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    width: 39.1rem;
+    transition: opacity 0.3s, visibility 0.3s, z-index 0.3s;
+    &::before {
+      width: 0.2rem;
+      height: 24.5rem;
+      background-color: $white;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, -100%);
+      content: '';
+    }
+    &::after {
+      width: 28.8rem;
+      height: 0.2rem;
+      background-color: $white;
+      position: absolute;
+      left: 50%;
+      top: -24.5rem;
+      //   transform: translate(0, 100%);
+      content: '';
+    }
+  }
+
+  // .spindle-unit__swiper-slide-schedule-wrapper
+
+  &__swiper-slide-schedule-wrapper {
+    color: $black;
+    padding: 2.4rem;
+    width: 38.7rem;
+    height: 35.8rem;
+    background-color: $white;
+    border-radius: 3.2rem;
+    display: flex !important;
+    flex-direction: column;
+    gap: 0.8rem;
+    position: absolute;
+    right: 6rem;
+    bottom: 10rem;
+    @include small-tablet {
+      display: none !important;
+    }
+  }
+
+  // .spindle-unit__swiper-slide-schedule-title
+
+  &__swiper-slide-schedule-title {
+  }
+
+  // .spindle-unit__swiper-slide-schedule-box
+
+  &__swiper-slide-schedule-box {
+    width: 33.9rem;
+    height: 25.2rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .spindle-unit__swiper-btn-box
+
+  &__swiper-btn-box {
+    position: absolute;
+    top: 0;
+    right: 6rem;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    @include small-tablet {
+      position: static;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  // .spindle-unit__swiper-btn
+
+  &__swiper-btn {
+  }
+
+  // .spindle-unit__swiper-btn--prev
+
+  &__swiper-btn--prev {
+  }
+
+  // .spindle-unit__swiper-btn--next
+
+  &__swiper-btn--next {
+  }
+
+  &__swiper-btn--next.swiper-button-next,
+  &__swiper-btn--prev.swiper-button-prev {
+    position: static;
+  }
+}
+.fancybox__container {
+  & .spindle-unit__swiper-slide-schedule-wrapper {
+    display: none !important;
+    @include small-tablet {
+      display: flex !important;
+      width: 68.6rem;
+      padding: 5.4rem;
+      border-radius: 2.4rem;
+      position: static;
+      height: fit-content;
+      gap: 4.4rem;
+      & .spindle-unit__swiper-slide-schedule-box {
+        width: 60rem;
+        height: 44.6rem;
+      }
+    }
+  }
+}

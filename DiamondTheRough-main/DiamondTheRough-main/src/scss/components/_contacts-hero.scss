@@ -1,0 +1,168 @@
+.contacts-hero {
+  padding: 0.6rem 0 5rem;
+  @include small-tablet {
+    padding: 3.2rem 0 16rem;
+  }
+  // .contacts-hero__container
+
+  &__container {
+    width: 162.5rem;
+    @include small-tablet {
+      width: 78.6rem;
+      padding: 0;
+    }
+  }
+
+  // .contacts-hero__inner
+
+  &__inner {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+    &::after {
+      position: absolute;
+      content: '';
+      background: url(./assets/images/contacts-hero.webp) no-repeat top/cover;
+      mix-blend-mode: difference;
+      width: 112rem;
+      height: 43.6rem;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+    }
+    @include small-tablet {
+      gap: 18rem;
+      &::after {
+        z-index: -1;
+        width: 92.8rem;
+        height: 36.82rem;
+        top: 0;
+        left: 2rem;
+        transform: translate(0);
+      }
+    }
+  }
+
+  // .contacts-hero__scrolled
+
+  &__scrolled {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 30rem 0 0;
+
+    @include small-tablet {
+      justify-content: flex-start;
+      animation: scrollText2 20s infinite linear;
+      gap: 10rem;
+      padding: 24rem 0 0;
+    }
+  }
+  @keyframes scrollText2 {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-203.6rem);
+    }
+  }
+  // .contacts-hero__scrolled-svg-box
+
+  &__scrolled-svg-box {
+    width: 111.2rem;
+    height: 16.2rem;
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &:last-child {
+      display: none;
+    }
+    @include small-tablet {
+      width: 193.6rem;
+      height: 27.2rem;
+      flex-shrink: 0;
+      padding-left: 5rem;
+      &:last-child {
+        display: block;
+      }
+    }
+  }
+
+  // .contacts-hero__info-box
+
+  &__info-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @include small-tablet {
+      padding: 0 4rem;
+      flex-direction: column;
+      gap: 6.4rem;
+    }
+  }
+
+  // .contacts-hero__item
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2.4rem;
+    border-top: 0.4rem solid $black;
+    width: 39rem;
+    @include small-tablet {
+      width: 66rem;
+    }
+  }
+
+  // .contacts-hero__item-text-box
+
+  &__item-text-box {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  // .contacts-hero__item-category
+
+  &__item-category {
+    color: $grey;
+  }
+
+  // .contacts-hero__item-title
+
+  &__item-title {
+  }
+
+  // .contacts-hero__item-title--mail
+
+  &__item-title--mail {
+    text-transform: uppercase;
+  }
+
+  // .contacts-hero__item-num
+
+  &__item-num {
+    color: $grey;
+  }
+
+  @media (max-width: 48em) {
+    &__inner {
+      flex-direction: column-reverse;
+      row-gap: 0;
+
+      &::after {
+        background-size: 80rem;
+        top: 19rem;
+        left: -8rem;
+      }
+    }
+  }
+}

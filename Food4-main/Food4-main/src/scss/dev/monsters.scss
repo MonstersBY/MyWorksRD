@@ -1,0 +1,21 @@
+.fancybox__backdrop {
+    --fancybox-bg: rgba(41, 55, 130, 0.2);
+    background: var(--fancybox-bg);
+    backdrop-filter: blur(10px);
+}
+.fancybox__toolbar__column.is-right svg{
+    pointer-events: all;
+    cursor: pointer;
+    position: absolute;
+    right: 6rem;
+    top: 6rem;
+    width: 8rem;
+    height: 8rem;
+
+    @include small-tablet {
+        right: 3.2rem;
+        top: 3.2rem;
+        width: 7.2rem;
+        height: 7.2rem;    
+    }
+}

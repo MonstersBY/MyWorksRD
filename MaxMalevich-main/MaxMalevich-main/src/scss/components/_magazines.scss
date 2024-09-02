@@ -1,0 +1,145 @@
+.magazines {
+	margin-bottom: 20rem;
+	margin-top: -12rem;
+	// .magazines__inner
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+		@media (max-width: 75em) {
+			gap: 8rem;
+		}
+		@media (max-width: 47.9375em) {
+			gap: 6.4rem;
+		}
+	}
+
+	// .magazines__swiper
+
+	&__swiper {
+		overflow: hidden;
+		width: 100%;
+	}
+
+	// .magazines__swiper-wrapper
+
+	&__swiper-wrapper {
+	}
+
+	// .magazines__swiper-slide
+
+	&__swiper-slide {
+	}
+
+	// .magazines__slide-inner
+
+	&__slide-inner {
+		display: flex;
+		flex-direction: column;
+		gap: 3.2rem;
+		@media (max-width: 75em) {
+			gap: 4rem;
+		}
+		@media (max-width: 47.9375em) {
+			gap: 4rem;
+		}
+	}
+
+	// .magazines__img-box
+
+	&__img-box {
+		width: 41.4rem;
+		height: 54.6rem;
+		border-radius: 1.2rem;
+		overflow: hidden;
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		@media (max-width: 75em) {
+			width: 70.8rem;
+			height: 91rem;
+			border-radius: 2.4rem;
+		}
+		@media (max-width: 47.9375em) {
+		}
+	}
+
+	// .magazines__link
+
+	&__link {
+		// display: flex;
+		// align-items: center;
+		// justify-content: space-between;
+		// gap: 2.4rem;
+		// width: 41.4rem;
+		// @media (max-width: 75em) {
+		// 	width: 70.8rem;
+		// 	gap: 4.8rem;
+		// 	justify-content: flex-start;
+		// }
+		// @media (max-width: 47.9375em) {
+		// 	gap: 6.4rem;
+		// }
+	}
+
+	// .magazines__link-text
+
+	&__link-text {
+		font-size: 2.8rem;
+		font-weight: 400;
+		letter-spacing: 0.08em;
+		@media (max-width: 75em) {
+			font-size: 4.8rem;
+		}
+		@media (max-width: 47.9375em) {
+			font-size: 3.6rem;
+		}
+	}
+
+	// .magazines__link-img-box
+
+	&__link-img-box {
+		// width: 8.6rem;
+		// height: 6.8rem;
+		// flex-shrink: 0;
+		// & img {
+		// 	width: 100%;
+		// 	height: 100%;
+		// 	object-fit: cover;
+		// }
+		// @media (max-width: 75em) {
+		// 	width: 17.2rem;
+		// 	height: 13.6rem;
+		// }
+		// @media (max-width: 47.9375em) {
+		// 	width: 10.2rem;
+		// 	height: 8rem;
+		// }
+	}
+
+	// .magazines__swiper-pagination
+
+	&__swiper-pagination {
+		display: flex;
+		justify-content: center;
+		gap: 2.4rem;
+		& .swiper-pagination-bullet {
+			width: 0.8rem;
+			height: 0.8rem;
+			background-color: rgba(255, 255, 255, 0.6);
+			margin: 0 !important;
+			&.swiper-pagination-bullet-active {
+				background-color: #fff;
+			}
+		}
+		@media (max-width: 75em) {
+			& .swiper-pagination-bullet {
+				width: 1.6rem;
+				height: 1.6rem;
+			}
+		}
+	}
+}

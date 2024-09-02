@@ -1,0 +1,47 @@
+.services-head {
+  padding-top: 14rem;
+  font-family: 'Jura';
+
+  &__container {
+    position: relative;
+    width: 123.7rem;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: $black;
+    font-size: 5rem;
+  }
+
+  @media (max-width: 48em) {
+    position: absolute;
+    top: 27.8rem;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding-top: 0;
+
+    &__container {
+      &::before {
+        display: none;
+      }
+    }
+
+    &__row {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 5.4rem;
+    }
+
+    &__title {
+      font-size: 6rem;
+      max-width: 62.8rem;
+      text-align: center;
+    }
+  }
+}

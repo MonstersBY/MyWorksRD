@@ -1,0 +1,67 @@
+// .lk__machines {
+//   &-tabs {
+//     display: flex;
+//     justify-content: space-between;
+//     margin-bottom: 4.8rem;
+
+//     .tab {
+//       width: auto;
+//       padding: 1.7rem 3.6rem 1.6rem;
+//       cursor: pointer;
+//     }
+
+//     &.mobile {
+//       display: none;
+//     }
+//   }
+
+//   @media (max-width: 48em) {
+//     &-tabs {
+//       flex-direction: column;
+//       max-height: 10.6rem;
+//       overflow: hidden;
+//       transition: max-height 0.3s ease-in-out;
+
+//       &.mobile {
+//         display: block;
+//       }
+
+//       &--head {
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         background-color: $turquoise;
+//         border-radius: 2.4rem;
+//         color: $black;
+//         font-size: 2.4rem;
+//         line-height: 3rem;
+//         font-weight: 700;
+//         text-transform: uppercase;
+//         padding: 2.6rem 4.8rem 2.4rem;
+//         margin-bottom: 2rem;
+
+//         & > * {
+//           pointer-events: none;
+//         }
+//       }
+
+//       &--list {
+//         padding: 4rem;
+//         border: 1.5px solid $black;
+//         border-radius: 3.2rem;
+//         color: $black;
+
+//         & > div {
+//           &:not(:last-child) {
+//             margin-bottom: 2.4rem;
+//           }
+//         }
+//       }
+
+//       .tab {
+//         padding: 0;
+//         width: 100%;
+//       }
+//     }
+//   }
+// }

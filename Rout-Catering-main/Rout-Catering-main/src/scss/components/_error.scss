@@ -1,0 +1,116 @@
+.error {
+    background-color: $green;
+    color: $Beige;
+    padding: 2.4rem 0 15rem;
+    // .error__inner
+
+    &__inner {
+        display: flex;
+        gap: 25.4rem;
+        @include small-tablet {
+            flex-direction: column;
+            gap: 6.4rem;
+        }
+    }
+
+    // .error__content-box
+
+    &__content-box {
+        width: 51.8rem;
+        display: flex;
+        flex-direction: column;
+        gap: 5.2rem;
+        margin-top: 19.1rem;
+        position: relative;
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-image: url(./assets/images/picture/bg-img-1.svg);
+            width: 50rem;
+            height: 50rem;
+            top: -13rem;
+            right: -36rem;
+            transform: rotate(171deg);
+        }
+        @include small-tablet {
+            width: 100%;
+            gap: 3.2rem;
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    // .error__content-title
+
+    &__content-title {
+    }
+
+    // .error__content-info
+
+    &__content-info {
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+    }
+
+    // .error__content-text-box
+
+    &__content-text-box {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        @include small-tablet {
+            gap: 3.2rem;
+        }
+    }
+
+    // .error__content-text-title
+
+    &__content-text-title {
+        width: 42rem;
+        @include small-tablet {
+            width: 100%;
+        }
+    }
+
+    // .error__content-text-desk
+
+    &__content-text-desk {
+        & br {
+            display: none;
+        }
+        @include small-tablet {
+            & br {
+                display: block;
+            }
+        }
+    }
+
+    // .error__btn
+
+    &__btn {
+        width: fit-content;
+    }
+
+    // .error__img-box
+
+    &__img-box {
+        width: 74.8rem;
+        -webkit-mask-image: url(./assets/images/picture/main-banner__mask.svg);
+        mask-image: url(./assets/images/picture/main-banner__mask.svg);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        height: 81.4rem;
+        position: relative;
+        @include small-tablet {
+            width: 68.6rem;
+            height: 74.6rem;
+        }
+    }
+}

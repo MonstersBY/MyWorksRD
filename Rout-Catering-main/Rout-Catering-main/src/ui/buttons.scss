@@ -1,0 +1,132 @@
+.btn-pr {
+    font-family: 'Gilroy';
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 120%;
+    padding: 0.4rem 0.4rem 0.4rem 4.8rem;
+    border-radius: 1.2rem;
+    position: relative;
+    background-color: $LightGreen;
+    color: $green;
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    transition-property: background-color, color;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    cursor: pointer;
+    @include small-tablet {
+        font-size: 3.2rem;
+        padding: 0.6rem 0.6rem 0.6rem 4.8rem;
+        gap: 4.8rem;
+    }
+    &:hover {
+        background-color: $green;
+        color: $LightGreen;
+        .arrow {
+            color: $green;
+        }
+        .block {
+            color: $LightGreen;
+        }
+    }
+    &:disabled {
+        background-color: #dfdfdf;
+        color: #a2adc1;
+    }
+    .arrow {
+        color: $LightGreen;
+        transition: color 0.4s ease;
+    }
+    .block {
+        color: $green;
+        transition: color 0.4s ease;
+    }
+    svg {
+        width: 5.2rem;
+        height: 4.6rem;
+        @include small-tablet {
+            width: 8.6rem;
+            height: 7.6rem;
+        }
+    }
+}
+
+.btn-sec {
+    font-family: 'Gilroy';
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 120%;
+    color: $LightGreen;
+    transition: color 0.4s ease;
+    &:hover {
+        color: $textAndLine;
+    }
+    &:disabled {
+        color: #a2adc1;
+    }
+}
+
+// SWIPER ---------------------------------------------
+
+.swiper-pagination-fraction {
+    font-family: 'Gilroy';
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 120%;
+    display: flex;
+    align-items: flex-end;
+    @include small-tablet {
+        font-size: 3.2rem;
+    }
+    .swiper-pagination-current {
+        font-family: 'eurofurence';
+        font-size: 6rem;
+        line-height: 120%;
+        font-weight: 500;
+        @include small-tablet {
+            font-size: 8rem;
+        }
+    }
+}
+
+.swiper-navigation {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.swiper-btn-prev,
+.swiper-btn-next {
+    color: $Beige;
+    border-radius: 50%;
+    border: solid 0.1rem $Beige;
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  &._green {
+    color: $green;
+    border-color: $green;
+  }
+  &--dark {
+      color: $main;
+      border-color: $main;
+  }
+  @include small-tablet {
+        width: 8rem;
+        height: 8rem;
+    }
+    svg {
+        width: 3.2rem;
+        height: 3.2rem;
+        @include small-tablet {
+            width: 4.4rem;
+            height: 4.4rem;
+        }
+    }
+}
+
+.swiper-btn-prev {
+    transform: rotate(180deg);
+}

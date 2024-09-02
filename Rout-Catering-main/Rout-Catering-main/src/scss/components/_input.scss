@@ -1,0 +1,31 @@
+.input {
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid $textAndLine;
+    color: $Beige;
+    width: 100%;
+
+    &::-moz-placeholder {
+        color: $textAndLine;
+    }
+
+    &::-webkit-input-placeholder {
+        color: $textAndLine;
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        width: 100%;
+        position: relative;
+    }
+
+    &__error {
+        opacity: 0;
+        margin-right: auto;
+        color: $Beige;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="https://unpkg.com/fullpage.js/dist/fullpage.min.js"></script>
+    <script src="https://api-maps.yandex.ru/v3/?apikey=4d7b8985-4ebf-4fde-8884-668550d59df1&lang=ru_RU"></script>
+    <title>Наше оборудование</title>
+  <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="header-burger mobile">
+      <div></div>
+      <div></div>
+    </div>
+    <a class="header-logo">
+      <img src="../assets/images/logo-main.svg" alt="">
+    </a>
+    <div class="header-block">
+      <div class="header-block--wrapper">
+        <div class="header-list">
+          <a class=""><span>Наши услуги</span> </a>
+          <a class=""><span>О клинике</span></a>
+          <a class=""><span>Оборудование</span></a>
+          <a class=""><span>Специалисты</span></a>
+          <a class=""><span>Косметика</span></a>
+          <a class=""><span>Подарочные сертификаты</span></a>
+          <a class=""><span>Контакты</span></a>
+        </div>
+      </div>
+    </div>
+    <a class="header-phone">
+      <div class="header-phone_svg">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.1575 16.3734C11.9139 16.8621 12.8152 17.075 13.7099 16.9765C14.6046 16.8779 15.4381 16.4738 16.0703 15.8321L16.623 15.2909C16.8653 15.0427 17.001 14.7093 17.001 14.3622C17.001 14.015 16.8653 13.6817 16.623 13.4334L14.2771 11.1086C14.0314 10.8667 13.7006 10.7311 13.356 10.7311C13.0114 10.7311 12.6806 10.8667 12.4348 11.1086C12.187 11.3512 11.8541 11.4871 11.5075 11.4871C11.1609 11.4871 10.8281 11.3512 10.5802 11.1086L6.89564 7.4183C6.77273 7.29698 6.67512 7.1524 6.6085 6.99297C6.54187 6.83353 6.50756 6.66242 6.50756 6.48958C6.50756 6.31675 6.54187 6.14563 6.6085 5.9862C6.67512 5.82676 6.77273 5.68218 6.89564 5.56086C7.13717 5.31472 7.27251 4.98341 7.27251 4.6383C7.27251 4.29318 7.13717 3.96187 6.89564 3.71573L4.56206 1.37856C4.31422 1.13588 3.98138 1 3.63477 1C3.28816 1 2.95532 1.13588 2.70747 1.37856L2.16707 1.9321C1.52637 2.56528 1.12289 3.40009 1.02447 4.29617C0.926056 5.19225 1.1387 6.09494 1.62666 6.85246C4.16909 10.6051 7.40404 13.8367 11.1575 16.3734Z" fill="#D9D9D9" fill-opacity="0.1" stroke="#E5EFF7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </div>
+      <span class="desktop">+7 (988)-711-18-88</span>
+    </a>
+  </div>
+</header>
+
+
+    <div id="popup__success" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.50164 1.5L9.00164 8.64286L16.5016 1.5M16.5 16.5L9 9.35714L1.5 16.5" stroke="#2E2E2E" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-img-box">
+          <img src="./assets/images/modal.webp" alt="">
+        </div>
+        <div class="popup__body-content-box">
+          <div class="popup__body-content-box-text-box">
+            <p class="popup__body-content-box-title h3">
+              Ваша заявка <br>
+              отправлена
+            </p>
+            <p class="popup__body-content-box-desk popup__body-content-box-desk--short txt18">
+              Наш менеджер свяжется <br>
+              с Вами в ближайшее время!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__purchase" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.50164 1.5L9.00164 8.64286L16.5016 1.5M16.5 16.5L9 9.35714L1.5 16.5" stroke="#2E2E2E" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-img-box">
+          <img src="./assets/images/modal.webp" alt="">
+        </div>
+        <div class="popup__body-content-box">
+          <div class="popup__body-content-box-text-box">
+            <p class="popup__body-content-box-title h3">Спасибо <br>за покупку!</p>
+            <p class="popup__body-content-box-desk popup__body-content-box-desk--short txt18">
+              Сертификат отправлен на почту <br>
+              forexample@.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__feedback" aria-hidden="true" class="popup popup--feedback">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.50164 1.5L9.00164 8.64286L16.5016 1.5M16.5 16.5L9 9.35714L1.5 16.5" stroke="#2E2E2E" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-img-box popup__body-img-box--big desktop">
+          <img src="./assets/images/modal.webp" alt="">
+        </div>
+        <div class="popup__body-content-box popup__body-content-box--big">
+          <div class="sign_top">
+            <div class="sign_title h3">Запишитесь на прием</div>
+          </div>
+          <form class="form" data-popup-message="#popup__success" data-dev="" action="">
+    
+            <div class=" form__dropdown">
+                <div class="form__dropdown_top">
+                  <label for="" class="form_block input-group">
+                    <span class="form_input-wrapper">
+                      <input class="form_input input__field  input-dropdown" type="text" placeholder="Выберите услугу" data-validate="" data-required="dropdown" autocomplete="off" name="form[]" data-no-focus-classes="">
+    
+                      <span class="form__input-svg-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25" fill="none">
+                          <path d="M6 9.5L12 15.5L18 9.5" stroke="#0E1C15" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </span>
+                    </span>
+                    <span class="error-span subscription"></span>
+                  </label>
+                </div>
+                <div class="form__dropdown_bottom">
+                  <div class="form__dropdown_list">
+                    <label class="form__dropdown_item">
+                      <div class="form__dropdown_item_checkbox radio-wrapper">
+                        <input type="radio" name="service">
+                      </div>
+                      <span class="form__dropdown_item_name">Услуга1</span>
+                    </label>
+                    <label class="form__dropdown_item">
+                      <div class="form__dropdown_item_checkbox radio-wrapper">
+                        <input type="radio" name="service">
+                      </div>
+                      <span class="form__dropdown_item_name">Услуга2</span>
+                    </label>
+                    <label class="form__dropdown_item">
+                      <div class="form__dropdown_item_checkbox radio-wrapper">
+                        <input type="radio" name="service">
+                      </div>
+                      <span class="form__dropdown_item_name">Услуга3</span>
+                    </label>
+                    <label class="form__dropdown_item">
+                      <div class="form__dropdown_item_checkbox radio-wrapper">
+                        <input type="radio" name="service">
+                      </div>
+                      <span class="form__dropdown_item_name">Услуга4</span>
+                    </label>
+                    <label class="form__dropdown_item">
+                      <div class="form__dropdown_item_checkbox radio-wrapper">
+                        <input type="radio" name="service">
+                      </div>
+                      <span class="form__dropdown_item_name">Услуга5</span>
+                    </label>
+                    <label class="form__dropdown_item">
+                      <div class="form__dropdown_item_checkbox radio-wrapper">
+                        <input type="radio" name="service">
+                      </div>
+                      <span class="form__dropdown_item_name">Услуга6</span>
+                    </label>
+                    <label class="form__dropdown_item">
+                      <div class="form__dropdown_item_checkbox radio-wrapper">
+                        <input type="radio" name="service">
+                      </div>
+                      <span class="form__dropdown_item_name">Услуга7</span>
+                    </label>
+                  </div>
+                </div>
+            </div>
+    
+            <label class="form_block input-group">
+                <span class="form_input-wrapper">
+                  <input class="input--name form_input" type="text" placeholder="Имя" data-validate="" data-required="" autocomplete="off" name="form[]">
+                </span>
+                <span class="error-span">Ошибка</span>
+            </label>
+    
+            <label class="form_block input-group">
+                <span class="form_input-wrapper">
+                  <input class="input--mail form_input" type="text" placeholder="E-mail" autocomplete="off" name="form[]">
+                </span>
+                <span class="error-span">Ошибка</span>
+            </label>
+    
+    
+            <label class="form_block input-group">
+                <span class="form_input-wrapper">
+                  <input class="input--tel form_input phone-mask" type="text" placeholder="Номер телефона" data-validate="" data-required="tel" autocomplete="off" name="form[]">
+                </span>
+                <span class="error-span">Ошибка</span>
+            </label>
+    
+    
+            <label class="form_block input-group">
+                <span class="form_input-wrapper">
+                  <input class="form_input" type="text" placeholder="Ваш комментарий" autocomplete="off" name="form[]">
+                </span>
+                <span class="error-span"></span>
+            </label>
+            <div class="form_bottom">
+              <div class="form_bottom-text">Отправляя заявку, Вы соглашаетесь на обработку своих данных</div>
+              <button type="submit" class="btn btn-blue">Отправить заявку</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <main>
+      <section class="baner">
+        <div class="container">
+          <div class="baner_box">
+            <div class="baner_box-title h1">
+              <span>Наше</span>
+              <span>оборудование</span>
+            </div>
+            <div class="baner_box-img mobile">
+              <img src="./assets/images/head-b/equipment-b-mobile.webp" alt="">
+            </div>
+            <div class="baner_box-text txt18">Наши специалисты имеют высокий уровень квалификации и обширный опыт работы в сфере косметологии. Они предлагают широкий спектр услуг, включая профессиональные процедуры по уходу за кожей лица и тела, а также эстетическую коррекцию с использованием современных технологий и методик.</div>
+          </div>
+          <div class="baner_img">
+            <img src="./assets/images/head-b/equipment-b.webp" alt="">
+          </div>
+        </div>
+      </section>
+      <section class="equipment-more">
+        <div class="container">
+          <div class="equipment-more_list">
+            <div class="equipment-more_item">
+              <div class="equipment-more_item-img">
+                <img src="./assets/images/equipment.webp" alt="">
+              </div>
+              <div class="equipment-more_item-box">
+                <div class="equipment-more_item-title h3">DEKA (Италия)</div>
+                <div class="equipment-more_item-info txt16">Эта система представляет собой универсальный аппарат нового поколения, который объединяет в себе технологии IPL, RF и лазеров для косметологии, дерматологии, эстетической хирургии, гинекологии.</div>
+                <div class="btn btn-blue">Подробнее</div>
+              </div>
+            </div>
+            <div class="equipment-more_item">
+              <div class="equipment-more_item-img">
+                <img src="./assets/images/equipment.webp" alt="">
+              </div>
+              <div class="equipment-more_item-box">
+                <div class="equipment-more_item-title h3">DEKA (Италия)</div>
+                <div class="equipment-more_item-info txt16">Эта система представляет собой универсальный аппарат нового поколения, который объединяет в себе технологии IPL, RF и лазеров для косметологии, дерматологии, эстетической хирургии, гинекологии.</div>
+                <div class="btn btn-blue">Подробнее</div>
+              </div>
+            </div>
+            <div class="equipment-more_item">
+              <div class="equipment-more_item-img">
+                <img src="./assets/images/equipment.webp" alt="">
+              </div>
+              <div class="equipment-more_item-box">
+                <div class="equipment-more_item-title h3">DEKA (Италия)</div>
+                <div class="equipment-more_item-info txt16">Эта система представляет собой универсальный аппарат нового поколения, который объединяет в себе технологии IPL, RF и лазеров для косметологии, дерматологии, эстетической хирургии, гинекологии.</div>
+                <div class="btn btn-blue">Подробнее</div>
+              </div>
+            </div>
+            <div class="equipment-more_item">
+              <div class="equipment-more_item-img">
+                <img src="./assets/images/equipment.webp" alt="">
+              </div>
+              <div class="equipment-more_item-box">
+                <div class="equipment-more_item-title h3">DEKA (Италия)</div>
+                <div class="equipment-more_item-info txt16">Эта система представляет собой универсальный аппарат нового поколения, который объединяет в себе технологии IPL, RF и лазеров для косметологии, дерматологии, эстетической хирургии, гинекологии.</div>
+                <div class="btn btn-blue">Подробнее</div>
+              </div>
+            </div>
+            <div class="equipment-more_item">
+              <div class="equipment-more_item-img">
+                <img src="./assets/images/equipment.webp" alt="">
+              </div>
+              <div class="equipment-more_item-box">
+                <div class="equipment-more_item-title h3">DEKA (Италия)</div>
+                <div class="equipment-more_item-info txt16">Эта система представляет собой универсальный аппарат нового поколения, который объединяет в себе технологии IPL, RF и лазеров для косметологии, дерматологии, эстетической хирургии, гинекологии.</div>
+                <div class="btn btn-blue">Подробнее</div>
+              </div>
+            </div>
+            <div class="equipment-more_item">
+              <div class="equipment-more_item-img">
+                <img src="./assets/images/equipment.webp" alt="">
+              </div>
+              <div class="equipment-more_item-box">
+                <div class="equipment-more_item-title h3">DEKA (Италия)</div>
+                <div class="equipment-more_item-info txt16">Эта система представляет собой универсальный аппарат нового поколения, который объединяет в себе технологии IPL, RF и лазеров для косметологии, дерматологии, эстетической хирургии, гинекологии.</div>
+                <div class="btn btn-blue">Подробнее</div>
+              </div>
+            </div>
+          </div>
+          <div class="btn btn-white">На главную</div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+  <div class="footer-bg"></div>
+  <div class="container">
+    <div class="footer_top">
+      <div class="footer-logo">
+        <img src="../assets/images/logo-main.svg" alt="">
+      </div>
+      <div class="footer-social">
+        <a>
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24.7195 7.26914C22.5463 5.10351 19.6488 3.90039 16.5902 3.90039C10.2317 3.90039 5.08049 9.03372 5.08049 15.3702C5.08049 17.3754 5.6439 19.3806 6.60976 21.065L5 27.0004L11.1171 25.3962C12.8073 26.2785 14.6585 26.7598 16.5902 26.7598C22.9488 26.7598 28.1 21.6264 28.1 15.29C28.0195 12.3223 26.8927 9.43476 24.7195 7.26914ZM22.1439 19.4608C21.9024 20.1025 20.7756 20.7441 20.2122 20.8243C19.7293 20.9046 19.0854 20.9046 18.4415 20.7441C18.039 20.5837 17.4756 20.4233 16.8317 20.1025C13.9341 18.8994 12.0829 16.0118 11.922 15.7712C11.761 15.6108 10.7146 14.2473 10.7146 12.8035C10.7146 11.3598 11.439 10.7181 11.6805 10.3973C11.922 10.0764 12.2439 10.0764 12.4854 10.0764C12.6463 10.0764 12.8878 10.0764 13.0488 10.0764C13.2098 10.0764 13.4512 9.99622 13.6927 10.5577C13.9341 11.1191 14.4976 12.5629 14.578 12.6431C14.6585 12.8035 14.6585 12.9639 14.578 13.1243C14.4976 13.2848 14.4171 13.4452 14.2561 13.6056C14.0951 13.766 13.9341 14.0066 13.8537 14.0868C13.6927 14.2473 13.5317 14.4077 13.6927 14.6483C13.8537 14.9691 14.4171 15.8514 15.3024 16.6535C16.4293 17.616 17.3146 17.9369 17.6366 18.0973C17.9585 18.2577 18.1195 18.1775 18.2805 18.0171C18.4415 17.8566 19.0049 17.215 19.1659 16.8941C19.3268 16.5733 19.5683 16.6535 19.8098 16.7337C20.0512 16.8139 21.5 17.5358 21.7415 17.6962C22.0634 17.8566 22.2244 17.9368 22.3049 18.0171C22.3854 18.2577 22.3854 18.8191 22.1439 19.4608Z" fill="white"></path>
+          </svg>
+        </a>
+        <a>
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 13C5 8.58172 8.58172 5 13 5H19C23.4183 5 27 8.58172 27 13V19C27 23.4183 23.4183 27 19 27H13C8.58172 27 5 23.4183 5 19V13ZM21.8668 16.0001C21.8668 19.2402 19.2402 21.8668 16.0001 21.8668C12.76 21.8668 10.1334 19.2402 10.1334 16.0001C10.1334 12.7601 12.76 10.1335 16.0001 10.1335C19.2402 10.1335 21.8668 12.7601 21.8668 16.0001ZM21.8667 11.6001C22.6768 11.6001 23.3334 10.9435 23.3334 10.1335C23.3334 9.32345 22.6768 8.6668 21.8667 8.6668C21.0567 8.6668 20.4001 9.32345 20.4001 10.1335C20.4001 10.9435 21.0567 11.6001 21.8667 11.6001Z" fill="white"></path>
+          </svg>
+        </a>
+        <a>
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24.7999 7.86264L21.4939 25.1217C21.4939 25.1217 21.0314 26.3183 19.7607 25.7444L12.1329 19.688L12.0976 19.6702C13.1279 18.7121 21.1175 11.2731 21.4667 10.9359C22.0073 10.4137 21.6717 10.1028 21.0441 10.4973L9.24237 18.2585L4.6893 16.672C4.6893 16.672 3.97279 16.4081 3.90385 15.8342C3.83402 15.2594 4.71289 14.9485 4.71289 14.9485L23.2744 7.40804C23.2744 7.40804 24.7999 6.71392 24.7999 7.86264Z" fill="white"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="footer_top-list txt16">
+        <a>Наши услуги</a>
+        <a>О клинике</a>
+        <a>Оборудование</a>
+        <a>Специалисты</a>
+        <a>Косметика</a>
+        <a>Подарочные сертификаты</a>
+      </div>
+      <div class="footer_top-list txt16">
+        <a>Правовые документы</a>
+        <a>Как добраться</a>
+        <a>Блог</a>
+        <a>Наши партнеры</a>
+      </div>
+      <div class="footer_top-list txt16">
+        <a>Политика конфиденциальности</a>
+        <a>Политика обработки данных</a>
+      </div>
+      <div class="footer_top-infos ">
+        <div class="footer_top-info">
+          <span class="txt16">Адрес:</span>
+          <span class="txt16-l">г.Черкесск, ул Первомайская, д. 8</span>
+        </div>
+        <div class="footer_top-info">
+          <span class="txt16">Режим работы:</span>
+          <span class="txt16-l">Пн-вс 09:00 - 21:00  </span>
+        </div>
+        <div class="footer_top-info">
+          <span class="txt16">Телефон для записи: </span>
+          <a href="tel:+79887111888" class="txt16-l">+7 (988)-711-18-88</a>
+        </div>
+        <div class="footer_top-info">
+          <span class="txt16">Email: </span>
+          <a href="mailto: aestetik@aestetik.pro" class="txt16-l">aestetik@aestetik.pro</a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="footer_bottom">
+      <div class="footer_bottom-protect txt16">ООО  "АЕСТЕТИК КЛИНИКА ВРАЧЕБНОЙ КОСМЕТОЛОГИИ, ДЕРМАТОЛОГИИ И ТРИХОЛОГИИ".  Все права защищены</div>
+      <div class="rd-logo">
+        <img src="../assets/images/requestdesign-logo.svg" alt="">
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>

@@ -1,0 +1,106 @@
+.product-card-hero {
+  // .product-card-hero__container
+  margin-top: -8.5rem;
+  padding-top: 0;
+
+  @include small-tablet {
+    margin-top: -14.6rem;
+  }
+  &__container {
+    max-width: 192rem;
+    width: 100%;
+    @include small-tablet {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  &__inner {
+    position: relative;
+    width: 100%;
+    height: 78rem;
+    padding: 14.2rem 6rem;
+    color: $white;
+    @include small-tablet {
+      height: 128.8rem;
+      padding: 20.8rem 3.2rem;
+    }
+  }
+
+  // .product-card-hero__img-box
+
+  &__img-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: 0 0 6rem 6rem;
+    overflow: hidden;
+
+    & img,
+    & video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+  }
+
+  // .product-card-hero__content-box
+
+  &__content-box {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    @include small-tablet {
+      gap: 4.8rem;
+      }
+  }
+
+  // .product-card-hero__title-box
+
+  &__title-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    width: 37.7rem;
+    @include small-tablet {
+        width: 38rem;
+        }
+  }
+
+  // .product-card-hero__desc
+
+  &__desc {
+    @include small-tablet {
+       font-size: 2.4rem;
+        }
+  }
+
+  // .product-card-hero__title
+
+  &__title {
+  }
+
+  // .product-card-hero__desc-text
+
+  &__desc-text {
+    width: 60.6rem;
+    @include small-tablet {
+        width: 68.6rem;
+        font-size: 2.8rem;
+        }
+  }
+
+  // .product-card-hero__btn
+
+  &__btn {
+    color: $black;
+    width: fit-content;
+    padding: 1.8rem 8rem;
+    @include small-tablet {
+        padding: 3.2rem 6.4rem;
+      font-size: 2.8rem;
+    }
+  }
+}

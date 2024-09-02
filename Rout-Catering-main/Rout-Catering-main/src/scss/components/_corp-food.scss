@@ -1,0 +1,154 @@
+.corp-food {
+  color: $green;
+  &__title {
+    text-align: center;
+    margin-bottom: 8rem;
+    @include small-tablet {
+      margin-bottom: 4rem;
+    }
+  }
+  &__subtitle {
+    @include small-tablet {
+      margin-bottom: 8rem;
+    }
+  }
+  &__slider {
+    &_desc {
+      overflow: hidden;
+    }
+    &_mob {
+      overflow: hidden;
+    }
+    &-nav {
+      margin-right: 44rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      &.desc {
+        @include small-tablet {
+          display: none;
+        }
+      }
+      &.mob {
+        display: none;
+        @include small-tablet {
+          display: flex;
+          margin: 0;
+        }
+      }
+    }
+  }
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    @include small-tablet {
+      gap: 3.5rem;
+    }
+    &-info {
+      width: 62rem;
+      height: 28rem;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-image: url(./assets/images/picture/corp-food__border_1.svg);
+      padding: 5.2rem 7rem 3.2rem 7rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @include small-tablet {
+        width: 68.6rem;
+        height: 31rem;
+        padding: 3.2rem 10rem 3.2rem 10rem;
+        position: relative;
+      }
+      &-text {
+        width: 35rem;
+        @include small-tablet {
+          width: 40rem;
+        }
+      }
+      &-num {
+        margin-left: auto;
+        @include small-tablet {
+          position: absolute;
+          bottom: 4rem;
+          right: 10.5rem;
+        }
+      }
+    }
+    &-img {
+      width: 71rem;
+      height: 32.6rem;
+      -webkit-mask-image: url(./assets/images/picture/corp-food__mask_1.png);
+      mask-image: url(./assets/images/picture/corp-food__mask_1.png);
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: contain;
+      mask-size: contain;
+      right: -17rem;
+      position: relative;
+      @include small-tablet {
+        right: 0;
+        width: 68.6rem;
+        height: 34rem;
+      }
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .swiper-slide {
+    display: flex;
+    .corp-food__slide:nth-child(2n) {
+      display: flex;
+      flex-direction: column-reverse;
+      .corp-food__slide-info {
+        width: 62rem;
+        height: 28rem;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-image: url(./assets/images/picture/corp-food__border_2.svg);
+        padding: 5.2rem 7rem 3.2rem 7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        left: 19rem;
+        &-text {
+          width: 35rem;
+        }
+      }
+      .corp-food__slide-img {
+        width: 88rem;
+        height: 42rem;
+        position: relative;
+        left: -7rem;
+        -webkit-mask-image: url(./assets/images/picture/corp-food__mask_2.png);
+        mask-image: url(./assets/images/picture/corp-food__mask_2.png);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+    z-index: 1;
+    position: relative;
+    margin-top: -7rem;
+    align-self: center;
+    @include small-tablet {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      margin-top: 2.8rem;
+    }
+  }
+  &__fractions_desc {
+    color: $green;
+    @include small-tablet {
+      display: none;
+    }
+  }
+}

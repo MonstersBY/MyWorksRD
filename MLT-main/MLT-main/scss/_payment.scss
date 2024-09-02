@@ -1,0 +1,66 @@
+.payment {
+    background-color: #121820;
+    margin-bottom: 0;
+}
+.payment__container {
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+}
+.payment__head {
+    color: #fff;
+    font-family: Gilroy;
+    font-size: 5.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 105%;
+    margin-bottom: 6rem;
+}
+.payment__content {
+    display: flex;
+    gap: 5.5rem;
+}
+.payment__element {
+    width: 53.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    color: #fff;
+}
+.payment__title {
+    font-family: Gilroy;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 145%;
+}
+.payment__text {
+    font-family: Gilroy;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 145%;
+}
+
+@media (max-width: 48em) {
+    .payment__container {
+        padding-bottom: 12rem;
+    }
+    .payment__head {
+        font-size: 5.4rem;
+        margin-bottom: 6rem;
+    }
+    .payment__content {
+        flex-direction: column;
+        gap: 6rem;
+    }
+    .payment__element {
+        width: 100%;
+        gap: 3rem;
+    }
+    .payment__title {
+        font-size: 3.2rem;
+    }
+    .payment__text {
+        font-size: 2.8rem;
+    }
+}

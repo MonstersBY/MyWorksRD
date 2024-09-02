@@ -1,0 +1,144 @@
+.contacts {
+    margin-top: 4rem;
+
+    &__title {
+        margin-bottom: 5rem;
+        text-transform: uppercase;
+    }
+    &__container {
+        display: grid;
+        gap: 4rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    &__info {
+        background: #FFF;
+        padding: 4rem 4rem 7.5rem 4rem;
+
+        &-title {
+            margin-bottom: 4rem;
+        }
+        &-box {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-auto-flow: column;
+            row-gap: 2.4rem;
+            column-gap: 3.2rem;
+        }
+        &-item {
+            display: flex;
+            gap: 1.2rem;
+
+            &--svg {
+                width: 4rem;
+                height: 4rem;
+                flex: none;
+
+                svg {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            &--text {
+                display: flex;
+                flex-direction: column;
+                gap: 0.8rem;
+
+                .txt20 {
+                    color: #AEAEAE;
+                }
+                a {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    &__mails {
+        background: #FFF;
+        padding: 4rem 11rem 0 4rem;
+        clip-path: polygon(90% 0, 100% 19%, 100% 81%, 90% 100%, 0 100%, 0 0);
+
+        &-title {
+            margin-bottom: 1.6rem;
+        }
+        &-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-auto-flow: column;
+            row-gap: 2.4rem;
+            column-gap: 3.2rem;
+        }
+        &-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+
+            .txt20 {
+                color: #AEAEAE;
+            }
+        }
+    }
+}
+
+@include small-tablet {
+    .contacts {
+        margin-top: 9.6rem;
+    
+        &__title {
+            margin-bottom: 6.4rem;
+        }
+        &__container {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+        }
+        &__info {
+            padding: 6rem 6rem 6rem 4rem;
+            clip-path: polygon(80% 0, 100% 16%, 100% 100%, 0 100%, 0 0);
+    
+            &-title {
+                margin-bottom: 6.4rem;
+            }
+            &-box {
+                display: flex;
+                flex-direction: column;
+                gap: 4rem;
+            }
+            &-item {
+                gap: 2.4rem;
+    
+                &--svg {
+                    width: 6.4rem;
+                    height: 6.4rem;
+                }
+                &--text {
+                    .txt20 {
+                        font-weight: 400;
+                        font-size: 3.6rem;
+                    }
+                }
+            }
+        }
+        &__mails {
+            padding: 6rem 6rem 6rem 4rem;
+            clip-path: polygon(80% 0, 100% 16%, 100% 100%, 0 100%, 0 0);
+    
+            &-title {
+                margin-bottom: 6.4rem;
+            }
+            &-box {
+                display: flex;
+                flex-direction: column;
+                gap: 4rem;
+            }
+            &-item {
+    
+                .txt20 {
+                    font-weight: 400;
+                    font-size: 3.6rem;
+                }
+            }
+        }
+    }
+}

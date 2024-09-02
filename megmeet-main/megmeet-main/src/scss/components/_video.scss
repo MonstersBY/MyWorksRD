@@ -1,0 +1,14 @@
+.video {
+  position: relative;
+
+  &-js {
+    width: 100%;
+    height: 100%;
+  }
+
+  .play-btn {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+  }
+}

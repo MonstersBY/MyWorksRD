@@ -1,0 +1,107 @@
+.tl1 {
+  font-family: 'Open Sans';
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  text-transform: uppercase;
+  @media (max-width: 48em) {
+  }
+}
+.tl2 {
+  font-family: 'Open Sans';
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  @media (max-width: 48em) {
+  }
+}
+.tl3 {
+  font-family: 'Open Sans';
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  text-transform: uppercase;
+  @media (max-width: 48em) {
+  }
+}
+
+// --------------------------------------------------------------------------
+
+.txt26 {
+  font-family: 'Open Sans';
+  font-size: 2.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  &_caps {
+    text-transform: uppercase;
+  }
+
+  @include small-tablet {
+  }
+}
+.txt20 {
+  font-family: 'Open Sans';
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  &_caps {
+    font-weight: 700;
+    line-height: 130%;
+    text-transform: uppercase;
+  }
+
+  @include small-tablet {
+    font-size: 3.2rem;
+  }
+}
+.txt18 {
+  font-family: 'Open Sans';
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  text-transform:none;
+  &_caps {
+    font-weight: 600;
+    line-height: 130%;
+    text-transform: uppercase;
+  }
+
+  @include small-tablet {
+    font-size: 2.8rem;
+    &_caps {
+      font-size: 3.2rem;
+    }
+  }
+}
+.txt16 {
+  font-family: 'Open Sans';
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  &_caps {
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  @include small-tablet {
+    font-size: 2.8rem;
+  }
+}
+.txt-small {
+  font-family: 'Open Sans';
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+
+  @include small-tablet {
+    font-size: 2.8rem;
+  }
+}

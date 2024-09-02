@@ -1,0 +1,78 @@
+.vacancies-banner {
+  // .vacancies-banner__container
+  margin-top: -20rem;
+  @include small-tablet {
+    margin-top: -65rem;
+  }
+  &__container {
+    width: 100%;
+    max-width: 192rem;
+    @include small-tablet {
+      padding: 0;
+    }
+  }
+  // .vacancies-banner__inner
+
+  &__inner {
+    padding: 24rem 36.3rem 6rem 11rem;
+    position: relative;
+    color: $white;
+    @include small-tablet {
+      padding: 71.2rem 2rem 4.8rem;
+    }
+  }
+
+  // .vacancies-banner__bg-box
+
+  &__bg-box {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  // .vacancies-banner__content-box
+
+  &__content-box {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 15.2rem;
+    @include small-tablet {
+      gap: 4rem;
+    }
+  }
+
+  // .vacancies-banner__title
+
+  &__title {
+    text-transform: uppercase;
+  }
+
+  // .vacancies-banner__desc
+
+  &__desc {
+    width: 57.8rem;
+    align-self: flex-end;
+    @include small-tablet {
+      width: 100%;
+      align-self: flex-start;
+      font-size: 3.6rem;
+    }
+  }
+}
+.container {
+}
+.desktop {
+}
+.mobile {
+}
+.tl1 {
+}
+.txt20 {
+}

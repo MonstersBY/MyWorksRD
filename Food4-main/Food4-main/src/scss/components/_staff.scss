@@ -1,0 +1,87 @@
+.staff {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  &__list {
+    display: flex;
+    gap: 3.2rem;
+    flex-wrap: wrap;
+
+    @include small-tablet {
+      gap: 1.6rem;
+    }
+  }
+
+  &__card {
+    height: 30rem;
+    width: 63.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 7rem;
+    overflow: hidden;
+
+    @include small-tablet {
+      width: 100%;
+      border-radius: 3.6 * 2rem;
+      height: 24.8rem * 2;
+      padding: 2.6 * 2rem 1.6 * 2rem;
+    }
+
+    &:first-child,
+    &:last-child {
+      width: 89.7rem;
+
+      @include small-tablet {
+        width: 100%;
+        padding: 0;
+      }
+    }
+    &:not(:first-child) {
+      border: 1px solid $white;
+      padding: 4.6rem;
+
+      @include small-tablet {
+        padding: 2.6 * 2rem 1.6 * 2rem;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+
+    &-title {
+      padding-left: 1.8rem;
+      position: relative;
+      display: -webkit-box;
+      -webkit-line-clamp: 1; // количество строк
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      &::before {
+        position: absolute;
+        content: '';
+        background-color: $Blue;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      @include small-tablet {
+        padding-left: 3.6rem;
+        &::before {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+    }
+  }
+}

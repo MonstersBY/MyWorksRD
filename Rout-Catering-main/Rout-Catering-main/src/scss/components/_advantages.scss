@@ -1,0 +1,92 @@
+.advantages {
+  &._dark {
+    color: $Beige;
+    background-color: $green;
+  }
+  &._light {
+    color: $green;
+    background-color: $Beige;
+    .advantages__item-num {
+      color: $green;
+    }
+    .advantages__item-text {
+      color: $textAndLine;
+    }
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include small-tablet {
+      flex-direction: column;
+      gap: 8rem;
+    }
+  }
+  &__item {
+    padding: 1.6rem 8rem 1.6rem 2rem;
+    position: relative;
+    border-left: solid 0.1rem $textAndLine;
+    width: 49.1rem;
+    @include small-tablet {
+      width: 100%;
+      padding: 1.6rem 0 1.6rem 1.4rem;
+    }
+    &-title {
+      margin-bottom: 7rem;
+      @include small-tablet {
+        margin-bottom: 8rem;
+      }
+    }
+    &-num {
+      position: absolute;
+      left: 2rem;
+      top: 8.6rem;
+      color: $LightGreen;
+    }
+    &-img {
+      border-radius: 50%;
+      width: 38rem;
+      height: 38rem;
+      @include small-tablet {
+        width: 66.2rem;
+        height: 66.2rem;
+      }
+      img {
+        border-radius: inherit;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &-text {
+      margin-top: 7rem;
+      @include small-tablet {
+        margin-top: 8rem;
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &.bg-2 {
+    &::before {
+      width: 55.8rem;
+      height: 47rem;
+      top: -11rem;
+      right: calc(50% + 35rem);
+      z-index: 0;
+
+      @include small-tablet {
+        width: 44rem;
+        height: 38rem;
+        top: -14rem;
+        right: calc(50% - 8rem);
+        transform: rotate(-16deg);
+      }
+    }
+  }
+}

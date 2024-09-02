@@ -1,0 +1,506 @@
+.about-our-farm {
+  height: 100%  !important;
+  display: flex !important;
+  align-items: center !important;
+  margin-bottom: 32.5rem;
+  @include small-tablet {
+    height: fit-content !important;
+     }
+  // .about-our-farm__inner
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    @include small-tablet {
+      gap: 3rem;
+    }
+  }
+
+  // .about-our-farm__title-box
+
+  &__title-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    @include small-tablet {
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+  }
+
+  // .about-our-farm__title-img-box
+
+  &__title-img-box {
+    position: absolute;
+    z-index: -1;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .about-our-farm__title-img-box--left
+
+  &__title-img-box--left {
+    width: 78.6rem;
+    height: 54.3rem;
+    left: 0;
+    top: -8.2rem;
+    @include small-tablet {
+      width: 67rem;
+      height: 46.4rem;
+      top: -15.2rem;
+      transform: scaleX(-1);
+    }
+  }
+
+  // .about-our-farm__title-img-box--right
+
+  &__title-img-box--right {
+    width: 35.9rem;
+    height: 34.7rem;
+    right: 0;
+    top: 4.9rem;
+    @include small-tablet {
+      width: 67rem;
+      height: 64.4rem;
+      //   top: -15.2rem;
+      top: auto;
+      bottom: -18rem;
+      transform: translateY(100%);
+      z-index: 1;
+    }
+  }
+
+  // .about-our-farm__title
+
+  &__title {
+    @include small-tablet {
+      font-size: 16rem;
+      width: 34.4rem;
+      flex-shrink: 0;
+    }
+  }
+
+  // .about-our-farm__standard-list
+
+  &__standard-list {
+    position: absolute;
+    display: flex;
+    // flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40rem;
+    flex-shrink: 0;
+    gap: 1.5rem;
+    bottom: -25rem;
+    right: 17rem;
+    @include small-tablet {
+      position: static;
+      gap: 3rem;
+      margin-left: -3rem;
+    }
+  }
+
+  // .about-our-farm__standard-item
+
+  &__standard-item {
+    padding: 1.5rem 4.6rem 2.2rem;
+    border: 0.4rem solid $white;
+    border-radius: 12rem;
+    backdrop-filter: blur(64px);
+    background: $white60;
+    color: $orange;
+    display: block;
+    &:nth-child(1) {
+      transform: rotate(5deg);
+    }
+    &:nth-child(2) {
+      transform: rotate(-6deg);
+      margin-right: -25rem;
+    }
+    @include small-tablet {
+      font-size: 4rem;
+      padding: 2.4rem 7.2rem 3.4rem;
+      border: 0.6rem solid $white;
+      &:nth-child(1) {
+        transform: rotate(-1deg);
+      }
+      &:nth-child(2) {
+        margin-right: 0;
+        margin-left: -10rem;
+        transform: rotate(9deg);
+      }
+    }
+  }
+
+  // .about-our-farm__content-wrapper
+
+  &__content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    @include small-tablet {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  // .about-our-farm__content
+
+  &__content {
+  }
+
+  // .about-our-farm__content--left
+
+  &__content--left {
+    display: flex;
+    flex-direction: column;
+    @include small-tablet {
+      order: 2;
+      margin-top: -25rem;
+    }
+  }
+
+  // .about-our-farm__content-info-box
+
+  &__content-info-box {
+    width: 54.754rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3.4rem;
+    padding: 8.8rem 10rem 8.1rem 11.1rem;
+    background-color: $dark-orange;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-image: url(./assets/images/about-our-farm-info-mask.svg);
+    mask-image: url(./assets/images/about-our-farm-info-mask.svg);
+    @include small-tablet {
+      -webkit-mask-image: url(./assets/images/about-our-farm-info-mask-mob.svg);
+      mask-image: url(./assets/images/about-our-farm-info-mask-mob.svg);
+      padding: 30.8rem 7rem 13.4rem 8rem;
+      width: 67rem;
+      gap: 4rem;
+    }
+  }
+
+  // .about-our-farm__content-info-title
+
+  &__content-info-title {
+    line-height: 120%;
+    @include small-tablet {
+      font-size: 6rem;
+    }
+  }
+
+  // .about-our-farm__content-info-desc
+
+  &__content-info-desc {
+    line-height: 130%;
+    @include small-tablet {
+      font-size: 3.2rem;
+    }
+  }
+
+  // .about-our-farm__content-num-box
+
+  &__content-num-box {
+    width: 38.495rem;
+    display: flex;
+    flex-direction: column;
+    padding: 10.6rem 10.8rem 11.4rem 10.1rem;
+    background-color: $light-blue;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-image: url(./assets/images/about-our-farm-num-mask.svg);
+    mask-image: url(./assets/images/about-our-farm-num-mask.svg);
+    position: relative;
+    align-self: flex-end;
+    margin-right: -14rem;
+    margin-top: -5rem;
+    @include small-tablet {
+      -webkit-mask-image: url(./assets/images/about-our-farm-num-mask-mob.svg);
+      mask-image: url(./assets/images/about-our-farm-num-mask-mob.svg);
+      width: 67rem;
+      align-self: flex-start;
+      padding: 19rem 20.8rem 18.8rem;
+      margin-top: -8rem;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  // .about-our-farm__content-num-img-box
+
+  &__content-num-img-box {
+    position: absolute;
+    width: 7.4rem;
+    height: 7.4rem;
+    border-radius: 50%;
+    background-color: $orange;
+    overflow: hidden;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include small-tablet {
+      width: 12rem;
+      height: 12rem;
+    }
+  }
+
+  // .about-our-farm__content-num-img-box--left
+
+  &__content-num-img-box--left {
+    top: 2.5rem;
+    left: 7.5rem;
+    @include small-tablet {
+      top: 2rem;
+      left: 25.6rem;
+    }
+  }
+
+  // .about-our-farm__content-num-img-box--right
+
+  &__content-num-img-box--right {
+    bottom: 1.4rem;
+    right: 9.6rem;
+    @include small-tablet {
+      bottom: 3rem;
+      right: 18.8rem;
+    }
+  }
+
+  // .about-our-farm__content-num-text-box
+
+  &__content-num-text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    @include small-tablet {
+      gap: 1.6rem;
+    }
+  }
+
+  // .about-our-farm__content-num-num
+
+  &__content-num-num {
+    @include small-tablet {
+      font-size: 10rem;
+    }
+  }
+
+  // .about-our-farm__content-num-text
+
+  &__content-num-text {
+    @include small-tablet {
+      font-size: 5.2rem;
+    }
+  }
+
+  // .about-our-farm__img-wrapper
+
+  &__img-wrapper {
+    width: 43.214rem;
+    height: 85rem;
+    position: relative;
+    flex-shrink: 0;
+    margin-top: -12rem;
+    @include small-tablet {
+      order: 1;
+      margin-top: 0;
+      width: 51.4rem;
+      height: 101rem;
+    }
+  }
+
+  // .about-our-farm__img-box
+
+  &__img-box {
+    width: 100%;
+    height: 100%;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .about-our-farm__link
+
+  &__link {
+    position: absolute;
+    top: 29.3rem;
+    right: -13.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.4rem;
+    text-align: center;
+    width: 27rem;
+    padding: 4.7rem 2.2rem;
+    border-radius: 100%;
+    background-color: $white70;
+    border: 0.4rem solid $white;
+    stroke: $white;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    z-index: 15;
+    color: $orange;
+    @include small-tablet {
+      left: -7.76rem;
+      top: 47.2rem;
+      right: auto;
+      bottom: auto;
+      width: 38.6rem;
+      padding: 6.8rem 4rem;
+    }
+  }
+
+  // .about-our-farm__link-img-box
+
+  &__link-img-box {
+    width: 3.2rem;
+    height: 3.2rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include small-tablet {
+      width: 5.2rem;
+      height: 5.2rem;
+    }
+  }
+
+  // .about-our-farm__link-text
+
+  &__link-text {
+    width: 10.4rem;
+
+    @include small-tablet {
+      font-size: 5.2rem;
+      width: 14.6rem;
+    }
+  }
+
+  // .about-our-farm__content--right
+
+  &__content--right {
+    display: flex;
+    flex-direction: column;
+    @include small-tablet {
+      order: 3;
+    }
+  }
+
+  // .about-our-farm__content-favorite-box
+
+  &__content-favorite-box {
+    width: 49.9rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3.7rem;
+    padding: 8.6rem 5.7rem 3.4rem 8.3rem;
+    background-color: $dark-orange;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-image: url(./assets/images/about-our-farm-fav-mask.svg);
+    mask-image: url(./assets/images/about-our-farm-fav-mask.svg);
+    margin-top: 29rem;
+    @include small-tablet {
+      -webkit-mask-image: url(./assets/images/about-our-farm-fav-mask-mob.svg);
+      mask-image: url(./assets/images/about-our-farm-fav-mask-mob.svg);
+      margin-top: -8rem;
+      width: 67rem;
+      padding: 14.8rem 7.3rem 4.4rem 9.6rem;
+      gap: 2rem;
+    }
+  }
+
+  // .about-our-farm__content-favorite-text-box
+
+  &__content-favorite-text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 4.2rem;
+    @include small-tablet {
+      gap: 4rem;
+    }
+  }
+
+  // .about-our-farm__content-favorite-text-title
+
+  &__content-favorite-text-title {
+    @include small-tablet {
+      font-size: 6rem;
+    }
+  }
+
+  // .about-our-farm__content-favorite-text-desc
+
+  &__content-favorite-text-desc {
+    line-height: 130%;
+    @include small-tablet {
+      font-size: 3.2rem;
+    }
+  }
+
+  // .about-our-farm__content-favorite-btn
+
+  &__content-favorite-btn {
+    align-self: flex-end;
+    width: 7.4rem;
+    height: 7.4rem;
+    border-radius: 50%;
+    border: 0.2rem solid $white60;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.active {
+      & .about-our-farm__content-favorite-btn-svg-box {
+        & svg path {
+          fill: $white;
+        }
+      }
+    }
+    @include small-tablet {
+      width: 14rem;
+      height: 14rem;
+      border: 0.4rem solid $white60;
+    }
+  }
+
+  // .about-our-farm__content-favorite-btn-svg-box
+
+  &__content-favorite-btn-svg-box {
+    width: 2.8rem;
+    height: 2.8rem;
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      & path {
+        transition: fill 0.3s;
+      }
+    }
+    @include small-tablet {
+      width: 5.6rem;
+      height: 5.6rem;
+    }
+  }
+}

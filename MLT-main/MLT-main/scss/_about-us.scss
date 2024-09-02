@@ -1,0 +1,186 @@
+.about-us {
+    background: #121820;
+    padding-bottom: 4.5rem;
+    color: #fff;
+}
+.about-us .container {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 4.4rem;
+}
+.about-us-left {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-left: 10rem;
+}
+.about-us-left__title {
+    margin-bottom: 8rem;
+}
+.about-us-left__img {
+    width: 93.8rem;
+    margin-left: -10rem;
+    margin-bottom: 8rem;
+}
+.about-us-left-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    row-gap: 8rem;
+    -webkit-column-gap: 10rem;
+    -moz-column-gap: 10rem;
+    column-gap: 10rem;
+    width: 55rem;
+}
+.about-us-left__item {
+    width: 21.5rem;
+}
+.about-us-left__item-title {
+    margin-bottom: 0.7rem;
+}
+.about-us-left__item-text {
+    color: #7c7c7c;
+}
+.about-us-right {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-right: 10rem;
+}
+.about-us-right__img {
+    width: 86.8rem;
+    margin-right: -10rem;
+    position: relative;
+}
+.about-us-right__img::after {
+    display: block;
+    content: '';
+    background: url(../img/icon/logo-circle.svg) no-repeat;
+    background-size: contain;
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    bottom: 0;
+    left: -7.5rem;
+}
+.about-us-right__text {
+    margin-bottom: 6rem;
+}
+
+@media (max-width: 48em) {
+    .about-us {
+        padding-bottom: 20.4rem;
+
+        & + .working {
+            .container {
+                margin-bottom: 16rem;
+            }
+        }
+    }
+    .about-us .container {
+        width: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 6.6rem;
+    }
+    .about-us-left {
+        -webkit-box-flex: unset;
+        -ms-flex: unset;
+        flex: unset;
+        width: auto;
+        margin-left: 0;
+    }
+    .about-us-left__title {
+        margin-bottom: 2.4rem;
+    }
+    .about-us-left__text {
+        margin-bottom: 4rem;
+    }
+    .about-us-left__img {
+        width: 100%;
+        height: 38.8rem;
+        margin-left: 0;
+        margin-bottom: 6.4rem;
+    }
+    .about-us-left__img img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+    .about-us-left-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        row-gap: unset;
+        -webkit-column-gap: unset;
+        -moz-column-gap: unset;
+        column-gap: unset;
+        gap: 2.4rem;
+        width: auto;
+    }
+    .about-us-left__item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        width: auto;
+    }
+    .about-us-left__item-title {
+        margin-bottom: 0;
+    }
+    .about-us-right {
+        -webkit-box-flex: unset;
+        -ms-flex: unset;
+        flex: unset;
+        margin-right: 0;
+    }
+    .about-us-right__img {
+        width: auto;
+        height: 46rem;
+        margin-right: 0;
+        position: relative;
+    }
+    .about-us-right__img img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+    .about-us-right__img::after {
+        display: block;
+        content: '';
+        background: url(../img/icon/logo-circle.svg) no-repeat;
+        background-size: contain;
+        width: 16.8rem;
+        height: 16.8rem;
+        position: absolute;
+        bottom: -8.4rem;
+        left: 50%;
+        -webkit-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    }
+    .about-us-right__text {
+        margin-bottom: 6rem;
+    }
+}

@@ -1,0 +1,411 @@
+body .outgoing-requests {
+    --normalTextColor: #101010;
+    --subTextColor: #acacac;
+    --switchBtn: #f4f4f4;
+    --switchBtnActive: #101010;
+    --switchBtnActiveColor: #fff;
+    --switchBtnSpan: #f9ec00;
+    --switchBtnSpanColor: #101010;
+    --switchBtnActiveSpan: #f9ec00;
+    --switchBtnActiveSpanColor: #101010;
+    --switcherBorder: unset;
+    --viewBg: #d7d7d7;
+    --viewCircle: #f4f4f4;
+    --viewColor: #aaaaaa;
+    --viewColorActive: #101010;
+    --itemTitle: #101010;
+    --statusAgreedBg: #F9EC00;
+    --statusAgreedText: #101010;
+    --statusWaitingBg: #D7D7D7;
+    --statusWaitingText: #101010;
+    --btnBg: #fff;
+    --btnBgSVG: #101010;
+    --btnBgActive: #101010;
+    --btnBgActiveSVG: #fff;
+    --btnBgActiveSVGrow: #101010;
+    --btnBorder: unset;
+}
+body.color_yd .outgoing-requests {
+    --normalTextColor: #ffffff;
+    --subTextColor: #acacac;
+    --switchBtn: #292929;
+    --switchBtnActive: #f9ec00;
+    --switchBtnActiveColor: #101010;
+    --switchBtnSpan: #f9ec00;
+    --switchBtnSpanColor: #f9ec00;
+    --switchBtnActiveSpan: #101010;
+    --switchBtnActiveSpanColor: #101010;
+    --switcherBorder: unset;
+    --viewBg: #292929;
+    --viewCircle: #f9ec00;
+    --viewColor: #aaaaaa;
+    --viewColorActive: #101010;
+    --itemTitle: #ffffff;
+    --statusAgreedBg: #F9EC00;
+    --statusAgreedText: #101010;
+    --statusWaitingBg: #D7D7D7;
+    --statusWaitingText: #101010;
+    --btnBg: #fff;
+    --btnBgSVG: #101010;
+    --btnBgActive: #101010;
+    --btnBgActiveSVG: #f9ec00;
+    --btnBgActiveSVGrow: #fff;
+    --btnBorder: unset;
+}
+body.color_pl .outgoing-requests {
+    --normalTextColor: #101010;
+    --subTextColor: #acacac;
+    --switchBtn: #f4f4f4;
+    --switchBtnActive: #d01181;
+    --switchBtnActiveColor: #fff;
+    --switchBtnSpan: #101010;
+    --switchBtnSpanColor: #fff;
+    --switchBtnActiveSpan: #101010;
+    --switchBtnActiveSpanColor: #fff;
+    --switcherBorder: unset;
+    --viewBg: #a1acb9;
+    --viewCircle: #f1f4f6;
+    --viewColor: #6c747e;
+    --viewColorActive: #101010;
+    --statusAgreedBg: #D01181;
+    --statusAgreedText: #FFFFFF;
+    --statusWaitingBg: #A1ACB9;
+    --statusWaitingText: #FFFFFF;
+    --itemTitle: #101010;
+    --btnBg: #fff;
+    --btnBgSVG: #101010;
+    --btnBgActive: #101010;
+    --btnBgActiveSVG: #fff;
+    --btnBgActiveSVGrow: #101010;
+    --btnBorder: unset;
+}
+body.color_pd .outgoing-requests {
+    --normalTextColor: #ffffff;
+    --subTextColor: #acacac;
+    --switchBtn: #101010;
+    --switchBtnActive: #d01181;
+    --switchBtnActiveColor: #fff;
+    --switchBtnSpan: #d01181;
+    --switchBtnSpanColor: #fff;
+    --switchBtnActiveSpan: #fff;
+    --switchBtnActiveSpanColor: #d01181;
+    --switcherBorder: 0.1rem solid rgba(255, 255, 255, 0.20);
+    --viewBg: #a1acb9;
+    --viewCircle: #f1f4f6;
+    --viewColor: #6c747e;
+    --viewColorActive: #101010;
+    --itemTitle: #101010;
+    --statusAgreedBg: #D01181;
+    --statusAgreedText: #FFFFFF;
+    --statusWaitingBg: #A1ACB9;
+    --statusWaitingText: #FFFFFF;
+    --btnBg: #fff;
+    --btnBgSVG: #101010;
+    --btnBgActive: #101010;
+    --btnBgActiveSVG: #d01181;
+    --btnBgActiveSVGrow: #fff;
+    --btnBorder: 0.1rem solid #101010;
+}
+
+.outgoing-requests {
+
+    &__top{
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        margin-bottom: 3.2rem;
+    }
+
+    &__title{
+        font-size: 3.2rem;
+        letter-spacing: 0.032rem;
+        line-height: 100%;
+        font-weight: 500;
+        color: var(--normalTextColor);
+    }
+
+    &__box {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+    &__btns {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    &__btn {
+        height: 4.5rem;
+        display: flex;
+        align-items: center;
+        padding: 0 3.2rem;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.016rem;
+        border-radius: 2rem;
+        color: var(--normalTextColor);
+        background: var(--switchBtn);
+        border: var(--switcherBorder);
+        cursor: pointer;
+        gap: 1rem;
+
+        span {
+            width: 2.4rem;
+            height: 2.4rem;
+            color: var(--switchBtnSpanColor);
+            background: var(--switchBtnSpan);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 1.2rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.012rem;
+        }
+
+        &.active {
+            background: var(--switchBtnActive);
+            color: var(--switchBtnActiveColor);
+            border: none;
+            font-weight: 500;
+
+            span {
+                color: var(--switchBtnActiveSpanColor);
+                background: var(--switchBtnActiveSpan);
+            }
+        }
+    }
+    &__change {
+        display: flex;
+        width: fit-content;
+        margin-left: auto;
+        height: 4.6rem;
+        background: var(--viewBg);
+        border-radius: 2.4rem;
+        align-items: center;
+        padding: 0 1.1rem;
+        gap: 1.7rem;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 4.2rem;
+            height: 4.2rem;
+            background: var(--viewCircle);
+            border-radius: 50%;
+            z-index: 0;
+            right: 4.2rem;
+            transition: right 0.5s ease-in-out;
+        }
+        &.right {
+            &::after {
+                right: 0.3rem;
+            }
+        }
+    }
+    &__view {
+        width: 2.4rem;
+        height: 2.4rem;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        svg {
+            path {
+                stroke: var(--viewColor);
+            }
+            circle {
+                fill: var(--viewColor);
+            }
+        }
+
+        &.active {
+            svg {
+                path {
+                    stroke: var(--viewColorActive);
+                }
+                circle {
+                    fill: var(--viewColorActive);
+                }
+            }
+        }
+
+        svg {
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+    }
+    &__other {
+        .outgoing-requests {
+            &__box {
+                display: flex;
+                gap: 2rem;
+                flex-wrap: wrap;
+                // max-height: calc(100vh - 33.6rem);
+                // overflow: auto;
+               
+            }
+            &__item {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 100%;
+                margin-right: 13.5rem;
+
+                &__img {
+                    display: none;
+                }
+
+                &__info {
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 100%;
+                    padding: 2.1rem 2.5rem 2.2rem 2.4rem;
+                }
+
+                &__details {
+                    order: 3;
+                    color: var(--itemTitle);
+                    .request-id {
+                        display: none;
+                    }
+                }
+
+                &__subtitle {
+                    align-items: flex-start;
+                    width: 16.5rem;
+                    .request-category {
+                        display: none;
+                    }
+                }
+
+                &__title {
+                    display: none;
+                    &--row {
+                        display: block;
+                        width: 60rem;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        color: var(--itemTitle);
+                        font-weight: 400;
+                        margin-right: 15.7rem;
+
+                        .bold{
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                &__btn {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .switcher__container {
+        margin-top: 3.2rem;
+    }
+
+    &__item {
+        border-radius: 1.6rem;
+        overflow: hidden;
+        padding: unset;
+        width: 36.75rem;
+
+        &__img {
+            height: 16rem;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &__info {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            font-weight: 500;
+        }
+
+        &__details {
+            display: flex;
+            justify-content: space-between;
+            color: var(--subTextColor);
+        }
+
+        &__title {
+            font-size: 1.8rem;
+            line-height: 120%;
+            color: var(--itemTitle);
+
+            &--row {
+                display: none;
+            }
+        }
+
+        &__subtitle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .request-category {
+                color: var(--subTextColor);
+            }
+
+            .request-status {
+                border-radius: 1.6rem;
+                padding: 0.4rem 1.2rem;
+                letter-spacing: 0.014rem;
+                font-size: 1.4rem;
+
+                &.agreed{
+                    background-color: var(--statusAgreedBg);
+                    color: var(--statusAgreedText);
+                }
+
+                &.rejected {
+                    color: #fff;
+                    background: #BB2323;
+                }
+
+                &.waiting {
+                    background-color: var(--statusWaitingBg);
+                    color: var(--statusWaitingText);
+                }
+            }
+        }
+
+        &__btn {
+            margin-top: 1.2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 0.65rem 0.7rem 0.65rem 1.6rem;
+            border-radius: 3.2rem;
+            border: var(--btnBorder);
+
+            svg{
+                width: 3.6rem;
+                height: 3.6rem;
+            }
+        }
+    }
+}
+
+body.color_pd{
+    .outgoing-requests__item{
+        background-color: #fff;
+        border: unset;
+    }
+}

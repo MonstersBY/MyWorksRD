@@ -1,0 +1,157 @@
+.rabbit-meat {
+  // .rabbit-meat__inner
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    @include small-tablet {
+      gap: 5.6rem;
+    }
+  }
+
+  // .rabbit-meat__content-box
+
+  &__content-box {
+    display: flex;
+    gap: 2rem;
+    @include small-tablet {
+      flex-direction: column-reverse;
+      gap: 2.4rem;
+    }
+  }
+
+  // .rabbit-meat__content-info-box
+
+  &__content-info-box {
+    padding: 4rem;
+    border-radius: 2rem;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    gap: 4.7rem;
+    border: 0.13rem solid $light-grey;
+    @include small-tablet {
+      padding: 6.4rem 4rem;
+      border-radius: 4rem;
+    }
+  }
+
+  // .rabbit-meat__content-text-wrapper
+
+  &__content-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    @include small-tablet {
+      gap: 2.4rem;
+    }
+  }
+
+  // .rabbit-meat__content-text-title
+
+  &__content-text-title {
+  }
+
+  // .rabbit-meat__content-text-box
+
+  &__content-text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    @include small-tablet {
+      gap: 4.5rem;
+    }
+  }
+
+  // .rabbit-meat__content-text
+
+  &__content-text {
+    @include small-tablet {
+      font-size: 2.8rem;
+    }
+  }
+
+  // .rabbit-meat__content-info-svg-box
+
+  &__content-info-svg-box {
+    width: 9.6rem;
+    height: 9.6rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .rabbit-meat__content-img-wrapper
+
+  &__content-img-wrapper {
+    position: relative;
+  }
+
+  &__about {
+    position: absolute;
+    top: -5.4rem;
+    right: 18.3rem;
+    z-index: 20;
+    @include small-tablet {
+      top: -8rem;
+      right: 6.944rem;
+    }
+  }
+  // .rabbit-meat__content-img-box
+
+  &__content-img-box {
+    width: 99.5rem;
+    height: 100%;
+    -webkit-mask-image: url(./assets/images/rabbit-meat-mask.svg);
+    mask-image: url(./assets/images/rabbit-meat-mask.svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include small-tablet {
+      width: 68.6rem;
+      height: 38.6rem;
+      -webkit-mask-image: url(./assets/images/rabbit-meat-mask-min.svg);
+      mask-image: url(./assets/images/rabbit-meat-mask-min.svg);
+    }
+  }
+
+  // .rabbit-meat__info-box
+
+  &__info-box {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    @include small-tablet {
+      flex-direction: column;
+      gap: 2.4rem;
+    }
+  }
+
+  // .rabbit-meat__info-title
+
+  &__info-title {
+    width: 70.5rem;
+    @include small-tablet {
+      width: 100%;
+    }
+  }
+
+  // .rabbit-meat__info-desc
+
+  &__info-desc {
+    width: 99.5rem;
+    @include small-tablet {
+      width: 100%;
+    }
+  }
+}

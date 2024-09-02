@@ -1,0 +1,158 @@
+.footer {
+  padding: 14.5rem 0 6rem;
+  // .footer__inner
+  @include small-tablet {
+    padding: 12rem 0 5rem;
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+    @include small-tablet {
+      gap: 8rem;
+    }
+  }
+
+  // .footer__top
+
+  &__top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14rem 5rem;
+
+    @include small-tablet {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8rem 4rem;
+    }
+  }
+
+  // .footer__top-list-wrapper
+
+  &__top-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    align-items: center;
+    @include small-tablet {
+      align-items: flex-start;
+      gap: 3.2rem;
+    }
+    &--contacts {
+      @include small-tablet {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        position: relative;
+
+        & .footer__top-item {
+          &:last-child {
+            @include small-tablet {
+              position: absolute;
+              bottom: 0;
+              left: -93%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // .footer__top-list-title
+
+  &__top-list-title {
+  }
+
+  // .footer__top-list
+
+  &__top-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    @include small-tablet {
+      width: 100%;
+      align-items: flex-start;
+      gap: 2.4rem;
+    }
+  }
+
+  // .footer__top-item
+
+  &__top-item {
+  }
+
+  // .footer__top-item-link
+
+  &__top-item-link {
+  }
+
+  // .footer__top-item-text
+
+  &__top-item-text {
+  }
+
+  // .footer__top-logo-wrapper
+
+  &__top-logo-wrapper {
+    grid-column: 1/4;
+    @include small-tablet {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+  }
+
+  // .footer__logo-box
+
+  &__logo-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    @include small-tablet {
+      justify-content: flex-start;
+    }
+  }
+
+  // .footer__logo-text
+
+  &__logo-text {
+    @include small-tablet {
+      font-size: 2.4rem;
+    }
+  }
+
+  // .footer__logo-svg-box
+
+  &__logo-svg-box {
+    width: 4.7rem;
+    height: 5.2rem;
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .footer__bottom
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    @include small-tablet {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 2.4rem;
+      & span {
+        display: none;
+      }
+    }
+  }
+
+  // .footer__bottom-text
+
+  &__bottom-text {
+    color: $grey;
+  }
+}

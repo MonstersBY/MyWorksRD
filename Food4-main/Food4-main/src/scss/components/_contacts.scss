@@ -1,0 +1,143 @@
+.contacts {
+  @include small-tablet {
+    padding-top: 2rem;
+  }
+  &__head {
+    display: flex;
+    gap: 3.4rem;
+    align-items: flex-end;
+
+    padding-bottom: 4.8rem;
+
+    &-date {
+      margin-bottom: 1.6rem;
+
+      @include small-tablet {
+        margin-bottom: 0;
+      }
+    }
+
+    @include small-tablet {
+      flex-direction: column;
+      gap: 0.8rem;
+      align-items: flex-start;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+
+    padding-bottom: 3rem;
+
+    @include small-tablet {
+      gap: 1.6rem;
+      padding-bottom: 3.2rem * 2;
+      width: 100%;
+      flex-direction: column;
+    }
+
+    &-item {
+      padding: 4.6rem;
+      background: rgba(255, 255, 255, 0.3);
+      border: 1px solid $white;
+      border-radius: 7rem;
+
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+      width: 100%;
+
+      @include small-tablet {
+        gap: 1.6rem * 2;
+        border-radius: 3.6rem * 2;
+        padding: 2.6rem * 2 1.6rem * 2;
+      }
+
+      &-title {
+        padding-left: 1.8rem;
+        position: relative;
+        display: -webkit-box;
+        -webkit-line-clamp: 1; // количество строк
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        &::before {
+          position: absolute;
+          content: '';
+          background-color: $Blue;
+          width: 1rem;
+          height: 1rem;
+          border-radius: 50%;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        @include small-tablet {
+          padding-left: 3.6rem;
+          &::before {
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__map {
+    height: 61.2rem;
+    border-radius: 7rem;
+    overflow: hidden;
+    background-color: white;
+
+    @include small-tablet {
+      height: 52rem * 2;
+      border-radius: 3.6rem * 2;
+    }
+
+    &-box {
+      position: relative;
+      padding-bottom: 8rem;
+
+      @include small-tablet {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+      }
+    }
+  }
+
+  &__cloud {
+    position: absolute;
+    top: 6rem;
+    left: 6rem;
+    max-width: 56.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    padding: 4.6rem;
+    border: 1px solid var(--white);
+    border-radius: 7rem;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.6);
+
+    @include small-tablet {
+      position: static;
+      width: 100%;
+      max-width: 100%;
+      gap: 4rem;
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      @include small-tablet {
+        gap: 3.2rem;
+      }
+    }
+  }
+}

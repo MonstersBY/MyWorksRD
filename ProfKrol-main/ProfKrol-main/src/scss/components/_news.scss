@@ -1,0 +1,245 @@
+.news {
+  // .news__inner
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    @include small-tablet {
+      gap: 5.2rem;
+    }
+  }
+
+  // .news__title-box
+
+  &__title-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include small-tablet {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5.6rem;
+    }
+  }
+
+  // .news__title
+
+  &__title {
+  }
+
+  // .news__tabs-list
+
+  &__tabs-list {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+    @include small-tablet {
+      width: 100%;
+      overflow: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      &::-webkit-scrollbar-track {
+        display: none;
+      }
+      &::-webkit-scrollbar-thumb {
+        display: none;
+      }
+    }
+  }
+
+  // .news__tabs-item
+
+  &__tabs-item {
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    &::after {
+      position: relative;
+      content: '';
+      display: block;
+      bottom: -0.8rem;
+      width: 0;
+      height: 0.2rem;
+      background: $green;
+      transition: width 0.3s ease-in-out;
+    }
+    &.active,
+    &:hover {
+      color: $green;
+    }
+    &.active::after,
+    &:hover::after {
+      width: 100%;
+    }
+    @include small-tablet {
+      padding-bottom: 1.6rem;
+      white-space: nowrap;
+      &::after {
+        height: 0.4rem;
+        bottom: -1.6rem;
+      }
+    }
+  }
+
+  // .news__list-wrapper
+
+  &__list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  // .news__list
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    @include small-tablet {
+      grid-template-columns: 1fr;
+      gap: 2.4rem;
+    }
+  }
+
+  // .news__item
+
+  &__item {
+  }
+
+  // .news__item-link
+
+  &__item-link {
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    overflow: hidden;
+    border: 0.2rem solid $light-grey;
+
+    @include small-tablet {
+      border-radius: 4rem;
+      border: 0.4rem solid $light-grey;
+    }
+  }
+
+  // .news__item-img-box
+
+  &__item-img-box {
+    width: 100%;
+    height: 27.7rem;
+    position: relative;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include small-tablet {
+      height: 45.8rem;
+    }
+  }
+
+  // .news__item-category
+
+  &__item-category {
+    position: absolute;
+    padding: 0.4rem 1.2rem;
+    background-color: $white;
+    color: $green;
+    border-radius: 2rem;
+    top: 2rem;
+    right: 2rem;
+    @include small-tablet {
+      font-size: 2.8rem;
+      border-radius: 4rem;
+      padding: 1rem 2.4rem;
+      top: 3.2rem;
+      right: 3.2rem;
+    }
+  }
+
+  // .news__item-content-box
+
+  &__item-content-box {
+    padding: 3.2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    position: relative;
+    border-top: 0.2rem solid $light-grey;
+    @include small-tablet {
+        border-top: 0.4rem solid $light-grey;
+        padding: 4rem 3rem;
+        gap: 1.6rem;
+      }
+  }
+
+  // .news__item-content-link
+
+  &__item-content-link {
+    position: absolute;
+    top: -3.5rem;
+    right: 2rem;
+    z-index: 5;
+    border: 0.2rem solid $white;
+    border-radius: 2rem;
+    width: 7rem;
+    height: 7rem;
+    background-color: $green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include small-tablet {
+        width: 9.8rem;
+        height: 9.8rem;
+        border-radius: 2.4rem;
+        border: 0.4rem solid $white;
+        top: -4.8rem;
+        right: 3.2rem;
+      }
+  }
+
+  // .news__item-content-link-svg-box
+
+  &__item-content-link-svg-box {
+    width: 3.2rem;
+    height: 3.2rem;
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .news__item-content-data
+
+  &__item-content-data {
+    color: $grey;
+  }
+
+  // .news__item-content-title
+
+  &__item-content-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; // количество строк
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  // .news__item-content-desk
+
+  &__item-content-desk {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; // количество строк
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  // .news__show-more-btn
+
+  &__show-more-btn {
+  }
+}

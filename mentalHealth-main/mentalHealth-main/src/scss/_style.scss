@@ -1,0 +1,71 @@
+@import './mixins';
+
+$black: #3e4042;
+$blue: #365f7b;
+$green: #05aeb5;
+$white: #ffffff;
+$bg: #eaeff2;
+$gray: #afbfca;
+$light-gray: #e2edf4;
+
+body {
+  background-color: $bg;
+  color: $black;
+  font-family: 'Geometria';
+
+  .lock & {
+    overflow: hidden;
+    touch-action: none;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  position: relative;
+  // overflow: hidden;
+}
+
+* {
+  // outline:  1px solid red;
+}
+// main
+main {
+  flex-grow: 1;
+
+  section {
+    margin: 20rem 0 0;
+    @include small-tablet {
+      margin: 22rem 0 0;
+    }
+    &._first {
+      margin: 3.2rem 0 0rem;
+      @include small-tablet {
+        margin: 6.4rem 0 0rem;
+      }
+    }
+  }
+}
+
+.desktop {
+  display: block;
+
+  @media (max-width: 48em) {
+    display: none;
+  }
+}
+
+.mobile {
+  display: none;
+
+  @media (max-width: 48em) {
+    display: block;
+  }
+}
+
+@import './ui/ui';
+@import './components/_footer';
+@import './components/_header';
+@import './components/_popup';

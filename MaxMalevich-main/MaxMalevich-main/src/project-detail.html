@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://api-maps.yandex.ru/v3/?apikey=4d7b8985-4ebf-4fde-8884-668550d59df1&lang=ru_RU"></script>
+		<title>Детальная проекта</title>
+	</head>
+	<body>
+		<include src="./components/header.html" data-text='{"header": {"class": "anim"}}'></include>
+		<include src="./components/modal.html"></include>
+		<main>
+			<section class="project-detail-baner">
+				<div class="container">
+					<h1 class="project-detail-baner__title h1">Проект Гранат</h1>
+					<div class="project-detail-baner__back">
+						<img src="./assets/images/pages/project-detail/project-baner.webp" alt="" />
+					</div>
+					<div class="project-detail-baner__box">
+						<div class="project-detail-baner__box--img">
+							<img src="./assets/images/pages/project-detail/baner-person.webp" alt="" />
+						</div>
+						<div class="project-detail-baner__box--text">
+							<p class="project-detail-baner__box--job">Дизайнер проекта</p>
+							<h5 class="project-detail-baner__box--name">Оксана Цымбылова</h5>
+							<!-- <a class="project-detail-baner__box--link">
+                                <span>Написать дизайнеру</span>
+                                <img src="./assets/images/icons/arrow.svg" alt="" />
+                            </a> -->
+
+							<a href="#" class="project-detail-baner__box--link link--arrow-right">
+								<span class="reviews__video-link--text">Написать дизайнеру</span>
+
+								<div class="reviews__link-img-box link--arrow-right-img-box">
+									<svg width="54" height="12" viewBox="0 0 54 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 5.72266C0.585786 5.72266 0.25 6.05844 0.25 6.47266C0.25 6.88687 0.585786 7.22266 1 7.22266L1 5.72266ZM53.5303 7.00298C53.8232 6.71009 53.8232 6.23521 53.5303 5.94232L48.7574 1.16935C48.4645 0.876458 47.9896 0.876458 47.6967 1.16935C47.4038 1.46224 47.4038 1.93712 47.6967 2.23001L51.9393 6.47265L47.6967 10.7153C47.4038 11.0082 47.4038 11.4831 47.6967 11.776C47.9896 12.0688 48.4645 12.0688 48.7574 11.776L53.5303 7.00298ZM1 7.22266L53 7.22265L53 5.72265L1 5.72266L1 7.22266Z" fill="white" />
+									</svg>
+									<div class="reviews__link-img-circle link--arrow-right-img-circle"></div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="project-detail-about">
+				<div class="container">
+					<h3 class="project-detail-about__title h3">о проекте</h3>
+					<h5 class="project-detail-about__infos--title mobile h5">Лаконичное и свободное <br />пространство для жизни</h5>
+					<div class="project-detail-about__container">
+						<div class="project-detail-about__img">
+							<img src="./assets/images/pages/project-detail/about-project.webp" alt="" />
+						</div>
+						<div class="project-detail-about__infos">
+							<h5 class="project-detail-about__infos--title desktop h5">Лаконичное и свободное <br />пространство для жизни</h5>
+							<div class="project-detail-about__infos--text hideContent">
+								<p>Основной концепцией интерьера стало свободное, перетекающее пространство, максимально отвечающее потребностям наших клиентов.</p>
+								<p>Отделки и текстуры переходят из одного помещения в другое, создавая ощущение открытости и простора. В зоне прихожей разместились шкафы и системы хранения.</p>
+								<div class="project-detail-about__infos--list">
+									<div class="project-detail-about__infos--item">
+										<div class="project-detail-about__infos--name">Общая стоимость проекта:</div>
+										<a class="project-detail-about__infos--answer" data-popup="#popup__project">По запросу</a>
+									</div>
+									<div class="project-detail-about__infos--item">
+										<div class="project-detail-about__infos--name">Город:</div>
+										<div class="project-detail-about__infos--answer">Москва</div>
+									</div>
+									<div class="project-detail-about__infos--item">
+										<div class="project-detail-about__infos--name">Год реализации:</div>
+										<div class="project-detail-about__infos--answer">2022</div>
+									</div>
+									<div class="project-detail-about__infos--item">
+										<div class="project-detail-about__infos--name">Площадь помещения:</div>
+										<div class="project-detail-about__infos--answer">40 м<sup>2</sup></div>
+									</div>
+									<div class="project-detail-about__infos--item">
+										<div class="project-detail-about__infos--name">Используемые материалы:</div>
+										<div class="project-detail-about__infos--answer">Дерево (шпон), ткань, пластик</div>
+									</div>
+								</div>
+								<p>Основной концепцией интерьера стало свободное, перетекающее пространство, максимально отвечающее потребностям наших клиентов.</p>
+								<p>Отделки и текстуры переходят из одного помещения в другое, создавая ощущение открытости и простора. В зоне прихожей разместились шкафы и системы хранения.</p>
+							</div>
+							<div class="project-detail-about__infos--bottom">
+								<p>Журнал публикации проекта: <a>ссылка</a></p>
+								<!-- <div class="project-detail-about__infos--link">
+                                    <span>Читать подробнее</span>
+                                    <img src="./assets/images/icons/arrow.svg" alt="">
+                                </div> -->
+
+								<div class="project-detail-about__infos--link link--arrow-right">
+									<span class="reviews__video-link--text">Читать подробнее</span>
+
+									<div class="reviews__link-img-box link--arrow-right-img-box">
+										<svg width="54" height="12" viewBox="0 0 54 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 5.72266C0.585786 5.72266 0.25 6.05844 0.25 6.47266C0.25 6.88687 0.585786 7.22266 1 7.22266L1 5.72266ZM53.5303 7.00298C53.8232 6.71009 53.8232 6.23521 53.5303 5.94232L48.7574 1.16935C48.4645 0.876458 47.9896 0.876458 47.6967 1.16935C47.4038 1.46224 47.4038 1.93712 47.6967 2.23001L51.9393 6.47265L47.6967 10.7153C47.4038 11.0082 47.4038 11.4831 47.6967 11.776C47.9896 12.0688 48.4645 12.0688 48.7574 11.776L53.5303 7.00298ZM1 7.22266L53 7.22265L53 5.72265L1 5.72266L1 7.22266Z" fill="white" />
+										</svg>
+										<div class="reviews__link-img-circle link--arrow-right-img-circle"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="project-detail-gallery">
+				<div class="container">
+					<h3 class="project-detail-gallery__title h3">Галерея проекта</h3>
+					<div class="project-detail-gallery__container">
+						<div class="project-detail-gallery__img">
+							<img src="./assets/images/pages/project-detail/project-gallery1.webp" alt="" />
+						</div>
+						<div class="project-detail-gallery__img">
+							<img src="./assets/images/pages/project-detail/project-gallery2.webp" alt="" />
+						</div>
+						<div class="project-detail-gallery__img">
+							<img src="./assets/images/pages/project-detail/project-gallery3.webp" alt="" />
+						</div>
+						<div class="project-detail-gallery__img">
+							<img src="./assets/images/pages/project-detail/project-gallery4.webp" alt="" />
+						</div>
+					</div>
+					<!-- <button class="project-detail-gallery__more text-20-r">
+						<div>Показать ещё</div>
+						<div>
+							<img src="./assets/images/pages/news/news-list-more.svg" alt="" />
+						</div>
+					</button> -->
+
+					<button class="project-detail-gallery__show-more-btn">
+						<span class="project-detail-gallery__show-more-text text-20-r">Показать ещё</span>
+						<div class="project-detail-gallery__show-more-img-box">
+							<svg width="13" height="54" viewBox="0 0 13 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.25 1C7.25 0.585786 6.91421 0.25 6.5 0.25C6.08579 0.25 5.75 0.585786 5.75 1L7.25 1ZM5.96967 53.5303C6.26256 53.8232 6.73744 53.8232 7.03033 53.5303L11.8033 48.7574C12.0962 48.4645 12.0962 47.9896 11.8033 47.6967C11.5104 47.4038 11.0355 47.4038 10.7426 47.6967L6.5 51.9393L2.25736 47.6967C1.96447 47.4038 1.48959 47.4038 1.1967 47.6967C0.903806 47.9896 0.903806 48.4645 1.1967 48.7574L5.96967 53.5303ZM5.75 1L5.75 53H7.25L7.25 1L5.75 1Z" fill="white" />
+							</svg>
+							<div class="project-detail-gallery__show-more-img-circle"></div>
+						</div>
+					</button>
+				</div>
+			</section>
+			<section class="project-detail-video">
+				<div class="container">
+					<h3 class="project-detail-video__title h3">Воплощенный в реальность интерьер мечты</h3>
+					<a href="./assets/video/path.mp4" data-fancybox class="project-detail-video__img">
+						<img src="./assets/images/pages/project-detail/project-video-prev.webp" alt="" />
+						<div class="project-detail-video__play">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9.98593 6.90014C8.69252 6.07706 7 7.00616 7 8.53925V16.4607C7 17.9938 8.69252 18.9229 9.98593 18.0999L16.21 14.1391C17.4097 13.3757 17.4097 11.6243 16.21 10.8609L9.98593 6.90014Z" fill="#130F0B" />
+							</svg>
+						</div>
+					</a>
+				</div>
+			</section>
+
+			<include src="./components/feedback.html"></include>
+		</main>
+		<include src="./components/ui/btn_top.html"></include>
+		<include src="./components/footer.html"></include>
+	</body>
+</html>

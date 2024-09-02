@@ -1,0 +1,110 @@
+.application {
+  padding: 0 0 16.5rem;
+  @include small-tablet {
+    padding: 0 0 12rem;
+  }
+  &__container {
+    width: 162.5rem;
+    @include small-tablet {
+      width: 100%;
+    }
+  }
+  // .application__inner
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 7.2rem;
+    @include small-tablet {
+        gap: 8rem;
+      }
+  }
+
+  // .application__title
+
+  &__title {
+    align-self: center;
+    text-align: center;
+    @include small-tablet {
+        align-self: flex-start;
+        text-align: left;
+      }
+  }
+
+  // .application__form
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 7.2rem;
+    @include small-tablet {
+        gap: 8rem;
+      }
+  }
+
+  // .application__form-box
+
+  &__form-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4.4rem 2.4rem;
+    @include small-tablet {
+        grid-template-columns:  1fr;
+        gap: 4.8;
+      }
+  }
+
+  // .application__input
+
+  &__input {
+    &.comment {
+      grid-column: 1/5;
+    }
+    @include small-tablet {
+        &.comment {
+            grid-column: 1/2;
+          }
+      }
+  }
+
+  // .application__button
+
+  &__button {
+    align-self: center;
+    @include small-tablet {
+        align-self: flex-start;
+      }
+  }
+}
+.container {
+}
+.tl1 {
+}
+.input {
+}
+.drop-down {
+  // .drop-down__arrow
+
+  &__arrow {
+  }
+
+  // .drop-down__menu
+
+  &__menu {
+  }
+
+  // .drop-down__menu-item
+
+  &__menu-item {
+  }
+}
+.comment {
+}
+.button {
+}
+.button-text {
+}
+.txt18 {
+}
+.button-svg-box {
+}

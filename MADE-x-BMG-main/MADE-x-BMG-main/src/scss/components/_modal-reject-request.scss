@@ -1,0 +1,110 @@
+body .modal__reject-request {
+    --textareaTitle: #101010;
+    --textareaBg: #F4F4F4;
+    --textareaBorder: unset;
+    --textareaColor: #101010;
+    --btnCancelBg: #D7D7D7;
+    --btnCancelColor: #101010;
+}
+body.color_yd .modal__reject-request {
+    --textareaTitle: #ACACAC;
+    --textareaBg: #292929;
+    --textareaBorder: unset;
+    --textareaColor: #ffffff;
+    --btnCancelBg: #292929;
+    --btnCancelColor: #FFFFFF;
+}
+body.color_pl .modal__reject-request{
+    --textareaTitle: #101010;
+    --textareaBg: #f1f4f6;
+    --textareaBorder: unset;
+    --textareaColor: #101010;
+    --btnCancelBg: #A1ACB9;
+    --btnCancelColor: #FFFFFF;
+}
+body.color_pd .modal__reject-request{
+    --textareaTitle: #ACACAC;
+    --textareaBg: #101010;
+    --textareaBorder: 0.1rem solid rgba(255, 255, 255, 0.20);
+    --textareaColor: #ffffff;
+    --btnCancelBg: #292929;
+    --btnCancelColor: #FFFFFF;
+}
+
+.modal__reject-request {
+    .modal-wrapper{
+        padding: 4rem 3.4rem 4rem 4rem;
+        width: 53.4rem;
+    }
+    &__title {
+        margin-bottom: 2.4rem;
+        text-align: center;
+        font-size: 2.4rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%;
+        letter-spacing: 0.024rem;
+    }
+
+    &__textarea {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        margin-bottom: 4rem;
+
+        .title {
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 93.75%;
+            color: var(--textareaTitle);
+        }
+
+        .textarea-wrapper{
+            padding: 1.8rem 1.6rem;
+            border-radius: 1.6rem;
+            background-color: var(--textareaBg);
+            border: var(--textareaBorder);
+            height: 14rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+
+            textarea {
+                width: 100%;
+                resize: none;
+                font-weight: 500;
+                color: var(--textareaColor);
+                flex: 1;
+
+                &::placeholder{
+                    color:#ACACAC;
+                }
+            }
+
+            .max-length, .max-length span{
+                margin-top: auto;
+               align-self: flex-end;
+                color: #ACACAC;
+                font-size: 1.2rem;
+                line-height: 125%;
+                font-weight: 500;
+            }
+        }
+    }
+
+    &__btns{
+        display: flex;
+        gap: 0.8rem;
+        align-items: center;
+
+        .btn{
+            width: 50%;
+            padding: 1.6rem 7.25rem;
+        }
+
+        .btn__cancel{
+            background-color: var(--btnCancelBg);
+            color: var(--btnCancelColor);
+        }
+    }
+}

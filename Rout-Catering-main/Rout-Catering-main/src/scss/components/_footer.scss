@@ -1,0 +1,142 @@
+.footer {
+  padding: 5.2rem 0;
+  @include small-tablet {
+    padding: 8rem 0;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    @include small-tablet {
+      gap: 8rem;
+    }
+  }
+  &__logo {
+    width: 7.3rem;
+    display: block;
+    @include small-tablet {
+      width: 15.6rem;
+    }
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__nav {
+    display: flex;
+    gap: 4rem;
+    @include small-tablet {
+      flex-direction: column;
+      gap: 4rem;
+      align-items: center;
+    }
+    &-link {
+      color: $green;
+      transition: color 0.4s ease;
+      &:hover {
+        color: $LightGreen;
+      }
+    }
+  }
+  &__contacts {
+    color: $green;
+    display: flex;
+    gap: 3.2rem;
+    @include small-tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &-link {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &::before {
+        content: '';
+        display: block;
+        width: 3.2rem;
+        height: 3.2rem;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-right: 1.2rem;
+        @include small-tablet {
+          width: 4.8rem;
+          height: 4.8rem;
+        }
+      }
+      &._address {
+        &::before {
+          background-image: url(./assets/images/icons/address-point_dark.svg);
+        }
+      }
+      &._email {
+        &::before {
+          background-image: url(./assets/images/icons/mail_dark.svg);
+        }
+      }
+      &._tel {
+        flex-direction: row;
+        p {
+          display: flex;
+          flex-direction: column;
+        }
+        &::before {
+          background-image: url(./assets/images/icons/phone_dark.svg);
+        }
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: $green;
+    padding: 2rem 0 0;
+    border-top: solid 0.1rem $textAndLine;
+    @include small-tablet {
+      flex-direction: column;
+      padding: 8rem 0 0;
+    }
+    &-text {
+        &:not(:first-child) {
+          margin-left: 2rem;
+          @include small-tablet {
+            margin: 2.4rem 0 4rem;
+          }
+        }
+    }
+    &-inc {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 1.4rem;
+        @include small-tablet {
+          margin: 0;
+        }
+        &-icon {
+            width: 3.2rem;
+            height: 3.2rem;
+            margin-right: 1rem;
+            @include small-tablet {
+              margin: 0;
+              width: 7.6rem;
+              height: 7.6rem;
+            }
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        &-text {
+          text-align: end;
+          span {
+            font-weight: 700;
+          }
+        }
+    }
+  }
+}

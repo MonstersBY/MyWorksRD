@@ -1,0 +1,167 @@
+.det-vacancies {
+  // .det-vacancies__inner
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    @include small-tablet {
+      gap: 4.8rem;
+    }
+  }
+
+  // .det-vacancies__title
+
+  &__title {
+    text-transform: uppercase;
+  }
+
+  // .det-vacancies__btn-box
+
+  &__btn-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    @include small-tablet {
+      flex-direction: column;
+      gap: 3.2rem;
+      align-items: flex-start;
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  // .det-vacancies__btn
+
+  &__btn {
+    padding: 1.8rem 8rem;
+    @include small-tablet {
+      width: fit-content;
+      font-size: 2.4rem;
+    }
+  }
+
+  // .det-vacancies__info-row
+
+  &__info-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 3.2rem 0;
+    border-top: 0.2rem solid $black;
+    border-bottom: 0.2rem solid $black;
+    @include small-tablet {
+      grid-template-columns: 1fr;
+      padding: 4.8rem 0;
+      gap: 4rem;
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  // .det-vacancies__info-box
+
+  &__info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    @include small-tablet {
+      gap: 1.6rem;
+    }
+  }
+
+  // .det-vacancies__info-title
+
+  &__info-title {
+  }
+
+  // .det-vacancies__info-desc
+
+  &__info-desc {
+  }
+
+  // .det-vacancies__vacancie-box
+
+  &__vacancie-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    width: 103.9rem;
+    @include small-tablet {
+      width: 100%;
+      gap: 4.8rem;
+    }
+  }
+
+  // .det-vacancies__vacancie-info-box
+
+  &__vacancie-info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    @include small-tablet {
+      gap: 2.4rem;
+    }
+  }
+
+  // .det-vacancies__vacancie-info-company-text
+
+  &__vacancie-info-company-text {
+  }
+
+  // .det-vacancies__vacancie-info-text-box
+
+  &__vacancie-info-text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  // .det-vacancies__vacancie-info-text
+
+  &__vacancie-info-text {
+  }
+
+  // .det-vacancies__vacancie-list-box
+
+  &__vacancie-list-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    @include small-tablet {
+      gap: 2.4rem;
+    }
+  }
+
+  // .det-vacancies__vacancie-list-title
+
+  &__vacancie-list-title {
+  }
+
+  // .det-vacancies__vacancie-list
+
+  &__vacancie-list {
+    padding-left: 3rem;
+    @include small-tablet {
+      padding-left: 5rem;
+    }
+  }
+
+  // .det-vacancies__vacancie-item
+
+  &__vacancie-item {
+    list-style-type: disc;
+  }
+
+  // .det-vacancies__img-box
+
+  &__img-box {
+    width: 103.9rem;
+    height: 78rem;
+    border-radius: 6rem;
+    overflow: hidden;
+    @include small-tablet {
+      width: 68.6rem;
+      height: 51.6rem;
+      border-radius: 4rem;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@import '../components/_our_machines';
+@import '../components/_fancybox_change';
+@import '../components/_benchs';
+@import '../components/_popup-order';
+@import '../components/_popup__application';
+
+
+.promotions__test {
+    overflow: hidden;
+    @media (max-width: 48em) {
+        display: none;
+    }
+}
+.promotions__baner-container {
+    // position: relative;
+    // height: 100vh;
+    // width: 100%;
+    // overflow: visible;
+  
+    // .promotions__banner {
+    //   position: absolute;
+    //   height: 100%;
+    //   background-color: #f3f3f3;
+    // }
+    height: 80rem;
+    overflow: hidden;
+
+    .promotions__banner-right--item {
+        height: 80rem;
+        overflow: hidden;
+        width: 54.7rem;
+    }
+    #triggerWrap {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+
+        .trigger {
+            width: 100%;
+            height: 80rem;
+        }
+    }
+}
+.promotions__banner.mobile {
+    display: none;
+    
+    @media (max-width: 48em) {
+        display: flex;
+    }
+}

@@ -1,0 +1,184 @@
+.articles-detail {
+    &--container {
+        border-radius: 5.2rem;
+        background: #E8F0F5 url(../../assets/images/bg-white.webp) no-repeat top / cover;
+        color: rgb(46, 46, 46);
+        padding: 6.5rem;
+        display: grid;
+        column-gap: 3.7rem;
+        grid-template-columns: auto 64rem;
+        gap: 18.2rem;
+    }
+    &--text {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+
+        .h3 {
+            margin-bottom: 0.8rem;
+        }
+
+        &>div {
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+        }
+        ul {
+            line-height: 120%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+
+            li {
+                padding-left: 2.2rem;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    width: 1rem;
+                    height: 1.5rem;
+                    position: absolute;
+                    background: url(../../assets/images/style-list.svg);
+                    background-size: contain;
+                    top: 0.2rem;
+                    left: 0rem;
+                }
+            }
+        }
+    }
+    &--other-title {
+        margin-bottom: 4rem;
+        text-transform: uppercase;
+    }
+    &--list {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+    }
+    &--item {
+        padding: 1.2rem;
+        border-radius: 2rem;
+        display: flex;
+        gap: 2.4rem;
+        background: #FFF;
+
+        &-img {
+            width: 18rem;
+            height: 16rem;
+            flex: none;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 0.6rem;
+            }
+        }
+        &-block {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            strong {
+                display: -webkit-box;
+                -webkit-line-clamp: 2; //количество текста который будет отображатся
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            span {
+                color: #939CA9;
+            }
+        }
+    }
+}
+
+@include small-tablet {
+    .articles-detail {
+        &--container {
+            background: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 8rem;
+        }
+        &--text {
+            border-radius: 4.8rem;
+            padding: 4.8rem 3.2rem;
+            background: #E8F0F5 url(../../assets/images/bg-white.webp) no-repeat top / cover; 
+            gap: 4.8rem;
+    
+            .txt18 {
+                font-weight: 400;
+                font-size: 3rem;
+                line-height: 150%;
+                letter-spacing: 0.03em;
+            }
+            .h3 {
+                margin-bottom: 2.4rem;
+                font-size: 4rem;
+                line-height: 140%;
+            }
+    
+            &>div {
+                margin-bottom: 2.4rem;
+            }
+            ul {
+                font-weight: 400;
+                font-size: 3rem;
+                line-height: 150%;
+                letter-spacing: 0.03em;
+                gap: 2.4rem;
+    
+                li {
+                    padding-left: 3.2rem;
+                    position: relative;
+    
+                    &::after {
+                        width: 1.6rem;
+                        height: 2.4rem;
+                        background-repeat: no-repeat;
+                        top: 1rem;
+                    }
+                }
+            }
+        }
+        &--other-title {
+            margin-bottom: 4rem;
+            text-transform: uppercase;
+            color: #FFF;
+            font-size: 4.8rem;
+            line-height: 120%;
+        }
+        &--list {
+            gap: 2.4rem;
+        }
+        &--item {
+            padding: 1.2rem;
+            border-radius: 2rem;
+            gap: 2.4rem;
+    
+            &-img {
+                width: 19rem;
+                height: 17rem;
+    
+                img {
+                    border-radius: 1rem;
+                }
+            }
+            &-block {
+                gap: 1rem;
+    
+                strong {
+                    font-size: 3rem;
+                    line-height: 150%;
+                    letter-spacing: 0.03em;
+                }
+                span {
+                    font-size: 2.4rem;
+                    line-height: 140%;
+                }
+            }
+        }
+    }
+}

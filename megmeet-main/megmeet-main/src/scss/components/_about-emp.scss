@@ -1,0 +1,33 @@
+.about-emp {
+    .demoroom-gallery__slide {
+        height: 100%;
+    }
+    &__slide {
+        width: 100%;
+        height: 41.4rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .demoroom-gallery__swiper-hiden {
+        height: 121rem;
+    }
+}
+
+@include small-tablet {
+    .about-emp {
+
+        &__slide {
+            height: 75.2rem;
+        }
+        .demoroom-gallery__slide.swiper-slide {
+            height: 100%;
+        }
+        .demoroom-gallery__swiper-hiden {
+            height: 100%;
+        }
+    }
+}

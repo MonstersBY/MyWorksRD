@@ -1,0 +1,77 @@
+.docs {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  &__list {
+    width: 63.1rem;
+    height: 46.6rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 3.2rem 16.5rem;
+
+    @include small-tablet {
+      gap: 1.2rem * 2;
+      flex-wrap: nowrap;
+      width: 100%;
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
+      height: fit-content;
+    }
+  }
+  &__item {
+    display: flex;
+    gap: 2.4rem;
+    align-items: flex-start;
+   
+    &:not(:first-child) {
+      @include small-tablet {
+      
+      }
+    }
+
+    @include small-tablet {
+      gap: 2rem;
+    }
+
+    &-icon {
+      width: 8rem;
+      height: 8rem;
+      min-width: 8rem;
+      min-height: 8rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $white;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.3);
+
+      svg {
+        display: block;
+        width: 2.1rem;
+        height: 2.4rem;
+        -o-object-fit: contain;
+        object-fit: contain;
+
+        @include small-tablet {
+          width: 4rem;
+          height: 4rem;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    display: none;
+    color: $Blue;
+    font-weight: 700;
+
+    @include small-tablet {
+      display: block;
+    }
+  }
+}

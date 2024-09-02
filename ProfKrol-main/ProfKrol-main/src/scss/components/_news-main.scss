@@ -1,0 +1,95 @@
+.news-main {
+  // .news-main__inner
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    position: relative;
+    @include small-tablet {
+    }
+  }
+
+  // .news-main__title
+
+  &__title {
+    @include small-tablet {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  // .news-main__swiper
+
+  &__swiper {
+    width: 100%;
+  }
+
+  // .news-main__swiper-wrapper
+
+  &__swiper-wrapper {
+  }
+
+  // .news-main__swiper-slide
+
+  &__swiper-slide {
+  }
+
+  // .news-main__btn-box
+
+  &__btn-box {
+    align-self: center;
+    @include small-tablet {
+      align-self: flex-start;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  // .news-main__show-more-btn
+
+  &__show-more-btn {
+    display: block;
+  }
+
+  // .news-main__swiper-btn-box
+
+  &__swiper-btn-box {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    @include small-tablet {
+      position: static;
+      gap: 1.6rem;
+    }
+  }
+
+  // .news-main__swiper-btn
+
+  &__swiper-btn {
+  }
+
+  // .news-main__swiper-btn--prev
+
+  &__swiper-btn--prev {
+  }
+
+  // .news-main__swiper-btn-svg-box
+
+  &__swiper-btn-svg-box {
+  }
+
+  &__swiper-btn--prev.swiper-button-prev,
+  &__swiper-btn--next.swiper-button-next {
+    position: static;
+  }
+
+  // .news-main__swiper-btn--next
+
+  &__swiper-btn--next {
+  }
+}

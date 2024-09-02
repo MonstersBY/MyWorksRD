@@ -1,0 +1,723 @@
+.description {
+  // .description__inner
+
+  &__inner {
+    display: flex;
+    gap: 4.3rem;
+    @include small-tablet {
+      flex-direction: column;
+      gap: 22rem;
+    }
+  }
+
+  // .description__accordion-wrapper
+
+  &__accordion-wrapper {
+    width: 110.6rem;
+    flex-shrink: 0;
+    margin-top: -4rem;
+    height: fit-content;
+    @include small-tablet {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  // .description__accordion
+
+  &__accordion {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .description__accordion-item
+
+  &__accordion-item {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    @include small-tablet {
+      margin: 0 -2rem;
+      padding: 0 2rem;
+      width: 75rem;
+    }
+    &:not(:last-of-type) {
+      & .description__accordion-item-header.active + .description__accordion-item-body {
+        margin-bottom: 3.2rem;
+        @include small-tablet {
+          margin-bottom: 6.4rem;
+        }
+      }
+    }
+  }
+
+  // .description__accordion-item-header
+
+  &__accordion-item-header {
+    padding: 4rem 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 0.1rem solid $gray;
+    border-bottom: 0.1rem solid $gray;
+    transition: border-top 0.8s, border-bottom 0.8s;
+    &.active + .description__accordion-item-body {
+      @include small-tablet {
+        margin-bottom: 6.4rem;
+        width: 100%;
+      }
+    }
+
+    &.active + .description__accordion-item-body--table {
+      @include small-tablet {
+        width: 75rem;
+        margin: 0 -2rem 6.4rem;
+      }
+    }
+    &.active .description__accordion-svg-wrapper {
+      background-color: $green;
+    }
+    &.active .description__accordion-svg-box svg path {
+      stroke: $white;
+    }
+    &.active {
+      border-top: 0.1rem solid transparent;
+      border-bottom: 0.1rem solid transparent;
+      @include small-tablet {
+        border-top: 0.2rem solid transparent;
+        border-bottom: 0.2rem solid transparent;
+      }
+    }
+    @include small-tablet {
+      padding: 6.4rem 0;
+      border-top: 0.2rem solid $gray;
+      border-bottom: 0.2rem solid $gray;
+    }
+  }
+
+  // .description__accordion-title
+
+  &__accordion-title {
+    font-family: 'OpenSans';
+    font-weight: 600;
+    font-size: 3.2rem;
+    @include small-tablet {
+      font-size: 3.6rem;
+    }
+  }
+
+  // .description__accordion-svg-wrapper
+
+  &__accordion-svg-wrapper {
+    width: 6rem;
+    height: 6rem;
+    background-color: $white;
+    transition: background-color 0.8s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    @include small-tablet {
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+
+  // .description__accordion-svg-box
+
+  &__accordion-svg-box {
+    width: 2.4rem;
+    height: 2.4rem;
+    transition: transform 0.8s;
+
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      & path {
+        stroke: $black;
+
+        transition: fill 0.8s, stroke 0.8s;
+      }
+    }
+    @include small-tablet {
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+  }
+
+  // .description__accordion-item-body
+
+  &__accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s, margin-bottom 0.8s;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    @include small-tablet {
+      gap: 6.4rem;
+    }
+  }
+
+  // .description__accordion-item-img-wrapper
+
+  &__accordion-item-img-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    @include small-tablet {
+      gap: 2rem;
+    }
+  }
+
+  // .description__accordion-item-img-box
+
+  &__accordion-item-img-box {
+    width: 5.4rem;
+    height: 5.4rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include small-tablet {
+      width: 10.8rem;
+      height: 10.8rem;
+    }
+  }
+
+  // .description__accordion-item-text-box
+
+  &__accordion-item-text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    @include small-tablet {
+      gap: 6.4rem;
+    }
+  }
+
+  // .description__accordion-item-text
+
+  &__accordion-item-text {
+    @include small-tablet {
+      font-size: 3rem;
+    }
+  }
+
+  // .description__accordion-item-list-box
+
+  &__accordion-item-list-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    @include small-tablet {
+      gap: 4rem;
+    }
+  }
+
+  // .description__accordion-item-list-title
+
+  &__accordion-item-list-title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    @include small-tablet {
+      font-size: 3rem;
+    }
+  }
+
+  // .description__accordion-item-list-wrapper
+
+  &__accordion-item-list-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    @include small-tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+    }
+  }
+
+  // .description__accordion-item-list
+
+  &__accordion-item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    @include small-tablet {
+      gap: 2.4rem;
+    }
+  }
+
+  // .description__accordion-item-item
+
+  &__accordion-item-item {
+    display: flex;
+    gap: 0.8rem;
+    @include small-tablet {
+      gap: 1.6rem;
+      font-size: 3rem;
+    }
+  }
+
+  // .description__accordion-item-item-num
+
+  &__accordion-item-item-num {
+    font-weight: 600;
+    color: $green;
+  }
+
+  // .description__accordion-item-item-text
+
+  &__accordion-item-item-text {
+  }
+
+  // .description__demo-box
+
+  &__demo-box {
+    position: sticky;
+    top: 15rem;
+    left: 0;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-image: url(./assets/images/description-demo-mask.svg);
+    mask-image: url(./assets/images/description-demo-mask.svg);
+    background-color: $white;
+  }
+
+  // .description__demo-content-box
+
+  &__demo-content-box {
+    padding: 3.2rem 3.3rem 4rem 3.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    @include small-tablet {
+      gap: 4rem;
+      padding: 4.4rem 4rem 4.8rem;
+    }
+  }
+
+  // .description__demo-title
+
+  &__demo-title {
+  }
+
+  // .description__demo-btn-box
+
+  &__demo-btn-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    @include small-tablet {
+      gap: 6.4rem;
+    }
+  }
+
+  // .description__demo-desc
+
+  &__demo-desc {
+    @include small-tablet {
+      font-size: 3rem;
+    }
+  }
+
+  // .description__demo-btn
+
+  &__demo-btn {
+    width: fit-content;
+    @include small-tablet {
+      width: 100%;
+      padding: 3.8rem;
+      font-size: 3.2rem;
+    }
+  }
+
+  // .description__demo-img-box
+
+  &__demo-img-box {
+    width: 53.4rem;
+    height: 28.4rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include small-tablet {
+      width: 71rem;
+      height: 37.6rem;
+    }
+  }
+
+  // .description__accordion-table-wrapper
+
+  &__accordion-table-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    @include small-tablet {
+      gap: 4rem;
+    }
+  }
+
+  // .description__accordion-table-wrapper-title-box
+
+  &__accordion-table-wrapper-title-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include small-tablet {
+      padding: 0 2rem;
+      flex-direction: column;
+      gap: 2.4rem;
+      align-items: flex-start;
+    }
+  }
+
+  // .description__accordion-table-wrapper-title
+
+  &__accordion-table-wrapper-title {
+    text-transform: uppercase;
+    @include small-tablet {
+      font-weight: 600;
+      font-size: 3rem;
+      line-height: 140%;
+      text-transform: uppercase;
+    }
+  }
+
+  // .description__accordion-table
+
+  &__accordion-table {
+    display: flex;
+    flex-direction: column;
+    @include small-tablet {
+      overflow: auto;
+      width: 75rem;
+      padding: 0 2rem;
+      &::-webkit-scrollbar,
+      &::-webkit-scrollbar-track,
+      &::-webkit-scrollbar-thumb {
+        display: none;
+      }
+    }
+    &--characteristic {
+      & .description__accordion-table-row {
+        @include small-tablet {
+          grid-template-columns: 42.4rem 108.3rem;
+        }
+      }
+    }
+  }
+
+  // .description__accordion-table-row
+
+  &__accordion-table-row {
+    display: grid;
+    grid-template-columns: 21.2rem 89.4rem;
+    border: 0.1rem solid $gray;
+    border-top: unset;
+    &:first-of-type {
+      border-top: 0.1rem solid $gray;
+
+      @include small-tablet {
+        border-top: 0.2rem solid $gray;
+      }
+    }
+
+    @include small-tablet {
+      border: 0.2rem solid $gray;
+      border-top: unset;
+      border-left: unset;
+      width: fit-content;
+      grid-template-columns: 42.4rem 153.2rem;
+      position: relative;
+    }
+  }
+
+  // .description__accordion-table-title
+
+  &__accordion-table-title {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    border-right: 0.1rem solid $gray;
+    @include small-tablet {
+      border-right: 0.2rem solid $gray;
+      border-left: 0.2rem solid $gray;
+      background-color: $background;
+      font-size: 3rem;
+      padding: 2rem 2.4rem;
+      position: sticky;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 2rem;
+
+        top: -0.2rem;
+        bottom: -0.2rem;
+        left: -2.2rem;
+        background-color: $background;
+      }
+    }
+  }
+
+  // .description__accordion-table-list
+
+  &__accordion-table-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    box-sizing: border-box;
+  }
+
+  // .description__accordion-table-item
+
+  &__accordion-table-item {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    border-right: 0.1rem solid $gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    word-break: break-word;
+    overflow-wrap: break-word;
+
+    &:last-of-type {
+      // border-top: 0.1rem solid $gray;
+    }
+    &--empty {
+      font-weight: 600;
+      font-size: 2rem;
+      @include small-tablet {
+        font-size: 4rem;
+      }
+    }
+    @include small-tablet {
+      font-size: 3rem;
+    }
+  }
+
+  // .description__accordion-table-wrapper-info-box
+
+  &__accordion-table-wrapper-info-box {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    @include small-tablet {
+      gap: 4.6rem;
+    }
+  }
+
+  // .description__accordion-table-wrapper-info
+
+  &__accordion-table-wrapper-info {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    @include small-tablet {
+      gap: 1.2rem;
+    }
+  }
+
+  // .description__accordion-table-item-img-box
+
+  &__accordion-table-item-img-box {
+    width: 1.6rem;
+    height: 1.7rem;
+    flex-shrink: 0;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include small-tablet {
+      width: 3.2rem;
+      height: 3.4rem;
+    }
+  }
+
+  // .description__accordion-table-wrapper-info-text
+
+  &__accordion-table-wrapper-info-text {
+    @include small-tablet {
+      font-size: 3rem;
+    }
+  }
+
+  // .description__accordion-table-img-box
+
+  &__accordion-table-img-box {
+    width: 53.3rem;
+    height: auto;
+    & img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    @include small-tablet {
+      width: 71rem;
+      margin: 0 2rem;
+    }
+  }
+
+  // .description__accordion-characteristic-box
+
+  &__accordion-characteristic-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    width: 96.3rem;
+    @include small-tablet {
+      width: 100%;
+      gap: 4rem;
+      padding: 0 2rem;
+    }
+  }
+
+  // .description__accordion-characteristic-title
+
+  &__accordion-characteristic-title {
+    text-transform: uppercase;
+    @include small-tablet {
+      font-size: 3rem;
+    }
+  }
+
+  // .description__accordion-characteristic-text
+
+  &__accordion-characteristic-text {
+    @include small-tablet {
+      font-size: 3rem;
+    }
+  }
+
+  // .description__accordion-characteristic-list-wrapper
+
+  &__accordion-characteristic-list-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 7.2rem;
+    width: 75rem;
+    @include small-tablet {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+    }
+  }
+
+  // .description__accordion-characteristic-list
+
+  &__accordion-characteristic-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    @include small-tablet {
+      gap: 2.4rem;
+    }
+  }
+
+  // .description__accordion-characteristic-item
+
+  &__accordion-characteristic-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    @include small-tablet {
+      gap: 0.8rem;
+    }
+  }
+
+  // .description__accordion-characteristic-item-title
+
+  &__accordion-characteristic-item-title {
+    color: $gray-text;
+    @include small-tablet {
+      font-size: 3rem;
+    }
+  }
+
+  // .description__accordion-characteristic-item-text
+
+  &__accordion-characteristic-item-text {
+    @include small-tablet {
+      font-size: 3rem;
+    }
+  }
+
+  // .description__accordion-characteristic-info-list-box
+
+  &__accordion-characteristic-info-list-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    width: 75rem;
+    @include small-tablet {
+      width: 100%;
+      padding: 0 2rem;
+      gap: 4rem;
+    }
+  }
+
+  // .description__accordion-characteristic-info-list-title
+
+  &__accordion-characteristic-info-list-title {
+    text-transform: uppercase;
+    @include small-tablet {
+      font-size: 3rem;
+    }
+  }
+
+  // .description__accordion-characteristic-info-list
+
+  &__accordion-characteristic-info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    @include small-tablet {
+      gap: 2.4rem;
+    }
+  }
+
+  // .description__accordion-characteristic-info-item
+
+  &__accordion-characteristic-info-item {
+    padding-left: 2.6rem;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0.2rem;
+      top: 0.7rem;
+      width: 1rem;
+      height: 1rem;
+      background-color: $green;
+      transform: rotate(45deg);
+      @include small-tablet {
+        top: 1.4rem;
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+
+    @include small-tablet {
+      padding-left: 4rem;
+      font-size: 3.6rem;
+    }
+  }
+}

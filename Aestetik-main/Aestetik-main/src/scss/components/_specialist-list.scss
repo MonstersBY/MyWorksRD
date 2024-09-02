@@ -1,0 +1,116 @@
+.specialist-list {
+    &--other {
+        .specialist-list_item-name {
+            display: -webkit-box;
+            -webkit-line-clamp: 2; //количество текста который будет отображатся
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    &_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3.2rem;
+        margin-bottom: 6.5rem;
+    }
+    &_item {
+        position: relative;
+        padding: 1.2rem 1.2rem 3.2rem 1.2rem;
+        border-radius: 2rem;
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            backdrop-filter: blur(24px);
+            background: rgba(217, 217, 217, 0.1);
+            border-radius: 2rem;
+            z-index: -1;
+        }
+
+        &:hover {
+            .specialist-list_item-img {
+                img {
+                    transform: scale(1.4) translateY(6rem);
+                }
+            }
+            box-shadow: 8px 8px 200px rgba(255, 255, 255, 0.3), 14px 14px 150px rgba(123, 229, 255, 0.5);
+        }
+
+        &-img {
+            height: 47.6rem;
+            margin-bottom: 2.4rem;
+            overflow: hidden;
+            border-radius: 1.6rem;
+            background: #E8F0F5 url(../../assets/images/bg-white.webp) no-repeat top/cover;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform .5s;
+                // mix-blend-mode: multiply;
+            }
+        }
+        &-name {
+            padding: 0 2rem;
+            margin-bottom: 1rem;
+        }
+        &-job {
+            padding: 0 2rem;
+            color: rgba(147, 156, 169, 1);
+        }
+    }
+
+    .btn-white {
+        margin: auto;
+    }
+}
+
+@include small-tablet {
+    .specialist-list {
+        &_grid {
+            grid-template-columns: 1fr;
+            gap: 4rem;
+            margin-bottom: 4.8rem;
+        }
+        &_item {
+            padding: 1.6rem 1.6rem 4.2rem 1.6rem;
+            border-radius: 4.8rem;
+            &::after {
+                border-radius: 4.8rem;
+            }
+    
+            &:hover {
+                .specialist-list_item-img {
+                    img {
+                        transform: none;
+                    }
+                }
+                box-shadow: none;
+            }
+    
+            &-img {
+                height: 59rem;
+                margin-bottom: 3.2rem;
+                border-radius: 3.2rem;
+            }
+            &-name {
+                padding: 0 1.6rem;
+                margin-bottom: 1.6rem;
+                font-size: 4rem;
+            }
+            &-job {
+                padding: 0 1.6rem;
+                font-size: 3rem;
+            }
+        }
+    
+        .btn-white {
+            margin: auto;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.services-min {
+  .container {
+    width: 127.4rem;
+    font-family: 'Jura';
+    padding-top: 7rem;
+    @include small-tablet {
+      padding-top: 10rem;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.banner {
+  background-color: $main;
+  color: $Beige;
+  padding-top: 8.6rem;
+  overflow: hidden;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5.2rem;
+  }
+}

@@ -1,0 +1,93 @@
+.application {
+  background-color: $green;
+  color: $Beige;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    @include small-tablet {
+      flex-direction: column;
+      gap: 8rem;
+    }
+  }
+  &__info {
+    width: 62rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5.2rem;
+    @include small-tablet {
+      gap: 4rem;
+      width: 100%;
+    }
+  }
+  &__title {
+    margin-top: 8rem;
+    @include small-tablet {
+      margin: 0;
+      text-align: center;
+    }
+  }
+  &__subtitle {
+    @include small-tablet {
+      text-align: center;
+      margin-bottom: 3.6rem;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    &-button {
+      align-self: flex-start;
+      @include small-tablet {
+        align-self: center;
+        margin-top: 2rem;
+      }
+    }
+    &-subtitle {
+      margin-top: 2rem;
+      @include small-tablet {
+        text-align: center;
+      }
+    }
+  }
+  &__input {
+    width: 51.5rem;
+    padding-bottom: 1.6rem;
+    @include small-tablet {
+      width: 100%;
+    }
+  }
+  &__img {
+    width: 74.8rem;
+    height: 68.6rem;
+    background-color: $Beige;
+    border-radius: 4rem;
+    padding: 3.2rem;
+    position: relative;
+    @include small-tablet {
+      width: 100%;
+      height: 70rem;
+      padding: 4rem;
+    }
+    &-box {
+      width: 100%;
+      height: 100%;
+      -webkit-mask-image: url(./assets/images/picture/application__img-mask.svg);
+      mask-image: url(./assets/images/picture/application__img-mask.svg);
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: contain;
+      mask-size: contain;
+    }
+    &-text {
+      position: absolute;
+      bottom: 3.2rem;
+      left: 3.2rem;
+      color: $green;
+      @include small-tablet {
+        bottom: 4rem;
+        left: 4rem;
+      }
+    }
+  }
+}

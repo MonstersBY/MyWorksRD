@@ -1,0 +1,139 @@
+<section class="contact-us">
+  <div class="container">
+    <div class="contact-us__inner">
+        <div class="contact-us__content-text-box">
+            <p class="contact-us__content-title tl1">Свяжитесь с нами</p>
+            <p class="contact-us__content-desc txt18">
+              Вы можете прямо сейчас написать нам, оставить отзыв или пожелание. Или оставьте ваши данные и мы
+              свяжемся с вами в ближайшее время.
+            </p>
+          </div>
+      <form class="contact-us__form" data-popup-message="#popup__success" data-dev action>
+        <div class="contact-us__form-input-wrapper">
+          <div class="contact-us__form-input-box">
+            <label class="contact-us__label input-group">
+              <span class="contact-us__label-text input-group-label-text txt18">Ваше имя*</span>
+              <span class="form__input-wrapper txt18">
+                <input
+                  class="input--name contact-us__form-input"
+                  type="text"
+                  data-validate
+                  data-required
+                  autocomplete="off"
+                  name="form[]"
+                />
+              </span>
+              <span class="error-span txt16">Поле заполнено неверно</span>
+            </label>
+
+            <div class="contact-us__form-dropdown form__dropdown form__dropdown_search">
+              <div class="form__dropdown_top">
+                <label for="" class="contact-us__label input-group">
+                  <span class="contact-us__label-text input-group-label-text txt18">Категория*</span>
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input__field txt18 input-dropdown"
+                      type="text"
+                      placeholder="Выберите категорию"
+                      data-validate
+                      data-required="dropdown"
+                      autocomplete="off"
+                      name="form[]"
+                      data-no-focus-classes
+                    />
+
+                    <span class="form__input-svg-box">
+                      <svg
+                        width="24"
+                        height="25"
+                        viewBox="0 0 24 25"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M17.4632 11.2288L12.7741 15.7406C12.6067 15.9021 12.4077 16.0302 12.1887 16.1176C11.9697 16.205 11.7349 16.25 11.4978 16.25C11.2607 16.25 11.0259 16.205 10.8069 16.1176C10.5878 16.0302 10.3889 15.9021 10.2214 15.7406L5.5323 11.2288C4.39171 10.1314 5.20641 8.25 6.81772 8.25L16.1959 8.25C17.8072 8.25 18.6038 10.1314 17.4632 11.2288Z"
+                          fill="#240403"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                  <span class="error-span txt16">Выберите категорию</span>
+                </label>
+              </div>
+              <div class="form__dropdown_bottom">
+                <div class="form__dropdown_list">
+                  <label class="form__dropdown_item">
+                    <div class="form__dropdown_item_checkbox radio-wrapper">
+                      <input type="radio" name="locality" />
+                    </div>
+                    <span class="form__dropdown_item_name txt18">Сотрудничество</span>
+                  </label>
+                  <label class="form__dropdown_item">
+                    <div class="form__dropdown_item_checkbox radio-wrapper">
+                      <input type="radio" name="locality" />
+                    </div>
+                    <span class="form__dropdown_item_name txt18">Пожелание</span>
+                  </label>
+                  <label class="form__dropdown_item">
+                    <div class="form__dropdown_item_checkbox radio-wrapper">
+                      <input type="radio" name="locality" />
+                    </div>
+                    <span class="form__dropdown_item_name txt18"
+                      >Предложение по рецептам</span
+                    >
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <label class="contact-us__label input-group">
+              <span class="contact-us__label-text input-group-label-text txt18">Номер телефона</span>
+              <span class="form__input-wrapper">
+                <input
+                  class="input--tel contact-us__form-input phone-mask txt18"
+                  type="text"
+                  autocomplete="off"
+                  name="form[]"
+                />
+              </span>
+              <span class="error-span txt16"></span>
+            </label>
+
+            <label class="contact-us__label input-group">
+              <span class="contact-us__label-text input-group-label-text txt18">E-mail</span>
+              <span class="form__input-wrapper">
+                <input
+                  class="input--mail contact-us__form-input txt18"
+                  type="text"
+                  autocomplete="off"
+                  name="form[]"
+                />
+              </span>
+              <span class="error-span txt16"></span>
+            </label>
+
+            <label class="contact-us__label input-group input">
+              <span class="contact-us__label-text input-group-label-text txt18">Ваше сообщение</span>
+              <span class="form__input-wrapper">
+                <textarea class="input--textarea txt18" autocomplete="off" name="form[]"></textarea>
+                <span class="error-span txt16"></span>
+              </span>
+            </label>
+          </div>
+        </div>
+        <div class="contact-us__btn-box">
+          <button type="submit" class="contact-us__btn buttons button-green">Отправить</button>
+          <p class="contact-us__agreement-text txt16">
+            Нажимая “Отправить” вы даете согласие на обработку персональных данных
+          </p>
+        </div>
+      </form>
+
+       
+        <div class="contact-us__content-img-box">
+          <img src="./assets/images/form-img.webp" alt="" />
+        </div>
+  
+    </div>
+  </div>
+</section>

@@ -1,0 +1,86 @@
+<section class="project wow animate__fadeIn">
+	<div class="container">
+		<div class="project__top">
+			<h2 class="project__top-title h3">на 100% точно реализуем ваш проект</h2>
+			<!-- <include src="./components/ui/btn_primary.html"></include> -->
+			<button data-popup="#popup__call" class="btn btn__primary">
+				<span class="btn__text">Оставить заявку</span>
+				<div class="btn__svg-box">
+					<svg width="54" height="12" viewBox="0 0 54 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 5.72266C0.585786 5.72266 0.25 6.05844 0.25 6.47266C0.25 6.88687 0.585786 7.22266 1 7.22266L1 5.72266ZM53.5303 7.00298C53.8232 6.71009 53.8232 6.23521 53.5303 5.94232L48.7574 1.16935C48.4645 0.876458 47.9896 0.876458 47.6967 1.16935C47.4038 1.46224 47.4038 1.93712 47.6967 2.23001L51.9393 6.47265L47.6967 10.7153C47.4038 11.0082 47.4038 11.4831 47.6967 11.776C47.9896 12.0688 48.4645 12.0688 48.7574 11.776L53.5303 7.00298ZM1 7.22266L53 7.22265L53 5.72265L1 5.72266L1 7.22266Z" fill="white" />
+					  </svg>
+					<div class="btn__svg-box-circle"></div>
+				</div>
+			</button>
+		</div>
+		<div class="project__content">
+			<div class="project__content-top"></div>
+			<div class="project__content-photos">
+				<div class="image_slider__container">
+					<div class="image-container">
+						<div class="image_slider-img img-before">
+							<span class="project__content-item">Визуализация</span>
+							<img class="image-before image_slider-image" src="./assets/images/pages/home/project_1.png" alt="color photo" />
+						</div>
+						<div class="image_slider-img img-after">
+							<span class="project__content-item">Реальное фото</span>
+							<img class="image-after image_slider-image" src="./assets/images/pages/home/project.png" alt="black and white" />
+						</div>
+					</div>
+					<!-- step="10" -->
+					<input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown" class="image_slider" />
+					<div class="image_slider-line" aria-hidden="true"></div>
+					<button class="image_slider-button">
+						<svg width="53" height="72" viewBox="0 0 53 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g filter="url(#filter0_b_4598_6265)">
+								<path d="M0 36L12 29.0718L12 42.9282L0 36Z" fill="#ADA59E" />
+							</g>
+							<g filter="url(#filter1_b_4598_6265)">
+								<rect x="19" width="14" height="72" fill="#ADA69E" />
+							</g>
+							<g filter="url(#filter2_b_4598_6265)">
+								<path d="M52.9688 36L40.9688 42.9282V29.0718L52.9688 36Z" fill="#ADA59E" fill-opacity="0.5" />
+							</g>
+							<defs>
+								<filter id="filter0_b_4598_6265" x="-8.5" y="20.5718" width="29" height="30.8564" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+									<feFlood flood-opacity="0" result="BackgroundImageFix" />
+									<feGaussianBlur in="BackgroundImageFix" stdDeviation="4.25" />
+									<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_4598_6265" />
+									<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_4598_6265" result="shape" />
+								</filter>
+								<filter id="filter1_b_4598_6265" x="2" y="-17" width="48" height="106" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+									<feFlood flood-opacity="0" result="BackgroundImageFix" />
+									<feGaussianBlur in="BackgroundImageFix" stdDeviation="8.5" />
+									<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_4598_6265" />
+									<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_4598_6265" result="shape" />
+								</filter>
+								<filter id="filter2_b_4598_6265" x="32.4688" y="20.5718" width="29" height="30.8564" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+									<feFlood flood-opacity="0" result="BackgroundImageFix" />
+									<feGaussianBlur in="BackgroundImageFix" stdDeviation="4.25" />
+									<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_4598_6265" />
+									<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_4598_6265" result="shape" />
+								</filter>
+							</defs>
+						</svg>
+					</button>
+				</div>
+			</div>
+			<div class="project__content-slider">
+				<div class="project__slider">
+					<div class="swiper-wrapper">
+						<a href="../assets/images/pages/home/project_1.png" data-fancybox="img-gallery" class="swiper-slide project__content-slide">
+							<img src="../assets/images/pages/home/project_1.png" alt="" />
+							<span class="project__content-text">Визуализация</span>
+						</a>
+						<a href="../assets/images/pages/home/project.png" data-fancybox="img-gallery" class="swiper-slide project__content-slide">
+							<img src="../assets/images/pages/home/project.png" alt="" />
+							<span class="project__content-text">Реальное фото</span>
+						</a>
+					</div>
+				</div>
+				<div class="pagination"></div>
+			</div>
+		</div>
+		<include src="./components/ui/btn_primary.html" data-text='{".btn": {"class": "mob"}}'></include>
+	</div>
+</section>

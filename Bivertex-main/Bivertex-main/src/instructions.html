@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Инструкция и поддержка</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header" id="header">
+        <include src="./components/_header.html"></include>
+      </header>
+      <include src="./components/_popup.html"></include>
+      <main>
+        <include src="./components/_arrow-top.html"></include>
+
+        <section class="beaver-info _first">
+          <div class="container">
+            <div class="beaver-info__inner">
+              <p class="beaver-info__inner-title tl1">Инструкция и поддержка</p>
+              <div class="beaver-info__content-wrapper">
+                <div class="beaver-info__content-box">
+                  <p class="beaver-info__title tl3">Инструкции</p>
+                  <div class="beaver-info__info-box">
+                    <p class="beaver-info__desc txt20 txt20_caps">
+                      Актуальная инструкция на конкретный станок BEAVERTECH располагается на самом станке в
+                      виде QR-кода.
+                    </p>
+                  </div>
+                </div>
+                <div class="beaver-info__img-box">
+                  <img src="./assets/images/beaver_instruction.webp" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="application">
+          <div class="container">
+            <div class="application__inner">
+              <div class="application__title-box">
+                <p class="application__title tl2">Техническая поддержка</p>
+                <p class="application__desc application__desc--long txt18">
+                  Если у вас возникли вопросы по эксплуатации станка или вам необходима помощь – обратитесь к
+                  нам по электронной почте, по телефону +7 (495) 877-47-15 или заполните форму. Наш специалист
+                  свяжется с вами для уточнения информации.
+                </p>
+              </div>
+              <form data-popup-message="#popup__success" data-dev action="" class="application__form-wrapper">
+                <p class="application__form-title tl3">оставьте нам заявку</p>
+                <div class="application__form-input-wrapper">
+                  <div class="application__form-input-box">
+                    <label class="application__label input-group input-group--mob-white">
+                      <span class="form__input-wrapper txt18">
+                        <input
+                          class="input--name application__form-input"
+                          type="text"
+                          placeholder="Ваше имя*"
+                          data-validate
+                          data-required
+                          autocomplete="off"
+                          name="form[]"
+                        />
+                      </span>
+                      <span class="error-span">Поле заполнено неверно</span>
+                    </label>
+
+                    <label class="application__label input-group input-group--mob-white">
+                      <span class="form__input-wrapper txt18">
+                        <input
+                          class="application__form-input"
+                          type="text"
+                          placeholder="Название компании"
+                          autocomplete="off"
+                          name="form[]"
+                        />
+                      </span>
+                      <span class="error-span">Поле заполнено неверно</span>
+                    </label>
+
+                    <label class="application__label input-group input-group--mob-white">
+                      <span class="form__input-wrapper">
+                        <input
+                          class="input--tel application__form-input phone-mask txt18"
+                          type="text"
+                          placeholder="Номер телефона*"
+                          data-validate
+                          data-required="tel"
+                          autocomplete="off"
+                          name="form[]"
+                        />
+                      </span>
+                      <span class="error-span">Поле заполнено неверно</span>
+                    </label>
+                    <label class="application__label input-group input-group--mob-white">
+                      <span class="form__input-wrapper">
+                        <input
+                          class="input--mail application__form-input txt18"
+                          type="text"
+                          placeholder="E-mail*"
+                          data-validate
+                          data-required="email"
+                          autocomplete="off"
+                          name="form[]"
+                        />
+                      </span>
+                      <span class="error-span">Поле заполнено неверно</span>
+                    </label>
+
+                    <label class="application__label input-group input-group--mob-white">
+                      <span class="form__input-wrapper">
+                        <textarea
+                          class="input--textarea txt18"
+                          placeholder="Причина обращения*"
+                          autocomplete="off"
+                          name="form[]"
+                          data-validate
+                          data-required="text"
+                        ></textarea>
+                        <span class="error-span">Поле заполнено неверно</span>
+                      </span>
+                    </label>
+                  </div>
+                  <p class="application__agreement-text txt-small">
+                    Нажимая «Отправить» вы подтверждаете, что согласны на
+                    <a href="#">обработку персональных данных</a>
+                  </p>
+                </div>
+                <button type="submit" class="application__btn button button-black txt20 txt20_caps">
+                  Отправить
+                </button>
+              </form>
+              <div class="application__info-wrapper">
+                <div class="application__info-box">
+                  <ul class="application__info-list">
+                    <li class="application__info-item">
+                      <p class="application__info-link txt20 txt20_caps">
+                        115516, Россия, г. Москва, Тарный проезд, 11
+                      </p>
+                    </li>
+                    <li class="application__info-item">
+                      <a href="tel:+74992880398" class="application__info-link txt20 txt20_caps"
+                        >+7 (499) 288-03-98</a
+                      >
+                    </li>
+                    <li class="application__info-item">
+                      <a href="mailto:info@beavertech.ru" class="application__info-link txt20 txt20_caps"
+                        >info@beavertech.ru</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="application__contacts-list">
+                    <li class="application__contacts-item">
+                      <a href="#" class="application__contacts-link">
+                        <div class="application__contacts-link-svg-box">
+                          <img src="./assets/images/vk.svg" alt="" class="desktop" />
+                          <img src="./assets/images/vk-black.svg" alt="" class="mobile" />
+                        </div>
+                      </a>
+                    </li>
+                    <li class="application__contacts-item">
+                      <a href="#" class="application__contacts-link">
+                        <div class="application__contacts-link-svg-box">
+                          <img src="./assets/images/watsapp.svg" alt="" class="desktop" />
+                          <img src="./assets/images/watsapp-black.svg" alt="" class="mobile" />
+                        </div>
+                      </a>
+                    </li>
+                    <li class="application__contacts-item">
+                      <a href="#" class="application__contacts-link">
+                        <div class="application__contacts-link-svg-box">
+                          <img src="./assets/images/youtube.svg" alt="" class="desktop" />
+                          <img src="./assets/images/youtube-black.svg" alt="" class="mobile" />
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <include src="./components/_footer.html"></include>
+    </div>
+  </body>
+</html>

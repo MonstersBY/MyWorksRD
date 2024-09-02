@@ -1,0 +1,312 @@
+.specialist-main {
+  margin-top: 14.1rem;
+
+  .btn-back {
+    margin-bottom: 6.5rem;
+  }
+  &_container {
+    display: grid;
+    grid-template-columns: 70.6rem 1fr;
+    gap: 3.5rem;
+  }
+  &_left {
+    width: 70.6rem;
+    height: 68rem;
+    border-radius: 5.2rem;
+    overflow: hidden;
+    background: #e8f0f5 url(../../assets/images/bg-white.webp) no-repeat top/cover;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      mix-blend-mode: multiply;
+    }
+  }
+  &_right {
+    border-radius: 5.2rem;
+    // background: #E8F0F5;
+    background: #e8f0f5 url(../../assets/images/bg-white.webp) no-repeat top/cover;
+    color: rgb(46, 46, 46);
+    padding: 6.5rem;
+  }
+  &_title {
+    text-transform: uppercase;
+    margin-bottom: 2.4rem;
+  }
+  &_infos {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+  &_info {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    .h5 {
+      color: rgba(147, 156, 169, 1);
+    }
+  }
+}
+
+.specialist-more {
+  &_container {
+    display: grid;
+    grid-template-columns: 100.2rem 1fr;
+    gap: 3.5rem;
+    margin-bottom: 6.5rem;
+  }
+  &_sign {
+    // display: flex;
+    // flex-direction: column-reverse;
+    // gap: 3.2rem;
+
+    // .sign_img {
+    //   width: 100%;
+    //   height: 50.6rem;
+    // }
+  }
+
+  &_box {
+    border-radius: 5.2rem;
+    padding: 6.5rem;
+    // background: #E8F0F5;
+    background: #e8f0f5 url(../../assets/images/bg-white.webp) no-repeat top/cover;
+    color: rgba(46, 46, 46, 1);
+    height: fit-content;
+
+    &-btns {
+      display: flex;
+      align-items: center;
+      gap: 2.8rem;
+      margin-bottom: 6.5rem;
+
+      .switcher__btn {
+        font-weight: 400;
+        font-size: 2.8rem;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: rgba(147, 156, 169, 1);
+        cursor: pointer;
+
+        &.active {
+          color: rgba(46, 46, 46, 1);
+          padding: 0.4rem 1.6rem;
+          border-radius: 5rem;
+          border: 1px solid rgba(147, 156, 169, 1);
+        }
+      }
+    }
+  }
+  &_item {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    &-title {
+      text-transform: uppercase;
+    }
+    &-text {
+      color: rgba(147, 156, 169, 1);
+    }
+
+    .hideContent {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+      height: auto;
+    }
+
+    &-ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+
+      &--special {
+        line-height: 120%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+
+        li {
+          padding-left: 2.2rem;
+          position: relative;
+
+          &::after {
+            content: '';
+            width: 1rem;
+            height: 1.5rem;
+            position: absolute;
+            background: url(../../assets/images/style-list.svg);
+            background-size: contain;
+            top: 0.2rem;
+            left: 0rem;
+          }
+        }
+      }
+    }
+  }
+  .btn-white {
+    margin-left: auto;
+  }
+}
+
+@include small-tablet {
+  .specialist-main {
+    margin-top: 16.8rem;
+
+    .btn-back {
+      margin-bottom: 8rem;
+    }
+    &_container {
+      grid-template-columns: 1fr;
+      gap: 3.2rem;
+    }
+    &_left {
+      width: 100%;
+      height: 61rem;
+      border-radius: 4rem;
+    }
+    &_right {
+      border-radius: 4.8rem;
+      padding: 4.8rem 3.2rem;
+    }
+    &_title {
+      margin-bottom: 3.2rem;
+      font-size: 4.8rem;
+    }
+    &_infos {
+      gap: 2.4rem;
+      margin-bottom: 3.2rem;
+    }
+    &_info {
+      display: inline;
+
+      .h5 {
+        color: rgba(46, 46, 46, 1);
+        font-size: 3rem;
+        line-height: 150%;
+        letter-spacing: 0.03em;
+      }
+      .txt20 {
+        font-size: 3rem;
+        line-height: 150%;
+        letter-spacing: 0.03em;
+      }
+    }
+    &_text {
+      font-size: 3rem;
+      line-height: 150%;
+      letter-spacing: 0.03em;
+    }
+  }
+
+  .specialist-more {
+    &_container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24rem;
+      margin-bottom: 6.4rem;
+    }
+    &_sign {
+      // display: flex;
+      // flex-direction: column;
+      // gap: 3.6rem;
+
+      // .sign_img {
+      //   width: 100%;
+      //   height: 67.8rem;
+      // }
+    }
+
+    &_box {
+      border-radius: 5.2rem;
+      padding: 6.5rem;
+      // background: #E8F0F5;
+      background: #e8f0f5 url(../../assets/images/bg-white.webp) no-repeat top/cover;
+      color: rgba(46, 46, 46, 1);
+      height: fit-content;
+
+      &-btns {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        margin-bottom: 4.5rem;
+        padding-bottom: 2rem;
+        overflow-x: scroll;
+        max-width: 58rem;
+
+        .switcher__btn {
+          font-size: 3.6rem;
+
+          &.active {
+            padding: 0.8rem 2.4rem;
+            border-radius: 10rem;
+          }
+        }
+      }
+    }
+    &_item {
+      gap: 4.8rem;
+
+      &-title {
+        font-size: 4.8rem;
+      }
+      &-text {
+        font-size: 3.6rem;
+      }
+      &-subtitle {
+        font-size: 3.6rem;
+      }
+
+      &-ul {
+        gap: 2.4rem;
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: 150%;
+        letter-spacing: 0.03em;
+
+        &--special {
+          font-weight: 400;
+          font-size: 3rem;
+          line-height: 150%;
+          letter-spacing: 0.03em;
+          gap: 2.4rem;
+
+          li {
+            padding-left: 3.2rem;
+            position: relative;
+
+            &::after {
+              width: 1.6rem;
+              height: 2.4rem;
+              background-repeat: no-repeat;
+              top: 1rem;
+            }
+          }
+        }
+      }
+
+      .hideContent {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+        height: 114rem;
+      }
+      .show-more {
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: 150%;
+        letter-spacing: 0.03em;
+        width: fit-content;
+        padding-bottom: 0.8rem;
+        border-bottom: 1px solid rgba(46, 46, 46, 1);
+      }
+    }
+    .btn-white {
+      margin-left: auto;
+    }
+  }
+}

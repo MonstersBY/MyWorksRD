@@ -1,0 +1,240 @@
+.application {
+  // .application__inner
+  &__inner-wrapper {
+    overflow: hidden;
+    display: flex;
+    @include small-tablet {
+      width: 100% !important;
+    }
+  }
+  &__inner {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    padding: 4rem 5.6rem 4rem 4rem;
+    gap: 1rem;
+    -webkit-clip-path: polygon(0% 0%, 92% 0%, 100% 18%, 100% 82%, 92% 100%, 0% 100%);
+    -moz-clip-path: polygon(0% 0%, 92% 0%, 100% 18%, 100% 82%, 92% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 92% 0%, 100% 18%, 100% 82%, 92% 100%, 0% 100%);
+    @include small-tablet {
+      width: 100%;
+      flex-direction: column;
+      gap: 4rem;
+      padding: 6.4rem 4rem;
+      -webkit-clip-path: unset;
+      -moz-clip-path: unset;
+      clip-path: unset;
+    }
+  }
+
+  // .application__title
+
+  &__title {
+    text-transform: uppercase;
+    overflow: hidden;
+    & span {
+      display: block;
+    }
+    @include small-tablet {
+      font-size: 6rem;
+    }
+  }
+
+  // .application__form-wrapper
+
+  &__form-wrapper {
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+    @include small-tablet {
+      flex-direction: column-reverse;
+      gap: 4rem;
+    }
+  }
+
+  // .application__form
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    color: $gray-text;
+    @include small-tablet {
+      gap: 6.4rem;
+    }
+  }
+
+  // .application__form-title
+
+  &__form-title {
+    color: $black;
+    overflow: hidden;
+    & span {
+      display: block;
+    }
+    @include small-tablet {
+      font-size: 3.2rem;
+    }
+  }
+
+  // .application__form-input-wrapper
+
+  &__form-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    width: 92.3rem;
+    flex-shrink: 0;
+    overflow: hidden;
+    @include small-tablet {
+      width: 100%;
+      gap: 6.4rem;
+    }
+  }
+
+  // .application__form-input-box
+
+  &__form-input-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    @include small-tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+    }
+  }
+
+  // .application__label
+
+  &__label {
+    &--textarea {
+      grid-column: 1/3;
+    }
+  }
+
+  // .application__form-input
+
+  &__form-input {
+  }
+
+  &__btn-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include small-tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+    }
+  }
+
+  // .application__agreement-text
+
+  &__agreement-text {
+    width: 35.2rem;
+    @include small-tablet {
+      width: 100%;
+      font-size: 3rem;
+    }
+  }
+
+  // .application__btn
+
+  &__btn {
+    @include small-tablet {
+      width: 100%;
+      font-size: 3.2rem;
+      padding: 3.8rem;
+    }
+  }
+
+  // .application__form-img-box
+
+  &__form-img-box {
+    transform: translateY(-4rem);
+    width: 56.2rem;
+    height: 41.2rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      @include small-tablet {
+        width: 100% !important;
+      }
+    }
+    @include small-tablet {
+      transform: unset;
+      width: 59.2rem;
+      height: 43.4rem;
+    }
+  }
+
+  &--demo {
+    .application__inner-wrapper {
+    }
+    .application__inner {
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      gap: 0;
+      @include small-tablet {
+        flex-direction: column;
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 85% 100%, 15% 100%, 0% 95%);
+        -moz-clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 85% 100%, 15% 100%, 0% 95%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 85% 100%, 15% 100%, 0% 95%);
+      }
+    }
+    .application__form-wrapper {
+      flex-direction: column;
+      padding: 4rem;
+      align-items: flex-start;
+      gap: 4rem;
+      @include small-tablet {
+        padding-bottom: 6.4rem;
+      }
+    }
+    .application__title {
+    }
+    .application__form {
+    }
+    .application__demo-form {
+    }
+    .application__form-title {
+    }
+    .application__form-input-wrapper {
+    }
+    .application__form-input-box {
+    }
+    .application__label {
+    }
+    .application__form-input {
+    }
+    .application__label--textarea {
+    }
+    .application__btn-row {
+    }
+    .application__agreement-text {
+    }
+    .application__btn {
+    }
+    .application__form-img-box {
+      transform: unset;
+      width: 67.7rem;
+      height: 100%;
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        @include small-tablet {
+          width: 100% !important;
+        }
+      }
+      @include small-tablet {
+        width: 71rem;
+        height: 59.8rem;
+      }
+    }
+  }
+}

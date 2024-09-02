@@ -1,0 +1,222 @@
+@function rem-calc($value-in-rem) {
+    @return calc(round(#{$value-in-rem * 1rem}));
+}
+.price {
+    color: $main;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8rem;
+
+        @include small-tablet {
+            flex-direction: column;
+            gap: 8rem;
+        }
+    }
+
+    &__img {
+        -webkit-mask-image: url(./assets/images/picture/price-img.webp);
+        mask-image: url(./assets/images/picture/price-img.webp);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        height: 81.4rem;
+        position: relative;
+        display: flex;
+
+        @include small-tablet {
+            width: 100%;
+            height: 40.3rem * 2;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+    }
+
+    &__container {
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        @include small-tablet {
+            flex-direction: column-reverse;
+            gap: 8rem;
+        }
+    }
+
+    &__list {
+        width: 74.7rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+
+        @include small-tablet {
+            gap: 6.4rem;
+            width: 100%;
+        }
+    }
+
+    &__item {
+        width: 100%;
+        padding-top: 0.8rem;
+        border-top: 2px solid $textAndLine;
+        display: flex;
+        flex-direction: column;
+
+        &-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        &-title {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+
+            strong,
+            span {
+                display: block;
+            }
+
+            strong {
+                font-weight: 700;
+            }
+        }
+
+        &-icon {
+            cursor: pointer;
+            transition: transform 0.5s ease;
+
+            width: 3.2rem;
+            height: 3.2rem;
+
+            transform: rotate(-180deg);
+
+            svg {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: contain;
+                object-fit: contain;
+            }
+
+            @include small-tablet {
+                width: 3.2rem * 2;
+                height: 3.2rem * 2;
+            }
+        }
+
+        &-body {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2rem;
+            max-height: 0;
+
+            transition: max-height 0.5s ease;
+            overflow: hidden;
+        }
+
+        &.active {
+            .price__item-body {
+                max-height: 100rem;
+            }
+
+            .price__item-icon {
+                transform: rotate(0deg);
+            }
+        }
+    }
+
+    &__category {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        align-items: flex-start;
+        width: 36.2rem;
+        color: $textAndLine;
+
+        @include small-tablet {
+            gap: 1.2rem;
+            width: 100%;
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            padding-top: 0.8rem;
+            width: 100%;
+            border-top: 1px solid $textAndLine;
+
+            @include small-tablet {
+                gap: 0.8rem;
+            }
+        }
+
+        &-box {
+            padding-top: 3.2rem;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 2rem 2.3rem;
+
+            @include small-tablet {
+                padding-top: 4.8rem;
+                gap: 4rem;
+            }
+        }
+
+        &-item {
+            position: relative;
+            padding-left: 1.4rem;
+
+            @include small-tablet {
+                padding-left: 2.8rem;
+            }
+
+            &::before {
+                top: 0.7rem;
+                left: 0;
+                content: '';
+                position: absolute;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: $main;
+
+                @media (max-width: 1200px) {
+                    width: 4px;
+                    height: 4px;
+                    top: 0.5rem;
+                }
+
+                @media (max-width: 840px) {
+                    width: 3px;
+                    height: 3px;
+                    top: 0.5rem;
+                }
+
+                @media (max-width: 640px) {
+                    width: 5px;
+                    height: 5px;
+                    top: 0.65rem * 2;
+                }
+
+                @include small-tablet {
+                    width: 0.6rem * 2;
+                    height: 0.6rem * 2;
+                    top: 0.65rem * 2;
+                }
+            }
+        }
+    }
+}

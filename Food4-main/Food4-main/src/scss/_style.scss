@@ -1,0 +1,63 @@
+@import './mixins';
+
+// colors
+$white: #ffffff;
+$black: #11131c;
+$Blue: #4658fd;
+$dark-blue: #1425c0;
+$BG: linear-gradient(112deg, #c0cce1 0%, #dce5e2 100%);
+$Liner: #787878;
+$light-grey: #b5c0d0;
+
+// body
+body {
+  background: $BG;
+  color: $black;
+  .lock & {
+    overflow: hidden;
+    touch-action: none;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  position: relative;
+}
+
+.overlay {
+  min-height: 100vh;
+  opacity: 0;
+  background: $BG;
+  transition: opacity 0.3s, z-index 0.3s;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  &.active {
+    opacity: 1;
+    z-index: 5;
+  }
+}
+
+// main
+main {
+  flex-grow: 1;
+}
+
+@import './ui/ui';
+@import './components/_header';
+@import './components/_footer';
+section {
+  padding: 9rem 0;
+  @include small-tablet {
+    padding: 10rem 0;
+  }
+  &._first {
+    padding: 5.7rem 0 9rem;
+    @include small-tablet {
+      padding: 2.6rem 0 10rem;
+    }
+  }
+}

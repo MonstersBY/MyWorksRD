@@ -1,0 +1,131 @@
+.contacts {
+    background-color: $main;
+    color: $green;
+    padding-bottom: 28.5rem;
+    @include small-tablet {
+        padding-bottom: 24.3rem * 2;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .tl2 {
+        z-index: 2;
+        position: relative;
+    }
+
+    &__map {
+        width: 100%;
+        height: 68.4rem;
+        border-radius: 8rem;
+        background-color: $Beige;
+        overflow: hidden;
+
+        @include small-tablet {
+            height: 90rem;
+            border-radius: 4rem;
+        }
+
+        .ymaps3x0--map-copyrights__container {
+            display: none;
+        }
+    }
+
+    &__link-box {
+        position: absolute;
+        bottom: -8.5rem;
+        right: 10.1rem;
+        width: 64.3rem;
+        height: 47.7rem;
+        padding-top: 9.6rem;
+        padding-left: 18rem;
+
+        @include small-tablet {
+            bottom: -30.6rem;
+            left: 2.8 * 2rem;
+            right: auto;
+            width: 31.9 * 2rem;
+            height: 24.8 * 2rem;
+            padding-top: 6.4rem;
+            padding-left: 16rem;
+            padding-bottom: 6.4rem;
+            padding-right: 12.8rem;
+        }
+
+        &-bg {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+            pointer-events: none;
+            svg {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+                object-fit: contain;
+            }
+        }
+    }
+
+    &__list {
+        z-index: 2;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 5.2rem;
+
+        @include small-tablet {
+            margin-top: 3.2rem;
+            gap: 2.4rem;
+            width: 17.5 * 2rem;
+        }
+    }
+
+    &__item {
+        a {
+            display: flex;
+            gap: 1.2rem;
+            align-items: center;
+
+            @include small-tablet {
+                gap: 2.4rem;
+            }
+        }
+
+        &-icon {
+            display: block;
+            width: 3.2rem;
+            height: 3.2rem;
+
+            svg {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: contain;
+                object-fit: contain;
+            }
+
+            @include small-tablet {
+                min-height: 6.4rem;
+                min-width: 6.4rem;
+            }
+        }
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0;
+
+            span {
+                display: block;
+            }
+            strong {
+                display: block;
+            }
+        }
+    }
+}

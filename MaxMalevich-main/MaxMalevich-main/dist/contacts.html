@@ -1,0 +1,8126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <script src="https://api-maps.yandex.ru/v3/?apikey=4d7b8985-4ebf-4fde-8884-668550d59df1&lang=ru_RU"></script> -->
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=a9c0bd39-d987-4a6e-9f92-42377c833e17" type="text/javascript"></script>
+		<!-- <script>
+			initMap();
+
+			async function initMap() {
+				// Промис `ymaps3.ready` будет зарезолвлен, когда загрузятся все компоненты основного модуля API
+				await ymaps3.ready;
+
+				const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapMarker, YMapFeature, YMapControls } = ymaps3;
+
+				// Иницилиазируем карту
+				const map = new YMap(
+					// Передаём ссылку на HTMLElement контейнера
+					document.getElementById('contact__map'),
+
+					// Передаём параметры инициализации карты
+					{
+						location: {
+							// Координаты центра карты
+							center: [37.588144, 55.733842],
+
+							// Уровень масштабирования
+							zoom: 10,
+						},
+					}
+				);
+
+				// Добавляем слой для отображения схематической карты
+				map.addChild(
+					new YMapDefaultSchemeLayer({
+						theme: 'dark',
+						customization: [
+							{
+								tags: 'country',
+								elements: 'geometry.fill',
+								stylers: [
+									{
+										color: '#0b0d0e',
+									},
+									{
+										opacity: 0.8,
+										zoom: 0,
+									},
+									{
+										opacity: 0.8,
+										zoom: 1,
+									},
+									{
+										opacity: 0.8,
+										zoom: 2,
+									},
+									{
+										opacity: 0.8,
+										zoom: 3,
+									},
+									{
+										opacity: 0.8,
+										zoom: 4,
+									},
+									{
+										opacity: 1,
+										zoom: 5,
+									},
+									{
+										opacity: 1,
+										zoom: 6,
+									},
+									{
+										opacity: 1,
+										zoom: 7,
+									},
+									{
+										opacity: 1,
+										zoom: 8,
+									},
+									{
+										opacity: 1,
+										zoom: 9,
+									},
+									{
+										opacity: 1,
+										zoom: 10,
+									},
+									{
+										opacity: 1,
+										zoom: 11,
+									},
+									{
+										opacity: 1,
+										zoom: 12,
+									},
+									{
+										opacity: 1,
+										zoom: 13,
+									},
+									{
+										opacity: 1,
+										zoom: 14,
+									},
+									{
+										opacity: 1,
+										zoom: 15,
+									},
+									{
+										opacity: 1,
+										zoom: 16,
+									},
+									{
+										opacity: 1,
+										zoom: 17,
+									},
+									{
+										opacity: 1,
+										zoom: 18,
+									},
+									{
+										opacity: 1,
+										zoom: 19,
+									},
+									{
+										opacity: 1,
+										zoom: 20,
+									},
+									{
+										opacity: 1,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'country',
+								elements: 'geometry.outline',
+								stylers: [
+									{
+										color: '#2e3338',
+									},
+									{
+										opacity: 0.15,
+										zoom: 0,
+									},
+									{
+										opacity: 0.15,
+										zoom: 1,
+									},
+									{
+										opacity: 0.15,
+										zoom: 2,
+									},
+									{
+										opacity: 0.15,
+										zoom: 3,
+									},
+									{
+										opacity: 0.15,
+										zoom: 4,
+									},
+									{
+										opacity: 0.15,
+										zoom: 5,
+									},
+									{
+										opacity: 0.25,
+										zoom: 6,
+									},
+									{
+										opacity: 0.5,
+										zoom: 7,
+									},
+									{
+										opacity: 0.47,
+										zoom: 8,
+									},
+									{
+										opacity: 0.44,
+										zoom: 9,
+									},
+									{
+										opacity: 0.41,
+										zoom: 10,
+									},
+									{
+										opacity: 0.38,
+										zoom: 11,
+									},
+									{
+										opacity: 0.35,
+										zoom: 12,
+									},
+									{
+										opacity: 0.33,
+										zoom: 13,
+									},
+									{
+										opacity: 0.3,
+										zoom: 14,
+									},
+									{
+										opacity: 0.28,
+										zoom: 15,
+									},
+									{
+										opacity: 0.25,
+										zoom: 16,
+									},
+									{
+										opacity: 0.25,
+										zoom: 17,
+									},
+									{
+										opacity: 0.25,
+										zoom: 18,
+									},
+									{
+										opacity: 0.25,
+										zoom: 19,
+									},
+									{
+										opacity: 0.25,
+										zoom: 20,
+									},
+									{
+										opacity: 0.25,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'region',
+								elements: 'geometry.fill',
+								stylers: [
+									{
+										color: '#000000',
+										opacity: 0.5,
+										zoom: 0,
+									},
+									{
+										color: '#000000',
+										opacity: 0.5,
+										zoom: 1,
+									},
+									{
+										color: '#000000',
+										opacity: 0.5,
+										zoom: 2,
+									},
+									{
+										color: '#000000',
+										opacity: 0.5,
+										zoom: 3,
+									},
+									{
+										color: '#000000',
+										opacity: 0.5,
+										zoom: 4,
+									},
+									{
+										color: '#000000',
+										opacity: 0.5,
+										zoom: 5,
+									},
+									{
+										color: '#000000',
+										opacity: 1,
+										zoom: 6,
+									},
+									{
+										color: '#000000',
+										opacity: 1,
+										zoom: 7,
+									},
+									{
+										color: '#0b0d0e',
+										opacity: 1,
+										zoom: 8,
+									},
+									{
+										color: '#0b0d0e',
+										opacity: 1,
+										zoom: 9,
+									},
+									{
+										color: '#0b0d0e',
+										opacity: 1,
+										zoom: 10,
+									},
+									{
+										color: '#0b0d0e',
+										opacity: 1,
+										zoom: 11,
+									},
+									{
+										color: '#0b0d0e',
+										opacity: 1,
+										zoom: 12,
+									},
+									{
+										color: '#0b0d0e',
+										opacity: 1,
+										zoom: 13,
+									},
+									{
+										color: '#0b0d0e',
+										opacity: 1,
+										zoom: 14,
+									},
+									{
+										color: '#0b0d0e',
+										opacity: 1,
+										zoom: 15,
+									},
+									{
+										color: '#0b0d0e',
+										opacity: 1,
+										zoom: 16,
+									},
+									{
+										color: '#0b0d0e',
+										opacity: 1,
+										zoom: 17,
+									},
+									{
+										color: '#0b0d0e',
+										opacity: 1,
+										zoom: 18,
+									},
+									{
+										color: '#0b0d0e',
+										opacity: 1,
+										zoom: 19,
+									},
+									{
+										color: '#0b0d0e',
+										opacity: 1,
+										zoom: 20,
+									},
+									{
+										color: '#0b0d0e',
+										opacity: 1,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'region',
+								elements: 'geometry.outline',
+								stylers: [
+									{
+										color: '#2e3338',
+									},
+									{
+										opacity: 0.15,
+										zoom: 0,
+									},
+									{
+										opacity: 0.15,
+										zoom: 1,
+									},
+									{
+										opacity: 0.15,
+										zoom: 2,
+									},
+									{
+										opacity: 0.15,
+										zoom: 3,
+									},
+									{
+										opacity: 0.15,
+										zoom: 4,
+									},
+									{
+										opacity: 0.15,
+										zoom: 5,
+									},
+									{
+										opacity: 0.25,
+										zoom: 6,
+									},
+									{
+										opacity: 0.5,
+										zoom: 7,
+									},
+									{
+										opacity: 0.47,
+										zoom: 8,
+									},
+									{
+										opacity: 0.44,
+										zoom: 9,
+									},
+									{
+										opacity: 0.41,
+										zoom: 10,
+									},
+									{
+										opacity: 0.38,
+										zoom: 11,
+									},
+									{
+										opacity: 0.35,
+										zoom: 12,
+									},
+									{
+										opacity: 0.33,
+										zoom: 13,
+									},
+									{
+										opacity: 0.3,
+										zoom: 14,
+									},
+									{
+										opacity: 0.28,
+										zoom: 15,
+									},
+									{
+										opacity: 0.25,
+										zoom: 16,
+									},
+									{
+										opacity: 0.25,
+										zoom: 17,
+									},
+									{
+										opacity: 0.25,
+										zoom: 18,
+									},
+									{
+										opacity: 0.25,
+										zoom: 19,
+									},
+									{
+										opacity: 0.25,
+										zoom: 20,
+									},
+									{
+										opacity: 0.25,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: {
+									any: 'admin',
+									none: ['country', 'region', 'locality', 'district', 'address'],
+								},
+								elements: 'geometry.fill',
+								stylers: [
+									{
+										color: '#0b0d0e',
+									},
+									{
+										opacity: 0.5,
+										zoom: 0,
+									},
+									{
+										opacity: 0.5,
+										zoom: 1,
+									},
+									{
+										opacity: 0.5,
+										zoom: 2,
+									},
+									{
+										opacity: 0.5,
+										zoom: 3,
+									},
+									{
+										opacity: 0.5,
+										zoom: 4,
+									},
+									{
+										opacity: 0.5,
+										zoom: 5,
+									},
+									{
+										opacity: 1,
+										zoom: 6,
+									},
+									{
+										opacity: 1,
+										zoom: 7,
+									},
+									{
+										opacity: 1,
+										zoom: 8,
+									},
+									{
+										opacity: 1,
+										zoom: 9,
+									},
+									{
+										opacity: 1,
+										zoom: 10,
+									},
+									{
+										opacity: 1,
+										zoom: 11,
+									},
+									{
+										opacity: 1,
+										zoom: 12,
+									},
+									{
+										opacity: 1,
+										zoom: 13,
+									},
+									{
+										opacity: 1,
+										zoom: 14,
+									},
+									{
+										opacity: 1,
+										zoom: 15,
+									},
+									{
+										opacity: 1,
+										zoom: 16,
+									},
+									{
+										opacity: 1,
+										zoom: 17,
+									},
+									{
+										opacity: 1,
+										zoom: 18,
+									},
+									{
+										opacity: 1,
+										zoom: 19,
+									},
+									{
+										opacity: 1,
+										zoom: 20,
+									},
+									{
+										opacity: 1,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: {
+									any: 'admin',
+									none: ['country', 'region', 'locality', 'district', 'address'],
+								},
+								elements: 'geometry.outline',
+								stylers: [
+									{
+										color: '#2e3338',
+									},
+									{
+										opacity: 0.15,
+										zoom: 0,
+									},
+									{
+										opacity: 0.15,
+										zoom: 1,
+									},
+									{
+										opacity: 0.15,
+										zoom: 2,
+									},
+									{
+										opacity: 0.15,
+										zoom: 3,
+									},
+									{
+										opacity: 0.15,
+										zoom: 4,
+									},
+									{
+										opacity: 0.15,
+										zoom: 5,
+									},
+									{
+										opacity: 0.25,
+										zoom: 6,
+									},
+									{
+										opacity: 0.5,
+										zoom: 7,
+									},
+									{
+										opacity: 0.47,
+										zoom: 8,
+									},
+									{
+										opacity: 0.44,
+										zoom: 9,
+									},
+									{
+										opacity: 0.41,
+										zoom: 10,
+									},
+									{
+										opacity: 0.38,
+										zoom: 11,
+									},
+									{
+										opacity: 0.35,
+										zoom: 12,
+									},
+									{
+										opacity: 0.33,
+										zoom: 13,
+									},
+									{
+										opacity: 0.3,
+										zoom: 14,
+									},
+									{
+										opacity: 0.28,
+										zoom: 15,
+									},
+									{
+										opacity: 0.25,
+										zoom: 16,
+									},
+									{
+										opacity: 0.25,
+										zoom: 17,
+									},
+									{
+										opacity: 0.25,
+										zoom: 18,
+									},
+									{
+										opacity: 0.25,
+										zoom: 19,
+									},
+									{
+										opacity: 0.25,
+										zoom: 20,
+									},
+									{
+										opacity: 0.25,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: {
+									any: 'landcover',
+									none: 'vegetation',
+								},
+								stylers: [
+									{
+										hue: '#32383e',
+									},
+								],
+							},
+							{
+								tags: 'vegetation',
+								elements: 'geometry',
+								stylers: [
+									{
+										color: '#49525a',
+										opacity: 0.1,
+										zoom: 0,
+									},
+									{
+										color: '#49525a',
+										opacity: 0.1,
+										zoom: 1,
+									},
+									{
+										color: '#49525a',
+										opacity: 0.1,
+										zoom: 2,
+									},
+									{
+										color: '#49525a',
+										opacity: 0.1,
+										zoom: 3,
+									},
+									{
+										color: '#49525a',
+										opacity: 0.1,
+										zoom: 4,
+									},
+									{
+										color: '#49525a',
+										opacity: 0.1,
+										zoom: 5,
+									},
+									{
+										color: '#49525a',
+										opacity: 0.2,
+										zoom: 6,
+									},
+									{
+										color: '#32383e',
+										opacity: 0.3,
+										zoom: 7,
+									},
+									{
+										color: '#32383e',
+										opacity: 0.4,
+										zoom: 8,
+									},
+									{
+										color: '#32383e',
+										opacity: 0.6,
+										zoom: 9,
+									},
+									{
+										color: '#32383e',
+										opacity: 0.8,
+										zoom: 10,
+									},
+									{
+										color: '#32383e',
+										opacity: 1,
+										zoom: 11,
+									},
+									{
+										color: '#32383e',
+										opacity: 1,
+										zoom: 12,
+									},
+									{
+										color: '#32383e',
+										opacity: 1,
+										zoom: 13,
+									},
+									{
+										color: '#2e3339',
+										opacity: 1,
+										zoom: 14,
+									},
+									{
+										color: '#292e33',
+										opacity: 1,
+										zoom: 15,
+									},
+									{
+										color: '#292e33',
+										opacity: 1,
+										zoom: 16,
+									},
+									{
+										color: '#292e33',
+										opacity: 1,
+										zoom: 17,
+									},
+									{
+										color: '#292e33',
+										opacity: 1,
+										zoom: 18,
+									},
+									{
+										color: '#292e33',
+										opacity: 1,
+										zoom: 19,
+									},
+									{
+										color: '#292e33',
+										opacity: 1,
+										zoom: 20,
+									},
+									{
+										color: '#292e33',
+										opacity: 1,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'park',
+								elements: 'geometry',
+								stylers: [
+									{
+										color: '#32383e',
+										opacity: 0.1,
+										zoom: 0,
+									},
+									{
+										color: '#32383e',
+										opacity: 0.1,
+										zoom: 1,
+									},
+									{
+										color: '#32383e',
+										opacity: 0.1,
+										zoom: 2,
+									},
+									{
+										color: '#32383e',
+										opacity: 0.1,
+										zoom: 3,
+									},
+									{
+										color: '#32383e',
+										opacity: 0.1,
+										zoom: 4,
+									},
+									{
+										color: '#32383e',
+										opacity: 0.1,
+										zoom: 5,
+									},
+									{
+										color: '#32383e',
+										opacity: 0.2,
+										zoom: 6,
+									},
+									{
+										color: '#32383e',
+										opacity: 0.3,
+										zoom: 7,
+									},
+									{
+										color: '#32383e',
+										opacity: 0.4,
+										zoom: 8,
+									},
+									{
+										color: '#32383e',
+										opacity: 0.6,
+										zoom: 9,
+									},
+									{
+										color: '#32383e',
+										opacity: 0.8,
+										zoom: 10,
+									},
+									{
+										color: '#32383e',
+										opacity: 1,
+										zoom: 11,
+									},
+									{
+										color: '#32383e',
+										opacity: 1,
+										zoom: 12,
+									},
+									{
+										color: '#32383e',
+										opacity: 1,
+										zoom: 13,
+									},
+									{
+										color: '#2e3339',
+										opacity: 1,
+										zoom: 14,
+									},
+									{
+										color: '#292e33',
+										opacity: 1,
+										zoom: 15,
+									},
+									{
+										color: '#292e33',
+										opacity: 0.9,
+										zoom: 16,
+									},
+									{
+										color: '#292e33',
+										opacity: 0.8,
+										zoom: 17,
+									},
+									{
+										color: '#292e33',
+										opacity: 0.7,
+										zoom: 18,
+									},
+									{
+										color: '#292e33',
+										opacity: 0.7,
+										zoom: 19,
+									},
+									{
+										color: '#292e33',
+										opacity: 0.7,
+										zoom: 20,
+									},
+									{
+										color: '#292e33',
+										opacity: 0.7,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'national_park',
+								elements: 'geometry',
+								stylers: [
+									{
+										color: '#32383e',
+										opacity: 0.1,
+										zoom: 0,
+									},
+									{
+										color: '#32383e',
+										opacity: 0.1,
+										zoom: 1,
+									},
+									{
+										color: '#32383e',
+										opacity: 0.1,
+										zoom: 2,
+									},
+									{
+										color: '#32383e',
+										opacity: 0.1,
+										zoom: 3,
+									},
+									{
+										color: '#32383e',
+										opacity: 0.1,
+										zoom: 4,
+									},
+									{
+										color: '#32383e',
+										opacity: 0.1,
+										zoom: 5,
+									},
+									{
+										color: '#32383e',
+										opacity: 0.2,
+										zoom: 6,
+									},
+									{
+										color: '#32383e',
+										opacity: 0.3,
+										zoom: 7,
+									},
+									{
+										color: '#32383e',
+										opacity: 0.4,
+										zoom: 8,
+									},
+									{
+										color: '#32383e',
+										opacity: 0.6,
+										zoom: 9,
+									},
+									{
+										color: '#32383e',
+										opacity: 0.8,
+										zoom: 10,
+									},
+									{
+										color: '#32383e',
+										opacity: 1,
+										zoom: 11,
+									},
+									{
+										color: '#32383e',
+										opacity: 1,
+										zoom: 12,
+									},
+									{
+										color: '#32383e',
+										opacity: 1,
+										zoom: 13,
+									},
+									{
+										color: '#2e3339',
+										opacity: 1,
+										zoom: 14,
+									},
+									{
+										color: '#292e33',
+										opacity: 1,
+										zoom: 15,
+									},
+									{
+										color: '#292e33',
+										opacity: 0.7,
+										zoom: 16,
+									},
+									{
+										color: '#292e33',
+										opacity: 0.7,
+										zoom: 17,
+									},
+									{
+										color: '#292e33',
+										opacity: 0.7,
+										zoom: 18,
+									},
+									{
+										color: '#292e33',
+										opacity: 0.7,
+										zoom: 19,
+									},
+									{
+										color: '#292e33',
+										opacity: 0.7,
+										zoom: 20,
+									},
+									{
+										color: '#292e33',
+										opacity: 0.7,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'cemetery',
+								elements: 'geometry',
+								stylers: [
+									{
+										color: '#32383e',
+										zoom: 0,
+									},
+									{
+										color: '#32383e',
+										zoom: 1,
+									},
+									{
+										color: '#32383e',
+										zoom: 2,
+									},
+									{
+										color: '#32383e',
+										zoom: 3,
+									},
+									{
+										color: '#32383e',
+										zoom: 4,
+									},
+									{
+										color: '#32383e',
+										zoom: 5,
+									},
+									{
+										color: '#32383e',
+										zoom: 6,
+									},
+									{
+										color: '#32383e',
+										zoom: 7,
+									},
+									{
+										color: '#32383e',
+										zoom: 8,
+									},
+									{
+										color: '#32383e',
+										zoom: 9,
+									},
+									{
+										color: '#32383e',
+										zoom: 10,
+									},
+									{
+										color: '#32383e',
+										zoom: 11,
+									},
+									{
+										color: '#32383e',
+										zoom: 12,
+									},
+									{
+										color: '#32383e',
+										zoom: 13,
+									},
+									{
+										color: '#2e3339',
+										zoom: 14,
+									},
+									{
+										color: '#292e33',
+										zoom: 15,
+									},
+									{
+										color: '#292e33',
+										zoom: 16,
+									},
+									{
+										color: '#292e33',
+										zoom: 17,
+									},
+									{
+										color: '#292e33',
+										zoom: 18,
+									},
+									{
+										color: '#292e33',
+										zoom: 19,
+									},
+									{
+										color: '#292e33',
+										zoom: 20,
+									},
+									{
+										color: '#292e33',
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'sports_ground',
+								elements: 'geometry',
+								stylers: [
+									{
+										color: '#3d454c',
+										opacity: 0,
+										zoom: 0,
+									},
+									{
+										color: '#3d454c',
+										opacity: 0,
+										zoom: 1,
+									},
+									{
+										color: '#3d454c',
+										opacity: 0,
+										zoom: 2,
+									},
+									{
+										color: '#3d454c',
+										opacity: 0,
+										zoom: 3,
+									},
+									{
+										color: '#3d454c',
+										opacity: 0,
+										zoom: 4,
+									},
+									{
+										color: '#3d454c',
+										opacity: 0,
+										zoom: 5,
+									},
+									{
+										color: '#3d454c',
+										opacity: 0,
+										zoom: 6,
+									},
+									{
+										color: '#3d454c',
+										opacity: 0,
+										zoom: 7,
+									},
+									{
+										color: '#3d454c',
+										opacity: 0,
+										zoom: 8,
+									},
+									{
+										color: '#3d454c',
+										opacity: 0,
+										zoom: 9,
+									},
+									{
+										color: '#3d454c',
+										opacity: 0,
+										zoom: 10,
+									},
+									{
+										color: '#3d454c',
+										opacity: 0,
+										zoom: 11,
+									},
+									{
+										color: '#3d454c',
+										opacity: 0,
+										zoom: 12,
+									},
+									{
+										color: '#3d454c',
+										opacity: 0,
+										zoom: 13,
+									},
+									{
+										color: '#394047',
+										opacity: 0,
+										zoom: 14,
+									},
+									{
+										color: '#343b41',
+										opacity: 0.5,
+										zoom: 15,
+									},
+									{
+										color: '#333a40',
+										opacity: 1,
+										zoom: 16,
+									},
+									{
+										color: '#32393f',
+										opacity: 1,
+										zoom: 17,
+									},
+									{
+										color: '#32393e',
+										opacity: 1,
+										zoom: 18,
+									},
+									{
+										color: '#31383d',
+										opacity: 1,
+										zoom: 19,
+									},
+									{
+										color: '#30373c',
+										opacity: 1,
+										zoom: 20,
+									},
+									{
+										color: '#2f363b',
+										opacity: 1,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'terrain',
+								elements: 'geometry',
+								stylers: [
+									{
+										hue: '#40474f',
+									},
+									{
+										opacity: 0.3,
+										zoom: 0,
+									},
+									{
+										opacity: 0.3,
+										zoom: 1,
+									},
+									{
+										opacity: 0.3,
+										zoom: 2,
+									},
+									{
+										opacity: 0.3,
+										zoom: 3,
+									},
+									{
+										opacity: 0.3,
+										zoom: 4,
+									},
+									{
+										opacity: 0.35,
+										zoom: 5,
+									},
+									{
+										opacity: 0.4,
+										zoom: 6,
+									},
+									{
+										opacity: 0.6,
+										zoom: 7,
+									},
+									{
+										opacity: 0.8,
+										zoom: 8,
+									},
+									{
+										opacity: 0.9,
+										zoom: 9,
+									},
+									{
+										opacity: 1,
+										zoom: 10,
+									},
+									{
+										opacity: 1,
+										zoom: 11,
+									},
+									{
+										opacity: 1,
+										zoom: 12,
+									},
+									{
+										opacity: 1,
+										zoom: 13,
+									},
+									{
+										opacity: 1,
+										zoom: 14,
+									},
+									{
+										opacity: 1,
+										zoom: 15,
+									},
+									{
+										opacity: 1,
+										zoom: 16,
+									},
+									{
+										opacity: 1,
+										zoom: 17,
+									},
+									{
+										opacity: 1,
+										zoom: 18,
+									},
+									{
+										opacity: 1,
+										zoom: 19,
+									},
+									{
+										opacity: 1,
+										zoom: 20,
+									},
+									{
+										opacity: 1,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'geographic_line',
+								elements: 'geometry',
+								stylers: [
+									{
+										color: '#a5adb6',
+									},
+								],
+							},
+							{
+								tags: 'land',
+								elements: 'geometry',
+								stylers: [
+									{
+										color: '#40474f',
+										zoom: 0,
+									},
+									{
+										color: '#40474f',
+										zoom: 1,
+									},
+									{
+										color: '#40474f',
+										zoom: 2,
+									},
+									{
+										color: '#40474f',
+										zoom: 3,
+									},
+									{
+										color: '#40474f',
+										zoom: 4,
+									},
+									{
+										color: '#3e454c',
+										zoom: 5,
+									},
+									{
+										color: '#3c424a',
+										zoom: 6,
+									},
+									{
+										color: '#394047',
+										zoom: 7,
+									},
+									{
+										color: '#373d44',
+										zoom: 8,
+									},
+									{
+										color: '#373d44',
+										zoom: 9,
+									},
+									{
+										color: '#373d44',
+										zoom: 10,
+									},
+									{
+										color: '#373d44',
+										zoom: 11,
+									},
+									{
+										color: '#373d44',
+										zoom: 12,
+									},
+									{
+										color: '#373d44',
+										zoom: 13,
+									},
+									{
+										color: '#353b41',
+										zoom: 14,
+									},
+									{
+										color: '#32383e',
+										zoom: 15,
+									},
+									{
+										color: '#32383e',
+										zoom: 16,
+									},
+									{
+										color: '#31373d',
+										zoom: 17,
+									},
+									{
+										color: '#31373d',
+										zoom: 18,
+									},
+									{
+										color: '#31363d',
+										zoom: 19,
+									},
+									{
+										color: '#30363c',
+										zoom: 20,
+									},
+									{
+										color: '#30353c',
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'residential',
+								elements: 'geometry',
+								stylers: [
+									{
+										color: '#40474f',
+										opacity: 0.5,
+										zoom: 0,
+									},
+									{
+										color: '#40474f',
+										opacity: 0.5,
+										zoom: 1,
+									},
+									{
+										color: '#40474f',
+										opacity: 0.5,
+										zoom: 2,
+									},
+									{
+										color: '#40474f',
+										opacity: 0.5,
+										zoom: 3,
+									},
+									{
+										color: '#40474f',
+										opacity: 0.5,
+										zoom: 4,
+									},
+									{
+										color: '#40474f',
+										opacity: 0.5,
+										zoom: 5,
+									},
+									{
+										color: '#40474f',
+										opacity: 0.5,
+										zoom: 6,
+									},
+									{
+										color: '#40474f',
+										opacity: 0.5,
+										zoom: 7,
+									},
+									{
+										color: '#40474f',
+										opacity: 0.5,
+										zoom: 8,
+									},
+									{
+										color: '#40474f',
+										opacity: 0.5,
+										zoom: 9,
+									},
+									{
+										color: '#40474f',
+										opacity: 0.5,
+										zoom: 10,
+									},
+									{
+										color: '#40474f',
+										opacity: 0.5,
+										zoom: 11,
+									},
+									{
+										color: '#40474f',
+										opacity: 0.5,
+										zoom: 12,
+									},
+									{
+										color: '#40474f',
+										opacity: 1,
+										zoom: 13,
+									},
+									{
+										color: '#3c424a',
+										opacity: 1,
+										zoom: 14,
+									},
+									{
+										color: '#373d44',
+										opacity: 1,
+										zoom: 15,
+									},
+									{
+										color: '#363c43',
+										opacity: 1,
+										zoom: 16,
+									},
+									{
+										color: '#353b42',
+										opacity: 1,
+										zoom: 17,
+									},
+									{
+										color: '#353b41',
+										opacity: 1,
+										zoom: 18,
+									},
+									{
+										color: '#343a40',
+										opacity: 1,
+										zoom: 19,
+									},
+									{
+										color: '#33393f',
+										opacity: 1,
+										zoom: 20,
+									},
+									{
+										color: '#32383e',
+										opacity: 1,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'locality',
+								elements: 'geometry',
+								stylers: [
+									{
+										color: '#40474f',
+										zoom: 0,
+									},
+									{
+										color: '#40474f',
+										zoom: 1,
+									},
+									{
+										color: '#40474f',
+										zoom: 2,
+									},
+									{
+										color: '#40474f',
+										zoom: 3,
+									},
+									{
+										color: '#40474f',
+										zoom: 4,
+									},
+									{
+										color: '#40474f',
+										zoom: 5,
+									},
+									{
+										color: '#40474f',
+										zoom: 6,
+									},
+									{
+										color: '#40474f',
+										zoom: 7,
+									},
+									{
+										color: '#40474f',
+										zoom: 8,
+									},
+									{
+										color: '#40474f',
+										zoom: 9,
+									},
+									{
+										color: '#40474f',
+										zoom: 10,
+									},
+									{
+										color: '#40474f',
+										zoom: 11,
+									},
+									{
+										color: '#40474f',
+										zoom: 12,
+									},
+									{
+										color: '#40474f',
+										zoom: 13,
+									},
+									{
+										color: '#3c424a',
+										zoom: 14,
+									},
+									{
+										color: '#373d44',
+										zoom: 15,
+									},
+									{
+										color: '#363c43',
+										zoom: 16,
+									},
+									{
+										color: '#353b42',
+										zoom: 17,
+									},
+									{
+										color: '#353b41',
+										zoom: 18,
+									},
+									{
+										color: '#343a40',
+										zoom: 19,
+									},
+									{
+										color: '#33393f',
+										zoom: 20,
+									},
+									{
+										color: '#32383e',
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: {
+									any: 'structure',
+									none: ['building', 'fence'],
+								},
+								elements: 'geometry',
+								stylers: [
+									{
+										opacity: 0.9,
+									},
+									{
+										color: '#40474f',
+										zoom: 0,
+									},
+									{
+										color: '#40474f',
+										zoom: 1,
+									},
+									{
+										color: '#40474f',
+										zoom: 2,
+									},
+									{
+										color: '#40474f',
+										zoom: 3,
+									},
+									{
+										color: '#40474f',
+										zoom: 4,
+									},
+									{
+										color: '#40474f',
+										zoom: 5,
+									},
+									{
+										color: '#40474f',
+										zoom: 6,
+									},
+									{
+										color: '#40474f',
+										zoom: 7,
+									},
+									{
+										color: '#40474f',
+										zoom: 8,
+									},
+									{
+										color: '#40474f',
+										zoom: 9,
+									},
+									{
+										color: '#40474f',
+										zoom: 10,
+									},
+									{
+										color: '#40474f',
+										zoom: 11,
+									},
+									{
+										color: '#40474f',
+										zoom: 12,
+									},
+									{
+										color: '#40474f',
+										zoom: 13,
+									},
+									{
+										color: '#3c424a',
+										zoom: 14,
+									},
+									{
+										color: '#373d44',
+										zoom: 15,
+									},
+									{
+										color: '#363c43',
+										zoom: 16,
+									},
+									{
+										color: '#353b42',
+										zoom: 17,
+									},
+									{
+										color: '#353b41',
+										zoom: 18,
+									},
+									{
+										color: '#343a40',
+										zoom: 19,
+									},
+									{
+										color: '#33393f',
+										zoom: 20,
+									},
+									{
+										color: '#32383e',
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'building',
+								elements: 'geometry.fill',
+								stylers: [
+									{
+										color: '#434a51',
+									},
+									{
+										opacity: 0.7,
+										zoom: 0,
+									},
+									{
+										opacity: 0.7,
+										zoom: 1,
+									},
+									{
+										opacity: 0.7,
+										zoom: 2,
+									},
+									{
+										opacity: 0.7,
+										zoom: 3,
+									},
+									{
+										opacity: 0.7,
+										zoom: 4,
+									},
+									{
+										opacity: 0.7,
+										zoom: 5,
+									},
+									{
+										opacity: 0.7,
+										zoom: 6,
+									},
+									{
+										opacity: 0.7,
+										zoom: 7,
+									},
+									{
+										opacity: 0.7,
+										zoom: 8,
+									},
+									{
+										opacity: 0.7,
+										zoom: 9,
+									},
+									{
+										opacity: 0.7,
+										zoom: 10,
+									},
+									{
+										opacity: 0.7,
+										zoom: 11,
+									},
+									{
+										opacity: 0.7,
+										zoom: 12,
+									},
+									{
+										opacity: 0.7,
+										zoom: 13,
+									},
+									{
+										opacity: 0.7,
+										zoom: 14,
+									},
+									{
+										opacity: 0.7,
+										zoom: 15,
+									},
+									{
+										opacity: 0.9,
+										zoom: 16,
+									},
+									{
+										opacity: 0.6,
+										zoom: 17,
+									},
+									{
+										opacity: 0.6,
+										zoom: 18,
+									},
+									{
+										opacity: 0.6,
+										zoom: 19,
+									},
+									{
+										opacity: 0.6,
+										zoom: 20,
+									},
+									{
+										opacity: 0.6,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'building',
+								elements: 'geometry.outline',
+								stylers: [
+									{
+										color: '#555e67',
+									},
+									{
+										opacity: 0.5,
+										zoom: 0,
+									},
+									{
+										opacity: 0.5,
+										zoom: 1,
+									},
+									{
+										opacity: 0.5,
+										zoom: 2,
+									},
+									{
+										opacity: 0.5,
+										zoom: 3,
+									},
+									{
+										opacity: 0.5,
+										zoom: 4,
+									},
+									{
+										opacity: 0.5,
+										zoom: 5,
+									},
+									{
+										opacity: 0.5,
+										zoom: 6,
+									},
+									{
+										opacity: 0.5,
+										zoom: 7,
+									},
+									{
+										opacity: 0.5,
+										zoom: 8,
+									},
+									{
+										opacity: 0.5,
+										zoom: 9,
+									},
+									{
+										opacity: 0.5,
+										zoom: 10,
+									},
+									{
+										opacity: 0.5,
+										zoom: 11,
+									},
+									{
+										opacity: 0.5,
+										zoom: 12,
+									},
+									{
+										opacity: 0.5,
+										zoom: 13,
+									},
+									{
+										opacity: 0.5,
+										zoom: 14,
+									},
+									{
+										opacity: 0.5,
+										zoom: 15,
+									},
+									{
+										opacity: 0.5,
+										zoom: 16,
+									},
+									{
+										opacity: 1,
+										zoom: 17,
+									},
+									{
+										opacity: 1,
+										zoom: 18,
+									},
+									{
+										opacity: 1,
+										zoom: 19,
+									},
+									{
+										opacity: 1,
+										zoom: 20,
+									},
+									{
+										opacity: 1,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: {
+									any: 'urban_area',
+									none: ['residential', 'industrial', 'cemetery', 'park', 'medical', 'sports_ground', 'beach', 'construction_site'],
+								},
+								elements: 'geometry',
+								stylers: [
+									{
+										color: '#40474f',
+										opacity: 1,
+										zoom: 0,
+									},
+									{
+										color: '#40474f',
+										opacity: 1,
+										zoom: 1,
+									},
+									{
+										color: '#40474f',
+										opacity: 1,
+										zoom: 2,
+									},
+									{
+										color: '#40474f',
+										opacity: 1,
+										zoom: 3,
+									},
+									{
+										color: '#40474f',
+										opacity: 1,
+										zoom: 4,
+									},
+									{
+										color: '#40474f',
+										opacity: 1,
+										zoom: 5,
+									},
+									{
+										color: '#40474f',
+										opacity: 1,
+										zoom: 6,
+									},
+									{
+										color: '#40474f',
+										opacity: 1,
+										zoom: 7,
+									},
+									{
+										color: '#40474f',
+										opacity: 1,
+										zoom: 8,
+									},
+									{
+										color: '#40474f',
+										opacity: 1,
+										zoom: 9,
+									},
+									{
+										color: '#40474f',
+										opacity: 1,
+										zoom: 10,
+									},
+									{
+										color: '#40474f',
+										opacity: 1,
+										zoom: 11,
+									},
+									{
+										color: '#40474f',
+										opacity: 1,
+										zoom: 12,
+									},
+									{
+										color: '#40474f',
+										opacity: 1,
+										zoom: 13,
+									},
+									{
+										color: '#3b4148',
+										opacity: 1,
+										zoom: 14,
+									},
+									{
+										color: '#353a41',
+										opacity: 1,
+										zoom: 15,
+									},
+									{
+										color: '#2f343a',
+										opacity: 0.67,
+										zoom: 16,
+									},
+									{
+										color: '#292e33',
+										opacity: 0.33,
+										zoom: 17,
+									},
+									{
+										color: '#292e33',
+										opacity: 0,
+										zoom: 18,
+									},
+									{
+										color: '#292e33',
+										opacity: 0,
+										zoom: 19,
+									},
+									{
+										color: '#292e33',
+										opacity: 0,
+										zoom: 20,
+									},
+									{
+										color: '#292e33',
+										opacity: 0,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'poi',
+								elements: 'label.icon',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										'secondary-color': '#8f99a3',
+									},
+									{
+										'tertiary-color': '#505962',
+									},
+								],
+							},
+							{
+								tags: 'poi',
+								elements: 'label.text.fill',
+								stylers: [
+									{
+										color: '#94999e',
+									},
+								],
+							},
+							{
+								tags: 'poi',
+								elements: 'label.text.outline',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										opacity: 0.5,
+									},
+								],
+							},
+							{
+								tags: 'outdoor',
+								elements: 'label.icon',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										'secondary-color': '#8f99a3',
+									},
+									{
+										'tertiary-color': '#505962',
+									},
+								],
+							},
+							{
+								tags: 'outdoor',
+								elements: 'label.text.fill',
+								stylers: [
+									{
+										color: '#94999e',
+									},
+								],
+							},
+							{
+								tags: 'outdoor',
+								elements: 'label.text.outline',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										opacity: 0.5,
+									},
+								],
+							},
+							{
+								tags: 'park',
+								elements: 'label.icon',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										'secondary-color': '#8f99a3',
+									},
+									{
+										'tertiary-color': '#505962',
+									},
+								],
+							},
+							{
+								tags: 'park',
+								elements: 'label.text.fill',
+								stylers: [
+									{
+										color: '#94999e',
+									},
+								],
+							},
+							{
+								tags: 'park',
+								elements: 'label.text.outline',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										opacity: 0.5,
+									},
+								],
+							},
+							{
+								tags: 'cemetery',
+								elements: 'label.icon',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										'secondary-color': '#8f99a3',
+									},
+									{
+										'tertiary-color': '#505962',
+									},
+								],
+							},
+							{
+								tags: 'cemetery',
+								elements: 'label.text.fill',
+								stylers: [
+									{
+										color: '#94999e',
+									},
+								],
+							},
+							{
+								tags: 'cemetery',
+								elements: 'label.text.outline',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										opacity: 0.5,
+									},
+								],
+							},
+							{
+								tags: 'beach',
+								elements: 'label.icon',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										'secondary-color': '#8f99a3',
+									},
+									{
+										'tertiary-color': '#505962',
+									},
+								],
+							},
+							{
+								tags: 'beach',
+								elements: 'label.text.fill',
+								stylers: [
+									{
+										color: '#94999e',
+									},
+								],
+							},
+							{
+								tags: 'beach',
+								elements: 'label.text.outline',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										opacity: 0.5,
+									},
+								],
+							},
+							{
+								tags: 'medical',
+								elements: 'label.icon',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										'secondary-color': '#8f99a3',
+									},
+									{
+										'tertiary-color': '#505962',
+									},
+								],
+							},
+							{
+								tags: 'medical',
+								elements: 'label.text.fill',
+								stylers: [
+									{
+										color: '#94999e',
+									},
+								],
+							},
+							{
+								tags: 'medical',
+								elements: 'label.text.outline',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										opacity: 0.5,
+									},
+								],
+							},
+							{
+								tags: 'shopping',
+								elements: 'label.icon',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										'secondary-color': '#8f99a3',
+									},
+									{
+										'tertiary-color': '#505962',
+									},
+								],
+							},
+							{
+								tags: 'shopping',
+								elements: 'label.text.fill',
+								stylers: [
+									{
+										color: '#94999e',
+									},
+								],
+							},
+							{
+								tags: 'shopping',
+								elements: 'label.text.outline',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										opacity: 0.5,
+									},
+								],
+							},
+							{
+								tags: 'commercial_services',
+								elements: 'label.icon',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										'secondary-color': '#8f99a3',
+									},
+									{
+										'tertiary-color': '#505962',
+									},
+								],
+							},
+							{
+								tags: 'commercial_services',
+								elements: 'label.text.fill',
+								stylers: [
+									{
+										color: '#94999e',
+									},
+								],
+							},
+							{
+								tags: 'commercial_services',
+								elements: 'label.text.outline',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										opacity: 0.5,
+									},
+								],
+							},
+							{
+								tags: 'food_and_drink',
+								elements: 'label.icon',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										'secondary-color': '#8f99a3',
+									},
+									{
+										'tertiary-color': '#505962',
+									},
+								],
+							},
+							{
+								tags: 'food_and_drink',
+								elements: 'label.text.fill',
+								stylers: [
+									{
+										color: '#94999e',
+									},
+								],
+							},
+							{
+								tags: 'food_and_drink',
+								elements: 'label.text.outline',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										opacity: 0.5,
+									},
+								],
+							},
+							{
+								tags: 'road',
+								elements: 'label.icon',
+								types: 'point',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										'secondary-color': '#8f99a3',
+									},
+									{
+										'tertiary-color': '#505962',
+									},
+								],
+							},
+							{
+								tags: 'road',
+								elements: 'label.text.fill',
+								types: 'point',
+								stylers: [
+									{
+										color: '#8f99a3',
+									},
+								],
+							},
+							{
+								tags: 'entrance',
+								elements: 'label.icon',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										'secondary-color': '#8f99a3',
+									},
+								],
+							},
+							{
+								tags: 'locality',
+								elements: 'label.icon',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										'secondary-color': '#8f99a3',
+									},
+								],
+							},
+							{
+								tags: 'country',
+								elements: 'label.text.fill',
+								stylers: [
+									{
+										opacity: 0.8,
+									},
+									{
+										color: '#73808c',
+									},
+								],
+							},
+							{
+								tags: 'country',
+								elements: 'label.text.outline',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										opacity: 0.5,
+									},
+								],
+							},
+							{
+								tags: 'region',
+								elements: 'label.text.fill',
+								stylers: [
+									{
+										color: '#73808c',
+									},
+									{
+										opacity: 0.8,
+									},
+								],
+							},
+							{
+								tags: 'region',
+								elements: 'label.text.outline',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										opacity: 0.5,
+									},
+								],
+							},
+							{
+								tags: 'district',
+								elements: 'label.text.fill',
+								stylers: [
+									{
+										color: '#73808c',
+									},
+									{
+										opacity: 0.8,
+									},
+								],
+							},
+							{
+								tags: 'district',
+								elements: 'label.text.outline',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										opacity: 0.5,
+									},
+								],
+							},
+							{
+								tags: {
+									any: 'admin',
+									none: ['country', 'region', 'locality', 'district', 'address'],
+								},
+								elements: 'label.text.fill',
+								stylers: [
+									{
+										color: '#73808c',
+									},
+								],
+							},
+							{
+								tags: {
+									any: 'admin',
+									none: ['country', 'region', 'locality', 'district', 'address'],
+								},
+								elements: 'label.text.outline',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										opacity: 0.5,
+									},
+								],
+							},
+							{
+								tags: 'locality',
+								elements: 'label.text.fill',
+								stylers: [
+									{
+										color: '#94999e',
+										zoom: 0,
+									},
+									{
+										color: '#94999e',
+										zoom: 1,
+									},
+									{
+										color: '#94999e',
+										zoom: 2,
+									},
+									{
+										color: '#94999e',
+										zoom: 3,
+									},
+									{
+										color: '#94999e',
+										zoom: 4,
+									},
+									{
+										color: '#969ba0',
+										zoom: 5,
+									},
+									{
+										color: '#989da2',
+										zoom: 6,
+									},
+									{
+										color: '#9a9fa4',
+										zoom: 7,
+									},
+									{
+										color: '#9da2a6',
+										zoom: 8,
+									},
+									{
+										color: '#9fa4a8',
+										zoom: 9,
+									},
+									{
+										color: '#a1a6aa',
+										zoom: 10,
+									},
+									{
+										color: '#a1a6aa',
+										zoom: 11,
+									},
+									{
+										color: '#a1a6aa',
+										zoom: 12,
+									},
+									{
+										color: '#a1a6aa',
+										zoom: 13,
+									},
+									{
+										color: '#a1a6aa',
+										zoom: 14,
+									},
+									{
+										color: '#a1a6aa',
+										zoom: 15,
+									},
+									{
+										color: '#a1a6aa',
+										zoom: 16,
+									},
+									{
+										color: '#a1a6aa',
+										zoom: 17,
+									},
+									{
+										color: '#a1a6aa',
+										zoom: 18,
+									},
+									{
+										color: '#a1a6aa',
+										zoom: 19,
+									},
+									{
+										color: '#a1a6aa',
+										zoom: 20,
+									},
+									{
+										color: '#a1a6aa',
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'locality',
+								elements: 'label.text.outline',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										opacity: 0.5,
+									},
+								],
+							},
+							{
+								tags: 'road',
+								elements: 'label.text.fill',
+								types: 'polyline',
+								stylers: [
+									{
+										color: '#94999e',
+									},
+								],
+							},
+							{
+								tags: 'road',
+								elements: 'label.text.outline',
+								types: 'polyline',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										opacity: 0.5,
+									},
+								],
+							},
+							{
+								tags: 'road',
+								elements: 'geometry.fill.pattern',
+								types: 'polyline',
+								stylers: [
+									{
+										scale: 1,
+									},
+									{
+										color: '#61666b',
+									},
+								],
+							},
+							{
+								tags: 'road',
+								elements: 'label.text.fill',
+								types: 'point',
+								stylers: [
+									{
+										color: '#94999e',
+									},
+								],
+							},
+							{
+								tags: 'structure',
+								elements: 'label.text.fill',
+								stylers: [
+									{
+										color: '#73808c',
+									},
+									{
+										opacity: 0.5,
+									},
+								],
+							},
+							{
+								tags: 'structure',
+								elements: 'label.text.outline',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										opacity: 0.5,
+									},
+								],
+							},
+							{
+								tags: 'entrance',
+								elements: 'label.text.fill',
+								stylers: [
+									{
+										color: '#73808c',
+									},
+									{
+										opacity: 1,
+									},
+								],
+							},
+							{
+								tags: 'entrance',
+								elements: 'label.text.outline',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										opacity: 0.5,
+									},
+								],
+							},
+							{
+								tags: 'address',
+								elements: 'label.text.fill',
+								stylers: [
+									{
+										color: '#73808c',
+									},
+									{
+										opacity: 0.9,
+										zoom: 0,
+									},
+									{
+										opacity: 0.9,
+										zoom: 1,
+									},
+									{
+										opacity: 0.9,
+										zoom: 2,
+									},
+									{
+										opacity: 0.9,
+										zoom: 3,
+									},
+									{
+										opacity: 0.9,
+										zoom: 4,
+									},
+									{
+										opacity: 0.9,
+										zoom: 5,
+									},
+									{
+										opacity: 0.9,
+										zoom: 6,
+									},
+									{
+										opacity: 0.9,
+										zoom: 7,
+									},
+									{
+										opacity: 0.9,
+										zoom: 8,
+									},
+									{
+										opacity: 0.9,
+										zoom: 9,
+									},
+									{
+										opacity: 0.9,
+										zoom: 10,
+									},
+									{
+										opacity: 0.9,
+										zoom: 11,
+									},
+									{
+										opacity: 0.9,
+										zoom: 12,
+									},
+									{
+										opacity: 0.9,
+										zoom: 13,
+									},
+									{
+										opacity: 0.9,
+										zoom: 14,
+									},
+									{
+										opacity: 0.9,
+										zoom: 15,
+									},
+									{
+										opacity: 0.9,
+										zoom: 16,
+									},
+									{
+										opacity: 1,
+										zoom: 17,
+									},
+									{
+										opacity: 1,
+										zoom: 18,
+									},
+									{
+										opacity: 1,
+										zoom: 19,
+									},
+									{
+										opacity: 1,
+										zoom: 20,
+									},
+									{
+										opacity: 1,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'address',
+								elements: 'label.text.outline',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										opacity: 0.5,
+									},
+								],
+							},
+							{
+								tags: 'landscape',
+								elements: 'label.text.fill',
+								stylers: [
+									{
+										color: '#73808c',
+										opacity: 1,
+										zoom: 0,
+									},
+									{
+										color: '#73808c',
+										opacity: 1,
+										zoom: 1,
+									},
+									{
+										color: '#73808c',
+										opacity: 1,
+										zoom: 2,
+									},
+									{
+										color: '#73808c',
+										opacity: 1,
+										zoom: 3,
+									},
+									{
+										color: '#73808c',
+										opacity: 0.5,
+										zoom: 4,
+									},
+									{
+										color: '#73808c',
+										opacity: 0.5,
+										zoom: 5,
+									},
+									{
+										color: '#73808c',
+										opacity: 0.5,
+										zoom: 6,
+									},
+									{
+										color: '#73808c',
+										opacity: 0.5,
+										zoom: 7,
+									},
+									{
+										color: '#73808c',
+										opacity: 0.5,
+										zoom: 8,
+									},
+									{
+										color: '#73808c',
+										opacity: 0.5,
+										zoom: 9,
+									},
+									{
+										color: '#73808c',
+										opacity: 0.5,
+										zoom: 10,
+									},
+									{
+										color: '#73808c',
+										opacity: 0.5,
+										zoom: 11,
+									},
+									{
+										color: '#73808c',
+										opacity: 0.5,
+										zoom: 12,
+									},
+									{
+										color: '#73808c',
+										opacity: 0.5,
+										zoom: 13,
+									},
+									{
+										color: '#73808c',
+										opacity: 0.5,
+										zoom: 14,
+									},
+									{
+										color: '#73808c',
+										opacity: 0.5,
+										zoom: 15,
+									},
+									{
+										color: '#73808c',
+										opacity: 0.5,
+										zoom: 16,
+									},
+									{
+										color: '#73808c',
+										opacity: 0.5,
+										zoom: 17,
+									},
+									{
+										color: '#73808c',
+										opacity: 0.5,
+										zoom: 18,
+									},
+									{
+										color: '#73808c',
+										opacity: 0.5,
+										zoom: 19,
+									},
+									{
+										color: '#73808c',
+										opacity: 0.5,
+										zoom: 20,
+									},
+									{
+										color: '#73808c',
+										opacity: 0.5,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'landscape',
+								elements: 'label.text.outline',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										opacity: 0.5,
+										zoom: 0,
+									},
+									{
+										opacity: 0.5,
+										zoom: 1,
+									},
+									{
+										opacity: 0.5,
+										zoom: 2,
+									},
+									{
+										opacity: 0.5,
+										zoom: 3,
+									},
+									{
+										opacity: 0,
+										zoom: 4,
+									},
+									{
+										opacity: 0,
+										zoom: 5,
+									},
+									{
+										opacity: 0,
+										zoom: 6,
+									},
+									{
+										opacity: 0,
+										zoom: 7,
+									},
+									{
+										opacity: 0,
+										zoom: 8,
+									},
+									{
+										opacity: 0,
+										zoom: 9,
+									},
+									{
+										opacity: 0,
+										zoom: 10,
+									},
+									{
+										opacity: 0,
+										zoom: 11,
+									},
+									{
+										opacity: 0,
+										zoom: 12,
+									},
+									{
+										opacity: 0,
+										zoom: 13,
+									},
+									{
+										opacity: 0,
+										zoom: 14,
+									},
+									{
+										opacity: 0,
+										zoom: 15,
+									},
+									{
+										opacity: 0,
+										zoom: 16,
+									},
+									{
+										opacity: 0,
+										zoom: 17,
+									},
+									{
+										opacity: 0,
+										zoom: 18,
+									},
+									{
+										opacity: 0,
+										zoom: 19,
+									},
+									{
+										opacity: 0,
+										zoom: 20,
+									},
+									{
+										opacity: 0,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'water',
+								elements: 'label.text.fill',
+								stylers: [
+									{
+										color: '#6c7c8e',
+									},
+									{
+										opacity: 0.8,
+									},
+								],
+							},
+							{
+								tags: 'water',
+								elements: 'label.text.outline',
+								types: 'polyline',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										opacity: 0.2,
+									},
+								],
+							},
+							{
+								tags: {
+									any: 'road_1',
+									none: 'is_tunnel',
+								},
+								elements: 'geometry.fill',
+								stylers: [
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 0,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 1,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 2,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 3,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 4,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 5,
+									},
+									{
+										color: '#606b76',
+										scale: 2.64,
+										zoom: 6,
+									},
+									{
+										color: '#606b76',
+										scale: 2.84,
+										zoom: 7,
+									},
+									{
+										color: '#606b76',
+										scale: 3.13,
+										zoom: 8,
+									},
+									{
+										color: '#606b76',
+										scale: 3.55,
+										zoom: 9,
+									},
+									{
+										color: '#606b76',
+										scale: 3.21,
+										zoom: 10,
+									},
+									{
+										color: '#606b76',
+										scale: 2.72,
+										zoom: 11,
+									},
+									{
+										color: '#606b76',
+										scale: 2.35,
+										zoom: 12,
+									},
+									{
+										color: '#606b76',
+										scale: 2.02,
+										zoom: 13,
+									},
+									{
+										color: '#5f6974',
+										scale: 1.81,
+										zoom: 14,
+									},
+									{
+										color: '#5d6873',
+										scale: 1.69,
+										zoom: 15,
+									},
+									{
+										color: '#5c6671',
+										scale: 1.66,
+										zoom: 16,
+									},
+									{
+										color: '#5b656f',
+										scale: 1.31,
+										zoom: 17,
+									},
+									{
+										color: '#59636d',
+										scale: 1.08,
+										zoom: 18,
+									},
+									{
+										color: '#58616c',
+										scale: 0.93,
+										zoom: 19,
+									},
+									{
+										color: '#56606a',
+										scale: 0.84,
+										zoom: 20,
+									},
+									{
+										color: '#555e68',
+										scale: 0.8,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: {
+									any: 'road_1',
+								},
+								elements: 'geometry.outline',
+								stylers: [
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 0,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 1,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 2,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 3,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 4,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.9,
+										zoom: 5,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.96,
+										zoom: 6,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.96,
+										zoom: 7,
+									},
+									{
+										color: '#2e3338',
+										scale: 2.02,
+										zoom: 8,
+									},
+									{
+										color: '#2e3338',
+										scale: 2.16,
+										zoom: 9,
+									},
+									{
+										color: '#2e3338',
+										scale: 2.16,
+										zoom: 10,
+									},
+									{
+										color: '#2e3338',
+										scale: 2.04,
+										zoom: 11,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.93,
+										zoom: 12,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.8,
+										zoom: 13,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.71,
+										zoom: 14,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.68,
+										zoom: 15,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.7,
+										zoom: 16,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.38,
+										zoom: 17,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.15,
+										zoom: 18,
+									},
+									{
+										color: '#2e3338',
+										scale: 1,
+										zoom: 19,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.91,
+										zoom: 20,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.87,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: {
+									any: 'road_2',
+									none: 'is_tunnel',
+								},
+								elements: 'geometry.fill',
+								stylers: [
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 0,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 1,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 2,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 3,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 4,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 5,
+									},
+									{
+										color: '#606b76',
+										scale: 2.64,
+										zoom: 6,
+									},
+									{
+										color: '#606b76',
+										scale: 2.84,
+										zoom: 7,
+									},
+									{
+										color: '#606b76',
+										scale: 3.13,
+										zoom: 8,
+									},
+									{
+										color: '#606b76',
+										scale: 3.55,
+										zoom: 9,
+									},
+									{
+										color: '#606b76',
+										scale: 3.21,
+										zoom: 10,
+									},
+									{
+										color: '#606b76',
+										scale: 2.72,
+										zoom: 11,
+									},
+									{
+										color: '#606b76',
+										scale: 2.35,
+										zoom: 12,
+									},
+									{
+										color: '#606b76',
+										scale: 2.02,
+										zoom: 13,
+									},
+									{
+										color: '#5f6974',
+										scale: 1.81,
+										zoom: 14,
+									},
+									{
+										color: '#5d6873',
+										scale: 1.69,
+										zoom: 15,
+									},
+									{
+										color: '#5c6671',
+										scale: 1.66,
+										zoom: 16,
+									},
+									{
+										color: '#5b656f',
+										scale: 1.31,
+										zoom: 17,
+									},
+									{
+										color: '#59636d',
+										scale: 1.08,
+										zoom: 18,
+									},
+									{
+										color: '#58616c',
+										scale: 0.93,
+										zoom: 19,
+									},
+									{
+										color: '#56606a',
+										scale: 0.84,
+										zoom: 20,
+									},
+									{
+										color: '#555e68',
+										scale: 0.8,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: {
+									any: 'road_2',
+								},
+								elements: 'geometry.outline',
+								stylers: [
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 0,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 1,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 2,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 3,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 4,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.9,
+										zoom: 5,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.96,
+										zoom: 6,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.96,
+										zoom: 7,
+									},
+									{
+										color: '#2e3338',
+										scale: 2.02,
+										zoom: 8,
+									},
+									{
+										color: '#2e3338',
+										scale: 2.16,
+										zoom: 9,
+									},
+									{
+										color: '#2e3338',
+										scale: 2.16,
+										zoom: 10,
+									},
+									{
+										color: '#2e3338',
+										scale: 2.04,
+										zoom: 11,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.93,
+										zoom: 12,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.8,
+										zoom: 13,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.71,
+										zoom: 14,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.68,
+										zoom: 15,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.7,
+										zoom: 16,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.38,
+										zoom: 17,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.15,
+										zoom: 18,
+									},
+									{
+										color: '#2e3338',
+										scale: 1,
+										zoom: 19,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.91,
+										zoom: 20,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.87,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: {
+									any: 'road_3',
+									none: 'is_tunnel',
+								},
+								elements: 'geometry.fill',
+								stylers: [
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 0,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 1,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 2,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 3,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 4,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 5,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 6,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 7,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 8,
+									},
+									{
+										color: '#606b76',
+										scale: 2.23,
+										zoom: 9,
+									},
+									{
+										color: '#606b76',
+										scale: 2.33,
+										zoom: 10,
+									},
+									{
+										color: '#606b76',
+										scale: 1.49,
+										zoom: 11,
+									},
+									{
+										color: '#606b76',
+										scale: 1.48,
+										zoom: 12,
+									},
+									{
+										color: '#606b76',
+										scale: 1.23,
+										zoom: 13,
+									},
+									{
+										color: '#5f6974',
+										scale: 1.06,
+										zoom: 14,
+									},
+									{
+										color: '#5d6873',
+										scale: 0.96,
+										zoom: 15,
+									},
+									{
+										color: '#5c6671',
+										scale: 0.92,
+										zoom: 16,
+									},
+									{
+										color: '#5b656f',
+										scale: 0.81,
+										zoom: 17,
+									},
+									{
+										color: '#59636d',
+										scale: 0.75,
+										zoom: 18,
+									},
+									{
+										color: '#58616c',
+										scale: 0.73,
+										zoom: 19,
+									},
+									{
+										color: '#56606a',
+										scale: 0.75,
+										zoom: 20,
+									},
+									{
+										color: '#555e68',
+										scale: 0.8,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: {
+									any: 'road_3',
+								},
+								elements: 'geometry.outline',
+								stylers: [
+									{
+										color: '#606b76',
+										scale: 1.03,
+										zoom: 0,
+									},
+									{
+										color: '#606b76',
+										scale: 1.03,
+										zoom: 1,
+									},
+									{
+										color: '#606b76',
+										scale: 1.03,
+										zoom: 2,
+									},
+									{
+										color: '#606b76',
+										scale: 1.03,
+										zoom: 3,
+									},
+									{
+										color: '#606b76',
+										scale: 1.03,
+										zoom: 4,
+									},
+									{
+										color: '#606b76',
+										scale: 1.03,
+										zoom: 5,
+									},
+									{
+										color: '#606b76',
+										scale: 1.03,
+										zoom: 6,
+									},
+									{
+										color: '#606b76',
+										scale: 1.03,
+										zoom: 7,
+									},
+									{
+										color: '#606b76',
+										scale: 0.83,
+										zoom: 8,
+									},
+									{
+										color: '#2e3338',
+										scale: 2.71,
+										zoom: 9,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.76,
+										zoom: 10,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.31,
+										zoom: 11,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.37,
+										zoom: 12,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.21,
+										zoom: 13,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.1,
+										zoom: 14,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.02,
+										zoom: 15,
+									},
+									{
+										color: '#2e3338',
+										scale: 1,
+										zoom: 16,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.88,
+										zoom: 17,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.81,
+										zoom: 18,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.79,
+										zoom: 19,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.81,
+										zoom: 20,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.87,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: {
+									any: 'road_4',
+									none: 'is_tunnel',
+								},
+								elements: 'geometry.fill',
+								stylers: [
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 0,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 1,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 2,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 3,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 4,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 5,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 6,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 7,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 8,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 9,
+									},
+									{
+										color: '#606b76',
+										scale: 1.5,
+										zoom: 10,
+									},
+									{
+										color: '#606b76',
+										scale: 1.12,
+										zoom: 11,
+									},
+									{
+										color: '#606b76',
+										scale: 1.25,
+										zoom: 12,
+									},
+									{
+										color: '#606b76',
+										scale: 1.05,
+										zoom: 13,
+									},
+									{
+										color: '#5f6974',
+										scale: 0.93,
+										zoom: 14,
+									},
+									{
+										color: '#5d6873',
+										scale: 0.86,
+										zoom: 15,
+									},
+									{
+										color: '#5c6671',
+										scale: 1.02,
+										zoom: 16,
+									},
+									{
+										color: '#5b656f',
+										scale: 0.88,
+										zoom: 17,
+									},
+									{
+										color: '#59636d',
+										scale: 0.79,
+										zoom: 18,
+									},
+									{
+										color: '#58616c',
+										scale: 0.76,
+										zoom: 19,
+									},
+									{
+										color: '#56606a',
+										scale: 0.76,
+										zoom: 20,
+									},
+									{
+										color: '#555e68',
+										scale: 0.8,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: {
+									any: 'road_4',
+								},
+								elements: 'geometry.outline',
+								stylers: [
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 0,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 1,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 2,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 3,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 4,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 5,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 6,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 7,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 8,
+									},
+									{
+										color: '#606b76',
+										scale: 0.72,
+										zoom: 9,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.22,
+										zoom: 10,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.04,
+										zoom: 11,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.17,
+										zoom: 12,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.06,
+										zoom: 13,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.97,
+										zoom: 14,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.92,
+										zoom: 15,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.09,
+										zoom: 16,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.95,
+										zoom: 17,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.86,
+										zoom: 18,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.82,
+										zoom: 19,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.82,
+										zoom: 20,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.86,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: {
+									any: 'road_5',
+									none: 'is_tunnel',
+								},
+								elements: 'geometry.fill',
+								stylers: [
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 0,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 1,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 2,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 3,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 4,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 5,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 6,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 7,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 8,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 9,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 10,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 11,
+									},
+									{
+										color: '#606b76',
+										scale: 1.11,
+										zoom: 12,
+									},
+									{
+										color: '#606b76',
+										scale: 0.84,
+										zoom: 13,
+									},
+									{
+										color: '#5f6974',
+										scale: 0.72,
+										zoom: 14,
+									},
+									{
+										color: '#5d6873',
+										scale: 0.84,
+										zoom: 15,
+									},
+									{
+										color: '#5c6671',
+										scale: 0.97,
+										zoom: 16,
+									},
+									{
+										color: '#5b656f',
+										scale: 0.83,
+										zoom: 17,
+									},
+									{
+										color: '#59636d',
+										scale: 0.75,
+										zoom: 18,
+									},
+									{
+										color: '#58616c',
+										scale: 0.73,
+										zoom: 19,
+									},
+									{
+										color: '#56606a',
+										scale: 0.74,
+										zoom: 20,
+									},
+									{
+										color: '#555e68',
+										scale: 0.8,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: {
+									any: 'road_5',
+								},
+								elements: 'geometry.outline',
+								stylers: [
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 0,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 1,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 2,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 3,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 4,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 5,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 6,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 7,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 8,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 9,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 10,
+									},
+									{
+										color: '#606b76',
+										scale: 0.4,
+										zoom: 11,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.03,
+										zoom: 12,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.88,
+										zoom: 13,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.79,
+										zoom: 14,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.91,
+										zoom: 15,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.05,
+										zoom: 16,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.9,
+										zoom: 17,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.82,
+										zoom: 18,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.79,
+										zoom: 19,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.81,
+										zoom: 20,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.86,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: {
+									any: 'road_6',
+									none: 'is_tunnel',
+								},
+								elements: 'geometry.fill',
+								stylers: [
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 0,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 1,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 2,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 3,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 4,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 5,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 6,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 7,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 8,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 9,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 10,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 11,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 12,
+									},
+									{
+										color: '#606b76',
+										scale: 2,
+										zoom: 13,
+									},
+									{
+										color: '#5f6974',
+										scale: 1.13,
+										zoom: 14,
+									},
+									{
+										color: '#5d6873',
+										scale: 1.11,
+										zoom: 15,
+									},
+									{
+										color: '#5c6671',
+										scale: 1.16,
+										zoom: 16,
+									},
+									{
+										color: '#5b656f',
+										scale: 0.93,
+										zoom: 17,
+									},
+									{
+										color: '#59636d',
+										scale: 0.8,
+										zoom: 18,
+									},
+									{
+										color: '#58616c',
+										scale: 0.75,
+										zoom: 19,
+									},
+									{
+										color: '#56606a',
+										scale: 0.75,
+										zoom: 20,
+									},
+									{
+										color: '#555e68',
+										scale: 0.8,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: {
+									any: 'road_6',
+								},
+								elements: 'geometry.outline',
+								stylers: [
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 0,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 1,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 2,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 3,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 4,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 5,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 6,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 7,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 8,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 9,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 10,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 11,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 12,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.49,
+										zoom: 13,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.09,
+										zoom: 14,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.13,
+										zoom: 15,
+									},
+									{
+										color: '#2e3338',
+										scale: 1.22,
+										zoom: 16,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.99,
+										zoom: 17,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.87,
+										zoom: 18,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.82,
+										zoom: 19,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.82,
+										zoom: 20,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.86,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: {
+									any: 'road_7',
+									none: 'is_tunnel',
+								},
+								elements: 'geometry.fill',
+								stylers: [
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 0,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 1,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 2,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 3,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 4,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 5,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 6,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 7,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 8,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 9,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 10,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 11,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 12,
+									},
+									{
+										color: '#606b76',
+										scale: 0,
+										zoom: 13,
+									},
+									{
+										color: '#5f6974',
+										scale: 0.8,
+										zoom: 14,
+									},
+									{
+										color: '#5d6873',
+										scale: 0.69,
+										zoom: 15,
+									},
+									{
+										color: '#5c6671',
+										scale: 0.78,
+										zoom: 16,
+									},
+									{
+										color: '#5b656f',
+										scale: 0.71,
+										zoom: 17,
+									},
+									{
+										color: '#59636d',
+										scale: 0.69,
+										zoom: 18,
+									},
+									{
+										color: '#58616c',
+										scale: 0.7,
+										zoom: 19,
+									},
+									{
+										color: '#56606a',
+										scale: 0.74,
+										zoom: 20,
+									},
+									{
+										color: '#555e68',
+										scale: 0.8,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: {
+									any: 'road_7',
+								},
+								elements: 'geometry.outline',
+								stylers: [
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 0,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 1,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 2,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 3,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 4,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 5,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 6,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 7,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 8,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 9,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 10,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 11,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 12,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 13,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.84,
+										zoom: 14,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.77,
+										zoom: 15,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.84,
+										zoom: 16,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.78,
+										zoom: 17,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.75,
+										zoom: 18,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.76,
+										zoom: 19,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.79,
+										zoom: 20,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.86,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: {
+									any: 'road_minor',
+									none: 'is_tunnel',
+								},
+								elements: 'geometry.fill',
+								stylers: [
+									{
+										color: '#3e454c',
+									},
+									{
+										scale: 0,
+										zoom: 0,
+									},
+									{
+										scale: 0,
+										zoom: 1,
+									},
+									{
+										scale: 0,
+										zoom: 2,
+									},
+									{
+										scale: 0,
+										zoom: 3,
+									},
+									{
+										scale: 0,
+										zoom: 4,
+									},
+									{
+										scale: 0,
+										zoom: 5,
+									},
+									{
+										scale: 0,
+										zoom: 6,
+									},
+									{
+										scale: 0,
+										zoom: 7,
+									},
+									{
+										scale: 0,
+										zoom: 8,
+									},
+									{
+										scale: 0,
+										zoom: 9,
+									},
+									{
+										scale: 0,
+										zoom: 10,
+									},
+									{
+										scale: 0,
+										zoom: 11,
+									},
+									{
+										scale: 0,
+										zoom: 12,
+									},
+									{
+										scale: 0,
+										zoom: 13,
+									},
+									{
+										scale: 0,
+										zoom: 14,
+									},
+									{
+										scale: 0,
+										zoom: 15,
+									},
+									{
+										scale: 0.8,
+										zoom: 16,
+									},
+									{
+										scale: 0.8,
+										zoom: 17,
+									},
+									{
+										scale: 0.8,
+										zoom: 18,
+									},
+									{
+										scale: 0.8,
+										zoom: 19,
+									},
+									{
+										scale: 0.8,
+										zoom: 20,
+									},
+									{
+										scale: 0.8,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: {
+									any: 'road_minor',
+								},
+								elements: 'geometry.outline',
+								stylers: [
+									{
+										opacity: 0,
+									},
+								],
+							},
+							{
+								tags: {
+									any: 'road_unclassified',
+									none: 'is_tunnel',
+								},
+								elements: 'geometry.fill',
+								stylers: [
+									{
+										color: '#3e454c',
+									},
+									{
+										scale: 0,
+										zoom: 0,
+									},
+									{
+										scale: 0,
+										zoom: 1,
+									},
+									{
+										scale: 0,
+										zoom: 2,
+									},
+									{
+										scale: 0,
+										zoom: 3,
+									},
+									{
+										scale: 0,
+										zoom: 4,
+									},
+									{
+										scale: 0,
+										zoom: 5,
+									},
+									{
+										scale: 0,
+										zoom: 6,
+									},
+									{
+										scale: 0,
+										zoom: 7,
+									},
+									{
+										scale: 0,
+										zoom: 8,
+									},
+									{
+										scale: 0,
+										zoom: 9,
+									},
+									{
+										scale: 0,
+										zoom: 10,
+									},
+									{
+										scale: 0,
+										zoom: 11,
+									},
+									{
+										scale: 0,
+										zoom: 12,
+									},
+									{
+										scale: 0,
+										zoom: 13,
+									},
+									{
+										scale: 0,
+										zoom: 14,
+									},
+									{
+										scale: 0,
+										zoom: 15,
+									},
+									{
+										scale: 0.8,
+										zoom: 16,
+									},
+									{
+										scale: 0.8,
+										zoom: 17,
+									},
+									{
+										scale: 0.8,
+										zoom: 18,
+									},
+									{
+										scale: 0.8,
+										zoom: 19,
+									},
+									{
+										scale: 0.8,
+										zoom: 20,
+									},
+									{
+										scale: 0.8,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: {
+									any: 'road_unclassified',
+								},
+								elements: 'geometry.outline',
+								stylers: [
+									{
+										opacity: 0,
+									},
+								],
+							},
+							{
+								tags: {
+									all: 'is_tunnel',
+									none: 'path',
+								},
+								elements: 'geometry.fill',
+								stylers: [
+									{
+										color: '#454c55',
+										zoom: 0,
+									},
+									{
+										color: '#454c55',
+										zoom: 1,
+									},
+									{
+										color: '#454c55',
+										zoom: 2,
+									},
+									{
+										color: '#454c55',
+										zoom: 3,
+									},
+									{
+										color: '#454c55',
+										zoom: 4,
+									},
+									{
+										color: '#454c55',
+										zoom: 5,
+									},
+									{
+										color: '#454c55',
+										zoom: 6,
+									},
+									{
+										color: '#454c55',
+										zoom: 7,
+									},
+									{
+										color: '#454c55',
+										zoom: 8,
+									},
+									{
+										color: '#454c55',
+										zoom: 9,
+									},
+									{
+										color: '#454c55',
+										zoom: 10,
+									},
+									{
+										color: '#454c55',
+										zoom: 11,
+									},
+									{
+										color: '#454c55',
+										zoom: 12,
+									},
+									{
+										color: '#454c55',
+										zoom: 13,
+									},
+									{
+										color: '#40474f',
+										zoom: 14,
+									},
+									{
+										color: '#3b4249',
+										zoom: 15,
+									},
+									{
+										color: '#3a4148',
+										zoom: 16,
+									},
+									{
+										color: '#3a4047',
+										zoom: 17,
+									},
+									{
+										color: '#394047',
+										zoom: 18,
+									},
+									{
+										color: '#383f46',
+										zoom: 19,
+									},
+									{
+										color: '#383e45',
+										zoom: 20,
+									},
+									{
+										color: '#373d44',
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: {
+									all: 'path',
+									none: 'is_tunnel',
+								},
+								elements: 'geometry.fill',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										opacity: 0.5,
+										zoom: 0,
+									},
+									{
+										opacity: 0.5,
+										zoom: 1,
+									},
+									{
+										opacity: 0.5,
+										zoom: 2,
+									},
+									{
+										opacity: 0.5,
+										zoom: 3,
+									},
+									{
+										opacity: 0.5,
+										zoom: 4,
+									},
+									{
+										opacity: 0.5,
+										zoom: 5,
+									},
+									{
+										opacity: 0.5,
+										zoom: 6,
+									},
+									{
+										opacity: 0.5,
+										zoom: 7,
+									},
+									{
+										opacity: 0.5,
+										zoom: 8,
+									},
+									{
+										opacity: 0.5,
+										zoom: 9,
+									},
+									{
+										opacity: 0.5,
+										zoom: 10,
+									},
+									{
+										opacity: 0.5,
+										zoom: 11,
+									},
+									{
+										opacity: 0.5,
+										zoom: 12,
+									},
+									{
+										opacity: 0.5,
+										zoom: 13,
+									},
+									{
+										opacity: 0.5,
+										zoom: 14,
+									},
+									{
+										opacity: 0.5,
+										zoom: 15,
+									},
+									{
+										opacity: 0.5,
+										zoom: 16,
+									},
+									{
+										opacity: 1,
+										zoom: 17,
+									},
+									{
+										opacity: 1,
+										zoom: 18,
+									},
+									{
+										opacity: 1,
+										zoom: 19,
+									},
+									{
+										opacity: 1,
+										zoom: 20,
+									},
+									{
+										opacity: 1,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: {
+									all: 'path',
+									none: 'is_tunnel',
+								},
+								elements: 'geometry.outline',
+								stylers: [
+									{
+										opacity: 0.7,
+									},
+									{
+										color: '#40474f',
+										zoom: 0,
+									},
+									{
+										color: '#40474f',
+										zoom: 1,
+									},
+									{
+										color: '#40474f',
+										zoom: 2,
+									},
+									{
+										color: '#40474f',
+										zoom: 3,
+									},
+									{
+										color: '#40474f',
+										zoom: 4,
+									},
+									{
+										color: '#40474f',
+										zoom: 5,
+									},
+									{
+										color: '#40474f',
+										zoom: 6,
+									},
+									{
+										color: '#40474f',
+										zoom: 7,
+									},
+									{
+										color: '#40474f',
+										zoom: 8,
+									},
+									{
+										color: '#40474f',
+										zoom: 9,
+									},
+									{
+										color: '#40474f',
+										zoom: 10,
+									},
+									{
+										color: '#40474f',
+										zoom: 11,
+									},
+									{
+										color: '#40474f',
+										zoom: 12,
+									},
+									{
+										color: '#40474f',
+										zoom: 13,
+									},
+									{
+										color: '#3c424a',
+										zoom: 14,
+									},
+									{
+										color: '#373d44',
+										zoom: 15,
+									},
+									{
+										color: '#363c43',
+										zoom: 16,
+									},
+									{
+										color: '#353b42',
+										zoom: 17,
+									},
+									{
+										color: '#353b41',
+										zoom: 18,
+									},
+									{
+										color: '#343a40',
+										zoom: 19,
+									},
+									{
+										color: '#33393f',
+										zoom: 20,
+									},
+									{
+										color: '#32383e',
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'road_construction',
+								elements: 'geometry.fill',
+								stylers: [
+									{
+										color: '#606b76',
+									},
+								],
+							},
+							{
+								tags: 'road_construction',
+								elements: 'geometry.outline',
+								stylers: [
+									{
+										color: '#171a1c',
+										zoom: 0,
+									},
+									{
+										color: '#171a1c',
+										zoom: 1,
+									},
+									{
+										color: '#171a1c',
+										zoom: 2,
+									},
+									{
+										color: '#171a1c',
+										zoom: 3,
+									},
+									{
+										color: '#171a1c',
+										zoom: 4,
+									},
+									{
+										color: '#171a1c',
+										zoom: 5,
+									},
+									{
+										color: '#171a1c',
+										zoom: 6,
+									},
+									{
+										color: '#171a1c',
+										zoom: 7,
+									},
+									{
+										color: '#171a1c',
+										zoom: 8,
+									},
+									{
+										color: '#171a1c',
+										zoom: 9,
+									},
+									{
+										color: '#171a1c',
+										zoom: 10,
+									},
+									{
+										color: '#171a1c',
+										zoom: 11,
+									},
+									{
+										color: '#171a1c',
+										zoom: 12,
+									},
+									{
+										color: '#171a1c',
+										zoom: 13,
+									},
+									{
+										color: '#2e3338',
+										zoom: 14,
+									},
+									{
+										color: '#171a1c',
+										zoom: 15,
+									},
+									{
+										color: '#131617',
+										zoom: 16,
+									},
+									{
+										color: '#0f1113',
+										zoom: 17,
+									},
+									{
+										color: '#0c0d0e',
+										zoom: 18,
+									},
+									{
+										color: '#080909',
+										zoom: 19,
+									},
+									{
+										color: '#040405',
+										zoom: 20,
+									},
+									{
+										color: '#000000',
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: {
+									any: 'ferry',
+								},
+								stylers: [
+									{
+										color: '#404954',
+									},
+								],
+							},
+							{
+								tags: 'transit_location',
+								elements: 'label.icon',
+								stylers: [
+									{
+										saturation: -1,
+									},
+									{
+										opacity: 0,
+										zoom: 0,
+									},
+									{
+										opacity: 0,
+										zoom: 1,
+									},
+									{
+										opacity: 0,
+										zoom: 2,
+									},
+									{
+										opacity: 0,
+										zoom: 3,
+									},
+									{
+										opacity: 0,
+										zoom: 4,
+									},
+									{
+										opacity: 0,
+										zoom: 5,
+									},
+									{
+										opacity: 0,
+										zoom: 6,
+									},
+									{
+										opacity: 0,
+										zoom: 7,
+									},
+									{
+										opacity: 0,
+										zoom: 8,
+									},
+									{
+										opacity: 0,
+										zoom: 9,
+									},
+									{
+										opacity: 0,
+										zoom: 10,
+									},
+									{
+										opacity: 0,
+										zoom: 11,
+									},
+									{
+										opacity: 0,
+										zoom: 12,
+									},
+									{
+										opacity: 1,
+										zoom: 13,
+									},
+									{
+										opacity: 1,
+										zoom: 14,
+									},
+									{
+										opacity: 1,
+										zoom: 15,
+									},
+									{
+										opacity: 1,
+										zoom: 16,
+									},
+									{
+										opacity: 1,
+										zoom: 17,
+									},
+									{
+										opacity: 1,
+										zoom: 18,
+									},
+									{
+										opacity: 1,
+										zoom: 19,
+									},
+									{
+										opacity: 1,
+										zoom: 20,
+									},
+									{
+										opacity: 1,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'transit_location',
+								elements: 'label.text',
+								stylers: [
+									{
+										opacity: 0,
+										zoom: 0,
+									},
+									{
+										opacity: 0,
+										zoom: 1,
+									},
+									{
+										opacity: 0,
+										zoom: 2,
+									},
+									{
+										opacity: 0,
+										zoom: 3,
+									},
+									{
+										opacity: 0,
+										zoom: 4,
+									},
+									{
+										opacity: 0,
+										zoom: 5,
+									},
+									{
+										opacity: 0,
+										zoom: 6,
+									},
+									{
+										opacity: 0,
+										zoom: 7,
+									},
+									{
+										opacity: 0,
+										zoom: 8,
+									},
+									{
+										opacity: 0,
+										zoom: 9,
+									},
+									{
+										opacity: 0,
+										zoom: 10,
+									},
+									{
+										opacity: 0,
+										zoom: 11,
+									},
+									{
+										opacity: 0,
+										zoom: 12,
+									},
+									{
+										opacity: 1,
+										zoom: 13,
+									},
+									{
+										opacity: 1,
+										zoom: 14,
+									},
+									{
+										opacity: 1,
+										zoom: 15,
+									},
+									{
+										opacity: 1,
+										zoom: 16,
+									},
+									{
+										opacity: 1,
+										zoom: 17,
+									},
+									{
+										opacity: 1,
+										zoom: 18,
+									},
+									{
+										opacity: 1,
+										zoom: 19,
+									},
+									{
+										opacity: 1,
+										zoom: 20,
+									},
+									{
+										opacity: 1,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'transit_location',
+								elements: 'label.text.fill',
+								stylers: [
+									{
+										color: '#8aa1a8',
+									},
+								],
+							},
+							{
+								tags: 'transit_location',
+								elements: 'label.text.outline',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+								],
+							},
+							{
+								tags: 'transit_schema',
+								elements: 'geometry.fill',
+								stylers: [
+									{
+										color: '#8aa1a8',
+									},
+									{
+										scale: 0.7,
+									},
+									{
+										opacity: 0.6,
+										zoom: 0,
+									},
+									{
+										opacity: 0.6,
+										zoom: 1,
+									},
+									{
+										opacity: 0.6,
+										zoom: 2,
+									},
+									{
+										opacity: 0.6,
+										zoom: 3,
+									},
+									{
+										opacity: 0.6,
+										zoom: 4,
+									},
+									{
+										opacity: 0.6,
+										zoom: 5,
+									},
+									{
+										opacity: 0.6,
+										zoom: 6,
+									},
+									{
+										opacity: 0.6,
+										zoom: 7,
+									},
+									{
+										opacity: 0.6,
+										zoom: 8,
+									},
+									{
+										opacity: 0.6,
+										zoom: 9,
+									},
+									{
+										opacity: 0.6,
+										zoom: 10,
+									},
+									{
+										opacity: 0.6,
+										zoom: 11,
+									},
+									{
+										opacity: 0.6,
+										zoom: 12,
+									},
+									{
+										opacity: 0.6,
+										zoom: 13,
+									},
+									{
+										opacity: 0.6,
+										zoom: 14,
+									},
+									{
+										opacity: 0.5,
+										zoom: 15,
+									},
+									{
+										opacity: 0.4,
+										zoom: 16,
+									},
+									{
+										opacity: 0.4,
+										zoom: 17,
+									},
+									{
+										opacity: 0.4,
+										zoom: 18,
+									},
+									{
+										opacity: 0.4,
+										zoom: 19,
+									},
+									{
+										opacity: 0.4,
+										zoom: 20,
+									},
+									{
+										opacity: 0.4,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'transit_schema',
+								elements: 'geometry.outline',
+								stylers: [
+									{
+										opacity: 0,
+									},
+								],
+							},
+							{
+								tags: 'transit_line',
+								elements: 'geometry.fill.pattern',
+								stylers: [
+									{
+										color: '#7a8386',
+									},
+									{
+										opacity: 0,
+										zoom: 0,
+									},
+									{
+										opacity: 0,
+										zoom: 1,
+									},
+									{
+										opacity: 0,
+										zoom: 2,
+									},
+									{
+										opacity: 0,
+										zoom: 3,
+									},
+									{
+										opacity: 0,
+										zoom: 4,
+									},
+									{
+										opacity: 0,
+										zoom: 5,
+									},
+									{
+										opacity: 0,
+										zoom: 6,
+									},
+									{
+										opacity: 0,
+										zoom: 7,
+									},
+									{
+										opacity: 0,
+										zoom: 8,
+									},
+									{
+										opacity: 0,
+										zoom: 9,
+									},
+									{
+										opacity: 0,
+										zoom: 10,
+									},
+									{
+										opacity: 0,
+										zoom: 11,
+									},
+									{
+										opacity: 0,
+										zoom: 12,
+									},
+									{
+										opacity: 1,
+										zoom: 13,
+									},
+									{
+										opacity: 1,
+										zoom: 14,
+									},
+									{
+										opacity: 1,
+										zoom: 15,
+									},
+									{
+										opacity: 1,
+										zoom: 16,
+									},
+									{
+										opacity: 1,
+										zoom: 17,
+									},
+									{
+										opacity: 1,
+										zoom: 18,
+									},
+									{
+										opacity: 1,
+										zoom: 19,
+									},
+									{
+										opacity: 1,
+										zoom: 20,
+									},
+									{
+										opacity: 1,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'transit_line',
+								elements: 'geometry.fill',
+								stylers: [
+									{
+										color: '#7a8386',
+									},
+									{
+										scale: 0.4,
+									},
+									{
+										opacity: 0,
+										zoom: 0,
+									},
+									{
+										opacity: 0,
+										zoom: 1,
+									},
+									{
+										opacity: 0,
+										zoom: 2,
+									},
+									{
+										opacity: 0,
+										zoom: 3,
+									},
+									{
+										opacity: 0,
+										zoom: 4,
+									},
+									{
+										opacity: 0,
+										zoom: 5,
+									},
+									{
+										opacity: 0,
+										zoom: 6,
+									},
+									{
+										opacity: 0,
+										zoom: 7,
+									},
+									{
+										opacity: 0,
+										zoom: 8,
+									},
+									{
+										opacity: 0,
+										zoom: 9,
+									},
+									{
+										opacity: 0,
+										zoom: 10,
+									},
+									{
+										opacity: 0,
+										zoom: 11,
+									},
+									{
+										opacity: 0,
+										zoom: 12,
+									},
+									{
+										opacity: 1,
+										zoom: 13,
+									},
+									{
+										opacity: 1,
+										zoom: 14,
+									},
+									{
+										opacity: 1,
+										zoom: 15,
+									},
+									{
+										opacity: 1,
+										zoom: 16,
+									},
+									{
+										opacity: 1,
+										zoom: 17,
+									},
+									{
+										opacity: 1,
+										zoom: 18,
+									},
+									{
+										opacity: 1,
+										zoom: 19,
+									},
+									{
+										opacity: 1,
+										zoom: 20,
+									},
+									{
+										opacity: 1,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'water',
+								elements: 'geometry',
+								stylers: [
+									{
+										color: '#2a3037',
+										zoom: 0,
+									},
+									{
+										color: '#2a3037',
+										zoom: 1,
+									},
+									{
+										color: '#2a3037',
+										zoom: 2,
+									},
+									{
+										color: '#2a3037',
+										zoom: 3,
+									},
+									{
+										color: '#2a3037',
+										zoom: 4,
+									},
+									{
+										color: '#2a3037',
+										zoom: 5,
+									},
+									{
+										color: '#2a3037',
+										zoom: 6,
+									},
+									{
+										color: '#2a3037',
+										zoom: 7,
+									},
+									{
+										color: '#292e35',
+										zoom: 8,
+									},
+									{
+										color: '#272d33',
+										zoom: 9,
+									},
+									{
+										color: '#262b31',
+										zoom: 10,
+									},
+									{
+										color: '#252a30',
+										zoom: 11,
+									},
+									{
+										color: '#24292f',
+										zoom: 12,
+									},
+									{
+										color: '#23282e',
+										zoom: 13,
+									},
+									{
+										color: '#22272d',
+										zoom: 14,
+									},
+									{
+										color: '#21262b',
+										zoom: 15,
+									},
+									{
+										color: '#20242a',
+										zoom: 16,
+									},
+									{
+										color: '#1f2329',
+										zoom: 17,
+									},
+									{
+										color: '#1e2227',
+										zoom: 18,
+									},
+									{
+										color: '#1d2126',
+										zoom: 19,
+									},
+									{
+										color: '#1c1f24',
+										zoom: 20,
+									},
+									{
+										color: '#1b1e23',
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'water',
+								elements: 'geometry',
+								types: 'polyline',
+								stylers: [
+									{
+										opacity: 0.4,
+										zoom: 0,
+									},
+									{
+										opacity: 0.4,
+										zoom: 1,
+									},
+									{
+										opacity: 0.4,
+										zoom: 2,
+									},
+									{
+										opacity: 0.4,
+										zoom: 3,
+									},
+									{
+										opacity: 0.6,
+										zoom: 4,
+									},
+									{
+										opacity: 0.8,
+										zoom: 5,
+									},
+									{
+										opacity: 1,
+										zoom: 6,
+									},
+									{
+										opacity: 1,
+										zoom: 7,
+									},
+									{
+										opacity: 1,
+										zoom: 8,
+									},
+									{
+										opacity: 1,
+										zoom: 9,
+									},
+									{
+										opacity: 1,
+										zoom: 10,
+									},
+									{
+										opacity: 1,
+										zoom: 11,
+									},
+									{
+										opacity: 1,
+										zoom: 12,
+									},
+									{
+										opacity: 1,
+										zoom: 13,
+									},
+									{
+										opacity: 1,
+										zoom: 14,
+									},
+									{
+										opacity: 1,
+										zoom: 15,
+									},
+									{
+										opacity: 1,
+										zoom: 16,
+									},
+									{
+										opacity: 1,
+										zoom: 17,
+									},
+									{
+										opacity: 1,
+										zoom: 18,
+									},
+									{
+										opacity: 1,
+										zoom: 19,
+									},
+									{
+										opacity: 1,
+										zoom: 20,
+									},
+									{
+										opacity: 1,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'bathymetry',
+								elements: 'geometry',
+								stylers: [
+									{
+										hue: '#2a3037',
+									},
+								],
+							},
+							{
+								tags: {
+									any: ['industrial', 'construction_site'],
+								},
+								elements: 'geometry',
+								stylers: [
+									{
+										color: '#3c4249',
+										zoom: 0,
+									},
+									{
+										color: '#3c4249',
+										zoom: 1,
+									},
+									{
+										color: '#3c4249',
+										zoom: 2,
+									},
+									{
+										color: '#3c4249',
+										zoom: 3,
+									},
+									{
+										color: '#3c4249',
+										zoom: 4,
+									},
+									{
+										color: '#3c4249',
+										zoom: 5,
+									},
+									{
+										color: '#3c4249',
+										zoom: 6,
+									},
+									{
+										color: '#3c4249',
+										zoom: 7,
+									},
+									{
+										color: '#3c4249',
+										zoom: 8,
+									},
+									{
+										color: '#3c4249',
+										zoom: 9,
+									},
+									{
+										color: '#3c4249',
+										zoom: 10,
+									},
+									{
+										color: '#3c4249',
+										zoom: 11,
+									},
+									{
+										color: '#3c4249',
+										zoom: 12,
+									},
+									{
+										color: '#3c4249',
+										zoom: 13,
+									},
+									{
+										color: '#383d44',
+										zoom: 14,
+									},
+									{
+										color: '#33383e',
+										zoom: 15,
+									},
+									{
+										color: '#32373d',
+										zoom: 16,
+									},
+									{
+										color: '#31363c',
+										zoom: 17,
+									},
+									{
+										color: '#31363b',
+										zoom: 18,
+									},
+									{
+										color: '#30353a',
+										zoom: 19,
+									},
+									{
+										color: '#2f3439',
+										zoom: 20,
+									},
+									{
+										color: '#2e3338',
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: {
+									any: 'transit',
+									none: ['transit_location', 'transit_line', 'transit_schema', 'is_unclassified_transit'],
+								},
+								elements: 'geometry',
+								stylers: [
+									{
+										color: '#3c4249',
+										zoom: 0,
+									},
+									{
+										color: '#3c4249',
+										zoom: 1,
+									},
+									{
+										color: '#3c4249',
+										zoom: 2,
+									},
+									{
+										color: '#3c4249',
+										zoom: 3,
+									},
+									{
+										color: '#3c4249',
+										zoom: 4,
+									},
+									{
+										color: '#3c4249',
+										zoom: 5,
+									},
+									{
+										color: '#3c4249',
+										zoom: 6,
+									},
+									{
+										color: '#3c4249',
+										zoom: 7,
+									},
+									{
+										color: '#3c4249',
+										zoom: 8,
+									},
+									{
+										color: '#3c4249',
+										zoom: 9,
+									},
+									{
+										color: '#3c4249',
+										zoom: 10,
+									},
+									{
+										color: '#3c4249',
+										zoom: 11,
+									},
+									{
+										color: '#3c4249',
+										zoom: 12,
+									},
+									{
+										color: '#3c4249',
+										zoom: 13,
+									},
+									{
+										color: '#383d44',
+										zoom: 14,
+									},
+									{
+										color: '#33383e',
+										zoom: 15,
+									},
+									{
+										color: '#32373d',
+										zoom: 16,
+									},
+									{
+										color: '#31363c',
+										zoom: 17,
+									},
+									{
+										color: '#31363b',
+										zoom: 18,
+									},
+									{
+										color: '#30353a',
+										zoom: 19,
+									},
+									{
+										color: '#2f3439',
+										zoom: 20,
+									},
+									{
+										color: '#2e3338',
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'fence',
+								elements: 'geometry.fill',
+								stylers: [
+									{
+										color: '#454c54',
+									},
+									{
+										opacity: 0.75,
+										zoom: 0,
+									},
+									{
+										opacity: 0.75,
+										zoom: 1,
+									},
+									{
+										opacity: 0.75,
+										zoom: 2,
+									},
+									{
+										opacity: 0.75,
+										zoom: 3,
+									},
+									{
+										opacity: 0.75,
+										zoom: 4,
+									},
+									{
+										opacity: 0.75,
+										zoom: 5,
+									},
+									{
+										opacity: 0.75,
+										zoom: 6,
+									},
+									{
+										opacity: 0.75,
+										zoom: 7,
+									},
+									{
+										opacity: 0.75,
+										zoom: 8,
+									},
+									{
+										opacity: 0.75,
+										zoom: 9,
+									},
+									{
+										opacity: 0.75,
+										zoom: 10,
+									},
+									{
+										opacity: 0.75,
+										zoom: 11,
+									},
+									{
+										opacity: 0.75,
+										zoom: 12,
+									},
+									{
+										opacity: 0.75,
+										zoom: 13,
+									},
+									{
+										opacity: 0.75,
+										zoom: 14,
+									},
+									{
+										opacity: 0.75,
+										zoom: 15,
+									},
+									{
+										opacity: 0.75,
+										zoom: 16,
+									},
+									{
+										opacity: 0.45,
+										zoom: 17,
+									},
+									{
+										opacity: 0.45,
+										zoom: 18,
+									},
+									{
+										opacity: 0.45,
+										zoom: 19,
+									},
+									{
+										opacity: 0.45,
+										zoom: 20,
+									},
+									{
+										opacity: 0.45,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'medical',
+								elements: 'geometry',
+								stylers: [
+									{
+										color: '#3c4249',
+										zoom: 0,
+									},
+									{
+										color: '#3c4249',
+										zoom: 1,
+									},
+									{
+										color: '#3c4249',
+										zoom: 2,
+									},
+									{
+										color: '#3c4249',
+										zoom: 3,
+									},
+									{
+										color: '#3c4249',
+										zoom: 4,
+									},
+									{
+										color: '#3c4249',
+										zoom: 5,
+									},
+									{
+										color: '#3c4249',
+										zoom: 6,
+									},
+									{
+										color: '#3c4249',
+										zoom: 7,
+									},
+									{
+										color: '#3c4249',
+										zoom: 8,
+									},
+									{
+										color: '#3c4249',
+										zoom: 9,
+									},
+									{
+										color: '#3c4249',
+										zoom: 10,
+									},
+									{
+										color: '#3c4249',
+										zoom: 11,
+									},
+									{
+										color: '#3c4249',
+										zoom: 12,
+									},
+									{
+										color: '#3c4249',
+										zoom: 13,
+									},
+									{
+										color: '#383d44',
+										zoom: 14,
+									},
+									{
+										color: '#33383e',
+										zoom: 15,
+									},
+									{
+										color: '#32373d',
+										zoom: 16,
+									},
+									{
+										color: '#31363c',
+										zoom: 17,
+									},
+									{
+										color: '#31363b',
+										zoom: 18,
+									},
+									{
+										color: '#30353a',
+										zoom: 19,
+									},
+									{
+										color: '#2f3439',
+										zoom: 20,
+									},
+									{
+										color: '#2e3338',
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'beach',
+								elements: 'geometry',
+								stylers: [
+									{
+										color: '#3c4249',
+										opacity: 0.3,
+										zoom: 0,
+									},
+									{
+										color: '#3c4249',
+										opacity: 0.3,
+										zoom: 1,
+									},
+									{
+										color: '#3c4249',
+										opacity: 0.3,
+										zoom: 2,
+									},
+									{
+										color: '#3c4249',
+										opacity: 0.3,
+										zoom: 3,
+									},
+									{
+										color: '#3c4249',
+										opacity: 0.3,
+										zoom: 4,
+									},
+									{
+										color: '#3c4249',
+										opacity: 0.3,
+										zoom: 5,
+									},
+									{
+										color: '#3c4249',
+										opacity: 0.3,
+										zoom: 6,
+									},
+									{
+										color: '#3c4249',
+										opacity: 0.3,
+										zoom: 7,
+									},
+									{
+										color: '#3c4249',
+										opacity: 0.3,
+										zoom: 8,
+									},
+									{
+										color: '#3c4249',
+										opacity: 0.3,
+										zoom: 9,
+									},
+									{
+										color: '#3c4249',
+										opacity: 0.3,
+										zoom: 10,
+									},
+									{
+										color: '#3c4249',
+										opacity: 0.3,
+										zoom: 11,
+									},
+									{
+										color: '#3c4249',
+										opacity: 0.3,
+										zoom: 12,
+									},
+									{
+										color: '#3c4249',
+										opacity: 0.65,
+										zoom: 13,
+									},
+									{
+										color: '#383d44',
+										opacity: 1,
+										zoom: 14,
+									},
+									{
+										color: '#33383e',
+										opacity: 1,
+										zoom: 15,
+									},
+									{
+										color: '#32373d',
+										opacity: 1,
+										zoom: 16,
+									},
+									{
+										color: '#31363c',
+										opacity: 1,
+										zoom: 17,
+									},
+									{
+										color: '#31363b',
+										opacity: 1,
+										zoom: 18,
+									},
+									{
+										color: '#30353a',
+										opacity: 1,
+										zoom: 19,
+									},
+									{
+										color: '#2f3439',
+										opacity: 1,
+										zoom: 20,
+									},
+									{
+										color: '#2e3338',
+										opacity: 1,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: {
+									all: ['is_tunnel', 'path'],
+								},
+								elements: 'geometry.fill',
+								stylers: [
+									{
+										color: '#272b30',
+									},
+									{
+										opacity: 0.3,
+									},
+								],
+							},
+							{
+								tags: {
+									all: ['is_tunnel', 'path'],
+								},
+								elements: 'geometry.outline',
+								stylers: [
+									{
+										opacity: 0,
+									},
+								],
+							},
+							{
+								tags: 'road_limited',
+								elements: 'geometry.fill',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										scale: 0,
+										zoom: 0,
+									},
+									{
+										scale: 0,
+										zoom: 1,
+									},
+									{
+										scale: 0,
+										zoom: 2,
+									},
+									{
+										scale: 0,
+										zoom: 3,
+									},
+									{
+										scale: 0,
+										zoom: 4,
+									},
+									{
+										scale: 0,
+										zoom: 5,
+									},
+									{
+										scale: 0,
+										zoom: 6,
+									},
+									{
+										scale: 0,
+										zoom: 7,
+									},
+									{
+										scale: 0,
+										zoom: 8,
+									},
+									{
+										scale: 0,
+										zoom: 9,
+									},
+									{
+										scale: 0,
+										zoom: 10,
+									},
+									{
+										scale: 0,
+										zoom: 11,
+									},
+									{
+										scale: 0,
+										zoom: 12,
+									},
+									{
+										scale: 0.1,
+										zoom: 13,
+									},
+									{
+										scale: 0.2,
+										zoom: 14,
+									},
+									{
+										scale: 0.3,
+										zoom: 15,
+									},
+									{
+										scale: 0.5,
+										zoom: 16,
+									},
+									{
+										scale: 0.6,
+										zoom: 17,
+									},
+									{
+										scale: 0.69,
+										zoom: 18,
+									},
+									{
+										scale: 0.7,
+										zoom: 19,
+									},
+									{
+										scale: 0.74,
+										zoom: 20,
+									},
+									{
+										scale: 0.8,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'road_limited',
+								elements: 'geometry.outline',
+								stylers: [
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 0,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 1,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 2,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 3,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 4,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 5,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 6,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 7,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 8,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 9,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 10,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 11,
+									},
+									{
+										color: '#606b76',
+										scale: 0.9,
+										zoom: 12,
+									},
+									{
+										color: '#606b76',
+										scale: 0.1,
+										zoom: 13,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.2,
+										zoom: 14,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.3,
+										zoom: 15,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.5,
+										zoom: 16,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.6,
+										zoom: 17,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.75,
+										zoom: 18,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.76,
+										zoom: 19,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.79,
+										zoom: 20,
+									},
+									{
+										color: '#2e3338',
+										scale: 0.86,
+										zoom: 21,
+									},
+								],
+							},
+							{
+								tags: 'transit_stop',
+								elements: 'label.icon',
+								stylers: [
+									{
+										color: '#171a1c',
+									},
+									{
+										'secondary-color': '#8aa1a8',
+									},
+									{
+										'tertiary-color': '#505962',
+									},
+								],
+							},
+							{
+								tags: {
+									any: ['transit'],
+								},
+								elements: ['label.icon', 'label.text'],
+								stylers: {
+									visibility: 'off',
+								},
+							},
+							{
+								tags: {
+									any: ['outdoor', 'park', 'cemetery', 'medical'],
+								},
+								elements: 'label',
+								stylers: {
+									visibility: 'off',
+								},
+							},
+							{
+								tags: {
+									any: 'poi',
+									none: ['outdoor', 'park', 'cemetery', 'medical'],
+								},
+								stylers: {
+									visibility: 'off',
+								},
+							},
+							{
+								tags: {
+									any: 'road',
+								},
+								types: 'point',
+								stylers: {
+									visibility: 'off',
+								},
+							},
+							{
+								tags: {
+									any: ['food_and_drink', 'shopping', 'commercial_services'],
+								},
+								stylers: {
+									visibility: 'off',
+								},
+							},
+							{
+								tags: {
+									any: ['traffic_light'],
+								},
+								stylers: {
+									visibility: 'off',
+								},
+							},
+							{
+								tags: {
+									any: ['entrance'],
+								},
+								stylers: {
+									visibility: 'off',
+								},
+							},
+							{
+								tags: {
+									any: ['road'],
+									none: ['road_1', 'road_2', 'road_3', 'road_4', 'road_5', 'road_6', 'road_7'],
+								},
+								elements: 'label.icon',
+								stylers: {
+									visibility: 'off',
+								},
+							},
+							{
+								tags: {
+									any: ['building', 'address', 'fence'],
+								},
+								stylers: {
+									visibility: 'off',
+								},
+							},
+							{
+								tags: {
+									any: ['transit'],
+								},
+								stylers: {
+									visibility: 'off',
+								},
+							},
+							{
+								tags: {
+									any: 'landcover',
+									none: 'vegetation',
+								},
+								stylers: {
+									visibility: 'off',
+								},
+							},
+						],
+					})
+				);		
+				map.addChild(new YMapDefaultFeaturesLayer());
+
+				const markershop = document.createElement('div');
+				markershop.innerHTML = `
+                <svg width="41" height="58" viewBox="0 0 41 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M39.5714 20.2857C39.5714 30.9571 20.2857 56.7143 20.2857 56.7143C20.2857 56.7143 1 30.9571 1 20.2857C1 15.1708 3.03188 10.2654 6.64865 6.64865C10.2654 3.03188 15.1708 1 20.2857 1C25.4006 1 30.306 3.03188 33.9228 6.64865C37.5395 10.2654 39.5714 15.1708 39.5714 20.2857V20.2857Z" stroke="#D3965F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M11.9774 17.84C12.0176 17.3388 12.2451 16.8711 12.6147 16.5302C12.9842 16.1892 13.4686 15.9999 13.9714 16H26.0294C26.5322 15.9999 27.0166 16.1892 27.3861 16.5302C27.7556 16.8711 27.9832 17.3388 28.0234 17.84L28.8264 27.84C28.8485 28.1152 28.8133 28.392 28.7232 28.6529C28.6331 28.9139 28.4899 29.1533 28.3027 29.3562C28.1155 29.5592 27.8883 29.7211 27.6354 29.8319C27.3825 29.9427 27.1095 29.9999 26.8334 30H13.1674C12.8913 29.9999 12.6182 29.9427 12.3654 29.8319C12.1125 29.7211 11.8853 29.5592 11.6981 29.3562C11.5109 29.1533 11.3677 28.9139 11.2776 28.6529C11.1874 28.392 11.1523 28.1152 11.1744 27.84L11.9774 17.84Z" stroke="#D3965F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M24 19V14C24 12.9391 23.5786 11.9217 22.8284 11.1716C22.0783 10.4214 21.0609 10 20 10C18.9391 10 17.9217 10.4214 17.1716 11.1716C16.4214 11.9217 16 12.9391 16 14V19" stroke="#D3965F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                `;
+				markershop.className = 'map-marker--shop';
+				map.addChild(new YMapMarker({ coordinates: [37.551623, 55.772246] }, markershop));
+
+				const markerbox = document.createElement('div');
+				markerbox.innerHTML = `
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M49.2863 21.4283C49.2863 32.0997 30.0006 57.8569 30.0006 57.8569C30.0006 57.8569 10.7148 32.0997 10.7148 21.4283C10.7148 16.3134 12.7467 11.408 16.3635 7.79123C19.9803 4.17446 24.8857 2.14258 30.0006 2.14258C35.1154 2.14258 40.0208 4.17446 43.6376 7.79123C47.2544 11.408 49.2863 16.3134 49.2863 21.4283V21.4283Z" stroke="#D3965F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <g clip-path="url(#clip0_5116_52778)">
+                    <path d="M39.9 16.05L35.5 18.25M35.5 18.25L34.95 18.525L30 21M35.5 18.25V22.1M35.5 18.25L25.05 12.75M30 21L20.1 16.05M30 21V31.45M33.9358 11.5202L36.1358 12.6752C38.5019 13.9171 39.6855 14.5375 40.3433 15.654C41 16.7694 41 18.1587 41 20.9362V21.0649C41 23.8413 41 25.2306 40.3433 26.346C39.6855 27.4625 38.5019 28.084 36.1358 29.3259L33.9358 30.4798C32.0042 31.4929 31.0384 32 30 32C28.9616 32 27.9958 31.494 26.0642 30.4798L23.8642 29.3248C21.4981 28.0829 20.3145 27.4625 19.6567 26.346C19 25.2306 19 23.8413 19 21.066V20.9373C19 18.1598 19 16.7705 19.6567 15.6551C20.3145 14.5386 21.4981 13.9171 23.8642 12.6763L26.0642 11.5213C27.9958 10.5071 28.9616 10 30 10C31.0384 10 32.0042 10.506 33.9358 11.5202Z" stroke="#D3965F" stroke-width="1.5" stroke-linecap="round"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_5116_52778">
+                    <rect width="24" height="24" fill="white" transform="translate(18 9)"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+                `;
+				markerbox.className = 'map-marker--box';
+				map.addChild(new YMapMarker({ coordinates: [37.69787, 55.731244] }, markerbox));
+			}
+		</script> -->
+		<script>
+			ymaps.ready(function () {
+				var myMap = new ymaps.Map('contact__map', {
+					center: [55.753994, 37.622093],
+					zoom: 9,
+					controls: ['routePanelControl']
+				});
+
+				var control = myMap.controls.get('routePanelControl');
+
+				myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+					hintContent: 'Магазин',
+				}, {
+					iconLayout: 'default#image',
+					iconImageHref: './assets/images/icons/markershop.svg',
+					iconImageSize: [30, 42],
+					iconImageOffset: [-5, -38]
+				}),
+
+				myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
+				}, {
+					iconLayout: 'default#imageWithContent',
+					iconImageHref: './assets/images/icons/markerbox.svg',
+					iconImageSize: [48, 48],
+					iconImageOffset: [-24, -24],
+				});
+				myMap.geoObjects
+					.add(myPlacemark)
+					.add(myPlacemarkWithContent);
+
+				// Зададим состояние панели для построения машрутов.
+				control.routePanel.state.set({
+					type: 'masstransit',
+					fromEnabled: false,
+					from: 'Москва, Льва Толстого 16',
+					toEnabled: true
+				});
+
+				control.routePanel.options.set({
+					allowSwitch: false,
+					reverseGeocoding: true,
+					types: { masstransit: true, pedestrian: true}
+				});
+			});
+		</script>
+		<title>Контакты</title>
+	<script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+	<body>
+		<header class="header no-tran anim">
+	<div class="container">
+		<div class="header__container">
+			<div class="header-wrapper">
+				<a href="./home.html" class="header__logo">
+					<img src="../assets/images/logo.webp" alt="">
+				</a>
+				<nav class="header__navigation">
+					<ul class="header__menu">
+						<li class="header__menu-link" data-menu="kitchen"><a href="">Кухни</a></li>
+						<li class="header__menu-link" data-menu="furniture"><a href="">Мебель</a></li>
+						<li class="header__menu-link"><a href="">Портфолио</a></li>
+						<li class="header__menu-link"><a href="">О компании</a></li>
+						<li class="header__menu-link"><a href="">Дизайнерам</a></li>
+						<li class="header__menu-link"><a href="">Контакты</a></li>
+						<li class="header__menu-link"><a href="">Акции</a></li>
+					</ul>
+				</nav>
+				<div class="header__phone">
+					<div class="header__phone-icon">
+						<img src="../assets/images/icons/phone.svg" alt="">
+					</div>
+					<a href="tel:+79001111111" class="btn__tel">
+						<span class="btn__text">Заказать звонок</span>
+						<img src="./assets/images/icons/rect.svg" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="header__bottom">
+				<div class="header__bottom-wrapper kitchen">
+					<ul class="header__list">
+						<li class="header__list-option">
+							<a href=""><span>Все кухни</span> <img src="../assets/images/icons/arrow_header.svg" alt=""></a>
+						</li>
+						<li class="header__list-option">
+							<a href=""><span>Авторские модели кухонь</span> <img src="../assets/images/icons/arrow_header.svg" alt=""></a>
+						</li>
+						<li class="header__list-option">
+							<a href=""><span>Кухни в классическом стиле</span> <img src="../assets/images/icons/arrow_header.svg" alt=""></a>
+						</li>
+						<li class="header__list-option">
+							<a href=""><span>Кухни в современном стиле</span> <img src="../assets/images/icons/arrow_header.svg" alt=""></a>
+						</li>
+						<li class="header__list-option">
+							<a href=""><span>Кухни в стиле неоклассика</span> <img src="../assets/images/icons/arrow_header.svg" alt=""></a>
+						</li>
+						<li class="header__list-option">
+							<a href=""><span>Кухни премиум класса</span> <img src="../assets/images/icons/arrow_header.svg" alt=""></a>
+						</li>
+					</ul>
+					<div class="header__imgs">
+						<div class="header__imgs-item">
+							<img src="../assets/images/header_1.webp" alt="">
+						</div>
+						<div class="header__imgs-item">
+							<img src="../assets/images/header_2.webp" alt="">
+						</div>
+						<div class="header__imgs-item">
+							<img src="../assets/images/header_3.webp" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="header__bottom-wrapper furniture">
+					<ul class="header__list">
+						<li class="header__list-option">
+							<a href=""><span>Все кухни</span> <img src="../assets/images/icons/arrow_header.svg" alt=""></a>
+						</li>
+						<li class="header__list-option">
+							<a href=""><span>Авторские модели кухонь</span> <img src="../assets/images/icons/arrow_header.svg" alt=""></a>
+						</li>
+						<li class="header__list-option">
+							<a href=""><span>Кухни в классическом стиле</span> <img src="../assets/images/icons/arrow_header.svg" alt=""></a>
+						</li>
+						<li class="header__list-option">
+							<a href=""><span>Кухни в современном стиле</span> <img src="../assets/images/icons/arrow_header.svg" alt=""></a>
+						</li>
+						<li class="header__list-option">
+							<a href=""><span>Кухни в стиле неоклассика</span> <img src="../assets/images/icons/arrow_header.svg" alt=""></a>
+						</li>
+						<li class="header__list-option">
+							<a href=""><span>Кухни премиум класса</span> <img src="../assets/images/icons/arrow_header.svg" alt=""></a>
+						</li>
+					</ul>
+					<div class="header__imgs">
+						<div class="header__imgs-item">
+							<img src="../assets/images/header_1.webp" alt="">
+						</div>
+						<div class="header__imgs-item">
+							<img src="../assets/images/header_2.webp" alt="">
+						</div>
+						<div class="header__imgs-item">
+							<img src="../assets/images/header_3.webp" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__mob">
+			<div class="container">
+				<div class="header__inner">
+					<div class="header__top">
+						<div class="burger-menu">
+							<a href="" class="burger-menu_button">
+								<spun class="burger-menu_lines"></spun>
+							</a>
+
+							<div class="burger-menu_overlay"></div>
+						</div>
+						<div class="header__top-logo">
+							<img src="../assets/images/logo.webp" alt="">
+						</div>
+						<div class="header__top-phone">
+							<img src="../assets/images/icons/phone.svg" alt="">
+						</div>
+					</div>
+					<nav class="header__inner-menu">
+						<div class="header__inner-main">
+							<a href="" class="burger-menu_link">
+								<span>Кухни</span>
+								<div>
+									<svg width="75" height="52" viewBox="0 0 75 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g filter="url(#filter0_b_4987_23171)">
+											<rect x="23" width="52" height="52" rx="26" fill="white" fill-opacity="0.2"></rect>
+										</g>
+										<path d="M1 25.25C0.585786 25.25 0.25 25.5858 0.25 26C0.25 26.4142 0.585786 26.75 1 26.75L1 25.25ZM49.5303 26.5303C49.8232 26.2374 49.8232 25.7626 49.5303 25.4697L44.7574 20.6967C44.4645 20.4038 43.9896 20.4038 43.6967 20.6967C43.4038 20.9896 43.4038 21.4645 43.6967 21.7574L47.9393 26L43.6967 30.2426C43.4038 30.5355 43.4038 31.0104 43.6967 31.3033C43.9896 31.5962 44.4645 31.5962 44.7574 31.3033L49.5303 26.5303ZM1 26.75L49 26.75L49 25.25L1 25.25L1 26.75Z" fill="white"></path>
+										<defs>
+											<filter id="filter0_b_4987_23171" x="12.8" y="-10.2" width="72.4" height="72.4" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+												<feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+												<feGaussianBlur in="BackgroundImageFix" stdDeviation="5.1"></feGaussianBlur>
+												<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_4987_23171"></feComposite>
+												<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_4987_23171" result="shape"></feBlend>
+											</filter>
+										</defs>
+									</svg>
+								</div>
+							</a>
+							<a href="" class="burger-menu_link">
+								<span>Мебель</span>
+								<div>
+									<svg width="75" height="52" viewBox="0 0 75 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g filter="url(#filter0_b_4987_23171)">
+											<rect x="23" width="52" height="52" rx="26" fill="white" fill-opacity="0.2"></rect>
+										</g>
+										<path d="M1 25.25C0.585786 25.25 0.25 25.5858 0.25 26C0.25 26.4142 0.585786 26.75 1 26.75L1 25.25ZM49.5303 26.5303C49.8232 26.2374 49.8232 25.7626 49.5303 25.4697L44.7574 20.6967C44.4645 20.4038 43.9896 20.4038 43.6967 20.6967C43.4038 20.9896 43.4038 21.4645 43.6967 21.7574L47.9393 26L43.6967 30.2426C43.4038 30.5355 43.4038 31.0104 43.6967 31.3033C43.9896 31.5962 44.4645 31.5962 44.7574 31.3033L49.5303 26.5303ZM1 26.75L49 26.75L49 25.25L1 25.25L1 26.75Z" fill="white"></path>
+										<defs>
+											<filter id="filter0_b_4987_23171" x="12.8" y="-10.2" width="72.4" height="72.4" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+												<feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+												<feGaussianBlur in="BackgroundImageFix" stdDeviation="5.1"></feGaussianBlur>
+												<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_4987_23171"></feComposite>
+												<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_4987_23171" result="shape"></feBlend>
+											</filter>
+										</defs>
+									</svg>
+								</div>
+							</a>
+							<a href="" class="burger-menu_link">Портфолио</a>
+							<a href="" class="burger-menu_link">О нас</a>
+							<a href="" class="burger-menu_link">Дизайнерам и архитекторам</a>
+							<a href="" class="burger-menu_link">Заказчикам</a>
+							<a href="" class="burger-menu_link">Контакты</a>
+						</div>
+						<div class="header__inner-bottom">
+							<div class="header__call">
+								<div class="header__call-icon">
+									<img src="../assets/images/icons/phone.svg" alt="">
+								</div>
+								<div class="header__call-text">
+									<span>Заказать звонок</span>
+									<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect x="5.65674" y="-0.156738" width="8" height="8" rx="1" transform="rotate(45 5.65674 -0.156738)" fill="#D3965F"></rect>
+									</svg>
+								</div>
+							</div>
+							<div class="header__social">
+								<div class="header__social-item">
+									<img src="../assets/images/icons/social/tg.svg" alt="">
+								</div>
+								<div class="header__social-item">
+									<img src="../assets/images/icons/social/whatsup.svg" alt="">
+								</div>
+								<div class="header__social-item">
+									<img src="../assets/images/icons/social/inst.svg" alt="">
+								</div>
+								<div class="header__social-item">
+									<img src="../assets/images/icons/social/behance.svg" alt="">
+								</div>
+								<div class="header__social-item">
+									<img src="../assets/images/icons/social/facebook.svg" alt="">
+								</div>
+								<div class="header__social-item">
+									<img src="../assets/images/icons/social/vk.svg" alt="">
+								</div>
+								<div class="header__social-item">
+									<img src="../assets/images/icons/social/dzen1.svg" alt="">
+								</div>
+								<div class="header__social-item">
+									<img src="../assets/images/icons/social/pinterest.svg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="header__inner-sublists">
+							<div class="header__inner-sublists--title">
+								<div>
+									<svg width="49" height="32" viewBox="0 0 49 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g filter="url(#filter0_b_4987_22200)">
+											<rect x="17" width="32" height="32" rx="16" fill="white" fill-opacity="0.2"></rect>
+										</g>
+										<path d="M0.646447 15.6464C0.451184 15.8417 0.451184 16.1583 0.646447 16.3536L3.82843 19.5355C4.02369 19.7308 4.34027 19.7308 4.53553 19.5355C4.7308 19.3403 4.7308 19.0237 4.53553 18.8284L1.70711 16L4.53553 13.1716C4.7308 12.9763 4.7308 12.6597 4.53553 12.4645C4.34027 12.2692 4.02369 12.2692 3.82843 12.4645L0.646447 15.6464ZM1 16.5L33 16.5L33 15.5L1 15.5L1 16.5Z" fill="#D3965F"></path>
+										<defs>
+											<filter id="filter0_b_4987_22200" x="6.8" y="-10.2" width="52.4" height="52.4" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+												<feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+												<feGaussianBlur in="BackgroundImageFix" stdDeviation="5.1"></feGaussianBlur>
+												<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_4987_22200"></feComposite>
+												<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_4987_22200" result="shape"></feBlend>
+											</filter>
+										</defs>
+									</svg>
+								</div>
+								<div>Кухни</div>
+							</div>
+							<ul class="header__list">
+								<li class="header__list-option">
+									<a href=""><span>Все кухни</span> <img src="../assets/images/icons/arrow_header.svg" alt=""></a>
+								</li>
+								<li class="header__list-option">
+									<a href=""><span>Авторские модели кухонь</span> <img src="../assets/images/icons/arrow_header.svg" alt=""></a>
+								</li>
+								<li class="header__list-option">
+									<a href=""><span>Кухни в классическом стиле</span> <img src="../assets/images/icons/arrow_header.svg" alt=""></a>
+								</li>
+								<li class="header__list-option">
+									<a href=""><span>Кухни в современном стиле</span> <img src="../assets/images/icons/arrow_header.svg" alt=""></a>
+								</li>
+								<li class="header__list-option">
+									<a href=""><span>Кухни в стиле неоклассика</span> <img src="../assets/images/icons/arrow_header.svg" alt=""></a>
+								</li>
+								<li class="header__list-option">
+									<a href=""><span>Кухни премиум класса</span> <img src="../assets/images/icons/arrow_header.svg" alt=""></a>
+								</li>
+							</ul>
+							<ul class="header__list">
+								<li class="header__list-option">
+									<a href=""><span>Все кухни</span> <img src="../assets/images/icons/arrow_header.svg" alt=""></a>
+								</li>
+								<li class="header__list-option">
+									<a href=""><span>Авторские модели кухонь</span> <img src="../assets/images/icons/arrow_header.svg" alt=""></a>
+								</li>
+								<li class="header__list-option">
+									<a href=""><span>Кухни в классическом стиле</span> <img src="../assets/images/icons/arrow_header.svg" alt=""></a>
+								</li>
+								<li class="header__list-option">
+									<a href=""><span>Кухни в современном стиле</span> <img src="../assets/images/icons/arrow_header.svg" alt=""></a>
+								</li>
+								<li class="header__list-option">
+									<a href=""><span>Кухни в стиле неоклассика</span> <img src="../assets/images/icons/arrow_header.svg" alt=""></a>
+								</li>
+								<li class="header__list-option">
+									<a href=""><span>Кухни премиум класса</span> <img src="../assets/images/icons/arrow_header.svg" alt=""></a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+		<div id="popup__success-meet" aria-hidden="true" class="popup popup--success">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__body">
+				<button data-close="" type="button" class="popup__body-close-btn">
+					<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2 2.33398L29.9998 30.3338" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+						<path d="M2.00023 30.3338L30 2.33398" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+					</svg>
+				</button>
+				<div class="popup__body-content-box">
+					<div class="popup__body-content-text-box">
+						<p class="popup__body-content-box-title h5">ваша заявка успешно отправлена</p>
+						<p class="popup__body-content-box-desk text-18-r">Вы отправили заявку на встречу-презентацию в нашем шоуруме. В течение часа с вами свяжется наш менеджер для подтверждения записи.</p>
+					</div>
+
+					<a href="#" class="popup__body-btn btn btn__primary">
+						<span class="btn__text">Вернуться на главную</span>
+						<div class="btn__svg-box">
+							<svg width="54" height="12" viewBox="0 0 54 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 5.72266C0.585786 5.72266 0.25 6.05844 0.25 6.47266C0.25 6.88687 0.585786 7.22266 1 7.22266L1 5.72266ZM53.5303 7.00298C53.8232 6.71009 53.8232 6.23521 53.5303 5.94232L48.7574 1.16935C48.4645 0.876458 47.9896 0.876458 47.6967 1.16935C47.4038 1.46224 47.4038 1.93712 47.6967 2.23001L51.9393 6.47265L47.6967 10.7153C47.4038 11.0082 47.4038 11.4831 47.6967 11.776C47.9896 12.0688 48.4645 12.0688 48.7574 11.776L53.5303 7.00298ZM1 7.22266L53 7.22265L53 5.72265L1 5.72266L1 7.22266Z" fill="white"></path>
+							</svg>
+							<div class="btn__svg-box-circle"></div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="popup__success-project" aria-hidden="true" class="popup popup--success">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__body">
+				<button data-close="" type="button" class="popup__body-close-btn">
+					<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2 2.33398L29.9998 30.3338" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+						<path d="M2.00023 30.3338L30 2.33398" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+					</svg>
+				</button>
+				<div class="popup__body-content-box">
+					<div class="popup__body-content-text-box">
+						<p class="popup__body-content-box-title h5">ваша заявка успешно отправлена</p>
+						<p class="popup__body-content-box-desk text-18-r">Ваш проект успешно направлен, после ознакомления с проектом с вами свяжется наш специалист для обсуждения всех нюансов.</p>
+					</div>
+
+					<a href="#" class="popup__body-btn btn btn__primary">
+						<span class="btn__text">Вернуться на главную</span>
+						<div class="btn__svg-box">
+							<svg width="54" height="12" viewBox="0 0 54 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 5.72266C0.585786 5.72266 0.25 6.05844 0.25 6.47266C0.25 6.88687 0.585786 7.22266 1 7.22266L1 5.72266ZM53.5303 7.00298C53.8232 6.71009 53.8232 6.23521 53.5303 5.94232L48.7574 1.16935C48.4645 0.876458 47.9896 0.876458 47.6967 1.16935C47.4038 1.46224 47.4038 1.93712 47.6967 2.23001L51.9393 6.47265L47.6967 10.7153C47.4038 11.0082 47.4038 11.4831 47.6967 11.776C47.9896 12.0688 48.4645 12.0688 48.7574 11.776L53.5303 7.00298ZM1 7.22266L53 7.22265L53 5.72265L1 5.72266L1 7.22266Z" fill="white"></path>
+							</svg>
+							<div class="btn__svg-box-circle"></div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="popup__success-call" aria-hidden="true" class="popup popup--success">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__body">
+				<button data-close="" type="button" class="popup__body-close-btn">
+					<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2 2.33398L29.9998 30.3338" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+						<path d="M2.00023 30.3338L30 2.33398" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+					</svg>
+				</button>
+				<div class="popup__body-content-box">
+					<div class="popup__body-content-text-box">
+						<p class="popup__body-content-box-title h5">ваша заявка успешно отправлена</p>
+						<p class="popup__body-content-box-desk text-18-r">Ожидайте и мы свяжемся с вами в ближайшее время. Наша команда сделает все, чтобы Ваш реальный интерьер выглядел как на картинке!</p>
+					</div>
+
+					<a href="#" class="popup__body-btn btn btn__primary">
+						<span class="btn__text">Вернуться на главную</span>
+						<div class="btn__svg-box">
+							<svg width="54" height="12" viewBox="0 0 54 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 5.72266C0.585786 5.72266 0.25 6.05844 0.25 6.47266C0.25 6.88687 0.585786 7.22266 1 7.22266L1 5.72266ZM53.5303 7.00298C53.8232 6.71009 53.8232 6.23521 53.5303 5.94232L48.7574 1.16935C48.4645 0.876458 47.9896 0.876458 47.6967 1.16935C47.4038 1.46224 47.4038 1.93712 47.6967 2.23001L51.9393 6.47265L47.6967 10.7153C47.4038 11.0082 47.4038 11.4831 47.6967 11.776C47.9896 12.0688 48.4645 12.0688 48.7574 11.776L53.5303 7.00298ZM1 7.22266L53 7.22265L53 5.72265L1 5.72266L1 7.22266Z" fill="white"></path>
+							</svg>
+							<div class="btn__svg-box-circle"></div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="popup__success-cooperation" aria-hidden="true" class="popup popup--success">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__body">
+				<button data-close="" type="button" class="popup__body-close-btn">
+					<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2 2.33398L29.9998 30.3338" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+						<path d="M2.00023 30.3338L30 2.33398" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+					</svg>
+				</button>
+				<div class="popup__body-content-box">
+					<div class="popup__body-content-text-box">
+						<p class="popup__body-content-box-title h5">ваша заявка успешно отправлена</p>
+						<p class="popup__body-content-box-desk text-18-r">Спасибо за проявленный интерес к нашей компании! Мы всегда рады приветствовать новых талантливых людей в нашей команде. После ознакомления вашего резюме и портфолио мы свяжемся с вами в ближайшее время.</p>
+					</div>
+					<a href="#" class="popup__body-btn btn btn__primary">
+						<span class="btn__text">Вернуться на главную</span>
+						<div class="btn__svg-box">
+							<svg width="54" height="12" viewBox="0 0 54 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 5.72266C0.585786 5.72266 0.25 6.05844 0.25 6.47266C0.25 6.88687 0.585786 7.22266 1 7.22266L1 5.72266ZM53.5303 7.00298C53.8232 6.71009 53.8232 6.23521 53.5303 5.94232L48.7574 1.16935C48.4645 0.876458 47.9896 0.876458 47.6967 1.16935C47.4038 1.46224 47.4038 1.93712 47.6967 2.23001L51.9393 6.47265L47.6967 10.7153C47.4038 11.0082 47.4038 11.4831 47.6967 11.776C47.9896 12.0688 48.4645 12.0688 48.7574 11.776L53.5303 7.00298ZM1 7.22266L53 7.22265L53 5.72265L1 5.72266L1 7.22266Z" fill="white"></path>
+							</svg>
+							<div class="btn__svg-box-circle"></div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="popup__meet" aria-hidden="true" class="popup popup--big">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__body">
+				<button data-close="" type="button" class="popup__body-close-btn">
+					<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2 2.33398L29.9998 30.3338" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+						<path d="M2.00023 30.3338L30 2.33398" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+					</svg>
+				</button>
+
+				<form data-popup-message="#popup__success-meet" data-dev="" action="" class="popup__form-wrapper">
+					<div class="popup__form-title-box">
+						<h5 class="popup__form-title h5">
+							Приезжайте к нам <br>
+							на встречу-презентацию в шоуруме
+						</h5>
+						<p class="popup__form-text text-18-r">Самый лучший вариант - встретиться в шоуруме, обсудить и разработать проект лично со своим заказчиком. Мы очень рады гостям и с теплотой и заботой проводим каждую встречу!</p>
+					</div>
+
+					<div class="popup__form-input-wrapper">
+						<div class="popup__form-input-box">
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input class="input--name popup__form-input" type="text" placeholder="Ваше имя*" data-validate="" data-required="" autocomplete="off" name="form[]">
+								</span>
+								<span class="error-span">Поле заполнено неверно</span>
+							</label>
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input class="input--tel popup__form-input phone-mask" type="text" placeholder="Номер телефона*" data-validate="" data-required="tel" autocomplete="off" name="form[]">
+								</span>
+								<span class="error-span">Поле заполнено неверно</span>
+							</label>
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input class="input--mail popup__form-input" type="text" placeholder="E-mail*" data-validate="" data-required="email" autocomplete="off" name="form[]">
+								</span>
+								<span class="error-span">Поле заполнено неверно</span>
+							</label>
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input class="input--date popup__form-input" type="date" placeholder="Дата посещения (ДД.ММ.ГГ)" autocomplete="off" name="form[]">
+								</span>
+								<span class="error-span">Поле заполнено неверно</span>
+							</label>
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<textarea class="input--textarea" placeholder="Номер и марка машины"></textarea>
+									<span class="error-span"></span> <span class="hint">*Если вам нужно парковочное место</span>
+								</span>
+							</label>
+						</div>
+					</div>
+					<div class="popup__btn-box">
+						<button type="submit" class="popup__btn btn btn__primary">
+							<span class="btn__text">Записаться на встречу</span>
+							<div class="btn__svg-box">
+								<svg width="54" height="12" viewBox="0 0 54 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 5.72266C0.585786 5.72266 0.25 6.05844 0.25 6.47266C0.25 6.88687 0.585786 7.22266 1 7.22266L1 5.72266ZM53.5303 7.00298C53.8232 6.71009 53.8232 6.23521 53.5303 5.94232L48.7574 1.16935C48.4645 0.876458 47.9896 0.876458 47.6967 1.16935C47.4038 1.46224 47.4038 1.93712 47.6967 2.23001L51.9393 6.47265L47.6967 10.7153C47.4038 11.0082 47.4038 11.4831 47.6967 11.776C47.9896 12.0688 48.4645 12.0688 48.7574 11.776L53.5303 7.00298ZM1 7.22266L53 7.22265L53 5.72265L1 5.72266L1 7.22266Z" fill="white"></path>
+								</svg>
+								<div class="btn__svg-box-circle"></div>
+							</div>
+						</button>
+
+						<p class="popup__agreement-text">Отправляя заявку, Вы даете согласие на обработку ваших персональных данных</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="popup__project" aria-hidden="true" class="popup popup--big">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__body">
+				<button data-close="" type="button" class="popup__body-close-btn">
+					<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2 2.33398L29.9998 30.3338" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+						<path d="M2.00023 30.3338L30 2.33398" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+					</svg>
+				</button>
+
+				<form data-popup-message="#popup__success-project" data-dev="" action="" class="popup__form-wrapper">
+					<div class="popup__form-title-box">
+						<h5 class="popup__form-title h5">
+							Пришлите нам <br>
+							дизайн-проект
+						</h5>
+						<p class="popup__form-text text-18-r">Мы внимательно изучим их. Свяжемся с вами, расскажем, чем сможем помочь в реализации проекта. Рассчитаем примерную стоимость реализации проекта</p>
+					</div>
+
+					<div class="popup__form-input-wrapper">
+						<div class="popup__form-input-box">
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input class="input--name popup__form-input" type="text" placeholder="Ваше имя*" data-validate="" data-required="" autocomplete="off" name="form[]">
+								</span>
+								<span class="error-span">Поле заполнено неверно</span>
+							</label>
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input class="input--tel popup__form-input phone-mask" type="text" placeholder="Номер телефона*" data-validate="" data-required="tel" autocomplete="off" name="form[]">
+								</span>
+								<span class="error-span">Поле заполнено неверно</span>
+							</label>
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input class="input--mail popup__form-input" type="text" placeholder="E-mail*" data-validate="" data-required="email" autocomplete="off" name="form[]">
+								</span>
+								<span class="error-span">Поле заполнено неверно</span>
+							</label>
+						</div>
+
+						<div class="popup__file-box">
+							<label class="popup__label-input-file label-input-file">
+								<input class="popup__input-file input-file" type="file" multiple="" name="file_project">
+								<span class="popup__label-input-file-text-wrapper label-input-file-text-wrapper">
+									<span class="popup__label-input-file-svg-box label-input-file-svg-box">
+										<svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M27.9492 18.8867L20.3829 26.4531" stroke="#D3965F" stroke-width="2" stroke-linecap="square"></path>
+											<path d="M21.1923 13.7491L24.2757 10.6657C27.4976 7.44383 32.7212 7.44384 35.943 10.6657L36.1652 10.8878C39.387 14.1097 39.387 19.3333 36.1652 22.5551L33.0817 25.6385" stroke="#D3965F" stroke-width="2" stroke-linecap="square"></path>
+											<path d="M27.1397 31.5868L24.0563 34.6703C20.8345 37.8921 15.6109 37.8921 12.389 34.6703L12.1669 34.4481C8.94503 31.2263 8.94503 26.0027 12.1669 22.7808L15.2503 19.6974" stroke="#D3965F" stroke-width="2" stroke-linecap="square"></path>
+										</svg>
+									</span>
+									<span class="popup__label-input-file-text-box label-input-file-text-box">
+										<span class="popup__label-input-file-text-title label-input-file-text-title">Прикрепите дизайн-проект</span>
+										<span class="popup__label-input-file-text-type label-input-file-text-type">JPEG, PDF, ZIP, DWG, DWT</span>
+									</span>
+								</span>
+								<span class="error-span"></span>
+							</label>
+							<div class="popup__form-files-items form-files-items file_project"></div>
+						</div>
+						<div class="popup__form-input-box">
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input class="popup__form-input" type="text" placeholder="или ссылку на проект" data-validate="" autocomplete="off" name="form[]">
+								</span>
+								<span class="error-span">Поле заполнено неверно</span>
+							</label>
+						</div>
+					</div>
+					<div class="popup__btn-box">
+						<button type="submit" class="popup__btn btn btn__primary">
+							<span class="btn__text">Отправить проект</span>
+							<div class="btn__svg-box">
+								<svg width="54" height="12" viewBox="0 0 54 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 5.72266C0.585786 5.72266 0.25 6.05844 0.25 6.47266C0.25 6.88687 0.585786 7.22266 1 7.22266L1 5.72266ZM53.5303 7.00298C53.8232 6.71009 53.8232 6.23521 53.5303 5.94232L48.7574 1.16935C48.4645 0.876458 47.9896 0.876458 47.6967 1.16935C47.4038 1.46224 47.4038 1.93712 47.6967 2.23001L51.9393 6.47265L47.6967 10.7153C47.4038 11.0082 47.4038 11.4831 47.6967 11.776C47.9896 12.0688 48.4645 12.0688 48.7574 11.776L53.5303 7.00298ZM1 7.22266L53 7.22265L53 5.72265L1 5.72266L1 7.22266Z" fill="white"></path>
+								</svg>
+								<div class="btn__svg-box-circle"></div>
+							</div>
+						</button>
+
+						<p class="popup__agreement-text">Отправляя заявку, Вы даете согласие на <a href="#">обработку ваших персональных данных</a></p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="popup__call" aria-hidden="true" class="popup popup--big">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__body">
+				<button data-close="" type="button" class="popup__body-close-btn">
+					<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2 2.33398L29.9998 30.3338" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+						<path d="M2.00023 30.3338L30 2.33398" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+					</svg>
+				</button>
+
+				<form data-popup-message="#popup__success-call" data-dev="" action="" class="popup__form-wrapper">
+					<div class="popup__form-title-box">
+						<h5 class="popup__form-title h5">
+							Оставьте заявку <br>
+							на звонок
+						</h5>
+						<p class="popup__form-text text-18-r">Оставьте заявку и мы свяжемся с вами в ближайшее время. Наша команда сделает все, чтобы Ваш реальный интерьер выглядел как на картинке!</p>
+					</div>
+
+					<div class="popup__form-input-wrapper">
+						<div class="popup__form-input-box">
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input class="input--name popup__form-input" type="text" placeholder="Ваше имя*" data-validate="" data-required="" autocomplete="off" name="form[]">
+								</span>
+								<span class="error-span">Поле заполнено неверно</span>
+							</label>
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input class="input--tel popup__form-input phone-mask" type="text" placeholder="Номер телефона*" data-validate="" data-required="tel" autocomplete="off" name="form[]">
+								</span>
+								<span class="error-span">Поле заполнено неверно</span>
+							</label>
+						</div>
+					</div>
+					<div class="popup__btn-box">
+						<button type="submit" class="popup__btn btn btn__primary">
+							<span class="btn__text">Отправить заявку</span>
+							<div class="btn__svg-box">
+								<svg width="54" height="12" viewBox="0 0 54 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 5.72266C0.585786 5.72266 0.25 6.05844 0.25 6.47266C0.25 6.88687 0.585786 7.22266 1 7.22266L1 5.72266ZM53.5303 7.00298C53.8232 6.71009 53.8232 6.23521 53.5303 5.94232L48.7574 1.16935C48.4645 0.876458 47.9896 0.876458 47.6967 1.16935C47.4038 1.46224 47.4038 1.93712 47.6967 2.23001L51.9393 6.47265L47.6967 10.7153C47.4038 11.0082 47.4038 11.4831 47.6967 11.776C47.9896 12.0688 48.4645 12.0688 48.7574 11.776L53.5303 7.00298ZM1 7.22266L53 7.22265L53 5.72265L1 5.72266L1 7.22266Z" fill="white"></path>
+								</svg>
+								<div class="btn__svg-box-circle"></div>
+							</div>
+						</button>
+
+						<p class="popup__agreement-text">Отправляя заявку, Вы даете согласие на <a href="#">обработку ваших персональных данных</a></p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="popup__cooperation" aria-hidden="true" class="popup popup--big">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__body">
+				<button data-close="" type="button" class="popup__body-close-btn">
+					<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2 2.33398L29.9998 30.3338" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+						<path d="M2.00023 30.3338L30 2.33398" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+					</svg>
+				</button>
+
+				<form data-popup-message="#popup__success-cooperation" data-dev="" action="" class="popup__form-wrapper">
+					<div class="popup__form-title-box">
+						<h5 class="popup__form-title h5">хотите работать с нами?</h5>
+						<p class="popup__form-text text-18-r">Оставьте заявку на сотрудничество и будьте частью нашей команды. Стань одним из авторов индивидуальных проектов мечты в MaxMalevich!</p>
+					</div>
+
+					<div class="popup__form-input-wrapper">
+						<div class="popup__form-input-box">
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input class="input--name popup__form-input" type="text" placeholder="Ваше имя*" data-validate="" data-required="" autocomplete="off" name="form[]">
+								</span>
+								<span class="error-span">Поле заполнено неверно</span>
+							</label>
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input class="input--tel popup__form-input phone-mask" type="text" placeholder="Номер телефона*" data-validate="" data-required="tel" autocomplete="off" name="form[]">
+								</span>
+								<span class="error-span">Поле заполнено неверно</span>
+							</label>
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input class="input--mail popup__form-input" type="text" placeholder="E-mail*" data-validate="" data-required="email" autocomplete="off" name="form[]">
+								</span>
+								<span class="error-span">Поле заполнено неверно</span>
+							</label>
+
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<textarea class="input--textarea" placeholder="Комментарий"></textarea>
+									<span class="error-span"></span>
+									<!-- <span class="hint">*Ваш комментарий/ссылка на портфолио</span> -->
+								</span>
+							</label>
+						</div>
+
+						<div class="popup__file-box">
+							<label class="popup__label-input-file label-input-file">
+								<input class="popup__input-file input-file" type="file" multiple="" name="file_cooperation">
+								<span class="popup__label-input-file-text-wrapper label-input-file-text-wrapper">
+									<span class="popup__label-input-file-svg-box label-input-file-svg-box">
+										<svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M27.9492 18.8867L20.3829 26.4531" stroke="#D3965F" stroke-width="2" stroke-linecap="square"></path>
+											<path d="M21.1923 13.7491L24.2757 10.6657C27.4976 7.44383 32.7212 7.44384 35.943 10.6657L36.1652 10.8878C39.387 14.1097 39.387 19.3333 36.1652 22.5551L33.0817 25.6385" stroke="#D3965F" stroke-width="2" stroke-linecap="square"></path>
+											<path d="M27.1397 31.5868L24.0563 34.6703C20.8345 37.8921 15.6109 37.8921 12.389 34.6703L12.1669 34.4481C8.94503 31.2263 8.94503 26.0027 12.1669 22.7808L15.2503 19.6974" stroke="#D3965F" stroke-width="2" stroke-linecap="square"></path>
+										</svg>
+									</span>
+									<span class="popup__label-input-file-text-box label-input-file-text-box">
+										<span class="popup__label-input-file-text-title label-input-file-text-title">Прикрепите дизайн-проект</span>
+										<span class="popup__label-input-file-text-type label-input-file-text-type">JPEG, PDF, ZIP, DWG, DWT</span>
+									</span>
+								</span>
+								<span class="error-span"></span>
+							</label>
+							<div class="popup__form-files-items form-files-items file_cooperation"></div>
+						</div>
+						<div class="popup__form-input-box">
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input class="popup__form-input" type="text" placeholder="или ссылку на проект" data-validate="" autocomplete="off" name="form[]">
+								</span>
+								<span class="error-span">Поле заполнено неверно</span>
+							</label>
+						</div>
+					</div>
+					<div class="popup__btn-box">
+						<button type="submit" class="popup__btn btn btn__primary">
+							<span class="btn__text">Работать с нами</span>
+							<div class="btn__svg-box">
+								<svg width="54" height="12" viewBox="0 0 54 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 5.72266C0.585786 5.72266 0.25 6.05844 0.25 6.47266C0.25 6.88687 0.585786 7.22266 1 7.22266L1 5.72266ZM53.5303 7.00298C53.8232 6.71009 53.8232 6.23521 53.5303 5.94232L48.7574 1.16935C48.4645 0.876458 47.9896 0.876458 47.6967 1.16935C47.4038 1.46224 47.4038 1.93712 47.6967 2.23001L51.9393 6.47265L47.6967 10.7153C47.4038 11.0082 47.4038 11.4831 47.6967 11.776C47.9896 12.0688 48.4645 12.0688 48.7574 11.776L53.5303 7.00298ZM1 7.22266L53 7.22265L53 5.72265L1 5.72266L1 7.22266Z" fill="white"></path>
+								</svg>
+								<div class="btn__svg-box-circle"></div>
+							</div>
+						</button>
+
+						<p class="popup__agreement-text">Отправляя заявку, Вы даете согласие на обработку ваших персональных данных</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+		<main>
+			<section class="contacts">
+				<div class="container">
+					<h3 class="contacts__title h3">Контакты</h3>
+					<div class="contacts__blocks">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide contacts__block">
+								<div class="contacts__block-number">01</div>
+								<h5 class="contacts__block-title">Контакты</h5>
+								<div class="contacts__block-list">
+									<p class="contacts__block-text"><span>Whatsapp:</span> +7 (925) 500 00 26</p>
+									<p class="contacts__block-text"><span>Телефон:</span> +7 (499) 350-86-34</p>
+									<p class="contacts__block-text"><span>Email:</span> info@maxmalevich.ru</p>
+									<p class="contacts__block-text"><span>Для рекламных преложений:</span> info@maxmalevich.ru</p>
+									<p class="contacts__block-text"><span>Для заказчиков - прислать проект на просчет:</span> project@maxmalevich.ru</p>
+								</div>
+							</div>
+							<div class="swiper-slide contacts__block">
+								<div class="contacts__block-number">02</div>
+								<h5 class="contacts__block-title">Адрес</h5>
+								<div class="contacts__block-list">
+									<p class="contacts__block-text"><span>Адрес:</span> г Москва, БК ”АРМА” - Нижний Сусальный пер, д.5 стр.12</p>
+									<p class="contacts__block-text"><span>Адрес производства:</span> г.о. Щёлково, Производственная ул., 80</p>
+									<p class="contacts__block-text"><span>Режим работы:</span> Пн-Вс с 10:00 до 19:00</p>
+								</div>
+							</div>
+							<div class="swiper-slide contacts__block">
+								<div class="contacts__block-number">03</div>
+								<h5 class="contacts__block-title">Реквизиты</h5>
+								<div class="contacts__block-list">
+									<p class="contacts__block-text"><span>Юр. лицо:</span> ООО «МАКС МАЛЕВИЧ»</p>
+									<p class="contacts__block-text"><span>Номер счета:</span> 4070 2810 3100 0058 85222</p>
+									<p class="contacts__block-text"><span>Валюта счета:</span> RUB (Российские рубли)</p>
+									<p class="contacts__block-text"><span>ОГРН:</span> 1197746632522</p>
+									<p class="contacts__block-text"><span>Кор. счет:</span> 3010 1810 1452 5000 0974</p>
+									<p class="contacts__block-text"><span>ИНН:</span> 9709055817</p>
+									<p class="contacts__block-text"><span>Банк:</span> АО "ТИНЬКОФФ БАНК"</p>
+									<p class="contacts__block-text"><span>БИК:</span> 044525974</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="contacts__blocks-pagination"></div>
+				</div>
+			</section>
+			<section class="contacts__map">
+				<div class="container">
+					<div class="contacts__map-main" id="contact__map"></div>
+				</div>
+			</section>
+			<section class="visit">
+				<div class="container">
+					<div class="visit__title h3">Как пройти к нам в шоурум</div>
+					<div class="visit__bottom">
+						<div class="visit__text">
+							<p>
+								Наши дизайнеры обладают исключительным чувством стиля и прекрасным вкусом, что позволяет им создавать эстетически привлекательные и функциональные пространства. Они внимательно слушают пожелания клиентов и исследуют все аспекты проекта, чтобы разработать дизайн, который отражает индивидуальность и потребности каждого клиента. <br /><br />
+								Наши дизайнеры обладают исключительным чувством стиля и прекрасным вкусом, что позволяет им создавать эстетически привлекательные и функциональные пространства. Они внимательно слушают пожелания клиентов и исследуют все аспекты проекта, чтобы разработать дизайн, который отражает индивидуальность и потребности каждого клиента.
+							</p>
+						</div>
+						<a href="./assets/video/path.mp4" data-fancybox class="visit__video">
+							<img src="./assets/images/pages/contacts/visit.webp" alt="" />
+							<div class="visit__video--play">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.98593 6.90014C8.69252 6.07706 7 7.00616 7 8.53925V16.4607C7 17.9938 8.69252 18.9229 9.98593 18.0999L16.21 14.1391C17.4097 13.3757 17.4097 11.6243 16.21 10.8609L9.98593 6.90014Z" fill="#130F0B" />
+								</svg>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="application-designers">
+	<div class="container">
+		<div class="application-designers__inner">
+			<form data-popup-message="#popup__success-meet" data-dev="" action="" class="application-designers__form-wrapper">
+				<div class="application-designers__form-title-box">
+					<h5 class="application-designers__form-title h5">Вы уже в пути к нам?</h5>
+					<p class="application-designers__form-text text-18-r">Пожалуйста, заполните форму ниже для оформления бесплатного парковочного места</p>
+				</div>
+
+				<div class="application-designers__form-input-wrapper">
+					<div class="application-designers__form-input-box">
+						<label class="application-designers__label input-group">
+							<span class="form__input-wrapper">
+								<input class="input--name application-designers__form-input" type="text" placeholder="Ваше имя*" data-validate="" data-required="" autocomplete="off" name="form[]">
+							</span>
+							<span class="error-span">Поле заполнено неверно</span>
+						</label>
+						<label class="application-designers__label input-group">
+							<span class="form__input-wrapper">
+								<input class="input--tel application-designers__form-input phone-mask" type="text" placeholder="Номер телефона*" data-validate="" data-required="tel" autocomplete="off" name="form[]">
+							</span>
+							<span class="error-span">Поле заполнено неверно</span>
+						</label>
+						<label class="application-designers__label input-group">
+							<span class="form__input-wrapper">
+								<input class="input--mail application-designers__form-input" type="text" placeholder="E-mail*" data-validate="" data-required="email" autocomplete="off" name="form[]">
+							</span>
+							<span class="error-span">Поле заполнено неверно</span>
+						</label>
+						<label class="application-designers__label input-group">
+							<span class="form__input-wrapper">
+								<input class="input--date application-designers__form-input" type="date" placeholder="Дата посещения (ДД.ММ.ГГ)" autocomplete="off" name="form[]">
+							</span>
+							<span class="error-span">Поле заполнено неверно</span>
+						</label>
+						<label class="application-designers__label input-group">
+							<span class="form__input-wrapper">
+								<textarea class="input--textarea" placeholder="Номер и марка машины"></textarea>
+								<span class="error-span"></span>
+								<span class="hint">*Если вам нужно парковочное место</span>
+							</span>
+						</label>
+					</div>
+				</div>
+				<div class="application-designers__btn-box">
+					<button type="submit" class="application-designers__btn btn btn__primary">
+						<span class="btn__text">Записаться на встречу</span>
+						<div class="btn__svg-box">
+							<svg width="54" height="12" viewBox="0 0 54 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 5.72266C0.585786 5.72266 0.25 6.05844 0.25 6.47266C0.25 6.88687 0.585786 7.22266 1 7.22266L1 5.72266ZM53.5303 7.00298C53.8232 6.71009 53.8232 6.23521 53.5303 5.94232L48.7574 1.16935C48.4645 0.876458 47.9896 0.876458 47.6967 1.16935C47.4038 1.46224 47.4038 1.93712 47.6967 2.23001L51.9393 6.47265L47.6967 10.7153C47.4038 11.0082 47.4038 11.4831 47.6967 11.776C47.9896 12.0688 48.4645 12.0688 48.7574 11.776L53.5303 7.00298ZM1 7.22266L53 7.22265L53 5.72265L1 5.72266L1 7.22266Z" fill="white"></path>
+							</svg>
+							<div class="btn__svg-box-circle"></div>
+						</div>
+
+					
+					</button>
+
+					<p class="application-designers__agreement-text txt-small">Мы используем Ваши данные только для оперативной связи и никогда не передадим их третьим лицам</p>
+				</div>
+			</form>
+
+			<div class="application-designers__img-box">
+				<img src="./assets/images/pages/disigners/application.webp" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+
+		</main>
+		<button class="btn_top">
+	<img src="../../assets/images/icons/arrow_top.svg" alt="">
+</button>
+
+		<div class="cookie cookie--show">
+	<div class="cookie__container container">
+		<div class="cookie__inner">
+			<p class="cookie__text text-18-r">Продолжая использовать этот сайт и нажимая кнопку «Принимаю», вы даете согласие на обработку файлов cookie</p>
+
+
+			<button class="cookie__btn link--arrow-right">
+				<span class="cookie__btn-text">Принимаю</span>
+
+				<div class="cookie__btn-img-box link--arrow-right-img-box">
+					<svg width="54" height="12" viewBox="0 0 54 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 5.72266C0.585786 5.72266 0.25 6.05844 0.25 6.47266C0.25 6.88687 0.585786 7.22266 1 7.22266L1 5.72266ZM53.5303 7.00298C53.8232 6.71009 53.8232 6.23521 53.5303 5.94232L48.7574 1.16935C48.4645 0.876458 47.9896 0.876458 47.6967 1.16935C47.4038 1.46224 47.4038 1.93712 47.6967 2.23001L51.9393 6.47265L47.6967 10.7153C47.4038 11.0082 47.4038 11.4831 47.6967 11.776C47.9896 12.0688 48.4645 12.0688 48.7574 11.776L53.5303 7.00298ZM1 7.22266L53 7.22265L53 5.72265L1 5.72266L1 7.22266Z" fill="white"></path>
+					  </svg>
+					<div class="cookie__btn-img-circle link--arrow-right-img-circle"></div>
+				</div>
+			</button>
+		</div>
+	</div>
+</div>
+
+
+<footer class="footer">
+	<div class="container footer__container">
+		<div class="footer__top">
+			<div class="footer__main">
+				<a href="" class="footer__logo">
+					<img src="../assets/images/logo.webp" alt="">
+				</a>
+
+				<div class="footer__info">
+					<a href="tel:+74993508634" class="footer__info-item">+7 (499) 350 86 34</a>
+					<div class="footer__info-item">
+						Москва, БК “АРМА” - Нижний <br>
+						Сусальный пер, д.5 стр.12
+					</div>
+					<div class="footer__link-box text-18-r">
+						<p class="footer__link-text">Для рекламных преложений:</p>
+						<a href="mailto:info@maxmalevich.ru" class="footer__link">info@maxmalevich.ru</a>
+					</div>
+					<div class="footer__link-box text-18-r">
+						<p class="footer__link-text">Для заказчиков - прислать проект на просчет:</p>
+						<a href="mailto:project@maxmalevich" class="footer__link">project@maxmalevich</a>
+					</div>
+					<div class="footer__yandex-info">
+						<div class="footer__yandex-info-box">
+							<figure class="footer__yandex-info-svg-box">
+								<img src="./assets/images/icons/social/yandex.svg" alt="">
+							</figure>
+							<p class="footer__yandex-info-text text-20-r">Отзывы на Яндекс</p>
+						</div>
+						<div class="footer__yandex-num-box">
+							<figure class="footer__yandex-num-svg-box">
+								<img src="./assets/images/icons/star.svg" alt="">
+							</figure>
+							<p class="footer__yandex-num-text text-18-r">4.5</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer__social">
+					<a href="" class="footer__social-link">
+						<img src="../assets/images/icons/social/tg.svg" alt="">
+					</a>
+					<a href="" class="footer__social-link">
+						<img src="../assets/images/icons/social/whatsup.svg" alt="">
+					</a>
+					<a href="" class="footer__social-link">
+						<img src="../assets/images/icons/social/inst.svg" alt="">
+					</a>
+					<a href="" class="footer__social-link">
+						<img src="../assets/images/icons/social/behance.svg" alt="">
+					</a>
+					<a href="" class="footer__social-link">
+						<img src="../assets/images/icons/social/facebook.svg" alt="">
+					</a>
+					<a href="" class="footer__social-link">
+						<img src="../assets/images/icons/social/vk.svg" alt="">
+					</a>
+					<a href="" class="footer__social-link">
+						<img src="../assets/images/icons/social/pinterest.svg" alt="">
+					</a>
+					<a href="" class="footer__social-link">
+						<img src="../assets/images/icons/social/dzen.webp" alt="">
+					</a>
+				</div>
+			</div>
+
+			<nav class="footer__navigation">
+				<ul class="footer__menu links">
+					<li class="footer__menu-link"><a href="">Портфолио</a></li>
+					<li class="footer__menu-link"><a href="">О нас</a></li>
+					<li class="footer__menu-link"><a href="">Дизайнерам и архитекторам</a></li>
+					<li class="footer__menu-link"><a href="">Заказчикам</a></li>
+					<li class="footer__menu-link"><a href="">Новости</a></li>
+					<li class="footer__menu-link"><a href="">Контакты</a></li>
+				</ul>
+				<ul class="footer__menu">
+					<h6 class="footer__menu-category">Кухни</h6>
+					<li class="footer__menu-link"><a href="">Авторские модели</a></li>
+					<li class="footer__menu-link"><a href="">Кухни в классическом стилес</a></li>
+					<li class="footer__menu-link"><a href="">Кухни в современном стиле</a></li>
+					<li class="footer__menu-link"><a href="">Кухни в стиле неоклассика</a></li>
+					<li class="footer__menu-link"><a href="">Кухни премиум класса</a></li>
+				</ul>
+				<ul class="footer__menu">
+					<h6 class="footer__menu-category">Мебель</h6>
+					<li class="footer__menu-link"><a href="">Гардеробные</a></li>
+					<li class="footer__menu-link"><a href="">Детская мебель</a></li>
+					<li class="footer__menu-link"><a href="">Комплекс обстановки</a></li>
+					<li class="footer__menu-link"><a href="">Мебель для ванных комнат</a></li>
+					<li class="footer__menu-link"><a href="">Шкафы на заказ</a></li>
+				</ul>
+
+				<form class="footer__form">
+					<p class="footer__form-text text-18-r">Подписка на рассылку со скидками и специальными предложениями в один клик!</p>
+					<div class="footer__form-input-box">
+						<label class="popup__label input-group">
+							<span class="form__input-wrapper">
+								<input class="input--mail popup__form-input" type="text" placeholder="E-mail" data-validate="" data-required="email" autocomplete="off" name="form[]">
+							</span>
+							<span class="error-span">Поле заполнено неверно</span>
+						</label>
+						<button class="footer__btn link--arrow-right">
+							<span class="footer__btn--text">Отправить</span>
+
+							<div class="footer__btn-img-box link--arrow-right-img-box">
+								<svg width="54" height="12" viewBox="0 0 54 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 5.72266C0.585786 5.72266 0.25 6.05844 0.25 6.47266C0.25 6.88687 0.585786 7.22266 1 7.22266L1 5.72266ZM53.5303 7.00298C53.8232 6.71009 53.8232 6.23521 53.5303 5.94232L48.7574 1.16935C48.4645 0.876458 47.9896 0.876458 47.6967 1.16935C47.4038 1.46224 47.4038 1.93712 47.6967 2.23001L51.9393 6.47265L47.6967 10.7153C47.4038 11.0082 47.4038 11.4831 47.6967 11.776C47.9896 12.0688 48.4645 12.0688 48.7574 11.776L53.5303 7.00298ZM1 7.22266L53 7.22265L53 5.72265L1 5.72266L1 7.22266Z" fill="white"></path>
+								  </svg>
+								<div class="footer__btn-img-circle link--arrow-right-img-circle"></div>
+							</div>
+						</button>
+					</div>
+				
+				</form>
+			</nav>
+
+			<div class="footer__mob">
+				<a href="" class="footer__mob-logo">
+					<img src="../assets/images/logo.webp" alt="">
+				</a>
+
+				<div class="accordion">
+					<a href="" class="accordion-item">Портфолио</a>
+					<a href="" class="accordion-item">О нас</a>
+					<a href="" class="accordion-item">Дизайнерам и архитекторам</a>
+					<a href="" class="accordion-item">Заказчикам</a>
+					<a href="" class="accordion-item">Новости</a>
+					<a href="" class="accordion-item">Контакты</a>
+					<div class="accordion-item">
+						<input id="accordion-trigger-2" class="accordion-trigger-input" type="checkbox">
+						<label class="accordion-trigger" for="accordion-trigger-2">Кухни
+							<svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2 2L8.62308 8.83169C8.67142 8.88482 8.72981 8.92717 8.79464 8.95612C8.85947 8.98506 8.92936 9 9 9C9.07064 9 9.14054 8.98506 9.20536 8.95612C9.27019 8.92717 9.32858 8.88482 9.37692 8.83169L16 2" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+							</svg>
+						</label>
+						<div class="accordion-animation-wrapper">
+							<div class="accordion-animation">
+								<div class="accordion-transform-wrapper">
+									<div class="accordion-content">
+										<a href="">Авторские модели</a>
+										<a href="">Кухни в классическом стиле</a>
+										<a href="">Кухни в современном стиле</a>
+										<a href="">Кухни в стиле неоклассика</a>
+										<a href="">Кухни премиум класса</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<input id="accordion-trigger-3" class="accordion-trigger-input" type="checkbox">
+						<label class="accordion-trigger" for="accordion-trigger-3">Мебель
+							<svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2 2L8.62308 8.83169C8.67142 8.88482 8.72981 8.92717 8.79464 8.95612C8.85947 8.98506 8.92936 9 9 9C9.07064 9 9.14054 8.98506 9.20536 8.95612C9.27019 8.92717 9.32858 8.88482 9.37692 8.83169L16 2" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+							</svg>
+						</label>
+						<div class="accordion-animation-wrapper">
+							<div class="accordion-animation">
+								<div class="accordion-transform-wrapper">
+									<div class="accordion-content">
+										<a href="">Гардеробные</a>
+										<a href="">Детская мебель</a>
+										<a href="">Комплекс обстановки</a>
+										<a href="">Мебель для ванных комнат</a>
+										<a href="">Шкафы на заказ</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+				</div>
+
+				<div class="footer__main mob">
+					<div class="footer__info">
+						<a href="tel:+74993508634" class="footer__info-item">+7 (499) 350 86 34</a>
+						<div class="footer__info-item">
+							Москва, БК “АРМА” - Нижний 
+							Сусальный пер, <br>д.5 стр.12
+						</div>
+						<div class="footer__link-box text-18-r">
+							<p class="footer__link-text">Для рекламных преложений:</p>
+							<a href="mailto:info@maxmalevich.ru" class="footer__link">info@maxmalevich.ru</a>
+						</div>
+						<div class="footer__link-box text-18-r">
+							<p class="footer__link-text">Для заказчиков - прислать проект на просчет:</p>
+							<a href="mailto:project@maxmalevich" class="footer__link">project@maxmalevich</a>
+						</div>
+					</div>
+					<div class="footer__yandex-info">
+						<div class="footer__yandex-info-box">
+							<figure class="footer__yandex-info-svg-box">
+								<img src="./assets/images/icons/social/yandex.svg" alt="">
+							</figure>
+							<p class="footer__yandex-info-text text-20-r">Отзывы на Яндекс</p>
+						</div>
+						<div class="footer__yandex-num-box">
+							<figure class="footer__yandex-num-svg-box">
+								<img src="./assets/images/icons/star.svg" alt="">
+							</figure>
+							<p class="footer__yandex-num-text text-18-r">4.5</p>
+						</div>
+					</div>
+					<div class="footer__social">
+						<a href="" class="footer__social-link">
+							<img src="../assets/images/icons/social/tg.svg" alt="">
+						</a>
+						<a href="" class="footer__social-link">
+							<img src="../assets/images/icons/social/whatsup.svg" alt="">
+						</a>
+						<a href="" class="footer__social-link">
+							<img src="../assets/images/icons/social/inst.svg" alt="">
+						</a>
+						<a href="" class="footer__social-link">
+							<img src="../assets/images/icons/social/behance.svg" alt="">
+						</a>
+						<a href="" class="footer__social-link">
+							<img src="../assets/images/icons/social/facebook.svg" alt="">
+						</a>
+						<a href="" class="footer__social-link">
+							<img src="../assets/images/icons/social/vk.svg" alt="">
+						</a>
+						<a href="" class="footer__social-link">
+							<img src="../assets/images/icons/social/pinterest.svg" alt="">
+						</a>
+						<a href="" class="footer__social-link">
+							<img src="../assets/images/icons/social/dzen.webp" alt="">
+						</a>
+					</div>
+
+					<form class="footer__form">
+						<p class="footer__form-text text-18-r">Подписка на рассылку со скидками и специальными <br> предложениями в один клик!</p>
+						<div class="footer__form-input-box">
+							<label class="popup__label input-group">
+								<span class="form__input-wrapper">
+									<input class="input--mail popup__form-input" type="text" placeholder="E-mail" data-validate="" data-required="email" autocomplete="off" name="form[]">
+								</span>
+								<span class="error-span">Поле заполнено неверно</span>
+							</label>
+							<button class="footer__btn link--arrow-right">
+								<span class="footer__btn--text">Отправить</span>
+	
+								<div class="footer__btn-img-box link--arrow-right-img-box">
+									<svg width="54" height="12" viewBox="0 0 54 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 5.72266C0.585786 5.72266 0.25 6.05844 0.25 6.47266C0.25 6.88687 0.585786 7.22266 1 7.22266L1 5.72266ZM53.5303 7.00298C53.8232 6.71009 53.8232 6.23521 53.5303 5.94232L48.7574 1.16935C48.4645 0.876458 47.9896 0.876458 47.6967 1.16935C47.4038 1.46224 47.4038 1.93712 47.6967 2.23001L51.9393 6.47265L47.6967 10.7153C47.4038 11.0082 47.4038 11.4831 47.6967 11.776C47.9896 12.0688 48.4645 12.0688 48.7574 11.776L53.5303 7.00298ZM1 7.22266L53 7.22265L53 5.72265L1 5.72266L1 7.22266Z" fill="white"></path>
+									  </svg>
+									<div class="footer__btn-img-circle link--arrow-right-img-circle"></div>
+								</div>
+							</button>
+						</div>
+					
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<a href="#" class="footer__bottom-text text-18-r">Политика конфиденциальности</a>
+			<a href="#" class="footer__bottom-text text-18-r">Обработка персональных данных</a>
+			<p class="footer__bottom-text text-18-r">2014 - 2023 © Все права защищены. Копирование материалов сайта запрещено.</p>
+		</div>
+	</div>
+</footer>
+
+	</body>
+</html>

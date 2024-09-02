@@ -1,0 +1,270 @@
+<div id="popup__success" aria-hidden="true" class="popup popup__success">
+  <div class="popup__wrapper popup__success-wrapper">
+    <div class="popup__content">
+      <div class="popup__body popup__body--success">
+        <button
+          data-close
+          type="button"
+          class="popup__body-close-btn close-btn popup__body-close-btn--short success-close-btn"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path
+              d="M18 2L2 18"
+              stroke="#0E1C15"
+              stroke-width="2"
+              stroke-linecap="square"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M2 2L18 18"
+              stroke="#0E1C15"
+              stroke-width="2"
+              stroke-linecap="square"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <p class="popup__body-title tl2 popup__body--success-title">ваша заявка успешно отправлена</p>
+        <p class="popup__body-subtitle txt20 popup__body--success-title">
+          Наш менеджер свяжется с Вами в ближайшее время<br />для уточнения деталей!
+        </p>
+        <button data-close class="btn-pr popup__body-btn close-btn popup__body--success-btn button">
+          <span>Вернуться на сайт</span>
+          <svg width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              class="block"
+              d="M19.6615 5.12988C21.4274 1.96289 24.7694 0 28.3954 0H42C47.5229 0 52 4.47715 52 10V29.758V36C52 41.5228 47.5228 46 42 46H4.45232C1.99337 46 0 44.0066 0 41.5477C0 40.7887 0.194038 40.0423 0.563685 39.3793L19.6615 5.12988Z"
+              fill="currentColor"
+            />
+            <path
+              class="arrow"
+              d="M24 24.0804H39.8392"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              class="arrow"
+              d="M33.4034 17.6968L39.8381 24.0804L33.4034 30.464"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__application" aria-hidden="true" class="popup popup__application">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body popup__body-application">
+        <button data-close type="button" class="popup__body-close-btn close-btn popup__body-close-btn--short">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2216_7944)">
+              <path
+                d="M6.5 6.5L16.5 16.5M16.5 16.5L26.5 6.5M16.5 16.5L6.5 26.5M16.5 16.5L26.5 26.5"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_2216_7944">
+                <rect width="32" height="32" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+
+        <p class="popup__application-title tl1">Заявка на разработку</p>
+
+        <form data-dev action="#" class="popup__application-form">
+          <div class="popup__application-input-wrapper">
+            <div class="popup__application-input-group input-group popup__label--required">
+              <label class="popup__application-form-input-wrapper form__input-wrapper">
+                <span class="txt18">Имя</span>
+                <input
+                  class="popup__application-input input--name txt18"
+                  type="text"
+                  placeholder="Введите имя"
+                  data-validate
+                  data-required
+                  autocomplete="off"
+                  name="form[]"
+                />
+              </label>
+              <span class="error-span txt18">Введите текстовое значение</span>
+            </div>
+            <div class="popup__application-input-group input-group popup__label--required">
+              <label class="popup__application-form-input-wrapper form__input-wrapper">
+                <span class="txt18">Телефон</span>
+                <input
+                  class="popup__application-input input--tel txt20 phone-mask"
+                  type="text"
+                  placeholder="Введите телефон"
+                  data-validate
+                  data-required="tel"
+                  autocomplete="off"
+                  name="form[]"
+                />
+              </label>
+              <span class="error-span txt18">Заполните поле</span>
+            </div>
+            <div class="popup__application-input-group input-group popup__label--required">
+              <label class="popup__application-form-input-wrapper form__input-wrapper">
+                <span class="txt18">Почта</span>
+                <input
+                  class="popup__application-input input--mail txt20 phone-mask"
+                  type="text"
+                  placeholder="Введите почту"
+                  data-validate
+                  data-required="mail"
+                  autocomplete="off"
+                  name="form[]"
+                />
+              </label>
+              <span class="error-span txt18">Заполните поле</span>
+            </div>
+            <div class="popup__application-form-dropdown form__dropdown form__dropdown_search">
+              <div class="form__dropdown_top">
+                <label for="" class="popup__delivery-thrid-label popup__label--required">
+                  <span class="form__input-wrapper">
+                    <span class="txt18">Тип сайта</span>
+                    <input
+                      class="input__field text input-dropdown input-dropdown--locality popup__table-field-input popup__form-input"
+                      type="text"
+                      placeholder="Выберите тип сайта"
+                      data-validate
+                      data-required
+                      autocomplete="off"
+                      name="form[]"
+                      data-no-focus-classes
+                    />
+
+                    <span class="form__input-svg-box">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="25"
+                        viewBox="0 0 24 25"
+                        fill="none"
+                      >
+                        <path
+                          d="M5.92983 14.93L11.9998 21L18.0698 14.93"
+                          stroke="#787878"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12 3.99996L12 20.83"
+                          stroke="#787878"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg
+                    ></span>
+                  </span>
+                  <span class="error-span subscription">Выберите тип сайта</span>
+                </label>
+              </div>
+              <div class="form__dropdown_bottom">
+                <div class="form__dropdown_list">
+                  <label class="form__dropdown_item">
+                    <input type="radio" name="type" />
+                    <div class="form__dropdown_item_name text">Портал</div>
+                  </label>
+                  <label class="form__dropdown_item">
+                    <input type="radio" name="type" />
+                    <div class="form__dropdown_item_name text">Интернет-магазин</div>
+                  </label>
+                  <label class="form__dropdown_item">
+                    <input type="radio" name="type" />
+
+                    <div class="form__dropdown_item_name text">Приложение</div>
+                  </label>
+                  <label class="form__dropdown_item">
+                    <input type="radio" name="type" />
+                    <div class="form__dropdown_item_name text">Брендинг</div>
+                  </label>
+                  <label class="form__dropdown_item">
+                    <input type="radio" name="type" />
+                    <div class="form__dropdown_item_name text">Продвижение</div>
+                  </label>
+                  <label class="form__dropdown_item">
+                    <input type="radio" name="type" />
+                    <div class="form__dropdown_item_name text">Лендинг</div>
+                  </label>
+                  <label class="form__dropdown_item">
+                    <input type="radio" name="type" />
+                    <div class="form__dropdown_item_name text">Tilda</div>
+                  </label>
+                  <label class="form__dropdown_item">
+                    <input type="radio" name="type" />
+                    <div class="form__dropdown_item_name text">Bitrix</div>
+                  </label>
+                  <label class="form__dropdown_item">
+                    <input type="radio" name="type" />
+                    <div class="form__dropdown_item_name text">Корпоративный</div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="popup__application-input-group input-group popup__label--required">
+              <label class="popup__application-form-input-wrapper form__input-wrapper">
+                <span class="txt18">Комментарий</span>
+                <input
+                  class="popup__application-input txt18"
+                  type="text"
+                  placeholder="Введите текст"
+                  autocomplete="off"
+                  name="form[]"
+                />
+              </label>
+              <span class="error-span txt18"></span>
+            </div>
+          </div>
+          <button class="popup__button button">
+            <span class="button-text txt18">Оставьте заявку</span>
+            <div class="button-svg-box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+              >
+                <path
+                  d="M15.4007 19.0403L21.4707 12.9703L15.4007 6.90027"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M4.47078 12.9702L21.3008 12.9702"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </div>
+          </button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+

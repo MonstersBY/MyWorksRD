@@ -1,0 +1,70 @@
+.h1 {
+  font-weight: 400;
+  font-size: 7.4rem;
+  line-height: 110%;
+  @media (max-width: 48em) {
+  }
+}
+.h2 {
+  font-weight: 400;
+  font-size: 5.2rem;
+  line-height: 120%;
+  @media (max-width: 48em) {
+  }
+}
+.h3 {
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 120%;
+  @media (max-width: 48em) {
+  }
+}
+.h4 {
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 140%;
+  @media (max-width: 48em) {
+  }
+}
+.h5 {
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 140%;
+  @media (max-width: 48em) {
+  }
+}
+
+// --------------------------------------------------------------------------
+
+.txt20 {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 140%;
+  @include small-tablet {
+  }
+}
+.txt18 {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 140%;
+  &-l {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 140%;
+  }
+  @include small-tablet {
+  }
+}
+.txt16 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 140%;
+  &-l {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 140%;
+  }
+  @include small-tablet {
+  }
+}
+

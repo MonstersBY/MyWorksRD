@@ -1,0 +1,884 @@
+.current-vacancies {
+  // .current-vacancies__inner
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+  // .current-vacancies__title
+
+  &__title {
+  }
+
+  // .current-vacancies__content-box
+
+  &__content-box {
+    display: flex;
+    gap: 4rem;
+    // height: 86.4rem;
+    @include small-tablet {
+      visibility: hidden;
+      position: absolute;
+      z-index: -10;
+      opacity: 0;
+    }
+  }
+
+  // .current-vacancies__left
+
+  &__left {
+    width: 53.3rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  // .current-vacancies__left-swiper
+
+  &__left-swiper {
+    height: 67.2rem !important;
+  }
+
+  // .current-vacancies__left-swiper-wrapper
+
+  &__left-swiper-wrapper {
+  }
+
+  // .current-vacancies__left-swiper-slide
+
+  &__left-swiper-slide {
+    &.active {
+      & .current-vacancies__left-slide-inner {
+        color: $white;
+        background-color: $green;
+        -webkit-clip-path: polygon(0 0, 81% 0, 100% 13%, 100% 100%, 0 100%);
+        -moz-clip-path: polygon(0 0, 81% 0, 100% 13%, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 81% 0, 100% 13%, 100% 100%, 0 100%);
+      }
+      & .current-vacancies__left-slide-desc {
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      & .current-vacancies__left-slide-price-svg-box {
+        & svg {
+          & path {
+            fill: $white;
+          }
+        }
+      }
+      & .current-vacancies__left-slide-logo-box {
+        & svg {
+          & path {
+            fill: $white;
+          }
+        }
+      }
+    }
+  }
+
+  // .current-vacancies__left-slide-inner
+
+  &__left-slide-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 32.6rem;
+    gap: 3.4rem;
+    padding: 3.2rem;
+    background-color: $white;
+    cursor: pointer;
+    transition: clip-path 0.5s, color 0.5s, background-color 0.5s;
+  }
+
+  // .current-vacancies__left-slide-title-box
+
+  &__left-slide-title-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-grow: 1;
+  }
+
+  // .current-vacancies__left-slide-title
+
+  &__left-slide-title {
+    width: 35rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  // .current-vacancies__left-slide-desc
+
+  &__left-slide-desc {
+    color: $gray-text;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  // .current-vacancies__left-slide-info-wrapper
+
+  &__left-slide-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  // .current-vacancies__left-slide-price-box
+
+  &__left-slide-price-box {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  // .current-vacancies__left-slide-price-svg-box
+
+  &__left-slide-price-svg-box {
+    width: 2.8rem;
+    height: 2.8rem;
+    flex-shrink: 0;
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      & path {
+        fill: $green;
+        transition: fill 0.5s;
+      }
+    }
+  }
+
+  // .current-vacancies__left-slide-price
+
+  &__left-slide-price {
+  }
+
+  // .current-vacancies__left-slide-info-row
+
+  &__left-slide-info-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  // .current-vacancies__left-slide-info-box
+
+  &__left-slide-info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  // .current-vacancies__left-slide-info-text
+
+  &__left-slide-info-text {
+  }
+
+  // .current-vacancies__left-slide-logo-box
+
+  &__left-slide-logo-box {
+    width: 3.6em;
+    height: 1.6rem;
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      & path {
+        fill: $green;
+        transition: fill 0.5s;
+      }
+    }
+  }
+
+  // .current-vacancies__left-nav-box
+
+  &__left-nav-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // .current-vacancies__swiper-navigation
+
+  &__swiper-navigation {
+  }
+
+  // .current-vacancies__swiper-navigation--left
+
+  &__swiper-navigation--left {
+  }
+
+  // .current-vacancies__swiper-navigation--right
+
+  &__swiper-navigation--right {
+  }
+
+  // .current-vacancies__pagination-box
+
+  &__pagination-box {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  // .current-vacancies__pagination-num
+
+  &__pagination-num {
+    font-family: 'OpenSans';
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+  }
+
+  // .current-vacancies__pagination-num--cur
+
+  &__pagination-num--cur {
+  }
+
+  // .current-vacancies__pagination
+
+  &__pagination {
+    position: relative !important;
+    width: 16.2rem !important;
+    height: 0.4rem !important;
+    background-color: $gray !important;
+    inset: 0 !important;
+    transform: translateY(0) !important;
+    & .swiper-pagination-progressbar-fill {
+      background-color: $green !important;
+      height: 0.4rem !important;
+    }
+  }
+
+  // .current-vacancies__pagination-num--last
+
+  &__pagination-num--last {
+  }
+
+  // .current-vacancies__right
+
+  &__right {
+    width: 110.7rem;
+  }
+
+  // .current-vacancies__right-swiper
+
+  &__right-swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  // .current-vacancies__right-swiper-wrapper
+
+  &__right-swiper-wrapper {
+  }
+
+  // .current-vacancies__right-swiper-slide
+
+  &__right-swiper-slide {
+  }
+
+  // .current-vacancies__right-slide-inner
+
+  &__right-slide-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    background-color: $white;
+    padding: 4rem;
+    height: 100%;
+  }
+
+  // .current-vacancies__right-title-box
+
+  &__right-title-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 9rem;
+  }
+
+  // .current-vacancies__right-title
+
+  &__right-title {
+    font-weight: 400;
+    font-size: 4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  // .current-vacancies__btn
+
+  &__btn {
+  }
+
+  // .current-vacancies__right-slide-info-wrapper
+
+  &__right-slide-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  // .current-vacancies__right-slide-price-box
+
+  &__right-slide-price-box {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  // .current-vacancies__right-slide-price-svg-box
+
+  &__right-slide-price-svg-box {
+    width: 2.4rem;
+    height: 2.4rem;
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      & path {
+        fill: $green;
+      }
+    }
+  }
+
+  // .current-vacancies__right-slide-price
+
+  &__right-slide-price {
+    font-weight: 600;
+  }
+
+  // .current-vacancies__right-slide-info-box
+
+  &__right-slide-info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  // .current-vacancies__right-slide-info-text
+
+  &__right-slide-info-text {
+  }
+
+  // .current-vacancies__right-slide-content-wrapper
+
+  &__right-slide-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  // .current-vacancies__right-slide-content-box
+
+  &__right-slide-content-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-top: 2rem;
+    width: 92.4rem;
+    height: 41rem;
+    overflow: hidden;
+    &.open {
+      height: 100%;
+    }
+  }
+
+  // .current-vacancies__right-slide-content
+
+  &__right-slide-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  // .current-vacancies__right-slide-content-title
+
+  &__right-slide-content-title {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  // .current-vacancies__right-slide-content-text
+
+  &__right-slide-content-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 140%;
+  }
+
+  // .current-vacancies__link
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    margin-top: 5rem;
+    cursor: pointer;
+  }
+
+  // .current-vacancies__link-text
+
+  &__link-text {
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: $green;
+  }
+
+  // .current-vacancies__link-svg-box
+
+  &__link-svg-box {
+    width: 4rem;
+    height: 1.6rem;
+    flex-shrink: 0;
+  }
+
+  // .current-vacancies__list-box
+
+  &__list-box {
+    position: absolute;
+    z-index: -10;
+    opacity: 0;
+    visibility: hidden;
+    @include small-tablet {
+      position: static;
+      z-index: 1;
+      opacity: 1;
+      visibility: visible;
+      display: flex;
+      flex-direction: column;
+      gap: 6.4rem;
+    }
+  }
+
+  // .current-vacancies__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  // .current-vacancies__item
+
+  &__item {
+  }
+
+  // .current-vacancies__item-link
+
+  &__item-link {
+    display: flex;
+    flex-direction: column;
+    gap: 6.4rem;
+    height: 65.2rem;
+    padding: 6.4rem 5.8rem 7.2rem 4rem;
+    background-color: $white;
+    -webkit-clip-path: polygon(0 0, 81% 0, 100% 13%, 100% 100%, 0 100%);
+    -moz-clip-path: polygon(0 0, 81% 0, 100% 13%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 81% 0, 100% 13%, 100% 100%, 0 100%);
+  }
+
+  // .current-vacancies__item-link-title-box
+
+  &__item-link-title-box {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    flex-grow: 1;
+  }
+
+  // .current-vacancies__item-link-title
+
+  &__item-link-title {
+    font-weight: 600;
+    font-size: 3.6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  // .current-vacancies__item-link-desc
+
+  &__item-link-desc {
+    font-weight: 400;
+    font-size: 3rem;
+    color: $gray-text;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  // .current-vacancies__item-link-info-wrapper
+
+  &__item-link-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  // .current-vacancies__item-link-price-box
+
+  &__item-link-price-box {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  // .current-vacancies__item-link-price-svg-box
+
+  &__item-link-price-svg-box {
+    width: 4.8rem;
+    height: 4.8rem;
+    flex-shrink: 0;
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      & path {
+        fill: $green;
+      }
+    }
+  }
+
+  // .current-vacancies__item-link-price
+
+  &__item-link-price {
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 140%;
+  }
+
+  // .current-vacancies__item-link-info-box
+
+  &__item-link-info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  // .current-vacancies__item-link-info-text
+
+  &__item-link-info-text {
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  // .current-vacancies__show-more-btn
+
+  &__show-more-btn {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  // .current-vacancies__show-more-btn-text
+
+  &__show-more-btn-text {
+    font-weight: 600;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    color: $green;
+  }
+
+  // .current-vacancies__show-more-btn-svg-box
+
+  &__show-more-btn-svg-box {
+    width: 6.4rem;
+    height: 3.2rem;
+    flex-shrink: 0;
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.vacancies-det {
+  // .vacancies-det__inner
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    @include small-tablet {
+      gap: 9.6rem;
+    }
+  }
+
+  // .vacancies-det__back-link
+
+  &__back-link {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    @include small-tablet {
+      gap: 1.6rem;
+    }
+  }
+
+  // .vacancies-det__back-link-svg-box
+
+  &__back-link-svg-box {
+    width: 3.2rem;
+    height: 1.6rem;
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include small-tablet {
+      width: 6.4rem;
+      height: 3.2rem;
+    }
+  }
+
+  // .vacancies-det__back-link-text
+
+  &__back-link-text {
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: $green;
+    @include small-tablet {
+      font-size: 3.2rem;
+    }
+  }
+
+  // .vacancies-det__content-block
+
+  &__content-block {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    @include small-tablet {
+      gap: 9.6rem;
+    }
+  }
+
+  // .vacancies-det__title-box
+
+  &__title-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    @include small-tablet {
+      gap: 6.4rem;
+    }
+  }
+
+  // .vacancies-det__title
+
+  &__title {
+    font-weight: 400;
+    font-size: 2.4rem;
+    @include small-tablet {
+      font-size: 4.8rem;
+    }
+  }
+
+  // .vacancies-det__info-wrapper
+
+  &__info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    @include small-tablet {
+      font-size: 3.2rem;
+    }
+  }
+
+  // .vacancies-det__price-box
+
+  &__price-box {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    flex-shrink: 0;
+    @include small-tablet {
+      font-size: 2.4rem;
+    }
+  }
+
+  // .vacancies-det__price-svg-box
+
+  &__price-svg-box {
+    width: 2.4rem;
+    height: 2.4rem;
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      & path {
+        fill: $green;
+      }
+    }
+    @include small-tablet {
+      width: 4.8rem;
+      height: 4.8rem;
+    }
+  }
+
+  // .vacancies-det__price
+
+  &__price {
+    font-weight: 600;
+    font-size: 1.8rem;
+    @include small-tablet {
+      font-size: 3.6rem;
+    }
+  }
+
+  // .vacancies-det__info-box
+
+  &__info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    @include small-tablet {
+      gap: 0.8rem;
+    }
+  }
+
+  // .vacancies-det__info-text
+
+  &__info-text {
+    font-weight: 400;
+    font-size: 1.8rem;
+    @include small-tablet {
+      font-size: 3.6rem;
+    }
+  }
+
+  // .vacancies-det__content-wrapper
+
+  &__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    @include small-tablet {
+      gap: 9.6rem;
+    }
+  }
+
+  // .vacancies-det__content-box
+
+  &__content-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    height: 25rem;
+    overflow: hidden;
+    &.open {
+      height: 100%;
+    }
+    @include small-tablet {
+      gap: 6.4rem;
+    }
+  }
+
+  // .vacancies-det__content
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    @include small-tablet {
+      gap: 3.2rem;
+    }
+  }
+
+  // .vacancies-det__content-title
+
+  &__content-title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    @include small-tablet {
+      font-size: 3.6rem;
+    }
+  }
+
+  // .vacancies-det__content-text
+
+  &__content-text {
+    font-weight: 400;
+    font-size: 1.8rem;
+    @include small-tablet {
+      font-size: 3.6rem;
+    }
+  }
+
+  // .vacancies-det__link
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    cursor: pointer;
+    @include small-tablet {
+      gap: 1.6rem;
+    }
+  }
+
+  // .vacancies-det__link-text
+
+  &__link-text {
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: $green;
+    @include small-tablet {
+      font-size: 3.2rem;
+    }
+  }
+
+  // .vacancies-det__link-svg-box
+
+  &__link-svg-box {
+    width: 3.2rem;
+    height: 1.6rem;
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include small-tablet {
+      width: 6.4rem;
+      height: 3.2rem;
+    }
+  }
+
+  // .vacancies-det__btn
+
+  &__btn {
+    width: fit-content;
+    @include small-tablet {
+      font-size: 3.6rem;
+      padding: 3.8rem 10.4rem;
+    }
+  }
+}

@@ -1,0 +1,303 @@
+.lk-create {
+  padding: 4rem;
+  border-radius: 3rem;
+  background-color: $white; // .lk-personal__title
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  @include small-tablet {
+    padding: 0;
+    background-color: transparent;
+    gap: 4.8rem;
+  }
+
+  &__btn-wrapper {
+    display: none;
+    @include small-tablet {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: 100%;
+
+      & .lk-create__btn-bottom {
+        width: 100%;
+        display: none;
+        position: absolute;
+        z-index: 20;
+        top: 11rem;
+      }
+      & .lk-create__btn-box {
+        @include small-tablet {
+          display: flex;
+          flex-direction: column;
+          padding: 4rem 2rem 4rem 4rem;
+          border-radius: 3.2rem;
+          border: 0.15rem solid #012028;
+          width: 100%;
+          height: 100%;
+          background-color: #f3f3f3;
+          color: #012028;
+        }
+      }
+    }
+  }
+  &__btn-top {
+    display: none;
+    @include small-tablet {
+      display: flex;
+      padding: 2.7rem 4.8rem 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 2.4rem;
+      background: rgb(14, 253, 255);
+      text-transform: uppercase;
+      font-size: 2.4rem;
+      font-weight: 700;
+    }
+  }
+
+  &__btn-bottom {
+    @include small-tablet {
+    }
+  }
+  // .lk-create__btn-box
+
+  &__btn-box {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  // .lk-create__btn
+
+  &__btn {
+    padding: 1.7rem 1.9rem 1.6rem;
+    border: 0.15rem solid $dark-blue;
+    border-radius: 1.6rem;
+    color: rgba(1, 32, 40, 0.5);
+    transition: background 0.5s, color 0.5s, border 0.5s;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 130%;
+    text-transform: uppercase;
+    width: 35rem;
+    flex-shrink: 0;
+    &:hover {
+      border: 0.15rem solid transparent;
+      background: #cdcdcd;
+      color: #012028;
+    }
+    &.active {
+      background-color: $turquoise;
+      color: $dark-blue;
+      border: 0.15rem solid $turquoise;
+    }
+
+    @include small-tablet {
+      width: 100%;
+      text-transform: uppercase;
+      padding: 1.2rem 0;
+      font-weight: 400;
+      text-align-last: left;
+      font-size: 2.4rem;
+      background-color: transparent;
+      color: $dark-blue;
+      border: 0.15rem solid transparent;
+      &:hover {
+        border: 0.15rem solid transparent;
+        background: transparent;
+        color: $dark-blue;
+      }
+      &.active {
+        background-color: transparent;
+        color: $dark-blue;
+        border: 0.15rem solid transparent;
+      }
+    }
+  }
+
+  // .lk-create__form-wrapper
+
+  &__form-wrapper {
+    display: grid;
+    position: relative;
+    @include small-tablet {
+      padding: 1.8rem 3.2rem 4.8rem;
+      border-radius: 4.8rem;
+      background-color: $white;
+    }
+  }
+
+  &__form {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    transition: opacity 0.5s, visibility 0.5s, z-index 0.5s;
+    &.active {
+      opacity: 1;
+      z-index: 10;
+      position: relative;
+      visibility: visible;
+    }
+  }
+
+  // .lk-create__form-input-wrapper
+
+  &__form-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    @include small-tablet {
+      gap: 6.4rem;
+    }
+  }
+
+  // .lk-create__form-btn
+
+  &__form-btn {
+    padding: 1.8rem 8rem;
+    width: fit-content;
+    @include small-tablet {
+      padding: 3.2rem 8rem;
+      width: 100%;
+    }
+  }
+
+  // .lk-create__form-input-box
+
+  &__form-input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  // .lk-create__form-dropdown
+
+  &__form-dropdown {
+  }
+
+  // .lk-create__form-dropdown--machine
+
+  &__form-dropdown--machine {
+  }
+
+  // .lk-create__label
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  // .lk-create__label-text
+
+  &__label-text {
+    padding-left: 2rem;
+    @include small-tablet {
+      padding-left: 4rem;
+      font-size: 2rem;
+    }
+  }
+
+  // .lk-create__form-dropdown--type
+
+  &__form-dropdown--type {
+  }
+
+  // .lk-create__file-wrapper
+
+  &__file-wrapper {
+    display: flex;
+    gap: 3.2rem;
+    margin-top: 2.2rem;
+    @include small-tablet {
+      flex-direction: column;
+      gap: 2.4rem;
+      margin-top: 4.4rem;
+    }
+  }
+
+  // .lk-create__file-text
+
+  &__file-text {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 140%;
+    width: 17.8rem;
+    flex-shrink: 0;
+    @include small-tablet {
+      width: 100%;
+      font-size: 2.4rem;
+    }
+  }
+
+  // .lk-create__file-box
+
+  &__file-box {
+    display: flex;
+    gap: 3.2rem;
+    @include small-tablet {
+      flex-direction: column;
+      gap: 2.4rem;
+    }
+  }
+
+  // .lk-create__label-input-file
+
+  &__label-input-file {
+    flex-shrink: 0;
+  }
+
+  // .lk-create__label-input-file-text-box
+
+  &__label-input-file-text-box {
+  }
+
+  // .lk-create__label-input-file-svg-box
+
+  &__label-input-file-svg-box {
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .lk-create__label-input-file-text
+
+  &__label-input-file-text {
+  }
+
+  // .lk-create__form-files-items
+
+  &__form-files-items {
+    display: flex;
+    gap: 1rem 3.2rem;
+    flex-grow: 1;
+    flex-wrap: wrap;
+
+    @include small-tablet {
+      flex-direction: column;
+      gap: 2.4rem;
+    }
+  }
+
+  & .form__dropdown_bottom,
+  & .form__dropdown_search_bottom {
+    @include small-tablet {
+      top: 14rem;
+    }
+  }
+
+  & .form-files-item-link {
+    flex-wrap: wrap;
+  }
+}

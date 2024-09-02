@@ -1,0 +1,188 @@
+.our-clients {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 5.6rem;
+    position: relative;
+
+    @include small-tablet {
+      gap: 4.8rem;
+    }
+  }
+  &__head {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    @include small-tablet {
+      gap: 4.8rem;
+    }
+    &-subtitle {
+      width: 50.6rem;
+      @include small-tablet {
+        width: 100%;
+      }
+    }
+  }
+
+  &__pagination {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+
+    @include small-tablet {
+      bottom: 0;
+      top: auto;
+      right: 50%;
+      transform: translateX(50%);
+      flex-direction: row;
+      gap: 2.4rem;
+    }
+  }
+
+  &__swiper {
+    width: 100%;
+    position: static !important;
+    @include small-tablet {
+      padding-bottom: 7rem*2 !important;
+    }
+    .swiper-wrapper {
+      position: static;
+    }
+    .swiper-slide {
+      height: auto;
+    }
+  }
+
+  &__card {
+    display: flex;
+    height: 58.6rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: $dark-blue;
+    color: $white;
+    border-radius: 6rem;
+    overflow: hidden;
+
+    @include small-tablet {
+      width: 100%;
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
+      height: fit-content;
+      flex-direction: column;
+      border-radius: 4rem;
+      height: 100%;
+    }
+
+    &-left {
+      min-width: 73.8rem;
+      width: 73.8rem;
+      height: 100%;
+
+      @include small-tablet {
+        height: 50rem;
+        width: 100%;
+        min-width: 100%;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+      }
+    }
+
+    &-achiev {
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+      @include small-tablet {
+        display: none;
+      }
+
+      &-title {
+        width: 100%;
+        padding-bottom: 1.8rem;
+        border-bottom: 1.5px solid $white;
+      }
+
+      &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+      }
+
+      &-item {
+        padding-left: 1.4rem;
+        position: relative;
+        &::after {
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          content: '';
+          border-radius: 50%;
+          width: 0.6rem;
+          height: 0.6rem;
+          background-color: $white;
+        }
+      }
+    }
+
+    &-btn {
+      @include small-tablet {
+        margin-top: 2.4rem;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+      }
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      padding: 3.8rem 6rem;
+      width: 55.2rem;
+      gap: 2.8rem;
+
+      @include small-tablet {
+        gap: 3.2rem;
+        width: 100%;
+        padding: 3.2rem;
+        height: 100%;
+      }
+    }
+    &-desc {
+      @include small-tablet {
+        margin-bottom: auto;
+      }
+    }
+
+    &-title {
+      display: flex;
+      gap: 1.6rem;
+      align-items: center;
+
+      @include small-tablet {
+        gap: 3.2rem;
+      }
+
+      &-icon {
+        width: 11.6rem;
+        height: 8.2rem;
+        -o-object-fit: contain;
+        object-fit: contain;
+        flex: none;
+
+        @include small-tablet {
+          width: 8.8rem * 2;
+          height: 6.2rem * 2;
+        }
+      }
+    }
+  }
+}

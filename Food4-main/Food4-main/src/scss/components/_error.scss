@@ -1,0 +1,136 @@
+.error {
+  padding: 13.6rem 0 14.2rem;
+  // .error__inner
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  // .error__text
+
+  &__text {
+  }
+
+  // .error__text--rotate
+
+  &__text--rotate {
+    position: absolute;
+    top: -3.6rem;
+    right: 0;
+    writing-mode: vertical-rl;
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  // .error__title-box
+
+  &__title-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3.3rem;
+    padding-left: 37.1rem;
+    @include small-tablet {
+      padding-left: 0;
+      align-items: center;
+    
+    }
+  }
+
+  // .error__title
+
+  &__title {
+  }
+
+  // .error__title-num
+
+  // .error__title-num-wrapper
+
+  &__title-num-wrapper {
+    position: relative;
+    width: fit-content;
+
+    @include small-tablet {
+      width: 75rem;
+      margin: -15.6rem -3.2rem 0;
+      overflow: hidden;
+      padding: 15.6rem 0 12rem;
+    }
+  }
+
+  &__title-num {
+    font-family: 'AustinCyr';
+    font-weight: 600;
+    font-size: 49rem;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    @include small-tablet {
+        padding: 0 3.2rem;
+        font-size: 41rem;
+      }
+  }
+
+  // .error__title-num-img-box
+
+  &__title-num-img-box {
+    border-radius: 7rem;
+    width: 36.6rem;
+    height: 31.3rem;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .error__title-num-img-box--left
+
+  &__title-num-img-box--left {
+    top: -10rem;
+    left: -24rem;
+    @include small-tablet {
+      top: 0;
+      left: -15.8rem;
+    }
+  }
+  // .error__title-num-img-box--right
+
+  &__title-num-img-box--right {
+    bottom: -6.8rem;
+    right: -24rem;
+    @include small-tablet {
+      bottom: 0;
+      right: -16.8rem;
+    }
+  }
+
+  // .error__info-box
+
+  &__info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3.6rem;
+    width: 42.7rem;
+    margin-top: -6rem;
+    @include small-tablet {
+        width: 52.2rem;
+        margin-top: -14rem;
+      }
+  }
+
+  // .error__desk
+
+  &__desk {
+  }
+
+  // .error__contact-button
+
+  &__contact-button {
+    width: fit-content;
+  }
+}

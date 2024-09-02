@@ -1,0 +1,63 @@
+.tl1 {
+    font-family: 'Jura';
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    @include small-tablet {
+        font-size: 6rem;
+    }
+}
+
+
+// --------------------------------------------------------------------------
+
+.txt18 {
+    font-family: 'Jura';
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    &_lh {
+        font-family: 'Jura';
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 3rem;
+        &.eng {
+            font-family: 'Jura';
+        }
+        &--grey {
+            color: $grey;
+        }
+    }
+
+    &_nav {
+        color: $grey-text;
+        font-family: 'Jura';
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 3rem;
+        & .logo-text {
+            font-family: 'Europeextendedc';;
+        }
+        &--bold {
+        font-weight: 700;
+        }
+    }
+    @include small-tablet {
+        font-size: 2.8rem;
+        &_lh {
+            font-size: 2.8rem;
+            line-height: normal;
+        }
+        &_nav {
+            font-size: 2.8rem;
+            line-height: normal;
+        }
+    }
+}
+
+
+

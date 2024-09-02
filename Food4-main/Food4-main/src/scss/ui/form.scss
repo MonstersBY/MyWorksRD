@@ -1,0 +1,48 @@
+.input-group {
+  position: relative;
+  width: 100%;
+  &--white input {
+    border-bottom: 1px solid $white;
+  }
+  &--black input {
+    border-bottom: 1px solid #737373;
+  }
+}
+.input-group input {
+  outline: 1px solid transparent;
+  transition: background-color 0.3s, color 0.3s;
+  padding-bottom: 0.8rem;
+
+  transition: border-bottom 0.3s;
+  width: 100%;
+  &::placeholder {
+    // color: $textAndLine;
+  }
+  @include small-tablet {
+    padding-bottom: 1.6rem;
+  }
+}
+
+._form-error input {
+  border-bottom: 1px solid #fd4646;
+}
+
+.error-span {
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+  color: #fd4646;
+  line-height: normal;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    line-height: normal;
+  }
+  @include small-tablet {
+    bottom: -3rem;
+  }
+}

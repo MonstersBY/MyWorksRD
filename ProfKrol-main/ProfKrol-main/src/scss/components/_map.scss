@@ -1,0 +1,59 @@
+.map {
+  width: 100%;
+  height: 100%;
+
+  &-marker {
+    position: relative;
+    cursor: pointer;
+
+    &--baloon {
+      position: absolute;
+      left: 50%;
+      top: -1.2rem;
+      transform: translate(-50%, -100%);
+      display: none;
+      column-gap: 1.2rem;
+      padding: 1.6rem;
+      background-color: $white;
+      border: 1px solid $light-grey;
+      border-radius: 2rem;
+    }
+
+    &--img {
+      width: 8rem;
+      height: 8rem;
+    }
+
+    &--descr {
+      width: 29.4rem;
+    }
+
+    &--title {
+      margin-bottom: 1.8rem;
+    }
+
+    &:hover,
+    &.active {
+      .map-marker--baloon {
+        display: flex;
+      }
+    }
+  }
+
+  @media (max-width: 48em) {
+    &-marker {
+      &--baloon {
+        column-gap: 1.6rem;
+      }
+
+      &--descr {
+        width: 39.8rem;
+      }
+
+      &--img {
+        width: 16rem;
+        height: 16rem;
+      }
+    }
+  }
+}

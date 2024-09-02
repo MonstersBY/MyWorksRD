@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://api-maps.yandex.ru/v3/?apikey=4d7b8985-4ebf-4fde-8884-668550d59df1&lang=ru_RU"></script>
+    <title>Главная</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header header--main">
+        <include src="./components/_header.html"></include>
+      </header>
+      <include src="./components/_popup.html"></include>
+      <main>
+        <include src="./components/_main-hero.html"></include>
+        <include src="./components/_about-meat.html"></include>
+        <include src="./components/_partner.html"></include>
+        <include src="./components/_product.html"></include>
+        <include src="./components/_production.html"></include>
+        <include src="./components/_cooperation.html"></include>
+        <include src="./components/_supervisor.html"></include>
+        <include src="./components/_news-main.html"></include>
+        <include src="./components/_enterprises.html"></include>
+        <include src="./components/_contact-us.html"></include>
+      </main>
+      <include src="./components/_footer.html"></include>
+    </div>
+  </body>
+  <script>
+    initMap();
+
+    async function initMap() {
+      // Промис `ymaps3.ready` будет зарезолвлен, когда загрузятся все компоненты основного модуля API
+      await ymaps3.ready;
+
+      const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapMarker } = ymaps3;
+
+      // Иницилиазируем карту
+      const map = new YMap(
+        // Передаём ссылку на HTMLElement контейнера
+        document.getElementById('map'),
+
+        // Передаём параметры инициализации карты
+        {
+          location: {
+            // Координаты центра карты
+            center: [42.30156997392636, 54.579445796926024],
+
+            // Уровень масштабирования
+            zoom: 6
+          }
+        }
+      );
+
+      // Добавляем слой для отображения схематической карты
+      map.addChild(new YMapDefaultSchemeLayer());
+      map.addChild(new YMapDefaultFeaturesLayer());
+
+      let markerProps = [
+        { coord: [40.620661770801355, 56.59492428076209] },
+        { coord: [36.51441461331457, 55.06528719047676] }
+      ];
+
+      if (document.querySelector('.enterprises__map-card')) {
+        markerProps = [];
+        const cards = document.querySelectorAll('.enterprises__map-card'),
+          cardContainer = document.querySelector('.enterprises__map-content');
+
+        cards.forEach((card, i) => {
+          let title = card.querySelector('.enterprises__map-card--title').textContent,
+            text = card.querySelector('.enterprises__map-card--text').textContent,
+            imgSrc = card.querySelector('.enterprises__map-card > div:first-child img').getAttribute('src'),
+            coord = card.dataset.coordinates.split(' ');
+
+          markerProps.push({ coord, title, text, imgSrc });
+        });
+
+        cardContainer.addEventListener('click', (e) => {
+          let target = e.target,
+            activeCardIndex = null;
+
+          if (target.classList.contains('enterprises__map-card')) {
+            let coord = target.dataset.coordinates.split(' ');
+
+            cards.forEach((card, i) => {
+              if (card === target) {
+                activeCardIndex = i;
+              }
+
+              card.classList.remove('active');
+            });
+
+            target.classList.add('active');
+
+            map.setLocation({
+              center: coord
+            });
+          }
+        });
+      }
+
+      markerProps.forEach((obj) => {
+        const marker = document.createElement('div');
+
+        if (document.querySelector('.enterprises__map-card')) {
+          marker.innerHTML = `
+          <div class="map-marker--icon">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle opacity="0.5" cx="30" cy="30" r="30" fill="#6AA64C"/>
+              <circle cx="30" cy="30" r="10" fill="white"/>
+              <circle cx="30" cy="30" r="4" fill="#6AA64C"/>
+            </svg>
+          </div>
+          <div class="map-marker--baloon">
+            <div class="map-marker--img">
+                <img src=${obj.imgSrc} alt=""/>
+            </div>
+            <div class="map-marker--descr">
+                <div class="map-marker--title txt18 txt18_bold">${obj.title}</div>
+                <div class="map-marker--text txt16">${obj.text}</div>
+            </div>
+          </div>
+          `;
+        } else {
+          marker.innerHTML = `
+          <div class="map-marker--icon">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle opacity="0.5" cx="30" cy="30" r="30" fill="#6AA64C"/>
+              <circle cx="30" cy="30" r="10" fill="white"/>
+              <circle cx="30" cy="30" r="4" fill="#6AA64C"/>
+            </svg>
+          <div>
+          `;
+        }
+
+        marker.className = 'map-marker';
+
+        map.addChild(new YMapMarker({ coordinates: obj.coord }, marker));
+      });
+    }
+  </script>
+</html>

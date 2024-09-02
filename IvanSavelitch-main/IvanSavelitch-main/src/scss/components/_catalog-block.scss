@@ -1,0 +1,266 @@
+.catalog-block {
+  position: relative;
+  // padding: 35rem 0 34.7rem;
+  margin: 35rem 0 34.7rem;
+  height: 100% !important;
+  // padding-top: 10rem;
+  display: flex !important;
+  align-items: center !important;
+  &__background {
+    position: absolute;
+    // top: 0;
+    // left: 0;
+    inset: 0;
+    // top: -20rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 141.5rem;
+    z-index: -1;
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.4rem;
+  }
+
+  &__tags {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 92.918rem;
+  }
+
+  &__tag {
+    background-color: $white60;
+    border: 0.4rem solid $white;
+    padding: 1.5rem 4.6rem 2.2rem;
+    border-radius: 12rem;
+    color: $orange;
+
+    &:first-child {
+      margin-left: 8.8rem;
+      margin-right: 2.2rem;
+      transform: rotateZ(-9deg);
+    }
+
+    &:nth-child(2) {
+      display: flex;
+      column-gap: 0.45rem;
+      margin-right: 4.2rem;
+      transform: rotateZ(6deg);
+    }
+
+    &:nth-child(3) {
+      transform: rotateZ(7deg);
+    }
+
+    &:nth-child(4) {
+      margin-right: 6.4rem;
+      transform: rotateZ(3deg);
+    }
+
+    &:nth-child(5) {
+      margin-right: 11.6rem;
+      transform: rotateZ(8deg);
+    }
+
+    &:nth-child(6) {
+      transform: rotateZ(-7deg);
+    }
+  }
+
+  &__swiper {
+    &.swiper {
+      overflow: visible;
+    }
+  }
+
+  &__slide {
+    position: relative;
+    width: 40.6rem;
+    min-height: 50rem;
+    padding-top: 33.4rem;
+    z-index: 1;
+
+    &-img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 37.2rem;
+      height: 34.8rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &-background {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 41.2rem;
+      z-index: -1;
+
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &-descr {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 4.4rem;
+      color: $orange;
+
+      & > div {
+        &:first-child {
+          width: 19rem;
+        }
+
+        &:last-child {
+          width: 15.6rem;
+          line-height: 2.7rem;
+        }
+      }
+    }
+
+    &-title {
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  @media (max-width: 48em) {
+    margin: 33.2rem 0 45.2rem;
+    &__background {
+      // top: -30rem;
+      height: 240rem;
+    }
+    &__top {
+      flex-direction: column;
+      row-gap: 5rem;
+      margin-bottom: 5rem;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__tags {
+      width: 100%;
+    }
+
+    &__tag {
+      padding: 2.4rem 7.2rem 3.2rem;
+      border-radius: 24rem;
+      font-size: 4rem;
+
+      &:first-child {
+        order: 3;
+        transform: rotateZ(-10deg);
+        margin: 0 -1rem 0 0;
+      }
+
+      &:nth-child(2) {
+        order: 5;
+        transform: rotateZ(9deg);
+        margin: 2rem 0 1rem 0;
+      }
+
+      &:nth-child(3) {
+        order: 6;
+        transform: rotateZ(11deg);
+        margin: 0 16.8rem 0 15.8rem;
+      }
+
+      &:nth-child(4) {
+        order: 1;
+        transform: rotateZ(13deg);
+        margin: 0 22rem 1rem 20.6rem;
+      }
+
+      &:nth-child(5) {
+        order: 4;
+        transform: rotateZ(-8deg);
+        margin: 0 1rem 0 2rem;
+      }
+
+      &:last-child {
+        order: 2;
+        transform: rotateZ(4deg);
+        margin: 0 0 3rem -1rem;
+      }
+    }
+
+    &__swiper {
+      margin-bottom: 6rem;
+
+      &.swiper {
+        margin-right: -3rem;
+      }
+
+      &-btn {
+        &.swiper-button-prev,
+        &.swiper-button-next {
+          position: static;
+        }
+      }
+
+      &-navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 2rem;
+      }
+    }
+
+    &__slide {
+      min-height: 67.8rem;
+      padding-top: 45.2rem;
+
+      &-background {
+        width: 55.2rem;
+        height: 56rem;
+      }
+
+      &-img {
+        width: 50.6rem;
+        height: 47.2rem;
+        right: 3.4rem;
+      }
+
+      &-descr {
+        padding-left: 6rem;
+        justify-content: flex-start;
+        column-gap: 4rem;
+
+        & > div {
+          &:first-child {
+            width: 22rem;
+          }
+
+          &:last-child {
+            width: 25.6rem;
+            font-size: 3.2rem;
+            line-height: 4rem;
+          }
+        }
+      }
+
+      &-title,
+      &-weight {
+        font-size: 5.6rem;
+      }
+    }
+  }
+}

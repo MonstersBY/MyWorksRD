@@ -1,0 +1,58 @@
+<section class="catering-hero _first">
+  <div class="container">
+    <div class="catering-hero__inner">
+      <div class="catering-hero__circle">
+        <include src="./components/_other-services-circle.html"></include>
+      </div>
+      <div class="catering-hero__img-box catering-hero__img-box--big">
+        <img src="./assets/images/catering-hero-big.webp" alt="" />
+      </div>
+      <div class="catering-hero__info-box">
+        <div class="catering-hero__info-title-box">
+          <p class="catering-hero__info-title tl2">Кейтеринг</p>
+          <p class="catering-hero__info-desk catering-hero__info-desk--desk  txt20">
+            Наши кейтеринговые услуги предоставляют полный спектр обеденных решений для вашего бизнеса. Наше
+            меню включает разнообразные варианты, а также специальные диетические программы.
+          </p>
+          <p class="catering-hero__info-desk catering-hero__info-desk--mob  txt20">
+            Выбирайте и заказывайте комплексные и полезные обеды с доставкой в офис
+          </p>
+        </div>
+        <form data-popup-message="#popup__success" data-dev action="" class="catering-hero__info-form">
+          <p class="catering-hero__info-form-title tl5">Закажите звонок</p>
+          <div class="catering-hero__input-group input-group input-group--white popup__label--required">
+            <div class="catering-hero__form-input-wrapper form__input-wrapper">
+              <input
+                class="catering-hero__input input--tel txt20 phone-mask"
+                type="text"
+                placeholder="Телефон"
+                data-validate
+                data-required="tel"
+                autocomplete="off"
+                name="form[]"
+              />
+            </div>
+            <span class="error-span txt16">Поле не заполнено</span>
+          </div>
+          <button type="submit" class="catering-hero__item-desk-link link">
+            Оставить заявку
+            <div class="link-svg-box">
+              <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.5 7H20.5M20.5 7L15.0446 1M20.5 7L15.0446 13"
+                  stroke="#4658FD"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </button>
+        </form>
+      </div>
+      <div class="catering-hero__img-box catering-hero__img-box--min">
+        <img src="./assets/images/catering-hero-min.webp" alt="" />
+      </div>
+    </div>
+  </div>
+</section>

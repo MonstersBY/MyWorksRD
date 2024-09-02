@@ -1,0 +1,75 @@
+.irreplaceable {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    width: 80.6rem;
+  }
+
+  &__right {
+    width: 82rem;
+    height: 42rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+  }
+
+  &__text {
+    max-width: 72rem;
+
+    &:not(:last-child) {
+      margin-bottom: 3.2rem;
+    }
+
+    &.bold {
+      font-weight: 600;
+    }
+
+    &.green {
+      color: $green;
+    }
+  }
+
+  @media (max-width: 48em) {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__left,
+    &__right {
+      width: auto;
+    }
+
+    &__left {
+      margin-bottom: 6.4rem;
+    }
+
+    &__right {
+      height: 40.4rem;
+    }
+
+    &__title {
+      margin-bottom: 6.4rem;
+    }
+
+    &__text {
+      max-width: none;
+      font-size: 3.6rem;
+      line-height: 4.8rem;
+
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+}

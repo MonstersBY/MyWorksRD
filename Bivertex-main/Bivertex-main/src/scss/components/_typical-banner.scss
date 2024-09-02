@@ -1,0 +1,135 @@
+.typical-banner {
+  margin-top: -8.5rem;
+  padding-top: 0;
+}
+.typical-banner__container {
+  position: relative;
+  max-width: 192rem;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 52, 64, 1) 0%,
+    rgba(0, 52, 64, 0.9220063025210083) 71%,
+    rgba(0, 105, 115, 0.9248074229691877) 100%
+  );
+  border-radius: 0 0 6rem 6rem;
+}
+.typical-banner__inner {
+  width: 179rem;
+  min-height: 78rem;
+  margin: 0 auto;
+  padding: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.typical-banner__bg-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    // z-index: -1;
+    border-radius: 0 0 6rem 6rem;
+    overflow: hidden;
+
+ 
+}
+.typical-banner__bg-box img,
+.typical-banner__bg-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.typical-banner__img-box {
+  width: 78rem;
+  height: 78rem;
+  height: 100%;
+  border-radius: 6rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+}
+
+.typical-banner__img-box img,
+.typical-banner__img-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.typical-banner__content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  position: relative;
+  z-index: 5;
+}
+.typical-banner__title-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 37.7rem;
+}
+.typical-banner__desc {
+}
+.typical-banner__title {
+}
+.typical-banner__desc-text {
+  width: 60.6rem;
+}
+.typical-banner__btn {
+  color: #012028;
+  width: fit-content;
+  padding: 1.8rem 8rem;
+}
+
+@include small-tablet {
+  .typical-banner {
+    margin-top: -14.6rem;
+  }
+  .typical-banner__container {
+    width: 100%;
+    padding: 0;
+    background: linear-gradient(
+    180deg,
+    rgba(0, 52, 64, 1) 0%,
+    rgba(0, 52, 64, 0.9220063025210083) 40%,
+    rgba(0, 105, 115, 0.9248074229691877) 100%
+  );
+  }
+  .typical-banner__inner {
+    padding: 20.8rem 3.2rem 3.2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 128.8rem;
+  }
+  .typical-banner__img-box {
+    width: 68.6rem;
+    height: 68.6rem;
+  }
+
+  .typical-banner__img-box img,
+  .typical-banner__img-box video {
+  }
+  .typical-banner__content-box {
+    gap: 4.8rem;
+  }
+  .typical-banner__title-box {
+    width: 38rem;
+  }
+  .typical-banner__desc {
+    font-size: 2.4rem;
+  }
+  .typical-banner__title {
+  }
+  .typical-banner__desc-text {
+    width: 68.6rem;
+    font-size: 2.8rem;
+  }
+  .typical-banner__btn {
+    padding: 3.2rem 6.4rem;
+    font-size: 2.8rem;
+  }
+}

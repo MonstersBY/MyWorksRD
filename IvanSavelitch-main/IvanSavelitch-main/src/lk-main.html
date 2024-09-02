@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Личные данные</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <include src="./components/_header.html"></include>
+      <include src="./components/_popup.html"></include>
+      <main>
+        <div class="bc txt16"><span>Главная</span><span>Личные данные</span></div>
+        <section class="lk">
+          <div class="container">
+            <div class="lk-sidebar">
+              <div class="lk-sidebar_box">
+                <div class="lk-sidebar_box-top txt16 mobile">
+                  <span>Личные данные</span>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3 5L8 10L13 5"
+                      stroke="#FFF"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="lk-sidebar_box-bottom txt16">
+                  <div class="lk-sidebar_box-list">
+                    <a class="lk-sidebar_box-link active">Личные данные</a>
+                    <a class="lk-sidebar_box-link">Мои покупки</a>
+                    <a class="lk-sidebar_box-link">Избранное</a>
+                    <a class="lk-sidebar_box-link">Выйти</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="lk-container lk-container--main">
+              <div class="lk-main_title txt36">Личные данные</div>
+              <div class="cart-order_block">
+                <div class="cart-order_block--name txt18">Ваши данные</div>
+                <div class="cart-order_block--date txt16">
+                  <div class="form_input">
+                    <input type="text" placeholder="Имя" />
+                  </div>
+                  <div class="form_input">
+                    <input type="text" placeholder="Фамилия" />
+                  </div>
+                </div>
+              </div>
+              <div class="cart-order_block">
+                <div class="cart-order_block--name txt18">Контакты</div>
+                <div class="cart-order_block--date txt16">
+                  <div class="form_input">
+                    <input
+                      class="phone-mask"
+                      type="text"
+                      placeholder="+ 7 (  ___  )  ___  -  __  -  __"
+                      data-placeholder="+ 7 (  ___  )  ___  -  __  -  __"
+                    />
+                  </div>
+                  <div class="form_input">
+                    <input type="text" placeholder="E-mail" />
+                  </div>
+                </div>
+              </div>
+              <div class="cart-order_block">
+                <div class="cart-order_block--name txt18">Город</div>
+                <div class="cart-order_block--date txt16">
+                  <div class="form_input-select">
+                    <select>
+                      <option data-display="Select">Москва</option>
+                      <option value="1">Москва1</option>
+                      <option value="2">Сакт-Питербург</option>
+                      <option value="3">Москва2</option>
+                      <option value="4">Сакт-Питербург1</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="lk-main_save txt16">Сохранить изменения</div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <include src="./components/_footer.html"></include>
+    </div>
+  </body>
+</html>

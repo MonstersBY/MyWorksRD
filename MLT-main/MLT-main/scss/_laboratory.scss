@@ -1,0 +1,69 @@
+.laboratory {
+    background-color: #121820;
+    margin-bottom: 0;
+}
+.laboratory__container {
+    padding-top: 14rem;
+    padding-bottom: 8rem;
+}
+.laboratory__content {
+    display: flex;
+    justify-content: space-between;
+}
+.laboratory__content .content-left {
+    width: 69rem;
+}
+.laboratory__title {
+    color: #fff;
+    font-family: Gilroy;
+    font-size: 5.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 105%;
+    margin-bottom: 6rem;
+}
+.laboratory__texts {
+    width: 54.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.laboratory__text {
+    color: #fff;
+    font-family: Gilroy;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 105%;
+}
+.laboratory__img {
+    width: 83.8rem;
+}
+
+@media (max-width: 48em) {
+    .laboratory__container {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+    .laboratory__content {
+        flex-direction: column;
+        gap: 6rem;
+    }
+    .laboratory__content .content-left {
+        width: 100%;
+    }
+    .laboratory__title {
+        font-size: 5.4rem;
+        margin-bottom: 2.4rem;
+    }
+    .laboratory__texts {
+        width: 100%;
+        gap: 3rem;
+    }
+    .laboratory__text {
+        font-size: 2.8rem;
+    }
+    .laboratory__img {
+        width: 71rem;
+    }
+}

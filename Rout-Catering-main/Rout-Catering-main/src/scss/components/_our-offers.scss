@@ -1,0 +1,275 @@
+.our-offers {
+  &.bg-2 {
+    // overflow: hidden;
+    &::before {
+      width: 55.8rem;
+      height: 47rem;
+      top: -7rem;
+      right: calc(50% + 35rem);
+      z-index: 0;
+      @include small-tablet {
+        width: 44rem;
+        height: 38rem;
+        top: -15rem;
+        right: calc(50% - 8rem);
+        transform: rotate(-16deg);
+      }
+    }
+  }
+  &__title {
+    text-align: center;
+    margin-right: 24.3rem;
+    @include small-tablet {
+      margin-right: 0rem;
+      br {
+        display: none;
+      }
+    }
+  }
+  &__heading {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: $green;
+    margin-bottom: 8rem;
+    @include small-tablet {
+      flex-direction: column;
+      gap: 4rem;
+      margin-bottom: 8rem;
+    }
+    &-info {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      @include small-tablet {
+        gap: 3.2rem;
+      }
+    }
+    &-img {
+      padding: 0.8rem;
+      background-color: $blue;
+      border-radius: 1.2rem;
+      width: 6.2rem;
+      height: 6.2rem;
+      @include small-tablet {
+        width: 9.6rem;
+        height: 9.6rem;
+        min-width: 9.6rem;
+        border-radius: 1.6rem;
+        padding: 1.6rem;
+        margin-top: 1rem;
+      }
+    }
+    .line {
+      height: 7.8rem;
+      width: 0.1rem;
+      background-color: $textAndLine;
+      @include small-tablet {
+        height: 12.8rem;
+        width: 0.2rem;
+      }
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+  }
+  &__item {
+    display: flex;
+    gap: 6rem;
+    @include small-tablet {
+      flex-direction: column-reverse;
+      gap: 2.4rem;
+    }
+    &-wrapper {
+      position: relative;
+    }
+    &-hint {
+      position: absolute;
+      top: 8rem;
+      right: 0;
+      &-img {
+        width: 6.4rem;
+        height: 6.4rem;
+        &:focus + .our-offers__item-hint-txt {
+          display: block;
+        }
+      }
+      &-txt {
+        display: none;
+        border-radius: 1.2rem;
+        background: rgba(0, 0, 0, 0.20);
+        -webkit-backdrop-filter: blur(7.5px);
+        backdrop-filter: blur(7.5px);
+        position: absolute;
+        right: 8rem;
+        top: -2rem;
+        color: $Beige;
+        border-radius: 1.2rem;
+        padding: 1.6rem;
+        width: 30rem;
+      }
+      &:focus .our-offers__item-hint-txt {
+        display: block;
+      }
+      &:hover .our-offers__item-hint-txt {
+        display: block;
+      }
+    }
+  }
+  &__card {
+    -webkit-mask-image: url(./assets/images/picture/our-offers__card-mask.svg);
+    mask-image: url(./assets/images/picture/our-offers__card-mask.svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    height: 55.4rem;
+    width: 71.2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    @include small-tablet {
+      height: 53.2rem;
+      width: 68.6rem;
+      position: absolute;
+      top: 8rem;
+    }
+    &-sub {
+      position: absolute;
+      top: 0;
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      padding: 1.6rem;
+      margin: 3.2rem;
+      border-radius: 1.2rem;
+      background: rgba(0, 0, 0, 0.20);
+      -webkit-backdrop-filter: blur(7.5px);
+      backdrop-filter: blur(7.5px);
+      width: 47.4rem;
+      color: $Beige;
+      @include small-tablet {
+        display: none;
+      }
+      &:before {
+        content: '';
+        display: block;
+        width: 3.2rem;
+        min-width: 3.2rem;
+        height: 3.2rem;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-image: url(./assets/images/icons/menu-icon_light.svg);
+      }
+    }
+    &-bottom {
+      position: absolute;
+      right: 0;
+      top: 43rem;
+      width: 100%;
+      height: 13rem;
+      padding: 4rem 6rem 4rem 6rem;
+      display: flex;
+      align-items: flex-end;
+      justify-content: end;
+      background-color: $green;
+      color: $Beige;
+      @include small-tablet {
+        top: 41.5rem;
+        padding: 2rem 4rem 3rem 6rem;
+      }
+      &-text {
+        margin: 0 2.4rem 1.3rem;
+        @include small-tablet {
+          width: 15rem;
+        }
+      }
+    }
+  }
+  &__content {
+    width: 74.8rem;
+    padding: 4rem 0 0 0;
+    @include small-tablet {
+      width: 100%;
+      padding: 0;
+    }
+    &-title {
+      margin-bottom: 0.6rem;
+      color: $green;
+      @include small-tablet {
+        display: inline-block;
+        margin-bottom: 58rem;
+      }
+    }
+    &-subtitle {
+      margin-bottom: 4.5rem;
+      color: $textAndLine;
+      @include small-tablet {
+        display: inline-block;
+        margin-left: 1.6rem;
+      }
+    }
+    &-list {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      column-gap: 2.4rem;
+      row-gap: 0.8rem;
+      @include small-tablet {
+        display: flex;
+        flex-direction: column;
+      }
+      &-title {
+        margin-bottom: 2.4rem;
+        color: $green;
+      }
+      &-li {
+        color: $textAndLine;
+        grid-column: span 2;
+        grid-row: span 1;
+        width: 23rem;
+        display: flex;
+        align-items: flex-start;
+        @include small-tablet {
+          width: 100%;
+        }
+        &.hide {
+          @include small-tablet {
+            display: none;
+          }
+        }
+        &::before {
+          content: '•';
+          display: block;
+          font-size: 4.6rem;
+          margin-right: 2rem;
+        }
+      }
+      &-btn {
+        font-family: 'Gilroy';
+        font-size: 2.8rem;
+        line-height: 120%;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $green;
+        width: fit-content;
+        border-bottom: 0.2rem solid $green;
+        display: none;
+        margin-top: 0.4rem;
+        @include small-tablet {
+          display: block;
+        }
+        &.hide {
+          display: none;
+        }
+      }
+    }
+    &-text {
+      margin: 2.4rem 0 4rem;
+      color: $textAndLine;
+    }
+  }
+}

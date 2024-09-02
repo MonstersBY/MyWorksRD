@@ -1,0 +1,104 @@
+@import './mixins';
+
+$light-grew: #f3f3f3;
+$white: #fff;
+$black: #012028;
+$turquoise: #0efdff;
+$grew: #676767;
+$dark-blue: #013341;
+$grey-2: #e1e1e1;
+$grey-2: #cdcdcd;
+$dark: #161717;
+$green: #25a42a;
+$orange: #ff8a00;
+$red: #ff0101;
+
+// body
+body {
+  background-color: $light-grew;
+  color: $black;
+  .lock & {
+    overflow: hidden;
+    touch-action: none;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+// main
+main {
+  flex-grow: 1;
+  height: fit-content;
+}
+
+.desktop {
+  display: block;
+
+  @media (max-width: 48em) {
+    display: none;
+  }
+}
+
+.mobile {
+  display: none;
+
+  @media (max-width: 48em) {
+    display: block;
+  }
+}
+
+@import './ui/ui';
+@import './components/_header';
+@import './components/_footer';
+
+section {
+  padding: 10rem 0;
+  @include small-tablet {
+    padding: 9rem 0;
+  }
+  &._first {
+    padding: 4.2rem 0 9rem;
+    // @include small-tablet {
+    //   padding: 2.6rem 0 10rem;
+    // }
+  }
+}
+.lazy-imarker {
+  width: 100%!important;
+  height: 100%!important;
+}
+.visual {
+  overflow: visible!important;
+  width: 100%!important;
+  height: 100%!important;
+}
+
+
+.visual-wrapper {
+  width: 100%!important;
+  height: 100%!important;
+}
+
+[id^="bx_incl_area"] {
+  width: 100%!important;
+  height: 100%!important;
+}
+
+.item {
+  padding: 0;
+  margin:  0;
+  @media (max-width: 48em) {
+
+        // padding: 9rem 0;
+        padding: 0;
+        margin:  -0.5rem;
+  
+}
+}

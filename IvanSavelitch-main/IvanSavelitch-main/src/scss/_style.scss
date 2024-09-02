@@ -1,0 +1,98 @@
+@import './mixins';
+
+$white: #fff;
+$white60: rgba(255, 255, 255, 0.6);
+$white70: rgba(255, 255, 255, 0.7);
+$light-blue: #c5c1dd;
+$dark-blue: #AAA5CA;
+$dark-orange: #c14824;
+$orange: #d15834;
+$light-orange: #d66948;
+
+// body
+body {
+  background-color: $orange;
+  color: $white;
+  .lock & {
+    overflow: hidden;
+    touch-action: none;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+// main
+main {
+  flex-grow: 1;
+}
+
+section {
+  // min-height: 100vh;
+}
+
+.desktop {
+  display: block;
+
+  @media (max-width: 48em) {
+    display: none;
+  }
+}
+
+.mobile {
+  display: none;
+
+  @media (max-width: 48em) {
+    display: block;
+  }
+}
+
+.fp-watermark {
+  display: none !important;
+}
+
+// .fp-overflow {
+//   overflow: unset!important;
+//   @media (max-width: 48em) {
+//     overflow: auto!important;
+//   }
+// }
+
+.bc {
+  width: 174.4rem;
+  margin: 5.2rem auto 0;
+  display: flex;
+  gap: 1.8rem;
+
+  span {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    &::after {
+      content: '';
+      display: block;
+      width: 2.8rem;
+      height: 2.8rem;
+      background: url('../../assets/images/star-brown.svg');
+      background-size: contain;
+    }
+    &:last-child {
+      &::after {
+        content: none;
+      }
+    }
+  }
+}
+@media (max-width: 48em) {
+  .bc {
+    display: none;
+  }
+}
+
+@import './ui/ui';

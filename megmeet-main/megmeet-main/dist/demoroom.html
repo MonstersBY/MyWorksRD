@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+  <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <!-- <a href="#" class="header__logo">
+        <div class="header__logo-img-box">
+          <img src="./assets/images/logo.webp" alt="" />
+        </div>
+      </a> -->
+      <a href="#" class="header__logo-box">
+        <div class="header__logo-img-box">
+          <svg class="desktop" width="250" height="91" viewBox="0 0 250 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.8123 0H90.9936V90.9936H0V0H17.8123Z" fill="#00A499"></path>
+            <path class="points" fill-rule="evenodd" clip-rule="evenodd" d="M11.9418 45.9565C9.40373 45.9565 7.34619 48.014 7.34619 50.5521V52.3904C7.34619 54.9285 9.40373 56.986 11.9418 56.986C14.4799 56.986 16.5375 54.9285 16.5375 52.3904V50.5521C16.5375 48.014 14.4799 45.9565 11.9418 45.9565ZM69.846 45.9565C67.3079 45.9565 65.2504 48.014 65.2504 50.5521V52.3904C65.2504 54.9285 67.3079 56.986 69.846 56.986C72.3841 56.986 74.4417 54.9285 74.4417 52.3904V50.5521C74.4417 48.014 72.3841 45.9565 69.846 45.9565ZM45.9507 50.5521C45.9507 48.014 48.0082 45.9565 50.5463 45.9565C53.0844 45.9565 55.1419 48.014 55.1419 50.5521V60.6625C55.1419 63.2006 53.0844 65.2581 50.5463 65.2581C48.0082 65.2581 45.9507 63.2006 45.9507 60.6625V50.5521ZM31.2415 45.9565C28.7034 45.9565 26.6459 48.014 26.6459 50.5521V69.8538C26.6459 72.3919 28.7034 74.4494 31.2415 74.4494C33.7796 74.4494 35.8372 72.3919 35.8372 69.8538V50.5521C35.8372 48.014 33.7796 45.9565 31.2415 45.9565Z" fill="white"></path>
+            <path class="points points--opasity" fill-rule="evenodd" clip-rule="evenodd" d="M40.4331 45.9559C42.9712 45.9559 45.0287 43.8984 45.0287 41.3603V22.0586C45.0287 19.5205 42.9712 17.463 40.4331 17.463C37.895 17.463 35.8375 19.5205 35.8375 22.0586V41.3603C35.8375 43.8984 37.895 45.9559 40.4331 45.9559ZM64.3285 41.3603C64.3285 43.8984 62.2709 45.9559 59.7328 45.9559C57.1947 45.9559 55.1372 43.8984 55.1372 41.3603V31.2499C55.1372 28.7118 57.1947 26.6542 59.7328 26.6542C62.2709 26.6542 64.3285 28.7118 64.3285 31.2499V41.3603ZM21.1283 45.9559C23.6664 45.9559 25.724 43.8984 25.724 41.3603C25.724 38.8222 23.6664 36.7646 21.1283 36.7646C18.5903 36.7646 16.5327 38.8222 16.5327 41.3603C16.5327 43.8984 18.5903 45.9559 21.1283 45.9559ZM79.0326 45.9559C81.5707 45.9559 83.6282 43.8984 83.6282 41.3603C83.6282 38.8222 81.5707 36.7646 79.0326 36.7646C76.4945 36.7646 74.4369 38.8222 74.4369 41.3603C74.4369 43.8984 76.4945 45.9559 79.0326 45.9559Z" fill="white" fill-opacity="0.6"></path>
+            <path d="M168.15 19.133C171.242 19.133 173.743 19.7519 175.651 20.9898C177.598 22.2277 179.049 24.2346 180.003 27.0104C180.958 29.7863 181.435 33.4999 181.435 38.1513V52.0824H172.33V38.3201C172.33 34.7565 171.662 31.7369 170.326 29.2611C168.99 26.7478 166.585 25.4912 163.111 25.4912C160.63 25.4912 158.74 26.0539 157.442 27.1792C156.144 28.267 155.285 29.7112 154.865 31.5118C154.445 33.3123 154.235 35.5255 154.235 38.1513V52.0824H145.073V38.3201C145.073 34.6815 144.462 31.6431 143.241 29.2048C142.057 26.7291 139.748 25.4912 136.312 25.4912C133.373 25.4912 131.216 26.1101 129.841 27.348C128.505 28.5484 127.665 30.1614 127.322 32.187C127.016 34.1751 126.864 37.0072 126.864 40.6833V52.0824H117.645V17.6685H126.749V24.4221C129.841 20.896 134.594 19.133 141.008 19.133C143.909 19.133 146.257 19.6769 148.051 20.7648C149.883 21.8526 151.296 23.6344 152.288 26.1101C153.624 23.6344 155.571 21.8526 158.129 20.7648C160.725 19.6769 164.065 19.133 168.15 19.133Z" fill="#00A499"></path>
+            <path d="M224.295 20.1458V50.8114C224.18 53.7748 223.168 57.6396 221.26 59.4401C219.389 61.2407 217.118 62.4973 214.445 63.21C211.811 63.9228 209.549 64.112 206.371 64.2791C202.46 64.4848 198.908 64.1291 196.351 63.829C193.793 63.5664 191.502 62.7224 189.479 61.297C187.494 59.8715 186.501 57.1784 186.501 54.065H195.892C195.931 56.5782 198.603 57.8349 203.909 57.8349L206.371 57.7786C208.395 57.7786 210.342 57.3472 212.212 56.4845C214.121 55.6217 215.075 52.8371 215.075 50.2488V47.3791C211.792 50.3425 206.849 51.4304 200.244 51.4304C197.305 51.4304 194.671 50.6989 192.342 49.236C190.052 47.7355 188.238 45.7849 186.902 43.3842C185.604 40.9834 184.917 38.4514 184.841 35.7881C184.879 32.7122 185.547 29.9363 186.845 27.4606C188.143 24.9848 189.956 23.0342 192.285 21.6088C194.614 20.1833 197.267 19.4706 200.244 19.4706C207.001 19.2831 211.964 20.671 215.133 23.6344L216.163 20.1458H224.295ZM204.997 45.5786C208.051 45.5786 210.494 44.6783 212.327 42.8778C214.159 41.0397 215.075 38.7515 215.075 35.2254V35.0566C215.075 33.4061 214.675 31.8306 213.873 30.3302C213.071 28.8297 211.945 27.6106 210.494 26.6728C209.044 25.735 207.383 25.2661 205.513 25.2661C203.222 25.2661 201.256 25.735 199.614 26.6728C197.973 27.6106 196.713 28.886 195.835 30.499C194.995 32.0745 194.556 33.8187 194.518 35.7318C194.594 38.7327 195.549 40.7959 197.381 42.709C199.214 44.622 201.752 45.5786 204.997 45.5786Z" fill="#00A499"></path>
+            <path d="M244.043 20.1458H249.999V27.0104H244.043V51.8706H234.881V27.0104H228.64V20.1458H234.881V13.5063L244.043 8.27344V20.1458Z" fill="#00A499"></path>
+            <path d="M123.928 74.7909H126.201V81.0577H124.743V76.107L122.615 81.0577H121.23L119.102 76.107V81.0577H117.645V74.7909H119.917L121.918 79.6074L123.928 74.7909Z" fill="#00A499"></path>
+            <path d="M129.958 76.1607C131.344 76.1607 132.557 76.5546 132.557 77.9601V81.0577H131.181V80.4221C130.972 80.7354 130.275 81.192 129.198 81.192C128.066 81.192 127.287 80.7265 127.287 79.7865C127.287 78.7838 127.812 77.978 131.181 78.184V77.9601C131.181 77.4588 130.954 77.0917 129.958 77.0917C129.125 77.0917 128.863 77.3335 128.79 77.6647H127.504C127.658 76.6083 128.636 76.1607 129.958 76.1607ZM131.181 79.6611V78.9897C129.352 78.8912 128.673 79.0613 128.673 79.7417C128.673 80.1893 129.008 80.3684 129.605 80.3684C130.348 80.3684 130.927 80.0819 131.181 79.6611Z" fill="#00A499"></path>
+            <path d="M137.626 81.0577L136.096 79.0434L135.2 79.867V81.0577H133.823V74.7909H135.2V78.363L137.427 76.286H139.102L137.038 78.184L139.22 81.0577H137.626Z" fill="#00A499"></path>
+            <path d="M140.035 81.0577V76.286H141.402V81.0577H140.035ZM140.714 75.731C140.297 75.731 140.008 75.4982 140.008 75.0953C140.008 74.6835 140.297 74.4507 140.714 74.4507C141.13 74.4507 141.429 74.6835 141.429 75.0953C141.429 75.4982 141.13 75.731 140.714 75.731Z" fill="#00A499"></path>
+            <path d="M145.879 76.1607C147.12 76.1607 147.844 76.8232 147.844 77.8975V81.0577H146.468V78.2377C146.468 77.6647 146.133 77.1723 145.282 77.1723C144.431 77.1723 144.05 77.6826 144.05 78.2377V81.0577H142.674V76.286H144.05V76.9575C144.259 76.671 144.847 76.1607 145.879 76.1607Z" fill="#00A499"></path>
+            <path d="M153.127 76.286H154.494V80.6101C154.494 82.4722 152.927 82.7229 151.542 82.7229C149.93 82.7229 149.007 82.1768 148.916 81.2636H150.202C150.302 81.5591 150.782 81.7829 151.542 81.7829C152.638 81.7829 153.127 81.4695 153.127 80.6101V80.1714C152.764 80.5564 152.212 80.7623 151.397 80.7623C149.985 80.7623 148.844 80.1267 148.844 78.5062C148.844 76.8858 149.985 76.1607 151.397 76.1607C152.14 76.1607 152.737 76.4382 153.127 76.9127V76.286ZM151.696 79.9118C152.692 79.9118 153.299 79.4015 153.299 78.5062C153.299 77.602 152.692 77.1007 151.696 77.1007C150.709 77.1007 150.139 77.611 150.139 78.5062C150.139 79.4015 150.709 79.9118 151.696 79.9118Z" fill="#00A499"></path>
+            <path d="M165.551 77.5036C165.741 80.0192 164.256 81.192 162.047 81.192C160.018 81.192 158.207 80.2162 158.207 77.9243C158.207 75.6414 160.073 74.6656 161.893 74.6656C163.513 74.6656 164.944 75.3191 165.388 76.7963H163.857C163.568 76.1965 162.979 75.7578 161.893 75.7578C160.381 75.7578 159.692 76.7247 159.692 77.9243C159.692 79.1329 160.498 80.0998 162.056 80.0998C163.532 80.0998 163.993 79.2493 164.057 78.6047H161.974V77.5036H165.551Z" fill="#00A499"></path>
+            <path d="M169.743 76.1696C170.06 76.1696 170.296 76.1965 170.459 76.2413V77.4946H170.413C170.241 77.423 169.915 77.3424 169.499 77.3424C168.358 77.3424 167.941 78.0497 167.941 78.7927V81.0577H166.565V76.286H167.941V77.1634C168.141 76.8232 168.711 76.1696 169.743 76.1696Z" fill="#00A499"></path>
+            <path d="M176.525 79.0255H172.242C172.351 79.679 172.813 80.252 173.818 80.252C174.551 80.252 175.022 79.9297 175.212 79.5268H176.425C176.109 80.7175 175.013 81.192 173.818 81.192C172.442 81.192 171.002 80.44 171.002 78.6763C171.002 76.9127 172.423 76.1607 173.809 76.1607C175.212 76.1607 176.67 77.0112 176.525 79.0255ZM173.809 77.0917C172.949 77.0917 172.469 77.5573 172.288 78.1302H175.267C175.122 77.5573 174.714 77.0917 173.809 77.0917Z" fill="#00A499"></path>
+            <path d="M179.849 76.1607C181.234 76.1607 182.448 76.5546 182.448 77.9601V81.0577H181.071V80.4221C180.863 80.7354 180.166 81.192 179.089 81.192C177.957 81.192 177.178 80.7265 177.178 79.7865C177.178 78.7838 177.703 77.978 181.071 78.184V77.9601C181.071 77.4588 180.845 77.0917 179.849 77.0917C179.016 77.0917 178.753 77.3335 178.681 77.6647H177.395C177.549 76.6083 178.527 76.1607 179.849 76.1607ZM181.071 79.6611V78.9897C179.242 78.8912 178.563 79.0613 178.563 79.7417C178.563 80.1893 178.898 80.3684 179.496 80.3684C180.238 80.3684 180.818 80.0819 181.071 79.6611Z" fill="#00A499"></path>
+            <path d="M186.949 77.2171H185.536V79.2224C185.536 80.0013 185.826 80.1535 186.949 80.0371V81.0577C186.768 81.0846 186.55 81.1293 186.233 81.1293C184.495 81.1293 184.16 80.3863 184.16 79.1956V77.2171H183.264V76.286H184.16V75.0506H185.536V76.286H186.949V77.2171Z" fill="#00A499"></path>
+            <path d="M196.737 74.7909V75.9011H194.338V81.0577H192.88V75.9011H190.481V74.7909H196.737Z" fill="#00A499"></path>
+            <path d="M202.171 79.0255H197.888C197.997 79.679 198.459 80.252 199.464 80.252C200.197 80.252 200.668 79.9297 200.858 79.5268H202.072C201.755 80.7175 200.659 81.192 199.464 81.192C198.088 81.192 196.648 80.44 196.648 78.6763C196.648 76.9127 198.069 76.1607 199.455 76.1607C200.858 76.1607 202.316 77.0112 202.171 79.0255ZM199.455 77.0917C198.595 77.0917 198.115 77.5573 197.934 78.1302H200.913C200.768 77.5573 200.36 77.0917 199.455 77.0917Z" fill="#00A499"></path>
+            <path d="M205.81 80.252C206.715 80.252 207.159 79.7954 207.322 79.1956H208.553C208.3 80.628 207.078 81.192 205.81 81.192C204.397 81.192 202.912 80.5206 202.912 78.6763C202.912 76.8321 204.397 76.1607 205.81 76.1607C207.078 76.1607 208.3 76.7247 208.553 78.1571H207.322C207.159 77.5483 206.715 77.0917 205.81 77.0917C204.651 77.0917 204.207 77.8348 204.207 78.6763C204.207 79.5089 204.651 80.252 205.81 80.252Z" fill="#00A499"></path>
+            <path d="M212.751 76.1607C213.992 76.1607 214.716 76.8232 214.716 77.8975V81.0577H213.349V78.2377C213.349 77.6647 213.005 77.1723 212.154 77.1723C211.303 77.1723 210.922 77.6826 210.922 78.2377V81.0577H209.546V74.7909H210.922V76.9575C211.14 76.671 211.728 76.1607 212.751 76.1607Z" fill="#00A499"></path>
+            <path d="M219.193 76.1607C220.433 76.1607 221.157 76.8232 221.157 77.8975V81.0577H219.781V78.2377C219.781 77.6647 219.446 77.1723 218.595 77.1723C217.744 77.1723 217.364 77.6826 217.364 78.2377V81.0577H215.987V76.286H217.364V76.9575C217.572 76.671 218.16 76.1607 219.193 76.1607Z" fill="#00A499"></path>
+            <path d="M225.036 76.1607C226.449 76.1607 227.916 76.8769 227.916 78.6763C227.916 80.4758 226.449 81.192 225.036 81.192C223.633 81.192 222.157 80.4758 222.157 78.6763C222.157 76.8769 223.633 76.1607 225.036 76.1607ZM225.036 80.252C226.195 80.252 226.63 79.5089 226.63 78.6763C226.63 77.8348 226.195 77.0917 225.036 77.0917C223.877 77.0917 223.452 77.8348 223.452 78.6763C223.452 79.5089 223.877 80.252 225.036 80.252Z" fill="#00A499"></path>
+            <path d="M228.914 74.4507H230.291V81.0577H228.914V74.4507Z" fill="#00A499"></path>
+            <path d="M234.17 76.1607C235.583 76.1607 237.049 76.8769 237.049 78.6763C237.049 80.4758 235.583 81.192 234.17 81.192C232.767 81.192 231.291 80.4758 231.291 78.6763C231.291 76.8769 232.767 76.1607 234.17 76.1607ZM234.17 80.252C235.329 80.252 235.764 79.5089 235.764 78.6763C235.764 77.8348 235.329 77.0917 234.17 77.0917C233.011 77.0917 232.586 77.8348 232.586 78.6763C232.586 79.5089 233.011 80.252 234.17 80.252Z" fill="#00A499"></path>
+            <path d="M242.059 76.286H243.426V80.6101C243.426 82.4722 241.86 82.7229 240.475 82.7229C238.863 82.7229 237.939 82.1768 237.849 81.2636H239.135C239.234 81.5591 239.714 81.7829 240.475 81.7829C241.57 81.7829 242.059 81.4695 242.059 80.6101V80.1714C241.697 80.5564 241.145 80.7623 240.33 80.7623C238.917 80.7623 237.776 80.1267 237.776 78.5062C237.776 76.8858 238.917 76.1607 240.33 76.1607C241.072 76.1607 241.67 76.4382 242.059 76.9127V76.286ZM240.629 79.9118C241.625 79.9118 242.231 79.4015 242.231 78.5062C242.231 77.602 241.625 77.1007 240.629 77.1007C239.642 77.1007 239.071 77.611 239.071 78.5062C239.071 79.4015 239.642 79.9118 240.629 79.9118Z" fill="#00A499"></path>
+            <path d="M248.577 76.286H249.999L247.101 82.5528H245.743L246.504 80.9145L244.24 76.286H245.68L247.147 79.5358L248.577 76.286Z" fill="#00A499"></path>
+          </svg>
+
+          <svg class="mobile" width="110" height="51" viewBox="0 0 110 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.61341 6.05368H38.8929V44.9465H0V6.05368H7.61341Z" fill="#00A499"></path>
+            <path class="points" fill-rule="evenodd" clip-rule="evenodd" d="M5.01709 25.5001C3.878 25.5001 2.95459 26.4235 2.95459 27.5626C2.95459 28.7016 3.878 29.6251 5.01709 29.6251C6.15618 29.6251 7.07959 28.7016 7.07959 27.5626C7.07959 26.4235 6.15618 25.5001 5.01709 25.5001ZM29.1827 25.5001C28.0436 25.5001 27.1202 26.4235 27.1202 27.5626C27.1202 28.7016 28.0436 29.6251 29.1827 29.6251C30.3218 29.6251 31.2452 28.7016 31.2452 27.5626C31.2452 26.4235 30.3218 25.5001 29.1827 25.5001ZM19.4546 27.5626C19.4546 26.4235 20.378 25.5001 21.5171 25.5001C22.6562 25.5001 23.5796 26.4235 23.5796 27.5626V31.0983C23.5796 32.2374 22.6562 33.1608 21.5171 33.1608C20.378 33.1608 19.4546 32.2374 19.4546 31.0983V27.5626ZM13.2757 25.5001C12.1366 25.5001 11.2132 26.4235 11.2132 27.5626V35.2233C11.2132 36.3624 12.1366 37.2858 13.2757 37.2858C14.4148 37.2858 15.3382 36.3624 15.3382 35.2233V27.5626C15.3382 26.4235 14.4148 25.5001 13.2757 25.5001Z" fill="white"></path>
+            <path class="points" fill-rule="evenodd" clip-rule="evenodd" d="M16.817 25.5002C17.9561 25.5002 18.8795 24.5768 18.8795 23.4377V15.777C18.8795 14.6379 17.9561 13.7145 16.817 13.7145C15.6779 13.7145 14.7545 14.6379 14.7545 15.777V23.4377C14.7545 24.5768 15.6779 25.5002 16.817 25.5002ZM27.1209 23.4377C27.1209 24.5768 26.1975 25.5002 25.0584 25.5002C23.9193 25.5002 22.9959 24.5768 22.9959 23.4377V19.902C22.9959 18.7629 23.9193 17.8395 25.0584 17.8395C26.1975 17.8395 27.1209 18.7629 27.1209 19.902V23.4377ZM9.15137 25.5002C10.2905 25.5002 11.2139 24.5768 11.2139 23.4377C11.2139 22.2986 10.2905 21.3752 9.15137 21.3752C8.01228 21.3752 7.08887 22.2986 7.08887 23.4377C7.08887 24.5768 8.01228 25.5002 9.15137 25.5002ZM33.317 25.5002C34.4561 25.5002 35.3795 24.5768 35.3795 23.4377C35.3795 22.2986 34.4561 21.3752 33.317 21.3752C32.1779 21.3752 31.2545 22.2986 31.2545 23.4377C31.2545 24.5768 32.1779 25.5002 33.317 25.5002Z" fill="white" fill-opacity="0.5"></path>
+            <path d="M71.4547 17.805C72.7626 17.805 73.8202 18.0717 74.6276 18.6051C75.4511 19.1386 76.0647 20.0034 76.4683 21.1996C76.872 22.3958 77.0739 23.9961 77.0739 26.0005V32.0038H73.2228V26.0732C73.2228 24.5376 72.9402 23.2363 72.3751 22.1695C71.8099 21.0864 70.7927 20.5449 69.3233 20.5449C68.2738 20.5449 67.4745 20.7874 66.9255 21.2723C66.3765 21.7411 66.0132 22.3634 65.8356 23.1393C65.658 23.9152 65.5691 24.869 65.5691 26.0005V32.0038H61.6939V26.0732C61.6939 24.5053 61.4355 23.1959 60.9188 22.1452C60.4183 21.0783 59.4414 20.5449 57.9881 20.5449C56.7448 20.5449 55.8325 20.8116 55.2512 21.3451C54.6861 21.8623 54.3309 22.5574 54.1855 23.4303C54.0564 24.287 53.9918 25.5075 53.9918 27.0916V32.0038H50.0923V17.1739H53.9433V20.0842C55.2512 18.5647 57.2615 17.805 59.9742 17.805C61.2014 17.805 62.1944 18.0394 62.9533 18.5081C63.7284 18.9769 64.3258 19.7447 64.7457 20.8116C65.3108 19.7447 66.1343 18.9769 67.2161 18.5081C68.3141 18.0394 69.727 17.805 71.4547 17.805Z" fill="#00A499"></path>
+            <path d="M95.2023 18.2414V31.4561C95.1538 32.7331 94.7259 34.3985 93.9186 35.1744C93.1274 35.9504 92.1667 36.4919 91.0364 36.799C89.9222 37.1061 88.9651 37.1877 87.6213 37.2597C85.9667 37.3483 84.4646 37.195 83.3827 37.0657C82.3009 36.9526 81.332 36.5889 80.4763 35.9746C79.6366 35.3603 79.2168 34.1998 79.2168 32.8581H83.1889C83.2051 33.9412 84.3354 34.4827 86.5798 34.4827L87.6213 34.4584C88.4771 34.4584 89.3006 34.2726 90.0918 33.9008C90.8991 33.529 91.3028 32.329 91.3028 31.2136V29.977C89.9142 31.254 87.8231 31.7228 85.0297 31.7228C83.7864 31.7228 82.6722 31.4076 81.6873 30.7772C80.7185 30.1306 79.9515 29.29 79.3863 28.2555C78.8373 27.2209 78.5467 26.1298 78.5144 24.9821C78.5306 23.6566 78.8131 22.4604 79.3621 21.3936C79.9111 20.3267 80.6781 19.4861 81.6631 18.8719C82.648 18.2576 83.7702 17.9505 85.0297 17.9505C87.8877 17.8696 89.9868 18.4677 91.327 19.7447L91.763 18.2414H95.2023ZM87.04 29.2011C88.3318 29.2011 89.3652 28.8132 90.1402 28.0373C90.9153 27.2452 91.3028 26.2591 91.3028 24.7397V24.6669C91.3028 23.9557 91.1333 23.2767 90.7942 22.6302C90.4551 21.9836 89.9787 21.4582 89.3652 21.0541C88.7516 20.65 88.0492 20.4479 87.258 20.4479C86.2892 20.4479 85.4576 20.65 84.7633 21.0541C84.069 21.4582 83.5361 22.0078 83.1647 22.7029C82.8095 23.3818 82.6238 24.1335 82.6077 24.9579C82.64 26.2511 83.0436 27.1401 83.8187 27.9645C84.5937 28.7889 85.6675 29.2011 87.04 29.2011Z" fill="#00A499"></path>
+            <path d="M103.556 18.2414H106.074V21.1996H103.556V31.9125H99.6802V21.1996H97.0402V18.2414H99.6802V15.3803L103.556 13.1253V18.2414Z" fill="#00A499"></path>
+            </svg>
+            
+        </div>
+      </a>
+
+      <div class="header__nav-box">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item dropdown">
+              <a href="#" class="header__nav-link header__nav-link--mob-nav txt18">Продукция
+                <span class="header__nav-link-svg-box">
+                  <img src="./assets/images/arr-right.svg" alt="">
+                </span>
+              </a>
+              <div class="header__nav-item-dropdown">
+                <div class="header__nav-item-dropdown-inner">
+                  <button class="header__nav-item-dropdown-back">
+                    <div class="header__nav-item-dropdown-back-svg-box">
+                      <img src="./assets/images/arr-back.svg" alt="">
+                    </div>
+                    <div class="header__nav-item-dropdown-back-text">Назад</div>
+                  </button>
+
+                  <div class="header__nav-item-list-box txt18">
+                    <ul class="header__nav-item-list">
+                      <li class="header__nav-item-item">
+                        <a href="" class="header__nav-item-link">DEX DM/PM (ALPHA)</a>
+                      </li>
+                      <li class="header__nav-item-item">
+                        <a href="" class="header__nav-item-link">EHAVE CM (N/A)</a>
+                      </li>
+                      <li class="header__nav-item-item">
+                        <a href="" class="header__nav-item-link">ARTSEN CM500 C (N/A)</a>
+                      </li>
+                      <li class="header__nav-item-item">
+                        <a href="" class="header__nav-item-link">ARTSEN II CM/PM (MARS)</a>
+                      </li>
+                      <li class="header__nav-item-item">
+                        <a href="" class="header__nav-item-link">ARTSEN PLUS (PLUTON)</a>
+                      </li>
+                      <li class="header__nav-item-item">
+                        <a href="" class="header__nav-item-link">ARTSEN PRO (PLUTON)</a>
+                      </li>
+                      <li class="header__nav-item-item">
+                        <a href="" class="header__nav-item-link">РОБОТИЗИРОВАННАЯ СВАРКА</a>
+                      </li>
+                    </ul>
+                    <ul class="header__nav-item-list">
+                      <li class="header__nav-item-item">
+                        <a href="" class="header__nav-item-link">SMARC&nbsp;</a>
+                      </li>
+                      <li class="header__nav-item-item">
+                        <a href="" class="header__nav-item-link">Meta TIG AC/DC (OMEGA)</a>
+                      </li>
+                      <li class="header__nav-item-item">
+                        <a href="" class="header__nav-item-link">Meta TIG DC (-//-) (OMEGA)</a>
+                      </li>
+                      <li class="header__nav-item-item">
+                        <a href="" class="header__nav-item-link">EHAVE II CM (-//-) (URAN)</a>
+                      </li>
+                      <li class="header__nav-item-item">
+                        <a href="" class="header__nav-item-link">DEX2 (GALAXY)</a>
+                      </li>
+                      <li class="header__nav-item-item">
+                        <a href="" class="header__nav-item-link">LUX LASER MACHINE (STARLIGHT)</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="header__nav-item-img-box">
+                    <img src="./assets/images/header-dropdown.webp" alt="">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link txt18">Применение</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link txt18">О компании</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link txt18">Демо-зал</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link txt18">Вакансии</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link txt18">новости</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link txt18">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__btn-box">
+          <button class="header__btn button txt18 txt18_bold" data-popup="#popup__feedback">
+            оставить заявку
+          </button>
+          <div class="header__social-wrapper mobile">
+            <div class="header__social-box">
+              <div class="header__social-svg-box">
+                <img src="./assets/images/icons/tel.svg" alt="">
+              </div>
+              <div class="header__social-link-box">
+                <a href="tel:+74951080675" class="header__social-link">8 (495) 108-06-75</a>
+              </div>
+            </div>
+            <div class="header__social-box">
+              <div class="header__social-svg-box">
+                <img src="./assets/images/icons/mail.svg" alt="">
+              </div>
+              <div class="header__social-link-box">
+                <a href="mailto:info@megmeet.ru" class="header__social-link">info@megmeet.ru</a>
+                <a href="mailto:marketing@megmeet.ru" class="header__social-link">marketing@megmeet.ru</a>
+              </div>
+            </div>
+            <div class="header__social-list">
+              <a href="#" class="header__social-list-link">
+                <img src="./assets/images/icons/youtube.svg" alt="">
+              </a>
+              <a href="#" class="header__social-list-link">
+                <img src="./assets/images/icons/dzen.svg" alt="">
+              </a>
+              <a href="#" class="header__social-list-link">
+                <img src="./assets/images/icons/telegram.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="header__burger burger mobile">
+        <div class="header__burger-svg-box">
+          <svg class="inActive" width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12.5H27" stroke="white" stroke-width="1.5" stroke-linecap="square"></path>
+            <path d="M5 20.5H27" stroke="white" stroke-width="1.5" stroke-linecap="square"></path>
+          </svg>
+          <svg class="isActive" width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M26 6.5L6 26.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M6 6.5L26 26.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+      </button>
+    </div>
+  </div>
+</header>
+
+      <div id="popup__success" aria-hidden="true" class="popup popup--success">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M28 4L4 28" stroke="#191817" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M4 4L28 28" stroke="#191817" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <p class="popup__body-content-box-title tl2">Заявка отправлена</p>
+          <p class="popup__body-content-box-desk txt20">
+            Ваша заявка успешно отправлена! Наш специалист
+            <br class="desktop">
+            свяжется с вами в ближайшее время.
+          </p>
+          <button data-close="" class="popup__btn button txt18 txt18_bold">вернуться на главную</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__success-summary" aria-hidden="true" class="popup popup--success">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M28 4L4 28" stroke="#191817" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M4 4L28 28" stroke="#191817" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <p class="popup__body-content-box-title tl2">Заявка отправлена</p>
+          <p class="popup__body-content-box-desk txt20">
+            Ваша заявка успешно отправлена! После ознакомления
+            <br>
+            резюме, мы свяжемся с вами в ближайшее время.
+          </p>
+          <button data-close="" class="popup__btn button txt18 txt18_bold">вернуться на главную</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__feedback" aria-hidden="true" class="popup popup--form">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M28 4L4 28" stroke="#191817" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M4 4L28 28" stroke="#191817" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <p class="popup__body-content-box-title tl2">оставьте заявку</p>
+          <form data-popup-message="#popup__success" data-dev="" action="" class="popup__form popup__form--application">
+            <p class="popup__form-title txt20">
+              Наши менеджеры помогут подобрать оборудование под Ваши задачи
+            </p>
+            <div class="popup__form-input-wrapper">
+              <div class="popup__form-input-box txt20">
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--name popup__form-input" type="text" data-validate="" data-required="name" autocomplete="off" name="form[]">
+                    <span class="placeholder">Имя<span>*</span></span>
+                  </span>
+                  <span class="error-span">Данное значение должно состоять из букв</span>
+                </label>
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--tel popup__form-input phone-mask" type="text" data-validate="" data-required="tel" autocomplete="off" name="form[]">
+                    <span class="placeholder">Телефон<span>*</span></span>
+                  </span>
+                  <span class="error-span">Введите номер целиком</span>
+                </label>
+                <label class="popup__label popup__label--textarea input-group">
+                  <span class="form__input-wrapper">
+                    <textarea class="input--textarea" placeholder="Комментарий" autocomplete="off" name="form[]"></textarea>
+                    <span class="error-span"></span>
+                  </span>
+                </label>
+              </div>
+              <div class="popup__btn-row">
+                <p class="popup__agreement-text txt16">
+                  Нажимая на кнопку, Вы принимаете
+                  <a href="#">условия пользовательского соглашения</a>
+                </p>
+                <button type="submit" class="popup__btn popup__btn--application button txt18 txt18_bold">
+                  оставить заявку
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__summary" aria-hidden="true" class="popup popup--form">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M28 4L4 28" stroke="#191817" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M4 4L28 28" stroke="#191817" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <p class="popup__body-content-box-title tl2">Хотите работать с нами?</p>
+          <form data-popup-message="#popup__success" data-dev="" action="" class="popup__form popup__form--summary">
+            <p class="popup__form-title txt20">
+              Оставьте заявку с вашим резюме и мы свяжемся с вами в ближайшее время
+            </p>
+            <div class="popup__form-input-wrapper">
+              <div class="popup__form-input-box txt20">
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--name popup__form-input" type="text" data-validate="" data-required="name" autocomplete="off" name="form[]">
+                    <span class="placeholder">Имя<span>*</span></span>
+                  </span>
+                  <span class="error-span">Данное значение должно состоять из букв</span>
+                </label>
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--name popup__form-input" type="text" data-validate="" data-required="name" autocomplete="off" name="form[]">
+                    <span class="placeholder">Фамилия<span>*</span></span>
+                  </span>
+                  <span class="error-span">Данное значение должно состоять из букв</span>
+                </label>
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--mail popup__form-input" type="text" data-validate="" data-required="email" autocomplete="off" name="form[]">
+                    <span class="placeholder">Электронная почта<span>*</span></span>
+                  </span>
+                  <span class="error-span">Введите электронную почту</span>
+                </label>
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--tel-without-required popup__form-input phone-mask" type="text" placeholder="Телефон" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите номер целиком</span>
+                </label>
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="popup__form-input" type="text" autocomplete="off" name="form[]" placeholder="Вакансия">
+                  </span>
+                  <span class="error-span"></span>
+                </label>
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--date popup__form-input" type="text" placeholder="Дата потенциального выхода">
+                  </span>
+                  <span class="error-span"></span>
+                </label>
+
+                <div class="popup__file-box">
+                  <label class="popup__label-input-file label-input-file">
+                    <input class="popup__input-file input-file" type="file" multiple="" name="file_project">
+                    <span class="popup__label-input-file-text-wrapper label-input-file-text-wrapper">
+                      <span class="popup__label-input-file-svg-box label-input-file-svg-box">
+                        <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M27.9492 18.886L20.3829 26.4523" stroke="#00A499" stroke-width="2" stroke-linecap="square"></path>
+                          <path d="M21.1923 13.7486L24.2757 10.6652C27.4976 7.44335 32.7212 7.44335 35.943 10.6652L36.1652 10.8873C39.387 14.1092 39.387 19.3328 36.1652 22.5546L33.0817 25.638" stroke="#00A499" stroke-width="2" stroke-linecap="square"></path>
+                          <path d="M27.1397 31.5873L24.0563 34.6708C20.8345 37.8926 15.6109 37.8926 12.389 34.6708L12.1669 34.4486C8.94503 31.2268 8.94503 26.0032 12.1669 22.7813L15.2503 19.6979" stroke="#00A499" stroke-width="2" stroke-linecap="square"></path>
+                        </svg>
+                      </span>
+                      <span class="popup__label-input-file-text-box label-input-file-text-box">
+                        <span class="popup__label-input-file-text-title label-input-file-text-title txt20">Прикрепите ваше резюме</span>
+                        <span class="popup__label-input-file-text-type label-input-file-text-type">PDF, JPG, JPEG, PNG. Размер до 20 Мбайт</span>
+                      </span>
+                    </span>
+                    <span class="error-span"></span>
+                  </label>
+                  <div class="popup__form-files-items form-files-items file_project"></div>
+                </div>
+              </div>
+              <div class="popup__btn-row">
+                <p class="popup__agreement-text txt16">
+                  Нажимая на кнопку, Вы принимаете
+                  <a href="#">условия пользовательского соглашения</a>
+                </p>
+                <button type="submit" class="popup__btn popup__btn--summary button txt18 txt18_bold">
+                  оставить заявку
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__choice" aria-hidden="true" class="popup popup--form">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M28 4L4 28" stroke="#191817" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M4 4L28 28" stroke="#191817" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <p class="popup__body-content-box-title tl2">Поможем с выбором</p>
+          <form data-popup-message="#popup__success" data-dev="" action="" class="popup__form popup__form--choice">
+            <p class="popup__form-title txt20">
+              Наши менеджеры помогут подобрать оборудование под Ваши задачи
+            </p>
+            <div class="popup__form-input-wrapper">
+              <div class="popup__form-input-box txt20">
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--name popup__form-input" type="text" data-validate="" data-required="name" autocomplete="off" name="form[]">
+                    <span class="placeholder">Имя<span>*</span></span>
+                  </span>
+                  <span class="error-span">Данное значение должно состоять из букв</span>
+                </label>
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--tel popup__form-input phone-mask" type="text" data-validate="" data-required="tel" autocomplete="off" name="form[]">
+                    <span class="placeholder">Телефон<span>*</span></span>
+                  </span>
+                  <span class="error-span">Введите номер целиком</span>
+                </label>
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="popup__form-input" type="text" placeholder="Название компании" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Данное значение должно состоять из букв</span>
+                </label>
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="popup__form-input" type="text" placeholder="E-mail" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Данное значение должно состоять из букв</span>
+                </label>
+                <label class="popup__label popup__label--textarea input-group">
+                  <span class="form__input-wrapper">
+                    <textarea class="input--textarea" placeholder="Ваше техническое задание" autocomplete="off" name="form[]"></textarea>
+                    <span class="error-span"></span>
+                  </span>
+                </label>
+              </div>
+              <div class="popup__btn-row">
+                <p class="popup__agreement-text txt16">
+                  Нажимая на кнопку, Вы принимаете
+                  <a href="#">условия пользовательского соглашения</a>
+                </p>
+                <button type="submit" class="popup__btn popup__btn--choice button txt18 txt18_bold">
+                  оставить заявку
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__demo" aria-hidden="true" class="popup popup--form">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M28 4L4 28" stroke="#191817" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M4 4L28 28" stroke="#191817" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <p class="popup__body-content-box-title tl2">Запишитесь <br>на демонстрацию</p>
+          <form data-popup-message="#popup__success" data-dev="" action="" class="popup__form popup__form--demo">
+            <p class="popup__form-title txt20">
+              Наши менеджеры помогут подобрать оборудование под Ваши задачи
+            </p>
+            <div class="popup__form-input-wrapper">
+              <div class="popup__form-input-box txt20">
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--name popup__form-input" type="text" data-validate="" data-required="name" autocomplete="off" name="form[]">
+                    <span class="placeholder">Имя<span>*</span></span>
+                  </span>
+                  <span class="error-span">Данное значение должно состоять из букв</span>
+                </label>
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--tel popup__form-input phone-mask" type="text" data-validate="" data-required="tel" autocomplete="off" name="form[]">
+                    <span class="placeholder">Телефон<span>*</span></span>
+                  </span>
+                  <span class="error-span">Введите номер целиком</span>
+                </label>
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="popup__form-input" type="text" placeholder="Название компании" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Данное значение должно состоять из букв</span>
+                </label>
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="popup__form-input" type="text" placeholder="E-mail" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Данное значение должно состоять из букв</span>
+                </label>
+                <label class="popup__label popup__label--textarea input-group">
+                  <span class="form__input-wrapper">
+                    <textarea class="input--textarea" placeholder="Ваше техническое задание" autocomplete="off" name="form[]"></textarea>
+                    <span class="error-span"></span>
+                  </span>
+                </label>
+              </div>
+              <div class="popup__btn-row">
+                <p class="popup__agreement-text txt16">
+                  Нажимая на кнопку, Вы принимаете
+                  <a href="#">условия пользовательского соглашения</a>
+                </p>
+                <button type="submit" class="popup__btn popup__btn--demo button txt18 txt18_bold">
+                  оставить заявку
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <main>
+        <section class="nav-box _first">
+          <div class="container">
+            <nav class="nav-box__list-wrap title-h5">
+              <ul class="nav-box__list">
+                <li class="nav-box__link txt16"><a href="#">Главная</a></li>
+                <li class="nav-box__link nav-box__link_black txt16">Демо-зал</li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+        <section class="demoroom-baner">
+    <div class="container">
+        <div class="demoroom-baner__top">
+            <div class="demoroom-baner__title tl1">Демо-зал Megmeet</div>
+            <div class="demoroom-baner__text txt20">Протестировать необходимое оборудование можно непосредственно <br>на территории своего предприятия или в демонстрационном зале нашей компании по адресу: г. Москва, ул. Б. Семеновская, д. 42.</div>
+        </div>
+        <div class="demoroom-baner__img">
+            <img src="../assets/images/demoroom/demoroom-b.webp" alt="">
+        </div>
+    </div>
+</section>
+        <section class="demoroom-main">
+    <div class="container">
+        <div class="demoroom-main__left txt20">о демо-зале</div>
+        <div class="demoroom-main__right">
+            <div class="demoroom-main__title tl2">наша Бесплатная демонстрация  оборудования помогает принять решение по его выбору и получить консультацию </div>
+            <div class="demoroom-main__text txt20">В демонстрационном зале Megmeet доступно для тестирование следующее оборудование:</div>
+            <ul class="demoroom-main__list txt20">
+                <li>Полуавтомат Dex DM/PM компактная модель</li>
+                <li>Полуавтомат Ehave CM</li>
+                <li>Полуавтомат Artsen CM500 C</li>
+                <li>Полуавтомат Artsen II PM/CM</li>
+                <li>Полуавтомат Artsen Plus</li>
+                <li>Полуавтомат Artsen Pro</li>
+                <li>Блоки охлаждения AnyCool 68 и AnyCool 100</li>
+                <li>Промежуточный блок подачи проволоки</li>
+                <li>Блоки подачи проволоки для роботизированной сварки</li>
+                <li>Источники сварки в комплекте со сварочным роботом GSK</li>
+            </ul>
+        </div>
+    </div>
+</section>
+        <section class="demoroom-gallery">
+    <div class="container">
+        <div class="demoroom-gallery__title tl2">Галерея</div>
+        <div class="demoroom-gallery__swiper demoroom-gallery__swiper-hiden">
+            <div class="swiper-wrapper">
+                <a class="swiper-slide demoroom-gallery__slide" data-fancybox="gallery" data-src="./assets/images/galery-img-2.webp">
+                    <img src="./assets/images/galery-img-2.webp" alt="">
+                </a>
+                <a class="swiper-slide demoroom-gallery__slide" data-fancybox="gallery" data-src="./assets/images/galery-img-3.webp">
+                    <img src="./assets/images/galery-img-3.webp" alt="">
+                </a>
+                <a class="swiper-slide demoroom-gallery__slide demoroom-gallery__slide--big" data-fancybox="gallery" data-src="./assets/images/galery-img-5.webp">
+                    <img src="./assets/images/galery-img-5.webp" alt="">
+                </a>
+                <a class="swiper-slide demoroom-gallery__slide demoroom-gallery__slide--big" data-fancybox="gallery" data-src="./assets/images/galery-img-5.webp">
+                    <img src="./assets/images/galery-img-5.webp" alt="">
+                </a>
+                <a class="swiper-slide demoroom-gallery__slide" data-fancybox="gallery" data-src="./assets/images/galery-img-4.webp">
+                    <img src="./assets/images/galery-img-4.webp" alt="">
+                </a>
+                <a class="swiper-slide demoroom-gallery__slide" data-fancybox="gallery" data-src="./assets/images/galery-img-1.webp">
+                    <img src="./assets/images/galery-img-1.webp" alt="">
+                </a>
+                <a class="swiper-slide demoroom-gallery__slide" data-fancybox="gallery" data-src="./assets/images/galery-img-4.webp">
+                    <img src="./assets/images/galery-img-4.webp" alt="">
+                </a>
+                <a class="swiper-slide demoroom-gallery__slide" data-fancybox="gallery" data-src="./assets/images/galery-img-1.webp">
+                    <img src="./assets/images/galery-img-1.webp" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="demoroom_gallery__pagination"></div>
+        <div class="demoroom-gallery__show-more">
+            <div>показать ещЁ</div>
+            <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z" fill="#00A499"></path>
+            </svg>
+        </div>
+    </div>
+</section>
+        <section class="application application--demo">
+  <div class="container">
+    <div class="application__inner-wrapper">
+      <div class="application__inner">
+        <div class="application__form-wrapper">
+          <p class="application__title tl1">
+            <span>Запишитесь <br class="desktop">на демонстрацию </span>
+          </p>
+          <form data-popup-message="#popup__success" data-dev="" action="" class="application__form application__demo-form">
+            <p class="application__form-title txt20">
+              <span> Наши менеджеры помогут подобрать оборудование под Ваши задачи</span>
+            </p>
+            <div class="application__form-input-wrapper">
+              <div class="application__form-input-box txt20">
+                <label class="application__label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--name application__form-input" type="text" data-validate="" data-required="name" autocomplete="off" name="form[]">
+                    <span class="placeholder">Имя<span>*</span></span>
+                  </span>
+                  <span class="error-span">Данное значение должно состоять из букв</span>
+                </label>
+                <label class="application__label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--tel application__form-input phone-mask" type="text" data-validate="" data-required="tel" autocomplete="off" name="form[]">
+                    <span class="placeholder">Телефон<span>*</span></span>
+                  </span>
+                  <span class="error-span">Введите номер целиком</span>
+                </label>
+
+                <label class="application__label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="application__form-input" type="text" autocomplete="off" name="form[]" placeholder="Название компании">
+               
+                  </span>
+                  <span class="error-span">Данное значение должно состоять из букв</span>
+                </label>
+
+                <label class="application__label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="application__form-input" type="text" autocomplete="off" name="form[]" placeholder="E-mail">
+               
+                  </span>
+                  <span class="error-span">Данное значение должно состоять из букв</span>
+                </label>
+                <label class="application__label application__label--textarea input-group">
+                  <span class="form__input-wrapper">
+                    <textarea class="input--textarea" placeholder="Комментарий" autocomplete="off" name="form[]"></textarea>
+                    <span class="error-span"></span>
+                  </span>
+                </label>
+              </div>
+              <div class="application__btn-row">
+                <p class="application__agreement-text txt16">
+                  Нажимая на кнопку, Вы принимаете
+                  <a href="#">условия пользовательского соглашения</a>
+                </p>
+                <button type="submit" class="application__btn application__demo-btn button txt18 txt18_bold">
+                  оставить заявку
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="application__form-img-box">
+          <img src="./assets/images/application-demo.webp" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__logo-wrapper">
+          <a href="#" class="footer__logo-box">
+            <div class="footer__logo-img-box">
+              <img src="./assets/images/logo.webp" alt="">
+            </div>
+            </a><div class="footer__logo-link-box"><a href="#" class="footer__logo-box">
+              </a><a href="#" class="footer__logo-link txt18">Скачать каталог PDF</a>
+              <a href="#" class="footer__logo-link txt18">Декларации и сертификаты</a>
+              <a href="#" class="footer__logo-link txt18">Политика конфиденциальности</a>
+            </div>
+          
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link txt18">Продукция</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link txt18"> Вакансии</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link txt18"> Применение</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link txt18">новости</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link txt18"> О компании</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link txt18"> Контакты</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link txt18"> демо-зал</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__social-wrapper">
+          <div class="footer__social-box">
+            <div class="footer__social-svg-box">
+              <img src="./assets/images/icons/tel.svg" alt="">
+            </div>
+            <div class="footer__social-link-box">
+              <a href="tel:+74951080675" class="footer__social-link txt18">8 (495) 108-06-75</a>
+            </div>
+          </div>
+          <div class="footer__social-box">
+            <div class="footer__social-svg-box">
+              <img src="./assets/images/icons/mail.svg" alt="">
+            </div>
+            <div class="footer__social-link-box">
+              <a href="mailto:info@megmeet.ru" class="footer__social-link txt18">info@megmeet.ru</a>
+              <a href="mailto:marketing@megmeet.ru" class="footer__social-link txt18">marketing@megmeet.ru</a>
+            </div>
+          </div>
+          <div class="footer__social-box">
+            <div class="footer__social-svg-box">
+              <img src="./assets/images/icons/adress.svg" alt="">
+            </div>
+            <div class="footer__social-link-box">
+              <div class="footer__social-link txt18">г. Москва, ул. Б. Семеновская, д. 42</div>
+            </div>
+          </div>
+          <div class="footer__social-list">
+            <a href="#" class="footer__social-list-link">
+              <img src="./assets/images/icons/youtube.svg" alt="">
+            </a>
+            <a href="#" class="footer__social-list-link">
+              <img src="./assets/images/icons/dzen.svg" alt="">
+            </a>
+            <a href="#" class="footer__social-list-link">
+              <img src="./assets/images/icons/telegram.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright txt18">© ООО «МегмитВелдинг» 2024 г.</p>
+        <a class="footer__request" href="#">
+          <p class="footer__request-text">Разработано</p>
+          <div class="footer__request-img-box">
+            <img src="./assets/images/icons/request-logo.svg" alt="">
+          </div>
+          <p class="footer__request-text-logo">Request <span>Design</span></p>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </body>
+</html>

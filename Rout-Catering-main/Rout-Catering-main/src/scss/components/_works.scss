@@ -1,0 +1,148 @@
+.works {
+    background-color: #D3FCA0;
+    color: #2E574D;
+
+    &.bg-3 {
+        &::after {
+            width: 45.5rem;
+            height: 39.8rem;
+            top: -14rem;
+            right: calc(50% + 0rem);
+            z-index: 0;
+            transform: rotate(50deg);
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__left {
+        width: 51.5rem;
+
+        .btn-pr {
+            background-color: #2E574D;
+            color: #D3FCA0;
+            width: fit-content;
+
+            .block {
+                fill: #D3FCA0;
+            }
+            .arrow {
+                stroke: #2E574D;
+            }
+        }
+    }
+    &__right {
+        position: relative;
+    }
+    &__title {
+        font-family: 'eurofurence';
+        font-size: 7.2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        text-transform: uppercase;
+        margin-bottom: 4rem;
+    }
+    &__line {
+       width: 100%;
+       height: 0.1rem;
+       background: #5A7B67;
+       margin-bottom: 4rem;
+    }
+    &__text {
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        margin-bottom: 5.2rem;
+    }
+    &__img {
+        mask-image: url(./assets/images/picture/works.webp);
+        mask-repeat: no-repeat;
+        mask-size: 100% 100%;
+        width: 74.8rem;
+        height: 52rem;
+
+        .mobile {
+            display: none;
+        }
+
+        &_small {
+            width: 17.9rem;
+            height: 16rem;
+            position: absolute;
+            top: 50%;
+            left: -7.4rem;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+@include small-tablet {
+    .works {
+    
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: inherit;
+        }
+
+        &.bg-3 {
+            &::after {
+                width: 45.5rem;
+                height: 29.8rem;
+                top: -14rem;
+                right: 4rem;
+                z-index: 0;
+                transform: rotate(50deg);
+            }
+        }
+    
+        &__left {
+            width: 100%;
+            margin-bottom: 6.4rem;
+        }
+        &__title {
+            font-size: 6.4rem;
+            margin-bottom: 4rem;
+        }
+        &__line {
+           width: 100%;
+           height: 0.16rem;
+           margin-bottom: 4rem;
+        }
+        &__text {
+            font-size: 3.2rem;
+            margin-bottom: 4.8rem;
+        }
+        &__img {
+            mask-image: url(./assets/images/picture/works_m.webp);
+            mask-repeat: no-repeat;
+            mask-size: 100% 100%;
+            width: 60.6rem;
+            height: 65.8rem;
+            margin-left: auto;
+
+            .mobile {
+                display: inherit;
+            }
+            .desktop {
+                display: none;
+            }
+    
+            &_small {
+                width: 31.4rem;
+                height: 28.8rem;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

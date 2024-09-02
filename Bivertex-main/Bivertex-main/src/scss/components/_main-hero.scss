@@ -1,0 +1,351 @@
+.main-hero {
+  padding-top: 0;
+  margin-top: -8.5rem;
+
+  @include small-tablet {
+    margin-top: -14.6rem;
+  }
+  // .main-hero__container
+
+  &__container {
+    max-width: 192rem;
+    width: 100%;
+
+    @include small-tablet {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  // .main-hero__inner
+
+  &__inner {
+    position: relative;
+  }
+
+  &__info-box {
+    width: 180rem;
+    margin: 0 auto;
+    position: absolute;
+    inset: 0;
+    // z-index: 5;
+    @include small-tablet {
+      width: 100%;
+    }
+  }
+  // .main-hero__swiper
+
+  &__swiper {
+    width: 100%;
+    height: 90rem;
+    border-radius: 0 0 6rem 6rem;
+
+    @include small-tablet {
+      height: 128.8rem;
+    }
+  }
+
+  // .main-hero__swiper-wrapper
+
+  &__swiper-wrapper {
+    width: 100%;
+  }
+
+  // .main-hero__swiper-slide
+
+  &__swiper-slide {
+  }
+
+  // .main-hero__swiper-slide-inner
+
+  &__swiper-slide-inner {
+    width: 100%;
+    height: 100%;
+    & video,
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__swiper-slide-text-box {
+    position: absolute;
+    top: 55.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 108rem;
+    @include small-tablet {
+      width: 68.4rem;
+      flex-direction: column;
+      gap: 3.2rem;
+      top: 71.2rem;
+      align-items: center;
+    }
+  }
+
+  // .main-hero__swiper-slide-text
+
+  &__swiper-slide-text {
+    width: 57rem;
+    z-index: 5;
+    color: $white;
+    @include small-tablet {
+      width: 100%;
+      text-align: center;
+      font-size: 3.2rem;
+    }
+  }
+
+  &__btn {
+    width: 37.6rem;
+    @include small-tablet {
+      font-size: 2.4rem;
+      width: fit-content;
+    }
+  }
+
+  // .main-hero__swiper-btn-box
+
+  &__swiper-btn-box {
+    position: absolute;
+    bottom: 8rem;
+    left: 6rem;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  // .main-hero__swiper-btn
+
+  &__swiper-btn {
+    position: static;
+  }
+
+  &__swiper-btn--next.swiper-button-next,
+  &__swiper-btn--prev.swiper-button-prev {
+    position: static;
+    // width: 6rem;
+    // height: 6rem;
+    // margin-top: 0;
+    // &::after {
+    //   content: '';
+    // }
+    // & svg {
+    //   width: 100%;
+    //   height: 100%;
+    //   object-fit: cover;
+    // }
+  }
+  // .main-hero__swiper-btn--prev
+
+  &__swiper-btn--prev {
+  }
+
+  // .main-hero__swiper-btn--next
+
+  &__swiper-btn--next {
+  }
+
+  // .main-hero__progress
+
+  &__progress {
+    top: auto !important;
+    left: 6rem !important;
+    left: 0 !important;
+    position: absolute;
+    z-index: 5;
+    bottom: 4.3rem;
+    width: 13.6rem !important;
+    height: 0.2rem !important;
+    background: $grew !important;
+    & .swiper-pagination-progressbar-fill {
+      height: 0.2rem;
+      background: $white !important;
+    }
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  // .main-hero__info-text-box
+
+  &__info-text-box {
+    color: $white;
+    position: absolute;
+    top: 12.2rem;
+    left: 6rem;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    width: 17.7rem;
+
+    @include small-tablet {
+      top: 19.2rem;
+      width: 46rem;
+      left: 3.2rem;
+    }
+  }
+
+  // .main-hero__info-text
+
+  &__info-text {
+    @include small-tablet {
+      font-size: 2.4rem;
+    }
+  }
+
+  // .main-hero__info-text-img-row
+
+  &__info-text-img-row {
+    display: flex;
+    gap: 0.8rem;
+  }
+
+  // .main-hero__info-text-img-box
+
+  &__info-text-img-box {
+    width: 2.4rem;
+    height: 2.4rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include small-tablet {
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+  }
+
+  // .main-hero__title-box
+
+  &__title-box {
+    position: absolute;
+    z-index: 5;
+    top: 36.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      width: 0.1rem;
+      height: 24rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $light-grew;
+    }
+
+    &::before {
+      top: -28.2rem;
+    }
+    &::after {
+      bottom: -37.5rem;
+    }
+    @include small-tablet {
+      top: 56.4rem;
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  // .main-hero__title-svg-box
+
+  &__title-svg-box {
+    width: 108rem;
+    height: 16rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include small-tablet {
+      width: 68.4rem;
+      height: 10rem;
+    }
+  }
+
+  // .main-hero__contacts-list
+
+  &__contacts-list {
+    position: absolute;
+    z-index: 5;
+    top: 36rem;
+    right: 6rem;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  // .main-hero__contacts-item
+
+  &__contacts-item {
+  }
+
+  // .main-hero__contacts-link
+
+  &__contacts-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.25px solid $white;
+    border-radius: 50%;
+    width: 4.4rem;
+    height: 4.4rem;
+  }
+
+  // .main-hero__contacts-link-svg-box
+
+  &__contacts-link-svg-box {
+    width: 2.4rem;
+    height: 2.4rem;
+    & svg, 
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__arrow-box {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border: 0.15rem solid $white;
+    bottom: 6rem;
+    right: 6rem;
+    right:0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include small-tablet {
+      display: none;
+    }
+  }
+  &__arrow-svg-box {
+    width: 3.2rem;
+    height: 3.2rem;
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

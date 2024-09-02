@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мои покупки заказ</title>
+  <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="#" class="header__logo">
+        <div class="header__logo-img-box">
+          <img src="./assets/images/logo.svg" alt="">
+        </div>
+      </a>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link txt18">Каталог</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link txt18">Horeca</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link txt18">О компании</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link txt18">Новости</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link txt18">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__btn-box">
+        <a href="" class="header__btn" data-popup="#popup__lk">
+          <img src="./assets/images/profile.svg" alt="">
+        </a>
+        <a href="" class="header__btn">
+          <img src="./assets/images/heart.svg" alt="">
+        </a>
+        <a href="" class="header__btn">
+          <img src="./assets/images/shopping-bag.svg" alt="">
+        </a>
+        <button class="header__btn burger mobile">
+          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 12.1H22" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M2 4.09998H22" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M2 20.1H22" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="header__mob">
+    <div class="header__mob-bg" style="position: absolute">
+      <img src="./assets/images/main-hero-bg.svg" alt="">
+    </div>
+    <div class="header__mob-header">
+      <a href="#" class="header__logo">
+        <div class="header__logo-img-box">
+          <img src="./assets/images/logo.svg" alt="">
+        </div>
+      </a>
+      <button class="header__close-btn close-burger">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </button>
+    </div>
+    <nav class="header__mob-nav">
+      <ul class="header__mob-nav-list">
+        <li class="header__mob-nav-item">
+          <a href="#" class="header__mob-nav-link txt18">Каталог</a>
+        </li>
+        <li class="header__mob-nav-item">
+          <a href="#" class="header__mob-nav-link txt18">Horeca</a>
+        </li>
+        <li class="header__mob-nav-item">
+          <a href="#" class="header__mob-nav-link txt18">О компании</a>
+        </li>
+        <li class="header__mob-nav-item">
+          <a href="#" class="header__mob-nav-link txt18">Новости</a>
+        </li>
+        <li class="header__mob-nav-item">
+          <a href="#" class="header__mob-nav-link txt18">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+      <div id="popup__lk" aria-hidden="true" class="popup popup--right">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.05078 7.05023L16.9503 16.9497" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M7.05078 16.9498L16.9503 7.05027" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__body-content-box-title-box">
+            <p class="popup__body-content-box-title txt60">Личный кабинет</p>
+            <p class="popup__body-content-box-desk txt18">Войдите в систему, чтобы добавить в избранное</p>
+          </div>
+          <form data-popup-message="#popup__code" data-dev="" action="" class="popup__body-form-wrapper">
+            <div class="popup__body-form-input-wrapper">
+              <div class="popup__body-form-input-box">
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--tel popup__body-form-input phone-mask txt18" type="text" placeholder="+ 7 (  ___  )  ___  -  __  -  __" data-placeholder="+ 7 (  ___  )  ___  -  __  -  __" data-validate="" data-required="tel" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите номер телефона</span>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="popup__body-btn">
+              <div class="popup__body-btn-img-box">
+                <img src="./assets/images/star.svg" alt="">
+              </div>
+              <p class="popup__body-btn-text txt36">Войти</p>
+              <div class="popup__body-btn-img-box">
+                <img src="./assets/images/star.svg" alt="">
+              </div>
+            </button>
+          </form>
+          <a href="#" class="popup__body-content-link">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__code" aria-hidden="true" class="popup popup--right">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.05078 7.05023L16.9503 16.9497" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M7.05078 16.9498L16.9503 7.05027" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__body-content-box-title-box">
+            <p class="popup__body-content-box-title txt60">Введите код</p>
+            <p class="popup__body-content-box-desk txt18">Через 30 секунд можно запросить код повторно</p>
+          </div>
+          <form data-popup-message="#popup__code" data-dev="" action="" class="popup__body-form-wrapper">
+            <div class="popup__body-form-input-wrapper">
+              <div class="popup__body-form-input-box">
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--code popup__body-form-input code-mask txt18" type="text" placeholder="___ ___" data-placeholder="___ ___" data-validate="" data-required="code" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите код из СМС</span>
+                </label>
+              </div>
+            </div>
+            <div class="popup__body-btn-box">
+              <button type="submit" class="popup__body-btn">
+                <div class="popup__body-btn-img-box">
+                  <img src="./assets/images/star.svg" alt="">
+                </div>
+                <p class="popup__body-btn-text txt36">Войти</p>
+                <div class="popup__body-btn-img-box">
+                  <img src="./assets/images/star.svg" alt="">
+                </div>
+              </button>
+              <button class="popup__body-btn-code" disabled="">Прислать повторно</button>
+            </div>
+          </form>
+          <a href="#" class="popup__body-content-link">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__success-application" aria-hidden="true" class="popup popup--big">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.05078 7.05023L16.9503 16.9497" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M7.05078 16.9498L16.9503 7.05027" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__bg">
+            <img src="./assets/images/modal-bg.svg" alt="">
+          </div>
+          <div class="popup__body-content-box-title-wrapper">
+            <div class="popup__body-content-box-title-box">
+              <p class="popup__body-content-box-title tl2">
+                Спасибо <br>
+                за заявку!
+              </p>
+              <div class="popup__body-content-box-title-img-box">
+                <img src="./assets/images/modal-img.webp" alt="">
+              </div>
+            </div>
+            <p class="popup__body-content-box-desk txt18">Совсем скоро мы с вами свяжемся!</p>
+          </div>
+          <button data-close="" type="submit" class="popup__body-btn">
+            <div class="popup__body-btn-img-box">
+              <img src="./assets/images/star.svg" alt="">
+            </div>
+            <p class="popup__body-btn-text txt36">вернуться на главную</p>
+            <div class="popup__body-btn-img-box">
+              <img src="./assets/images/star.svg" alt="">
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__success-order" aria-hidden="true" class="popup popup--big">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.05078 7.05023L16.9503 16.9497" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M7.05078 16.9498L16.9503 7.05027" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__bg">
+            <img src="./assets/images/modal-bg.svg" alt="">
+          </div>
+          <div class="popup__body-content-box-title-wrapper">
+            <p class="popup__body-content-box-desk popup__body-content-box-desk--order txt30">Заказ № 9203661507</p>
+            <div class="popup__body-content-box-title-box">
+              <p class="popup__body-content-box-title tl2">
+                Спасибо, <br>
+                что выбрали нас!
+              </p>
+              <div class="popup__body-content-box-title-img-box">
+                <img src="./assets/images/modal-img.webp" alt="">
+              </div>
+            </div>
+
+            <p class="popup__body-content-box-desk popup__body-content-box-desk--link txt18">
+              всю подробную информацию вы можете отследить в
+              <a href="#"> личном кабинете</a>
+            </p>
+          </div>
+          <button data-close="" type="submit" class="popup__body-btn">
+            <div class="popup__body-btn-img-box">
+              <img src="./assets/images/star.svg" alt="">
+            </div>
+            <p class="popup__body-btn-text txt36">вернуться на главную</p>
+            <div class="popup__body-btn-img-box">
+              <img src="./assets/images/star.svg" alt="">
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__feedback" aria-hidden="true" class="popup popup--big popup--big-feedback">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.05078 7.05023L16.9503 16.9497" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M7.05078 16.9498L16.9503 7.05027" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__bg">
+            <img src="./assets/images/modal-bg.svg" alt="">
+          </div>
+          <div class="popup__body-content-box-title-wrapper">
+            <p class="popup__body-content-box-title tl2">Обратная связь</p>
+          </div>
+
+          <form data-popup-message="#popup__success-application" data-dev="" action="" class="popup__body-form-wrapper">
+            <div class="popup__body-form-input-wrapper">
+              <div class="popup__body-form-input-box">
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--name popup__body-form-input txt18" type="text" placeholder="Ваше имя" data-validate="" data-required="" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите Ваше имя</span>
+                </label>
+
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--mail popup__body-form-input txt18" type="text" placeholder="E-mail" data-validate="" data-required="email" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите Ваш e-mail</span>
+                </label>
+
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--tel popup__body-form-input phone-mask txt18" type="text" placeholder="+ 7 (  ___  )  ___  -  __  -  __ " data-placeholder="+ 7 (  ___  )  ___  -  __  -  __ " data-validate="" data-required="tel" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите номер телефона</span>
+                </label>
+
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--textarea popup__body-form-input txt18" type="text" placeholder="Сообщение" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите Ваше имя</span>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="popup__body-btn">
+              <div class="popup__body-btn-img-box">
+                <img src="./assets/images/star.svg" alt="">
+              </div>
+              <p class="popup__body-btn-text txt36">Оставить заявку</p>
+              <div class="popup__body-btn-img-box">
+                <img src="./assets/images/star.svg" alt="">
+              </div>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <main>
+        <div class="bc txt16">
+          <span>Главная</span><span>Профиль</span><span>Мои покупки</span>
+        </div>
+        <section class="lk">
+          <div class="container">
+            <div class="lk-sidebar">
+              <div class="lk-sidebar_box">
+                <div class="lk-sidebar_box-top txt16 mobile">
+                  <span>Мои покупки</span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 5L8 10L13 5" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="lk-sidebar_box-bottom txt16">
+                  <div class="lk-sidebar_box-list">
+                    <a class="lk-sidebar_box-link">Личные данные</a>
+                    <a class="lk-sidebar_box-link active">Мои покупки</a>
+                    <a class="lk-sidebar_box-link">Избранное</a>
+                    <a class="lk-sidebar_box-link">Выйти</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="lk-container lk-container_order">
+              <div class="lk-container_order-top">
+                <div class="lk-container_order-top--main delivery txt16">
+                  <span>12.04.2024</span>
+                  <span>В доставке</span>
+                </div>
+                <div class="lk-container_order-top--number txt36">Заказ № 9203661507</div>
+                <div class="lk-container_order-top--delivery txt16">
+                  <span>Курьерская доставка:</span>
+                  <span>20.04 / 10:00 - 13:00</span>
+                </div>
+              </div>
+              <div class="lk-container_order-list">
+                <div class="cart__item">
+                  <div class="cart__item-main">
+                    <div class="cart__item-main--img">
+                      <img src="./assets/images/cart/cart-item1.webp" alt="">
+                    </div>
+                    <div class="cart__item-main--back">
+                      <svg class="desktop" width="354" height="360" viewBox="0 0 354 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M161.937 318.118C210.816 320.399 267.355 387.43 310.606 347.136C348.607 311.732 335.24 263.335 323.298 213.842C310.719 161.709 363.326 107.03 352.529 82.393C332.381 36.4179 248.581 86.0618 200.985 64.198C139.719 36.0548 80.0585 -31.7053 32.6475 17.313C-2.47289 53.624 28.5531 83.9816 33.4385 143.562C37.3365 191.101 -25.5098 272.981 11.9753 315.202C50.8834 359.025 126.797 316.478 161.937 318.118Z" fill="white" />
+                      </svg>
+                      <svg class="mobile" width="283" height="259" viewBox="0 0 283 259" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M129.5 228.868C168.438 230.509 213.478 278.735 247.932 249.745C278.204 224.274 267.556 189.455 258.043 153.847C248.022 116.341 289.929 77.0018 281.328 59.2772C265.278 26.2007 198.522 61.9167 160.607 46.1869C111.802 25.9395 64.2754 -22.8102 26.5074 12.4558C-1.46992 38.5795 23.2457 60.4201 27.1374 103.285C30.2426 137.486 -19.8214 196.395 10.0396 226.77C41.0343 258.299 101.508 227.688 129.5 228.868Z" fill="white" />
+                      </svg>
+                    </div>
+                    <div class="cart__item-main--name txt40">Лесные ягоды</div>
+                  </div>
+                  <div class="cart__item-box">
+                    <div class="cart__item-box--text">
+                      <div class="cart__item-box--weight txt30">80гр</div>
+                      <div class="cart__item-box--name txt18">взбитый замороженный сорбет</div>
+                      <div class="cart__item-box--type txt16">мороженое</div>
+                    </div>
+                    <div class="cart__item-box--del">
+                      <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="74" height="74" rx="37" fill="white" fill-opacity="0.7"/>
+                        <rect x="1" y="1" width="72" height="72" rx="36" stroke="white" stroke-width="2"/>
+                        <path d="M43 31L31 43" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M31 31L43 43" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="cart__item-box--info">
+                      <span class="cart__item-box--info_amount txt30">2</span> <span class="cart__item-box--info_x txt18">x</span> <span class="cart__item-box--info_price txt40">150</span><br>
+                      <span class="cart__item-box--info_weight txt16">( 160 гр )</span>
+                    </div>
+                    <div class="cart__item-box--calc">
+                      <div class="cart__item-box--calc_price txt40">300</div>
+                      <div class="cart__item-box--change txt26">
+                        <div class="cart__item-box--change_minus">
+                          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12.5H19" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="cart__item-box--change_numb">2</div>
+                        <div class="cart__item-box--change_plus">
+                          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 5.5V19.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5 12.5H19" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart__item">
+                  <div class="cart__item-main">
+                    <div class="cart__item-main--img">
+                      <img src="./assets/images/cart/cart-item2.webp" alt="">
+                    </div>
+                    <div class="cart__item-main--back">
+                      <svg class="desktop" width="354" height="360" viewBox="0 0 354 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M161.937 318.118C210.816 320.399 267.355 387.43 310.606 347.136C348.607 311.732 335.24 263.335 323.298 213.842C310.719 161.709 363.326 107.03 352.529 82.393C332.381 36.4179 248.581 86.0618 200.985 64.198C139.719 36.0548 80.0585 -31.7053 32.6475 17.313C-2.47289 53.624 28.5531 83.9816 33.4385 143.562C37.3365 191.101 -25.5098 272.981 11.9753 315.202C50.8834 359.025 126.797 316.478 161.937 318.118Z" fill="white" />
+                      </svg>
+                      <svg class="mobile" width="283" height="259" viewBox="0 0 283 259" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M129.5 228.868C168.438 230.509 213.478 278.735 247.932 249.745C278.204 224.274 267.556 189.455 258.043 153.847C248.022 116.341 289.929 77.0018 281.328 59.2772C265.278 26.2007 198.522 61.9167 160.607 46.1869C111.802 25.9395 64.2754 -22.8102 26.5074 12.4558C-1.46992 38.5795 23.2457 60.4201 27.1374 103.285C30.2426 137.486 -19.8214 196.395 10.0396 226.77C41.0343 258.299 101.508 227.688 129.5 228.868Z" fill="white" />
+                      </svg>
+                    </div>
+                    <div class="cart__item-main--name txt40">Лесные ягоды</div>
+                  </div>
+                  <div class="cart__item-box">
+                    <div class="cart__item-box--text">
+                      <div class="cart__item-box--weight txt30">80гр</div>
+                      <div class="cart__item-box--name txt18">взбитый замороженный сорбет</div>
+                      <div class="cart__item-box--type txt16">мороженое</div>
+                    </div>
+                    <div class="cart__item-box--del">
+                      <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="74" height="74" rx="37" fill="white" fill-opacity="0.7"/>
+                        <rect x="1" y="1" width="72" height="72" rx="36" stroke="white" stroke-width="2"/>
+                        <path d="M43 31L31 43" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M31 31L43 43" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="cart__item-box--info">
+                      <span class="cart__item-box--info_amount txt30">2</span> <span class="cart__item-box--info_x txt18">x</span> <span class="cart__item-box--info_price txt40">150</span><br>
+                      <span class="cart__item-box--info_weight txt16">( 160 гр )</span>
+                    </div>
+                    <div class="cart__item-box--calc">
+                      <div class="cart__item-box--calc_price txt40">300</div>
+                      <div class="cart__item-box--change txt26">
+                        <div class="cart__item-box--change_minus">
+                          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12.5H19" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="cart__item-box--change_numb">2</div>
+                        <div class="cart__item-box--change_plus">
+                          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 5.5V19.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5 12.5H19" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart__item">
+                  <div class="cart__item-main">
+                    <div class="cart__item-main--img">
+                      <img src="./assets/images/cart/cart-item3.webp" alt="">
+                    </div>
+                    <div class="cart__item-main--back">
+                      <svg class="desktop" width="354" height="360" viewBox="0 0 354 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M161.937 318.118C210.816 320.399 267.355 387.43 310.606 347.136C348.607 311.732 335.24 263.335 323.298 213.842C310.719 161.709 363.326 107.03 352.529 82.393C332.381 36.4179 248.581 86.0618 200.985 64.198C139.719 36.0548 80.0585 -31.7053 32.6475 17.313C-2.47289 53.624 28.5531 83.9816 33.4385 143.562C37.3365 191.101 -25.5098 272.981 11.9753 315.202C50.8834 359.025 126.797 316.478 161.937 318.118Z" fill="white" />
+                      </svg>
+                      <svg class="mobile" width="283" height="259" viewBox="0 0 283 259" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M129.5 228.868C168.438 230.509 213.478 278.735 247.932 249.745C278.204 224.274 267.556 189.455 258.043 153.847C248.022 116.341 289.929 77.0018 281.328 59.2772C265.278 26.2007 198.522 61.9167 160.607 46.1869C111.802 25.9395 64.2754 -22.8102 26.5074 12.4558C-1.46992 38.5795 23.2457 60.4201 27.1374 103.285C30.2426 137.486 -19.8214 196.395 10.0396 226.77C41.0343 258.299 101.508 227.688 129.5 228.868Z" fill="white" />
+                      </svg>
+                    </div>
+                    <div class="cart__item-main--name txt40">Лесные ягоды</div>
+                  </div>
+                  <div class="cart__item-box">
+                    <div class="cart__item-box--text">
+                      <div class="cart__item-box--weight txt30">80гр</div>
+                      <div class="cart__item-box--name txt18">взбитый замороженный сорбет</div>
+                      <div class="cart__item-box--type txt16">мороженое</div>
+                    </div>
+                    <div class="cart__item-box--del">
+                      <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="74" height="74" rx="37" fill="white" fill-opacity="0.7"/>
+                        <rect x="1" y="1" width="72" height="72" rx="36" stroke="white" stroke-width="2"/>
+                        <path d="M43 31L31 43" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M31 31L43 43" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="cart__item-box--info">
+                      <span class="cart__item-box--info_amount txt30">2</span> <span class="cart__item-box--info_x txt18">x</span> <span class="cart__item-box--info_price txt40">150</span><br>
+                      <span class="cart__item-box--info_weight txt16">( 160 гр )</span>
+                    </div>
+                    <div class="cart__item-box--calc">
+                      <div class="cart__item-box--calc_price txt40">300</div>
+                      <div class="cart__item-box--change txt26">
+                        <div class="cart__item-box--change_minus">
+                          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12.5H19" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="cart__item-box--change_numb">2</div>
+                        <div class="cart__item-box--change_plus">
+                          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 5.5V19.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5 12.5H19" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="lk-container_order-bottom txt18">
+                <div class="lk-container_order-bottom--item">
+                  <span>Сумма заказа</span>
+                  <span>750 ₽</span>
+                </div>
+                <div class="lk-container_order-bottom--item">
+                  <span>Доставка</span>
+                  <span>Бесплатно</span>
+                </div>
+                <div class="lk-container_order-bottom--item">
+                  <span>Итого</span>
+                  <span>750 ₽</span>
+                </div>
+                <hr>
+                <div class="lk-container_order-bottom--item">
+                  <span>Способ оплаты</span>
+                  <span>Онлайн картой на сайте</span>
+                </div>
+                <div class="lk-container_order-bottom--item">
+                  <span>Способ доставки</span>
+                  <span>Курьерская доставка</span>
+                </div>
+                <div class="lk-container_order-bottom--item">
+                  <span>Адрес доставки</span>
+                  <span>г. Москва, ул. Покровка, д. 7, подъезд 15, кв 123</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer section" data-anchor="footer">
+  <div class="container footer__container">
+    <div class="footer__inner">
+      <div class="footer__svg-wrapper">
+        <div class="footer__svg-box">
+          <img src="./assets/images/footer.svg" alt="">
+        </div>
+      </div>
+      <p class="footer__text tl2">FOOTER</p>
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </body>
+</html>

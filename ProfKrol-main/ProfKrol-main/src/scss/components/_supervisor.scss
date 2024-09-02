@@ -1,0 +1,127 @@
+.supervisor {
+  // .supervisor__inner
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    position: relative;
+  }
+
+  // .supervisor__title
+
+  &__title {
+    @include small-tablet {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  // .supervisor__swiper
+
+  &__swiper {
+    width: 100%;
+  }
+
+  // .supervisor__swiper-wrapper
+
+  &__swiper-wrapper {
+  }
+
+  // .supervisor__swiper-slide
+
+  &__swiper-slide {
+  }
+
+  // .supervisor__swiper-slide-link
+
+  &__swiper-slide-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0.2rem solid $light-grey;
+    border-radius: 2rem;
+    overflow: hidden;
+    position: relative;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @include small-tablet {
+      border: 0.4rem solid $light-grey;
+      border-radius: 2.4rem;
+    }
+  }
+
+  // .supervisor__swiper-slide-text-box
+
+  &__swiper-slide-text-box {
+    position: absolute;
+    left: 3.2rem;
+    right: 3.2rem;
+    bottom: 3.2rem;
+    background-color: $white;
+    padding: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    @include small-tablet {
+        border-radius: 2.4rem;
+        padding: 2.4rem;
+        gap: 1.6rem;
+      }
+  }
+
+  // .supervisor__swiper-slide-text-name
+
+  &__swiper-slide-text-name {
+  }
+
+  // .supervisor__swiper-slide-text-position
+
+  &__swiper-slide-text-position {
+  }
+
+  // .supervisor__swiper-btn-box
+
+  &__swiper-btn-box {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    @include small-tablet {
+      position: static;
+      gap: 1.6rem;
+      justify-content: center;
+    }
+  }
+
+  // .supervisor__swiper-btn
+
+  &__swiper-btn {
+  }
+
+  // .supervisor__swiper-btn--prev
+
+  &__swiper-btn--prev {
+  }
+
+  &__swiper-btn--prev.swiper-button-prev,
+  &__swiper-btn--next.swiper-button-next {
+    position: static;
+  }
+
+  // .supervisor__swiper-btn-svg-box
+
+  &__swiper-btn-svg-box {
+  }
+
+  // .supervisor__swiper-btn--next
+
+  &__swiper-btn--next {
+  }
+}

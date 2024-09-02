@@ -1,0 +1,924 @@
+<div id="popup__success" aria-hidden="true" class="popup popup--success">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close type="button" class="popup__body-close-btn">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M14.5285 2.53044L15.0588 2.00011L13.9982 0.939453L13.4678 1.46978L7.99816 6.93945L2.52849 1.46978L1.99816 0.939453L0.9375 2.00011L1.46783 2.53044L6.9375 8.00011L1.46783 13.4698L0.9375 14.0001L1.99816 15.0608L2.52849 14.5304L7.99816 9.06077L13.4678 14.5304L13.9982 15.0608L15.0588 14.0001L14.5285 13.4698L9.05882 8.00011L14.5285 2.53044ZM7.99831 6.99996L6.99816 8.00011L7.99831 9.00026L8.99846 8.00011L7.99831 6.99996Z"
+              fill="#676767"
+            />
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <p class="popup__body-content-box-title tl1">Заявка отправлена</p>
+          <p class="popup__body-content-box-desk txt20">
+            Наши специалисты <br />свяжутся с вами в ближайшее время
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__summary" aria-hidden="true" class="popup popup--big">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close type="button" class="popup__body-close-btn">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M14.5285 2.53044L15.0588 2.00011L13.9982 0.939453L13.4678 1.46978L7.99816 6.93945L2.52849 1.46978L1.99816 0.939453L0.9375 2.00011L1.46783 2.53044L6.9375 8.00011L1.46783 13.4698L0.9375 14.0001L1.99816 15.0608L2.52849 14.5304L7.99816 9.06077L13.4678 14.5304L13.9982 15.0608L15.0588 14.0001L14.5285 13.4698L9.05882 8.00011L14.5285 2.53044ZM7.99831 6.99996L6.99816 8.00011L7.99831 9.00026L8.99846 8.00011L7.99831 6.99996Z"
+              fill="#676767"
+            />
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__body-content-box-title-box">
+            <p class="popup__body-content-box-title tl2">отклик на вакансию</p>
+            <p class="popup__body-content-box-desk txt18 txt18_caps">Инженер-конструктор станков с ЧПУ</p>
+          </div>
+          <form
+            data-popup-message="#popup__success-summary"
+            data-dev
+            action=""
+            class="popup__body-form-wrapper"
+          >
+            <div class="popup__body-form-input-wrapper">
+              <div class="popup__body-form-input-box">
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper txt18">
+                    <input
+                      class="input--name popup__body-form-input"
+                      type="text"
+                      placeholder="Ваше имя*"
+                      data-validate
+                      data-required
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                  </span>
+                  <span class="error-span">Поле заполнено неверно</span>
+                </label>
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input--tel popup__body-form-input phone-mask txt18"
+                      type="text"
+                      placeholder="Номер телефона*"
+                      data-validate
+                      data-required="tel"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                  </span>
+                  <span class="error-span">Поле заполнено неверно</span>
+                </label>
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input--mail popup__body-form-input txt18"
+                      type="text"
+                      placeholder="E-mail*"
+                      data-validate
+                      data-required="email"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                  </span>
+                  <span class="error-span">Поле заполнено неверно</span>
+                </label>
+                <label class="popup__body-label input-group popup__body-label--textarea">
+                  <span class="form__input-wrapper">
+                    <textarea
+                      class="input--textarea txt18"
+                      placeholder="Комментарий"
+                      autocomplete="off"
+                      name="form[]"
+                    ></textarea>
+                    <span class="error-span"></span>
+                  </span>
+                </label>
+                <label class="popup__body-label-input-file label-input-file input-file">
+                  <input type="file" multiple="" name="file_popup" />
+                  <span
+                    class="popup__body-label-input-file-text-box label-input-file-text-box txt18 txt18_caps"
+                  >
+                    прикрепить файл
+                    <span class="popup__body-label-input-file-svg-box label-input-file-svg-box">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_1822_53601)">
+                          <path
+                            d="M12.3297 12.15L9.85969 14.62C8.48969 15.99 8.48969 18.2 9.85969 19.57C11.2297 20.94 13.4397 20.94 14.8097 19.57L18.6997 15.68C21.4297 12.95 21.4297 8.51 18.6997 5.78C15.9697 3.05 11.5297 3.05 8.79969 5.78L4.55969 10.02C2.21969 12.36 2.21969 16.16 4.55969 18.51"
+                            stroke="#013341"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1822_53601">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span>
+                  </span>
+                </label>
+                <div class="popup__body-form-files-items form-files-items file_popup"></div>
+              </div>
+            </div>
+            <p class="popup__body-agreement-text txt-small">
+              Нажимая «Отправить» вы подтверждаете, что согласны на
+              <a href="#">обработку персональных данных</a>
+            </p>
+            <button type="submit" class="popup__body-btn button button-turquoise txt20 txt20_caps">
+              откликнуться
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__success-summary" aria-hidden="true" class="popup popup--success">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close type="button" class="popup__body-close-btn">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M14.5285 2.53044L15.0588 2.00011L13.9982 0.939453L13.4678 1.46978L7.99816 6.93945L2.52849 1.46978L1.99816 0.939453L0.9375 2.00011L1.46783 2.53044L6.9375 8.00011L1.46783 13.4698L0.9375 14.0001L1.99816 15.0608L2.52849 14.5304L7.99816 9.06077L13.4678 14.5304L13.9982 15.0608L15.0588 14.0001L14.5285 13.4698L9.05882 8.00011L14.5285 2.53044ZM7.99831 6.99996L6.99816 8.00011L7.99831 9.00026L8.99846 8.00011L7.99831 6.99996Z"
+              fill="#676767"
+            />
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <p class="popup__body-content-box-title tl1">отклик успешно отправлен!</p>
+          <p class="popup__body-content-box-desk txt20">Мы свяжемся с вами в течение трех дней.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__demo" aria-hidden="true" class="popup popup--big">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close type="button" class="popup__body-close-btn">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M14.5285 2.53044L15.0588 2.00011L13.9982 0.939453L13.4678 1.46978L7.99816 6.93945L2.52849 1.46978L1.99816 0.939453L0.9375 2.00011L1.46783 2.53044L6.9375 8.00011L1.46783 13.4698L0.9375 14.0001L1.99816 15.0608L2.52849 14.5304L7.99816 9.06077L13.4678 14.5304L13.9982 15.0608L15.0588 14.0001L14.5285 13.4698L9.05882 8.00011L14.5285 2.53044ZM7.99831 6.99996L6.99816 8.00011L7.99831 9.00026L8.99846 8.00011L7.99831 6.99996Z"
+              fill="#676767"
+            />
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__body-content-box-title-box">
+            <p class="popup__body-content-box-title tl2">Записаться на демо</p>
+            <p class="popup__body-content-box-desk txt18 txt18_caps">
+              заполните форму и наши специалисты свяжутся с вами в ближайшее время
+            </p>
+          </div>
+          <form data-popup-message="#popup__success-demo" data-dev action="" class="popup__body-form-wrapper">
+            <div class="popup__body-form-input-wrapper">
+              <div class="popup__body-form-input-box">
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper txt18">
+                    <input
+                      class="input--name popup__body-form-input"
+                      type="text"
+                      placeholder="Ваше имя*"
+                      data-validate
+                      data-required
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                  </span>
+                  <span class="error-span">Поле заполнено неверно</span>
+                </label>
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input--tel popup__body-form-input phone-mask txt18"
+                      type="text"
+                      placeholder="Номер телефона*"
+                      data-validate
+                      data-required="tel"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                  </span>
+                  <span class="error-span">Поле заполнено неверно</span>
+                </label>
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input--mail popup__body-form-input txt18"
+                      type="text"
+                      placeholder="E-mail*"
+                      data-validate
+                      data-required="email"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                  </span>
+                  <span class="error-span">Поле заполнено неверно</span>
+                </label>
+                <label class="popup__body-label input-group popup__body-label--textarea">
+                  <span class="form__input-wrapper">
+                    <textarea
+                      class="input--textarea txt18"
+                      placeholder="Ваш запрос"
+                      autocomplete="off"
+                      name="form[]"
+                    ></textarea>
+                    <span class="error-span"></span>
+                  </span>
+                </label>
+              </div>
+            </div>
+            <p class="popup__body-agreement-text txt-small">
+              Нажимая «Отправить» вы подтверждаете, что согласны на
+              <a href="#">обработку персональных данных</a>
+            </p>
+            <button type="submit" class="popup__body-btn button button-turquoise txt20 txt20_caps">
+              записаться
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup-comparison" aria-hidden="true" class="popup popup--comparison">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close type="button" class="popup__body-close-btn">
+          <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.75" y="0.75" width="60.5" height="60.5" rx="7.25" stroke="white" stroke-width="1.5" />
+            <g clip-path="url(#clip0_3215_28860)">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M38.0588 25.0001L36.9982 23.9395L30.9982 29.9395L24.9982 23.9395L23.9375 25.0001L29.9375 31.0001L23.9375 37.0001L24.9982 38.0608L30.9982 32.0608L36.9982 38.0608L38.0588 37.0001L32.0588 31.0001L38.0588 25.0001ZM30.9983 30L29.9982 31.0001L30.9983 32.0003L31.9985 31.0001L30.9983 30Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_3215_28860">
+                <rect width="24" height="24" fill="white" transform="translate(19 19)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <div class="popup__body-table">
+          <div class="popup__body-table-title-row">
+            <p class="popup__body-table-title txt26 txt26_caps">параметры</p>
+            <p class="popup__body-table-name txt26 txt26_caps">HNC 808</p>
+            <p class="popup__body-table-name txt26 txt26_caps">HNC 848</p>
+          </div>
+          <div class="popup__body-table-info-row">
+            <p class="popup__body-table-info-title txt20">Количество одновременно управляемых осей</p>
+            <p class="popup__body-table-info txt20">3</p>
+            <p class="popup__body-table-info txt20">5</p>
+          </div>
+          <div class="popup__body-table-info-row">
+            <p class="popup__body-table-info-title txt20">Жесткое нарезание резьбы</p>
+            <p class="popup__body-table-info txt20">+</p>
+            <p class="popup__body-table-info txt20">+</p>
+          </div>
+          <div class="popup__body-table-info-row">
+            <p class="popup__body-table-info-title txt20">Ethernet</p>
+            <p class="popup__body-table-info txt20">+</p>
+            <p class="popup__body-table-info txt20">+</p>
+          </div>
+          <div class="popup__body-table-info-row">
+            <p class="popup__body-table-info-title txt20">Системы координат заготовки</p>
+            <p class="popup__body-table-info popup__body-table-info-big txt20">G54.1 — G54.60 Всего 60</p>
+          </div>
+          <div class="popup__body-table-info-row">
+            <p class="popup__body-table-info-title txt20">Компенсация ошибки шага и люфта</p>
+            <p class="popup__body-table-info txt20">+</p>
+            <p class="popup__body-table-info txt20">+</p>
+          </div>
+          <div class="popup__body-table-info-row">
+            <p class="popup__body-table-info-title txt20">Термокомпенсация</p>
+            <p class="popup__body-table-info txt20">+</p>
+            <p class="popup__body-table-info txt20">+</p>
+          </div>
+          <div class="popup__body-table-info-row">
+            <p class="popup__body-table-info-title txt20">Наноинтерполяция</p>
+            <p class="popup__body-table-info txt20">-</p>
+            <p class="popup__body-table-info txt20">+</p>
+          </div>
+          <div class="popup__body-table-info-row">
+            <p class="popup__body-table-info-title txt20">Компенсация пространственной ошибки</p>
+            <p class="popup__body-table-info txt20">-</p>
+            <p class="popup__body-table-info txt20">+</p>
+          </div>
+          <div class="popup__body-table-info-row">
+            <p class="popup__body-table-info-title txt20">Трехмерная защита от столкновений</p>
+            <p class="popup__body-table-info txt20">-</p>
+            <p class="popup__body-table-info txt20">+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__success-demo" aria-hidden="true" class="popup popup--success">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close type="button" class="popup__body-close-btn">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M14.5285 2.53044L15.0588 2.00011L13.9982 0.939453L13.4678 1.46978L7.99816 6.93945L2.52849 1.46978L1.99816 0.939453L0.9375 2.00011L1.46783 2.53044L6.9375 8.00011L1.46783 13.4698L0.9375 14.0001L1.99816 15.0608L2.52849 14.5304L7.99816 9.06077L13.4678 14.5304L13.9982 15.0608L15.0588 14.0001L14.5285 13.4698L9.05882 8.00011L14.5285 2.53044ZM7.99831 6.99996L6.99816 8.00011L7.99831 9.00026L8.99846 8.00011L7.99831 6.99996Z"
+              fill="#676767"
+            />
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <p class="popup__body-content-box-title tl1">
+            Вы записаны <br />
+            на демо
+          </p>
+          <p class="popup__body-content-box-desk txt20">
+            Наши специалисты <br />
+            свяжутся с вами в ближайшее время
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__success-order" aria-hidden="true" class="popup popup--success">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close type="button" class="popup__body-close-btn">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M14.5285 2.53044L15.0588 2.00011L13.9982 0.939453L13.4678 1.46978L7.99816 6.93945L2.52849 1.46978L1.99816 0.939453L0.9375 2.00011L1.46783 2.53044L6.9375 8.00011L1.46783 13.4698L0.9375 14.0001L1.99816 15.0608L2.52849 14.5304L7.99816 9.06077L13.4678 14.5304L13.9982 15.0608L15.0588 14.0001L14.5285 13.4698L9.05882 8.00011L14.5285 2.53044ZM7.99831 6.99996L6.99816 8.00011L7.99831 9.00026L8.99846 8.00011L7.99831 6.99996Z"
+              fill="#676767"
+            />
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <p class="popup__body-content-box-title tl1">Заказ оформлен</p>
+          <p class="popup__body-content-box-desk txt20">
+            Спасибо за заказ! Наши специалисты <br />свяжутся с вами в ближайшее время
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__lk" aria-hidden="true" class="popup popup--big popup--lk">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close type="button" class="popup__body-close-btn">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M14.5285 2.53044L15.0588 2.00011L13.9982 0.939453L13.4678 1.46978L7.99816 6.93945L2.52849 1.46978L1.99816 0.939453L0.9375 2.00011L1.46783 2.53044L6.9375 8.00011L1.46783 13.4698L0.9375 14.0001L1.99816 15.0608L2.52849 14.5304L7.99816 9.06077L13.4678 14.5304L13.9982 15.0608L15.0588 14.0001L14.5285 13.4698L9.05882 8.00011L14.5285 2.53044ZM7.99831 6.99996L6.99816 8.00011L7.99831 9.00026L8.99846 8.00011L7.99831 6.99996Z"
+              fill="#676767"
+            />
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__body-content-box-title-box">
+            <p class="popup__body-content-box-title tl2">вход</p>
+          </div>
+          <form data-popup-message="" data-dev action="" class="popup__body-form-wrapper">
+            <div class="popup__body-form-input-wrapper">
+              <div class="popup__body-form-input-box">
+                <label class="popup__body-label input-group popup__body-label--long">
+                  <span class="form__input-wrapper txt18">
+                    <input
+                      class="popup__body-form-input"
+                      type="text"
+                      placeholder="E-mail или логин"
+                      data-validate
+                      data-required
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                  </span>
+                  <span class="error-span">Поле заполнено неверно</span>
+                </label>
+                <label class="popup__body-label input-group popup__body-label--long __viewpass">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input--password popup__body-form-input txt18"
+                      type="password"
+                      placeholder="Пароль"
+                      data-validate
+                      data-required="password"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                    <span class="viewpass-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 13" fill="none">
+                        <path
+                          d="M16.6823 5.6625C16.8868 5.89219 17 6.1906 17 6.5C17 6.8094 16.8868 7.10781 16.6823 7.3375C15.3875 8.75 12.4404 11.5 9 11.5C5.55961 11.5 2.61247 8.75 1.3177 7.3375C1.1132 7.10781 1 6.8094 1 6.5C1 6.1906 1.1132 5.89219 1.3177 5.6625C2.61247 4.25 5.55961 1.5 9 1.5C12.4404 1.5 15.3875 4.25 16.6823 5.6625Z"
+                          stroke="#676767"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <line
+                          x1="1"
+                          y1="12"
+                          x2="17"
+                          y2="1"
+                          stroke="#676767"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8.99943 8.99994C10.3615 8.99994 11.4657 7.88065 11.4657 6.49994C11.4657 5.11923 10.3615 3.99994 8.99943 3.99994C7.63737 3.99994 6.5332 5.11923 6.5332 6.49994C6.5332 7.88065 7.63737 8.99994 8.99943 8.99994Z"
+                          stroke="#676767"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                  <span class="error-span">Поле заполнено неверно</span>
+                </label>
+              </div>
+            </div>
+            <div class="popup__body-feedback-box">
+              <p class="popup__body-feedback-text txt18">
+                Свяжитесь с нами, чтобы получить <br class="mobile" />
+                доступ в личный кабинет
+              </p>
+              <a href="#" data-popup="#popup__access-lk" class="popup__body-link txt18 txt18_caps">
+                получить доступ
+                <span class="popup__body-link-svg-wrapper">
+                  <span class="popup__body-link-svg-box">
+                    <svg
+                      width="32"
+                      height="33"
+                      viewBox="0 0 32 33"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_4801_2121)">
+                        <path
+                          d="M8 24.5L23 9.5"
+                          stroke="#676767"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M11 8.5L24 8.5L24 21.5"
+                          stroke="#676767"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_4801_2121">
+                          <rect width="32" height="32" fill="white" transform="translate(0 0.5)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                  <span class="popup__body-link-svg-box">
+                    <svg
+                      width="32"
+                      height="33"
+                      viewBox="0 0 32 33"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_4801_2121)">
+                        <path
+                          d="M8 24.5L23 9.5"
+                          stroke="#676767"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M11 8.5L24 8.5L24 21.5"
+                          stroke="#676767"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_4801_2121">
+                          <rect width="32" height="32" fill="white" transform="translate(0 0.5)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </span>
+              </a>
+            </div>
+
+            <button type="submit" class="popup__body-btn button button-turquoise txt20 txt20_caps">
+              войти
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__access-lk" aria-hidden="true" class="popup popup--big popup--access-lk">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body popup__body--short">
+        <button data-close type="button" class="popup__body-close-btn">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M14.5285 2.53044L15.0588 2.00011L13.9982 0.939453L13.4678 1.46978L7.99816 6.93945L2.52849 1.46978L1.99816 0.939453L0.9375 2.00011L1.46783 2.53044L6.9375 8.00011L1.46783 13.4698L0.9375 14.0001L1.99816 15.0608L2.52849 14.5304L7.99816 9.06077L13.4678 14.5304L13.9982 15.0608L15.0588 14.0001L14.5285 13.4698L9.05882 8.00011L14.5285 2.53044ZM7.99831 6.99996L6.99816 8.00011L7.99831 9.00026L8.99846 8.00011L7.99831 6.99996Z"
+              fill="#676767"
+            />
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__body-content-box-title-box">
+            <p class="popup__body-content-box-title tl3">Получить доступ <br />к личному кабинету</p>
+          </div>
+          <form data-popup-message="" data-dev action="" class="popup__body-form-wrapper">
+            <div class="popup__body-form-input-wrapper">
+              <div class="popup__body-form-input-box popup__body-form-input-box--flex">
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper txt18">
+                    <input
+                      class="input--name popup__body-form-input"
+                      type="text"
+                      placeholder="Ваше имя*"
+                      data-validate
+                      data-required
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                  </span>
+                  <span class="error-span">Поле заполнено неверно</span>
+                </label>
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input--tel popup__body-form-input phone-mask txt18"
+                      type="text"
+                      placeholder="Номер телефона*"
+                      data-validate
+                      data-required="tel"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                  </span>
+                  <span class="error-span">Поле заполнено неверно</span>
+                </label>
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input--mail popup__body-form-input txt18"
+                      type="text"
+                      placeholder="E-mail*"
+                      data-validate
+                      data-required="email"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                  </span>
+                  <span class="error-span">Поле заполнено неверно</span>
+                </label>
+              </div>
+            </div>
+            <p class="popup__body-agreement-text txt-small">
+              Нажимая «Отправить» вы подтверждаете, что согласны на
+              <a href="#">обработку персональных данных</a>
+            </p>
+            <button type="submit" class="popup__body-btn button button-black txt20 txt20_caps">
+              отправить
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__appeal-success" aria-hidden="true" class="popup popup--appeal-success">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close type="button" class="popup__body-close-btn">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M14.5285 2.53044L15.0588 2.00011L13.9982 0.939453L13.4678 1.46978L7.99816 6.93945L2.52849 1.46978L1.99816 0.939453L0.9375 2.00011L1.46783 2.53044L6.9375 8.00011L1.46783 13.4698L0.9375 14.0001L1.99816 15.0608L2.52849 14.5304L7.99816 9.06077L13.4678 14.5304L13.9982 15.0608L15.0588 14.0001L14.5285 13.4698L9.05882 8.00011L14.5285 2.53044ZM7.99831 6.99996L6.99816 8.00011L7.99831 9.00026L8.99846 8.00011L7.99831 6.99996Z"
+              fill="#676767"
+            />
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <p class="popup__body-content-box-title tl3">ваше обращение <br class="mobile" />отправлено!</p>
+          <p class="popup__body-content-box-desk txt20">Мы ответим на него в ближайшее время</p>
+          <button data-close class="popup__body-btn button button-black txt20 txt20_caps">
+            Вернуться в личный кабинет
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__messenger-lk" aria-hidden="true" class="popup popup--messenger-lk">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close type="button" class="popup__body-close-btn">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M14.5285 2.53044L15.0588 2.00011L13.9982 0.939453L13.4678 1.46978L7.99816 6.93945L2.52849 1.46978L1.99816 0.939453L0.9375 2.00011L1.46783 2.53044L6.9375 8.00011L1.46783 13.4698L0.9375 14.0001L1.99816 15.0608L2.52849 14.5304L7.99816 9.06077L13.4678 14.5304L13.9982 15.0608L15.0588 14.0001L14.5285 13.4698L9.05882 8.00011L14.5285 2.53044ZM7.99831 6.99996L6.99816 8.00011L7.99831 9.00026L8.99846 8.00011L7.99831 6.99996Z"
+              fill="#676767"
+            />
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <p class="popup__body-content-box-title tl3">поддержка</p>
+          <div class="popup__body-content-box-subtitle txt18">Заявка №505094</div>
+          <div class="popup__body-content-box-messages">
+            <div class="popup__body-content-box-date txt20">19 апреля</div>
+            <div class="popup__body-content-box-message admin margin-small">
+              <div class="popup__body-content-box-message--avatar">
+                <img src="../assets/images/messanger-avatar-admin.webp" alt="" />
+              </div>
+              <div class="popup__body-content-box-message--box">
+                <div class="popup__body-content-box-message--name">бивертех</div>
+                <div class="popup__body-content-box-message--text txt18">
+                  Здравствуйте, Иван! Получили ответ по вашей заявке. Способ решения вашей проблемы находится
+                  в приложенном файле.Если у вас возникнут еще вопросы, обращайтесь в чат, мы поможем!
+                </div>
+                <div class="popup__body-content-box-message--time txt16">15:09</div>
+              </div>
+            </div>
+            <div class="popup__body-content-box-message admin margin-big">
+              <div class="popup__body-content-box-message--avatar">
+                <img src="../assets/images/messanger-avatar-admin.webp" alt="" />
+              </div>
+              <div class="popup__body-content-box-message--box">
+                <div class="popup__body-content-box-message--name">бивертех</div>
+                <div class="popup__body-content-box-message--file txt18">
+                  <a download href="#" class="txt18_caps">инструкция</a>
+                  <div>12 kb</div>
+                </div>
+                <div class="popup__body-content-box-message--time txt16">15:09</div>
+              </div>
+            </div>
+            <div class="popup__body-content-box-message user margin-small">
+              <div class="popup__body-content-box-message--avatar">
+                <img src="../assets/images/messanger-avatar-user.webp" alt="" />
+              </div>
+              <div class="popup__body-content-box-message--box">
+                <div class="popup__body-content-box-message--text txt18">
+                  У меня возник вопрос по поводу детали, возможно ли отправить мне дополнительную деталь
+                  №4832?
+                </div>
+                <div class="popup__body-content-box-message--time txt16">15:09</div>
+              </div>
+            </div>
+          </div>
+          <div class="popup__body-content-box-panel">
+            <div class="popup__body-content-box-upload">
+              <label for="upload-file-message">
+                <svg
+                  width="32"
+                  height="33"
+                  viewBox="0 0 32 33"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.4383 16.6999L13.1449 19.9932C11.3183 21.8199 11.3183 24.7666 13.1449 26.5932C14.9716 28.4199 17.9183 28.4199 19.7449 26.5932L24.9316 21.4066C28.5716 17.7666 28.5716 11.8466 24.9316 8.20656C21.2916 4.56656 15.3716 4.56656 11.7316 8.20656L6.07828 13.8599C2.95828 16.9799 2.95828 22.0466 6.07828 25.1799"
+                    stroke="#013341"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </label>
+              <input type="file" id="upload-file-message" />
+            </div>
+            <div class="popup__body-content-box-message-input txt18">
+              <input required="false" type="text" type="text" placeholder="Добавьте ваш ответ" />
+            </div>
+            <div class="popup__body-content-box-send">
+              <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3537_14123)">
+                  <path
+                    d="M8.5 24.5L23.5 9.5"
+                    stroke="#013341"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M11.5 8.5L24.5 8.5L24.5 21.5"
+                    stroke="#013341"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_3537_14123">
+                    <rect width="32" height="32" fill="white" transform="translate(0.5 0.5)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__application" aria-hidden="true" class="popup popup--big">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close type="button" class="popup__body-close-btn">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M14.5285 2.53044L15.0588 2.00011L13.9982 0.939453L13.4678 1.46978L7.99816 6.93945L2.52849 1.46978L1.99816 0.939453L0.9375 2.00011L1.46783 2.53044L6.9375 8.00011L1.46783 13.4698L0.9375 14.0001L1.99816 15.0608L2.52849 14.5304L7.99816 9.06077L13.4678 14.5304L13.9982 15.0608L15.0588 14.0001L14.5285 13.4698L9.05882 8.00011L14.5285 2.53044ZM7.99831 6.99996L6.99816 8.00011L7.99831 9.00026L8.99846 8.00011L7.99831 6.99996Z"
+              fill="#676767"
+            />
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="application__title-box">
+            <p class="application__title tl1">Продолжим вместе с бивертех?</p>
+            <p class="application__desc txt18 txt18_caps">
+              заполните форму и наши специалисты свяжутся с вами в ближайшее время
+            </p>
+          </div>
+          <form data-popup-message="#popup__success" data-dev action="" class="application__form-wrapper">
+            <p class="application__form-title tl3">оставьте нам заявку</p>
+            <div class="application__form-input-wrapper">
+              <div class="application__form-input-box">
+                <label class="application__label input-group input-group--mob-white">
+                  <span class="form__input-wrapper txt18">
+                    <input
+                      class="input--name application__form-input"
+                      type="text"
+                      placeholder="Ваше имя*"
+                      data-validate
+                      data-required
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                  </span>
+                  <span class="error-span">Поле заполнено неверно</span>
+                </label>
+                <label class="application__label input-group input-group--mob-white">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input--tel application__form-input phone-mask txt18"
+                      type="text"
+                      placeholder="Номер телефона*"
+                      data-validate
+                      data-required="tel"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                  </span>
+                  <span class="error-span">Поле заполнено неверно</span>
+                </label>
+                <label class="application__label input-group input-group--mob-white">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input--mail application__form-input txt18"
+                      type="text"
+                      placeholder="E-mail*"
+                      data-validate
+                      data-required="email"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                  </span>
+                  <span class="error-span">Поле заполнено неверно</span>
+                </label>
+                <label class="application__label input-group input-group--mob-white">
+                  <span class="form__input-wrapper">
+                    <textarea
+                      class="input--textarea txt18"
+                      placeholder="Ваш запрос"
+                      autocomplete="off"
+                      name="form[]"
+                    ></textarea>
+                    <span class="error-span"></span>
+                  </span>
+                </label>
+              </div>
+              <p class="application__agreement-text txt-small">
+                Нажимая «Отправить» вы подтверждаете, что согласны на
+                <a href="#">обработку персональных данных</a>
+              </p>
+            </div>
+            <button type="submit" class="application__btn button button-black txt20 txt20_caps">
+              заказать станок
+            </button>
+          </form>
+          <div class="application__info-wrapper">
+            <div class="application__info-box">
+              <ul class="application__info-list">
+                <li class="application__info-item">
+                  <p class="application__info-link txt20 txt20_caps">
+                    115516, Россия, г. Москва, Тарный проезд, 11
+                  </p>
+                </li>
+                <li class="application__info-item">
+                  <a href="tel:+74992880398" class="application__info-link txt20 txt20_caps"
+                    >+7 (499) 288-03-98</a
+                  >
+                </li>
+                <li class="application__info-item">
+                  <a href="mailto:info@beavertech.ru" class="application__info-link txt20 txt20_caps"
+                    >info@beavertech.ru</a
+                  >
+                </li>
+              </ul>
+              <ul class="application__contacts-list">
+                <li class="application__contacts-item">
+                  <a href="#" class="application__contacts-link">
+                    <div class="application__contacts-link-svg-box">
+                      <img src="./assets/images/vk.svg" alt="" class="desktop" />
+                      <img src="./assets/images/vk-black.svg" alt="" class="mobile" />
+                    </div>
+                  </a>
+                </li>
+                <li class="application__contacts-item">
+                  <a href="#" class="application__contacts-link">
+                    <div class="application__contacts-link-svg-box">
+                      <img src="./assets/images/watsapp.svg" alt="" class="desktop" />
+                      <img src="./assets/images/watsapp-black.svg" alt="" class="mobile" />
+                    </div>
+                  </a>
+                </li>
+                <li class="application__contacts-item">
+                  <a href="#" class="application__contacts-link">
+                    <div class="application__contacts-link-svg-box">
+                      <img src="./assets/images/youtube.svg" alt="" class="desktop" />
+                      <img src="./assets/images/youtube-black.svg" alt="" class="mobile" />
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

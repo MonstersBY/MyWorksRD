@@ -1,0 +1,168 @@
+.services-lvl3 {
+    margin-top: 14.1rem;
+
+    &_title {
+        margin-bottom: 6.5rem;
+        text-transform: uppercase;
+        span {
+            background: linear-gradient(180deg, #fff 20.91%, #149dc3 91.3%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(3px 3px 2px #061a2f) drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.8)) drop-shadow(2px 2px 2px #7be5ff);
+        }
+    }
+    &_container {
+        border-radius: 5.2rem;
+        background: #E8F0F5 url(../../assets/images/bg-white.webp) no-repeat top / cover;
+        color: rgb(46, 46, 46);
+        padding: 6.5rem;
+        display: grid;
+        column-gap: 3.7rem;
+        grid-template-rows: auto 1fr;
+        margin-bottom: 6.5rem;
+
+        &-title {
+            grid-row: 1;
+            grid-column: 1;
+            margin-bottom: 2.4rem;
+            text-transform: uppercase;
+            height: fit-content;
+        }
+    }
+    &_img {
+        width: 78.6rem;
+        height: 56.6rem;
+        border-radius: 1.6rem;
+        overflow: hidden;
+        grid-row: 1 / 3;
+        grid-column: 2;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &_list {
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+
+        .btn-blue {
+            margin-top: auto;
+        }
+    }
+    &_item {
+        margin-bottom: 2.4rem;
+
+        &-title {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            transition: gap 0.5s ease-in-out;
+            cursor: pointer;
+
+            svg {
+                width: 2.9rem;
+                height: 1rem;
+            }
+
+            &:hover {
+                gap: 1.7rem;
+            }
+        }
+        &-text {
+            color: #939CA9;
+        }
+        
+    }
+    .btn-white {
+        margin-left: auto;
+    }
+    .btn-back {
+        margin-bottom: 6.5rem;
+    }
+}
+
+@include small-tablet {
+    .services-lvl3 {
+        margin-top: 20rem;
+    
+        &_title {
+            font-weight: 400;
+            font-size: 6.4rem;
+            line-height: 110%;
+            letter-spacing: 0.04em;
+            margin-bottom: 6.4rem;
+            span {
+                background: linear-gradient(180deg, #fff 20.91%, #149dc3 91.3%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                // text-shadow: 6px 6px 12px #7be5ff, 8px 8px 20px rgba(255, 255, 255, 0.8), 4px 4px 5px #061a2f;
+                filter: drop-shadow(6px 6px 12px #7be5ff) drop-shadow(8px 8px 20px rgba(255, 255, 255, 0.8)) drop-shadow(4px 4px 5px #061a2f);
+            }
+        }
+
+        &_container {
+        border-radius: 4.8rem;
+        padding: 4.8rem 3.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    
+            &-title {
+                font-weight: 400;
+                font-size: 4.8rem;
+                line-height: 120%;
+                margin-bottom: 4.8rem;
+            }
+        }
+        &_img {
+            width: 100%;
+            height: 43rem;
+            border-radius: 2.4rem;
+            margin-bottom: 4.8rem;
+        }
+        &_list {
+            .btn-blue {
+                width: 100%;
+            }
+        }
+        &_item {
+            margin-bottom: 4.8rem;
+    
+            &-title {
+                margin-bottom: 2.4rem;
+                gap: 1.6rem;
+
+                span {
+                    font-weight: 400;
+                    font-size: 3rem;
+                    line-height: 150%;
+                    letter-spacing: 0.03em;
+                }
+    
+                svg {
+                    width: 5.6rem;
+                    height: 2.6rem;
+                }
+    
+                &:hover {
+                    gap: 2.1rem;
+                }
+            }
+            &-text {
+                font-weight: 400;
+                font-size: 3rem;
+                line-height: 150%;
+                letter-spacing: 0.03em;
+            }
+        }
+        .btn-back {
+            margin-bottom: 3.2rem;
+        }
+    }
+}

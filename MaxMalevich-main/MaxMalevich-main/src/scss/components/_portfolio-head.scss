@@ -1,0 +1,110 @@
+.portfolio-head {
+	padding-top: 19.1rem;
+	margin-bottom: 12rem;
+
+	&__title {
+		font-family: 'Roboto';
+		font-size: 10rem;
+		line-height: 11rem;
+		font-weight: 300;
+		margin-bottom: 6rem;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&__categories {
+		position: relative;
+		.navigation {
+			&-prev,
+			&-next {
+				position: absolute!important;
+				// top: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				z-index: 10;
+				background-color: $black;
+
+				&.swiper-button-disabled {
+					// display: none;
+					opacity: 0;
+				}
+			}
+
+			&-next {
+				right: -2rem!important;
+			}
+
+			&-prev {
+				left: -2rem!important;
+			}
+		}
+	}
+
+	&__swiper {
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		overflow: hidden;
+		list-style: none;
+		padding: 0;
+		z-index: 1;
+		display: block;
+
+		&-slide {
+			cursor: pointer;
+			width: min-content;
+			padding: 1.6rem 4rem;
+			font-family: $font;
+			font-size: 1.8rem;
+			line-height: 2.1rem;
+			background-color: $darkGray;
+			text-wrap: nowrap;
+			border-radius: 10rem;
+
+			&.active {
+				background-color: $orange;
+			}
+		}
+	}
+
+	@media (max-width: 75em) {
+		padding-top: 27.2rem;
+		margin-bottom: 16rem;
+
+		&__title {
+			font-size: 13rem;
+			line-height: 14rem;
+			margin-bottom: 9.6rem;
+		}
+
+		&__categories {
+			.navigation {
+				display: none;
+			}
+		}
+
+		&__swiper-slide {
+			padding: 3.2rem 8rem;
+			font-size: 3.6rem;
+			line-height: 4rem;
+		}
+	}
+
+	@media (max-width: 47.9375em) {
+		padding-top: 20.8rem;
+		margin-bottom: 8rem;
+
+		&__title {
+			text-align: left;
+			font-size: 8rem;
+			line-height: 8.8rem;
+			margin-bottom: 8rem;
+		}
+
+		&__swiper-slide {
+			padding: 2.4rem 4.8rem;
+			font-size: 3.2rem;
+			line-height: 4.4rem;
+		}
+	}
+}

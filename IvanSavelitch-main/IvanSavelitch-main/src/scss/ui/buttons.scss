@@ -1,0 +1,216 @@
+.button {
+  @include small-tablet {
+    border-radius: 2.4rem;
+    padding: 3.2rem 6.4rem;
+  }
+}
+
+.swiper-button.swiper-button-next,
+.swiper-button.swiper-button-prev {
+  width: 6.6rem;
+  height: 6.6rem;
+  margin-top: 0;
+  transition: opacity 0.3s;
+  border-radius: 50%;
+  background-color: $white60;
+  @include small-tablet {
+    width: 10rem;
+    height: 10rem;
+  }
+  &::after {
+    content: '';
+  }
+  & .swiper-button-svg-box {
+    width: 2.4rem;
+    height: 2.4rem;
+    & svg {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+    @include small-tablet {
+      width: 4.8rem;
+      height: 4.8rem;
+    }
+  }
+}
+
+.large-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26.2rem;
+  height: 16.6rem;
+  color: $orange;
+
+  &.cart {
+    &::before,
+    &::after {
+      width: 0.6rem;
+      height: 0.6rem;
+      background-image: url(../../assets/images/large-button-cart-star.svg);
+    }
+
+    .large-button__content {
+      text-align: center;
+      max-width: 9.4rem;
+    }
+  }
+  .large-button__content {
+    text-align: center;
+  }
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__content {
+    position: relative;
+    max-width: 8.5rem;
+    z-index: 1;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3.2rem;
+    height: 3.2rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url(../../assets/images/large-button-star.svg);
+    z-index: 1;
+  }
+
+  &::before {
+    left: 2.2rem;
+  }
+
+  &::after {
+    right: 2.2rem;
+  }
+
+  @media (max-width: 48em) {
+    width: 38.6rem;
+    height: 22.8rem;
+
+    &__content {
+      max-width: 12.2rem;
+      font-size: 5.2rem;
+      line-height: 6rem;
+      text-align: center;
+    }
+
+    &::before,
+    &::after {
+      width: 5.2rem;
+      height: 5.2rem;
+    }
+
+    &::before {
+      left: 4rem;
+    }
+
+    &::after {
+      right: 4rem;
+    }
+  }
+}
+
+.circle-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+  height: 12rem;
+  overflow: hidden;
+  border: 0.4rem solid $white;
+  border-radius: 12rem;
+
+  svg {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  img {
+    width: 6.4rem;
+    height: 6.4rem;
+    object-fit: cover;
+  }
+
+  &.light-blue {
+    background-color: $light-blue;
+  }
+
+  &.orange {
+    background-color: $orange;
+  }
+
+  &.background {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  @media (max-width: 48em) {
+    width: 14rem;
+    height: 14rem;
+    border-radius: 14rem;
+
+    svg {
+      width: 7rem;
+      height: 7rem;
+    }
+
+    img {
+      width: 7.6rem;
+      height: 7.6rem;
+    }
+  }
+}
+
+.like-btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7.8rem;
+  height: 7.8rem;
+  border-radius: 12rem;
+  border: 0.2rem solid $white60;
+  transition: 0.2s ease-in-out;
+
+  svg {
+    width: 2.8rem;
+    height: 2.8rem;
+    transition: inherit;
+  }
+
+  &:hover {
+    background-color: $white70;
+    border: 0.4rem solid $white;
+
+    svg {
+      path {
+        fill: $orange;
+      }
+    }
+  }
+}

@@ -1,0 +1,222 @@
+.product-banner {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__left {
+    width: 70.5rem;
+    padding: 2rem;
+    background-color: $white;
+    border-radius: 2rem;
+
+    &-wrapper {
+      width: 100%;
+      height: 57.6rem;
+      background: radial-gradient(42.8% 42.8% at 50.08% 52.95%, #ccb78c 9.9%, #faeed3 100%);
+      border-radius: inherit;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &-raw {
+    .product-banner__characteristic {
+      flex: 0 0 100%;
+    }
+  }
+
+  &__right {
+    width: 85rem;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+
+  &__weight {
+    margin-bottom: 2rem;
+  }
+
+  &__descr {
+    position: relative;
+    margin-bottom: 10rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 26rem;
+      left: 0;
+      width: 75rem;
+      height: 0.15rem;
+      background: rgb(203, 204, 192);
+      background: -moz-radial-gradient(
+        circle,
+        rgba(203, 204, 192, 1) 0%,
+        rgba(203, 204, 202, 0.21536536978072474) 50%
+      );
+      background: -webkit-radial-gradient(
+        circle,
+        rgba(203, 204, 192, 1) 0%,
+        rgba(203, 204, 202, 0.21536536978072474) 50%
+      );
+      background: radial-gradient(
+        circle,
+        rgba(203, 204, 192, 1) 0%,
+        rgba(203, 204, 202, 0.21536536978072474) 50%
+      );
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cbccc0",endColorstr="#cbccca",GradientType=1);
+    }
+  }
+
+  &__characteristics {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15rem;
+    row-gap: 6rem;
+  }
+
+  &__characteristic {
+    &.nutritional {
+      .nutritional__row {
+        display: flex;
+        column-gap: 4rem;
+      }
+
+      .nutritional__item {
+        div {
+          &:first-child {
+            margin-bottom: 0.4rem;
+            color: $grey;
+          }
+        }
+      }
+    }
+
+    &.packaging {
+      .packaging__row {
+        display: flex;
+        column-gap: 6rem;
+      }
+
+      .packaging__item {
+        div {
+          &:first-child {
+            margin-bottom: 1.2rem;
+            color: $grey;
+          }
+        }
+      }
+    }
+
+    &-title {
+      display: flex;
+      align-items: center;
+      column-gap: 1.6rem;
+      margin-bottom: 2rem;
+
+      div {
+        &:first-child {
+          width: 4rem;
+          height: 4rem;
+
+          svg {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 48em) {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__title {
+      margin-bottom: 4rem;
+    }
+
+    &__right,
+    &__left {
+      width: 100%;
+    }
+
+    &__left {
+      border-radius: 2.4rem;
+      margin-bottom: 4rem;
+    }
+
+    &__weight {
+      margin-bottom: 2.4rem;
+      font-size: 2.8rem;
+    }
+
+    &__descr {
+      margin-bottom: 5.6rem;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &__characteristic {
+      flex: 0 0 100%;
+
+      &.nutritional {
+        .nutritional__row {
+          column-gap: 4.8rem;
+        }
+
+        .nutritional__item {
+          div {
+            &:first-child {
+              font-size: 2.8rem;
+              margin-bottom: 0.8rem;
+            }
+          }
+        }
+      }
+
+      &.packaging {
+        .packaging__row {
+          column-gap: 4.8rem;
+        }
+
+        .packaging__item {
+          div {
+            &:first-child,
+            &:last-child {
+              font-size: 2.8rem;
+            }
+
+            &:first-child {
+              margin-bottom: 0.8rem;
+            }
+          }
+        }
+      }
+
+      &-title {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 1.6rem;
+        margin-bottom: 1.6rem;
+
+        div {
+          &:first-child {
+            width: 7.2rem;
+            height: 7.2rem;
+          }
+        }
+      }
+    }
+  }
+}

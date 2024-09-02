@@ -1,0 +1,115 @@
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  background-color: $orange;
+  transition: opacity 0.5s, visibility 0.5s, z-index 0.5s;
+
+  &-remove {
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+  }
+  &__container {
+    height: 100%;
+  }
+  &__inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10rem;
+    flex-grow: 1;
+  }
+  // .preloader__bg
+
+  &__bg {
+    position: absolute;
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &--left {
+      width: 59.7rem;
+      height: 60.2rem;
+      left: -35rem;
+      bottom: -25rem;
+    }
+    &--right {
+      width: 32.8rem;
+      height: 30.2rem;
+      right: -20rem;
+      top: 15rem;
+    }
+  }
+
+  // .preloader__content
+
+  &__content {
+    width: 92.3rem;
+    height: 88.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2.2rem;
+    position: relative;
+  }
+  // .preloader__content-bg
+
+  &__content-bg {
+    position: absolute;
+    inset: 0;
+    background-color: $dark-orange;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-image: url(./assets/images/preloader-mask.svg);
+    mask-image: url(./assets/images/preloader-mask.svg);
+  }
+
+  // .preloader__content-num-box
+
+  &__content-num-box {
+    font-family: 'Steelfish';
+    font-weight: 400;
+    font-size: 26.5rem;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    display: flex;
+    gap: 1rem;
+    // width: 38rem;
+    justify-content: flex-end;
+  }
+
+  // .preloader__content-num
+
+  &__content-num {
+    width: 31rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    height: 28rem;
+    overflow: hidden;
+    align-items: flex-end;
+  }
+
+  // .preloader__content-percent
+
+  &__content-percent {
+    line-height: 16.5rem;
+    font-size: 16.5rem;
+  }
+
+  // .preloader__content-text
+
+  &__content-text {
+  }
+}

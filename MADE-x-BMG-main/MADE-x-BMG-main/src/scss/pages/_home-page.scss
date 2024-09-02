@@ -1,0 +1,360 @@
+body .home {
+    --textColor: #101010;
+    --iconBg: #fff;
+    --cardPassBg: #d7d7d7;
+    --cardReqBg: #f9ec00;
+    --cardNewsBg: #101010;
+    --cardNewsText: #fff;
+    --cardReqSecBg: #fff;
+    --cardNewsSec: #fff;
+    --dateColor: rgba(73, 68, 64, 0.4);
+    --cardIncNew: #f9ec00;
+    --cardIncActive: #d7d7d7;
+    --cardsSmColor: #101010;
+    --iconColor: #101010;
+    --cardReqSecColor: #101010;
+    --cardNewsSecColor: #101010;
+}
+body.color_yd .home {
+    --textColor: #fff;
+    --iconBg: #f9ec00;
+    --cardPassBg: #292929;
+    --cardReqBg: #292929;
+    --cardNewsBg: #292929;
+    --cardNewsText: #fff;
+    --cardReqSecBg: #292929;
+    --cardNewsSec: #292929;
+    --dateColor: rgba(255, 255, 255, 0.2);
+    --cardIncNew: #292929;
+    --cardIncActive: #1D1D1D;
+    --cardsSmColor: #fff;
+    --iconColor: #101010;
+    --cardReqSecColor: #FFFFFF;
+    --cardNewsSecColor: #FFFFFF;
+}
+body.color_pl .home{
+    --textColor: #101010;
+    --iconBg: #fff;
+    --cardPassBg: #A1ACB9;
+    --cardReqBg: #D01181;
+    --cardNewsBg: #101010;
+    --cardNewsText: #fff;
+    --cardReqSecBg: #fff;
+    --cardNewsSec: #fff;
+    --dateColor: #A1ACB9;
+    --cardIncNew: #D01181;
+    --cardIncActive: #A1ACB9;
+    --cardsSmColor: #fff;
+    --iconColor: #101010;
+    --cardReqSecColor: #101010;
+    --cardNewsSecColor: #101010;
+}
+
+body.color_pd .home{
+    --textColor: #FFFFFF;
+    --iconBg: #fff;
+    --cardPassBg: #A1ACB9;
+    --cardReqBg: #D01181;
+    --cardNewsBg: #292929;
+    --cardNewsText: #fff;
+    --cardReqSecBg: #fff;
+    --cardNewsSec: #fff;
+    --dateColor: #A1ACB9;
+    --cardIncNew: #D01181;
+    --cardIncActive: #A1ACB9;
+    --cardsSmColor: #fff;
+    --iconColor: #101010;
+    --cardReqSecColor: #101010;
+    --cardNewsSecColor: #101010;
+}
+
+.home {
+    color: var(--textColor);
+
+    .container {
+        display: flex;
+        gap: 2rem;
+        height: 100%;
+    }
+
+    &__news {
+        width: 29rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        flex: 1;
+    }
+
+    &__title {
+        font-size: 3.2rem;
+        font-weight: 500;
+        line-height: 100%;
+        letter-spacing: 0.032rem;
+        margin-bottom: 1.2rem;
+    }
+
+    &__row {
+        display: flex;
+        gap: 2rem;
+    }
+
+    &__incoming-requests {
+        width: 44.5rem;
+        padding: 2.4rem 2.4rem 2.7rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        &__top {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .title {
+            font-weight: 500;
+            font-size: 2rem;
+            letter-spacing: 0.02rem;
+        }
+
+        &__cards {
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+        }
+
+        &__card {
+            padding: 1.8rem 1.6rem 1.8rem 2.4rem;
+            border-radius: 1.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &--new {
+                background-color: var(--cardIncNew);
+                .title{
+                    color: var(--cardsSmColor);
+                }
+                
+            }
+
+            &--active {
+                background-color: var(--cardIncActive);
+                .title{
+                    color: var(--cardsSmColor);
+                }
+            }
+
+            .title {
+                font-size: 1.8rem;
+                font-weight: 500;
+                letter-spacing: 0.018rem;
+                text-align: left;
+            }
+
+            .amount {
+                font-size: 2rem;
+                font-weight: 500;
+                letter-spacing: 0.02rem;
+                background-color: var(--iconBg);
+                color: var(--iconColor);
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 1.2rem;
+                width: 3.6rem;
+                height: 3.6rem;
+            }
+        }
+    }
+
+    &__my-discovery {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding-right: unset;
+
+        .title {
+            font-weight: 500;
+            font-size: 2rem;
+            letter-spacing: 0.02rem;
+        }
+
+        &__cards {
+            width: 100%;
+        }
+
+        .swiper-wrapper {
+            width: 75.5rem;
+        }
+
+        .swiper-slide {
+            width: 14.9rem;
+        }
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            gap: 6.5rem;
+            padding: 1.2rem 3.5rem 1.2rem 1.2rem;
+            border-radius: 1.6rem;
+            width: 14.9rem;
+
+            &--pass {
+                background-color: var(--cardPassBg);
+                color: var(--cardsSmColor);
+            }
+
+            &--req {
+                background-color: var(--cardReqBg);
+                color: var(--cardsSmColor);
+            }
+
+            &--news {
+                background-color: var(--cardNewsBg);
+                color: var(--cardNewsText);
+            }
+
+            .title {
+                font-size: 1.6rem;
+                font-weight: 500;
+                letter-spacing: 0.016rem;
+            }
+
+            .icon {
+                background-color: var(--iconBg);
+                border-radius: 100%;
+                width: 3.6rem;
+                height: 3.6rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+        }
+    }
+
+    &__requests {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+        padding: 2.8rem 2.4rem;
+        flex: 1;
+
+        &__title {
+            font-size: 2.4rem;
+            font-weight: 500;
+            line-height: 100%;
+            letter-spacing: 0.024rem;
+        }
+
+        &__cards {
+            display: flex;
+            gap: 1.6rem;
+            flex-wrap: wrap;
+        }
+
+        &__card {
+            border-radius: 1.6rem;
+            padding-bottom: 3.4rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3.5rem;
+            background-color: var(--cardReqSecBg);
+            color: var(--cardReqSecColor);
+
+            .title {
+                font-size: 2rem;
+                font-weight: 500;
+                letter-spacing: 0.02rem;
+                width: 100%;
+                text-align: center;
+                padding: 0 1rem;
+            }
+
+            .card-img {
+                height: 10.7rem;
+                width: 28.1rem;
+                border-radius: 1.6rem 1.6rem 0 0;
+            }
+        }
+    }
+
+    &__news {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding-bottom: unset;
+
+        &__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .title {
+            font-size: 2.4rem;
+            font-weight: 500;
+            line-height: 100%;
+            letter-spacing: 0.024rem;
+            color: var(--cardNewsSecColor)
+        }
+
+        &__cards {
+            display: grid;
+            flex-direction: column;
+            gap: 1.6rem;
+            overflow: auto;
+            padding-bottom: 2rem;
+            height: 100rem;
+            scrollbar-width: thin;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        &__card {
+            border-radius: 1.6rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            background-color: var(--cardNewsSec);
+            padding-bottom: 1.2rem;
+
+            // height: 21.2rem;
+            height: fit-content;
+
+            .card-img {
+                height: 12.3rem;
+                width: 100%;
+                border-radius: 1.6rem 1.6rem 0 0;
+            }
+
+            .title {
+                margin-top: 0.4rem;
+                font-size: 1.6rem;
+                font-weight: 500;
+                line-height: 120%;
+                letter-spacing: 0.016rem;
+                padding: 0 2.3rem 0 1.2rem;
+            }
+
+            .date {
+                color: var(--dateColor);
+                font-size: 1.6rem;
+                font-weight: 500;
+                letter-spacing: 0.016rem;
+                padding: 0 2.3rem 0 1.2rem;
+            }
+        }
+    }
+}

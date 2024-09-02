@@ -1,0 +1,224 @@
+.configurator-hero {
+  @media (min-width: 768px) {
+    padding: 0;
+  }
+
+  // .configurator-hero_subtitle
+
+  &_subtitle {
+  }
+
+  // .configurator-hero_title
+
+  &_title {
+  }
+
+  // .configurator-hero__inner
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 3.8rem;
+    @include small-tablet {
+      flex-direction: column;
+      gap: 8rem;
+    }
+  }
+
+  // .configurator-hero__swiper-box
+
+  &__swiper-box {
+    width: 117.5rem;
+    padding-top: 4rem;
+    padding-bottom: 5.6rem;
+    @include small-tablet {
+      width: 75rem;
+      margin: 0 -3.2rem;
+      padding: 0 0 0 3.2rem;
+    }
+  }
+
+  // .configurator-hero__swiper
+
+  &__swiper {
+  }
+
+  // .configurator-hero__swiper-wrapper
+
+  &__swiper-wrapper {
+  }
+
+  // .configurator-hero__swiper-slide
+
+  &__swiper-slide {
+  }
+
+  // .configurator-hero__swiper-slide-img-box
+
+  &__swiper-slide-img-box {
+    width: 77.9rem;
+    height: 77.9rem;
+    margin: 0 auto;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include small-tablet {
+      width: 100%;
+      height: 77.9rem;
+      margin: 0;
+    }
+  }
+
+  // .configurator-hero__swiper-btn-box
+
+  &__swiper-btn-box {
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  // .configurator-hero__swiper-btn
+
+  &__swiper-btn {
+  }
+
+  // .configurator-hero__swiper-btn--prev
+
+  &__swiper-btn--prev {
+  }
+
+  // .configurator-hero__swiper-btn--next
+
+  &__swiper-btn--next {
+  }
+
+  // .configurator-hero__content-box
+
+  &__content-box {
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    @include small-tablet {
+      padding-top: 0;
+      gap: 4.8rem;
+    }
+  }
+
+  // .configurator-hero__title-box
+
+  &__title-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  // .configurator-hero__desc-box
+
+  &__desc-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    @include small-tablet {
+      gap: 2rem;
+    }
+  }
+
+  // .configurator-hero__desc-text
+
+  &__desc-text {
+  }
+
+  // .configurator-hero__info-list
+
+  &__info-list {
+    padding: 2.4rem;
+    border-top: 0.15rem solid $black;
+    border-left: 0.15rem solid $black;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 44.1rem;
+    @include small-tablet {
+      width: 100%;
+      padding: 3.2rem;
+      gap: 1.6rem;
+    }
+  }
+
+  // .configurator-hero__info-item
+
+  &__info-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  // .configurator-hero__info-item-title
+
+  &__info-item-title {
+    width: 50%;
+    color: $grew;
+  }
+
+  // .configurator-hero__info-item-text
+
+  &__info-item-text {
+    width: 50%;
+  }
+
+  // .configurator-hero__info-item--last
+
+  &__info-item--last {
+    color: $grew;
+    @include small-tablet {
+      margin-top: 1.6rem;
+    }
+  }
+
+  // .configurator-hero__price-box
+
+  &__price-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  // .configurator-hero__prise
+
+  &__prise {
+  }
+
+  // .configurator-hero__prise-num
+
+  &__prise-num {
+    @include small-tablet {
+      font-size: 4rem;
+    }
+  }
+
+  // .configurator-hero__price-info-text
+
+  &__price-info-text {
+    color: $grew;
+  }
+}
+
+.configurator {
+  // .configurator__right
+
+  &__right {
+    width: 58.7rem;
+    flex-shrink: 0;
+    padding-left: 4rem;
+    height: auto;
+    border-left: 0.15rem solid $grew;
+    @include small-tablet {
+      width: 100%;
+      padding-left: 0;
+      border-left: unset;
+    }
+  }
+}

@@ -1,0 +1,107 @@
+.advantages {
+  // .advantages__inner
+
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 11.7rem;
+  @include small-tablet {
+      flex-direction: column;
+      gap: 8rem;
+    }
+  }
+
+  // .advantages__title-box
+
+  &__title-box {
+    width: 67.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  @include small-tablet {
+      width: 100%;
+      gap: 4rem;
+    }
+  }
+
+  // .advantages__title
+
+  &__title {
+  }
+
+  // .advantages__desk
+
+  &__desk {
+    width: 53.3rem;
+  @include small-tablet {
+      width: 100%;
+    }
+  }
+
+  // .advantages__list
+
+  &__list {
+    width: 76.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  @include small-tablet {
+      gap: 1.6rem;
+      width: 100%;
+    }
+  }
+
+  // .advantages__item
+
+  &__item {
+    padding: 4.6rem;
+    backdrop-filter: blur(36px);
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 7rem;
+    border: 1px solid $white;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  @include small-tablet {
+      gap: 6.4rem;
+      padding: 3.2rem;
+    }
+  }
+
+  // .advantages__item-svg-box
+
+  &__item-svg-box {
+    width: 8.2rem;
+    height: 8.2rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  @include small-tablet {
+      width: 12rem;
+      height: 12rem;
+    }
+  }
+
+  // .advantages__item-text-box
+
+  &__item-text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  @include small-tablet {
+      gap: 1.6rem;
+    }
+  }
+
+  // .advantages__item-text-title
+
+  &__item-text-title {
+  }
+
+  // .advantages__item-text-desk
+
+  &__item-text-desk {
+  }
+}

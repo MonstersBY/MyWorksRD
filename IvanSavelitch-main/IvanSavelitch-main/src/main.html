@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="preloader">
+        <div class="preloader__container container">
+          <div class="preloader__inner">
+            <div class="header__inner">
+              <a href="#" class="header__logo header__logo--preloader">
+                <div class="header__logo-img-box">
+                  <img src="./assets/images/logo.svg" alt="" />
+                </div>
+              </a>
+            </div>
+            <div class="preloader__content-wrapper">
+              <div class="preloader__bg preloader__bg--left" style="opacity: 0">
+                <svg
+                  width="597"
+                  height="602"
+                  viewBox="0 0 597 602"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M355.596 88.133C280.862 52.4284 210.073 -23.6949 133.489 7.84635C48.3813 42.8977 -0.469428 142.235 0.765585 234.269C1.90665 319.304 86.1928 343.335 146.027 408.772C223.045 493.003 271.465 638.037 377.701 592.677C456.398 559.077 428.003 491.274 459.63 395.032C484.864 318.242 622.701 271.884 592.046 181.31C560.228 87.2982 409.324 113.802 355.596 88.133Z"
+                    fill="#C14824"
+                  />
+                </svg>
+              </div>
+
+              <div class="preloader__content" style="opacity: 0">
+                <div class="preloader__content-bg"></div>
+                <div class="preloader__content-num-box">
+                  <p class="preloader__content-num"></p>
+                  <p class="preloader__content-percent">%</p>
+                </div>
+                <p class="preloader__content-text txt18">взбиваем сливки</p>
+              </div>
+
+              <div class="preloader__bg preloader__bg--right" style="opacity: 0">
+                <svg
+                  width="328"
+                  height="302"
+                  viewBox="0 0 328 302"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M154.823 37.4384C107.463 42.1961 49.9837 25.9237 21.7763 64.2633C-9.57017 106.869 -3.92996 170.235 24.1328 215.073C50.0613 256.5 98.6299 243.158 147.541 257.45C210.499 275.846 277.549 332.639 316.199 278.667C344.829 238.686 310.654 213.853 297.478 157.146C286.964 111.9 340.837 48.0093 298.76 12.6664C255.085 -24.0183 188.87 34.018 154.823 37.4384Z"
+                    fill="#C14824"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <include src="./components/_popup.html"></include>
+      <main class="main-home" id="fullpage">
+        <include src="./components/_header.html" data-text='{"header": { "class": "header--main"}}'></include>
+        <include src="./components/_main-hero.html"></include>
+        <include src="./components/_catalog-block.html"></include>
+        <include src="./components/_love.html"></include>
+        <include src="./components/_development.html"></include>
+        <include src="./components/_about-our-farm.html"></include>
+        <include src="./components/_latest-news.html"></include>
+        <include
+          src="./components/_footer.html"
+          data-text='{"footer": { "class": "footer--anim" } }'
+        ></include>
+      </main>
+    </div>
+  </body>
+</html>

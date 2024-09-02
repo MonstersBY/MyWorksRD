@@ -1,0 +1,54 @@
+.nav-box {
+  &.dark {
+    .nav-box__link {
+      color: $white60;
+
+      &::after {
+        background-image: url(../../assets/images/star-dark.svg);
+      }
+    }
+  }
+
+  // .nav-box__list-wrap
+
+  &__list-wrap {
+  }
+
+  // .nav-box__list
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    @include small-tablet {
+      justify-content: center;
+      gap: 1.6rem;
+    }
+  }
+
+  // .nav-box__link
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    &:not(:last-child)::after {
+      display: inline-block;
+      content: '';
+      width: 2.8rem;
+      height: 2.8rem;
+      background: url(./assets/images/star.svg) no-repeat top/cover;
+    }
+
+    @include small-tablet {
+      gap: 1.6rem;
+      font-size: 3.2rem;
+      letter-spacing: 0.02em;
+      &:not(:last-child)::after {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Личный кабинет - заявки</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <include src="./components/_header.html"></include>
+      </header>
+      <include src="./components/_popup.html"></include>
+      <main>
+        <include src="./components/_arrow-top.html"></include>
+        <section class="lk">
+          <div class="container">
+            <div class="lk__inner">
+              <div class="lk__title-box">
+                <p class="lk__title tl1">Личный кабинет</p>
+                <div class="lk__title-svg-box mobile">
+                  <svg
+                    width="32"
+                    height="33"
+                    viewBox="0 0 32 33"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 24.5L20 16.5L12 8.5"
+                      stroke="#012028"
+                      stroke-width="2"
+                      stroke-linecap="square"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="lk__content-wrapper">
+                <div class="lk__nav-wrapper">
+                  <include src="./components/_lk-nav.html"></include>
+                </div>
+                <div class="lk__content-box">
+                  <p class="lk__content-title mobile">Мой кабинет</p>
+                  <div class="lk__applications">
+                    <div class="lk__applications-tabs desktop">
+                      <div class="lk__applications-tab txt18 txt18_caps tab active">Beavermill 3 и 4 оси</div>
+                      <div class="lk__applications-tab txt18 txt18_caps tab">Beavermill 5 осей</div>
+                      <div class="lk__applications-tab txt18 txt18_caps tab">Beavermill plus</div>
+                      <div class="lk__applications-tab txt18 txt18_caps tab">Beavermill mini</div>
+                      <div class="lk__applications-tab txt18 txt18_caps tab">BEAVERMILL PLUS (5 осей)</div>
+                    </div>
+                    <div class="lk__applications-tabs mobile">
+                      <div class="lk__applications-tabs--head">
+                        <div class="lk__applications-tabs--text">Beavermill 3 и 4 оси</div>
+                        <div>
+                          <svg
+                            width="24"
+                            height="25"
+                            viewBox="0 0 24 25"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_2251_11258)">
+                              <path
+                                d="M18 9.5L12 15.5L6 9.5"
+                                stroke="#012028"
+                                stroke-width="1.5"
+                                stroke-linecap="square"
+                                stroke-linejoin="round"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2251_11258">
+                                <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                      </div>
+                      <ul class="lk__applications-tabs--list">
+                        <div class="lk__applications-tabs--item txt16">Beavermill 3 и 4 оси</div>
+                        <div class="lk__applications-tabs--item txt16">Beavermill 5 осей</div>
+                        <div class="lk__applications-tabs--item txt16">Beavermill plus</div>
+                        <div class="lk__applications-tabs--item txt16">Beavermill mini</div>
+                        <div class="lk__applications-tabs--item txt16">BEAVERMILL PLUS (5 осей)</div>
+                      </ul>
+                    </div>
+                    <div class="lk__applications-body">
+                      <div class="lk__applications-list active">
+                        <div class="lk__applications-item">
+                          <div class="lk__applications-item--head">
+                            <div class="lk__applications-item--title txt20 txt20_caps">
+                              Заявка по станку beavermill 3 оси
+                            </div>
+                            <div class="lk__applications-item--status txt18 completed">Завершена</div>
+                          </div>
+                          <div class="lk__applications-item--body">
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Тема обращения</div>
+                              <div class="txt18">Проблемы с эксплуатацией</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Серийный номер</div>
+                              <div class="txt18">18244654845657</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Модель</div>
+                              <div class="txt18">BEAVERMILL (3 и 4 оси)</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Дата обращения</div>
+                              <div class="txt18">18.04.2024</div>
+                            </div>
+                          </div>
+                          <button
+                            data-popup="#popup__messenger-lk"
+                            class="button button-turquoise txt20 txt20_caps"
+                          >
+                            перейти в чат
+                          </button>
+                        </div>
+                        <div class="lk__applications-item">
+                          <div class="lk__applications-item--head">
+                            <div class="lk__applications-item--title txt20 txt20_caps">
+                              Заявка по станку beavermill 3 оси
+                            </div>
+                            <div class="lk__applications-item--status txt18 in-work">В работе</div>
+                          </div>
+                          <div class="lk__applications-item--body">
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Тема обращения</div>
+                              <div class="txt18">Проблемы с эксплуатацией</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Серийный номер</div>
+                              <div class="txt18">18244654845657</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Модель</div>
+                              <div class="txt18">BEAVERMILL (3 и 4 оси)</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Дата обращения</div>
+                              <div class="txt18">18.04.2024</div>
+                            </div>
+                          </div>
+                          <button
+                            data-popup="#popup__messenger-lk"
+                            class="button button-turquoise txt20 txt20_caps"
+                          >
+                            перейти в чат
+                          </button>
+                        </div>
+                        <div class="lk__applications-item">
+                          <div class="lk__applications-item--head">
+                            <div class="lk__applications-item--title txt20 txt20_caps">
+                              Заявка по станку beavermill 3 оси
+                            </div>
+                            <div class="lk__applications-item--status txt18 consideration">
+                              На рассмотрении
+                            </div>
+                          </div>
+                          <div class="lk__applications-item--body">
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Тема обращения</div>
+                              <div class="txt18">Проблемы с эксплуатацией</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Серийный номер</div>
+                              <div class="txt18">18244654845657</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Модель</div>
+                              <div class="txt18">BEAVERMILL (3 и 4 оси)</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Дата обращения</div>
+                              <div class="txt18">18.04.2024</div>
+                            </div>
+                          </div>
+                          <button
+                            data-popup="#popup__messenger-lk"
+                            class="button button-turquoise txt20 txt20_caps"
+                          >
+                            перейти в чат
+                          </button>
+                        </div>
+                        <div class="lk__applications-item">
+                          <div class="lk__applications-item--head">
+                            <div class="lk__applications-item--title txt20 txt20_caps">
+                              Заявка по станку beavermill 3 оси
+                            </div>
+                            <div class="lk__applications-item--status txt18 refusal">Отказ</div>
+                          </div>
+                          <div class="lk__applications-item--body">
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Тема обращения</div>
+                              <div class="txt18">Проблемы с эксплуатацией</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Серийный номер</div>
+                              <div class="txt18">18244654845657</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Модель</div>
+                              <div class="txt18">BEAVERMILL (3 и 4 оси)</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Дата обращения</div>
+                              <div class="txt18">18.04.2024</div>
+                            </div>
+                          </div>
+                          <button
+                            data-popup="#popup__messenger-lk"
+                            class="button button-turquoise txt20 txt20_caps"
+                          >
+                            перейти в чат
+                          </button>
+                        </div>
+                      </div>
+                      <div class="lk__applications-list">
+                        <div class="lk__applications-item">
+                          <div class="lk__applications-item--head">
+                            <div class="lk__applications-item--title txt20 txt20_caps">
+                              Заявка по станку beavermill 3 оси
+                            </div>
+                            <div class="lk__applications-item--status txt18 completed">Завершена</div>
+                          </div>
+                          <div class="lk__applications-item--body">
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Тема обращения</div>
+                              <div class="txt18">Проблемы с эксплуатацией</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Серийный номер</div>
+                              <div class="txt18">18244654845657</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Модель</div>
+                              <div class="txt18">BEAVERMILL (3 и 4 оси)</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Дата обращения</div>
+                              <div class="txt18">18.04.2024</div>
+                            </div>
+                          </div>
+                          <button
+                            data-popup="#popup__messenger-lk"
+                            class="button button-turquoise txt20 txt20_caps"
+                          >
+                            перейти в чат
+                          </button>
+                        </div>
+                        <div class="lk__applications-item">
+                          <div class="lk__applications-item--head">
+                            <div class="lk__applications-item--title txt20 txt20_caps">
+                              Заявка по станку beavermill 3 оси
+                            </div>
+                            <div class="lk__applications-item--status txt18 in-work">В работе</div>
+                          </div>
+                          <div class="lk__applications-item--body">
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Тема обращения</div>
+                              <div class="txt18">Проблемы с эксплуатацией</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Серийный номер</div>
+                              <div class="txt18">18244654845657</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Модель</div>
+                              <div class="txt18">BEAVERMILL (3 и 4 оси)</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Дата обращения</div>
+                              <div class="txt18">18.04.2024</div>
+                            </div>
+                          </div>
+                          <button
+                            data-popup="#popup__messenger-lk"
+                            class="button button-turquoise txt20 txt20_caps"
+                          >
+                            перейти в чат
+                          </button>
+                        </div>
+                        <div class="lk__applications-item">
+                          <div class="lk__applications-item--head">
+                            <div class="lk__applications-item--title txt20 txt20_caps">
+                              Заявка по станку beavermill 3 оси
+                            </div>
+                            <div class="lk__applications-item--status txt18 consideration">
+                              На рассмотрении
+                            </div>
+                          </div>
+                          <div class="lk__applications-item--body">
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Тема обращения</div>
+                              <div class="txt18">Проблемы с эксплуатацией</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Серийный номер</div>
+                              <div class="txt18">18244654845657</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Модель</div>
+                              <div class="txt18">BEAVERMILL (3 и 4 оси)</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Дата обращения</div>
+                              <div class="txt18">18.04.2024</div>
+                            </div>
+                          </div>
+                          <button
+                            data-popup="#popup__messenger-lk"
+                            class="button button-turquoise txt20 txt20_caps"
+                          >
+                            перейти в чат
+                          </button>
+                        </div>
+                        <div class="lk__applications-item">
+                          <div class="lk__applications-item--head">
+                            <div class="lk__applications-item--title txt20 txt20_caps">
+                              Заявка по станку beavermill 3 оси
+                            </div>
+                            <div class="lk__applications-item--status txt18 refusal">Отказ</div>
+                          </div>
+                          <div class="lk__applications-item--body">
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Тема обращения</div>
+                              <div class="txt18">Проблемы с эксплуатацией</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Серийный номер</div>
+                              <div class="txt18">18244654845657</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Модель</div>
+                              <div class="txt18">BEAVERMILL (3 и 4 оси)</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Дата обращения</div>
+                              <div class="txt18">18.04.2024</div>
+                            </div>
+                          </div>
+                          <button
+                            data-popup="#popup__messenger-lk"
+                            class="button button-turquoise txt20 txt20_caps"
+                          >
+                            перейти в чат
+                          </button>
+                        </div>
+                      </div>
+                      <div class="lk__applications-list">
+                        <div class="lk__applications-item">
+                          <div class="lk__applications-item--head">
+                            <div class="lk__applications-item--title txt20 txt20_caps">
+                              Заявка по станку beavermill 3 оси
+                            </div>
+                            <div class="lk__applications-item--status txt18 completed">Завершена</div>
+                          </div>
+                          <div class="lk__applications-item--body">
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Тема обращения</div>
+                              <div class="txt18">Проблемы с эксплуатацией</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Серийный номер</div>
+                              <div class="txt18">18244654845657</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Модель</div>
+                              <div class="txt18">BEAVERMILL (3 и 4 оси)</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Дата обращения</div>
+                              <div class="txt18">18.04.2024</div>
+                            </div>
+                          </div>
+                          <button
+                            data-popup="#popup__messenger-lk"
+                            class="button button-turquoise txt20 txt20_caps"
+                          >
+                            перейти в чат
+                          </button>
+                        </div>
+                        <div class="lk__applications-item">
+                          <div class="lk__applications-item--head">
+                            <div class="lk__applications-item--title txt20 txt20_caps">
+                              Заявка по станку beavermill 3 оси
+                            </div>
+                            <div class="lk__applications-item--status txt18 in-work">В работе</div>
+                          </div>
+                          <div class="lk__applications-item--body">
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Тема обращения</div>
+                              <div class="txt18">Проблемы с эксплуатацией</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Серийный номер</div>
+                              <div class="txt18">18244654845657</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Модель</div>
+                              <div class="txt18">BEAVERMILL (3 и 4 оси)</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Дата обращения</div>
+                              <div class="txt18">18.04.2024</div>
+                            </div>
+                          </div>
+                          <button
+                            data-popup="#popup__messenger-lk"
+                            class="button button-turquoise txt20 txt20_caps"
+                          >
+                            перейти в чат
+                          </button>
+                        </div>
+                        <div class="lk__applications-item">
+                          <div class="lk__applications-item--head">
+                            <div class="lk__applications-item--title txt20 txt20_caps">
+                              Заявка по станку beavermill 3 оси
+                            </div>
+                            <div class="lk__applications-item--status txt18 consideration">
+                              На рассмотрении
+                            </div>
+                          </div>
+                          <div class="lk__applications-item--body">
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Тема обращения</div>
+                              <div class="txt18">Проблемы с эксплуатацией</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Серийный номер</div>
+                              <div class="txt18">18244654845657</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Модель</div>
+                              <div class="txt18">BEAVERMILL (3 и 4 оси)</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Дата обращения</div>
+                              <div class="txt18">18.04.2024</div>
+                            </div>
+                          </div>
+                          <button
+                            data-popup="#popup__messenger-lk"
+                            class="button button-turquoise txt20 txt20_caps"
+                          >
+                            перейти в чат
+                          </button>
+                        </div>
+                        <div class="lk__applications-item">
+                          <div class="lk__applications-item--head">
+                            <div class="lk__applications-item--title txt20 txt20_caps">
+                              Заявка по станку beavermill 3 оси
+                            </div>
+                            <div class="lk__applications-item--status txt18 refusal">Отказ</div>
+                          </div>
+                          <div class="lk__applications-item--body">
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Тема обращения</div>
+                              <div class="txt18">Проблемы с эксплуатацией</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Серийный номер</div>
+                              <div class="txt18">18244654845657</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Модель</div>
+                              <div class="txt18">BEAVERMILL (3 и 4 оси)</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Дата обращения</div>
+                              <div class="txt18">18.04.2024</div>
+                            </div>
+                          </div>
+                          <button
+                            data-popup="#popup__messenger-lk"
+                            class="button button-turquoise txt20 txt20_caps"
+                          >
+                            перейти в чат
+                          </button>
+                        </div>
+                      </div>
+                      <div class="lk__applications-list">
+                        <div class="lk__applications-item">
+                          <div class="lk__applications-item--head">
+                            <div class="lk__applications-item--title txt20 txt20_caps">
+                              Заявка по станку beavermill 3 оси
+                            </div>
+                            <div class="lk__applications-item--status txt18 completed">Завершена</div>
+                          </div>
+                          <div class="lk__applications-item--body">
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Тема обращения</div>
+                              <div class="txt18">Проблемы с эксплуатацией</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Серийный номер</div>
+                              <div class="txt18">18244654845657</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Модель</div>
+                              <div class="txt18">BEAVERMILL (3 и 4 оси)</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Дата обращения</div>
+                              <div class="txt18">18.04.2024</div>
+                            </div>
+                          </div>
+                          <button
+                            data-popup="#popup__messenger-lk"
+                            class="button button-turquoise txt20 txt20_caps"
+                          >
+                            перейти в чат
+                          </button>
+                        </div>
+                        <div class="lk__applications-item">
+                          <div class="lk__applications-item--head">
+                            <div class="lk__applications-item--title txt20 txt20_caps">
+                              Заявка по станку beavermill 3 оси
+                            </div>
+                            <div class="lk__applications-item--status txt18 in-work">В работе</div>
+                          </div>
+                          <div class="lk__applications-item--body">
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Тема обращения</div>
+                              <div class="txt18">Проблемы с эксплуатацией</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Серийный номер</div>
+                              <div class="txt18">18244654845657</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Модель</div>
+                              <div class="txt18">BEAVERMILL (3 и 4 оси)</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Дата обращения</div>
+                              <div class="txt18">18.04.2024</div>
+                            </div>
+                          </div>
+                          <button
+                            data-popup="#popup__messenger-lk"
+                            class="button button-turquoise txt20 txt20_caps"
+                          >
+                            перейти в чат
+                          </button>
+                        </div>
+                        <div class="lk__applications-item">
+                          <div class="lk__applications-item--head">
+                            <div class="lk__applications-item--title txt20 txt20_caps">
+                              Заявка по станку beavermill 3 оси
+                            </div>
+                            <div class="lk__applications-item--status txt18 consideration">
+                              На рассмотрении
+                            </div>
+                          </div>
+                          <div class="lk__applications-item--body">
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Тема обращения</div>
+                              <div class="txt18">Проблемы с эксплуатацией</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Серийный номер</div>
+                              <div class="txt18">18244654845657</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Модель</div>
+                              <div class="txt18">BEAVERMILL (3 и 4 оси)</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Дата обращения</div>
+                              <div class="txt18">18.04.2024</div>
+                            </div>
+                          </div>
+                          <button
+                            data-popup="#popup__messenger-lk"
+                            class="button button-turquoise txt20 txt20_caps"
+                          >
+                            перейти в чат
+                          </button>
+                        </div>
+                        <div class="lk__applications-item">
+                          <div class="lk__applications-item--head">
+                            <div class="lk__applications-item--title txt20 txt20_caps">
+                              Заявка по станку beavermill 3 оси
+                            </div>
+                            <div class="lk__applications-item--status txt18 refusal">Отказ</div>
+                          </div>
+                          <div class="lk__applications-item--body">
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Тема обращения</div>
+                              <div class="txt18">Проблемы с эксплуатацией</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Серийный номер</div>
+                              <div class="txt18">18244654845657</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Модель</div>
+                              <div class="txt18">BEAVERMILL (3 и 4 оси)</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Дата обращения</div>
+                              <div class="txt18">18.04.2024</div>
+                            </div>
+                          </div>
+                          <button
+                            data-popup="#popup__messenger-lk"
+                            class="button button-turquoise txt20 txt20_caps"
+                          >
+                            перейти в чат
+                          </button>
+                        </div>
+                      </div>
+                      <div class="lk__applications-list">
+                        <div class="lk__applications-item">
+                          <div class="lk__applications-item--head">
+                            <div class="lk__applications-item--title txt20 txt20_caps">
+                              Заявка по станку beavermill 3 оси
+                            </div>
+                            <div class="lk__applications-item--status txt18 completed">Завершена</div>
+                          </div>
+                          <div class="lk__applications-item--body">
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Тема обращения</div>
+                              <div class="txt18">Проблемы с эксплуатацией</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Серийный номер</div>
+                              <div class="txt18">18244654845657</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Модель</div>
+                              <div class="txt18">BEAVERMILL (3 и 4 оси)</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Дата обращения</div>
+                              <div class="txt18">18.04.2024</div>
+                            </div>
+                          </div>
+                          <button
+                            data-popup="#popup__messenger-lk"
+                            class="button button-turquoise txt20 txt20_caps"
+                          >
+                            перейти в чат
+                          </button>
+                        </div>
+                        <div class="lk__applications-item">
+                          <div class="lk__applications-item--head">
+                            <div class="lk__applications-item--title txt20 txt20_caps">
+                              Заявка по станку beavermill 3 оси
+                            </div>
+                            <div class="lk__applications-item--status txt18 in-work">В работе</div>
+                          </div>
+                          <div class="lk__applications-item--body">
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Тема обращения</div>
+                              <div class="txt18">Проблемы с эксплуатацией</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Серийный номер</div>
+                              <div class="txt18">18244654845657</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Модель</div>
+                              <div class="txt18">BEAVERMILL (3 и 4 оси)</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Дата обращения</div>
+                              <div class="txt18">18.04.2024</div>
+                            </div>
+                          </div>
+                          <button
+                            data-popup="#popup__messenger-lk"
+                            class="button button-turquoise txt20 txt20_caps"
+                          >
+                            перейти в чат
+                          </button>
+                        </div>
+                        <div class="lk__applications-item">
+                          <div class="lk__applications-item--head">
+                            <div class="lk__applications-item--title txt20 txt20_caps">
+                              Заявка по станку beavermill 3 оси
+                            </div>
+                            <div class="lk__applications-item--status txt18 consideration">
+                              На рассмотрении
+                            </div>
+                          </div>
+                          <div class="lk__applications-item--body">
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Тема обращения</div>
+                              <div class="txt18">Проблемы с эксплуатацией</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Серийный номер</div>
+                              <div class="txt18">18244654845657</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Модель</div>
+                              <div class="txt18">BEAVERMILL (3 и 4 оси)</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Дата обращения</div>
+                              <div class="txt18">18.04.2024</div>
+                            </div>
+                          </div>
+                          <button
+                            data-popup="#popup__messenger-lk"
+                            class="button button-turquoise txt20 txt20_caps"
+                          >
+                            перейти в чат
+                          </button>
+                        </div>
+                        <div class="lk__applications-item">
+                          <div class="lk__applications-item--head">
+                            <div class="lk__applications-item--title txt20 txt20_caps">
+                              Заявка по станку beavermill 3 оси
+                            </div>
+                            <div class="lk__applications-item--status txt18 refusal">Отказ</div>
+                          </div>
+                          <div class="lk__applications-item--body">
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Тема обращения</div>
+                              <div class="txt18">Проблемы с эксплуатацией</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Серийный номер</div>
+                              <div class="txt18">18244654845657</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Модель</div>
+                              <div class="txt18">BEAVERMILL (3 и 4 оси)</div>
+                            </div>
+                            <div class="lk__applications-item--column">
+                              <div class="txt18 txt18_caps">Дата обращения</div>
+                              <div class="txt18">18.04.2024</div>
+                            </div>
+                          </div>
+                          <button
+                            data-popup="#popup__messenger-lk"
+                            class="button button-turquoise txt20 txt20_caps"
+                          >
+                            перейти в чат
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <include src="./components/_footer.html"></include>
+    </div>
+  </body>
+</html>

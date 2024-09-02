@@ -1,0 +1,128 @@
+.services {
+  &.bg-3 {
+    &::after {
+      width: 50rem;
+      height: 40rem;
+      top: 6rem;
+      right: calc(50% - 82rem);
+      transform: rotate(66deg);
+      @include small-tablet {
+        width: 47rem;
+        height: 34rem;
+        top: -18rem;
+        right: calc(50% - 36rem);
+        transform: rotate(-1deg);
+      }
+    }
+  }
+  &__heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8rem;
+    @include small-tablet {
+      flex-direction: column-reverse;
+      gap: 4rem;
+    }
+  }
+  &__title {
+    color: $green;
+  }
+  &__subtitle {
+    width: 32.1rem;
+    margin-right: 32rem;
+    color: $textAndLine;
+    @include small-tablet {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  &__slider {
+    overflow: hidden;
+    &-nav {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      color: $green;
+    }
+    &-slide {
+      &:nth-child(2n) {
+        .services__item {
+          flex-direction: column-reverse;
+        }
+        .services__item-arrow {
+          top: auto;
+          bottom: 3.2rem;
+          @include small-tablet {
+            bottom: 4rem;
+          }
+        }
+        .services__item-img {
+          -webkit-mask-image: url(./assets/images/picture/services__item-mask_2.svg);
+          mask-image: url(./assets/images/picture/services__item-mask_2.svg);
+        }
+      }
+    }
+  }
+  &__item {
+    background-color: $green;
+    border-radius: 4rem;
+    width: 49rem;
+    height: 36.3rem;
+    padding: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: $Beige;
+    @include small-tablet {
+      width: 68.6rem;
+      height: 50rem;
+      padding: 4rem;
+    }
+    &-title {
+      margin-bottom: 0.8rem;
+    }
+    &-arrow {
+      position: absolute;
+      top: 3.2rem;
+      left: 3.2rem;
+      width: 3.2rem;
+      height: 3.2rem;
+      color: $LightGreen;
+      @include small-tablet {
+        top: 4rem;
+        left: 4rem;
+        width: 6.4rem;
+        height: 6.4rem;
+      }
+    }
+    &-img {
+      -webkit-mask-image: url(./assets/images/picture/services__item-mask.svg);
+      mask-image: url(./assets/images/picture/services__item-mask.svg);
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: contain;
+      mask-size: contain;
+      width: 24rem;
+      height: 22rem;
+      align-self: flex-end;
+      @include small-tablet {
+        width: 31rem;
+        height: 30rem;
+      }
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    @include small-tablet {
+      flex-direction: row-reverse;
+      margin-top: 5rem;
+    }
+  }
+}

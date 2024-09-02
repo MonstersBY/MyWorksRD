@@ -1,0 +1,76 @@
+.product-card {
+  position: relative;
+  width: 41.5rem;
+  clip-path: url(#productCardClipBackground);
+  padding: 2.9rem 2rem 2rem;
+
+  &__link {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &__title,
+  &__text {
+    max-width: 28.5rem;
+  }
+
+  &__title {
+    margin-bottom: 0.8rem;
+  }
+
+  &__text {
+    margin-bottom: 1.2rem;
+  }
+
+  &__img {
+    width: 37.5rem;
+    height: 25.1rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  @media (max-width: 48em) {
+    padding: 3.2rem;
+    min-height: 62.8rem;
+
+    &__title,
+    &__text {
+      max-width: 50.2rem;
+    }
+
+    &__title {
+      margin-bottom: 0.8rem;
+    }
+
+    &__text {
+      margin-bottom: 2.4rem;
+    }
+
+    &__img {
+      width: 62.2rem;
+      height: 41.6rem;
+      border-radius: 2.4rem;
+      margin-top: auto;
+    }
+  }
+}

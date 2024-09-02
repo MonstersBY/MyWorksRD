@@ -1,0 +1,356 @@
+body::before {
+  content: '';
+  position: fixed;
+  z-index: 250;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.8s ease 0s;
+  -webkit-backdrop-filter: blur(52px);
+  backdrop-filter: blur(52px);
+  background: rgba(218, 218, 218, 0.3);
+}
+.popup-show body::before {
+  opacity: 1;
+}
+.popup_show {
+  z-index: 310 !important;
+  visibility: visible !important;
+  overflow: auto;
+  pointer-events: auto;
+}
+.popup_show .popup__content {
+  visibility: visible;
+  transform: scale(1);
+}
+
+// --------------------------------------------------------------------------
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 3.2rem;
+  visibility: hidden;
+  transition: visibility 0.8s ease 0s;
+  z-index: 300;
+  ._loaded & {
+    display: block;
+  }
+  @include small-tablet {
+    padding: 2rem;
+  }
+
+  // .popup__wrapper
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+    min-height: 100%;
+    width: 100%;
+  }
+
+  // .popup__content
+
+  &__content {
+    width: 100%;
+    max-width: fit-content;
+    border-radius: 4rem;
+    visibility: hidden;
+    transform: scale(0);
+    transition: transform 0.8s ease 0s;
+    position: relative;
+    .lock & {
+      visibility: visible;
+    }
+  }
+
+  // .popup__body
+
+  &__body {
+    display: flex;
+    background-color: $white;
+    padding: 6rem;
+    min-width: 76.9rem;
+  }
+
+  // .popup__body-close-btn
+
+  &__body-close-btn {
+    position: absolute;
+    width: 3.2rem;
+    height: 3.2rem;
+    top: 2rem;
+    right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      pointer-events: none;
+    }
+
+    @include small-tablet {
+      top: 2.4rem;
+      right: 2.4rem;
+      width: 4.8rem;
+      height: 4.8rem;
+
+      & svg {
+        width: 3.2rem;
+        height: 3.2rem;
+      }
+    }
+  }
+
+  &--success {
+    .popup__wrapper {
+    }
+    .popup__content {
+    }
+    .popup__body {
+      @include small-tablet {
+        min-width: auto;
+        padding: 6.4rem 3.4rem;
+      }
+    }
+    .popup__body-close-btn {
+      @include small-tablet {
+        width: 8.8rem;
+        height: 8.8rem;
+        top: 0.6rem;
+        right: 0.6rem;
+      }
+      & svg {
+        @include small-tablet {
+          width: 5rem;
+          height: 5rem;
+        }
+      }
+    }
+    .popup__body-content-box {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+    }
+    .popup__body-content-box-title {
+      text-transform: uppercase;
+    }
+
+    .popup__body-content-box-desk {
+      @include small-tablet {
+        font-size: 3.2rem;
+      }
+    }
+
+    .popup__btn {
+      width: fit-content;
+      @include small-tablet {
+        width: 100%;
+        padding: 3.8rem;
+        font-size: 3.2rem;
+      }
+    }
+  }
+
+  &--form {
+    @include small-tablet {
+      padding: 0;
+    }
+    .popup__wrapper {
+    }
+    .popup__content {
+      @include small-tablet {
+        flex-grow: 1;
+        display: flex;
+      }
+    }
+    .popup__body {
+      @include small-tablet {
+        min-width: auto;
+        flex-grow: 1;
+        padding: 22.8rem 2rem 8rem;
+      }
+    }
+    .popup__body-close-btn {
+      @include small-tablet {
+        width: 8.8rem;
+        height: 8.8rem;
+        top: 2rem;
+        right: 2rem;
+      }
+      & svg {
+        @include small-tablet {
+          width: 5rem;
+          height: 5rem;
+        }
+      }
+    }
+    .popup__body-content-box {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+    }
+    .popup__body-content-box-title {
+      text-transform: uppercase;
+    }
+    .popup__form {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      width: 88.3rem;
+      @include small-tablet {
+        width: 100%;
+        gap: 6.4rem;
+      }
+    }
+    .popup__form-title {
+      @include small-tablet {
+        font-size: 3.2rem;
+      }
+    }
+    .popup__form-input-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 3.2rem;
+      @include small-tablet {
+        gap: 6.4rem;
+      }
+    }
+    .popup__form-input-box {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4rem;
+      @include small-tablet {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .popup__label {
+      &--textarea {
+        grid-column: 1/3;
+      }
+    }
+    .popup__form-input {
+    }
+    .popup__btn-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include small-tablet {
+        flex-direction: column;
+        gap: 4rem;
+      }
+    }
+    .popup__agreement-text {
+      width: 35.2rem;
+      color: $gray-text;
+      @include small-tablet {
+        width: 100%;
+        font-size: 3rem;
+      }
+    }
+    .popup__btn {
+      @include small-tablet {
+        width: 100%;
+        padding: 3.8rem;
+        font-size: 3.2rem;
+      }
+    }
+    // .popup__file-box
+    .popup__file-box {
+      grid-column: 1/3;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4rem;
+      @include small-tablet {
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+      }
+    }
+
+    // .popup__label-input-file
+
+    .popup__label-input-file {
+    }
+
+    // .popup__input-file
+
+    .popup__input-file {
+    }
+
+    // .popup__label-input-file-text-wrapper
+
+    .popup__label-input-file-text-wrapper {
+      color: $black;
+      @include small-tablet {
+        gap: 2rem;
+      }
+    }
+
+    // .popup__label-input-file-svg-box
+
+    .popup__label-input-file-svg-box {
+      @include small-tablet {
+        width: 6.4rem;
+        height: 6.4rem;
+      }
+    }
+
+    // .popup__label-input-file-text-box
+
+    .popup__label-input-file-text-box {
+      @include small-tablet {
+
+      }
+    }
+
+    // .popup__label-input-file-text-title
+
+    .popup__label-input-file-text-title {
+      @include small-tablet {
+        font-size: 3.6rem;
+        font-weight: 600;
+      }
+    }
+
+    // .popup__label-input-file-text-type
+
+    .popup__label-input-file-text-type {
+      @include small-tablet {
+        font-size: 2.6rem;
+        font-family: "OpenSans";
+        letter-spacing: normal;
+      }
+    }
+
+    // .popup__form-files-items
+
+    .popup__form-files-items {
+      @include small-tablet {
+        align-items: flex-start;
+      }
+    }
+    .popup__form-files-item {
+      @include small-tablet {
+       font-size: 3rem;
+      }
+    }
+    .removeBtn {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}

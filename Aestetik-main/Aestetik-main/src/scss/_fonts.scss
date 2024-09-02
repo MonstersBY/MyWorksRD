@@ -1,0 +1,32 @@
+@font-face {
+	font-family: 'IdealistSans';
+	src: url('./assets/fonts/IdealistSans.oet');
+	src: local('IdealistSans'), local('IdealistSans'),
+			url('./assets/fonts/IdealistSans.eot?#iefix') format('embedded-opentype'),
+			url('./assets/fonts/IdealistSans.woff2') format('woff2'),
+			url('./assets/fonts/IdealistSans.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'IdealistSans';
+	src: url('./assets/fonts/IdealistSans-Light.oet');
+	src: local('IdealistSans-Light'), local('IdealistSans-Light'),
+			url('./assets/fonts/IdealistSans-Light.eot?#iefix') format('embedded-opentype'),
+			url('./assets/fonts/IdealistSans-Light.woff2') format('woff2'),
+			url('./assets/fonts/IdealistSans-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'AlegreyaSans';
+	src: url('./assets/fonts/AlegreyaSans-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'AlegreyaSans';
+	src: url('./assets/fonts/AlegreyaSans-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}

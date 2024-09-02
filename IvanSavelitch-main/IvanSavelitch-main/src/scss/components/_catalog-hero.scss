@@ -1,0 +1,328 @@
+.catalog-hero {
+  // .catalog-hero__container
+
+  &__container {
+    max-width: 192rem;
+    width: 100%;
+    position: relative;
+    @include small-tablet {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    background: url(./assets/images/category-hero-bg.svg) no-repeat top/cover;
+    inset: 0;
+    // height: 101.1rem;
+    height: 100%;
+    width: 100%;
+    @include small-tablet {
+      background: url(./assets/images/catalog-hero-bg-mob.svg) no-repeat top/cover;
+      // height: 210rem;
+      height: 100%;
+    }
+  }
+
+  // .catalog-hero__inner
+
+  &__inner {
+    margin-top: -15.5rem;
+    padding: 18.5rem 0 0 0;
+    // background: url(./assets/images/catalog-hero-bg.svg) no-repeat top/cover;
+    width: 100%;
+    height: 101.1rem;
+    position: relative;
+    @include small-tablet {
+      margin-top: -30.5rem;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      padding: 40rem 0;
+      gap: 6rem;
+    }
+  }
+
+  // .catalog-hero__swiper
+
+  &__swiper {
+    @include small-tablet {
+      width: 100%;
+    }
+  }
+
+  // .catalog-hero__swiper-wrapper
+
+  &__swiper-wrapper {
+    align-items: flex-start !important;
+    padding: 0 0 2rem 0;
+  }
+
+  // .catalog-hero__swiper-slide
+
+  &__swiper-slide {
+    &.swiper-slide-prev {
+    }
+    &.swiper-slide-next {
+    }
+    width: 50vw !important;
+    &.swiper-slide-active {
+      & .catalog-hero__img-box {
+        scale: 1;
+        // opacity: 1;
+      }
+    }
+
+    @include small-tablet {
+      width: 100% !important;
+    }
+  }
+
+  // .catalog-hero__swiper-slide-inner
+
+  &__swiper-slide-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // .catalog-hero__title-box
+
+  &__title-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    @include small-tablet {
+      gap: 1.2rem;
+    }
+  }
+
+  // .catalog-hero__num
+
+  &__num {
+    @include small-tablet {
+      font-size: 4.8rem;
+    }
+  }
+
+  // .catalog-hero__title
+
+  &__title {
+    margin-top: -2.1rem;
+    @include small-tablet {
+      font-size: 16rem;
+    }
+  }
+
+  // .catalog-hero__img-box
+
+  &__img-box {
+    margin-top: -4.8rem;
+    scale: 0;
+    // opacity: 0;
+    // transition: scale 1.5s, opacity 1s 0.3s;
+    width: 43.425rem;
+    height: 44.7rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &--1 {
+      width: 43.425rem;
+      height: 44.7rem;
+    }
+    &--2 {
+      width: 53.616rem;
+      height: 41.226rem;
+    }
+    &--3 {
+      width: 47.072rem;
+      height: 43.579rem;
+    }
+
+    @include small-tablet {
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem 0;
+    &--bottom {
+      margin-top: 6rem;
+    }
+  }
+
+  // .catalog-hero__swiper-btn-box
+
+  &__swiper-btn-box {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    position: absolute;
+    z-index: 15;
+    bottom: 49.9rem;
+    right: 16.8rem;
+    @include small-tablet {
+      position: static;
+    }
+  }
+
+  // .catalog-hero__swiper-btn
+
+  &__swiper-btn {
+  }
+
+  // .catalog-hero__swiper-btn--prev
+
+  &__swiper-btn--prev {
+  }
+
+  // .catalog-hero__swiper-btn-svg-box
+
+  &__swiper-btn-svg-box {
+  }
+
+  // .catalog-hero__swiper-btn--next
+
+  &__swiper-btn--next {
+  }
+
+  &__swiper-btn--prev.swiper-button-prev,
+  &__swiper-btn--next.swiper-button-next {
+    position: static;
+  }
+
+  // .catalog-hero__text-box
+
+  &__text-box {
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+
+  // .catalog-hero__text-box--right
+
+  &__text-box--right {
+    position: absolute;
+    -webkit-mask-image: url(./assets/images/catalog-hero-mask-right.svg);
+    mask-image: url(./assets/images/catalog-hero-mask-right.svg);
+    background-color: $white;
+    color: $orange;
+    width: 28.3rem;
+    padding: 7.5rem 7.8rem 8.5rem 9rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 16.9rem;
+    right: 9.9rem;
+    z-index: 10;
+    @include small-tablet {
+      position: static;
+      width: 38.6rem;
+      padding: 4rem 10.8rem 4.4rem 12rem;
+    }
+  }
+
+  // .catalog-hero__text
+
+  &__text {
+    @include small-tablet {
+      font-size: 5.2rem;
+      line-height: 120%;
+      letter-spacing: 0.01em;
+    }
+  }
+
+  // .catalog-hero__text-box--left
+
+  &__text-box--left {
+    position: absolute;
+    -webkit-mask-image: url(./assets/images/catalog-hero-mask-left.svg);
+    mask-image: url(./assets/images/catalog-hero-mask-left.svg);
+    background-color: $orange;
+    color: $white;
+    width: 25.574rem;
+    height: 19.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 10.2rem;
+    bottom: 32.63rem;
+    z-index: 10;
+    & p:first-child {
+      position: relative;
+      transform: translateY(-50%);
+    }
+    @include small-tablet {
+      position: static;
+      width: 39.2rem;
+      height: 27.2rem;
+      -webkit-mask-image: url(./assets/images/catalog-hero-mask-left-mob.svg);
+      mask-image: url(./assets/images/catalog-hero-mask-left-mob.svg);
+      flex-shrink: 0;
+      align-self: flex-start;
+    }
+  }
+
+  // .catalog-hero__link-box
+
+  &__link-box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    text-align: center;
+    bottom: 23.3rem;
+    left: 21.2rem;
+    width: 26.2rem;
+    padding: 4.7rem 2.2rem;
+    border-radius: 100%;
+    background-color: $white70;
+    border: 0.4rem solid $white;
+    stroke: $white;
+    backdrop-filter: blur(100px);
+    z-index: 15;
+    color: $orange;
+    @include small-tablet {
+      position: static;
+      width: 38.6rem;
+      flex-shrink: 0;
+      margin-left: -10rem;
+      margin-top: 16rem;
+      padding: 5.2rem 4rem;
+    }
+  }
+
+  // .catalog-hero__link-img-box
+
+  &__link-img-box {
+    width: 3.2rem;
+    height: 3.2rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include small-tablet {
+      width: 5.2rem;
+      height: 5.2rem;
+    }
+  }
+
+  // .catalog-hero__link-text
+
+  &__link-text {
+    width: 10.7rem;
+    @include small-tablet {
+      font-size: 4.8rem;
+      width: 15.6rem;
+      text-align: center;
+    }
+  }
+}

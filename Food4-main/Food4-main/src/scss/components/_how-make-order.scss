@@ -1,0 +1,243 @@
+.how-make-order {
+  // .how-make-order__inner
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    @include small-tablet {
+      gap: 8rem;
+    }
+  }
+
+  // .how-make-order__content-box
+
+  &__content-box {
+    display: flex;
+    gap: 16.4rem;
+    @include small-tablet {
+      flex-direction: column;
+      gap: 8rem;
+    }
+  }
+
+  // .how-make-order__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    width: 89.7rem;
+    @include small-tablet {
+      width: 100%;
+    }
+  }
+
+  // .how-make-order__item
+
+  &__item {
+    padding: 4.6rem 0;
+    border-top: 1px solid $white;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    @include small-tablet {
+      padding: 6rem 0 12.8rem;
+      position: relative;
+    }
+  }
+
+  // .how-make-order__item-num
+
+  &__item-num {
+    margin-right: 19rem;
+    width: 8rem;
+    @include small-tablet {
+      margin-right: 7rem;
+      width: 7rem;
+      font-size: 7.2rem;
+    }
+  }
+
+  // .how-make-order__item-desk-box
+
+  &__item-desk-box {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    @include small-tablet {
+      gap: 2rem;
+    }
+  }
+
+  // .how-make-order__item-desk-svg-wrapper
+
+  &__item-desk-svg-wrapper {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 1px solid $white;
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  // .how-make-order__item-desk-svg-box
+
+  &__item-desk-svg-box {
+    width: 2.4rem;
+    height: 2.4rem;
+
+    & svg {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+    @include small-tablet {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+
+  // .how-make-order__item-desk-text
+
+  &__item-desk-text {
+    width: 25rem;
+    @include small-tablet {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      flex-grow: 1;
+    }
+  }
+
+  // .how-make-order__item-desk-link
+
+  &__item-desk-link {
+    flex-grow: 1;
+    justify-content: flex-end;
+    text-align: right;
+    @include small-tablet {
+      position: absolute;
+      right: 3.2rem;
+      bottom: 6rem;
+    }
+  }
+
+  // .how-make-order__info-box
+
+  &__info-box {
+    width: 49.9rem;
+    position: relative;
+    @include small-tablet {
+      width: 100%;
+    }
+  }
+
+  // .how-make-order__title-wrapper
+
+  &__title-wrapper {
+    position: relative;
+    z-index: 2;
+  }
+
+  // .how-make-order__title-box
+
+  &__title-box {
+    position: absolute;
+    top: 6.4rem;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  // .how-make-order__title-box--black
+
+  &__title-box--black {
+    color: $black;
+    left: 0;
+    width: 10.1rem;
+    @include small-tablet {
+      width: 100%;
+      left: 3.2rem;
+    }
+  }
+
+  // .how-make-order__title-box--blue
+
+  &__title-box--blue {
+    color: $Blue;
+    left: 10.1rem;
+    @include small-tablet {
+      display: none;
+    }
+  }
+  &__title,
+  &__title-shadow {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  // .how-make-order__title
+
+  &__title {
+  }
+  // .how-make-order__title-shadow
+
+  &__title-shadow {
+    left: -10.1rem;
+  }
+
+  // .how-make-order__text-box
+
+  &__text-box {
+    border: 1px solid $white;
+    border-radius: 7rem;
+    width: 39.8rem;
+    -webkit-backdrop-filter: blur(36px);
+    backdrop-filter: blur(36px);
+    background: rgba(255, 255, 255, 0.3);
+    padding: 23.9rem 4.6rem 4.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+    margin-left: 10.1rem;
+    position: relative;
+    overflow: hidden;
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0rem;
+      right: -2rem;
+      background: url(./assets/images/how-order-before.webp) no-repeat top/cover;
+      transform: rotate(-25deg);
+      width: 18.3rem;
+      height: 18.3rem;
+      @include small-tablet {
+        width: 30.5rem;
+        height: 30.5rem;
+        right: -8rem;
+        top: -8rem;
+      }
+    }
+    @include small-tablet {
+      width: 100%;
+      margin-left: 0;
+      padding: 25.4rem 4rem 4rem;
+    }
+  }
+
+  // .how-make-order__subtitle
+
+  &__subtitle {
+  }
+
+  // .how-make-order__contact-button
+
+  &__contact-button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}

@@ -1,0 +1,121 @@
+.category-hero {
+  // .category-hero__container
+
+  &__container {
+    max-width: 192rem;
+    width: 100%;
+    @include small-tablet {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  // .category-hero__inner
+
+  &__inner {
+    margin-top: -15.5rem;
+    padding: 18.5rem 8.8rem 0;
+    background: url(./assets/images/category-hero-bg.svg) no-repeat top/cover;
+    width: 100%;
+    height: 57.9rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    @include small-tablet {
+      margin-top: -30.5rem;
+      padding: 40rem 0;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      gap: 8rem;
+      background: url(./assets/images/category-hero-bg-mob.svg) no-repeat top/cover;
+    }
+  }
+
+  &__nav-box {
+    flex-basis: 25%;
+    @include small-tablet {
+      flex-basis: 100%;
+    }
+  }
+
+  // .category-hero__title-box
+  &__title-wrapper {
+    flex-basis: 50%;
+    margin-top: -2.1rem;
+    display: flex;
+    justify-content: center;
+  }
+  &__title-box {
+    text-align: center;
+    width: fit-content;
+    position: relative;
+    height: fit-content;
+  }
+
+  // .category-hero__title
+
+  &__title {
+    @include small-tablet {
+      font-size: 16rem;
+    }
+  }
+
+  // .category-hero__title-img-wrapper
+
+  &__title-img-wrapper {
+    position: absolute;
+    border: 0.4rem solid $white;
+    border-radius: 7rem;
+    width: 10.4rem;
+    height: 10.4rem;
+    background-color: $orange;
+    right: 8.8rem;
+    bottom: -5.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include small-tablet {
+      width: 14rem;
+      height: 14rem;
+      right: 4.8rem;
+      bottom: -10.4rem;
+    }
+  }
+
+  // .category-hero__title-img-box
+
+  &__title-img-box {
+    width: 5rem;
+    height: 5.2rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .category-hero__text
+
+  &__text-box {
+    flex-basis: 25%;
+    display: flex;
+    justify-content: flex-end;
+    @include small-tablet {
+      flex-basis: 100%;
+      justify-content: center;
+    }
+  }
+  &__text {
+    width: 22rem;
+    text-align: right;
+    line-height: 130%;
+    @include small-tablet {
+      width: 51.6rem;
+      text-align: center;
+      font-size: 3.2rem;
+      letter-spacing: 0.02em;
+      margin-top: 6rem;
+    }
+  }
+}

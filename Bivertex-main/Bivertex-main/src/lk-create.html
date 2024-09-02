@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Личный кабинет - создать заявку</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <include src="./components/_header.html"></include>
+      </header>
+      <include src="./components/_popup.html"></include>
+      <main>
+        <include src="./components/_arrow-top.html"></include>
+        <section class="lk">
+          <div class="container">
+            <div class="lk__inner">
+              <div class="lk__title-box">
+                <p class="lk__title tl1">Личный кабинет</p>
+                <div class="lk__title-svg-box mobile">
+                  <svg
+                    width="32"
+                    height="33"
+                    viewBox="0 0 32 33"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 24.5L20 16.5L12 8.5"
+                      stroke="#012028"
+                      stroke-width="2"
+                      stroke-linecap="square"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="lk__content-wrapper">
+                <div class="lk__nav-wrapper">
+                  <include src="./components/_lk-nav.html"></include>
+                </div>
+                <div class="lk__content-box">
+                  <p class="lk__content-title mobile">Создать заявку</p>
+                  <include src="./components/_lk-create.html"></include>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <include src="./components/_footer.html"></include>
+    </div>
+  </body>
+</html>

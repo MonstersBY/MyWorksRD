@@ -1,0 +1,424 @@
+//Font
+@font-face {
+    font-family: "Gilroy";
+    src: url(./../assets/fonts/Gilroy-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(./../assets/fonts/Gilroy-Medium.woff);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(./../assets/fonts/Gilroy-Semibold.woff);
+    font-weight: 600;
+    font-style: normal;
+}
+
+//	reset / base styles
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Gilroy", sans-serif;
+    // font-weight: normal;
+    font-size: 1.6rem;
+    line-height: normal;
+    list-style-type: none;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    &.lock {
+        overflow: hidden;
+        touch-action: none;
+    }
+
+    &.color_yd{
+        background-color: #1D1D1D;
+    }
+
+    &.color_pl{
+        background-color: #fff;
+    }
+
+    &.color_pd{
+        background-color: #101010;
+    }
+}
+
+section {
+    margin-top: 8.9rem;
+    margin-left: 33rem;
+}
+
+img {
+    object-fit: cover;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: normal;
+    letter-spacing: 0.016rem;
+}
+
+body .container--sm {
+    --containerSmBg: #f4f4f4;
+        --containerSmBorder: none;
+}
+
+body.color_yd .container--sm {
+    --containerSmBg: #101010;
+        --containerSmBorder: none;
+}
+
+body.color_pl .container--sm {
+    --containerSmBg: #F1F4F6;
+        --containerSmBorder: none;
+}
+
+body.color_pd .container--sm {
+    --containerSmBg: #101010;
+    --containerSmBorder: 0.1rem solid rgba(255, 255, 255, 0.20);
+}
+
+.container--sm {
+    background-color: var(--containerSmBg);
+    border-radius: 1.6rem;
+    padding: 2rem;
+    border: var(--containerSmBorder);
+}
+
+//buttons
+body .btn {
+    --btnBg: #f9ec00;
+    --btnText: #101010;
+}
+
+body.color_yd .btn {
+    --btnBg: #f9ec00;
+    --btnText: #101010;
+}
+
+body.color_pl .btn {
+    --btnBg: #D01181;
+    --btnText: #FFFFFF;
+}
+
+body.color_pd .btn {
+    --btnBg: #D01181;
+    --btnText: #FFFFFF;
+}
+
+button:disabled{
+    background-color: #FFFFFF;
+    color: rgba(16, 16, 16, 0.40);
+}
+
+.btn {
+    border-radius: 3.2rem;
+    padding: 1.6rem 14.4rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: normal;
+    text-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.016rem;
+    background-color: var(--btnBg);
+    color: var(--btnText)
+}
+
+.btn__login{
+    background-color: #FFFFFF;
+    color: #101010;
+    width: 33.6rem;
+}
+
+.btn__repeat-request{
+    width: 31.9rem;
+}
+
+.btn__save-changes {
+    margin-top: auto;
+    width: 37.2rem;
+}
+
+.btn__share-pass{
+    margin-top: 1.6rem;
+    width: 100%;
+}
+
+.btn__share-pass-final{
+    width: 37.2rem;
+}
+
+.btn__go-back{
+    width: 34.2rem;
+}
+
+.btn__go-back--circle{
+    border-radius: 100%;
+    width: 4.2rem;
+    height: 4.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F4F4;
+
+    svg{
+        width: 1rem;
+        height: 1.8rem;
+    }
+}
+
+.btn__show-all {
+    font-size: 1.6rem;
+    letter-spacing: 0.016rem;
+}
+
+body .btn__go-to {
+    --btnGoBackBg: #101010;
+    --btnGoBackColor: #ffffff;
+}
+
+body.color_yd .btn__go-to {
+    --btnGoBackBg: #f9ec00;
+    --btnGoBackColor: #292929;
+}
+
+body.color_pl .btn__go-to {
+    --btnGoBackBg: #101010;
+    --btnGoBackColor: #FFFFFF;
+}
+
+body.color_pd .btn__go-to {
+    --btnGoBackBg: #D01181;
+    --btnGoBackColor: #FFFFFF;
+}
+
+.btn__go-to{
+    width: 4.2rem;
+    height: 4.2rem;
+    background-color: var(--btnGoBackBg);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg{
+        width: 1rem;
+        height: 1.8rem;
+
+        path{
+            stroke: var(--btnGoBackColor)
+        }
+    }
+}
+
+.btn__cancel{
+    background-color: #D7D7D7;
+}
+
+.btn__send-news{
+    width: 34.2rem;
+}
+
+.switcher__content {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+
+//radio btn
+body .radio-wrapper {
+    --radioBg: #101010;
+    --checkIco: url("./../assets/images/common/checked-ico.svg");
+}
+
+body.color_yd .radio-wrapper {
+    --radioBg: #f9ec00;
+    --checkIco: url("./../assets/images/common/checked-ico-black.svg");
+}
+
+body.color_pl .radio-wrapper {
+    --radioBg: #101010;
+    --checkIco: url("./../assets/images/common/checked-ico.svg");
+}
+
+body.color_pd .radio-wrapper {
+    --radioBg: #D01181;
+    --checkIco: url("./../assets/images/common/checked-ico-black.svg");
+}
+
+.radio-wrapper {
+    input[type="radio"] {
+        display: none;
+    }
+
+    .radio-icon {
+        display: block;
+        width: 1.8rem;
+        height: 1.8rem;
+        border: 0.1rem solid var(--radioBg);
+        border-radius: 100%;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    input[type="radio"]:checked ~ .radio-icon {
+        background-color: var(--radioBg);
+        border: none;
+        background-image: var(--checkIco);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1rem 0.7rem;
+    }
+}
+
+//checkbox
+body .checkbox-wrapper {
+    --checkboxBg: #101010;
+    --checkIco: url("./../assets/images/common/checked-ico.svg");
+}
+
+body.color_yd .checkbox-wrapper {
+    --checkboxBg: #f9ec00;
+    --checkIco: url("./../assets/images/common/checked-ico-black.svg");
+}
+
+body.color_pl .checkbox-wrapper {
+    --checkboxBg: #101010;
+    --checkIco: url("./../assets/images/common/checked-ico.svg");
+}
+
+body.color_pd .checkbox-wrapper {
+    --checkboxBg: #D01181;
+    --checkIco: url("./../assets/images/common/checked-ico-black.svg");
+}
+
+body .radio-wrapper {
+    --checkboxBg: #101010;
+    --checkIco: url("./../assets/images/common/checked-ico.svg");
+}
+
+body.color_yd .radio-wrapper {
+    --checkboxBg: #f9ec00;
+    --checkIco: url("./../assets/images/common/checked-ico-black.svg");
+}
+
+body.color_pl .radio-wrapper {
+    --checkboxBg: #101010;
+    --checkIco: url("./../assets/images/common/checked-ico.svg");
+}
+
+body.color_pd .radio-wrapper {
+    --checkboxBg: #D01181;
+    --checkIco: url("./../assets/images/common/checked-ico-black.svg");
+}
+
+.checkbox-wrapper {
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    .checkbox-icon {
+        display: block;
+        width: 1.8rem;
+        height: 1.8rem;
+        border: 0.1rem solid var(--checkboxBg);
+        border-radius: 0.4rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    input[type="checkbox"]:checked ~ .checkbox-icon {
+        background-color: var(--checkboxBg);
+        border: none;
+        background-image: var(--checkIco);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1.4rem 1rem;
+    }
+}
+.radio-wrapper {
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    .radio-icon {
+        display: block;
+        width: 1.8rem;
+        height: 1.8rem;
+        border: 0.1rem solid var(--checkboxBg);
+        border-radius: 50%;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    input[type="checkbox"]:checked ~ .radio-icon {
+        background-color: var(--checkboxBg);
+        border: none;
+        background-image: var(--checkIco);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1rem 0.7rem;
+    }
+
+
+}
+
+//star 
+
+body .star-ico{
+    --starStroke: #D7D7D7;
+    --starFill: #F9EC00;
+}
+
+body.color_yd .star-ico{
+    --starStroke: #ffffff;
+    --starFill: #F9EC00;
+}
+
+body.color_pl .star-ico{
+    --starStroke: #D7D7D7;
+    --starFill: #D01181;
+}
+
+body.color_pd .star-ico{
+    --starStroke: #a1acb9;
+    --starFill: #D01181;
+}
+
+.star-ico{
+    width: 2.4rem;
+    height: 2.4rem;
+
+   & path{
+        stroke: var(--starStroke);
+        fill: none;
+    }
+}
+
+.star-ico.filled{
+    & path{
+        fill: var(--starFill);
+        stroke: transparent
+    }
+}

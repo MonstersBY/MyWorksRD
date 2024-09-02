@@ -1,0 +1,348 @@
+.about-product-hero {
+  // .about-product-hero__inner
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    @include small-tablet {
+      gap: 5.6rem;
+    }
+  }
+
+  // .about-product-hero__content-wrapper
+
+  &__content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 11.4rem;
+    @include small-tablet {
+      flex-direction: column-reverse;
+      gap: 5.6rem;
+    }
+  }
+
+  // .about-product-hero__content-box
+
+  &__content-box {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    @include small-tablet {
+    }
+  }
+
+  // .about-product-hero__title-box
+
+  &__title-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    @include small-tablet {
+      gap: 2.4rem;
+    }
+  }
+
+  // .about-product-hero__title
+
+  &__title {
+  }
+
+  // .about-product-hero__desc
+
+  &__desc {
+    @include small-tablet {
+      font-size: 2.8rem;
+    }
+  }
+
+  // .about-product-hero__btn
+
+  &__btn {
+    width: fit-content;
+  }
+
+  // .about-product-hero__img-box
+
+  &__img-box {
+    width: 85rem;
+    height: 56.8rem;
+    border: 0.13rem solid $light-grey;
+    border-radius: 2rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include small-tablet {
+      width: 68.6rem;
+      height: 46rem;
+      border: 0.2rem solid $light-grey;
+      border-radius: 4rem;
+    }
+  }
+
+  // .about-product-hero__swiper-wrapper
+
+  &__swiper-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 17rem;
+    @include small-tablet {
+      flex-direction: column;
+      gap: 5.6rem;
+    }
+  }
+
+  // .about-product-hero__info-swiper-box
+
+  &__info-swiper-box {
+    width: 85rem;
+    @include small-tablet {
+      width: 68.6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 3.2rem;
+    }
+  }
+
+  // .about-product-hero__info-swiper
+
+  &__info-swiper {
+    width: 100%;
+  }
+
+  // .about-product-hero__info-swiper-wrapper
+
+  &__info-swiper-wrapper {
+  }
+
+  // .about-product-hero__info-swiper-slide
+
+  &__info-swiper-slide {
+  }
+
+  // .about-product-hero__info-swiper-slide-inner
+
+  &__info-swiper-slide-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 6.1rem;
+    background-color: $white;
+    border: 0.13rem solid $light-grey;
+    border-radius: 2rem;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    @include small-tablet {
+      border-radius: 4rem;
+      border: 0.2rem solid $light-grey;
+      padding: 3.2rem;
+      gap: 6.4rem;
+    }
+  }
+
+  // .about-product-hero__info-swiper-slide-header-box
+
+  &__info-swiper-slide-header-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    @include small-tablet {
+      gap: 2rem;
+    }
+  }
+
+  // .about-product-hero__info-swiper-slide-category-box
+
+  &__info-swiper-slide-category-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: $green;
+    padding: 0.4rem 1.2rem 0.4rem 0.8rem;
+    border-radius: 2rem;
+    color: $white;
+    @include small-tablet {
+      gap: 2rem;
+      padding: 0.8rem 2.4rem 0.8rem 1.6rem;
+      border-radius: 4rem;
+    }
+  }
+
+  // .about-product-hero__info-swiper-slide-svg-box
+
+  &__info-swiper-slide-svg-box {
+    width: 3.2rem;
+    height: 3.2rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include small-tablet {
+      width: 4.8rem;
+      height: 4.8rem;
+    }
+  }
+
+  // .about-product-hero__info-swiper-slide-category
+
+  &__info-swiper-slide-category {
+  }
+
+  // .about-product-hero__info-swiper-slide-link
+
+  &__info-swiper-slide-link {
+    width: 3.2rem;
+    height: 3.2rem;
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include small-tablet {
+      width: 6.4rem;
+      height: 6.4rem;
+    }
+  }
+
+  // .about-product-hero__info-swiper-slide-content-box
+
+  &__info-swiper-slide-content-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  // .about-product-hero__info-swiper-slide-content-title
+
+  &__info-swiper-slide-content-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 1; // количество строк
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  // .about-product-hero__info-swiper-slide-content-desc
+
+  &__info-swiper-slide-content-desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; // количество строк
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  // .about-product-hero__info-swiper-slide-img-wrapper
+
+  &__info-swiper-slide-img-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  // .about-product-hero__info-swiper-slide-img-box
+
+  &__info-swiper-slide-img-box {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &:not(:first-child) {
+      margin-left: -0.8rem;
+    }
+    @include small-tablet {
+      width: 6.4rem;
+      height: 6.4rem;
+      &:not(:first-child) {
+        margin-left: -1.6rem;
+      }
+    }
+  }
+
+  // .about-product-hero__info-swiper-pagination
+
+  &__info-swiper-pagination {
+    position: static !important;
+    & .swiper-pagination-bullet {
+      background-color: #d9d9d9;
+      opacity: 1;
+    }
+    & .swiper-pagination-bullet-active {
+      background-color: $green;
+    }
+  }
+
+  // .about-product-hero__num-swiper-box
+
+  &__num-swiper-box {
+    width: 63rem;
+    @include small-tablet {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 3.2rem;
+      margin-right: -3.2rem;
+      position: relative;
+    }
+  }
+
+  // .about-product-hero__num-swiper
+
+  &__num-swiper {
+    width: 100%;
+  }
+
+  // .about-product-hero__num-swiper-wrapper
+
+  &__num-swiper-wrapper {
+  }
+
+  // .about-product-hero__num-swiper-slide
+
+  &__num-swiper-slide {
+  }
+
+  // .about-product-hero__num-swiper-slide-inner
+
+  &__num-swiper-slide-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    @include small-tablet {
+      gap: 2.4rem;
+    }
+  }
+
+  // .about-product-hero__num-swiper-slide-num
+
+  &__num-swiper-slide-num {
+  }
+
+  // .about-product-hero__num-swiper-slide-text
+
+  &__num-swiper-slide-text {
+  }
+
+  // .about-product-hero__num-swiper-pagination
+
+  &__num-swiper-pagination {
+    position: static !important;
+    & .swiper-pagination-bullet {
+      background-color: #d9d9d9;
+      opacity: 1;
+    }
+    & .swiper-pagination-bullet-active {
+      background-color: $green;
+    }
+  }
+}

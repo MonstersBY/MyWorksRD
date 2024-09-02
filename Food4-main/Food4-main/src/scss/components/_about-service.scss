@@ -1,0 +1,150 @@
+.about-service {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    width: 49.8rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.2rem;
+  }
+
+  &__item {
+    padding: 4.6rem;
+    border: 0.1rem solid $white;
+    border-radius: 7rem;
+
+    &-title {
+      position: relative;
+      margin-bottom: 1.2rem;
+      padding-left: 1.8rem;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.95rem;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background-color: $Blue;
+      }
+    }
+  }
+
+  &__descr {
+    width: calc(100% - 53.1rem);
+
+    &-toggle {
+      -moz-column-gap: 1.8rem;
+      column-gap: 1.8rem;
+      align-items: center;
+      color: $Blue;
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 2rem;
+
+      div {
+        &:last-child {
+          width: 3.8rem;
+          height: 2.8rem;
+
+          svg {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      &.mobile {
+        display: none;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 3.2rem;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__column {
+    width: 49.8rem;
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  @media (max-width: 48em) {
+    &__container {
+      flex-direction: column-reverse;
+      row-gap: 5.6rem;
+    }
+
+    &__descr {
+      width: auto;
+    }
+
+    &__title {
+      margin-bottom: 4rem;
+    }
+
+    &__row {
+      flex-direction: column;
+      row-gap: 2rem;
+      max-height: 47.6rem;
+      overflow: hidden;
+      margin-bottom: 1.6rem;
+      transition: 0.2s ease-in-out;
+    }
+
+    &__column {
+      width: auto;
+    }
+
+    &__descr {
+      &-toggle {
+        &.mobile {
+          display: flex;
+        }
+      }
+    }
+
+    &__list {
+      width: auto;
+    }
+
+    &__item {
+      &-title {
+        padding-left: 4.4rem;
+
+        &::before {
+          width: 2rem;
+          height: 2rem;
+          top: 1.4rem;
+        }
+      }
+    }
+
+    .about-service__descr-toggle {
+      font-weight: 700;
+      font-size: 1.6rem * 2;
+      div:last-child {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+      }
+    }
+  }
+}

@@ -1,0 +1,230 @@
+.other-services-swiper {
+  // .other-services-swiper__inner
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    @include small-tablet {
+      gap: 8rem;
+    }
+  }
+
+  // .other-services-swiper__title
+
+  &__title {
+    align-self: center;
+    text-align: center;
+    @include small-tablet {
+      align-self: flex-start;
+      text-align: left;
+    }
+  }
+
+  // .other-services-swiper__swiper
+
+  &__swiper {
+    width: 100%;
+  }
+
+  // .other-services-swiper__swiper-wrapper
+
+  &__swiper-wrapper {
+  }
+
+  // .other-services-swiper__swiper-slide
+
+  &__swiper-slide {
+  }
+
+  // .other-services-swiper__swiper-slide-inner
+
+  &__swiper-slide-inner {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 4.6rem 4.6rem 3.9rem;
+    border-radius: 7rem;
+    border: 1px solid $white;
+    -webkit-backdrop-filter: blur(36px);
+            backdrop-filter: blur(36px);
+    background: rgba(255, 255, 255, 0.3);
+
+    &::before {
+      content: '';
+      position: absolute;
+      // inset: -0.4rem;
+      inset: 0.1rem;
+      transition: inset 0.3s, opacity 0.3s, transform 0.3s;
+      border-radius: 7.4rem;
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      z-index: -1;
+      opacity: 0;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      // inset: -0.8rem;
+      inset: 0.1rem;
+      transition: inset 0.5s, opacity 0.5s, transform 0.3s;
+      border-radius: 7.8rem;
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      z-index: -1;
+      opacity: 0;
+    }
+
+    &:hover {
+      &::before {
+          inset: -0.6rem;
+        // transform: scale(1.02);
+        opacity: 1;
+      }
+      &::after {
+          inset: -1rem;
+        // transform: scale(1.04);
+        opacity: 1;
+      }
+    }
+
+    @include small-tablet {
+      margin: 0;
+      padding: 3.2rem 3.2rem 5.2rem;
+      border-radius: 7.2rem;
+      &:hover {
+        &::before {
+          // transform: scale(1);
+          inset: 0;
+          opacity: 0;
+        }
+        &::after {
+          // transform: scale(1);
+          inset: 0;
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  // .other-services-swiper__swiper-slide-img-box
+
+  &__swiper-slide-img-box {
+    border-radius: 7rem;
+    // width: 38.7rem;
+    width: 100%;
+    height: 36.6rem;
+    overflow: hidden;
+    & img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+    }
+    @include small-tablet {
+      width: 62.2rem;
+      height: 54.4rem;
+      border-radius: 6.4rem;
+    }
+  }
+
+  // .other-services-swiper__swiper-slide-text-box
+
+  &__swiper-slide-text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    @include small-tablet {
+      gap: 1.6rem;
+    }
+  }
+
+  // .other-services-swiper__swiper-slide-title
+
+  &__swiper-slide-title {
+    padding-left: 1.8rem;
+    position: relative;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; // количество строк
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: $Blue;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    @include small-tablet {
+      padding-left: 3.6rem;
+      &::before {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+
+  // .other-services-swiper__swiper-slide-desk
+
+  &__swiper-slide-desk {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; // количество строк
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  // .other-services-swiper__swiper-slide-svg-box
+
+  &__swiper-slide-svg-box {
+    align-self: flex-end;
+    width: 2.2rem;
+    height: 1.4rem;
+    & svg {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+    }
+    @include small-tablet {
+      width: 4.4rem;
+      height: 2.8rem;
+    }
+  }
+
+  // .other-services-swiper__btn-box
+
+  &__btn-box {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2.6rem;
+    @include small-tablet {
+      margin-top: 6.4rem;
+      gap: 2.4rem;
+    }
+  }
+
+  // .other-services-swiper__btn
+
+  &__btn {
+  }
+
+  // .other-services-swiper__btn--prev
+
+  &__btn--prev {
+  }
+
+  // .other-services-swiper__btn--next
+
+  &__btn--next {
+  }
+}

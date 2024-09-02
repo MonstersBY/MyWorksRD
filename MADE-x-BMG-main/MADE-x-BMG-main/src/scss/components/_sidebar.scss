@@ -1,0 +1,104 @@
+body .sidebar {
+    --sidebarBg: #101010;
+    --textColor: #fff;
+    --accentColor: #f9ec00;
+    --borderColor: #292929;
+    --borderRightColor: transparent;
+}
+body.color_yd .sidebar {
+    --sidebarBg: #101010;
+    --textColor: #fff;
+    --accentColor: #f9ec00;
+    --borderColor: #292929;
+    --borderRightColor: transparent;
+}
+
+body.color_pl .sidebar {
+    --sidebarBg: #101010;
+    --textColor: #fff;
+    --accentColor: #D01181;
+    --borderColor: transparent;
+    --borderRightColor: transparent;
+}
+
+body.color_pd .sidebar {
+    --sidebarBg: #101010;
+    --textColor: #fff;
+    --accentColor: #D01181;
+    --borderColor: transparent;
+    --borderRightColor: rgba(255, 255, 255, 0.20);
+}
+
+body.color_pl .sidebar {
+    background-image: none;
+}
+body.color_pd .sidebar {
+    background-image: none;
+}
+
+.sidebar {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 33rem;
+
+    background-color: var(--sidebarBg);
+    padding: 3.1rem 0;
+    background-image: url("./../../assets/images/common/sidebar-deco.svg");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 33rem;
+
+    &__logo {
+        padding: 0 4rem;
+        padding-bottom: 2.9rem;
+        border-bottom: 0.1rem solid var(--borderColor);
+        img {
+            width: 17.5rem;
+            height: 2.9rem;
+        }
+    }
+
+    &__nav {
+        padding: 0 4rem;
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+        height: 100%;
+        border-right: 0.1rem solid var(--borderRightColor);
+
+        span {
+            color: var(--textColor);
+            font-size: 2.4rem;
+            line-height: 100%;
+        }
+
+        svg {
+            width: 3.2rem;
+            height: 3.2rem;
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            gap: 1.6rem;
+
+            &--active {
+                span {
+                    color: var(--accentColor);
+                }
+
+                svg {
+                    path:first-child {
+                        fill: var(--accentColor);
+                    }
+                    path {
+                        // stroke: var(--accentColor);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,99 @@
+.our-works {
+    color: $main;
+    background: $LightGreen;
+
+    .swiper-pagination-fraction {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        gap: 8rem;
+    }
+
+    &__head {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include small-tablet {
+            flex-direction: column-reverse;
+            gap: 2rem;
+            align-items: center;
+        }
+    }
+
+    &__subtitle {
+        @include small-tablet {
+            width: 100% !important;
+        }
+    }
+
+    &__subtitle,
+    &__slider-nav {
+        width: 30.9rem;
+    }
+
+    &__slider {
+        width: 100%;
+
+        @include small-tablet {
+            padding-bottom: 6.5rem * 2 !important;
+        }
+
+        &-nav {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 2rem;
+
+            @include small-tablet {
+                z-index: 4;
+                width: 34.3 * 2rem;
+                justify-content: space-between;
+                position: absolute;
+                bottom: 0;
+                right: auto;
+                left: auto;
+            }
+        }
+
+        &-card {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            @include small-tablet {
+                gap: 1.2rem * 2;
+            }
+
+            &-img {
+                -webkit-mask-image: url(./assets/images/picture/our-works-img2.webp);
+                mask-image: url(./assets/images/picture/our-works-img2.webp);
+                -webkit-mask-repeat: no-repeat;
+                mask-repeat: no-repeat;
+                -webkit-mask-size: contain;
+                mask-size: contain;
+                height: 44.6rem;
+                position: relative;
+
+                @include small-tablet {
+                    height: 31.1rem * 2;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

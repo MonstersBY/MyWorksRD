@@ -1,0 +1,131 @@
+.dealer {
+    background-color: #121820;
+    color: #fff;
+    padding-top: 15rem;
+    padding-bottom: 14.2rem;
+}
+.dealer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.dealer-left {
+    width: 54.4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.dealer-left__title {
+    margin-bottom: 4rem;
+}
+.dealer-left__texts {
+    margin-bottom: auto;
+}
+.dealer-left__italic {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+}
+.dealer-right {
+    width: 84rem;
+}
+/* .dealer-right-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 6rem;
+  } */
+.dealer-right__slide {
+    width: 33.7rem;
+}
+.dealer-right__img {
+    width: 33.7rem;
+    height: 47.1rem;
+}
+.dealer-right__img img {
+    width: 100%;
+    height: 100%;
+}
+.dealer-right__swiper {
+    width: 84rem;
+    padding: 0 3.3rem;
+}
+.dealer-right__panel {
+    margin-top: 4rem;
+}
+
+@media (max-width: 48em) {
+    .dealer {
+        background-color: #121820;
+        color: #fff;
+        padding-top: 12rem;
+        padding-bottom: 10rem;
+        margin-bottom: 10.6rem;
+    }
+    .dealer .container {
+        display: block;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    .dealer-left {
+        width: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-bottom: 6.4rem;
+    }
+    .dealer-left__title {
+        width: auto;
+        margin-bottom: 2.4rem;
+        font-family: 'Gilroy';
+        font-weight: 700;
+    }
+    .dealer-left__texts {
+        margin-bottom: 6.4rem;
+    }
+    .dealer-right {
+        /* display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      gap: 4rem;
+      width: 75rem;
+      margin-left: -2rem;
+      overflow: auto;
+      padding: 2rem; */
+        width: fit-content;
+    }
+    .dealer-right__swiper {
+        width: 71rem;
+        padding: 0;
+    }
+    .dealer-right__slide {
+        width: 59rem;
+        height: 83rem;
+    }
+    .dealer-right__img {
+        width: 59rem;
+        height: 83rem;
+    }
+    .dealer-right__img img {
+        width: 100%;
+        height: 100%;
+    }
+    .dealer-right__panel .dealer-swiper__number-all::before {
+        width: 13.8rem;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Главная</title>
+	</head>
+	<body>
+		<include src="./components/header.html" data-text='{"header": {"class": "anim"}}'></include>
+		<include src="./components/modal.html"></include>
+		<main>
+			<section class="events">
+				<div class="events__container container">
+					<div class="events__title">новости и события</div>
+					<div class="events__text text-18-r">Свежие события от производителя авторской мебели MaxMalevich. Только актуальные, интересные новости и предложения</div>
+				</div>
+				<div class="events__slider">
+					<div class="events__swiper">
+						<div class="swiper-wrapper">
+							<a class="events__swiper-slide swiper-slide">
+								<div class="events__swiper-slide--img">
+									<img src="./assets/images/pages/news/events-slide-img-2.png" alt="" />
+								</div>
+								<div class="events__swiper-slide--text text-20-r">Акции</div>
+							</a>
+							<a class="events__swiper-slide swiper-slide">
+								<div class="events__swiper-slide--img">
+									<img src="./assets/images/pages/news/events-slide-img-2.png" alt="" />
+								</div>
+								<div class="events__swiper-slide--text text-20-r">Почему мы?</div>
+							</a>
+							<a class="events__swiper-slide swiper-slide">
+								<div class="events__swiper-slide--img">
+									<img src="./assets/images/pages/news/events-slide-img-3.png" alt="" />
+								</div>
+								<div class="events__swiper-slide--text text-20-r">Уникальные разработки</div>
+							</a>
+							<a class="events__swiper-slide swiper-slide">
+								<div class="events__swiper-slide--img">
+									<img src="./assets/images/pages/news/events-slide-img-4.png" alt="" />
+								</div>
+								<div class="events__swiper-slide--text text-20-r">Выставки и мероприятия</div>
+							</a>
+							<a class="events__swiper-slide swiper-slide">
+								<div class="events__swiper-slide--img">
+									<img src="./assets/images/pages/news/events-slide-img-5.png" alt="" />
+								</div>
+								<div class="events__swiper-slide--text text-20-r">Дизайнерам и архитекторам</div>
+							</a>
+							<a class="events__swiper-slide swiper-slide">
+								<div class="events__swiper-slide--img">
+									<img src="./assets/images/pages/news/events-slide-img-6.png" alt="" />
+								</div>
+								<div class="events__swiper-slide--text text-20-r">Рум-тур</div>
+							</a>
+							<a class="events__swiper-slide swiper-slide">
+								<div class="events__swiper-slide--img">
+									<img src="./assets/images/pages/news/events-slide-img-6.png" alt="" />
+								</div>
+								<div class="events__swiper-slide--text text-20-r">Процесс монтажа</div>
+							</a>
+						</div>
+					</div>
+					<div class="events__swiper-pagination"></div>
+					<include src="./components/ui/navigation.html" data-text='{".navigation-prev": {"class": "events__swiper-prev"}, ".navigation-next": {"class": "events__swiper-next"}}'></include>
+				</div>
+				<div class="events__background">
+					<img src="./assets/images/pages/news/events-background.png" alt="" />
+				</div>
+			</section>
+
+			<include src="./components/news-list.html"></include>
+
+			<include src="./components/subscribe.html"></include>
+
+			<include src="./components/feedback.html"></include>
+		</main>
+		<include src="./components/ui/btn_top.html"></include>
+		<include src="./components/footer.html"></include>
+	</body>
+</html>

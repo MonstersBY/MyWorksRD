@@ -1,0 +1,110 @@
+.tl1 {
+  font-family: 'AustinCyr', sans-serif;
+  font-size: 12rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  @media (max-width: 48em) {
+    font-size: 10rem;
+  }
+}
+.tl2 {
+  font-family: 'AustinCyr', sans-serif;
+  font-size: 9rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  @media (max-width: 48em) {
+    line-height: 111%;
+    font-size: 7.2rem;
+  }
+}
+.tl3 {
+  font-family: 'AustinCyr', sans-serif;
+  font-size: 5.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  @include small-tablet {
+    font-size: 5.2rem;
+  }
+}
+.tl4 {
+  font-family: 'Gilroy';
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  @include small-tablet {
+    font-size: 4rem;
+  }
+}
+.tl5 {
+  font-family: 'Gilroy';
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  @include small-tablet {
+    font-size: 4rem;
+  }
+}
+
+// --------------------------------------------------------------------------
+
+.txt20 {
+  font-family: 'Gilroy';
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  &_medium {
+    font-family: 'Gilroy';
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+  }
+  &_semi-bold {
+    font-family: 'Gilroy';
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  @include small-tablet {
+    font-size: 3.2rem;
+    &_semi-bold {
+      font-size: 3.2rem;
+    }
+    &_medium {
+      font-size: 3.2rem;
+      font-weight: 700;
+    }
+  }
+}
+.txt16 {
+  font-family: 'Gilroy';
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  @include small-tablet {
+    font-size: 2.4rem;
+  }
+}
+
+.logo {
+  font-family: 'NeueMetana';
+  font-weight: 700;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  @include small-tablet {
+    font-size: 4.6rem;
+  }
+}

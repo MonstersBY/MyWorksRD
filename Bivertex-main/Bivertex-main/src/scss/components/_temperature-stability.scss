@@ -1,0 +1,235 @@
+.temperature-stability {
+  // .temperature-stability__container
+  &__container {
+    max-width: 192rem;
+    width: 100%;
+    @include small-tablet {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  // .generative-design__inner
+
+  &__inner {
+    position: relative;
+    width: 100%;
+    height: 107.2rem;
+    color: $white;
+    padding: 10rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include small-tablet {
+      height: 162.4rem;
+      padding: 3.2rem;
+    }
+  }
+
+  &__content-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.6rem;
+    @include small-tablet {
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+
+  // .product-card-hero__img-box
+
+  &__img-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    & img,
+    & video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .temperature-stability__title-box
+
+  &__title-box {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 104.6rem;
+    @include small-tablet {
+      width: 68.6rem;
+      gap: 2rem;
+    }
+  }
+
+  // .temperature-stability__title
+
+  &__title {
+    @include small-tablet {
+      margin-bottom: 2.8rem;
+    }
+  }
+
+  // .temperature-stability__text-box
+
+  &__text-box {
+    display: flex;
+    gap: 4rem;
+    @include small-tablet {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+  // .temperature-stability__text
+
+  &__text {
+    &:nth-child(1) {
+      width: 44.2rem;
+      @include small-tablet {
+        width: 68.6rem;
+      }
+    }
+    &:nth-child(2) {
+      width: 48rem;
+      @include small-tablet {
+        width: 68.6rem;
+      }
+    }
+    @include small-tablet {
+      font-size: 2.8rem;
+    }
+  }
+
+  // .temperature-stability__desc-box
+
+  &__desc-box {
+    width: 72.8rem;
+    padding: 3.2rem;
+    border-top: 0.2rem solid $white;
+    border-left: 0.2rem solid $white;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    height: fit-content;
+    @include small-tablet {
+      width: 68.6rem;
+    }
+  }
+
+  // .temperature-stability__desc
+
+  &__desc {
+    @include small-tablet {
+      font-size: 3.2rem;
+    }
+  }
+
+  // .temperature-stability__btn
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    align-self: flex-end;
+    @include small-tablet {
+      margin-top: 2.8rem;
+
+      font-size: 2.4rem;
+      gap: 1.6rem;
+      font-weight: 700;
+      align-self: flex-start;
+      line-height: 130%;
+      text-transform: uppercase;
+      &:hover {
+        & .temperature-stability__link-svg-box {
+          &:nth-child(1) {
+            transform: translate(0, 0);
+          }
+          &:nth-child(2) {
+            transform: translate(0, 0);
+          }
+        }
+      }
+    }
+    &:hover {
+      & .temperature-stability__link-svg-box {
+        &:nth-child(1) {
+          transform: translate(100%, -100%);
+        }
+        &:nth-child(2) {
+          transform: translate(80%, -80%);
+        }
+      }
+    }
+  }
+
+  // .temperature-stability__link-svg-wrapper
+
+  &__link-svg-wrapper {
+    width: 3.2rem;
+    height: 3.2rem;
+    overflow: hidden;
+    position: relative;
+    @include small-tablet {
+      width: 4.8rem;
+      height: 4.8rem;
+    }
+  }
+
+  // .temperature-stability__link-svg-box
+
+  &__link-svg-box {
+    display: block;
+    width: 3.2rem;
+    height: 3.2rem;
+    flex-shrink: 0;
+    transition: transform 0.3s;
+    &:nth-child(2) {
+      position: absolute;
+      left: -80%;
+      bottom: -80%;
+      @include small-tablet {
+        display: none;
+      }
+    }
+    & svg {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    @include small-tablet {
+      width: 4.8rem;
+      height: 4.8rem;
+    }
+  }
+
+  // .temperature-stability__schedule-box
+
+  &__schedule-box {
+    width: 100%;
+    padding: 5rem 5.4rem 4.4rem 3.4rem;
+    background-color: $white;
+    border-radius: 3.2rem;
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  // .temperature-stability__schedule-img-box
+
+  &__schedule-img-box {
+    width: 171.2rem;
+    height: 29.9rem;
+    & img,
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

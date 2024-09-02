@@ -1,0 +1,161 @@
+.main-baner {
+    height: 90rem;
+    position: relative;
+    .container {
+        width: 100%;
+    }
+    &_img {
+        top: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        mask-image: linear-gradient(rgba(0, 0, 0, 0) -5%, rgb(0, 0, 0) 30%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
+
+        &::before {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgb(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 100%);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &_container {
+        position: absolute;
+        right: 13.9rem;
+        top: 22rem;
+        width: 80.8rem;
+
+        &-subtitle {
+            font-weight: 400;
+            font-size: 2.4rem;
+            line-height: 140%;
+            margin-bottom: 3.2rem;
+            filter: drop-shadow(0 0 10px #000);
+        }
+        &-title {
+            font-family: 'AlegreyaSans';
+            font-weight: 500;
+            font-size: 7.4rem;
+            line-height: 110%;
+            margin-bottom: 5.2rem;
+            text-transform: uppercase;
+            text-shadow: 7px 7px 14px #7be5ff, 9px 9px 23px rgba(255, 255, 255, 0.5), 5px 4px 3px #000000;
+            // text-shadow: 6px 6px 12px #7be5ff, 8px 8px 20px rgba(255, 255, 255, 0.8), 4px 4px 5px #061a2f;
+            span {
+                font-weight: 400;
+                font-size: 9rem;
+                line-height: 79%;
+                text-transform: initial;
+                // text-shadow: 7px 7px 14px #7be5ff, 9px 9px 23px rgba(255, 255, 255, 0.8), 5px 5px 6px #061a2f;
+                text-shadow: 7px 7px 14px #7be5ff, 9px 9px 23px rgba(255, 255, 255, 0.5), 5px 4px 3px #000000;
+                position: relative;
+                font-family: 'IdealistSans';
+            }
+
+            svg {
+                width: 6.588rem;
+                height: 4.787rem;
+                filter: drop-shadow(4px 4px 5px #061a2f) drop-shadow(8px 8px 20px rgba(255, 255, 255, 0.8)) drop-shadow(6px 6px 12px #7be5ff);
+            }
+        }
+        &-btns {
+            display: flex;
+            gap: 3.2rem;
+            margin-bottom: 6rem;
+        }
+        &-social {
+            font-weight: 300;
+            font-size: 1.8rem;
+            line-height: 140%;
+            color: rgba(255, 255, 255, 0.6);
+            display: flex;
+            gap: 4rem;
+        }
+    }
+}
+
+@include small-tablet {
+    .main-baner {
+        height: 133.2rem;
+        display: flex;
+        .container {
+            padding: 0;
+            margin-top: auto;
+        }
+        &_img {
+            top: 6rem;
+            position: absolute;
+            width: 100%;
+            height: 81.8rem;
+            mask-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0, 0.6) 15%, rgb(0, 0, 0, 0.5) 65%, rgba(0, 0, 0, 0) 90%);
+    
+            img {
+                object-position: -3rem;
+            }
+            &::before {
+                content: none;
+            }
+            video {
+                object-position: -3rem;
+            }
+        }
+        &_container {
+            position: relative;
+            right: initial;
+            top: initial;
+            width: 100%;
+            padding: 0 2rem;
+    
+            &-subtitle {
+                font-weight: 400;
+                font-size: 3rem;
+                line-height: 150%;
+                letter-spacing: 0.03em;
+                margin-bottom: 5rem;
+                filter: none;
+            }
+            &-title {
+                font-weight: 400;
+                font-size: 5.6rem;
+                line-height: 110%;
+                letter-spacing: 0.04em;
+                margin-bottom: 6.2rem;
+                text-shadow: 6px 6px 12px #7be5ff, 8px 8px 20px rgba(255, 255, 255, 0.8), 4px 4px 5px #061a2f;
+                span {
+                    font-size: 7.2rem;
+                    text-shadow: 6px 6px 13px 0 #7be5ff, 9px 9px 21px 0 rgba(255, 255, 255, 0.8), 4px 4px 5px 0 #061a2f;
+                }
+                svg {
+                    width: 4.954rem;
+                    height: 3.6rem;
+                }
+            }
+            &-btns {
+                display: flex;
+                justify-content: space-between;
+                gap: 0;
+                margin-bottom: 6.4rem;
+            }
+            &-social {
+                font-weight: 400;
+                font-size: 3rem;
+                line-height: 150%;
+                letter-spacing: 0.03em;
+                color: rgba(255, 255, 255, 0.6);
+                display: flex;
+                gap: 6.4rem;
+            }
+        }
+    }
+}

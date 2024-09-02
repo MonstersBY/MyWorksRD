@@ -1,0 +1,66 @@
+@import './fonts';
+@import './libs/settings';
+@import './libs/set';
+@import './style';
+
+@import './components/footer';
+@import './components/header';
+@import './components/image_slider';
+
+@import './pages/home';
+
+@import './dev/kuloverova';
+@import './dev/lgleb';
+@import './dev/monsters';
+@import './dev/hyperstone';
+
+.mobile {
+	display: none;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	&.lock {
+		overflow: hidden;
+		touch-action: none;
+	}
+	.lock & {
+		overflow: hidden;
+		touch-action: none;
+	  }
+	  
+	&.anim-ended {
+		.header {
+		}
+		.banner {
+			&__anim {
+				// display: none;
+				z-index: -1;
+				position: absolute;
+				.banner__anim-wrapper {
+					display: none;
+				}
+			}
+			&__container {
+				width: 100%;
+				height: 100vh;
+			}
+		}
+	}
+}
+
+
+main {
+	flex-grow: 1;
+}
+
+@media (max-width: 47.9375em) {
+	.mobile {
+		display: flex;
+	}
+	.desktop {
+		display: none;
+	}
+}

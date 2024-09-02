@@ -1,0 +1,175 @@
+body .modal__edit-employee {
+    --inputBg: #f1f4f6;
+    --inputBorder: none;
+    --settingsColor: #101010;
+    --boxBg: #fff;
+    --btnDeleteFill: #101010;
+    --btnDeleteStroke: #fff;
+    --inputInnerBg: #f4f4f4;
+}
+
+body.color_yd .modal__edit-employee {
+    --inputBg: #292929;
+    --inputBorder: none;
+    --settingsColor: #f9ec00;
+    --boxBg: #292929;
+    --btnDeleteFill: #f9ec00;
+    --btnDeleteStroke: #101010;
+    --inputInnerBg: #fff;
+}
+
+body.color_pl .modal__edit-employee {
+    --inputBg: #f1f4f6;
+    --inputBorder: none;
+    --settingsColor: #101010;
+    --boxBg: #fff;
+    --btnDeleteFill: #101010;
+    --btnDeleteStroke: #fff;
+    --inputInnerBg: #fff;
+}
+
+body.color_pd .modal__edit-employee {
+    --inputBg: #101010;
+    --inputBorder: 0.1rem solid rgba(255, 255, 255, 0.2);
+    --settingsColor: #fff;
+    --boxBg: #101010;
+    --btnDeleteFill: #d01181;
+    --btnDeleteStroke: #101010;
+    --inputInnerBg: #292929;
+}
+
+.modal__edit-employee {
+    z-index: 1000;
+
+    .modal-wrapper {
+        padding: 4rem;
+        width: 83.5rem;
+    }
+
+    &__title {
+        font-size: 3.2rem;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    &__subtitle {
+        font-size: 2.4rem;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    &__input-check {
+        background-color: var(--inputBg) !important;
+        border: var(--inputBorder) !important;
+        font-weight: 500;
+        margin-bottom: 3.2rem;
+        width: 100% !important;
+
+        .checkbox-icon {
+            width: 2.4rem;
+            height: 2.4rem;
+            border-radius: 0.8rem;
+            background-size: 1.3rem 0.9rem;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 4rem;
+
+        .adding_application__item {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.8rem;
+
+            &_position {
+                display: none;
+            }
+
+            &_name {
+                width: fit-content;
+                svg {
+                    fill: var(--settingsColor);
+                    stroke: var(--settingsColor);
+                    opacity: 0;
+                    right: -4rem;
+                }
+            }
+
+            &_input-wrapper {
+                width: 100%;
+            }
+
+            &_input {
+                width: 100%;
+                flex: unset;
+                background-color: var(--inputBg) !important;
+                border: var(--inputBorder) !important;
+            }
+
+            &_box {
+                border: var(--inputBorder);
+                background-color: var(--boxBg);
+            }
+
+            .adding_application__item_settings svg {
+                fill: var(--settingsColor);
+            }
+
+            &:hover {
+                svg {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &_empty {
+            display: none;
+        }
+    }
+
+    &__add-field {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+
+        span {
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+
+        button svg {
+            width: 5.1rem;
+            height: 5.1rem;
+        }
+    }
+
+    .btn__save {
+        width: 41.7rem;
+        margin: 0 auto;
+    }
+
+    .delete-hint {
+        width: 2.4rem;
+        height: 2.4rem;
+        cursor: pointer;
+
+        circle {
+            fill: var(--btnDeleteFill);
+        }
+
+        path {
+            stroke: var(--btnDeleteStroke);
+        }
+    }
+
+    .adding_application__item--interval .adding_application__item_input_inner{
+        background-color: var(--inputInnerBg);
+    }
+}

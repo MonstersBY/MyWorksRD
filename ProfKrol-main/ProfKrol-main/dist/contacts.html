@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://api-maps.yandex.ru/v3/?apikey=4d7b8985-4ebf-4fde-8884-668550d59df1&lang=ru_RU"></script>
+    <title>Контакты</title>
+  <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__mob">
+  <div class="container">
+    <div class="header__mob-inner">
+      <button class="header__mob-burger">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.33325 9.33333C5.33325 8.97971 5.47373 8.64057 5.72378 8.39052C5.97383 8.14048 6.31296 8 6.66659 8H25.3333C25.6869 8 26.026 8.14048 26.2761 8.39052C26.5261 8.64057 26.6666 8.97971 26.6666 9.33333C26.6666 9.68696 26.5261 10.0261 26.2761 10.2761C26.026 10.5262 25.6869 10.6667 25.3333 10.6667H6.66659C6.31296 10.6667 5.97383 10.5262 5.72378 10.2761C5.47373 10.0261 5.33325 9.68696 5.33325 9.33333ZM5.33325 16C5.33325 15.6464 5.47373 15.3072 5.72378 15.0572C5.97383 14.8071 6.31296 14.6667 6.66659 14.6667H25.3333C25.6869 14.6667 26.026 14.8071 26.2761 15.0572C26.5261 15.3072 26.6666 15.6464 26.6666 16C26.6666 16.3536 26.5261 16.6928 26.2761 16.9428C26.026 17.1929 25.6869 17.3333 25.3333 17.3333H6.66659C6.31296 17.3333 5.97383 17.1929 5.72378 16.9428C5.47373 16.6928 5.33325 16.3536 5.33325 16ZM5.33325 22.6667C5.33325 22.313 5.47373 21.9739 5.72378 21.7239C5.97383 21.4738 6.31296 21.3333 6.66659 21.3333H25.3333C25.6869 21.3333 26.026 21.4738 26.2761 21.7239C26.5261 21.9739 26.6666 22.313 26.6666 22.6667C26.6666 23.0203 26.5261 23.3594 26.2761 23.6095C26.026 23.8595 25.6869 24 25.3333 24H6.66659C6.31296 24 5.97383 23.8595 5.72378 23.6095C5.47373 23.3594 5.33325 23.0203 5.33325 22.6667Z" fill="black"></path>
+        </svg>
+      </button>
+      <a class="header__logo tl2" href="#">ООО ПрофиКроль</a>
+      <a href="mailto:msk@profikrol.ru" class="header__mob-mail">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.15333 25.3332C5.54 25.3332 5.028 25.1278 4.61733 24.7172C4.20578 24.3056 4 23.7932 4 23.1798V8.81984C4 8.2065 4.20578 7.6945 4.61733 7.28384C5.028 6.87228 5.54 6.6665 6.15333 6.6665H25.8467C26.46 6.6665 26.972 6.87228 27.3827 7.28384C27.7942 7.6945 28 8.2065 28 8.81984V23.1798C28 23.7932 27.7947 24.3052 27.384 24.7158C26.9724 25.1274 26.46 25.3332 25.8467 25.3332H6.15333ZM16 16.1532L26.6667 9.17984L26.256 7.99984L16 14.6665L5.744 7.99984L5.33333 9.17984L16 16.1532Z" fill="#240403"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="container header__container">
+  <div class="header__inner">
+    <div class="header__logo-nav-box">
+
+    
+    <div class="header__logo-wrapper">
+      <a class="header__logo tl2" href="#">ООО ПрофиКроль</a>
+      <button class="header__logo-close-btn mobile">
+
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18M6 6L18 18" stroke="#240403" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+
+      </button>
+    </div>
+    <nav class="header__nav">
+      <div class="header__nav-item">
+        <div class="header__nav-item-link-wrapper">
+          <a class="header__nav-item-link" href="">
+            <span class="header__nav-item-link-text txt16">О компании</span>
+          </a>
+        </div>
+      </div>
+      <div class="header__nav-item">
+        <div class="header__nav-item-link-wrapper">
+          <a class="header__nav-item-link" href="">
+            <span class="header__nav-item-link-text txt16">Новости</span>
+          </a>
+        </div>
+      </div>
+      <div class="header__nav-item">
+        <div class="header__nav-item-link-wrapper">
+          <a class="header__nav-item-link" href="">
+            <span class="header__nav-item-link-text txt16">О продукте</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="header__nav-item dropdown">
+        <div class="header__nav-item-link-wrapper">
+          <a class="header__nav-item-link" href="">
+            <span class="header__nav-item-link-text txt16">Каталог</span>
+            <div class="header__nav-item-svg-box desktop">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.03676 12.5212L10.7259 8.00944C10.8933 7.84795 11.0923 7.71983 11.3113 7.63241C11.5303 7.545 11.7651 7.5 12.0022 7.5C12.2393 7.5 12.4741 7.545 12.6931 7.63241C12.9122 7.71983 13.1111 7.84795 13.2786 8.00944L17.9677 12.5212C19.1083 13.6186 18.2936 15.5 16.6823 15.5L7.30408 15.5C5.69277 15.5 4.89617 13.6186 6.03676 12.5212Z" fill="#240403"></path>
+              </svg>
+            </div>
+          </a>
+          <div class="header__nav-item-svg-box mobile">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.03676 12.5212L10.7259 8.00944C10.8933 7.84795 11.0923 7.71983 11.3113 7.63241C11.5303 7.545 11.7651 7.5 12.0022 7.5C12.2393 7.5 12.4741 7.545 12.6931 7.63241C12.9122 7.71983 13.1111 7.84795 13.2786 8.00944L17.9677 12.5212C19.1083 13.6186 18.2936 15.5 16.6823 15.5L7.30408 15.5C5.69277 15.5 4.89617 13.6186 6.03676 12.5212Z" fill="#240403"></path>
+            </svg>
+          </div>
+        </div>
+
+        <div class="header__dropdown">
+          <div class="header__dropdown-inner header__dropdown-services">
+            <a href="#" class="header__dropdown-services-item">
+              <span class="header__dropdown-services-item-text txt16">Охлаждённая и&nbsp;замороженная продукция</span>
+              <span class="header__dropdown-services-item-svg-box desktop">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.66675 15C6.11446 15 5.66675 15.4477 5.66675 16C5.66675 16.5523 6.11446 17 6.66675 17V15ZM26.0405 16.7071C26.431 16.3166 26.431 15.6834 26.0405 15.2929L19.6766 8.92893C19.286 8.53841 18.6529 8.53841 18.2623 8.92893C17.8718 9.31946 17.8718 9.95262 18.2623 10.3431L23.9192 16L18.2623 21.6569C17.8718 22.0474 17.8718 22.6805 18.2623 23.0711C18.6529 23.4616 19.286 23.4616 19.6766 23.0711L26.0405 16.7071ZM6.66675 17H25.3334V15H6.66675V17Z" fill="#373232"></path>
+                  </svg>
+                  
+              </span>
+            </a>
+            <a href="#" class="header__dropdown-services-item">
+              <span class="header__dropdown-services-item-text txt16">Сырьё для детского питания</span><span class="header__dropdown-services-item-svg-box desktop">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.66675 15C6.11446 15 5.66675 15.4477 5.66675 16C5.66675 16.5523 6.11446 17 6.66675 17V15ZM26.0405 16.7071C26.431 16.3166 26.431 15.6834 26.0405 15.2929L19.6766 8.92893C19.286 8.53841 18.6529 8.53841 18.2623 8.92893C17.8718 9.31946 17.8718 9.95262 18.2623 10.3431L23.9192 16L18.2623 21.6569C17.8718 22.0474 17.8718 22.6805 18.2623 23.0711C18.6529 23.4616 19.286 23.4616 19.6766 23.0711L26.0405 16.7071ZM6.66675 17H25.3334V15H6.66675V17Z" fill="#373232"></path>
+                  </svg>
+                  
+              </span>
+            </a>
+            <a href="#" class="header__dropdown-services-item">
+              <span class="header__dropdown-services-item-text txt16">Субпродукты</span><span class="header__dropdown-services-item-svg-box desktop">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.66675 15C6.11446 15 5.66675 15.4477 5.66675 16C5.66675 16.5523 6.11446 17 6.66675 17V15ZM26.0405 16.7071C26.431 16.3166 26.431 15.6834 26.0405 15.2929L19.6766 8.92893C19.286 8.53841 18.6529 8.53841 18.2623 8.92893C17.8718 9.31946 17.8718 9.95262 18.2623 10.3431L23.9192 16L18.2623 21.6569C17.8718 22.0474 17.8718 22.6805 18.2623 23.0711C18.6529 23.4616 19.286 23.4616 19.6766 23.0711L26.0405 16.7071ZM6.66675 17H25.3334V15H6.66675V17Z" fill="#373232"></path>
+                  </svg>
+                  
+              </span>
+            </a>
+            <a href="#" class="header__dropdown-services-item">
+              <span class="header__dropdown-services-item-text txt16">Полуфабрикаты</span><span class="header__dropdown-services-item-svg-box desktop">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.66675 15C6.11446 15 5.66675 15.4477 5.66675 16C5.66675 16.5523 6.11446 17 6.66675 17V15ZM26.0405 16.7071C26.431 16.3166 26.431 15.6834 26.0405 15.2929L19.6766 8.92893C19.286 8.53841 18.6529 8.53841 18.2623 8.92893C17.8718 9.31946 17.8718 9.95262 18.2623 10.3431L23.9192 16L18.2623 21.6569C17.8718 22.0474 17.8718 22.6805 18.2623 23.0711C18.6529 23.4616 19.286 23.4616 19.6766 23.0711L26.0405 16.7071ZM6.66675 17H25.3334V15H6.66675V17Z" fill="#373232"></path>
+                  </svg>
+                  
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header__nav-item">
+        <div class="header__nav-item-link-wrapper">
+          <a class="header__nav-item-link" href="">
+            <span class="header__nav-item-link-text txt16">Карьера</span>
+          </a>
+        </div>
+      </div>
+      <div class="header__nav-item">
+        <div class="header__nav-item-link-wrapper">
+          <a class="header__nav-item-link" href="">
+            <span class="header__nav-item-link-text txt16">Контакты</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+</div>
+    <div class="header__contact-wrapper">
+      <div class="header__contact-box mobile">
+        <p class="header__contact-title txt16">Адрес</p>
+        <p class="header__contact-desk">
+          <span class="header__contact-desk-text txt16">117630 Москва ул. Старокалужское шоссе 62, стр.1, к.9</span>
+        </p>
+      </div>
+      <div class="header__contact-box">
+        <p class="header__contact-title mobile txt16">Электронная почта</p>
+        <a href="mailto:msk@profikrol.ru" class="header__contact-desk">
+            <div class="header__contact-desk-svg-wrapper desktop">
+                <div class="header__contact-desk-svg-box ">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.15333 25.3332C5.54 25.3332 5.028 25.1278 4.61733 24.7172C4.20578 24.3056 4 23.7932 4 23.1798V8.81984C4 8.2065 4.20578 7.6945 4.61733 7.28384C5.028 6.87228 5.54 6.6665 6.15333 6.6665H25.8467C26.46 6.6665 26.972 6.87228 27.3827 7.28384C27.7942 7.6945 28 8.2065 28 8.81984V23.1798C28 23.7932 27.7947 24.3052 27.384 24.7158C26.9724 25.1274 26.46 25.3332 25.8467 25.3332H6.15333ZM16 16.1532L26.6667 9.17984L26.256 7.99984L16 14.6665L5.744 7.99984L5.33333 9.17984L16 16.1532Z" fill="#240403"></path>
+                    </svg>
+                  </div>
+            </div>
+          
+          <span class="header__contact-desk-text txt16">msk@profikrol.ru</span>
+        </a>
+      </div>
+      <div class="header__social-box mobile">
+        <a href="#" class="header__social-svg-box">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.8233 3.55566H12.1874C5.21353 3.55566 3.55469 5.21451 3.55469 12.1759V19.8118C3.55469 26.7845 5.20109 28.4446 12.175 28.4446H19.8109C26.7835 28.4446 28.4436 26.7982 28.4436 19.8243V12.1884C28.4436 5.21451 26.7972 3.55566 19.8233 3.55566ZM23.6475 21.3139H21.8318C21.1449 21.3139 20.9383 20.7576 19.7063 19.5256C18.6311 18.489 18.1769 18.3596 17.9044 18.3596C17.5286 18.3596 17.4253 18.4629 17.4253 18.9818V20.6145C17.4253 21.0563 17.2822 21.3151 16.1286 21.3151C15.009 21.2399 13.9233 20.8998 12.9609 20.3227C11.9986 19.7457 11.1871 18.9483 10.5933 17.9962C9.18352 16.2415 8.20261 14.1821 7.72855 11.9818C7.72855 11.7093 7.83184 11.4629 8.35078 11.4629H10.1652C10.6318 11.4629 10.7998 11.6707 10.9828 12.1498C11.8638 14.7432 13.3671 16.9982 13.9769 16.9982C14.2109 16.9982 14.3129 16.8949 14.3129 16.3112V13.6406C14.2358 12.4223 13.5886 12.319 13.5886 11.8785C13.597 11.7623 13.6502 11.6539 13.7371 11.5763C13.824 11.4987 13.9377 11.458 14.0541 11.4629H16.9063C17.2958 11.4629 17.4253 11.657 17.4253 12.1237V15.7276C17.4253 16.1171 17.5933 16.2465 17.7102 16.2465C17.9442 16.2465 18.1246 16.1171 18.5527 15.689C19.4722 14.5677 20.2234 13.3184 20.7828 11.9806C20.84 11.8198 20.9481 11.6823 21.0908 11.5888C21.2335 11.4953 21.4028 11.4511 21.573 11.4629H23.3886C23.9325 11.4629 24.0482 11.7354 23.9325 12.1237C23.2723 13.6026 22.4554 15.0065 21.4958 16.3112C21.3005 16.6099 21.2221 16.7654 21.4958 17.1151C21.6763 17.3877 22.3122 17.919 22.7403 18.4243C23.3624 19.0448 23.879 19.7628 24.2697 20.5498C24.4253 21.055 24.1652 21.3139 23.6475 21.3139Z" fill="#240403"></path>
+          </svg>
+        </a>
+        <a href="#" class="header__social-svg-box">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.8 21.333L21.104 16.533L12.8 11.733V21.333ZM31.296 8.80501C31.504 9.55701 31.648 10.565 31.744 11.845C31.856 13.125 31.904 14.229 31.904 15.189L32 16.533C32 20.037 31.744 22.613 31.296 24.261C30.896 25.701 29.968 26.629 28.528 27.029C27.776 27.237 26.4 27.381 24.288 27.477C22.208 27.589 20.304 27.637 18.544 27.637L16 27.733C9.296 27.733 5.12 27.477 3.472 27.029C2.032 26.629 1.104 25.701 0.704 24.261C0.496 23.509 0.352 22.501 0.256 21.221C0.144 19.941 0.0959999 18.837 0.0959999 17.877L0 16.533C0 13.029 0.256 10.453 0.704 8.80501C1.104 7.36501 2.032 6.43701 3.472 6.03701C4.224 5.82901 5.6 5.68501 7.712 5.58901C9.792 5.47701 11.696 5.42901 13.456 5.42901L16 5.33301C22.704 5.33301 26.88 5.58901 28.528 6.03701C29.968 6.43701 30.896 7.36501 31.296 8.80501Z" fill="#240403"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </header>
+      <div id="popup__success" aria-hidden="true" class="popup popup--success">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5285 2.53044L15.0588 2.00011L13.9982 0.939453L13.4678 1.46978L7.99816 6.93945L2.52849 1.46978L1.99816 0.939453L0.9375 2.00011L1.46783 2.53044L6.9375 8.00011L1.46783 13.4698L0.9375 14.0001L1.99816 15.0608L2.52849 14.5304L7.99816 9.06077L13.4678 14.5304L13.9982 15.0608L15.0588 14.0001L14.5285 13.4698L9.05882 8.00011L14.5285 2.53044ZM7.99831 6.99996L6.99816 8.00011L7.99831 9.00026L8.99846 8.00011L7.99831 6.99996Z" fill="#676767"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <p class="popup__body-content-box-title tl1">Ваша заявка успешно отправлена</p>
+          <p class="popup__body-content-box-desk txt18">
+            Ожидайте обратной связи, в ближайшее время мы вам дадим ответ на ваш запрос, спасибо!
+          </p>
+        </div>
+        <div data-close="" class="buttons button-green">Вернуться на страницу</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div id="popup__summary" aria-hidden="true" class="popup popup--big">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close type="button" class="popup__body-close-btn">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M14.5285 2.53044L15.0588 2.00011L13.9982 0.939453L13.4678 1.46978L7.99816 6.93945L2.52849 1.46978L1.99816 0.939453L0.9375 2.00011L1.46783 2.53044L6.9375 8.00011L1.46783 13.4698L0.9375 14.0001L1.99816 15.0608L2.52849 14.5304L7.99816 9.06077L13.4678 14.5304L13.9982 15.0608L15.0588 14.0001L14.5285 13.4698L9.05882 8.00011L14.5285 2.53044ZM7.99831 6.99996L6.99816 8.00011L7.99831 9.00026L8.99846 8.00011L7.99831 6.99996Z"
+              fill="#676767"
+            />
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__body-content-box-title-box">
+            <p class="popup__body-content-box-title tl2">отклик на вакансию</p>
+            <p class="popup__body-content-box-desk txt18 txt18_caps">Инженер-конструктор станков с ЧПУ</p>
+          </div>
+          <form data-popup-message="#popup__success-summary" data-dev action="" class="popup__body-form-wrapper">
+            <div class="popup__body-form-input-wrapper">
+              <div class="popup__body-form-input-box">
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper txt18">
+                    <input
+                      class="input--name popup__body-form-input"
+                      type="text"
+                      placeholder="Ваше имя*"
+                      data-validate
+                      data-required
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                  </span>
+                  <span class="error-span">Поле заполнено неверно</span>
+                </label>
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input--tel popup__body-form-input phone-mask txt18"
+                      type="text"
+                      placeholder="Номер телефона*"
+                      data-validate
+                      data-required="tel"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                  </span>
+                  <span class="error-span">Поле заполнено неверно</span>
+                </label>
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input--mail popup__body-form-input txt18"
+                      type="text"
+                      placeholder="E-mail*"
+                      data-validate
+                      data-required="email"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                  </span>
+                  <span class="error-span">Поле заполнено неверно</span>
+                </label>
+                <label class="popup__body-label input-group popup__body-label--textarea">
+                  <span class="form__input-wrapper">
+                    <textarea
+                      class="input--textarea txt18"
+                      placeholder="Комментарий"
+                      autocomplete="off"
+                      name="form[]"
+                    ></textarea>
+                    <span class="error-span"></span>
+                  </span>
+                </label>
+                <label class="popup__body-label-input-file label-input-file input-file">
+                  <input type="file" multiple="" name="file_popup"/>
+                  <span class="popup__body-label-input-file-text-box label-input-file-text-box  txt18 txt18_caps">
+                    прикрепить файл
+                    <span class="popup__body-label-input-file-svg-box label-input-file-svg-box">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_1822_53601)">
+                          <path
+                            d="M12.3297 12.15L9.85969 14.62C8.48969 15.99 8.48969 18.2 9.85969 19.57C11.2297 20.94 13.4397 20.94 14.8097 19.57L18.6997 15.68C21.4297 12.95 21.4297 8.51 18.6997 5.78C15.9697 3.05 11.5297 3.05 8.79969 5.78L4.55969 10.02C2.21969 12.36 2.21969 16.16 4.55969 18.51"
+                            stroke="#013341"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1822_53601">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span>
+                  </span>
+                </label>
+                <div class="popup__body-form-files-items form-files-items file_popup"></div>
+              </div>
+            </div>
+            <p class="popup__body-agreement-text  txt-small">
+              Нажимая «Отправить» вы подтверждаете, что согласны на <a href="#">обработку персональных данных</a>
+            </p>
+            <button type="submit" class="popup__body-btn button button-turquoise txt20 txt20_caps">
+              откликнуться
+            </button>
+          </form>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div id="popup__supervisor" aria-hidden="true" class="popup popup--supervisor">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18M6 6L18 18" stroke="#240403" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__body-name-box">
+            <p class="popup__body-name tl2">Одинцов Василий Петрович</p>
+            <p class="popup__body-position txt18">Директор</p>
+          </div>
+          <ul class="popup__body-info-list">
+            <li class="popup__body-info-item">
+              <div class="popup__body-info-svg-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.276 2.255C10.359 2.25 10.447 2.25 10.561 2.25H13.44C13.553 2.25 13.641 2.25 13.725 2.255C14.2446 2.28658 14.7445 2.46498 15.1667 2.76946C15.5889 3.07393 15.916 3.49197 16.11 3.975C16.141 4.052 16.17 4.135 16.205 4.243L16.208 4.253C16.292 4.477 16.483 4.732 16.751 4.936C16.781 4.959 16.811 4.98 16.841 5C18.994 5.003 20.119 5.042 20.893 5.673C21.053 5.803 21.198 5.948 21.327 6.107C22 6.934 22 8.159 22 10.609C22 11.231 22 11.541 21.85 11.784C21.8205 11.8314 21.787 11.8762 21.75 11.918C21.56 12.132 21.263 12.221 20.668 12.4L16 13.8V13C16 12.4696 15.7893 11.9609 15.4142 11.5858C15.0391 11.2107 14.5304 11 14 11H10C9.46957 11 8.96086 11.2107 8.58579 11.5858C8.21071 11.9609 8 12.4696 8 13V13.8L3.332 12.4C2.737 12.221 2.439 12.132 2.25 11.918C2.21299 11.8762 2.17954 11.8314 2.15 11.784C2 11.541 2 11.231 2 10.609C2 8.159 2 6.934 2.673 6.107C2.803 5.947 2.948 5.802 3.107 5.673C3.882 5.043 5.006 5.003 7.16 5C7.19 4.98 7.22 4.959 7.25 4.936C7.517 4.732 7.709 4.476 7.792 4.253C7.83 4.139 7.858 4.053 7.89 3.974C8.08415 3.49116 8.41133 3.07333 8.83351 2.76904C9.25569 2.46475 9.75554 2.2865 10.275 2.255M14.818 4.818C14.842 4.88 14.868 4.94 14.898 5H9.101C9.13 4.94 9.156 4.88 9.181 4.818V4.815L9.186 4.805L9.191 4.793L9.196 4.781L9.199 4.771L9.201 4.766L9.205 4.754L9.209 4.742L9.211 4.736L9.214 4.728L9.216 4.721L9.218 4.715C9.257 4.599 9.269 4.562 9.281 4.534C9.36915 4.31442 9.51781 4.12437 9.7097 3.98594C9.90159 3.84751 10.1288 3.76639 10.365 3.752C10.397 3.75 10.437 3.75 10.58 3.75H13.418C13.561 3.75 13.601 3.75 13.633 3.752C14.115 3.782 14.537 4.086 14.718 4.534C14.728 4.562 14.741 4.597 14.78 4.715L14.782 4.721L14.784 4.728L14.787 4.736L14.789 4.742L14.793 4.754L14.797 4.766L14.799 4.771L14.803 4.781L14.807 4.793L14.812 4.805L14.816 4.815L14.818 4.818ZM14 12.5H10C9.86739 12.5 9.74021 12.5527 9.64645 12.6464C9.55268 12.7402 9.5 12.8674 9.5 13V15.162C9.50002 15.2619 9.52994 15.3594 9.58591 15.4421C9.64187 15.5248 9.72131 15.5889 9.814 15.626L10.514 15.906C11.4679 16.2877 12.5321 16.2877 13.486 15.906L14.186 15.626C14.2787 15.5889 14.3581 15.5248 14.4141 15.4421C14.4701 15.3594 14.5 15.2619 14.5 15.162V13C14.5 12.8674 14.4473 12.7402 14.3536 12.6464C14.2598 12.5527 14.1326 12.5 14 12.5ZM8.01 15.37L3.006 13.868C3.036 16.982 3.218 19.851 4.318 20.828C5.636 22 7.758 22 12 22C16.243 22 18.364 22 19.682 20.828C20.782 19.851 20.964 16.982 20.994 13.868L15.989 15.369C15.9513 15.7314 15.8154 16.0767 15.5958 16.3675C15.3762 16.6583 15.0813 16.8836 14.743 17.019L14.043 17.299C12.7315 17.8237 11.2685 17.8237 9.957 17.299L9.257 17.019C8.9187 16.8836 8.62383 16.6583 8.40424 16.3675C8.18464 16.0767 8.04867 15.7314 8.011 15.369" fill="#6AA64C"></path>
+                </svg>
+              </div>
+              <p class="popup__body-info-text txt16">Стаж 10 лет</p>
+            </li>
+            <li class="popup__body-info-item">
+              <div class="popup__body-info-svg-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.25003 13.18V15.99C4.25003 16.72 4.65003 17.4 5.29003 17.75L10.29 20.48C10.89 20.81 11.61 20.81 12.21 20.48L17.21 17.75C17.85 17.4 18.25 16.72 18.25 15.99V13.18L12.21 16.48C11.61 16.81 10.89 16.81 10.29 16.48L4.25003 13.18ZM10.29 3.52003L1.86003 8.12003C1.17003 8.50003 1.17003 9.50003 1.86003 9.88003L10.29 14.48C10.89 14.81 11.61 14.81 12.21 14.48L20.25 10.09V16C20.25 16.55 20.7 17 21.25 17C21.8 17 22.25 16.55 22.25 16V9.59003C22.25 9.22003 22.05 8.89003 21.73 8.71003L12.21 3.52003C11.9146 3.36245 11.5849 3.28003 11.25 3.28003C10.9152 3.28003 10.5855 3.36245 10.29 3.52003Z" fill="#6AA64C"></path>
+                </svg>
+              </div>
+              <p class="popup__body-info-text txt16">
+                Высший государственный сельскохозяйственный университет
+              </p>
+            </li>
+          </ul>
+          <p class="popup__body-text txt18">
+            Одинцов Василий Петрович обладает более чем двадцатилетним опытом в области сельского хозяйства и
+            пищевой промышленности, из которых более десяти лет он уделял производству и поставке кроличьего
+            мяса. Его страсть к инновациям и стремление к качеству привели его к созданию и реализации
+            современных методов производства, которые определяют стандарты в отрасли.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__recipe" aria-hidden="true" class="popup popup--recipe">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18M6 6L18 18" stroke="#240403" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <p class="popup__body-content-title tl1">Кролик в хлебно-сметанном соусе</p>
+          <div class="popup__body-content-ingredients-wrapper">
+            <div class="popup__body-content-ingredients-img-box">
+              <img src="./assets/images/dishes-1.webp" alt="">
+            </div>
+            <div class="popup__body-content-ingredients-box">
+              <div class="popup__body-content-ingredients-title-box">
+                <div class="popup__body-content-ingredients-title-svg-box">
+                  <img src="./assets/images/ingredients.svg" alt="">
+                </div>
+                <p class="popup__body-content-ingredients-title txt18 txt18_bold">Ингредиенты</p>
+              </div>
+              <ul class="popup__body-content-ingredients-list">
+                <li class="popup__body-content-ingredients-item txt18">2 шт. Окорочок кролика на кости</li>
+                <li class="popup__body-content-ingredients-item txt18">2 ломтя Засохший белый хлеб</li>
+                <li class="popup__body-content-ingredients-item txt18">Оливковое масло</li>
+                <li class="popup__body-content-ingredients-item txt18">50 мл. Белое сухое вино</li>
+                <li class="popup__body-content-ingredients-item txt18">1 зубчик Чеснок</li>
+                <li class="popup__body-content-ingredients-item txt18">Соль</li>
+                <li class="popup__body-content-ingredients-item txt18">Луковица</li>
+                <li class="popup__body-content-ingredients-item txt18">Несколько веточек тимьяна</li>
+                <li class="popup__body-content-ingredients-item txt18">Свежемолотый черный перец</li>
+                <li class="popup__body-content-ingredients-item txt18">3-4 ст. л Сметана</li>
+              </ul>
+            </div>
+          </div>
+          <div class="popup__body-content-recipes-box">
+            <div class="popup__body-content-recipes-title-box">
+              <div class="popup__body-content-recipes-title-svg-box">
+                <img src="./assets/images/recipes.svg" alt="">
+              </div>
+              <p class="popup__body-content-recipes-title txt18 txt18_bold">Рецепт</p>
+            </div>
+            <ol class="popup__body-content-recipes-list">
+              <li class="popup__body-content-recipes-item txt18">
+                Хлеб залейте водой, окорочка обжарьте на оливковом масле дорумяной корочки, отложите на
+                тарелку.
+              </li>
+              <li class="popup__body-content-recipes-item txt18">
+                В оставшемся масле спассеруйте на небольшом огне мелконарезанный лук до прозрачности, верните
+                окорочка в сковороду и влейте вино, дайте ему выпариться, долейте немного воды, положите
+                тимьян, накройте сковороду крышкой и тушите 15-20 минут.
+              </li>
+              <li class="popup__body-content-recipes-item txt18">
+                Отожмите хлеб от лишней жидкости, соедините со сметаной и разомните вилкой до однородности,
+                посолите по вкусу, добавьте пропущенный через пресс чеснок.
+              </li>
+              <li class="popup__body-content-recipes-item txt18">
+                Добавьте сметанно-хлебную массу к кролику, перемешайте, прогрейте 1 минуту — подавайте,
+                посыпав свежемолотым перцем!
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <main>
+        <section class="nav-box">
+          <div class="container">
+            <nav class="nav-box__list-wrap title-h5">
+              <ul class="nav-box__list">
+                <li class="nav-box__link txt16"><a href="#">Главная</a></li>
+                <li class="nav-box__link txt16"><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="contacts__container container">
+            <div class="contacts__title tl1">Контакты</div>
+            <div class="contacts__map-container">
+              <div class="contacts__map map" id="map"></div>
+              <div class="contacts__map-info desktop">
+                <div class="contacts__map-title tl2">Контакты организации</div>
+                <div class="contacts__map-contact">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.95693 3.14978C7.56282 1.58459 9.73523 0.706055 11.9997 0.706055C14.2641 0.706055 16.4365 1.58459 18.0424 3.14978C24.1705 9.15778 17.2744 16.6168 12.9832 22.3359C12.8698 22.4873 12.7216 22.6104 12.5506 22.6952C12.3797 22.7801 12.1908 22.8243 11.9992 22.8243C11.8076 22.8243 11.6187 22.7801 11.4477 22.6952C11.2768 22.6104 11.1286 22.4873 11.0152 22.3359C6.72565 16.6168 -0.171226 9.15778 5.95693 3.14978ZM11.9997 5.84131C11.3934 5.84131 10.8008 6.01754 10.2968 6.34772C9.79268 6.6779 9.3998 7.14721 9.16777 7.69629C8.93575 8.24537 8.875 8.84958 8.99322 9.4325C9.11144 10.0154 9.40331 10.5509 9.83192 10.9712C10.2605 11.3915 10.8066 11.6778 11.4012 11.7938C11.9958 11.9099 12.6121 11.8505 13.1722 11.6231C13.7323 11.3958 14.2111 11.0107 14.548 10.5166C14.8849 10.0225 15.0648 9.44153 15.0649 8.84719C15.065 8.45248 14.9858 8.06163 14.8318 7.69694C14.6778 7.33225 14.452 7.00088 14.1674 6.72175C13.8827 6.44262 13.5448 6.2212 13.1729 6.07013C12.8009 5.91906 12.4023 5.84131 11.9997 5.84131Z" fill="#240403"/>
+                  </svg>
+                  <div class="contacts__map-contac--block">
+                    <div class="contacts__map-contact--title txt18 txt18_bold">Адрес</div>
+                    <div class="contacts__map-contact--text txt16">
+                      Моск.область, г. Красково, 2-й Осоавиахимовский проезд, 12
+                    </div>
+                  </div>
+                </div>
+                <div class="contacts__map-contact">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.0195 2.8501H16.0295C16.5195 4.1201 16.9095 5.4001 17.1895 6.6601C17.2695 7.0301 17.3395 7.4001 17.4095 7.7801H22.1595C20.9395 4.8801 18.5195 2.5901 15.5195 1.6001L15.5895 1.7801L15.6395 1.8901C15.7795 2.2101 15.8995 2.5201 16.0195 2.8501Z" fill="#240403"/>
+                    <path d="M21.4598 8.78003H17.5498C17.7098 9.86003 17.7798 10.94 17.7798 12C17.7798 13.06 17.7098 14.14 17.5598 15.22H22.5198C22.8298 14.2 22.9998 13.12 22.9998 12C22.9998 10.88 22.8298 9.80003 22.5198 8.78003H21.4598Z" fill="#240403"/>
+                    <path d="M7.95984 21.14C7.48984 19.92 7.09984 18.64 6.79984 17.33C6.71984 16.96 6.64984 16.59 6.58984 16.22H1.83984C3.05984 19.13 5.47984 21.4 8.47984 22.4H8.48984L8.19984 21.74C8.11984 21.54 8.03984 21.34 7.95984 21.14Z" fill="#240403"/>
+                    <path d="M17.4095 16.22C17.3495 16.59 17.2795 16.95 17.1995 17.32C16.8995 18.64 16.5095 19.92 16.0395 21.14C15.9995 21.26 15.9495 21.38 15.8995 21.5L15.5995 22.21L15.5195 22.4C18.5195 21.41 20.9395 19.12 22.1595 16.22H17.4095Z" fill="#240403"/>
+                    <path d="M12.5 15.22H16.54C16.7 14.13 16.78 13.05 16.78 12C16.78 10.94 16.7 9.86003 16.55 8.78003H12.5V15.22Z" fill="#240403"/>
+                    <path d="M14.76 2.39001C14.75 2.36001 14.74 2.33001 14.73 2.30001L14.68 2.18001L14.29 1.25001C13.71 1.11001 13.11 1.04001 12.5 1.01001V7.78001H16.39C16.34 7.48001 16.28 7.18001 16.21 6.88001C15.89 5.39001 15.4 3.88001 14.77 2.39001H14.76Z" fill="#240403"/>
+                    <path d="M6.58984 7.7801C6.65984 7.4001 6.72984 7.0301 6.80984 6.6601C7.08984 5.4001 7.47984 4.1201 7.96984 2.8501H7.97984C8.02984 2.6901 8.08984 2.5401 8.14984 2.3901L8.31984 2.0001L8.38484 1.8431L8.48984 1.6001C5.48984 2.5901 3.05984 4.8701 1.83984 7.7801H6.58984Z" fill="#240403"/>
+                    <path d="M6.44 15.22C6.29 14.14 6.22 13.06 6.22 12C6.22 10.94 6.29 9.86003 6.45 8.78003H1.48C1.17 9.80003 1 10.88 1 12C1 13.12 1.17 14.2 1.48 15.22H6.44Z" fill="#240403"/>
+                    <path d="M7.21973 12C7.21973 13.05 7.29973 14.13 7.45973 15.22H11.4997V8.78003H7.44973C7.29973 9.86003 7.21973 10.94 7.21973 12Z" fill="#240403"/>
+                    <path d="M7.78035 17.11C8.13035 18.68 8.62035 20.19 9.24035 21.61L9.32035 21.81L9.72035 22.75C10.3004 22.89 10.8904 22.96 11.5004 22.99V16.22H7.61035C7.66035 16.51 7.72035 16.81 7.78035 17.11Z" fill="#240403"/>
+                    <path d="M9.35035 2.08001L9.24035 2.39001H9.23035C8.60035 3.88001 8.11035 5.39001 7.79035 6.88001C7.72035 7.18001 7.66035 7.48001 7.61035 7.78001H11.5004V1.01001C10.8704 1.04001 10.2404 1.12001 9.64035 1.27001L9.35035 2.08001Z" fill="#240403"/>
+                    <path d="M14.76 21.61C15.38 20.19 15.87 18.68 16.22 17.11C16.28 16.81 16.34 16.51 16.39 16.22H12.5V22.99C13.1 22.96 13.7 22.89 14.27 22.75L14.68 21.81L14.729 21.688L14.81 21.5L14.76 21.61Z" fill="#240403"/>
+                  </svg>
+                  <div class="contacts__map-contac--block">
+                    <div class="contacts__map-contact--title txt18 txt18_bold">Сайт</div>
+                    <a href="#" class="contacts__map-contact--text txt16">profikrol.ru</a>
+                  </div>
+                </div>
+                <div class="contacts__map-contact">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.4503 17.3503C22.2056 17.0896 21.3417 16.319 19.7536 15.2995C18.1537 14.271 16.9739 13.6298 16.6354 13.4803C16.6056 13.467 16.5727 13.4622 16.5404 13.4662C16.508 13.4703 16.4773 13.4831 16.4517 13.5032C15.9065 13.9284 14.9887 14.7093 14.9395 14.7515C14.6217 15.0238 14.6217 15.0238 14.3615 14.939C13.904 14.789 12.4828 14.0343 11.2443 12.7931C10.0059 11.5518 9.21231 10.0954 9.06231 9.63838C8.97653 9.37775 8.97653 9.37775 9.24981 9.05994C9.292 9.01072 10.0734 8.09291 10.4986 7.54822C10.5187 7.52257 10.5315 7.49191 10.5356 7.45954C10.5396 7.42716 10.5348 7.3943 10.5215 7.36447C10.372 7.02557 9.73075 5.84619 8.70231 4.24635C7.68137 2.65869 6.91168 1.79479 6.65106 1.5501C6.62714 1.52753 6.59758 1.51183 6.56549 1.50465C6.5334 1.49747 6.49997 1.49909 6.46871 1.50932C5.55769 1.82239 4.67869 2.22186 3.84371 2.70229C3.03766 3.17086 2.27455 3.70967 1.56325 4.31244C1.53842 4.33355 1.5198 4.36102 1.5094 4.3919C1.49899 4.42279 1.49719 4.45592 1.50418 4.48775C1.60215 4.94432 2.07043 6.85025 3.52356 9.49025C5.00621 12.1846 6.03371 13.5651 8.21106 15.7349C10.3884 17.9048 11.8125 18.9942 14.5097 20.4768C17.1497 21.9299 19.0565 22.3987 19.5122 22.4957C19.5441 22.5027 19.5772 22.5008 19.6082 22.4904C19.6391 22.48 19.6667 22.4614 19.6879 22.4367C20.2906 21.7254 20.8293 20.9623 21.2976 20.1562C21.778 19.3212 22.1774 18.4422 22.4906 17.5312C22.5006 17.5002 22.5022 17.467 22.4951 17.4352C22.488 17.4034 22.4725 17.3741 22.4503 17.3503Z" fill="#240403"/>
+                  </svg>
+                  <div class="contacts__map-contac--block">
+                    <div class="contacts__map-contact--title txt18 txt18_bold">Телефон</div>
+                    <a href="#" class="contacts__map-contact--text txt16">+7 926 669-03-96</a>
+                    <a href="#" class="contacts__map-contact--text txt16">+7 926 669-03-96</a>
+                    <a href="#" class="contacts__map-contact--text txt16">+7 926 669-03-96</a>
+                  </div>
+                </div>
+                <div class="contacts__map-contact">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.615 19C4.155 19 3.771 18.846 3.463 18.538C3.15433 18.2293 3 17.845 3 17.385V6.615C3 6.155 3.15433 5.771 3.463 5.463C3.771 5.15433 4.155 5 4.615 5H19.385C19.845 5 20.229 5.15433 20.537 5.463C20.8457 5.771 21 6.155 21 6.615V17.385C21 17.845 20.846 18.229 20.538 18.537C20.2293 18.8457 19.845 19 19.385 19H4.615ZM12 12.115L20 6.885L19.692 6L12 11L4.308 6L4 6.885L12 12.115Z" fill="#240403"/>
+                  </svg>
+                  <div class="contacts__map-contac--block">
+                    <div class="contacts__map-contact--title txt18 txt18_bold">Почта</div>
+                    <a href="#" class="contacts__map-contact--text txt16">msk@profikrol.ru</a>
+                  </div>
+                </div>
+                <div class="contacts__map-contact">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12Z" fill="#240403"/>
+                    <path d="M15.7099 15.18L12.6099 13.33C12.0699 13.01 11.6299 12.24 11.6299 11.61V7.51001" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="contacts__map-contac--block">
+                    <div class="contacts__map-contact--title txt18 txt18_bold">Время работы</div>
+                    <div class="contacts__map-contact--text txt16">10:00 – 20:00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contacts__btn-company--open mobile">
+              <div class="tl2">Контакты организации</div>
+              <div>
+                <svg
+                  width="32"
+                  height="33"
+                  viewBox="0 0 32 33"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2518_7933)">
+                    <path
+                      d="M12.0456 6.48078H25.9388V20.374M24.974 7.44558L6.0638 26.3558"
+                      stroke="#6AA64C"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2518_7933">
+                      <rect width="32" height="32" fill="white" transform="translate(0 0.542969)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <div class="contacts__btn-employees--open mobile">
+              <div class="tl2">Контакты сотрудников организации</div>
+              <div>
+                <svg
+                  width="32"
+                  height="33"
+                  viewBox="0 0 32 33"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2518_7933)">
+                    <path
+                      d="M12.0456 6.48078H25.9388V20.374M24.974 7.44558L6.0638 26.3558"
+                      stroke="#6AA64C"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2518_7933">
+                      <rect width="32" height="32" fill="white" transform="translate(0 0.542969)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <div class="contacts__bottom desktop">
+              <div class="contacts__accordion">
+                <div class="contacts__accordion-head">
+                  <div class="contacts__accordion-title tl2">Контакты сотрудников организации</div>
+                  <div class="contacts__accordion-arrow">
+                    <svg
+                      width="32"
+                      height="33"
+                      viewBox="0 0 32 33"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.66699 21.8333L16.0003 12.5L25.3337 21.8333"
+                        stroke="#240403"
+                        stroke-width="1.3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="contacts__accordion-body">
+                  <div class="contacts__accordion-column">
+                    <div class="contacts__accordion-post txt18 txt18_bold">Директор</div>
+                    <div class="contacts__accordion-name txt18">Одинцов Василий Петрович</div>
+                    <div class="contacts__accordion-contact txt16">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.95693 3.14978C7.56282 1.58459 9.73523 0.706055 11.9997 0.706055C14.2641 0.706055 16.4365 1.58459 18.0424 3.14978C24.1705 9.15778 17.2744 16.6168 12.9832 22.3359C12.8698 22.4873 12.7216 22.6104 12.5506 22.6952C12.3797 22.7801 12.1908 22.8243 11.9992 22.8243C11.8076 22.8243 11.6187 22.7801 11.4477 22.6952C11.2768 22.6104 11.1286 22.4873 11.0152 22.3359C6.72565 16.6168 -0.171226 9.15778 5.95693 3.14978ZM11.9997 5.84131C11.3934 5.84131 10.8008 6.01754 10.2968 6.34772C9.79268 6.6779 9.3998 7.14721 9.16777 7.69629C8.93575 8.24537 8.875 8.84958 8.99322 9.4325C9.11144 10.0154 9.40331 10.5509 9.83192 10.9712C10.2605 11.3915 10.8066 11.6778 11.4012 11.7938C11.9958 11.9099 12.6121 11.8505 13.1722 11.6231C13.7323 11.3958 14.2111 11.0107 14.548 10.5166C14.8849 10.0225 15.0648 9.44153 15.0649 8.84719C15.065 8.45248 14.9858 8.06163 14.8318 7.69694C14.6778 7.33225 14.452 7.00088 14.1674 6.72175C13.8827 6.44262 13.5448 6.2212 13.1729 6.07013C12.8009 5.91906 12.4023 5.84131 11.9997 5.84131Z" fill="#240403"/>
+                      </svg>
+                      <div>Моск.область, г. Красково, 2-й Осоавиахимовский проезд, 12 (по МСК)</div>
+                    </div>
+                    <div class="contacts__accordion-contact txt16">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.4503 17.3503C22.2056 17.0896 21.3417 16.319 19.7536 15.2995C18.1537 14.271 16.9739 13.6298 16.6354 13.4803C16.6056 13.467 16.5727 13.4622 16.5404 13.4662C16.508 13.4703 16.4773 13.4831 16.4517 13.5032C15.9065 13.9284 14.9887 14.7093 14.9395 14.7515C14.6217 15.0238 14.6217 15.0238 14.3615 14.939C13.904 14.789 12.4828 14.0343 11.2443 12.7931C10.0059 11.5518 9.21231 10.0954 9.06231 9.63838C8.97653 9.37775 8.97653 9.37775 9.24981 9.05994C9.292 9.01072 10.0734 8.09291 10.4986 7.54822C10.5187 7.52257 10.5315 7.49191 10.5356 7.45954C10.5396 7.42716 10.5348 7.3943 10.5215 7.36447C10.372 7.02557 9.73075 5.84619 8.70231 4.24635C7.68137 2.65869 6.91168 1.79479 6.65106 1.5501C6.62714 1.52753 6.59758 1.51183 6.56549 1.50465C6.5334 1.49747 6.49997 1.49909 6.46871 1.50932C5.55769 1.82239 4.67869 2.22186 3.84371 2.70229C3.03766 3.17086 2.27455 3.70967 1.56325 4.31244C1.53842 4.33355 1.5198 4.36102 1.5094 4.3919C1.49899 4.42279 1.49719 4.45592 1.50418 4.48775C1.60215 4.94432 2.07043 6.85025 3.52356 9.49025C5.00621 12.1846 6.03371 13.5651 8.21106 15.7349C10.3884 17.9048 11.8125 18.9942 14.5097 20.4768C17.1497 21.9299 19.0565 22.3987 19.5122 22.4957C19.5441 22.5027 19.5772 22.5008 19.6082 22.4904C19.6391 22.48 19.6667 22.4614 19.6879 22.4367C20.2906 21.7254 20.8293 20.9623 21.2976 20.1562C21.778 19.3212 22.1774 18.4422 22.4906 17.5312C22.5006 17.5002 22.5022 17.467 22.4951 17.4352C22.488 17.4034 22.4725 17.3741 22.4503 17.3503Z" fill="#240403"/>
+                      </svg>
+                      <a href="#">+7 926 669-03-96</a>
+                    </div>
+                    <div class="contacts__accordion-contact txt16">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.615 19C4.155 19 3.771 18.846 3.463 18.538C3.15433 18.2293 3 17.845 3 17.385V6.615C3 6.155 3.15433 5.771 3.463 5.463C3.771 5.15433 4.155 5 4.615 5H19.385C19.845 5 20.229 5.15433 20.537 5.463C20.8457 5.771 21 6.155 21 6.615V17.385C21 17.845 20.846 18.229 20.538 18.537C20.2293 18.8457 19.845 19 19.385 19H4.615ZM12 12.115L20 6.885L19.692 6L12 11L4.308 6L4 6.885L12 12.115Z" fill="#240403"/>
+                      </svg>
+                      <a href="#">msk@profikrol.ru</a>
+                    </div>
+                  </div>
+                  <div class="contacts__accordion-column">
+                    <div class="contacts__accordion-post txt18 txt18_bold">Коммерческий директор</div>
+                    <div class="contacts__accordion-name txt18">Бондаренко Валерий Викторович</div>
+                    <div class="contacts__accordion-contact txt16">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.95693 3.14978C7.56282 1.58459 9.73523 0.706055 11.9997 0.706055C14.2641 0.706055 16.4365 1.58459 18.0424 3.14978C24.1705 9.15778 17.2744 16.6168 12.9832 22.3359C12.8698 22.4873 12.7216 22.6104 12.5506 22.6952C12.3797 22.7801 12.1908 22.8243 11.9992 22.8243C11.8076 22.8243 11.6187 22.7801 11.4477 22.6952C11.2768 22.6104 11.1286 22.4873 11.0152 22.3359C6.72565 16.6168 -0.171226 9.15778 5.95693 3.14978ZM11.9997 5.84131C11.3934 5.84131 10.8008 6.01754 10.2968 6.34772C9.79268 6.6779 9.3998 7.14721 9.16777 7.69629C8.93575 8.24537 8.875 8.84958 8.99322 9.4325C9.11144 10.0154 9.40331 10.5509 9.83192 10.9712C10.2605 11.3915 10.8066 11.6778 11.4012 11.7938C11.9958 11.9099 12.6121 11.8505 13.1722 11.6231C13.7323 11.3958 14.2111 11.0107 14.548 10.5166C14.8849 10.0225 15.0648 9.44153 15.0649 8.84719C15.065 8.45248 14.9858 8.06163 14.8318 7.69694C14.6778 7.33225 14.452 7.00088 14.1674 6.72175C13.8827 6.44262 13.5448 6.2212 13.1729 6.07013C12.8009 5.91906 12.4023 5.84131 11.9997 5.84131Z" fill="#240403"/>
+                      </svg>
+                      <div>г. Казань, ул.Февральская, д.23 (по МСК)</div>
+                    </div>
+                    <div class="contacts__accordion-contact txt16">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.4503 17.3503C22.2056 17.0896 21.3417 16.319 19.7536 15.2995C18.1537 14.271 16.9739 13.6298 16.6354 13.4803C16.6056 13.467 16.5727 13.4622 16.5404 13.4662C16.508 13.4703 16.4773 13.4831 16.4517 13.5032C15.9065 13.9284 14.9887 14.7093 14.9395 14.7515C14.6217 15.0238 14.6217 15.0238 14.3615 14.939C13.904 14.789 12.4828 14.0343 11.2443 12.7931C10.0059 11.5518 9.21231 10.0954 9.06231 9.63838C8.97653 9.37775 8.97653 9.37775 9.24981 9.05994C9.292 9.01072 10.0734 8.09291 10.4986 7.54822C10.5187 7.52257 10.5315 7.49191 10.5356 7.45954C10.5396 7.42716 10.5348 7.3943 10.5215 7.36447C10.372 7.02557 9.73075 5.84619 8.70231 4.24635C7.68137 2.65869 6.91168 1.79479 6.65106 1.5501C6.62714 1.52753 6.59758 1.51183 6.56549 1.50465C6.5334 1.49747 6.49997 1.49909 6.46871 1.50932C5.55769 1.82239 4.67869 2.22186 3.84371 2.70229C3.03766 3.17086 2.27455 3.70967 1.56325 4.31244C1.53842 4.33355 1.5198 4.36102 1.5094 4.3919C1.49899 4.42279 1.49719 4.45592 1.50418 4.48775C1.60215 4.94432 2.07043 6.85025 3.52356 9.49025C5.00621 12.1846 6.03371 13.5651 8.21106 15.7349C10.3884 17.9048 11.8125 18.9942 14.5097 20.4768C17.1497 21.9299 19.0565 22.3987 19.5122 22.4957C19.5441 22.5027 19.5772 22.5008 19.6082 22.4904C19.6391 22.48 19.6667 22.4614 19.6879 22.4367C20.2906 21.7254 20.8293 20.9623 21.2976 20.1562C21.778 19.3212 22.1774 18.4422 22.4906 17.5312C22.5006 17.5002 22.5022 17.467 22.4951 17.4352C22.488 17.4034 22.4725 17.3741 22.4503 17.3503Z" fill="#240403"/>
+                      </svg>
+                      <a href="#">+7 926 669-03-96</a>
+                    </div>
+                    <div class="contacts__accordion-contact txt16">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.615 19C4.155 19 3.771 18.846 3.463 18.538C3.15433 18.2293 3 17.845 3 17.385V6.615C3 6.155 3.15433 5.771 3.463 5.463C3.771 5.15433 4.155 5 4.615 5H19.385C19.845 5 20.229 5.15433 20.537 5.463C20.8457 5.771 21 6.155 21 6.615V17.385C21 17.845 20.846 18.229 20.538 18.537C20.2293 18.8457 19.845 19 19.385 19H4.615ZM12 12.115L20 6.885L19.692 6L12 11L4.308 6L4 6.885L12 12.115Z" fill="#240403"/>
+                      </svg>
+                      <a href="#">bondarenko@profikrol.ru</a>
+                    </div>
+                  </div>
+                  <div class="contacts__accordion-column">
+                    <div class="contacts__accordion-post txt18 txt18_bold">Отдел продаж</div>
+                    <div class="contacts__accordion-name txt18">Бойко Светлана Леонидовна</div>
+                    <div class="contacts__accordion-contact txt16">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.95693 3.14978C7.56282 1.58459 9.73523 0.706055 11.9997 0.706055C14.2641 0.706055 16.4365 1.58459 18.0424 3.14978C24.1705 9.15778 17.2744 16.6168 12.9832 22.3359C12.8698 22.4873 12.7216 22.6104 12.5506 22.6952C12.3797 22.7801 12.1908 22.8243 11.9992 22.8243C11.8076 22.8243 11.6187 22.7801 11.4477 22.6952C11.2768 22.6104 11.1286 22.4873 11.0152 22.3359C6.72565 16.6168 -0.171226 9.15778 5.95693 3.14978ZM11.9997 5.84131C11.3934 5.84131 10.8008 6.01754 10.2968 6.34772C9.79268 6.6779 9.3998 7.14721 9.16777 7.69629C8.93575 8.24537 8.875 8.84958 8.99322 9.4325C9.11144 10.0154 9.40331 10.5509 9.83192 10.9712C10.2605 11.3915 10.8066 11.6778 11.4012 11.7938C11.9958 11.9099 12.6121 11.8505 13.1722 11.6231C13.7323 11.3958 14.2111 11.0107 14.548 10.5166C14.8849 10.0225 15.0648 9.44153 15.0649 8.84719C15.065 8.45248 14.9858 8.06163 14.8318 7.69694C14.6778 7.33225 14.452 7.00088 14.1674 6.72175C13.8827 6.44262 13.5448 6.2212 13.1729 6.07013C12.8009 5.91906 12.4023 5.84131 11.9997 5.84131Z" fill="#240403"/>
+                      </svg>
+                      <div>г. Орск, ул.Февральская, д.23 (+2 часа по МСК)</div>
+                    </div>
+                    <div class="contacts__accordion-contact txt16">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.4503 17.3503C22.2056 17.0896 21.3417 16.319 19.7536 15.2995C18.1537 14.271 16.9739 13.6298 16.6354 13.4803C16.6056 13.467 16.5727 13.4622 16.5404 13.4662C16.508 13.4703 16.4773 13.4831 16.4517 13.5032C15.9065 13.9284 14.9887 14.7093 14.9395 14.7515C14.6217 15.0238 14.6217 15.0238 14.3615 14.939C13.904 14.789 12.4828 14.0343 11.2443 12.7931C10.0059 11.5518 9.21231 10.0954 9.06231 9.63838C8.97653 9.37775 8.97653 9.37775 9.24981 9.05994C9.292 9.01072 10.0734 8.09291 10.4986 7.54822C10.5187 7.52257 10.5315 7.49191 10.5356 7.45954C10.5396 7.42716 10.5348 7.3943 10.5215 7.36447C10.372 7.02557 9.73075 5.84619 8.70231 4.24635C7.68137 2.65869 6.91168 1.79479 6.65106 1.5501C6.62714 1.52753 6.59758 1.51183 6.56549 1.50465C6.5334 1.49747 6.49997 1.49909 6.46871 1.50932C5.55769 1.82239 4.67869 2.22186 3.84371 2.70229C3.03766 3.17086 2.27455 3.70967 1.56325 4.31244C1.53842 4.33355 1.5198 4.36102 1.5094 4.3919C1.49899 4.42279 1.49719 4.45592 1.50418 4.48775C1.60215 4.94432 2.07043 6.85025 3.52356 9.49025C5.00621 12.1846 6.03371 13.5651 8.21106 15.7349C10.3884 17.9048 11.8125 18.9942 14.5097 20.4768C17.1497 21.9299 19.0565 22.3987 19.5122 22.4957C19.5441 22.5027 19.5772 22.5008 19.6082 22.4904C19.6391 22.48 19.6667 22.4614 19.6879 22.4367C20.2906 21.7254 20.8293 20.9623 21.2976 20.1562C21.778 19.3212 22.1774 18.4422 22.4906 17.5312C22.5006 17.5002 22.5022 17.467 22.4951 17.4352C22.488 17.4034 22.4725 17.3741 22.4503 17.3503Z" fill="#240403"/>
+                      </svg>
+                      <a href="#">+ 7 965 356-66-23</a>
+                    </div>
+                    <div class="contacts__accordion-contact txt16">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.615 19C4.155 19 3.771 18.846 3.463 18.538C3.15433 18.2293 3 17.845 3 17.385V6.615C3 6.155 3.15433 5.771 3.463 5.463C3.771 5.15433 4.155 5 4.615 5H19.385C19.845 5 20.229 5.15433 20.537 5.463C20.8457 5.771 21 6.155 21 6.615V17.385C21 17.845 20.846 18.229 20.538 18.537C20.2293 18.8457 19.845 19 19.385 19H4.615ZM12 12.115L20 6.885L19.692 6L12 11L4.308 6L4 6.885L12 12.115Z" fill="#240403"/>
+                      </svg>
+                      <a href="#">s.boyko@profikrol.ru</a>
+                    </div>
+                  </div>
+                  <div class="contacts__accordion-column">
+                    <div class="contacts__accordion-post txt18 txt18_bold">Главный бухгалтер</div>
+                    <div class="contacts__accordion-name txt18">Одинцов Василий Петрович</div>
+                    <div class="contacts__accordion-contact txt16">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.95693 3.14978C7.56282 1.58459 9.73523 0.706055 11.9997 0.706055C14.2641 0.706055 16.4365 1.58459 18.0424 3.14978C24.1705 9.15778 17.2744 16.6168 12.9832 22.3359C12.8698 22.4873 12.7216 22.6104 12.5506 22.6952C12.3797 22.7801 12.1908 22.8243 11.9992 22.8243C11.8076 22.8243 11.6187 22.7801 11.4477 22.6952C11.2768 22.6104 11.1286 22.4873 11.0152 22.3359C6.72565 16.6168 -0.171226 9.15778 5.95693 3.14978ZM11.9997 5.84131C11.3934 5.84131 10.8008 6.01754 10.2968 6.34772C9.79268 6.6779 9.3998 7.14721 9.16777 7.69629C8.93575 8.24537 8.875 8.84958 8.99322 9.4325C9.11144 10.0154 9.40331 10.5509 9.83192 10.9712C10.2605 11.3915 10.8066 11.6778 11.4012 11.7938C11.9958 11.9099 12.6121 11.8505 13.1722 11.6231C13.7323 11.3958 14.2111 11.0107 14.548 10.5166C14.8849 10.0225 15.0648 9.44153 15.0649 8.84719C15.065 8.45248 14.9858 8.06163 14.8318 7.69694C14.6778 7.33225 14.452 7.00088 14.1674 6.72175C13.8827 6.44262 13.5448 6.2212 13.1729 6.07013C12.8009 5.91906 12.4023 5.84131 11.9997 5.84131Z" fill="#240403"/>
+                      </svg>
+                      <div>г. Казань, ул.Февральская, д.23 (по МСК)</div>
+                    </div>
+                    <div class="contacts__accordion-contact txt16">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.4503 17.3503C22.2056 17.0896 21.3417 16.319 19.7536 15.2995C18.1537 14.271 16.9739 13.6298 16.6354 13.4803C16.6056 13.467 16.5727 13.4622 16.5404 13.4662C16.508 13.4703 16.4773 13.4831 16.4517 13.5032C15.9065 13.9284 14.9887 14.7093 14.9395 14.7515C14.6217 15.0238 14.6217 15.0238 14.3615 14.939C13.904 14.789 12.4828 14.0343 11.2443 12.7931C10.0059 11.5518 9.21231 10.0954 9.06231 9.63838C8.97653 9.37775 8.97653 9.37775 9.24981 9.05994C9.292 9.01072 10.0734 8.09291 10.4986 7.54822C10.5187 7.52257 10.5315 7.49191 10.5356 7.45954C10.5396 7.42716 10.5348 7.3943 10.5215 7.36447C10.372 7.02557 9.73075 5.84619 8.70231 4.24635C7.68137 2.65869 6.91168 1.79479 6.65106 1.5501C6.62714 1.52753 6.59758 1.51183 6.56549 1.50465C6.5334 1.49747 6.49997 1.49909 6.46871 1.50932C5.55769 1.82239 4.67869 2.22186 3.84371 2.70229C3.03766 3.17086 2.27455 3.70967 1.56325 4.31244C1.53842 4.33355 1.5198 4.36102 1.5094 4.3919C1.49899 4.42279 1.49719 4.45592 1.50418 4.48775C1.60215 4.94432 2.07043 6.85025 3.52356 9.49025C5.00621 12.1846 6.03371 13.5651 8.21106 15.7349C10.3884 17.9048 11.8125 18.9942 14.5097 20.4768C17.1497 21.9299 19.0565 22.3987 19.5122 22.4957C19.5441 22.5027 19.5772 22.5008 19.6082 22.4904C19.6391 22.48 19.6667 22.4614 19.6879 22.4367C20.2906 21.7254 20.8293 20.9623 21.2976 20.1562C21.778 19.3212 22.1774 18.4422 22.4906 17.5312C22.5006 17.5002 22.5022 17.467 22.4951 17.4352C22.488 17.4034 22.4725 17.3741 22.4503 17.3503Z" fill="#240403"/>
+                      </svg>
+                      <a href="#">+7 926 669-03-96</a>
+                    </div>
+                    <div class="contacts__accordion-contact txt16">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.615 19C4.155 19 3.771 18.846 3.463 18.538C3.15433 18.2293 3 17.845 3 17.385V6.615C3 6.155 3.15433 5.771 3.463 5.463C3.771 5.15433 4.155 5 4.615 5H19.385C19.845 5 20.229 5.15433 20.537 5.463C20.8457 5.771 21 6.155 21 6.615V17.385C21 17.845 20.846 18.229 20.538 18.537C20.2293 18.8457 19.845 19 19.385 19H4.615ZM12 12.115L20 6.885L19.692 6L12 11L4.308 6L4 6.885L12 12.115Z" fill="#240403"/>
+                      </svg>
+                      <a href="#">msk@profikrol.ru</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contacts__company-modal mobile">
+              <div class="contacts__company-modal--close">
+                <svg
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18 6.54297L6 18.543M6 6.54297L18 18.543"
+                    stroke="#240403"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="contacts__company-modal--wrapper">
+                <div class="contacts__map-title tl2">Контакты организации</div>
+                <div class="contacts__map-contact">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.95693 3.14978C7.56282 1.58459 9.73523 0.706055 11.9997 0.706055C14.2641 0.706055 16.4365 1.58459 18.0424 3.14978C24.1705 9.15778 17.2744 16.6168 12.9832 22.3359C12.8698 22.4873 12.7216 22.6104 12.5506 22.6952C12.3797 22.7801 12.1908 22.8243 11.9992 22.8243C11.8076 22.8243 11.6187 22.7801 11.4477 22.6952C11.2768 22.6104 11.1286 22.4873 11.0152 22.3359C6.72565 16.6168 -0.171226 9.15778 5.95693 3.14978ZM11.9997 5.84131C11.3934 5.84131 10.8008 6.01754 10.2968 6.34772C9.79268 6.6779 9.3998 7.14721 9.16777 7.69629C8.93575 8.24537 8.875 8.84958 8.99322 9.4325C9.11144 10.0154 9.40331 10.5509 9.83192 10.9712C10.2605 11.3915 10.8066 11.6778 11.4012 11.7938C11.9958 11.9099 12.6121 11.8505 13.1722 11.6231C13.7323 11.3958 14.2111 11.0107 14.548 10.5166C14.8849 10.0225 15.0648 9.44153 15.0649 8.84719C15.065 8.45248 14.9858 8.06163 14.8318 7.69694C14.6778 7.33225 14.452 7.00088 14.1674 6.72175C13.8827 6.44262 13.5448 6.2212 13.1729 6.07013C12.8009 5.91906 12.4023 5.84131 11.9997 5.84131Z" fill="#240403"/>
+                  </svg>
+                  <div class="contacts__map-contac--block">
+                    <div class="contacts__map-contact--title txt18 txt18_bold">Адрес</div>
+                    <div class="contacts__map-contact--text txt16">
+                      Моск.область, г. Красково, 2-й Осоавиахимовский проезд, 12
+                    </div>
+                  </div>
+                </div>
+                <div class="contacts__map-contact">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.0195 2.8501H16.0295C16.5195 4.1201 16.9095 5.4001 17.1895 6.6601C17.2695 7.0301 17.3395 7.4001 17.4095 7.7801H22.1595C20.9395 4.8801 18.5195 2.5901 15.5195 1.6001L15.5895 1.7801L15.6395 1.8901C15.7795 2.2101 15.8995 2.5201 16.0195 2.8501Z" fill="#240403"/>
+                    <path d="M21.4598 8.78003H17.5498C17.7098 9.86003 17.7798 10.94 17.7798 12C17.7798 13.06 17.7098 14.14 17.5598 15.22H22.5198C22.8298 14.2 22.9998 13.12 22.9998 12C22.9998 10.88 22.8298 9.80003 22.5198 8.78003H21.4598Z" fill="#240403"/>
+                    <path d="M7.95984 21.14C7.48984 19.92 7.09984 18.64 6.79984 17.33C6.71984 16.96 6.64984 16.59 6.58984 16.22H1.83984C3.05984 19.13 5.47984 21.4 8.47984 22.4H8.48984L8.19984 21.74C8.11984 21.54 8.03984 21.34 7.95984 21.14Z" fill="#240403"/>
+                    <path d="M17.4095 16.22C17.3495 16.59 17.2795 16.95 17.1995 17.32C16.8995 18.64 16.5095 19.92 16.0395 21.14C15.9995 21.26 15.9495 21.38 15.8995 21.5L15.5995 22.21L15.5195 22.4C18.5195 21.41 20.9395 19.12 22.1595 16.22H17.4095Z" fill="#240403"/>
+                    <path d="M12.5 15.22H16.54C16.7 14.13 16.78 13.05 16.78 12C16.78 10.94 16.7 9.86003 16.55 8.78003H12.5V15.22Z" fill="#240403"/>
+                    <path d="M14.76 2.39001C14.75 2.36001 14.74 2.33001 14.73 2.30001L14.68 2.18001L14.29 1.25001C13.71 1.11001 13.11 1.04001 12.5 1.01001V7.78001H16.39C16.34 7.48001 16.28 7.18001 16.21 6.88001C15.89 5.39001 15.4 3.88001 14.77 2.39001H14.76Z" fill="#240403"/>
+                    <path d="M6.58984 7.7801C6.65984 7.4001 6.72984 7.0301 6.80984 6.6601C7.08984 5.4001 7.47984 4.1201 7.96984 2.8501H7.97984C8.02984 2.6901 8.08984 2.5401 8.14984 2.3901L8.31984 2.0001L8.38484 1.8431L8.48984 1.6001C5.48984 2.5901 3.05984 4.8701 1.83984 7.7801H6.58984Z" fill="#240403"/>
+                    <path d="M6.44 15.22C6.29 14.14 6.22 13.06 6.22 12C6.22 10.94 6.29 9.86003 6.45 8.78003H1.48C1.17 9.80003 1 10.88 1 12C1 13.12 1.17 14.2 1.48 15.22H6.44Z" fill="#240403"/>
+                    <path d="M7.21973 12C7.21973 13.05 7.29973 14.13 7.45973 15.22H11.4997V8.78003H7.44973C7.29973 9.86003 7.21973 10.94 7.21973 12Z" fill="#240403"/>
+                    <path d="M7.78035 17.11C8.13035 18.68 8.62035 20.19 9.24035 21.61L9.32035 21.81L9.72035 22.75C10.3004 22.89 10.8904 22.96 11.5004 22.99V16.22H7.61035C7.66035 16.51 7.72035 16.81 7.78035 17.11Z" fill="#240403"/>
+                    <path d="M9.35035 2.08001L9.24035 2.39001H9.23035C8.60035 3.88001 8.11035 5.39001 7.79035 6.88001C7.72035 7.18001 7.66035 7.48001 7.61035 7.78001H11.5004V1.01001C10.8704 1.04001 10.2404 1.12001 9.64035 1.27001L9.35035 2.08001Z" fill="#240403"/>
+                    <path d="M14.76 21.61C15.38 20.19 15.87 18.68 16.22 17.11C16.28 16.81 16.34 16.51 16.39 16.22H12.5V22.99C13.1 22.96 13.7 22.89 14.27 22.75L14.68 21.81L14.729 21.688L14.81 21.5L14.76 21.61Z" fill="#240403"/>
+                  </svg>
+                  <div class="contacts__map-contac--block">
+                    <div class="contacts__map-contact--title txt18 txt18_bold">Сайт</div>
+                    <a href="#" class="contacts__map-contact--text txt16">profikrol.ru</a>
+                  </div>
+                </div>
+                <div class="contacts__map-contact">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.4503 17.3503C22.2056 17.0896 21.3417 16.319 19.7536 15.2995C18.1537 14.271 16.9739 13.6298 16.6354 13.4803C16.6056 13.467 16.5727 13.4622 16.5404 13.4662C16.508 13.4703 16.4773 13.4831 16.4517 13.5032C15.9065 13.9284 14.9887 14.7093 14.9395 14.7515C14.6217 15.0238 14.6217 15.0238 14.3615 14.939C13.904 14.789 12.4828 14.0343 11.2443 12.7931C10.0059 11.5518 9.21231 10.0954 9.06231 9.63838C8.97653 9.37775 8.97653 9.37775 9.24981 9.05994C9.292 9.01072 10.0734 8.09291 10.4986 7.54822C10.5187 7.52257 10.5315 7.49191 10.5356 7.45954C10.5396 7.42716 10.5348 7.3943 10.5215 7.36447C10.372 7.02557 9.73075 5.84619 8.70231 4.24635C7.68137 2.65869 6.91168 1.79479 6.65106 1.5501C6.62714 1.52753 6.59758 1.51183 6.56549 1.50465C6.5334 1.49747 6.49997 1.49909 6.46871 1.50932C5.55769 1.82239 4.67869 2.22186 3.84371 2.70229C3.03766 3.17086 2.27455 3.70967 1.56325 4.31244C1.53842 4.33355 1.5198 4.36102 1.5094 4.3919C1.49899 4.42279 1.49719 4.45592 1.50418 4.48775C1.60215 4.94432 2.07043 6.85025 3.52356 9.49025C5.00621 12.1846 6.03371 13.5651 8.21106 15.7349C10.3884 17.9048 11.8125 18.9942 14.5097 20.4768C17.1497 21.9299 19.0565 22.3987 19.5122 22.4957C19.5441 22.5027 19.5772 22.5008 19.6082 22.4904C19.6391 22.48 19.6667 22.4614 19.6879 22.4367C20.2906 21.7254 20.8293 20.9623 21.2976 20.1562C21.778 19.3212 22.1774 18.4422 22.4906 17.5312C22.5006 17.5002 22.5022 17.467 22.4951 17.4352C22.488 17.4034 22.4725 17.3741 22.4503 17.3503Z" fill="#240403"/>
+                  </svg>
+                  <div class="contacts__map-contac--block">
+                    <div class="contacts__map-contact--title txt18 txt18_bold">Телефон</div>
+                    <a href="#" class="contacts__map-contact--text txt16">+7 926 669-03-96</a>
+                    <a href="#" class="contacts__map-contact--text txt16">+7 926 669-03-96</a>
+                    <a href="#" class="contacts__map-contact--text txt16">+7 926 669-03-96</a>
+                  </div>
+                </div>
+                <div class="contacts__map-contact">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.615 19C4.155 19 3.771 18.846 3.463 18.538C3.15433 18.2293 3 17.845 3 17.385V6.615C3 6.155 3.15433 5.771 3.463 5.463C3.771 5.15433 4.155 5 4.615 5H19.385C19.845 5 20.229 5.15433 20.537 5.463C20.8457 5.771 21 6.155 21 6.615V17.385C21 17.845 20.846 18.229 20.538 18.537C20.2293 18.8457 19.845 19 19.385 19H4.615ZM12 12.115L20 6.885L19.692 6L12 11L4.308 6L4 6.885L12 12.115Z" fill="#240403"/>
+                  </svg>
+                  <div class="contacts__map-contac--block">
+                    <div class="contacts__map-contact--title txt18 txt18_bold">Почта</div>
+                    <a href="#" class="contacts__map-contact--text txt16">msk@profikrol.ru</a>
+                  </div>
+                </div>
+                <div class="contacts__map-contact">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12Z" fill="#240403"/>
+                    <path d="M15.7099 15.18L12.6099 13.33C12.0699 13.01 11.6299 12.24 11.6299 11.61V7.51001" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="contacts__map-contac--block">
+                    <div class="contacts__map-contact--title txt18 txt18_bold">Время работы</div>
+                    <div class="contacts__map-contact--text txt16">10:00 – 20:00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contacts__employees-modal mobile">
+              <div class="contacts__employees-modal--close">
+                <svg
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18 6.54297L6 18.543M6 6.54297L18 18.543"
+                    stroke="#240403"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="contacts__employees-modal--wrapper">
+                <div class="contacts__accordion-title tl2">Контакты сотрудников организации</div>
+                <div class="contacts__accordion-column">
+                  <div class="contacts__accordion-post txt18 txt18_bold">Директор</div>
+                  <div class="contacts__accordion-name txt18">Одинцов Василий Петрович</div>
+                  <div class="contacts__accordion-contact txt16">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M5.95693 3.14978C7.56282 1.58459 9.73523 0.706055 11.9997 0.706055C14.2641 0.706055 16.4365 1.58459 18.0424 3.14978C24.1705 9.15778 17.2744 16.6168 12.9832 22.3359C12.8698 22.4873 12.7216 22.6104 12.5506 22.6952C12.3797 22.7801 12.1908 22.8243 11.9992 22.8243C11.8076 22.8243 11.6187 22.7801 11.4477 22.6952C11.2768 22.6104 11.1286 22.4873 11.0152 22.3359C6.72565 16.6168 -0.171226 9.15778 5.95693 3.14978ZM11.9997 5.84131C11.3934 5.84131 10.8008 6.01754 10.2968 6.34772C9.79268 6.6779 9.3998 7.14721 9.16777 7.69629C8.93575 8.24537 8.875 8.84958 8.99322 9.4325C9.11144 10.0154 9.40331 10.5509 9.83192 10.9712C10.2605 11.3915 10.8066 11.6778 11.4012 11.7938C11.9958 11.9099 12.6121 11.8505 13.1722 11.6231C13.7323 11.3958 14.2111 11.0107 14.548 10.5166C14.8849 10.0225 15.0648 9.44153 15.0649 8.84719C15.065 8.45248 14.9858 8.06163 14.8318 7.69694C14.6778 7.33225 14.452 7.00088 14.1674 6.72175C13.8827 6.44262 13.5448 6.2212 13.1729 6.07013C12.8009 5.91906 12.4023 5.84131 11.9997 5.84131Z" fill="#240403"/>
+                    </svg>
+                    <div>Моск.область, г. Красково, 2-й Осоавиахимовский проезд, 12 (по МСК)</div>
+                  </div>
+                  <div class="contacts__accordion-contact txt16">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22.4503 17.3503C22.2056 17.0896 21.3417 16.319 19.7536 15.2995C18.1537 14.271 16.9739 13.6298 16.6354 13.4803C16.6056 13.467 16.5727 13.4622 16.5404 13.4662C16.508 13.4703 16.4773 13.4831 16.4517 13.5032C15.9065 13.9284 14.9887 14.7093 14.9395 14.7515C14.6217 15.0238 14.6217 15.0238 14.3615 14.939C13.904 14.789 12.4828 14.0343 11.2443 12.7931C10.0059 11.5518 9.21231 10.0954 9.06231 9.63838C8.97653 9.37775 8.97653 9.37775 9.24981 9.05994C9.292 9.01072 10.0734 8.09291 10.4986 7.54822C10.5187 7.52257 10.5315 7.49191 10.5356 7.45954C10.5396 7.42716 10.5348 7.3943 10.5215 7.36447C10.372 7.02557 9.73075 5.84619 8.70231 4.24635C7.68137 2.65869 6.91168 1.79479 6.65106 1.5501C6.62714 1.52753 6.59758 1.51183 6.56549 1.50465C6.5334 1.49747 6.49997 1.49909 6.46871 1.50932C5.55769 1.82239 4.67869 2.22186 3.84371 2.70229C3.03766 3.17086 2.27455 3.70967 1.56325 4.31244C1.53842 4.33355 1.5198 4.36102 1.5094 4.3919C1.49899 4.42279 1.49719 4.45592 1.50418 4.48775C1.60215 4.94432 2.07043 6.85025 3.52356 9.49025C5.00621 12.1846 6.03371 13.5651 8.21106 15.7349C10.3884 17.9048 11.8125 18.9942 14.5097 20.4768C17.1497 21.9299 19.0565 22.3987 19.5122 22.4957C19.5441 22.5027 19.5772 22.5008 19.6082 22.4904C19.6391 22.48 19.6667 22.4614 19.6879 22.4367C20.2906 21.7254 20.8293 20.9623 21.2976 20.1562C21.778 19.3212 22.1774 18.4422 22.4906 17.5312C22.5006 17.5002 22.5022 17.467 22.4951 17.4352C22.488 17.4034 22.4725 17.3741 22.4503 17.3503Z" fill="#240403"/>
+                    </svg>
+                    <a href="#">+7 926 669-03-96</a>
+                  </div>
+                  <div class="contacts__accordion-contact txt16">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.615 19C4.155 19 3.771 18.846 3.463 18.538C3.15433 18.2293 3 17.845 3 17.385V6.615C3 6.155 3.15433 5.771 3.463 5.463C3.771 5.15433 4.155 5 4.615 5H19.385C19.845 5 20.229 5.15433 20.537 5.463C20.8457 5.771 21 6.155 21 6.615V17.385C21 17.845 20.846 18.229 20.538 18.537C20.2293 18.8457 19.845 19 19.385 19H4.615ZM12 12.115L20 6.885L19.692 6L12 11L4.308 6L4 6.885L12 12.115Z" fill="#240403"/>
+                    </svg>
+                    <a href="#">msk@profikrol.ru</a>
+                  </div>
+                </div>
+                <div class="contacts__accordion-column">
+                  <div class="contacts__accordion-post txt18 txt18_bold">Коммерческий директор</div>
+                  <div class="contacts__accordion-name txt18">Бондаренко Валерий Викторович</div>
+                  <div class="contacts__accordion-contact txt16">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M5.95693 3.14978C7.56282 1.58459 9.73523 0.706055 11.9997 0.706055C14.2641 0.706055 16.4365 1.58459 18.0424 3.14978C24.1705 9.15778 17.2744 16.6168 12.9832 22.3359C12.8698 22.4873 12.7216 22.6104 12.5506 22.6952C12.3797 22.7801 12.1908 22.8243 11.9992 22.8243C11.8076 22.8243 11.6187 22.7801 11.4477 22.6952C11.2768 22.6104 11.1286 22.4873 11.0152 22.3359C6.72565 16.6168 -0.171226 9.15778 5.95693 3.14978ZM11.9997 5.84131C11.3934 5.84131 10.8008 6.01754 10.2968 6.34772C9.79268 6.6779 9.3998 7.14721 9.16777 7.69629C8.93575 8.24537 8.875 8.84958 8.99322 9.4325C9.11144 10.0154 9.40331 10.5509 9.83192 10.9712C10.2605 11.3915 10.8066 11.6778 11.4012 11.7938C11.9958 11.9099 12.6121 11.8505 13.1722 11.6231C13.7323 11.3958 14.2111 11.0107 14.548 10.5166C14.8849 10.0225 15.0648 9.44153 15.0649 8.84719C15.065 8.45248 14.9858 8.06163 14.8318 7.69694C14.6778 7.33225 14.452 7.00088 14.1674 6.72175C13.8827 6.44262 13.5448 6.2212 13.1729 6.07013C12.8009 5.91906 12.4023 5.84131 11.9997 5.84131Z" fill="#240403"/>
+                    </svg>
+                    <div>г. Казань, ул.Февральская, д.23 (по МСК)</div>
+                  </div>
+                  <div class="contacts__accordion-contact txt16">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22.4503 17.3503C22.2056 17.0896 21.3417 16.319 19.7536 15.2995C18.1537 14.271 16.9739 13.6298 16.6354 13.4803C16.6056 13.467 16.5727 13.4622 16.5404 13.4662C16.508 13.4703 16.4773 13.4831 16.4517 13.5032C15.9065 13.9284 14.9887 14.7093 14.9395 14.7515C14.6217 15.0238 14.6217 15.0238 14.3615 14.939C13.904 14.789 12.4828 14.0343 11.2443 12.7931C10.0059 11.5518 9.21231 10.0954 9.06231 9.63838C8.97653 9.37775 8.97653 9.37775 9.24981 9.05994C9.292 9.01072 10.0734 8.09291 10.4986 7.54822C10.5187 7.52257 10.5315 7.49191 10.5356 7.45954C10.5396 7.42716 10.5348 7.3943 10.5215 7.36447C10.372 7.02557 9.73075 5.84619 8.70231 4.24635C7.68137 2.65869 6.91168 1.79479 6.65106 1.5501C6.62714 1.52753 6.59758 1.51183 6.56549 1.50465C6.5334 1.49747 6.49997 1.49909 6.46871 1.50932C5.55769 1.82239 4.67869 2.22186 3.84371 2.70229C3.03766 3.17086 2.27455 3.70967 1.56325 4.31244C1.53842 4.33355 1.5198 4.36102 1.5094 4.3919C1.49899 4.42279 1.49719 4.45592 1.50418 4.48775C1.60215 4.94432 2.07043 6.85025 3.52356 9.49025C5.00621 12.1846 6.03371 13.5651 8.21106 15.7349C10.3884 17.9048 11.8125 18.9942 14.5097 20.4768C17.1497 21.9299 19.0565 22.3987 19.5122 22.4957C19.5441 22.5027 19.5772 22.5008 19.6082 22.4904C19.6391 22.48 19.6667 22.4614 19.6879 22.4367C20.2906 21.7254 20.8293 20.9623 21.2976 20.1562C21.778 19.3212 22.1774 18.4422 22.4906 17.5312C22.5006 17.5002 22.5022 17.467 22.4951 17.4352C22.488 17.4034 22.4725 17.3741 22.4503 17.3503Z" fill="#240403"/>
+                    </svg>
+                    <a href="#">+7 926 669-03-96</a>
+                  </div>
+                  <div class="contacts__accordion-contact txt16">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.615 19C4.155 19 3.771 18.846 3.463 18.538C3.15433 18.2293 3 17.845 3 17.385V6.615C3 6.155 3.15433 5.771 3.463 5.463C3.771 5.15433 4.155 5 4.615 5H19.385C19.845 5 20.229 5.15433 20.537 5.463C20.8457 5.771 21 6.155 21 6.615V17.385C21 17.845 20.846 18.229 20.538 18.537C20.2293 18.8457 19.845 19 19.385 19H4.615ZM12 12.115L20 6.885L19.692 6L12 11L4.308 6L4 6.885L12 12.115Z" fill="#240403"/>
+                    </svg>
+                    <a href="#">bondarenko@profikrol.ru</a>
+                  </div>
+                </div>
+                <div class="contacts__accordion-column">
+                  <div class="contacts__accordion-post txt18 txt18_bold">Отдел продаж</div>
+                  <div class="contacts__accordion-name txt18">Бойко Светлана Леонидовна</div>
+                  <div class="contacts__accordion-contact txt16">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M5.95693 3.14978C7.56282 1.58459 9.73523 0.706055 11.9997 0.706055C14.2641 0.706055 16.4365 1.58459 18.0424 3.14978C24.1705 9.15778 17.2744 16.6168 12.9832 22.3359C12.8698 22.4873 12.7216 22.6104 12.5506 22.6952C12.3797 22.7801 12.1908 22.8243 11.9992 22.8243C11.8076 22.8243 11.6187 22.7801 11.4477 22.6952C11.2768 22.6104 11.1286 22.4873 11.0152 22.3359C6.72565 16.6168 -0.171226 9.15778 5.95693 3.14978ZM11.9997 5.84131C11.3934 5.84131 10.8008 6.01754 10.2968 6.34772C9.79268 6.6779 9.3998 7.14721 9.16777 7.69629C8.93575 8.24537 8.875 8.84958 8.99322 9.4325C9.11144 10.0154 9.40331 10.5509 9.83192 10.9712C10.2605 11.3915 10.8066 11.6778 11.4012 11.7938C11.9958 11.9099 12.6121 11.8505 13.1722 11.6231C13.7323 11.3958 14.2111 11.0107 14.548 10.5166C14.8849 10.0225 15.0648 9.44153 15.0649 8.84719C15.065 8.45248 14.9858 8.06163 14.8318 7.69694C14.6778 7.33225 14.452 7.00088 14.1674 6.72175C13.8827 6.44262 13.5448 6.2212 13.1729 6.07013C12.8009 5.91906 12.4023 5.84131 11.9997 5.84131Z" fill="#240403"/>
+                    </svg>
+                    <div>г. Орск, ул.Февральская, д.23 (+2 часа по МСК)</div>
+                  </div>
+                  <div class="contacts__accordion-contact txt16">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22.4503 17.3503C22.2056 17.0896 21.3417 16.319 19.7536 15.2995C18.1537 14.271 16.9739 13.6298 16.6354 13.4803C16.6056 13.467 16.5727 13.4622 16.5404 13.4662C16.508 13.4703 16.4773 13.4831 16.4517 13.5032C15.9065 13.9284 14.9887 14.7093 14.9395 14.7515C14.6217 15.0238 14.6217 15.0238 14.3615 14.939C13.904 14.789 12.4828 14.0343 11.2443 12.7931C10.0059 11.5518 9.21231 10.0954 9.06231 9.63838C8.97653 9.37775 8.97653 9.37775 9.24981 9.05994C9.292 9.01072 10.0734 8.09291 10.4986 7.54822C10.5187 7.52257 10.5315 7.49191 10.5356 7.45954C10.5396 7.42716 10.5348 7.3943 10.5215 7.36447C10.372 7.02557 9.73075 5.84619 8.70231 4.24635C7.68137 2.65869 6.91168 1.79479 6.65106 1.5501C6.62714 1.52753 6.59758 1.51183 6.56549 1.50465C6.5334 1.49747 6.49997 1.49909 6.46871 1.50932C5.55769 1.82239 4.67869 2.22186 3.84371 2.70229C3.03766 3.17086 2.27455 3.70967 1.56325 4.31244C1.53842 4.33355 1.5198 4.36102 1.5094 4.3919C1.49899 4.42279 1.49719 4.45592 1.50418 4.48775C1.60215 4.94432 2.07043 6.85025 3.52356 9.49025C5.00621 12.1846 6.03371 13.5651 8.21106 15.7349C10.3884 17.9048 11.8125 18.9942 14.5097 20.4768C17.1497 21.9299 19.0565 22.3987 19.5122 22.4957C19.5441 22.5027 19.5772 22.5008 19.6082 22.4904C19.6391 22.48 19.6667 22.4614 19.6879 22.4367C20.2906 21.7254 20.8293 20.9623 21.2976 20.1562C21.778 19.3212 22.1774 18.4422 22.4906 17.5312C22.5006 17.5002 22.5022 17.467 22.4951 17.4352C22.488 17.4034 22.4725 17.3741 22.4503 17.3503Z" fill="#240403"/>
+                    </svg>
+                    <a href="#">+ 7 965 356-66-23</a>
+                  </div>
+                  <div class="contacts__accordion-contact txt16">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.615 19C4.155 19 3.771 18.846 3.463 18.538C3.15433 18.2293 3 17.845 3 17.385V6.615C3 6.155 3.15433 5.771 3.463 5.463C3.771 5.15433 4.155 5 4.615 5H19.385C19.845 5 20.229 5.15433 20.537 5.463C20.8457 5.771 21 6.155 21 6.615V17.385C21 17.845 20.846 18.229 20.538 18.537C20.2293 18.8457 19.845 19 19.385 19H4.615ZM12 12.115L20 6.885L19.692 6L12 11L4.308 6L4 6.885L12 12.115Z" fill="#240403"/>
+                    </svg>
+                    <a href="#">s.boyko@profikrol.ru</a>
+                  </div>
+                </div>
+                <div class="contacts__accordion-column">
+                  <div class="contacts__accordion-post txt18 txt18_bold">Главный бухгалтер</div>
+                  <div class="contacts__accordion-name txt18">Одинцов Василий Петрович</div>
+                  <div class="contacts__accordion-contact txt16">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M5.95693 3.14978C7.56282 1.58459 9.73523 0.706055 11.9997 0.706055C14.2641 0.706055 16.4365 1.58459 18.0424 3.14978C24.1705 9.15778 17.2744 16.6168 12.9832 22.3359C12.8698 22.4873 12.7216 22.6104 12.5506 22.6952C12.3797 22.7801 12.1908 22.8243 11.9992 22.8243C11.8076 22.8243 11.6187 22.7801 11.4477 22.6952C11.2768 22.6104 11.1286 22.4873 11.0152 22.3359C6.72565 16.6168 -0.171226 9.15778 5.95693 3.14978ZM11.9997 5.84131C11.3934 5.84131 10.8008 6.01754 10.2968 6.34772C9.79268 6.6779 9.3998 7.14721 9.16777 7.69629C8.93575 8.24537 8.875 8.84958 8.99322 9.4325C9.11144 10.0154 9.40331 10.5509 9.83192 10.9712C10.2605 11.3915 10.8066 11.6778 11.4012 11.7938C11.9958 11.9099 12.6121 11.8505 13.1722 11.6231C13.7323 11.3958 14.2111 11.0107 14.548 10.5166C14.8849 10.0225 15.0648 9.44153 15.0649 8.84719C15.065 8.45248 14.9858 8.06163 14.8318 7.69694C14.6778 7.33225 14.452 7.00088 14.1674 6.72175C13.8827 6.44262 13.5448 6.2212 13.1729 6.07013C12.8009 5.91906 12.4023 5.84131 11.9997 5.84131Z" fill="#240403"/>
+                    </svg>
+                    <div>г. Казань, ул.Февральская, д.23 (по МСК)</div>
+                  </div>
+                  <div class="contacts__accordion-contact txt16">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22.4503 17.3503C22.2056 17.0896 21.3417 16.319 19.7536 15.2995C18.1537 14.271 16.9739 13.6298 16.6354 13.4803C16.6056 13.467 16.5727 13.4622 16.5404 13.4662C16.508 13.4703 16.4773 13.4831 16.4517 13.5032C15.9065 13.9284 14.9887 14.7093 14.9395 14.7515C14.6217 15.0238 14.6217 15.0238 14.3615 14.939C13.904 14.789 12.4828 14.0343 11.2443 12.7931C10.0059 11.5518 9.21231 10.0954 9.06231 9.63838C8.97653 9.37775 8.97653 9.37775 9.24981 9.05994C9.292 9.01072 10.0734 8.09291 10.4986 7.54822C10.5187 7.52257 10.5315 7.49191 10.5356 7.45954C10.5396 7.42716 10.5348 7.3943 10.5215 7.36447C10.372 7.02557 9.73075 5.84619 8.70231 4.24635C7.68137 2.65869 6.91168 1.79479 6.65106 1.5501C6.62714 1.52753 6.59758 1.51183 6.56549 1.50465C6.5334 1.49747 6.49997 1.49909 6.46871 1.50932C5.55769 1.82239 4.67869 2.22186 3.84371 2.70229C3.03766 3.17086 2.27455 3.70967 1.56325 4.31244C1.53842 4.33355 1.5198 4.36102 1.5094 4.3919C1.49899 4.42279 1.49719 4.45592 1.50418 4.48775C1.60215 4.94432 2.07043 6.85025 3.52356 9.49025C5.00621 12.1846 6.03371 13.5651 8.21106 15.7349C10.3884 17.9048 11.8125 18.9942 14.5097 20.4768C17.1497 21.9299 19.0565 22.3987 19.5122 22.4957C19.5441 22.5027 19.5772 22.5008 19.6082 22.4904C19.6391 22.48 19.6667 22.4614 19.6879 22.4367C20.2906 21.7254 20.8293 20.9623 21.2976 20.1562C21.778 19.3212 22.1774 18.4422 22.4906 17.5312C22.5006 17.5002 22.5022 17.467 22.4951 17.4352C22.488 17.4034 22.4725 17.3741 22.4503 17.3503Z" fill="#240403"/>
+                    </svg>
+                    <a href="#">+7 926 669-03-96</a>
+                  </div>
+                  <div class="contacts__accordion-contact txt16">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.615 19C4.155 19 3.771 18.846 3.463 18.538C3.15433 18.2293 3 17.845 3 17.385V6.615C3 6.155 3.15433 5.771 3.463 5.463C3.771 5.15433 4.155 5 4.615 5H19.385C19.845 5 20.229 5.15433 20.537 5.463C20.8457 5.771 21 6.155 21 6.615V17.385C21 17.845 20.846 18.229 20.538 18.537C20.2293 18.8457 19.845 19 19.385 19H4.615ZM12 12.115L20 6.885L19.692 6L12 11L4.308 6L4 6.885L12 12.115Z" fill="#240403"/>
+                    </svg>
+                    <a href="#">msk@profikrol.ru</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__top-inner">
+          <a href="#" class="footer__top-logo tl2"> ООО ПрофиКроль </a>
+
+          <nav class="footer__top-nav">
+            <div class="footer__top-nav-item">
+              <a class="footer__top-nav-item-link" href="">
+                <span class="footer__top-nav-item-link-text txt16">О компании</span>
+              </a>
+            </div>
+
+            <div class="footer__top-nav-item">
+              <a class="footer__top-nav-item-link" href="">
+                <span class="footer__top-nav-item-link-text txt16">О продукте</span>
+              </a>
+            </div>
+            <div class="footer__top-nav-item">
+              <a class="footer__top-nav-item-link" href="">
+                <span class="footer__top-nav-item-link-text txt16">Блог</span>
+              </a>
+            </div>
+
+            <div class="footer__top-nav-item">
+              <a class="footer__top-nav-item-link" href="">
+                <span class="footer__top-nav-item-link-text txt16">Новости</span>
+              </a>
+            </div>
+
+            <div class="footer__top-nav-item">
+              <a class="footer__top-nav-item-link" href="">
+                <span class="footer__top-nav-item-link-text txt16">Каталог</span>
+              </a>
+            </div>
+
+            <div class="footer__top-nav-item">
+              <a class="footer__top-nav-item-link" href="">
+                <span class="footer__top-nav-item-link-text txt16">Контакты</span>
+              </a>
+            </div>
+          </nav>
+
+          <div class="footer__top-contact-wrapper">
+            <div class="footer__top-contact-box">
+              <p class="footer__top-contact-title txt16">Адрес</p>
+              <p class="footer__top-contact-desk">
+                <span class="footer__top-contact-desk-text txt16">117630 Москва ул. Старокалужское шоссе 62, стр.1, к.9</span>
+              </p>
+            </div>
+            <div class="footer__top-contact-box">
+              <p class="footer__top-contact-title txt16">Электронная почта</p>
+              <a href="mailto:msk@profikrol.ru" class="footer__top-contact-desk">
+                <span class="footer__top-contact-desk-text txt16">msk@profikrol.ru</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__top-social-box">
+            <a href="#" class="footer__top-social-svg-box">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.8233 3.55566H12.1874C5.21353 3.55566 3.55469 5.21451 3.55469 12.1759V19.8118C3.55469 26.7845 5.20109 28.4446 12.175 28.4446H19.8109C26.7835 28.4446 28.4436 26.7982 28.4436 19.8243V12.1884C28.4436 5.21451 26.7972 3.55566 19.8233 3.55566ZM23.6475 21.3139H21.8318C21.1449 21.3139 20.9383 20.7576 19.7063 19.5256C18.6311 18.489 18.1769 18.3596 17.9044 18.3596C17.5286 18.3596 17.4253 18.4629 17.4253 18.9818V20.6145C17.4253 21.0563 17.2822 21.3151 16.1286 21.3151C15.009 21.2399 13.9233 20.8998 12.9609 20.3227C11.9986 19.7457 11.1871 18.9483 10.5933 17.9962C9.18352 16.2415 8.20261 14.1821 7.72855 11.9818C7.72855 11.7093 7.83184 11.4629 8.35078 11.4629H10.1652C10.6318 11.4629 10.7998 11.6707 10.9828 12.1498C11.8638 14.7432 13.3671 16.9982 13.9769 16.9982C14.2109 16.9982 14.3129 16.8949 14.3129 16.3112V13.6406C14.2358 12.4223 13.5886 12.319 13.5886 11.8785C13.597 11.7623 13.6502 11.6539 13.7371 11.5763C13.824 11.4987 13.9377 11.458 14.0541 11.4629H16.9063C17.2958 11.4629 17.4253 11.657 17.4253 12.1237V15.7276C17.4253 16.1171 17.5933 16.2465 17.7102 16.2465C17.9442 16.2465 18.1246 16.1171 18.5527 15.689C19.4722 14.5677 20.2234 13.3184 20.7828 11.9806C20.84 11.8198 20.9481 11.6823 21.0908 11.5888C21.2335 11.4953 21.4028 11.4511 21.573 11.4629H23.3886C23.9325 11.4629 24.0482 11.7354 23.9325 12.1237C23.2723 13.6026 22.4554 15.0065 21.4958 16.3112C21.3005 16.6099 21.2221 16.7654 21.4958 17.1151C21.6763 17.3877 22.3122 17.919 22.7403 18.4243C23.3624 19.0448 23.879 19.7628 24.2697 20.5498C24.4253 21.055 24.1652 21.3139 23.6475 21.3139Z" fill="#240403"></path>
+              </svg>
+            </a>
+            <a href="#" class="footer__top-social-svg-box">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.8 21.333L21.104 16.533L12.8 11.733V21.333ZM31.296 8.80501C31.504 9.55701 31.648 10.565 31.744 11.845C31.856 13.125 31.904 14.229 31.904 15.189L32 16.533C32 20.037 31.744 22.613 31.296 24.261C30.896 25.701 29.968 26.629 28.528 27.029C27.776 27.237 26.4 27.381 24.288 27.477C22.208 27.589 20.304 27.637 18.544 27.637L16 27.733C9.296 27.733 5.12 27.477 3.472 27.029C2.032 26.629 1.104 25.701 0.704 24.261C0.496 23.509 0.352 22.501 0.256 21.221C0.144 19.941 0.0959999 18.837 0.0959999 17.877L0 16.533C0 13.029 0.256 10.453 0.704 8.80501C1.104 7.36501 2.032 6.43701 3.472 6.03701C4.224 5.82901 5.6 5.68501 7.712 5.58901C9.792 5.47701 11.696 5.42901 13.456 5.42901L16 5.33301C22.704 5.33301 26.88 5.58901 28.528 6.03701C29.968 6.43701 30.896 7.36501 31.296 8.80501Z" fill="#240403"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom-inner">
+          <a href="#" class="footer__bottom-policy txt16">Политика конфиденциальности</a>
+          <a href="#" class="footer__bottom-request">
+            <div class="footer__bottom-request-img-box">
+              <img src="./assets/images/request-logo.svg" alt="">
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script>
+      initMap();
+
+      async function initMap() {
+        // Промис `ymaps3.ready` будет зарезолвлен, когда загрузятся все компоненты основного модуля API
+        await ymaps3.ready;
+
+        const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapMarker } = ymaps3;
+
+        // Иницилиазируем карту
+        const map = new YMap(
+          // Передаём ссылку на HTMLElement контейнера
+          document.getElementById('map'),
+
+          // Передаём параметры инициализации карты
+          {
+            location: {
+              // Координаты центра карты
+              center: [42.30156997392636, 54.579445796926024],
+
+              // Уровень масштабирования
+              zoom: 6
+            }
+          }
+        );
+
+        // Добавляем слой для отображения схематической карты
+        map.addChild(new YMapDefaultSchemeLayer());
+        map.addChild(new YMapDefaultFeaturesLayer());
+
+        let markerProps = [
+          { coord: [40.620661770801355, 56.59492428076209] },
+          { coord: [36.51441461331457, 55.06528719047676] }
+        ];
+
+        if (document.querySelector('.enterprises__map-card')) {
+          markerProps = [];
+          const cards = document.querySelectorAll('.enterprises__map-card'),
+            cardContainer = document.querySelector('.enterprises__map-content');
+
+          cards.forEach((card, i) => {
+            let title = card.querySelector('.enterprises__map-card--title').textContent,
+              text = card.querySelector('.enterprises__map-card--text').textContent,
+              imgSrc = card.querySelector('.enterprises__map-card > div:first-child img').getAttribute('src'),
+              coord = card.dataset.coordinates.split(' ');
+
+            markerProps.push({ coord, title, text, imgSrc });
+          });
+
+          cardContainer.addEventListener('click', (e) => {
+            let target = e.target,
+              activeCardIndex = null;
+
+            if (target.classList.contains('enterprises__map-card')) {
+              let coord = target.dataset.coordinates.split(' ');
+
+              cards.forEach((card, i) => {
+                if (card === target) {
+                  activeCardIndex = i;
+                }
+
+                card.classList.remove('active');
+              });
+
+              target.classList.add('active');
+
+              map.setLocation({
+                center: coord
+              });
+            }
+          });
+        }
+
+        markerProps.forEach((obj) => {
+          const marker = document.createElement('div');
+
+          if (document.querySelector('.enterprises__map-card')) {
+            marker.innerHTML = `
+            <div class="map-marker--icon">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle opacity="0.5" cx="30" cy="30" r="30" fill="#6AA64C"/>
+                <circle cx="30" cy="30" r="10" fill="white"/>
+                <circle cx="30" cy="30" r="4" fill="#6AA64C"/>
+              </svg>
+            </div>
+            <div class="map-marker--baloon">
+              <div class="map-marker--img">
+                  <img src=${obj.imgSrc} alt=""/>
+              </div>
+              <div class="map-marker--descr">
+                  <div class="map-marker--title txt18 txt18_bold">${obj.title}</div>
+                  <div class="map-marker--text txt16">${obj.text}</div>
+              </div>
+            </div>
+            `;
+          } else {
+            marker.innerHTML = `
+            <div class="map-marker--icon">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle opacity="0.5" cx="30" cy="30" r="30" fill="#6AA64C"/>
+                <circle cx="30" cy="30" r="10" fill="white"/>
+                <circle cx="30" cy="30" r="4" fill="#6AA64C"/>
+              </svg>
+            <div>
+            `;
+          }
+
+          marker.className = 'map-marker';
+
+          map.addChild(new YMapMarker({ coordinates: obj.coord }, marker));
+        });
+      }
+    </script>
+  </body>
+</html>

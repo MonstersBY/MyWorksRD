@@ -1,0 +1,311 @@
+.about-meat {
+  &__swiper {
+    &.swiper {
+      overflow: initial;
+    }
+
+    &-navigation {
+      display: none;
+    }
+  }
+
+  &__card {
+    position: relative;
+    overflow: hidden;
+    background-color: $white;
+    flex: 0 0 41.5rem;
+    border-radius: 2rem;
+    padding: 3.2rem;
+    min-height: 55.3rem;
+    border: 1px solid $light-grey;
+
+    &.first {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &.thrid {
+      display: flex;
+      flex-direction: column;
+
+      .about-meat__title {
+        text-align: center;
+        margin-bottom: 9.3rem;
+      }
+
+      .about-meat__subtitle {
+        margin-bottom: 2rem;
+      }
+
+      .about-meat__text {
+        max-width: 35rem;
+      }
+
+      .about-meat__img {
+        z-index: 1;
+        width: 18.6rem;
+        height: 16.1rem;
+        left: 16.7rem;
+        top: 19.4rem;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    &.second,
+    &.fourth {
+      background-color: transparent;
+    }
+
+    &.fourth {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    &-bottom {
+      &--first {
+        display: flex;
+        column-gap: 1.3rem;
+        align-items: flex-end;
+        margin-top: auto;
+
+        .about-meat__text {
+          text-align: right;
+        }
+
+        .button {
+          font-family: 'Involve';
+          text-transform: uppercase;
+          display: block;
+          font-size: 1.6rem;
+          font-weight: 500;
+          line-height: 2.1rem;
+          text-align: center;
+          text-wrap: nowrap;
+        }
+      }
+    }
+  }
+
+  &__title {
+    span {
+      display: block;
+      color: $green;
+    }
+  }
+
+  &__text {
+    &-big {
+      font-family: 'Cruinn';
+      font-size: 10.1rem;
+      font-weight: 700;
+      line-height: 12.1rem;
+      color: $light-grey;
+      margin-bottom: 2.8rem;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__rabbit {
+    width: 6rem;
+    height: 4.6rem;
+    margin-top: auto;
+    margin-left: auto;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    border: 1px solid $light-grey;
+    padding: 2rem;
+    border-radius: 2rem;
+    min-height: 20.9rem;
+
+    & > div {
+      display: flex;
+      justify-content: space-between;
+
+      &:first-child {
+        column-gap: 2.8rem;
+      }
+
+      &:last-child {
+        margin-top: auto;
+        align-items: flex-end;
+
+        .about-meat__text {
+          max-width: 23.3rem;
+        }
+      }
+    }
+
+    .about-meat__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 7rem;
+      height: 7rem;
+      padding: 0;
+
+      svg {
+        width: 3.2rem;
+        height: 3.2rem;
+      }
+    }
+  }
+
+  &__icon {
+    width: 3.2rem;
+    height: 3.2rem;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @media (max-width: 48em) {
+    &__swiper {
+      &.swiper {
+        overflow: hidden;
+      }
+    }
+    &__card {
+      flex: 0 0 auto;
+      min-height: 88.6rem;
+      padding: 3.2rem;
+
+      &.first {
+        padding: 6.4rem 4rem;
+
+        .about-meat__title {
+          font-size: 5.6rem;
+        }
+      }
+
+      &.thrid {
+        .about-meat__title {
+          margin-bottom: 15.2rem;
+        }
+
+        .about-meat__subtitle {
+          margin-bottom: 4.6rem;
+        }
+
+        .about-meat__text {
+          max-width: 60rem;
+        }
+
+        .about-meat__img {
+          width: 31.2rem;
+          height: 27rem;
+          left: 29rem;
+          top: 30rem;
+        }
+      }
+
+      &-bottom {
+        &--first {
+          column-gap: 3.2rem;
+
+          .button {
+            font-size: 2.8rem;
+            line-height: 3.6rem;
+          }
+        }
+      }
+    }
+
+    &__slider {
+      .swiper {
+        overflow: visible;
+        margin-bottom: 4rem;
+      }
+
+      .about-meat__swiper-navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1.6rem;
+
+        .swiper-button-prev,
+        .swiper-button-next {
+          position: static;
+        }
+      }
+    }
+
+    &__text {
+      &-big {
+        font-size: 17.8rem;
+        line-height: 21.4rem;
+        margin-bottom: 5rem;
+      }
+    }
+
+    &__rabbit {
+      width: 10rem;
+      height: 7.6rem;
+    }
+
+    &__content {
+      min-height: 31.4rem;
+
+      & > div {
+        &:first-child {
+          column-gap: 0;
+
+          .about-meat__subtitle {
+            max-width: 44.4rem;
+          }
+        }
+
+        &:last-child {
+          .about-meat__text {
+            max-width: 40.6rem;
+          }
+
+          .about-meat__link {
+            width: 9.6rem;
+            height: 9.6rem;
+
+            svg {
+              width: 4.2rem;
+              height: 4.2rem;
+            }
+          }
+        }
+      }
+    }
+
+    &__icon {
+      width: 4.8rem;
+      height: 4.8rem;
+    }
+  }
+}

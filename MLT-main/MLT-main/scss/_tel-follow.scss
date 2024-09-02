@@ -1,0 +1,103 @@
+.tel-follow {
+    position: fixed;
+    right: 10rem;
+    bottom: 10rem;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1.5rem;
+    z-index: 1;
+}
+.tel-follow.active .tel-follow--main {
+    background: #fff;
+}
+.tel-follow.active .tel-follow--main .tel-follow--exit {
+    display: block;
+}
+.tel-follow.active .tel-follow--main .tel-follow--call {
+    display: none;
+}
+.tel-follow--main {
+    width: 7rem;
+    height: 7rem;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex: none;
+    filter: drop-shadow(0px 4px 50px rgba(0, 0, 0, 0.25));
+}
+.tel-follow--main svg {
+    width: 3.4rem;
+    height: 3.4rem;
+}
+.tel-follow--main .tel-follow--exit {
+    display: none;
+}
+.tel-follow--box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    width: 7rem;
+    height: 0rem;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+}
+
+.tel-follow.active .tel-follow--box {
+    height: 16rem;
+}
+.tel-follow--item {
+    width: 7rem;
+    height: 7rem;
+    cursor: pointer;
+}
+.tel-follow--item svg {
+    width: 7rem;
+    height: 7rem;
+}
+
+@media (max-width: 48em) {
+    .tel-follow {
+        position: fixed;
+        right: 2rem;
+        bottom: 12rem;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+        z-index: 1;
+    }
+    .tel-follow--main {
+        width: 10rem;
+        height: 10rem;
+    }
+    .tel-follow--main svg {
+        width: 4.8rem;
+        height: 4.8rem;
+    }
+    .tel-follow--box {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        width: 10rem;
+        height: 0rem;
+        overflow: hidden;
+        transition: height 0.5s ease-in-out;
+    }
+
+    .tel-follow.active .tel-follow--box {
+        height: 22rem;
+    }
+    .tel-follow--item {
+        width: 10rem;
+        height: 10rem;
+        cursor: pointer;
+    }
+    .tel-follow--item svg {
+        width: 10rem;
+        height: 10rem;
+    }
+}

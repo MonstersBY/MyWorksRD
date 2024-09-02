@@ -1,0 +1,27 @@
+#popup__application {
+    .popup__body-content-box {
+        display: grid;
+        grid-template-columns: 105.9rem 74.3rem;
+        gap: 0;
+    }
+    .popup__body {
+        display: initial;
+        background-color: initial;
+        border-radius: initial;
+        padding: initial;
+    }
+}
+
+@media (max-width: 48em) {
+    #popup__application {
+        .popup__body-content-box {
+            grid-template-columns: 1fr;
+        }
+        .popup__body {
+            display: initial;
+            background-color: initial;
+            border-radius: initial;
+            padding: initial;
+        }
+    }
+}

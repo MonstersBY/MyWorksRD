@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+  <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+  <body>
+    <div class="wrapper">
+      <div class="preloader">
+        <div class="preloader__container container">
+          <div class="preloader__inner">
+            <div class="header__inner">
+              <a href="#" class="header__logo header__logo--preloader">
+                <div class="header__logo-img-box">
+                  <img src="./assets/images/logo.svg" alt="" />
+                </div>
+              </a>
+            </div>
+            <div class="preloader__content-wrapper">
+              <div class="preloader__bg preloader__bg--left" style="opacity: 0">
+                <svg
+                  width="597"
+                  height="602"
+                  viewBox="0 0 597 602"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M355.596 88.133C280.862 52.4284 210.073 -23.6949 133.489 7.84635C48.3813 42.8977 -0.469428 142.235 0.765585 234.269C1.90665 319.304 86.1928 343.335 146.027 408.772C223.045 493.003 271.465 638.037 377.701 592.677C456.398 559.077 428.003 491.274 459.63 395.032C484.864 318.242 622.701 271.884 592.046 181.31C560.228 87.2982 409.324 113.802 355.596 88.133Z"
+                    fill="#C14824"
+                  />
+                </svg>
+              </div>
+
+              <div class="preloader__content" style="opacity: 0">
+                <div class="preloader__content-bg"></div>
+                <div class="preloader__content-num-box">
+                  <p class="preloader__content-num"></p>
+                  <p class="preloader__content-percent">%</p>
+                </div>
+                <p class="preloader__content-text txt18">взбиваем сливки</p>
+              </div>
+
+              <div class="preloader__bg preloader__bg--right" style="opacity: 0">
+                <svg
+                  width="328"
+                  height="302"
+                  viewBox="0 0 328 302"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M154.823 37.4384C107.463 42.1961 49.9837 25.9237 21.7763 64.2633C-9.57017 106.869 -3.92996 170.235 24.1328 215.073C50.0613 256.5 98.6299 243.158 147.541 257.45C210.499 275.846 277.549 332.639 316.199 278.667C344.829 238.686 310.654 213.853 297.478 157.146C286.964 111.9 340.837 48.0093 298.76 12.6664C255.085 -24.0183 188.87 34.018 154.823 37.4384Z"
+                    fill="#C14824"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="popup__lk" aria-hidden="true" class="popup popup--right">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.05078 7.05023L16.9503 16.9497" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M7.05078 16.9498L16.9503 7.05027" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__body-content-box-title-box">
+            <p class="popup__body-content-box-title txt60">Личный кабинет</p>
+            <p class="popup__body-content-box-desk txt18">Войдите в систему, чтобы добавить в избранное</p>
+          </div>
+          <form data-popup-message="#popup__code" data-dev="" action="" class="popup__body-form-wrapper">
+            <div class="popup__body-form-input-wrapper">
+              <div class="popup__body-form-input-box">
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--tel popup__body-form-input phone-mask txt18" type="text" placeholder="+ 7 (  ___  )  ___  -  __  -  __" data-placeholder="+ 7 (  ___  )  ___  -  __  -  __" data-validate="" data-required="tel" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите номер телефона</span>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="popup__body-btn">
+              <div class="popup__body-btn-img-box">
+                <img src="./assets/images/star.svg" alt="">
+              </div>
+              <p class="popup__body-btn-text txt36">Войти</p>
+              <div class="popup__body-btn-img-box">
+                <img src="./assets/images/star.svg" alt="">
+              </div>
+            </button>
+          </form>
+          <a href="#" class="popup__body-content-link">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__code" aria-hidden="true" class="popup popup--right">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.05078 7.05023L16.9503 16.9497" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M7.05078 16.9498L16.9503 7.05027" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__body-content-box-title-box">
+            <p class="popup__body-content-box-title txt60">Введите код</p>
+            <p class="popup__body-content-box-desk txt18">Через 30 секунд можно запросить код повторно</p>
+          </div>
+          <form data-popup-message="#popup__code" data-dev="" action="" class="popup__body-form-wrapper">
+            <div class="popup__body-form-input-wrapper">
+              <div class="popup__body-form-input-box">
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--code popup__body-form-input code-mask txt18" type="text" placeholder="___ ___" data-placeholder="___ ___" data-validate="" data-required="code" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите код из СМС</span>
+                </label>
+              </div>
+            </div>
+            <div class="popup__body-btn-box">
+              <button type="submit" class="popup__body-btn">
+                <div class="popup__body-btn-img-box">
+                  <img src="./assets/images/star.svg" alt="">
+                </div>
+                <p class="popup__body-btn-text txt36">Войти</p>
+                <div class="popup__body-btn-img-box">
+                  <img src="./assets/images/star.svg" alt="">
+                </div>
+              </button>
+              <button class="popup__body-btn-code" disabled="">Прислать повторно</button>
+            </div>
+          </form>
+          <a href="#" class="popup__body-content-link">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__success-application" aria-hidden="true" class="popup popup--big">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.05078 7.05023L16.9503 16.9497" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M7.05078 16.9498L16.9503 7.05027" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__bg">
+            <img src="./assets/images/modal-bg.svg" alt="">
+          </div>
+          <div class="popup__body-content-box-title-wrapper">
+            <div class="popup__body-content-box-title-box">
+              <p class="popup__body-content-box-title tl2">
+                Спасибо <br>
+                за заявку!
+              </p>
+              <div class="popup__body-content-box-title-img-box">
+                <img src="./assets/images/modal-img.webp" alt="">
+              </div>
+            </div>
+            <p class="popup__body-content-box-desk txt18">Совсем скоро мы с вами свяжемся!</p>
+          </div>
+          <button data-close="" type="submit" class="popup__body-btn">
+            <div class="popup__body-btn-img-box">
+              <img src="./assets/images/star.svg" alt="">
+            </div>
+            <p class="popup__body-btn-text txt36">вернуться на главную</p>
+            <div class="popup__body-btn-img-box">
+              <img src="./assets/images/star.svg" alt="">
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__success-order" aria-hidden="true" class="popup popup--big">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.05078 7.05023L16.9503 16.9497" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M7.05078 16.9498L16.9503 7.05027" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__bg">
+            <img src="./assets/images/modal-bg.svg" alt="">
+          </div>
+          <div class="popup__body-content-box-title-wrapper">
+            <p class="popup__body-content-box-desk popup__body-content-box-desk--order txt30">Заказ № 9203661507</p>
+            <div class="popup__body-content-box-title-box">
+              <p class="popup__body-content-box-title tl2">
+                Спасибо, <br>
+                что выбрали нас!
+              </p>
+              <div class="popup__body-content-box-title-img-box">
+                <img src="./assets/images/modal-img.webp" alt="">
+              </div>
+            </div>
+
+            <p class="popup__body-content-box-desk popup__body-content-box-desk--link txt18">
+              всю подробную информацию вы можете отследить в
+              <a href="#"> личном кабинете</a>
+            </p>
+          </div>
+          <button data-close="" type="submit" class="popup__body-btn">
+            <div class="popup__body-btn-img-box">
+              <img src="./assets/images/star.svg" alt="">
+            </div>
+            <p class="popup__body-btn-text txt36">вернуться на главную</p>
+            <div class="popup__body-btn-img-box">
+              <img src="./assets/images/star.svg" alt="">
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__feedback" aria-hidden="true" class="popup popup--big popup--big-feedback">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.05078 7.05023L16.9503 16.9497" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M7.05078 16.9498L16.9503 7.05027" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__bg">
+            <img src="./assets/images/modal-bg.svg" alt="">
+          </div>
+          <div class="popup__body-content-box-title-wrapper">
+            <p class="popup__body-content-box-title tl2">Обратная связь</p>
+          </div>
+
+          <form data-popup-message="#popup__success-application" data-dev="" action="" class="popup__body-form-wrapper">
+            <div class="popup__body-form-input-wrapper">
+              <div class="popup__body-form-input-box">
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--name popup__body-form-input txt18" type="text" placeholder="Ваше имя" data-validate="" data-required="" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите Ваше имя</span>
+                </label>
+
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--mail popup__body-form-input txt18" type="text" placeholder="E-mail" data-validate="" data-required="email" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите Ваш e-mail</span>
+                </label>
+
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--tel popup__body-form-input phone-mask txt18" type="text" placeholder="+ 7 (  ___  )  ___  -  __  -  __ " data-placeholder="+ 7 (  ___  )  ___  -  __  -  __ " data-validate="" data-required="tel" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите номер телефона</span>
+                </label>
+
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--textarea popup__body-form-input txt18" type="text" placeholder="Сообщение" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите Ваше имя</span>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="popup__body-btn">
+              <div class="popup__body-btn-img-box">
+                <img src="./assets/images/star.svg" alt="">
+              </div>
+              <p class="popup__body-btn-text txt36">Оставить заявку</p>
+              <div class="popup__body-btn-img-box">
+                <img src="./assets/images/star.svg" alt="">
+              </div>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <main class="main-home" id="fullpage">
+        <header class="header header--main">
+  <div class="container">
+    <div class="header__inner">
+      <a href="#" class="header__logo">
+        <div class="header__logo-img-box">
+          <img src="./assets/images/logo.svg" alt="">
+        </div>
+      </a>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link txt18">Каталог</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link txt18">Horeca</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link txt18">О компании</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link txt18">Новости</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link txt18">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__btn-box">
+        <a href="" class="header__btn" data-popup="#popup__lk">
+          <img src="./assets/images/profile.svg" alt="">
+        </a>
+        <a href="" class="header__btn">
+          <img src="./assets/images/heart.svg" alt="">
+        </a>
+        <a href="" class="header__btn">
+          <img src="./assets/images/shopping-bag.svg" alt="">
+        </a>
+        <button class="header__btn burger mobile">
+          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 12.1H22" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M2 4.09998H22" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M2 20.1H22" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="header__mob">
+    <div class="header__mob-bg" style="position: absolute">
+      <img src="./assets/images/main-hero-bg.svg" alt="">
+    </div>
+    <div class="header__mob-header">
+      <a href="#" class="header__logo">
+        <div class="header__logo-img-box">
+          <img src="./assets/images/logo.svg" alt="">
+        </div>
+      </a>
+      <button class="header__close-btn close-burger">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </button>
+    </div>
+    <nav class="header__mob-nav">
+      <ul class="header__mob-nav-list">
+        <li class="header__mob-nav-item">
+          <a href="#" class="header__mob-nav-link txt18">Каталог</a>
+        </li>
+        <li class="header__mob-nav-item">
+          <a href="#" class="header__mob-nav-link txt18">Horeca</a>
+        </li>
+        <li class="header__mob-nav-item">
+          <a href="#" class="header__mob-nav-link txt18">О компании</a>
+        </li>
+        <li class="header__mob-nav-item">
+          <a href="#" class="header__mob-nav-link txt18">Новости</a>
+        </li>
+        <li class="header__mob-nav-item">
+          <a href="#" class="header__mob-nav-link txt18">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+        <section class="main-hero section">
+  <div class="container">
+    <div class="main-hero__inner">
+      <div class="main-hero__bg">
+        <img src="./assets/images/main-hero-bg.svg" alt="">
+      </div>
+      <p class="main-hero__title tl1">Натуральное мороженое</p>
+      <div class="main-hero__swipers-wrapper">
+        <div class="main-hero__swiper-btn-box">
+          <div class="main-hero__swiper-btn main-hero__swiper-btn--prev swiper-button swiper-button-prev">
+            <div class="main-hero__swiper-btn-svg-box swiper-button-svg-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.5 21C9.5 19.5 8 13.5 2 12C8 10.5 9.5 4.5 9.5 3" stroke="#D15834" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path opacity="0.4" d="M19.5 21C19.5 19.5 18 13.5 12 12C18 10.5 19.5 4.5 19.5 3" stroke="#D15834" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="main-hero__swiper-btn main-hero__swiper-btn--next swiper-button swiper-button-next">
+            <div class="main-hero__swiper-btn-svg-box swiper-button-svg-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.5 21C14.5 19.5 16 13.5 22 12C16 10.5 14.5 4.5 14.5 3" stroke="#D15834" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path opacity="0.4" d="M4.5 21C4.5 19.5 6 13.5 12 12C6 10.5 4.5 4.5 4.5 3" stroke="#D15834" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-hero__favorites-swiper-box">
+          <div class="main-hero__favorites-swiper swiper">
+            <div class="main-hero__favorites-swiper-wrapper swiper-wrapper">
+              <div class="main-hero__favorites-swiper-slide swiper-slide">
+                <div class="main-hero__favorites-swiper-slide-inner">
+                  <button class="main-hero__favorites-swiper-slide-btn active">
+                    <div class="main-hero__favorites-swiper-slide-btn-svg-box">
+                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.1799 2.61667C17.1732 2.61667 15.3425 3.41869 13.9999 4.71234C12.6574 3.41869 10.8266 2.61667 8.81992 2.61667C4.6813 2.61667 1.33325 5.98573 1.33325 10.1383C1.33325 11.6342 1.57223 13.0201 1.98741 14.3045C2.98104 17.4463 4.99557 19.9234 7.09334 21.7263C9.18526 23.5242 11.417 24.701 12.9497 25.2234C13.2869 25.3413 13.6679 25.3833 13.9999 25.3833C14.332 25.3833 14.7129 25.3413 15.0501 25.2234C16.5829 24.701 18.8146 23.5242 20.9065 21.7263C23.0043 19.9234 25.0188 17.4463 26.0124 14.3045C26.4276 13.0201 26.6666 11.6342 26.6666 10.1383C26.6666 5.98573 23.3185 2.61667 19.1799 2.61667Z" fill="#D15834" stroke="white" stroke-width="2"></path>
+                      </svg>
+                    </div>
+                  </button>
+                  <p class="main-hero__favorites-swiper-text txt18">
+                    Настоящее мороженное ручной работы из свежих фермерских продуктов c любовью
+                  </p>
+                </div>
+              </div>
+              <div class="main-hero__favorites-swiper-slide swiper-slide">
+                <div class="main-hero__favorites-swiper-slide-inner">
+                  <button class="main-hero__favorites-swiper-slide-btn">
+                    <div class="main-hero__favorites-swiper-slide-btn-svg-box">
+                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.1799 2.61667C17.1732 2.61667 15.3425 3.41869 13.9999 4.71234C12.6574 3.41869 10.8266 2.61667 8.81992 2.61667C4.6813 2.61667 1.33325 5.98573 1.33325 10.1383C1.33325 11.6342 1.57223 13.0201 1.98741 14.3045C2.98104 17.4463 4.99557 19.9234 7.09334 21.7263C9.18526 23.5242 11.417 24.701 12.9497 25.2234C13.2869 25.3413 13.6679 25.3833 13.9999 25.3833C14.332 25.3833 14.7129 25.3413 15.0501 25.2234C16.5829 24.701 18.8146 23.5242 20.9065 21.7263C23.0043 19.9234 25.0188 17.4463 26.0124 14.3045C26.4276 13.0201 26.6666 11.6342 26.6666 10.1383C26.6666 5.98573 23.3185 2.61667 19.1799 2.61667Z" fill="#D15834" stroke="white" stroke-width="2"></path>
+                      </svg>
+                    </div>
+                  </button>
+                  <p class="main-hero__favorites-swiper-text txt18">
+                    Настоящее мороженное ручной работы из свежих фермерских
+                  </p>
+                </div>
+              </div>
+              <div class="main-hero__favorites-swiper-slide swiper-slide">
+                <div class="main-hero__favorites-swiper-slide-inner">
+                  <button class="main-hero__favorites-swiper-slide-btn">
+                    <div class="main-hero__favorites-swiper-slide-btn-svg-box">
+                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.1799 2.61667C17.1732 2.61667 15.3425 3.41869 13.9999 4.71234C12.6574 3.41869 10.8266 2.61667 8.81992 2.61667C4.6813 2.61667 1.33325 5.98573 1.33325 10.1383C1.33325 11.6342 1.57223 13.0201 1.98741 14.3045C2.98104 17.4463 4.99557 19.9234 7.09334 21.7263C9.18526 23.5242 11.417 24.701 12.9497 25.2234C13.2869 25.3413 13.6679 25.3833 13.9999 25.3833C14.332 25.3833 14.7129 25.3413 15.0501 25.2234C16.5829 24.701 18.8146 23.5242 20.9065 21.7263C23.0043 19.9234 25.0188 17.4463 26.0124 14.3045C26.4276 13.0201 26.6666 11.6342 26.6666 10.1383C26.6666 5.98573 23.3185 2.61667 19.1799 2.61667Z" fill="#D15834" stroke="white" stroke-width="2"></path>
+                      </svg>
+                    </div>
+                  </button>
+                  <p class="main-hero__favorites-swiper-text txt18">
+                    мороженное ручной работы из свежих фермерских продуктов c любовью
+                  </p>
+                </div>
+              </div>
+              <div class="main-hero__favorites-swiper-slide swiper-slide">
+                <div class="main-hero__favorites-swiper-slide-inner">
+                  <button class="main-hero__favorites-swiper-slide-btn">
+                    <div class="main-hero__favorites-swiper-slide-btn-svg-box">
+                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.1799 2.61667C17.1732 2.61667 15.3425 3.41869 13.9999 4.71234C12.6574 3.41869 10.8266 2.61667 8.81992 2.61667C4.6813 2.61667 1.33325 5.98573 1.33325 10.1383C1.33325 11.6342 1.57223 13.0201 1.98741 14.3045C2.98104 17.4463 4.99557 19.9234 7.09334 21.7263C9.18526 23.5242 11.417 24.701 12.9497 25.2234C13.2869 25.3413 13.6679 25.3833 13.9999 25.3833C14.332 25.3833 14.7129 25.3413 15.0501 25.2234C16.5829 24.701 18.8146 23.5242 20.9065 21.7263C23.0043 19.9234 25.0188 17.4463 26.0124 14.3045C26.4276 13.0201 26.6666 11.6342 26.6666 10.1383C26.6666 5.98573 23.3185 2.61667 19.1799 2.61667Z" fill="#D15834" stroke="white" stroke-width="2"></path>
+                      </svg>
+                    </div>
+                  </button>
+                  <p class="main-hero__favorites-swiper-text txt18">
+                    ручной работы из свежих фермерских продуктов c любовью
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-hero__link-swiper-box desktop">
+          <div class="main-hero__link-swiper swiper">
+            <div class="main-hero__link-swiper-wrapper swiper-wrapper">
+              <div class="main-hero__link-swiper-slide swiper-slide">
+                <a href="#" class="main-hero__link-swiper-link">
+                  <div class="main-hero__link-swiper-link-img-box">
+                    <img src="./assets/images/star.svg" alt="">
+                  </div>
+                  <p class="main-hero__link-swiper-link-text txt36">подробнеe о продукте</p>
+                  <div class="main-hero__link-swiper-link-img-box">
+                    <img src="./assets/images/star.svg" alt="">
+                  </div>
+                </a>
+              </div>
+              <div class="main-hero__link-swiper-slide swiper-slide">
+                <a href="#" class="main-hero__link-swiper-link">
+                  <div class="main-hero__link-swiper-link-img-box">
+                    <img src="./assets/images/star.svg" alt="">
+                  </div>
+                  <p class="main-hero__link-swiper-link-text txt36">подробнеe о продукте</p>
+                  <div class="main-hero__link-swiper-link-img-box">
+                    <img src="./assets/images/star.svg" alt="">
+                  </div>
+                </a>
+              </div>
+              <div class="main-hero__link-swiper-slide swiper-slide">
+                <a href="#" class="main-hero__link-swiper-link">
+                  <div class="main-hero__link-swiper-link-img-box">
+                    <img src="./assets/images/star.svg" alt="">
+                  </div>
+                  <p class="main-hero__link-swiper-link-text txt36">подробнеe о продукте</p>
+                  <div class="main-hero__link-swiper-link-img-box">
+                    <img src="./assets/images/star.svg" alt="">
+                  </div>
+                </a>
+              </div>
+              <div class="main-hero__link-swiper-slide swiper-slide">
+                <a href="#" class="main-hero__link-swiper-link">
+                  <div class="main-hero__link-swiper-link-img-box">
+                    <img src="./assets/images/star.svg" alt="">
+                  </div>
+                  <p class="main-hero__link-swiper-link-text txt36">подробнеe о продукте</p>
+                  <div class="main-hero__link-swiper-link-img-box">
+                    <img src="./assets/images/star.svg" alt="">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-hero__center-swiper-box">
+          <div class="main-hero__center-swiper swiper">
+            <div class="main-hero__center-swiper-wrapper swiper-wrapper">
+              <div class="main-hero__center-swiper-slide swiper-slide">
+                <div class="main-hero__center-swiper-slide-inner">
+                  <div class="main-hero__center-swiper-slide-img-box">
+                    <img src="./assets/images/catalog-hero-1.webp" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="main-hero__center-swiper-slide swiper-slide">
+                <div class="main-hero__center-swiper-slide-inner">
+                  <div class="main-hero__center-swiper-slide-img-box">
+                    <img src="./assets/images/main-hero-2.webp" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="main-hero__center-swiper-slide swiper-slide">
+                <div class="main-hero__center-swiper-slide-inner">
+                  <div class="main-hero__center-swiper-slide-img-box">
+                    <img src="./assets/images/main-hero-min-2.webp" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="main-hero__center-swiper-slide swiper-slide">
+                <div class="main-hero__center-swiper-slide-inner">
+                  <div class="main-hero__center-swiper-slide-img-box">
+                    <img src="./assets/images/main-hero-min-3.webp" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-hero__title-swiper-wrapper-box">
+          <div class="main-hero__stat-swiper-box">
+            <div class="main-hero__stat-swiper swiper">
+              <div class="main-hero__stat-swiper-wrapper swiper-wrapper">
+                <div class="main-hero__stat-swiper-slide swiper-slide">
+                  <div class="main-hero__stat-swiper-slide-inner">
+                    <p class="main-hero__stat-swiper-slide-text txt18">Новинка</p>
+                  </div>
+                </div>
+                <div class="main-hero__stat-swiper-slide swiper-slide">
+                  <div class="main-hero__stat-swiper-slide-inner">
+                    <p class="main-hero__stat-swiper-slide-text txt18">Новый вкус</p>
+                  </div>
+                </div>
+                <div class="main-hero__stat-swiper-slide swiper-slide">
+                  <div class="main-hero__stat-swiper-slide-inner">
+                    <p class="main-hero__stat-swiper-slide-text txt18">Новинка</p>
+                  </div>
+                </div>
+                <div class="main-hero__stat-swiper-slide swiper-slide">
+                  <div class="main-hero__stat-swiper-slide-inner">
+                    <p class="main-hero__stat-swiper-slide-text txt18"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="main-hero__title-swiper-title-wrapper">
+            <div class="main-hero__title-swiper-box">
+              <div class="main-hero__title-swiper swiper">
+                <div class="main-hero__title-swiper-wrapper swiper-wrapper">
+                  <div class="main-hero__title-swiper-slide swiper-slide">
+                    <div class="main-hero__title-swiper-slide-inner">
+                      <p class="main-hero__title-swiper-slide-title txt60">Клубника со сливками</p>
+                    </div>
+                  </div>
+                  <div class="main-hero__title-swiper-slide swiper-slide">
+                    <div class="main-hero__title-swiper-slide-inner">
+                      <p class="main-hero__title-swiper-slide-title txt60">Вишневый пирог</p>
+                    </div>
+                  </div>
+                  <div class="main-hero__title-swiper-slide swiper-slide">
+                    <div class="main-hero__title-swiper-slide-inner">
+                      <p class="main-hero__title-swiper-slide-title txt60">Клубника со сливками</p>
+                    </div>
+                  </div>
+                  <div class="main-hero__title-swiper-slide swiper-slide">
+                    <div class="main-hero__title-swiper-slide-inner">
+                      <p class="main-hero__title-swiper-slide-title txt60">Вишневый пирог</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main-hero__weight-swiper-box">
+              <div class="main-hero__weight-swiper swiper">
+                <div class="main-hero__weight-swiper-wrapper swiper-wrapper">
+                  <div class="main-hero__weight-swiper-slide swiper-slide">
+                    <div class="main-hero__weight-swiper-slide-inner">
+                      <p class="main-hero__weight-swiper-slide-text txt30">113 гр</p>
+                    </div>
+                  </div>
+                  <div class="main-hero__weight-swiper-slide swiper-slide">
+                    <div class="main-hero__weight-swiper-slide-inner">
+                      <p class="main-hero__weight-swiper-slide-text txt30">110 гр</p>
+                    </div>
+                  </div>
+                  <div class="main-hero__weight-swiper-slide swiper-slide">
+                    <div class="main-hero__weight-swiper-slide-inner">
+                      <p class="main-hero__weight-swiper-slide-text txt30">100 гр</p>
+                    </div>
+                  </div>
+                  <div class="main-hero__weight-swiper-slide swiper-slide">
+                    <div class="main-hero__weight-swiper-slide-inner">
+                      <p class="main-hero__weight-swiper-slide-text txt30">120 гр</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-hero__thumb-swiper-box">
+          <div class="main-hero__thumb-swiper swiper">
+            <div class="main-hero__thumb-swiper-wrapper swiper-wrapper">
+              <div class="main-hero__thumb-swiper-slide swiper-slide">
+                <div class="main-hero__thumb-swiper-slide-inner main-hero__thumb-swiper-slide-inner--pink">
+                  <div class="main-hero__thumb-swiper-slide-img-box">
+                    <img src="./assets/images/main-hero-min-1.webp" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="main-hero__thumb-swiper-slide swiper-slide">
+                <div class="main-hero__thumb-swiper-slide-inner main-hero__thumb-swiper-slide-inner--blue">
+                  <div class="main-hero__thumb-swiper-slide-img-box">
+                    <img src="./assets/images/main-hero-min-2.webp" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="main-hero__thumb-swiper-slide swiper-slide">
+                <div class="main-hero__thumb-swiper-slide-inner main-hero__thumb-swiper-slide-inner--red">
+                  <div class="main-hero__thumb-swiper-slide-img-box">
+                    <img src="./assets/images/main-hero-min-3.webp" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="main-hero__thumb-swiper-slide swiper-slide">
+                <div class="main-hero__thumb-swiper-slide-inner main-hero__thumb-swiper-slide-inner--black">
+                  <div class="main-hero__thumb-swiper-slide-img-box">
+                    <img src="./assets/images/catalog-hero-1.webp" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="catalog-block section" data-anchor="catalog-block">
+  <div class="catalog-block__container container" id="catalog-block">
+    <div class="catalog-block__top">
+      <div class="catalog-block__title tl2">каталог</div>
+      <div class="catalog-block__tags">
+        <div class="catalog-block__tag txt30">много белка</div>
+        <div class="catalog-block__tag txt30"><span class="desktop">натуральное</span> молоко с фермы</div>
+        <div class="catalog-block__tag txt30">настоящие ягоды</div>
+        <div class="catalog-block__tag txt30">без гмо</div>
+        <div class="catalog-block__tag txt30">ручная работа</div>
+        <div class="catalog-block__tag txt30">плотное и без воздуха</div>
+      </div>
+    </div>
+    <div class="catalog-block__bottom">
+      <div class="catalog-block__swiper swiper">
+        <div class="swiper-wrapper">
+          <div class="catalog-block__slide swiper-slide">
+            <div class="catalog-block__slide-img">
+              <img src="./assets/images/catalog-block__item-img-1.webp" alt="">
+            </div>
+            <div class="catalog-block__slide-descr">
+              <div>
+                <div class="catalog-block__slide-title txt40">Лесные ягоды</div>
+                <div class="catalog-block__slide-weight txt30">90гр</div>
+              </div>
+              <div class="txt18 txt18--bold">взбитый замороженный сорбет</div>
+            </div>
+            <div class="catalog-block__slide-background">
+              <svg width="406" height="412" viewBox="0 0 406 412" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M176.61 359.151C230.526 365.22 298.356 438.025 338.993 402.072C361.794 381.9 340.726 302.36 352.815 255.2C364.67 208.952 414.804 139.9 404.652 111.825C385.706 59.4324 289.371 108.355 238.3 80.6846C172.561 45.0668 111.482 -34.323 55.4555 16.5441C13.9531 54.2247 46.072 90.104 47.1401 156.462C47.9924 209.409 -27.5046 295.562 10.8973 345.052C50.7571 396.42 137.849 354.787 176.61 359.151Z" fill="white"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="catalog-block__slide swiper-slide">
+            <div class="catalog-block__slide-img">
+              <img src="./assets/images/catalog-block__item-img-2.webp" alt="">
+            </div>
+            <div class="catalog-block__slide-descr">
+              <div>
+                <div class="catalog-block__slide-title txt40">Лесные ягоды</div>
+                <div class="catalog-block__slide-weight txt30">90гр</div>
+              </div>
+              <div class="txt18 txt18--bold">взбитый замороженный сорбет</div>
+            </div>
+            <div class="catalog-block__slide-background">
+              <svg width="406" height="412" viewBox="0 0 406 412" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M176.61 359.151C230.526 365.22 298.356 438.025 338.993 402.072C361.794 381.9 340.726 302.36 352.815 255.2C364.67 208.952 414.804 139.9 404.652 111.825C385.706 59.4324 289.371 108.355 238.3 80.6846C172.561 45.0668 111.482 -34.323 55.4555 16.5441C13.9531 54.2247 46.072 90.104 47.1401 156.462C47.9924 209.409 -27.5046 295.562 10.8973 345.052C50.7571 396.42 137.849 354.787 176.61 359.151Z" fill="white"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="catalog-block__slide swiper-slide">
+            <div class="catalog-block__slide-img">
+              <img src="./assets/images/catalog-block__item-img-3.webp" alt="">
+            </div>
+            <div class="catalog-block__slide-descr">
+              <div>
+                <div class="catalog-block__slide-title txt40">Лесные ягоды</div>
+                <div class="catalog-block__slide-weight txt30">90гр</div>
+              </div>
+              <div class="txt18 txt18--bold">взбитый замороженный сорбет</div>
+            </div>
+            <div class="catalog-block__slide-background">
+              <svg width="406" height="412" viewBox="0 0 406 412" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M176.61 359.151C230.526 365.22 298.356 438.025 338.993 402.072C361.794 381.9 340.726 302.36 352.815 255.2C364.67 208.952 414.804 139.9 404.652 111.825C385.706 59.4324 289.371 108.355 238.3 80.6846C172.561 45.0668 111.482 -34.323 55.4555 16.5441C13.9531 54.2247 46.072 90.104 47.1401 156.462C47.9924 209.409 -27.5046 295.562 10.8973 345.052C50.7571 396.42 137.849 354.787 176.61 359.151Z" fill="white"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="catalog-block__slide swiper-slide">
+            <div class="catalog-block__slide-img">
+              <img src="./assets/images/catalog-block__item-img-4.webp" alt="">
+            </div>
+            <div class="catalog-block__slide-descr">
+              <div>
+                <div class="catalog-block__slide-title txt40">Лесные ягоды</div>
+                <div class="catalog-block__slide-weight txt30">90гр</div>
+              </div>
+              <div class="txt18 txt18--bold">взбитый замороженный сорбет</div>
+            </div>
+            <div class="catalog-block__slide-background">
+              <svg width="406" height="412" viewBox="0 0 406 412" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M176.61 359.151C230.526 365.22 298.356 438.025 338.993 402.072C361.794 381.9 340.726 302.36 352.815 255.2C364.67 208.952 414.804 139.9 404.652 111.825C385.706 59.4324 289.371 108.355 238.3 80.6846C172.561 45.0668 111.482 -34.323 55.4555 16.5441C13.9531 54.2247 46.072 90.104 47.1401 156.462C47.9924 209.409 -27.5046 295.562 10.8973 345.052C50.7571 396.42 137.849 354.787 176.61 359.151Z" fill="white"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="catalog-block__swiper-navigation mobile">
+        <div class="catalog-block__swiper-btn catalog-block__swiper-btn--prev swiper-button swiper-button-prev">
+          <div class="catalog-block__swiper-btn-svg-box swiper-button-svg-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.5 21C9.5 19.5 8 13.5 2 12C8 10.5 9.5 4.5 9.5 3" stroke="#D15834" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path opacity="0.4" d="M19.5 21C19.5 19.5 18 13.5 12 12C18 10.5 19.5 4.5 19.5 3" stroke="#D15834" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="catalog-block__swiper-btn catalog-block__swiper-btn--next swiper-button swiper-button-next">
+          <div class="catalog-block__swiper-btn-svg-box swiper-button-svg-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.5 21C14.5 19.5 16 13.5 22 12C16 10.5 14.5 4.5 14.5 3" stroke="#D15834" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path opacity="0.4" d="M4.5 21C4.5 19.5 6 13.5 12 12C6 10.5 4.5 4.5 4.5 3" stroke="#D15834" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="catalog-block__background desktop">
+    <svg width="1920" height="1415" viewBox="0 0 1920 1415" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M157.094 81.6085C90.0513 78.167 -21.4197 120.536 -68.7748 142.15L-211.562 1333.04C-76.6942 1370.34 5.65257 1178.01 159.093 1154.64C298.923 1133.34 525.211 1397.52 765.5 1333.85C863.251 1307.95 885.966 1202.82 988.5 1193C1074.35 1184.78 1115.63 1278.88 1207.5 1278.88C1352 1278.88 1423.41 1216.72 1543.99 1278.88C1654.4 1335.81 1776.41 1357.26 1838.18 1333.85C1899.96 1310.45 2009.33 1335.04 2077.82 1256.93C2132.61 1194.44 2107.33 1090.13 2119.48 1107.2L2117.99 145.49C2027.86 150.354 1848.17 255.739 1734.16 268.87C1620.15 282.001 1477 215.804 1429.15 196.263C1381.3 176.722 1330.19 183.588 1285.32 181.287C1224.9 178.189 1149.47 115.256 1071.5 127.5C998.613 138.945 957.758 238.208 887.5 236.5C817.242 234.792 817.102 204.71 739.044 164.635C660.985 124.56 629.78 155.395 571.924 146.565C515.697 137.984 447.869 88.9421 372.542 71.7866C294.39 53.9876 240.897 85.9104 157.094 81.6085Z" fill="#C5C1DD"></path>
+      <path d="M157.094 81.6085C90.0513 78.167 -21.4197 120.536 -68.7748 142.15L-211.562 1333.04C-76.6942 1370.34 5.65257 1178.01 159.093 1154.64C298.923 1133.34 525.211 1397.52 765.5 1333.85C863.251 1307.95 885.966 1202.82 988.5 1193C1074.35 1184.78 1115.63 1278.88 1207.5 1278.88C1352 1278.88 1423.41 1216.72 1543.99 1278.88C1654.4 1335.81 1776.41 1357.26 1838.18 1333.85C1899.96 1310.45 2009.33 1335.04 2077.82 1256.93C2132.61 1194.44 2107.33 1090.13 2119.48 1107.2L2117.99 145.49C2027.86 150.354 1848.17 255.739 1734.16 268.87C1620.15 282.001 1477 215.804 1429.15 196.263C1381.3 176.722 1330.19 183.588 1285.32 181.287C1224.9 178.189 1149.47 115.256 1071.5 127.5C998.613 138.945 957.758 238.208 887.5 236.5C817.242 234.792 817.102 204.71 739.044 164.635C660.985 124.56 629.78 155.395 571.924 146.565C515.697 137.984 447.869 88.9421 372.542 71.7866C294.39 53.9876 240.897 85.9104 157.094 81.6085Z" fill="url(#paint0_linear_2181_244)"></path>
+      <path d="M157.094 81.6085C90.0513 78.167 -21.4197 120.536 -68.7748 142.15L-211.562 1333.04C-76.6942 1370.34 5.65257 1178.01 159.093 1154.64C298.923 1133.34 525.211 1397.52 765.5 1333.85C863.251 1307.95 885.966 1202.82 988.5 1193C1074.35 1184.78 1115.63 1278.88 1207.5 1278.88C1352 1278.88 1423.41 1216.72 1543.99 1278.88C1654.4 1335.81 1776.41 1357.26 1838.18 1333.85C1899.96 1310.45 2009.33 1335.04 2077.82 1256.93C2132.61 1194.44 2107.33 1090.13 2119.48 1107.2L2117.99 145.49C2027.86 150.354 1848.17 255.739 1734.16 268.87C1620.15 282.001 1477 215.804 1429.15 196.263C1381.3 176.722 1330.19 183.588 1285.32 181.287C1224.9 178.189 1149.47 115.256 1071.5 127.5C998.613 138.945 957.758 238.208 887.5 236.5C817.242 234.792 817.102 204.71 739.044 164.635C660.985 124.56 629.78 155.395 571.924 146.565C515.697 137.984 447.869 88.9421 372.542 71.7866C294.39 53.9876 240.897 85.9104 157.094 81.6085Z" fill="url(#paint1_linear_2181_244)"></path>
+      <path d="M-17.3826 236.276C-74.7043 249.686 -115.865 247.573 -171.513 228.364L-207.764 1181.55C-158.932 1172.57 -41.2001 1174.87 39.0696 1255.9C139.407 1357.19 242.212 1412.9 334.5 1414.01C537.91 1416.45 572.468 1260.33 743.5 1233.5C854.805 1216.04 902.153 1215.02 1001 1233.5C1153.37 1261.99 1219.31 1414.01 1354.5 1414.01C1473.5 1414.01 1564 1320 1683 1320C1825.28 1320 1870.17 1172.28 1961.17 1172.46C2045.32 1148.97 2159.51 1143.56 2173.87 1103.41L2126.84 86.0488C2085.94 122.041 1982.21 199.922 1892.26 201.359C1770.42 203.305 1690.09 48.4626 1564.01 23.5563C1437.93 -1.35001 1318.43 126.262 1203.39 134.093C1111.36 140.357 1065.07 228.313 970.829 210.148C900.056 196.506 864.913 120.122 816.321 112.185C744.656 100.48 729.301 118.601 627.314 86.1561C531.868 55.7915 496.507 1.78136 364.121 0.0862395C160.719 -2.51819 131.402 201.466 -17.3826 236.276Z" fill="url(#paint2_linear_2181_244)"></path>
+      <path d="M-17.3826 236.276C-74.7043 249.686 -115.865 247.573 -171.513 228.364L-207.764 1181.55C-158.932 1172.57 -41.2001 1174.87 39.0696 1255.9C139.407 1357.19 242.212 1412.9 334.5 1414.01C537.91 1416.45 572.468 1260.33 743.5 1233.5C854.805 1216.04 902.153 1215.02 1001 1233.5C1153.37 1261.99 1219.31 1414.01 1354.5 1414.01C1473.5 1414.01 1564 1320 1683 1320C1825.28 1320 1870.17 1172.28 1961.17 1172.46C2045.32 1148.97 2159.51 1143.56 2173.87 1103.41L2126.84 86.0488C2085.94 122.041 1982.21 199.922 1892.26 201.359C1770.42 203.305 1690.09 48.4626 1564.01 23.5563C1437.93 -1.35001 1318.43 126.262 1203.39 134.093C1111.36 140.357 1065.07 228.313 970.829 210.148C900.056 196.506 864.913 120.122 816.321 112.185C744.656 100.48 729.301 118.601 627.314 86.1561C531.868 55.7915 496.507 1.78136 364.121 0.0862395C160.719 -2.51819 131.402 201.466 -17.3826 236.276Z" fill="url(#paint3_linear_2181_244)"></path>
+      <defs>
+        <linearGradient id="paint0_linear_2181_244" x1="1947" y1="1372" x2="1074.69" y2="444.048" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#D15834"></stop>
+          <stop offset="0.154315" stop-color="#C5BAD2"></stop>
+          <stop offset="0.885345" stop-color="#C5BAD2" stop-opacity="0"></stop>
+        </linearGradient>
+        <linearGradient id="paint1_linear_2181_244" x1="-86.0598" y1="57.627" x2="101.408" y2="398.481" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#D15834"></stop>
+          <stop offset="0.508449" stop-color="#C5BAD2"></stop>
+          <stop offset="1" stop-color="#C5BAD2" stop-opacity="0"></stop>
+        </linearGradient>
+        <linearGradient id="paint2_linear_2181_244" x1="327.5" y1="-41" x2="452" y2="1642" gradientUnits="userSpaceOnUse">
+          <stop offset="0.635257" stop-color="#D9D9D9" stop-opacity="0"></stop>
+          <stop offset="1" stop-color="#C5C0DA"></stop>
+        </linearGradient>
+        <linearGradient id="paint3_linear_2181_244" x1="887" y1="-47.5" x2="946.5" y2="1204" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#C5C0DA"></stop>
+          <stop offset="0.429618" stop-color="#D9D9D9" stop-opacity="0"></stop>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+  <div class="catalog-block__background mobile">
+    <svg width="375" height="1173" viewBox="0 0 375 1173" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0_2512_7084)">
+        <path d="M-635.906 -27.3915C-702.949 -30.833 -814.42 11.5357 -861.775 33.1503L-1004.56 1174.04C-869.694 1211.34 -787.347 1019.01 -633.907 995.641C-494.077 974.344 -267.789 1238.52 -27.5 1174.85C70.2506 1148.95 92.9655 1043.82 195.5 1034C281.345 1025.78 322.634 1119.88 414.5 1119.88C559 1119.88 630.406 1057.72 750.992 1119.88C861.404 1176.81 983.407 1198.26 1045.18 1174.85C1106.96 1151.45 1216.33 1176.04 1284.82 1097.93C1339.61 1035.44 1314.33 931.128 1326.48 948.204L1324.99 36.4896C1234.86 41.3543 1055.17 146.739 941.162 159.87C827.154 173.001 683.999 106.804 636.151 87.2633C588.303 67.7222 537.188 74.5877 492.32 72.2869C431.904 69.1887 356.474 6.25608 278.5 18.5C205.613 29.9452 164.758 129.208 94.5004 127.5C24.2427 125.792 24.102 95.7099 -53.9565 55.6348C-132.015 15.5596 -163.22 46.395 -221.076 37.5649C-277.303 28.9837 -345.131 -20.0579 -420.458 -37.2134C-498.611 -55.0124 -552.103 -23.0896 -635.906 -27.3915Z" fill="#C5C1DD"></path>
+        <path d="M-635.906 -27.3915C-702.949 -30.833 -814.42 11.5357 -861.775 33.1503L-1004.56 1174.04C-869.694 1211.34 -787.347 1019.01 -633.907 995.641C-494.077 974.344 -267.789 1238.52 -27.5 1174.85C70.2506 1148.95 92.9655 1043.82 195.5 1034C281.345 1025.78 322.634 1119.88 414.5 1119.88C559 1119.88 630.406 1057.72 750.992 1119.88C861.404 1176.81 983.407 1198.26 1045.18 1174.85C1106.96 1151.45 1216.33 1176.04 1284.82 1097.93C1339.61 1035.44 1314.33 931.128 1326.48 948.204L1324.99 36.4896C1234.86 41.3543 1055.17 146.739 941.162 159.87C827.154 173.001 683.999 106.804 636.151 87.2633C588.303 67.7222 537.188 74.5877 492.32 72.2869C431.904 69.1887 356.474 6.25608 278.5 18.5C205.613 29.9452 164.758 129.208 94.5004 127.5C24.2427 125.792 24.102 95.7099 -53.9565 55.6348C-132.015 15.5596 -163.22 46.395 -221.076 37.5649C-277.303 28.9837 -345.131 -20.0579 -420.458 -37.2134C-498.611 -55.0124 -552.103 -23.0896 -635.906 -27.3915Z" fill="url(#paint0_linear_2512_7084)"></path>
+        <path d="M-635.906 -27.3915C-702.949 -30.833 -814.42 11.5357 -861.775 33.1503L-1004.56 1174.04C-869.694 1211.34 -787.347 1019.01 -633.907 995.641C-494.077 974.344 -267.789 1238.52 -27.5 1174.85C70.2506 1148.95 92.9655 1043.82 195.5 1034C281.345 1025.78 322.634 1119.88 414.5 1119.88C559 1119.88 630.406 1057.72 750.992 1119.88C861.404 1176.81 983.407 1198.26 1045.18 1174.85C1106.96 1151.45 1216.33 1176.04 1284.82 1097.93C1339.61 1035.44 1314.33 931.128 1326.48 948.204L1324.99 36.4896C1234.86 41.3543 1055.17 146.739 941.162 159.87C827.154 173.001 683.999 106.804 636.151 87.2633C588.303 67.7222 537.188 74.5877 492.32 72.2869C431.904 69.1887 356.474 6.25608 278.5 18.5C205.613 29.9452 164.758 129.208 94.5004 127.5C24.2427 125.792 24.102 95.7099 -53.9565 55.6348C-132.015 15.5596 -163.22 46.395 -221.076 37.5649C-277.303 28.9837 -345.131 -20.0579 -420.458 -37.2134C-498.611 -55.0124 -552.103 -23.0896 -635.906 -27.3915Z" fill="url(#paint1_linear_2512_7084)"></path>
+        <path d="M-810.383 127.276C-867.704 140.686 -908.865 138.573 -964.513 119.364L-1000.76 1032.55C-951.932 1023.57 -834.2 1025.87 -753.93 1106.9C-653.593 1208.19 -550.788 1263.9 -458.5 1265.01C-255.09 1267.45 -220.532 1111.33 -49.4999 1084.5C61.8053 1067.04 109.153 1066.02 208 1084.5C360.365 1112.99 426.306 1265.01 561.5 1265.01C680.5 1265.01 771 1171 890 1171C1032.28 1171 1077.17 1023.28 1168.17 1023.46C1252.32 999.967 1366.5 994.561 1380.87 954.414L1333.84 -22.9512C1292.94 13.041 1189.21 90.9221 1099.26 92.3589C977.416 94.3052 897.092 -60.5374 771.01 -85.4437C644.928 -110.35 525.427 17.2619 410.392 25.0927C318.364 31.3573 272.067 119.313 177.829 101.148C107.056 87.5056 71.9129 11.1216 23.3211 3.18519C-48.3443 -8.51974 -63.6993 9.60141 -165.686 -22.8439C-261.132 -53.2085 -296.493 -107.219 -428.879 -108.914C-632.281 -111.518 -661.598 92.4662 -810.383 127.276Z" fill="url(#paint2_linear_2512_7084)"></path>
+        <path d="M-810.383 127.276C-867.704 140.686 -908.865 138.573 -964.513 119.364L-1000.76 1032.55C-951.932 1023.57 -834.2 1025.87 -753.93 1106.9C-653.593 1208.19 -550.788 1263.9 -458.5 1265.01C-255.09 1267.45 -220.532 1111.33 -49.4999 1084.5C61.8053 1067.04 109.153 1066.02 208 1084.5C360.365 1112.99 426.306 1265.01 561.5 1265.01C680.5 1265.01 771 1171 890 1171C1032.28 1171 1077.17 1023.28 1168.17 1023.46C1252.32 999.967 1366.5 994.561 1380.87 954.414L1333.84 -22.9512C1292.94 13.041 1189.21 90.9221 1099.26 92.3589C977.416 94.3052 897.092 -60.5374 771.01 -85.4437C644.928 -110.35 525.427 17.2619 410.392 25.0927C318.364 31.3573 272.067 119.313 177.829 101.148C107.056 87.5056 71.9129 11.1216 23.3211 3.18519C-48.3443 -8.51974 -63.6993 9.60141 -165.686 -22.8439C-261.132 -53.2085 -296.493 -107.219 -428.879 -108.914C-632.281 -111.518 -661.598 92.4662 -810.383 127.276Z" fill="url(#paint3_linear_2512_7084)"></path>
+      </g>
+      <defs>
+        <linearGradient id="paint0_linear_2512_7084" x1="1154" y1="1263" x2="281.693" y2="335.048" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#D15834"></stop>
+          <stop offset="0.154315" stop-color="#C5BAD2"></stop>
+          <stop offset="0.885345" stop-color="#C5BAD2" stop-opacity="0"></stop>
+        </linearGradient>
+        <linearGradient id="paint1_linear_2512_7084" x1="-879.06" y1="-51.373" x2="-691.592" y2="289.481" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#D15834"></stop>
+          <stop offset="0.508449" stop-color="#C5BAD2"></stop>
+          <stop offset="1" stop-color="#C5BAD2" stop-opacity="0"></stop>
+        </linearGradient>
+        <linearGradient id="paint2_linear_2512_7084" x1="-465.5" y1="-150" x2="-341" y2="1533" gradientUnits="userSpaceOnUse">
+          <stop offset="0.635257" stop-color="#D9D9D9" stop-opacity="0"></stop>
+          <stop offset="1" stop-color="#C5C0DA"></stop>
+        </linearGradient>
+        <linearGradient id="paint3_linear_2512_7084" x1="93.9998" y1="-156.5" x2="153.5" y2="1095" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#C5C0DA"></stop>
+          <stop offset="0.429618" stop-color="#D9D9D9" stop-opacity="0"></stop>
+        </linearGradient>
+        <clipPath id="clip0_2512_7084">
+          <rect width="375" height="1173" fill="white"></rect>
+        </clipPath>
+      </defs>
+    </svg>
+  </div>
+</section>
+
+        <section class="love section" data-anchor="love">
+  <div class="love__container container" id="love-block">
+    <div class="love__head">
+      <div class="love__title-top tl1 mobile">
+        <span>любовь</span>
+        <span>
+          <svg width="134" height="133" viewBox="0 0 134 133" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M71.2899 36.8121L72.4113 39.2388L74.4227 37.478C79.8911 32.6911 87.5036 30.4391 95.1205 32.0581C108.045 34.8052 116.306 47.5636 113.536 60.5972C112.427 65.8164 110.57 70.4576 108.174 74.6198L108.167 74.6316C102.37 84.8634 93.3944 92.1833 84.3517 97.1293C75.2988 102.081 66.3112 104.579 60.6795 105.25L60.6682 105.251L60.657 105.253C60.1179 105.323 59.3016 105.278 58.4144 105.089C57.5272 104.9 56.7629 104.61 56.299 104.327L56.2893 104.321L56.2796 104.315C51.4076 101.412 44.2132 95.4734 37.957 87.2678C31.7078 79.0714 26.4858 68.7338 25.3512 57.0286L25.3513 57.0286L25.3499 57.015C24.8539 52.2381 25.0454 47.243 26.1548 42.0237C28.9251 28.9901 41.662 20.6951 54.586 23.4422C62.2029 25.0612 68.2413 30.2149 71.2899 36.8121Z" fill="#D15834" stroke="white" stroke-width="4"></path>
+          </svg>
+        </span>
+      </div>
+      <div class="love__title-bottom tl1 mobile">с одной ложки</div>
+      <div class="love__title-left desktop tl1">любовь с одной</div>
+      <div class="love__heart desktop">
+        <svg width="134" height="134" viewBox="0 0 134 134" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M71.79 37.3121L72.9114 39.7388L74.9229 37.978C80.3912 33.1911 88.0037 30.9391 95.6206 32.5581C108.545 35.3052 116.806 48.0636 114.036 61.0972C112.927 66.3164 111.07 70.9576 108.674 75.1198L108.667 75.1316C102.87 85.3634 93.8945 92.6833 84.8518 97.6293C75.7989 102.581 66.8113 105.079 61.1796 105.75L61.1684 105.751L61.1571 105.753C60.618 105.823 59.8017 105.778 58.9145 105.589C58.0273 105.4 57.263 105.11 56.7991 104.827L56.7894 104.821L56.7797 104.815C51.9077 101.912 44.7134 95.9734 38.4571 87.7678C32.2079 79.5714 26.986 69.2338 25.8514 57.5286L25.8514 57.5286L25.85 57.515C25.354 52.7381 25.5455 47.743 26.6549 42.5237C29.4253 29.4901 42.1621 21.1951 55.0862 23.9422C62.703 25.5612 68.7414 30.7149 71.79 37.3121Z" fill="#D15834" stroke="white" stroke-width="4"></path>
+        </svg>
+      </div>
+      <div class="love__title-right desktop tl1">ложки</div>
+    </div>
+    <div class="love__body">
+      <div class="love__tags-swiper swiper">
+        <div class="swiper-wrapper">
+          <div class="love__tags-swiper--slide type1 swiper-slide">
+            <div class="love__tag txt30">настоящие ягоды и фрукты</div>
+            <div class="love__tag txt30">0% полуфабрикатов</div>
+            <div class="love__tag txt30">какао бобы</div>
+          </div>
+          <div class="love__tags-swiper--slide type1 swiper-slide">
+            <div class="love__tag txt30">настоящие ягоды и фрукты</div>
+            <div class="love__tag txt30">0% полуфабрикатов</div>
+            <div class="love__tag txt30">какао бобы</div>
+          </div>
+        </div>
+      </div>
+      <div class="love__swiper swiper">
+        <div class="swiper-wrapper">
+          <div class="love__swiper-slide swiper-slide">
+            <div class="love__swiper-slide--img">
+              <img src="./assets/images/love-slide-img-1.webp" alt="">
+            </div>
+          </div>
+          <div class="love__swiper-slide swiper-slide">
+            <div class="love__swiper-slide--img">
+              <img src="./assets/images/love-slide-img-2.webp" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="love__swiper-background desktop">
+        <svg width="1264" height="629" viewBox="0 0 1264 629" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M1150.8 336.996C1151 253.892 1250.87 243.245 1234.12 157.146C1204.87 6.91193 1009.56 -23.66 855.863 15.5626C732.448 47.0581 673.961 149.474 552.303 149.493C430.246 149.513 288.256 68.498 161 68.498C28.3713 68.498 122.856 215.882 108.5 327.498C93.8259 441.589 -26.2947 467.752 6.5 561.498C56 702.998 267.897 525.935 426.858 572.332C662.907 641.229 651.624 542.142 799.365 520.672C960.043 497.323 1150.81 725.875 1248 579.986C1314.84 479.66 1150.61 416.502 1150.8 336.996Z" fill="#C14824"></path>
+        </svg>
+      </div>
+      <div class="love__swiper-background mobile">
+        <svg width="375" height="298" viewBox="0 0 375 298" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M356.081 168.67C356.158 138.715 404.907 88.6804 398.405 57.6454C387.06 3.49213 340.669 -7.52774 281.038 6.61039C233.155 17.9632 210.462 54.8798 163.261 54.8867C115.904 54.8938 71.5443 -4.37465 26.135 25.6914C-20.4108 56.5098 21.3355 125.014 15.7656 165.247C10.0723 206.372 -46.5331 239.877 -33.8091 273.669C-14.6037 324.674 52.9147 260.85 114.59 277.574C206.174 302.409 201.796 266.692 259.118 258.953C321.459 250.537 366.082 332.92 403.793 280.333C429.726 244.17 356.008 197.329 356.081 168.67Z" fill="#C14824"></path>
+        </svg>
+      </div>
+      <div class="love__swiper-navigation desktop">
+        <div class="love__swiper-btn love__swiper-btn--prev swiper-button swiper-button-prev">
+          <div class="love__swiper-btn-svg-box swiper-button-svg-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.5 21C9.5 19.5 8 13.5 2 12C8 10.5 9.5 4.5 9.5 3" stroke="#D15834" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path opacity="0.4" d="M19.5 21C19.5 19.5 18 13.5 12 12C18 10.5 19.5 4.5 19.5 3" stroke="#D15834" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="love__swiper-btn love__swiper-btn--next swiper-button swiper-button-next">
+          <div class="love__swiper-btn-svg-box swiper-button-svg-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.5 21C14.5 19.5 16 13.5 22 12C16 10.5 14.5 4.5 14.5 3" stroke="#D15834" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path opacity="0.4" d="M4.5 21C4.5 19.5 6 13.5 12 12C6 10.5 4.5 4.5 4.5 3" stroke="#D15834" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="love__bottom">
+      <div class="love__bottom-text txt30 desktop">любовь с одной</div>
+      <div class="love__bottom-swiper swiper">
+        <div class="swiper-wrapper">
+          <div class="love__bottom-swiper--slide swiper-slide">
+            <div class="love__bottom-swiper--slide__title txt40">
+              Мы не используем полуфабрикаты, только качественные продукты, чтобы дарить вам непередаваемое
+              удовольствие в каждой порции
+            </div>
+            <div class="love__bottom-swiper--slide__text txt18 txt18--bold">
+              Настоящий шоколад из какао бобов, джем из свежих ягод и фруктов
+            </div>
+          </div>
+          <div class="love__bottom-swiper--slide swiper-slide">
+            <div class="love__bottom-swiper--slide__title txt40">
+              Мы не используем полуфабрикаты, только качественные продукты, чтобы дарить вам непередаваемое
+              удовольствие в каждой порции
+            </div>
+            <div class="love__bottom-swiper--slide__text txt18 txt18--bold">
+              Настоящий шоколад из какао бобов, джем из свежих ягод и фруктов
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="love__bottom-text txt30 desktop">нашего мороженого</div>
+    </div>
+    <div class="love__swiper-navigation mobile">
+      <div class="love__swiper-btn love__swiper-btn--prev swiper-button swiper-button-prev">
+        <div class="love__swiper-btn-svg-box swiper-button-svg-box">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.5 21C9.5 19.5 8 13.5 2 12C8 10.5 9.5 4.5 9.5 3" stroke="#D15834" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path opacity="0.4" d="M19.5 21C19.5 19.5 18 13.5 12 12C18 10.5 19.5 4.5 19.5 3" stroke="#D15834" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="love__swiper-btn love__swiper-btn--next swiper-button swiper-button-next">
+        <div class="love__swiper-btn-svg-box swiper-button-svg-box">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.5 21C14.5 19.5 16 13.5 22 12C16 10.5 14.5 4.5 14.5 3" stroke="#D15834" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path opacity="0.4" d="M4.5 21C4.5 19.5 6 13.5 12 12C6 10.5 4.5 4.5 4.5 3" stroke="#D15834" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="development section" data-anchor="development">
+  <div class="development__container container">
+    <div class="development__title tl2">разработка любого вкуса</div>
+    <div class="development__image">
+      <img src="./assets/images/development-img.webp" alt="">
+    </div>
+    <div class="development__bottom">
+      <div class="development__bottom-word txt30">ягоды</div>
+      <div class="development__bottom-star">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 0L16.5448 8.01607C16.816 12.0068 19.9932 15.184 23.9839 15.4552L32 16L23.9839 16.5448C19.9932 16.816 16.816 19.9932 16.5448 23.9839L16 32L15.4552 23.9839C15.184 19.9932 12.0068 16.816 8.01607 16.5448L0 16L8.01607 15.4552C12.0068 15.184 15.184 12.0068 15.4552 8.01607L16 0Z" fill="#D15834"></path>
+        </svg>
+      </div>
+      <div class="development__bottom-word txt30">фрукты</div>
+      <div class="development__bottom-star">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 0L16.5448 8.01607C16.816 12.0068 19.9932 15.184 23.9839 15.4552L32 16L23.9839 16.5448C19.9932 16.816 16.816 19.9932 16.5448 23.9839L16 32L15.4552 23.9839C15.184 19.9932 12.0068 16.816 8.01607 16.5448L0 16L8.01607 15.4552C12.0068 15.184 15.184 12.0068 15.4552 8.01607L16 0Z" fill="#D15834"></path>
+        </svg>
+      </div>
+      <div class="development__bottom-word txt30">орехи</div>
+      <div class="development__bottom-star">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 0L16.5448 8.01607C16.816 12.0068 19.9932 15.184 23.9839 15.4552L32 16L23.9839 16.5448C19.9932 16.816 16.816 19.9932 16.5448 23.9839L16 32L15.4552 23.9839C15.184 19.9932 12.0068 16.816 8.01607 16.5448L0 16L8.01607 15.4552C12.0068 15.184 15.184 12.0068 15.4552 8.01607L16 0Z" fill="#D15834"></path>
+        </svg>
+      </div>
+      <div class="development__bottom-word txt30">алкоголь</div>
+      <div class="development__bottom-arrow">
+        <svg width="106" height="108" viewBox="0 0 106 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.818644 106.017C0.275517 106.117 -0.0835778 106.638 0.0165825 107.181C0.116743 107.724 0.63823 108.084 1.18136 107.983L0.818644 106.017ZM45.9553 76.1866L46.8081 76.7088L45.9553 76.1866ZM54.5288 30.7328L53.7254 31.3282L54.5288 30.7328ZM44.8193 30.6717L45.7738 30.97L44.8193 30.6717ZM51.2127 34.4669V35.4669L51.2207 35.4669L51.2127 34.4669ZM74.9382 30.7328L75.3237 31.6555L74.9382 30.7328ZM103.984 0.82249C103.886 0.278976 103.366 -0.0821551 102.822 0.015881L93.9654 1.61347C93.4219 1.71151 93.0608 2.23159 93.1588 2.7751C93.2568 3.31861 93.7769 3.67975 94.3204 3.58171L102.193 2.16163L103.613 10.0346C103.712 10.5781 104.232 10.9392 104.775 10.8412C105.319 10.7432 105.68 10.2231 105.582 9.67956L103.984 0.82249ZM1.18136 107.983C16.3748 105.182 35.5478 95.1015 46.8081 76.7088L45.1024 75.6645C34.1882 93.492 15.5546 103.299 0.818644 106.017L1.18136 107.983ZM46.8081 76.7088C51.6125 68.8613 55.0979 59.1387 56.7289 50.4827C57.5448 46.153 57.9029 42.0577 57.7174 38.5734C57.5335 35.1202 56.8091 32.1302 55.3322 30.1373L53.7254 31.3282C54.8539 32.8509 55.5438 35.3674 55.7202 38.6798C55.8949 41.9611 55.559 45.8904 54.7635 50.1123C53.1719 58.5595 49.7651 68.0483 45.1024 75.6645L46.8081 76.7088ZM55.3322 30.1373C53.9132 28.2226 51.3291 27.4562 49.1229 27.4831C47.9975 27.4969 46.878 27.7147 45.9483 28.16C45.0228 28.6033 44.1933 29.3222 43.8648 30.3735L45.7738 30.97C45.8825 30.6219 46.1964 30.2588 46.8123 29.9638C47.4239 29.6708 48.2436 29.494 49.1474 29.483C50.9994 29.4604 52.8328 30.1238 53.7254 31.3282L55.3322 30.1373ZM43.8648 30.3735C43.67 30.9969 43.6379 31.6035 43.7853 32.1743C43.9323 32.7438 44.2401 33.209 44.6175 33.5795C45.3454 34.2938 46.3816 34.7056 47.3092 34.9575C48.2623 35.2164 49.2379 35.3419 49.9616 35.404C50.3266 35.4352 50.6347 35.4509 50.8532 35.4588C50.9626 35.4628 51.0499 35.4648 51.1111 35.4658C51.1417 35.4664 51.1658 35.4666 51.1829 35.4668C51.1915 35.4668 51.1983 35.4669 51.2032 35.4669C51.2057 35.4669 51.2078 35.4669 51.2094 35.4669C51.2101 35.4669 51.2108 35.4669 51.2114 35.4669C51.2117 35.4669 51.212 35.4669 51.2121 35.4669C51.2124 35.4669 51.2127 35.4669 51.2127 34.4669C51.2127 33.4669 51.2129 33.4669 51.2131 33.4669C51.2131 33.4669 51.2133 33.4669 51.2133 33.4669C51.2134 33.4669 51.2134 33.4669 51.2133 33.4669C51.213 33.4669 51.2123 33.4669 51.2112 33.4669C51.2089 33.4669 51.2049 33.4669 51.1991 33.4668C51.1876 33.4667 51.1693 33.4665 51.1447 33.4661C51.0954 33.4653 51.021 33.4636 50.9255 33.4602C50.7342 33.4532 50.4594 33.4393 50.1324 33.4113C49.472 33.3547 48.6269 33.243 47.8334 33.0275C47.0144 32.805 46.3782 32.5052 46.0184 32.1521C45.8521 31.9889 45.7623 31.8315 45.7218 31.6745C45.6816 31.5189 45.6721 31.2953 45.7738 30.97L43.8648 30.3735ZM51.2127 34.4669C51.2207 35.4669 51.2209 35.4669 51.2211 35.4669C51.2213 35.4669 51.2216 35.4669 51.2219 35.4669C51.2225 35.4669 51.2233 35.4669 51.2244 35.4669C51.2265 35.4668 51.2296 35.4668 51.2335 35.4668C51.2414 35.4667 51.253 35.4666 51.268 35.4664C51.2981 35.466 51.3422 35.4655 51.3998 35.4646C51.5151 35.4627 51.6841 35.4596 51.9016 35.4544C52.3366 35.4439 52.9659 35.4248 53.7474 35.3906C55.3097 35.3222 57.4836 35.1931 59.9312 34.9499C64.7976 34.4665 70.8544 33.5228 75.3237 31.6555L74.5527 29.8101C70.3737 31.5561 64.5678 32.4795 59.7335 32.9597C57.3308 33.1984 55.1948 33.3253 53.6599 33.3925C52.8928 33.4261 52.2766 33.4447 51.8533 33.455C51.6417 33.4601 51.4783 33.4631 51.3684 33.4648C51.3135 33.4657 51.272 33.4662 51.2445 33.4665C51.2307 33.4667 51.2205 33.4668 51.2138 33.4669C51.2105 33.4669 51.208 33.4669 51.2065 33.4669C51.2058 33.4669 51.2052 33.4669 51.2049 33.4669C51.2048 33.4669 51.2047 33.4669 51.2046 33.4669C51.2046 33.4669 51.2047 33.4669 51.2127 34.4669ZM75.3237 31.6555C82.938 28.4741 89.0959 22.3041 93.8134 16.3003C98.4995 10.3365 101.937 4.28419 103.821 1.57036L102.179 0.429641C100.12 3.39407 96.9089 9.12374 92.2408 15.0646C87.6042 20.9655 81.7027 26.8227 74.5527 29.8101L75.3237 31.6555Z" fill="#D15834"></path>
+        </svg>
+      </div>
+      <div class="development__bottom-word txt30">новый вкус</div>
+    </div>
+    <div class="development__left">
+      <div class="development__text-box txt40">
+        <span>от 1 до 3х недель</span>
+        <div class="desktop">
+          <svg width="302" height="250" viewBox="0 0 302 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M156.581 28.8896C189.212 31.9545 223.31 7.91311 251.093 25.3473C282.628 45.1354 301.612 82.8314 301.995 120.137C302.38 157.731 281.484 192.388 253.058 216.897C226.622 239.691 191.335 242.745 156.581 245.515C117.287 248.646 74.2537 258.267 43.4491 233.601C10.6315 207.323 0.171956 162.254 0.00330716 120.137C-0.166079 77.8356 6.06828 27.0103 42.5367 5.75796C77.3979 -14.5577 116.438 25.119 156.581 28.8896Z" fill="#D15834"></path>
+          </svg>
+        </div>
+        <div class="mobile">
+          <svg width="196" height="136" viewBox="0 0 196 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M101.622 15.7159C122.8 17.3833 144.93 4.30473 162.961 13.7889C183.427 24.5537 195.748 45.0603 195.997 65.3545C196.247 85.8058 182.685 104.659 164.236 117.992C147.079 130.392 124.177 132.053 101.622 133.56C76.1198 135.263 48.1911 140.497 28.1987 127.079C6.89992 112.784 0.1116 88.2661 0.00214637 65.3545C-0.107787 42.3426 3.93835 14.6936 27.6066 3.13233C50.2317 -7.91941 75.5689 13.6647 101.622 15.7159Z" fill="#D15834"></path>
+          </svg>
+        </div>
+      </div>
+      <button class="development__button large-button txt36" data-popup="#popup__feedback">
+        <div class="large-button__content">
+          <div>оставить</div>
+          <div>заявку</div>
+        </div>
+        <div class="large-button__background">
+          <svg width="262" height="166" viewBox="0 0 262 166" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_b_2473_3098)">
+              <ellipse cx="131" cy="83" rx="131" ry="83" fill="white" fill-opacity="0.7"></ellipse>
+              <path d="M260 83C260 104.995 245.925 125.197 222.561 140C199.221 154.788 166.855 164 131 164C95.1453 164 62.7791 154.788 39.4394 140C16.075 125.197 2 104.995 2 83C2 61.0054 16.075 40.803 39.4394 25.9996C62.7791 11.2118 95.1453 2 131 2C166.855 2 199.221 11.2118 222.561 25.9996C245.925 40.803 260 61.0054 260 83Z" stroke="white" stroke-width="4"></path>
+            </g>
+            <defs>
+              <filter id="filter0_b_2473_3098" x="-100" y="-100" width="462" height="366" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                <feGaussianBlur in="BackgroundImageFix" stdDeviation="50"></feGaussianBlur>
+                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2473_3098"></feComposite>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2473_3098" result="shape"></feBlend>
+              </filter>
+            </defs>
+          </svg>
+        </div>
+      </button>
+    </div>
+    <div class="development__right">
+      <div class="development__text-box txt30">
+        <span>Мы предлагаем возможность разработки и производства мороженого с любым вкусом</span>
+        <div class="desktop">
+          <svg width="399" height="339" viewBox="0 0 399 339" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M181.093 0.471266C260.426 -1.74722 353.113 1.11044 383.323 71.9096C419.503 156.702 391.72 258.984 313.815 311.519C239.473 361.652 140.657 337.74 69.3881 283.613C6.71614 236.015 -16.3799 154.207 11.9915 82.2935C36.7895 19.4372 111.404 2.42005 181.093 0.471266Z" fill="#D15834"></path>
+          </svg>
+        </div>
+        <div class="mobile">
+          <svg width="250" height="178" viewBox="0 0 250 178" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M110.818 1.64269C165.178 -2.8882 225.327 -1.12143 244.542 47.8591C261.612 91.373 236.736 130.863 196.386 157.66C146.085 191.066 83.0558 181.833 39.569 140.871C12.5337 115.406 -7.55427 90.195 2.74514 55.5844C15.3955 13.0734 63.1945 5.61214 110.818 1.64269Z" fill="#D15834"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="development__background desktop">
+    <img src="./assets/images/development-background.svg" alt="">
+  </div>
+  <div class="development__background mobile">
+    <img src="./assets/images/development-background-mobile.svg" alt="">
+  </div>
+</section>
+
+        <section class="about-our-farm section" data-anchor="about-our-farm">
+  <div class="container">
+    <div class="about-our-farm__inner">
+      <div class="about-our-farm__title-box">
+        <div class="about-our-farm__title-img-box about-our-farm__title-img-box--left ">
+          <img src="./assets/images/leaves-left.webp" alt="">
+        </div>
+        <div class="about-our-farm__title-img-box about-our-farm__title-img-box--right ">
+          <img src="./assets/images//leaves-right.webp" alt="">
+        </div>
+        <p class="about-our-farm__title tl1 ">о нашей ферме</p>
+        <ul class="about-our-farm__standard-list ">
+          <li class="about-our-farm__standard-item txt30">забота и любовь</li>
+          <li class="about-our-farm__standard-item txt30">натуральное молоко</li>
+        </ul>
+      </div>
+      <div class="about-our-farm__content-wrapper">
+        <div class="about-our-farm__content about-our-farm__content--left">
+          <div class="about-our-farm__content-info-box ">
+            <p class="about-our-farm__content-info-title txt40">
+              Мы строго следим за качеством кормов, которые даем нашим животным
+            </p>
+            <p class="about-our-farm__content-info-desc txt18">
+              Мы гордимся тем, что наша продукция полностью экологически чиста
+            </p>
+          </div> 
+          <div class="about-our-farm__content-num-box ">
+            <div class="about-our-farm__content-num-img-box about-our-farm__content-num-img-box--left">
+              <img src="./assets/images/stub-img-left.webp" alt="">
+            </div>
+            <div class="about-our-farm__content-num-text-box">
+              <p class="about-our-farm__content-num-num txt60">90+</p>
+              <p class="about-our-farm__content-num-text txt36">коровок и козочек</p>
+            </div>
+
+            <div class="about-our-farm__content-num-img-box about-our-farm__content-num-img-box--right">
+              <img src="./assets/images/stub-img-right.webp" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="about-our-farm__img-wrapper">
+          <div class="about-our-farm__img-box ">
+            <img src="./assets/images/cow.webp" alt="">
+          </div>
+          <a href="#" class="about-our-farm__link ">
+            <div class="about-our-farm__link-img-box">
+              <img src="./assets/images/star.svg" alt="">
+            </div>
+            <p class="about-our-farm__link-text txt36">подробнее о нас</p>
+            <div class="about-our-farm__link-img-box">
+              <img src="./assets/images/star.svg" alt="">
+            </div>
+          </a>
+        </div>
+        <div class="about-our-farm__content about-our-farm__content--right">
+          <div class="about-our-farm__content-favorite-box ">
+            <div class="about-our-farm__content-favorite-text-box">
+              <p class="about-our-farm__content-favorite-text-title txt40">Экологически чистая зона</p>
+              <p class="about-our-farm__content-favorite-text-desc txt18">
+                Наши коровы и козы живут в комфортных условиях, насыщенных свежим воздухом и зелеными
+                пастбищами
+              </p>
+            </div>
+            <button class="about-our-farm__content-favorite-btn">
+              <div class="about-our-farm__content-favorite-btn-svg-box">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.1797 2.6167C17.173 2.6167 15.3422 3.41872 13.9997 4.71237C12.6571 3.41872 10.8264 2.6167 8.81967 2.6167C4.68106 2.6167 1.33301 5.98576 1.33301 10.1384C1.33301 11.6342 1.57199 13.0202 1.98717 14.3046C2.9808 17.4463 4.99533 19.9235 7.09309 21.7263C9.18502 23.5242 11.4167 24.7011 12.9495 25.2235C13.2867 25.3414 13.6676 25.3834 13.9997 25.3834C14.3317 25.3834 14.7127 25.3414 15.0499 25.2235C16.5826 24.7011 18.8143 23.5242 20.9063 21.7263C23.004 19.9235 25.0186 17.4463 26.0122 14.3046C26.4274 13.0202 26.6663 11.6342 26.6663 10.1384C26.6663 5.98576 23.3183 2.6167 19.1797 2.6167Z" fill="#D15834" stroke="white" stroke-width="2"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="latest-news section" data-anchor="latest-news">
+  <div class="container latest-news__container">
+    <div class="latest-news__inner">
+      <div class="latest-news__title-box">
+        <p class="latest-news__title tl2 ">свежие новости</p>
+        <a href="#" class="latest-news__link ">
+          <div class="latest-news__link-img-box">
+            <img src="./assets/images/star.svg" alt="">
+          </div>
+          <p class="latest-news__link-text txt36">смотреть все новости</p>
+          <div class="latest-news__link-img-box">
+            <img src="./assets/images/star.svg" alt="">
+          </div>
+        </a>
+      </div>
+      <div class="latest-news__swiper-box">
+        <div class="latest-news__swiper swiper">
+          <div class="latest-news__swiper-wrapper swiper-wrapper">
+            <div class="latest-news__swiper-slide swiper-slide">
+              <div class="latest-news__swiper-slide-inner ">
+                <div class="latest-news__swiper-slide-time">
+                  <p class="latest-news__swiper-slide-time-text txt20">20 ФeВ 2024</p>
+                </div>
+                <div class="latest-news__swiper-slide-img-box latest-news__swiper-slide-img-box--1">
+                  <img src="./assets/images/latest-news-1.webp" alt="">
+                </div>
+                <div class="latest-news__swiper-info-box">
+                  <p class="latest-news__swiper-text txt30">
+                    Мы строго следим за качеством кормов, которые даем нашим животным
+                  </p>
+                  <a href="#" class="latest-news__swiper-link">
+                    <div class="latest-news__swiper-link-svg-box">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.5 21C14.5 19.5 16 13.5 22 12C16 10.5 14.5 4.5 14.5 3" stroke="#D15834" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path opacity="0.4" d="M4.5 21C4.5 19.5 6 13.5 12 12C6 10.5 4.5 4.5 4.5 3" stroke="#D15834" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="latest-news__swiper-slide swiper-slide">
+              <div class="latest-news__swiper-slide-inner ">
+                <div class="latest-news__swiper-slide-time">
+                  <p class="latest-news__swiper-slide-time-text txt20">20 ФeВ 2024</p>
+                </div>
+                <div class="latest-news__swiper-slide-img-box latest-news__swiper-slide-img-box--2">
+                  <img src="./assets/images/latest-news-2.webp" alt="">
+                </div>
+                <div class="latest-news__swiper-info-box">
+                  <p class="latest-news__swiper-text txt30">
+                    Мы строго следим за качеством кормов, которые даем нашим животным
+                  </p>
+                  <a href="#" class="latest-news__swiper-link">
+                    <div class="latest-news__swiper-link-svg-box">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.5 21C14.5 19.5 16 13.5 22 12C16 10.5 14.5 4.5 14.5 3" stroke="#D15834" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path opacity="0.4" d="M4.5 21C4.5 19.5 6 13.5 12 12C6 10.5 4.5 4.5 4.5 3" stroke="#D15834" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="latest-news__swiper-slide swiper-slide">
+              <div class="latest-news__swiper-slide-inner ">
+                <div class="latest-news__swiper-slide-time">
+                  <p class="latest-news__swiper-slide-time-text txt20">20 ФeВ 2024</p>
+                </div>
+                <div class="latest-news__swiper-slide-img-box latest-news__swiper-slide-img-box--3">
+                  <img src="./assets/images/latest-news-3.webp" alt="">
+                </div>
+                <div class="latest-news__swiper-info-box">
+                  <p class="latest-news__swiper-text txt30">
+                    Мы строго следим за качеством кормов, которые даем нашим животным
+                  </p>
+                  <a href="#" class="latest-news__swiper-link">
+                    <div class="latest-news__swiper-link-svg-box">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.5 21C14.5 19.5 16 13.5 22 12C16 10.5 14.5 4.5 14.5 3" stroke="#D15834" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path opacity="0.4" d="M4.5 21C4.5 19.5 6 13.5 12 12C6 10.5 4.5 4.5 4.5 3" stroke="#D15834" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="latest-news__swiper-slide swiper-slide">
+              <div class="latest-news__swiper-slide-inner ">
+                <div class="latest-news__swiper-slide-time">
+                  <p class="latest-news__swiper-slide-time-text txt20">20 ФeВ 2024</p>
+                </div>
+                <div class="latest-news__swiper-slide-img-box latest-news__swiper-slide-img-box--4">
+                  <img src="./assets/images/latest-news-4.webp" alt="">
+                </div>
+                <div class="latest-news__swiper-info-box">
+                  <p class="latest-news__swiper-text txt30">
+                    Мы строго следим за качеством кормов, которые даем нашим животным
+                  </p>
+                  <a href="#" class="latest-news__swiper-link">
+                    <div class="latest-news__swiper-link-svg-box">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.5 21C14.5 19.5 16 13.5 22 12C16 10.5 14.5 4.5 14.5 3" stroke="#D15834" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path opacity="0.4" d="M4.5 21C4.5 19.5 6 13.5 12 12C6 10.5 4.5 4.5 4.5 3" stroke="#D15834" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="latest-news__swiper-btn-box mobile">
+          <div class="latest-news__swiper-btn latest-news__swiper-btn--prev swiper-button swiper-button-prev">
+            <div class="latest-news__swiper-btn-svg-box swiper-button-svg-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.5 21C9.5 19.5 8 13.5 2 12C8 10.5 9.5 4.5 9.5 3" stroke="#D15834" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path opacity="0.4" d="M19.5 21C19.5 19.5 18 13.5 12 12C18 10.5 19.5 4.5 19.5 3" stroke="#D15834" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="latest-news__swiper-btn latest-news__swiper-btn--next swiper-button swiper-button-next">
+            <div class="latest-news__swiper-btn-svg-box swiper-button-svg-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.5 21C14.5 19.5 16 13.5 22 12C16 10.5 14.5 4.5 14.5 3" stroke="#D15834" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path opacity="0.4" d="M4.5 21C4.5 19.5 6 13.5 12 12C6 10.5 4.5 4.5 4.5 3" stroke="#D15834" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <footer class="footer section footer--anim" data-anchor="footer">
+  <div class="container footer__container">
+    <div class="footer__inner">
+      <div class="footer__svg-wrapper">
+        <div class="footer__svg-box">
+          <img src="./assets/images/footer.svg" alt="">
+        </div>
+      </div>
+      <p class="footer__text tl2">FOOTER</p>
+    </div>
+  </div>
+</footer>
+
+      </main>
+    </div>
+  </body>
+</html>

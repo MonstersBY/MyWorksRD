@@ -1,0 +1,107 @@
+<section class="application application--demo">
+  <div class="container">
+    <div class="application__inner-wrapper">
+      <div class="application__inner">
+        <div class="application__form-wrapper">
+          <p class="application__title tl1">
+            <span>Запишитесь <br class="desktop" />на демонстрацию </span>
+          </p>
+          <form
+            data-popup-message="#popup__success"
+            data-dev
+            action=""
+            class="application__form application__demo-form"
+          >
+            <p class="application__form-title txt20">
+              <span> Наши менеджеры помогут подобрать оборудование под Ваши задачи</span>
+            </p>
+            <div class="application__form-input-wrapper">
+              <div class="application__form-input-box txt20">
+                <label class="application__label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input--name application__form-input"
+                      type="text"
+                      data-validate
+                      data-required="name"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                    <span class="placeholder">Имя<span>*</span></span>
+                  </span>
+                  <span class="error-span">Данное значение должно состоять из букв</span>
+                </label>
+                <label class="application__label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input--tel application__form-input phone-mask"
+                      type="text"
+                      data-validate
+                      data-required="tel"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                    <span class="placeholder">Телефон<span>*</span></span>
+                  </span>
+                  <span class="error-span">Введите номер целиком</span>
+                </label>
+
+                <label class="application__label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="application__form-input"
+                      type="text"
+                      autocomplete="off"
+                      name="form[]"
+                      placeholder="Название компании"
+                    />
+               
+                  </span>
+                  <span class="error-span">Данное значение должно состоять из букв</span>
+                </label>
+
+                <label class="application__label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="application__form-input"
+                      type="text"
+                      autocomplete="off"
+                      name="form[]"
+                      placeholder="E-mail"
+                    />
+               
+                  </span>
+                  <span class="error-span">Данное значение должно состоять из букв</span>
+                </label>
+                <label class="application__label application__label--textarea input-group">
+                  <span class="form__input-wrapper">
+                    <textarea
+                      class="input--textarea"
+                      placeholder="Комментарий"
+                      autocomplete="off"
+                      name="form[]"
+                    ></textarea>
+                    <span class="error-span"></span>
+                  </span>
+                </label>
+              </div>
+              <div class="application__btn-row">
+                <p class="application__agreement-text txt16">
+                  Нажимая на кнопку, Вы принимаете
+                  <a href="#">условия пользовательского соглашения</a>
+                </p>
+                <button type="submit" class="application__btn application__demo-btn button txt18 txt18_bold">
+                  оставить заявку
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="application__form-img-box">
+          <img src="./assets/images/application-demo.webp" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

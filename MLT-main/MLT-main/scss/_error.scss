@@ -1,0 +1,85 @@
+.error {
+    background-color: #121820;
+    color: #fff;
+    padding-top: 30.4rem;
+    padding-bottom: 20.9rem;
+}
+.error .container {
+    width: 62rem;
+}
+.error__img {
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+.error__title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.error__text {
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    width: 55rem;
+    margin: 0 auto 6rem;
+}
+.error__link {
+    display: block;
+    font-family: 'Gotham';
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    padding-right: 6.5rem;
+    position: relative;
+    cursor: pointer;
+}
+.error__link::after {
+    content: '';
+    display: block;
+    background: url(../img/icon/arrow-right-white.svg) no-repeat;
+    background-size: cover;
+    width: 2.6rem;
+    height: 1.5rem;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+@media (max-width: 48em) {
+    .error {
+        padding-top: 43.4rem;
+        padding-bottom: 43.4rem;
+    }
+    .error .container {
+        width: auto;
+    }
+    .error__img {
+        width: 100%;
+        margin-bottom: 8rem;
+    }
+    .error__title {
+        margin-bottom: 2.4rem;
+    }
+    .error__text {
+        color: rgba(255, 255, 255, 0.5);
+        text-align: center;
+        width: 67rem;
+        margin: 0 auto 8rem;
+    }
+    .error__link {
+        font-size: 3.6rem;
+        margin: 0 auto;
+        padding-right: 13rem;
+        position: relative;
+        cursor: pointer;
+    }
+    .error__link::after {
+        width: 5rem;
+        height: 3rem;
+    }
+}

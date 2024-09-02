@@ -1,0 +1,128 @@
+.request-min {
+    background-color: $main;
+    color: $Beige;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include small-tablet {
+            flex-direction: column;
+            gap: 8rem;
+        }
+    }
+
+    &__container {
+        display: flex;
+        gap: 5.2rem;
+        align-items: flex-start;
+        flex-direction: column;
+
+        @include small-tablet {
+            gap: 8rem;
+        }
+    }
+
+    &__form {
+        display: flex;
+        gap: 5.2rem;
+        width: 74.7rem;
+        flex-direction: column;
+
+        @include small-tablet {
+            width: 100%;
+        }
+
+        &-inputs {
+            display: flex;
+            gap: 2.4rem;
+            align-items: center;
+            @include small-tablet {
+                flex-direction: column;
+                gap: 4rem;
+            }
+        }
+
+        &-bottom {
+            align-items: flex-start;
+            display: flex;
+            width: 100%;
+            gap: 2.4rem;
+
+            @include small-tablet {
+                flex-direction: column;
+                gap: 4.8rem;
+                .btn-pr {
+                    order: 1;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        &-text {
+            width: 48.5rem;
+            flex: 1;
+
+            @include small-tablet {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    &__img-box {
+        position: relative;
+        height: 35.7rem;
+        padding-right: 12.9rem;
+
+        @include small-tablet {
+            padding: 0;
+            width: 100%;
+        }
+
+        img {
+            height: 100%;
+            width: 58.8rem;
+            -o-object-fit: cover;
+            object-fit: cover;
+
+            @include small-tablet {
+                margin-left: auto;
+                width: 100%;
+                object-fit: contain;
+                -o-object-fit: contain;
+            }
+        }
+
+        &-seo {
+            background-color: $Beige;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            position: absolute;
+            top: 7.7rem;
+            right: 0rem;
+            gap: 1.2rem;
+            color: $main;
+            border-radius: 2rem;
+
+            img {
+                width: 9.4rem;
+                height: 5.8rem;
+                -o-object-fit: contain;
+                object-fit: contain;
+            }
+
+            span {
+                width: 12.9rem;
+                text-align: center;
+            }
+
+            @include small-tablet {
+                display: none;
+            }
+        }
+    }
+}

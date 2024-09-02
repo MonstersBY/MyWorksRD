@@ -1,0 +1,178 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.50);
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 101;
+
+    &.active {
+        display: flex;
+    }
+
+    &__content {
+        position: relative;
+        background: $body-color;
+    }
+
+    &__close {
+        cursor: pointer;
+        position: absolute;
+        right: 2.4rem;
+        top: 2.4rem;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    @media (max-width: 48em) {
+        &__close {
+            position: absolute;
+            right: 3.2rem;
+            top: 3.2rem;
+            width: 3.2rem;
+            height: 3.2rem;
+        }
+    }
+}
+
+.banner-modal {
+    &__content {
+        width: 82.7rem;
+        height: 60rem;
+        padding: 14.9rem 0 0 41.3rem;
+    }
+
+    &__title {
+        font-size: 5rem;
+        line-height: 6rem; /* 120% */
+        font-family: 'Jura';
+        max-width: 36rem;
+        margin-bottom: 2.7rem;
+    }
+
+    &__text {
+        font-size: 1.8rem;
+        margin-bottom: 3.6rem;
+    }
+
+    &__img {
+        position: absolute;
+        top: 10.3rem;
+        left: 5.6rem;
+        width: 29.9rem;
+        height: 40.9rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            mix-blend-mode: multiply;
+        }
+    }
+
+    @media (max-width: 48em) {
+        &__content {
+            width: 68.6rem;
+            height: 77.6rem;
+            padding: 8rem 4rem;
+            overflow: hidden;
+        }
+
+        &__title {
+            font-size: 6rem;    
+            margin-bottom: 4rem;
+            max-width: 35.2rem;
+        }
+
+        &__text {
+            font-size: 2.8rem;
+            margin-bottom: 6.4rem;
+            max-width: 25rem;
+        }
+
+        button {
+            position: relative;
+            z-index: 2;
+        }
+
+        &__img {
+            width: 49.1212rem;
+            height: 67.1926rem;
+            top: 18.4rem;
+            left: 31.8rem;
+        }
+    }
+}
+
+.application-modal {
+    &__content {
+        max-height: 71.6rem;
+        padding: 10rem 8rem;
+    }
+
+    &__title {
+        font-family: 'Jura';
+        font-size: 5rem;
+        font-weight: 600;
+        margin-bottom: 7.2rem;
+        max-width: 38rem;
+    }
+
+    &__form {
+        max-width: 80.2rem;
+
+        &-box {
+            display: flex;
+            gap: 2.4rem;
+            flex-wrap: wrap;
+            margin-bottom: 7.2rem;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        right: 11.9rem;
+        top: -8.7rem;
+        width: 31rem;
+        height: 31rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    @media (max-width: 48em) {
+        &__content {
+            max-height: 131.2rem;
+            max-width: 69rem;
+            padding: 8rem 3.2rem;
+            overflow-x: clip;
+        }
+
+        &__img {
+            top: 11.76rem;
+            right: -11.8rem;
+            width: 33rem;
+            height: 33rem;
+        }
+
+        &__title {
+            font-size: 6rem;
+            max-width: 33.4rem;
+            margin-bottom: 8rem;
+        }
+        &__form {
+       
+    
+            &-box {
+                gap: 4rem;
+            }
+        }
+    }
+}

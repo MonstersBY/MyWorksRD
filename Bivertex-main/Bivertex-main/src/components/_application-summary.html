@@ -1,0 +1,219 @@
+<section class="application">
+  <div class="container">
+    <div class="application__inner">
+      <div class="application__title-box">
+        <p class="application__title tl1">ЖДЕМ ВАШЕ РЕЗЮМЕ</p>
+        <p class="application__desc txt18 application__desc--long">
+          BEAVERTECH – компания, где вы можете реализовать свой потенциал, а ваши идеи и предложения будут
+          услышаны. Мы работаем над новыми станками, перед нами много интересной работы, задач и вызовов.
+          Присоединяйтесь!
+        </p>
+      </div>
+      <form data-popup-message="#popup__success-summary" data-dev action="" class="application__form-wrapper">
+        <p class="application__form-title tl3">оставьте нам заявку</p>
+        <div class="application__form-input-wrapper">
+          <div class="application__form-input-box">
+            <div class="application__form-dropdown form__dropdown">
+              <div class="form__dropdown_top">
+                <label for="" class="application__label input-group input-group--mob-white">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input__field txt18 input-dropdown"
+                      type="text"
+                      placeholder="Название вакансии"
+                      data-validate
+                      data-required="dropdown"
+                      autocomplete="off"
+                      name="form[]"
+                      data-no-focus-classes
+                    />
+
+                    <span class="form__input-svg-box">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25" fill="none">
+                        <path
+                          d="M6 9.5L12 15.5L18 9.5"
+                          stroke="#0E1C15"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                  <span class="error-span subscription">Выберите вакансию</span>
+                </label>
+              </div>
+              <div class="form__dropdown_bottom">
+                <div class="form__dropdown_list">
+                  <label class="form__dropdown_item">
+                    <div class="form__dropdown_item_checkbox radio-wrapper">
+                      <input type="radio" name="locality" />
+                    </div>
+                    <span class="form__dropdown_item_name txt18">Инженер-конструктор станков с ЧПУ</span>
+                  </label>
+                  <label class="form__dropdown_item">
+                    <div class="form__dropdown_item_checkbox radio-wrapper">
+                      <input type="radio" name="locality" />
+                    </div>
+                    <span class="form__dropdown_item_name txt18">Инженер-конструктор станков с ЧПУ</span>
+                  </label>
+                  <label class="form__dropdown_item">
+                    <div class="form__dropdown_item_checkbox radio-wrapper">
+                      <input type="radio" name="locality" />
+                    </div>
+                    <span class="form__dropdown_item_name txt18"
+                      >Сервисный инженер (фрезерные обрабатывающие центры)</span
+                    >
+                  </label>
+                  <label class="form__dropdown_item">
+                    <div class="form__dropdown_item_checkbox radio-wrapper">
+                      <input type="radio" name="locality" />
+                    </div>
+                    <span class="form__dropdown_item_name txt18">Слесарь механосборочных работ</span>
+                  </label>
+                  <label class="form__dropdown_item">
+                    <div class="form__dropdown_item_checkbox radio-wrapper">
+                      <input type="radio" name="locality" />
+                    </div>
+                    <span class="form__dropdown_item_name txt18">Электромонтажник/Сборщик электрошкафов</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <label class="application__label input-group input-group--mob-white">
+              <span class="form__input-wrapper txt18">
+                <input
+                  class="input--name application__form-input"
+                  type="txt18"
+                  placeholder="Ваше имя*"
+                  data-validate
+                  data-required
+                  autocomplete="off"
+                  name="form[]"
+                />
+              </span>
+              <span class="error-span">Поле заполнено неверно</span>
+            </label>
+            <label class="application__label input-group input-group--mob-white">
+              <span class="form__input-wrapper">
+                <input
+                  class="input--tel application__form-input phone-mask txt18"
+                  type="text"
+                  placeholder="Номер телефона*"
+                  data-validate
+                  data-required="tel"
+                  autocomplete="off"
+                  name="form[]"
+                />
+              </span>
+              <span class="error-span">Поле заполнено неверно</span>
+            </label>
+            <label class="application__label input-group input-group--mob-white">
+              <span class="form__input-wrapper">
+                <input
+                  class="input--mail application__form-input txt18"
+                  type="text"
+                  placeholder="E-mail*"
+                  data-validate
+                  data-required="email"
+                  autocomplete="off"
+                  name="form[]"
+                />
+              </span>
+              <span class="error-span">Поле заполнено неверно</span>
+            </label>
+
+            <label class="application__label-input-file label-input-file input-file">
+              <input type="file" multiple="" name="file_main"   
+            
+              />
+              <span class="application__label-input-file-text-box label-input-file-text-box txt18 txt18_caps">
+                прикрепить файл
+                <span class="application__label-input-file-svg-box label-input-file-svg-box">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1822_5360)">
+                      <path
+                        d="M12.3297 12.15L9.85969 14.62C8.48969 15.99 8.48969 18.2 9.85969 19.57C11.2297 20.94 13.4397 20.94 14.8097 19.57L18.6997 15.68C21.4297 12.95 21.4297 8.51 18.6997 5.78C15.9697 3.05 11.5297 3.05 8.79969 5.78L4.55969 10.02C2.21969 12.36 2.21969 16.16 4.55969 18.51"
+                        stroke="#013341"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1822_5360">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+              </span>
+            </label>
+            <div class="application__form-files-items form-files-items file_main"></div>
+          </div>
+          <p class="application__agreement-text application__agreement-text--long txt-small">
+            Нажимая «Откликнуться» вы подтверждаете, что согласны на
+            <a href="#">обработку персональных данных</a>
+          </p>
+        </div>
+        <button type="submit" class="application__btn button button-black txt20 txt20_caps">
+          откликнуться
+        </button>
+      </form>
+      <div class="application__info-wrapper">
+        <div class="application__info-box">
+          <ul class="application__info-list">
+            <li class="application__info-item">
+              <p class="application__info-link txt20 txt20_caps">
+                115516, Россия, г. Москва, Тарный проезд, 11
+              </p>
+            </li>
+            <li class="application__info-item">
+              <a href="tel:+74992880398" class="application__info-link txt20 txt20_caps"
+                >+7 (499) 288-03-98</a
+              >
+            </li>
+            <li class="application__info-item">
+              <a href="mailto:info@beavertech.ru" class="application__info-link txt20 txt20_caps"
+                >info@beavertech.ru</a
+              >
+            </li>
+          </ul>
+          <ul class="application__contacts-list">
+            <li class="application__contacts-item">
+              <a href="#" class="application__contacts-link">
+                <div class="application__contacts-link-svg-box">
+                 <img src="./assets/images/vk.svg" alt="" class="desktop" />
+                 <img src="./assets/images/vk-black.svg" alt="" class="mobile" />
+                </div>
+              </a>
+            </li>
+            <li class="application__contacts-item">
+              <a href="#" class="application__contacts-link">
+                <div class="application__contacts-link-svg-box">
+                  <img src="./assets/images/watsapp.svg" alt="" class="desktop" />
+                  <img src="./assets/images/watsapp-black.svg" alt="" class="mobile" />
+                </div>
+              </a>
+            </li>
+            <li class="application__contacts-item">
+              <a href="#" class="application__contacts-link">
+                <div class="application__contacts-link-svg-box">
+                  <img src="./assets/images/youtube.svg" alt="" class="desktop" />
+                  <img src="./assets/images/youtube-black.svg" alt="" class="mobile" />
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

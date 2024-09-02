@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Личный кабинет - станки</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <include src="./components/_header.html"></include>
+      </header>
+      <include src="./components/_popup.html"></include>
+      <main>
+        <include src="./components/_arrow-top.html"></include>
+        <section class="lk">
+          <div class="container">
+            <div class="lk__inner">
+              <div class="lk__title-box">
+                <p class="lk__title tl1">Личный кабинет</p>
+                <div class="lk__title-svg-box mobile">
+                  <svg
+                    width="32"
+                    height="33"
+                    viewBox="0 0 32 33"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 24.5L20 16.5L12 8.5"
+                      stroke="#012028"
+                      stroke-width="2"
+                      stroke-linecap="square"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="lk__content-wrapper">
+                <div class="lk__nav-wrapper">
+                  <include src="./components/_lk-nav.html"></include>
+                </div>
+                <div class="lk__content-box">
+                  <p class="lk__content-title mobile">Мой кабинет</p>
+                  <!-- <div class="lk__machines">
+                    <div class="lk__machines-tabs desktop">
+                      <div class="lk__machines-tab txt18 txt18_caps tab active">Beavermill 3 и 4 оси</div>
+                      <div class="lk__machines-tab txt18 txt18_caps tab">Beavermill 5 осей</div>
+                      <div class="lk__machines-tab txt18 txt18_caps tab">Beavermill plus</div>
+                      <div class="lk__machines-tab txt18 txt18_caps tab">Beavermill mini</div>
+                      <div class="lk__machines-tab txt18 txt18_caps tab">BEAVERMILL PLUS (5 осей)</div>
+                    </div>
+                    <div class="lk__machines-tabs mobile">
+                      <div class="lk__machines-tabs--head">
+                        <div class="lk__machines-tabs--text">Beavermill 3 и 4 оси</div>
+                        <div>
+                          <svg
+                            width="24"
+                            height="25"
+                            viewBox="0 0 24 25"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_2251_11258)">
+                              <path
+                                d="M18 9.5L12 15.5L6 9.5"
+                                stroke="#012028"
+                                stroke-width="1.5"
+                                stroke-linecap="square"
+                                stroke-linejoin="round"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2251_11258">
+                                <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                      </div>
+                      <ul class="lk__machines-tabs--list">
+                        <div class="lk__machines-tabs--item txt16">Beavermill 3 и 4 оси</div>
+                        <div class="lk__machines-tabs--item txt16">Beavermill 5 осей</div>
+                        <div class="lk__machines-tabs--item txt16">Beavermill plus</div>
+                        <div class="lk__machines-tabs--item txt16">Beavermill mini</div>
+                        <div class="lk__machines-tabs--item txt16">BEAVERMILL PLUS (5 осей)</div>
+                      </ul>
+                    </div>
+                  </div> -->
+                  <div class="benchs lk" id="benchs">
+                    <div class="benchs__desk switcher">
+                      <div class="switcher__container">
+                        <div class="switcher__content active">
+                          <div class="benchs__desk-container">
+                            <div class="benchs__desk-left">
+                              <div class="benchs__desk-title tl1">beavermill 3 оси</div>
+                              <div class="benchs__desk-subtitle txt20 txt20_caps">
+                                Дата покупки: 23.04.2024
+                              </div>
+                              <div class="benchs__desk-subtitle txt20 txt20_caps">
+                                Серийный номер: 18244654845657
+                              </div>
+                              <a href="#" class="benchs__desk-link">
+                                <div class="txt18 txt18_caps">связанные заявки</div>
+                                <div>
+                                  <svg
+                                    width="32"
+                                    height="32"
+                                    viewBox="0 0 32 32"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <g clip-path="url(#clip0_3592_9759)">
+                                      <path
+                                        d="M8 24L23 9"
+                                        stroke="#013341"
+                                        stroke-width="2"
+                                        stroke-linecap="square"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        d="M11 8L24 8L24 21"
+                                        stroke="#013341"
+                                        stroke-width="2"
+                                        stroke-linecap="square"
+                                        stroke-linejoin="round"
+                                      />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_3592_9759">
+                                        <rect width="32" height="32" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </a>
+                              <div class="benchs__desk-info txt16">
+                                <div class="benchs__desk-info--container">
+                                  <div class="benchs__desk-info--title">Габариты станка</div>
+                                  <div class="benchs__desk-info--text">130/1855/1950 мм*</div>
+                                </div>
+                                <div class="benchs__desk-info--container">
+                                  <div class="benchs__desk-info--title">Рабочая зона x/y/z</div>
+                                  <div class="benchs__desk-info--text">500/350/400 мм</div>
+                                </div>
+                                <div class="benchs__desk-info--container">
+                                  <div class="benchs__desk-info--title">Рабочий стол</div>
+                                  <div class="benchs__desk-info--text">730/300 мм</div>
+                                </div>
+                                <div class="benchs__desk-info--container">
+                                  <div class="benchs__desk-info--title">Вес</div>
+                                  <div class="benchs__desk-info--text">2000 кг</div>
+                                </div>
+                                <div class="benchs__desk-info--container">
+                                  <div class="benchs__desk-info--title">Рабочая подача</div>
+                                  <div class="benchs__desk-info--text">25 м/мин</div>
+                                </div>
+                                <div class="benchs__desk-info--note">*Без полок и лампы индексации</div>
+                              </div>
+                              <a href="" class="benchs__desk-link button button-border txt20 txt20_caps"
+                                >Оставить заявку</a
+                              >
+                            </div>
+                            <div class="benchs__desk-center">
+                              <div class="benchs__desk-big active">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                                <div class="benchs__desk-point" style="top: 52rem; left: 23rem">
+                                  <div class="benchs__desk-point--circle"></div>
+                                  <div class="benchs__desk-point--text txt16">Система смыва стружки</div>
+                                </div>
+                                <div class="benchs__desk-point" style="top: 16.5rem; left: 40rem">
+                                  <div class="benchs__desk-point--circle"></div>
+                                  <div class="benchs__desk-point--text txt16">Система смыва стружки</div>
+                                </div>
+                                <div class="benchs__desk-point" style="top: 40.5rem; left: 28.5rem">
+                                  <div class="benchs__desk-point--circle"></div>
+                                  <div class="benchs__desk-point--text txt16">Система смыва стружки</div>
+                                </div>
+                              </div>
+                              <div class="benchs__desk-big">
+                                <img src="./assets/images/bench1.webp" alt="" />
+                              </div>
+                              <div class="benchs__desk-big">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                              <div class="benchs__desk-big">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                              <div class="benchs__desk-big">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                            </div>
+                            <div class="benchs__desk-right">
+                              <div class="benchs__desk-imgs">
+                                <div class="benchs__desk-img active">
+                                  <img src="./assets/images/bench2.webp" alt="" />
+                                </div>
+                                <div class="benchs__desk-img">
+                                  <img src="./assets/images/bench1.webp" alt="" />
+                                </div>
+                                <div class="benchs__desk-img" style="grid-column: 1">
+                                  <img src="./assets/images/bench2.webp" alt="" />
+                                </div>
+                                <div class="benchs__desk-img">
+                                  <img src="./assets/images/bench2.webp" alt="" />
+                                </div>
+                                <div class="benchs__desk-img">
+                                  <img src="./assets/images/bench2.webp" alt="" />
+                                </div>
+                              </div>
+                              <div class="benchs__desk-next-photo">
+                                <svg
+                                  width="60"
+                                  height="60"
+                                  viewBox="0 0 60 60"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <circle
+                                    cx="30"
+                                    cy="30"
+                                    r="29.25"
+                                    transform="rotate(-90 30 30)"
+                                    fill="#F3F3F3"
+                                    stroke="#676767"
+                                    stroke-width="1.5"
+                                  />
+                                  <rect
+                                    width="32"
+                                    height="32"
+                                    transform="translate(14 45.999) rotate(-90)"
+                                    fill="#F3F3F3"
+                                  />
+                                  <path
+                                    d="M18.6864 28.6854L17.6864 28.6854L17.6864 30.6854L18.6864 30.6854L18.6864 28.6854ZM39.8996 30.6854C40.4519 30.6854 40.8996 30.2377 40.8996 29.6854C40.8996 29.1331 40.4519 28.6854 39.8996 28.6854L39.8996 30.6854ZM18.6864 30.6854H39.8996L39.8996 28.6854H18.6864L18.6864 30.6854Z"
+                                    fill="#676767"
+                                  />
+                                  <path
+                                    d="M32.1211 20.4929L41.3135 29.6853L32.1211 38.8777"
+                                    stroke="#676767"
+                                    stroke-width="2"
+                                    stroke-linecap="square"
+                                    stroke-linejoin="round"
+                                  />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="switcher__content">
+                          <div class="benchs__desk-container">
+                            <div class="benchs__desk-left">
+                              <div class="benchs__desk-title tl1">beavermill 3 оси</div>
+                              <div class="benchs__desk-subtitle txt20 txt20_caps">
+                                Дата покупки: 23.04.2024
+                              </div>
+                              <div class="benchs__desk-subtitle txt20 txt20_caps">
+                                Серийный номер: 18244654845657
+                              </div>
+                              <a href="#" class="benchs__desk-link">
+                                <div class="txt18 txt18_caps">связанные заявки</div>
+                                <div>
+                                  <svg
+                                    width="32"
+                                    height="32"
+                                    viewBox="0 0 32 32"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <g clip-path="url(#clip0_3592_9759)">
+                                      <path
+                                        d="M8 24L23 9"
+                                        stroke="#013341"
+                                        stroke-width="2"
+                                        stroke-linecap="square"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        d="M11 8L24 8L24 21"
+                                        stroke="#013341"
+                                        stroke-width="2"
+                                        stroke-linecap="square"
+                                        stroke-linejoin="round"
+                                      />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_3592_9759">
+                                        <rect width="32" height="32" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </a>
+                              <div class="benchs__desk-info txt16">
+                                <div class="benchs__desk-info--container">
+                                  <div class="benchs__desk-info--title">Габариты станка</div>
+                                  <div class="benchs__desk-info--text">130/1855/1950 мм*</div>
+                                </div>
+                                <div class="benchs__desk-info--container">
+                                  <div class="benchs__desk-info--title">Рабочая зона x/y/z</div>
+                                  <div class="benchs__desk-info--text">500/350/400 мм</div>
+                                </div>
+                                <div class="benchs__desk-info--container">
+                                  <div class="benchs__desk-info--title">Рабочий стол</div>
+                                  <div class="benchs__desk-info--text">730/300 мм</div>
+                                </div>
+                                <div class="benchs__desk-info--container">
+                                  <div class="benchs__desk-info--title">Вес</div>
+                                  <div class="benchs__desk-info--text">2000 кг</div>
+                                </div>
+                                <div class="benchs__desk-info--container">
+                                  <div class="benchs__desk-info--title">Рабочая подача</div>
+                                  <div class="benchs__desk-info--text">25 м/мин</div>
+                                </div>
+                                <div class="benchs__desk-info--note">*Без полок и лампы индексации</div>
+                              </div>
+                              <a href="" class="benchs__desk-link button button-border txt20 txt20_caps"
+                                >Оставить заявку</a
+                              >
+                            </div>
+                            <div class="benchs__desk-center">
+                              <div class="benchs__desk-big active">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                                <div class="benchs__desk-point" style="top: 52rem; left: 23rem">
+                                  <div class="benchs__desk-point--circle"></div>
+                                  <div class="benchs__desk-point--text txt16">Система смыва стружки</div>
+                                </div>
+                                <div class="benchs__desk-point" style="top: 16.5rem; left: 40rem">
+                                  <div class="benchs__desk-point--circle"></div>
+                                  <div class="benchs__desk-point--text txt16">Система смыва стружки</div>
+                                </div>
+                                <div class="benchs__desk-point" style="top: 40.5rem; left: 28.5rem">
+                                  <div class="benchs__desk-point--circle"></div>
+                                  <div class="benchs__desk-point--text txt16">Система смыва стружки</div>
+                                </div>
+                              </div>
+                              <div class="benchs__desk-big">
+                                <img src="./assets/images/bench1.webp" alt="" />
+                              </div>
+                              <div class="benchs__desk-big">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                              <div class="benchs__desk-big">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                              <div class="benchs__desk-big">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                            </div>
+                            <div class="benchs__desk-right">
+                              <div class="benchs__desk-imgs">
+                                <div class="benchs__desk-img active">
+                                  <img src="./assets/images/bench2.webp" alt="" />
+                                </div>
+                                <div class="benchs__desk-img">
+                                  <img src="./assets/images/bench1.webp" alt="" />
+                                </div>
+                                <div class="benchs__desk-img" style="grid-column: 1">
+                                  <img src="./assets/images/bench2.webp" alt="" />
+                                </div>
+                                <div class="benchs__desk-img">
+                                  <img src="./assets/images/bench2.webp" alt="" />
+                                </div>
+                                <div class="benchs__desk-img">
+                                  <img src="./assets/images/bench2.webp" alt="" />
+                                </div>
+                              </div>
+                              <div class="benchs__desk-next-photo">
+                                <svg
+                                  width="60"
+                                  height="60"
+                                  viewBox="0 0 60 60"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <circle
+                                    cx="30"
+                                    cy="30"
+                                    r="29.25"
+                                    transform="rotate(-90 30 30)"
+                                    fill="#F3F3F3"
+                                    stroke="#676767"
+                                    stroke-width="1.5"
+                                  />
+                                  <rect
+                                    width="32"
+                                    height="32"
+                                    transform="translate(14 45.999) rotate(-90)"
+                                    fill="#F3F3F3"
+                                  />
+                                  <path
+                                    d="M18.6864 28.6854L17.6864 28.6854L17.6864 30.6854L18.6864 30.6854L18.6864 28.6854ZM39.8996 30.6854C40.4519 30.6854 40.8996 30.2377 40.8996 29.6854C40.8996 29.1331 40.4519 28.6854 39.8996 28.6854L39.8996 30.6854ZM18.6864 30.6854H39.8996L39.8996 28.6854H18.6864L18.6864 30.6854Z"
+                                    fill="#676767"
+                                  />
+                                  <path
+                                    d="M32.1211 20.4929L41.3135 29.6853L32.1211 38.8777"
+                                    stroke="#676767"
+                                    stroke-width="2"
+                                    stroke-linecap="square"
+                                    stroke-linejoin="round"
+                                  />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="switcher__content">
+                          <div class="benchs__desk-container">
+                            <div class="benchs__desk-left">
+                              <div class="benchs__desk-title tl1">beavermill 3 оси</div>
+                              <div class="benchs__desk-subtitle txt20 txt20_caps">
+                                Дата покупки: 23.04.2024
+                              </div>
+                              <div class="benchs__desk-subtitle txt20 txt20_caps">
+                                Серийный номер: 18244654845657
+                              </div>
+                              <a href="#" class="benchs__desk-link">
+                                <div class="txt18 txt18_caps">связанные заявки</div>
+                                <div>
+                                  <svg
+                                    width="32"
+                                    height="32"
+                                    viewBox="0 0 32 32"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <g clip-path="url(#clip0_3592_9759)">
+                                      <path
+                                        d="M8 24L23 9"
+                                        stroke="#013341"
+                                        stroke-width="2"
+                                        stroke-linecap="square"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        d="M11 8L24 8L24 21"
+                                        stroke="#013341"
+                                        stroke-width="2"
+                                        stroke-linecap="square"
+                                        stroke-linejoin="round"
+                                      />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_3592_9759">
+                                        <rect width="32" height="32" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </a>
+                              <div class="benchs__desk-info txt16">
+                                <div class="benchs__desk-info--container">
+                                  <div class="benchs__desk-info--title">Габариты станка</div>
+                                  <div class="benchs__desk-info--text">130/1855/1950 мм*</div>
+                                </div>
+                                <div class="benchs__desk-info--container">
+                                  <div class="benchs__desk-info--title">Рабочая зона x/y/z</div>
+                                  <div class="benchs__desk-info--text">500/350/400 мм</div>
+                                </div>
+                                <div class="benchs__desk-info--container">
+                                  <div class="benchs__desk-info--title">Рабочий стол</div>
+                                  <div class="benchs__desk-info--text">730/300 мм</div>
+                                </div>
+                                <div class="benchs__desk-info--container">
+                                  <div class="benchs__desk-info--title">Вес</div>
+                                  <div class="benchs__desk-info--text">2000 кг</div>
+                                </div>
+                                <div class="benchs__desk-info--container">
+                                  <div class="benchs__desk-info--title">Рабочая подача</div>
+                                  <div class="benchs__desk-info--text">25 м/мин</div>
+                                </div>
+                                <div class="benchs__desk-info--note">*Без полок и лампы индексации</div>
+                              </div>
+                              <a href="" class="benchs__desk-link button button-border txt20 txt20_caps"
+                                >Оставить заявку</a
+                              >
+                            </div>
+                            <div class="benchs__desk-center">
+                              <div class="benchs__desk-big active">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                                <div class="benchs__desk-point" style="top: 52rem; left: 23rem">
+                                  <div class="benchs__desk-point--circle"></div>
+                                  <div class="benchs__desk-point--text txt16">Система смыва стружки</div>
+                                </div>
+                                <div class="benchs__desk-point" style="top: 16.5rem; left: 40rem">
+                                  <div class="benchs__desk-point--circle"></div>
+                                  <div class="benchs__desk-point--text txt16">Система смыва стружки</div>
+                                </div>
+                                <div class="benchs__desk-point" style="top: 40.5rem; left: 28.5rem">
+                                  <div class="benchs__desk-point--circle"></div>
+                                  <div class="benchs__desk-point--text txt16">Система смыва стружки</div>
+                                </div>
+                              </div>
+                              <div class="benchs__desk-big">
+                                <img src="./assets/images/bench1.webp" alt="" />
+                              </div>
+                              <div class="benchs__desk-big">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                              <div class="benchs__desk-big">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                              <div class="benchs__desk-big">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                            </div>
+                            <div class="benchs__desk-right">
+                              <div class="benchs__desk-imgs">
+                                <div class="benchs__desk-img active">
+                                  <img src="./assets/images/bench2.webp" alt="" />
+                                </div>
+                                <div class="benchs__desk-img">
+                                  <img src="./assets/images/bench1.webp" alt="" />
+                                </div>
+                                <div class="benchs__desk-img" style="grid-column: 1">
+                                  <img src="./assets/images/bench2.webp" alt="" />
+                                </div>
+                                <div class="benchs__desk-img">
+                                  <img src="./assets/images/bench2.webp" alt="" />
+                                </div>
+                                <div class="benchs__desk-img">
+                                  <img src="./assets/images/bench2.webp" alt="" />
+                                </div>
+                              </div>
+                              <div class="benchs__desk-next-photo">
+                                <svg
+                                  width="60"
+                                  height="60"
+                                  viewBox="0 0 60 60"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <circle
+                                    cx="30"
+                                    cy="30"
+                                    r="29.25"
+                                    transform="rotate(-90 30 30)"
+                                    fill="#F3F3F3"
+                                    stroke="#676767"
+                                    stroke-width="1.5"
+                                  />
+                                  <rect
+                                    width="32"
+                                    height="32"
+                                    transform="translate(14 45.999) rotate(-90)"
+                                    fill="#F3F3F3"
+                                  />
+                                  <path
+                                    d="M18.6864 28.6854L17.6864 28.6854L17.6864 30.6854L18.6864 30.6854L18.6864 28.6854ZM39.8996 30.6854C40.4519 30.6854 40.8996 30.2377 40.8996 29.6854C40.8996 29.1331 40.4519 28.6854 39.8996 28.6854L39.8996 30.6854ZM18.6864 30.6854H39.8996L39.8996 28.6854H18.6864L18.6864 30.6854Z"
+                                    fill="#676767"
+                                  />
+                                  <path
+                                    d="M32.1211 20.4929L41.3135 29.6853L32.1211 38.8777"
+                                    stroke="#676767"
+                                    stroke-width="2"
+                                    stroke-linecap="square"
+                                    stroke-linejoin="round"
+                                  />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="switcher__content">
+                          <div class="benchs__desk-container">
+                            <div class="benchs__desk-left">
+                              <div class="benchs__desk-title tl1">beavermill 3 оси</div>
+                              <div class="benchs__desk-subtitle txt20 txt20_caps">
+                                Дата покупки: 23.04.2024
+                              </div>
+                              <div class="benchs__desk-subtitle txt20 txt20_caps">
+                                Серийный номер: 18244654845657
+                              </div>
+                              <a href="#" class="benchs__desk-link">
+                                <div class="txt18 txt18_caps">связанные заявки</div>
+                                <div>
+                                  <svg
+                                    width="32"
+                                    height="32"
+                                    viewBox="0 0 32 32"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <g clip-path="url(#clip0_3592_9759)">
+                                      <path
+                                        d="M8 24L23 9"
+                                        stroke="#013341"
+                                        stroke-width="2"
+                                        stroke-linecap="square"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        d="M11 8L24 8L24 21"
+                                        stroke="#013341"
+                                        stroke-width="2"
+                                        stroke-linecap="square"
+                                        stroke-linejoin="round"
+                                      />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_3592_9759">
+                                        <rect width="32" height="32" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </a>
+                              <div class="benchs__desk-info txt16">
+                                <div class="benchs__desk-info--container">
+                                  <div class="benchs__desk-info--title">Габариты станка</div>
+                                  <div class="benchs__desk-info--text">130/1855/1950 мм*</div>
+                                </div>
+                                <div class="benchs__desk-info--container">
+                                  <div class="benchs__desk-info--title">Рабочая зона x/y/z</div>
+                                  <div class="benchs__desk-info--text">500/350/400 мм</div>
+                                </div>
+                                <div class="benchs__desk-info--container">
+                                  <div class="benchs__desk-info--title">Рабочий стол</div>
+                                  <div class="benchs__desk-info--text">730/300 мм</div>
+                                </div>
+                                <div class="benchs__desk-info--container">
+                                  <div class="benchs__desk-info--title">Вес</div>
+                                  <div class="benchs__desk-info--text">2000 кг</div>
+                                </div>
+                                <div class="benchs__desk-info--container">
+                                  <div class="benchs__desk-info--title">Рабочая подача</div>
+                                  <div class="benchs__desk-info--text">25 м/мин</div>
+                                </div>
+                                <div class="benchs__desk-info--note">*Без полок и лампы индексации</div>
+                              </div>
+                              <a href="" class="benchs__desk-link button button-border txt20 txt20_caps"
+                                >Оставить заявку</a
+                              >
+                            </div>
+                            <div class="benchs__desk-center">
+                              <div class="benchs__desk-big active">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                                <div class="benchs__desk-point" style="top: 52rem; left: 23rem">
+                                  <div class="benchs__desk-point--circle"></div>
+                                  <div class="benchs__desk-point--text txt16">Система смыва стружки</div>
+                                </div>
+                                <div class="benchs__desk-point" style="top: 16.5rem; left: 40rem">
+                                  <div class="benchs__desk-point--circle"></div>
+                                  <div class="benchs__desk-point--text txt16">Система смыва стружки</div>
+                                </div>
+                                <div class="benchs__desk-point" style="top: 40.5rem; left: 28.5rem">
+                                  <div class="benchs__desk-point--circle"></div>
+                                  <div class="benchs__desk-point--text txt16">Система смыва стружки</div>
+                                </div>
+                              </div>
+                              <div class="benchs__desk-big">
+                                <img src="./assets/images/bench1.webp" alt="" />
+                              </div>
+                              <div class="benchs__desk-big">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                              <div class="benchs__desk-big">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                              <div class="benchs__desk-big">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                            </div>
+                            <div class="benchs__desk-right">
+                              <div class="benchs__desk-imgs">
+                                <div class="benchs__desk-img active">
+                                  <img src="./assets/images/bench2.webp" alt="" />
+                                </div>
+                                <div class="benchs__desk-img">
+                                  <img src="./assets/images/bench1.webp" alt="" />
+                                </div>
+                                <div class="benchs__desk-img" style="grid-column: 1">
+                                  <img src="./assets/images/bench2.webp" alt="" />
+                                </div>
+                                <div class="benchs__desk-img">
+                                  <img src="./assets/images/bench2.webp" alt="" />
+                                </div>
+                                <div class="benchs__desk-img">
+                                  <img src="./assets/images/bench2.webp" alt="" />
+                                </div>
+                              </div>
+                              <div class="benchs__desk-next-photo">
+                                <svg
+                                  width="60"
+                                  height="60"
+                                  viewBox="0 0 60 60"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <circle
+                                    cx="30"
+                                    cy="30"
+                                    r="29.25"
+                                    transform="rotate(-90 30 30)"
+                                    fill="#F3F3F3"
+                                    stroke="#676767"
+                                    stroke-width="1.5"
+                                  />
+                                  <rect
+                                    width="32"
+                                    height="32"
+                                    transform="translate(14 45.999) rotate(-90)"
+                                    fill="#F3F3F3"
+                                  />
+                                  <path
+                                    d="M18.6864 28.6854L17.6864 28.6854L17.6864 30.6854L18.6864 30.6854L18.6864 28.6854ZM39.8996 30.6854C40.4519 30.6854 40.8996 30.2377 40.8996 29.6854C40.8996 29.1331 40.4519 28.6854 39.8996 28.6854L39.8996 30.6854ZM18.6864 30.6854H39.8996L39.8996 28.6854H18.6864L18.6864 30.6854Z"
+                                    fill="#676767"
+                                  />
+                                  <path
+                                    d="M32.1211 20.4929L41.3135 29.6853L32.1211 38.8777"
+                                    stroke="#676767"
+                                    stroke-width="2"
+                                    stroke-linecap="square"
+                                    stroke-linejoin="round"
+                                  />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="switcher__content">
+                          <div class="benchs__desk-container">
+                            <div class="benchs__desk-left">
+                              <div class="benchs__desk-title tl1">beavermill 3 оси</div>
+                              <div class="benchs__desk-subtitle txt20 txt20_caps">
+                                Дата покупки: 23.04.2024
+                              </div>
+                              <div class="benchs__desk-subtitle txt20 txt20_caps">
+                                Серийный номер: 18244654845657
+                              </div>
+                              <a href="#" class="benchs__desk-link">
+                                <div class="txt18 txt18_caps">связанные заявки</div>
+                                <div>
+                                  <svg
+                                    width="32"
+                                    height="32"
+                                    viewBox="0 0 32 32"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <g clip-path="url(#clip0_3592_9759)">
+                                      <path
+                                        d="M8 24L23 9"
+                                        stroke="#013341"
+                                        stroke-width="2"
+                                        stroke-linecap="square"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        d="M11 8L24 8L24 21"
+                                        stroke="#013341"
+                                        stroke-width="2"
+                                        stroke-linecap="square"
+                                        stroke-linejoin="round"
+                                      />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_3592_9759">
+                                        <rect width="32" height="32" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </a>
+                              <div class="benchs__desk-info txt16">
+                                <div class="benchs__desk-info--container">
+                                  <div class="benchs__desk-info--title">Габариты станка</div>
+                                  <div class="benchs__desk-info--text">130/1855/1950 мм*</div>
+                                </div>
+                                <div class="benchs__desk-info--container">
+                                  <div class="benchs__desk-info--title">Рабочая зона x/y/z</div>
+                                  <div class="benchs__desk-info--text">500/350/400 мм</div>
+                                </div>
+                                <div class="benchs__desk-info--container">
+                                  <div class="benchs__desk-info--title">Рабочий стол</div>
+                                  <div class="benchs__desk-info--text">730/300 мм</div>
+                                </div>
+                                <div class="benchs__desk-info--container">
+                                  <div class="benchs__desk-info--title">Вес</div>
+                                  <div class="benchs__desk-info--text">2000 кг</div>
+                                </div>
+                                <div class="benchs__desk-info--container">
+                                  <div class="benchs__desk-info--title">Рабочая подача</div>
+                                  <div class="benchs__desk-info--text">25 м/мин</div>
+                                </div>
+                                <div class="benchs__desk-info--note">*Без полок и лампы индексации</div>
+                              </div>
+                              <a href="" class="benchs__desk-link button button-border txt20 txt20_caps"
+                                >Оставить заявку</a
+                              >
+                            </div>
+                            <div class="benchs__desk-center">
+                              <div class="benchs__desk-big active">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                                <div class="benchs__desk-point" style="top: 52rem; left: 23rem">
+                                  <div class="benchs__desk-point--circle"></div>
+                                  <div class="benchs__desk-point--text txt16">Система смыва стружки</div>
+                                </div>
+                                <div class="benchs__desk-point" style="top: 16.5rem; left: 40rem">
+                                  <div class="benchs__desk-point--circle"></div>
+                                  <div class="benchs__desk-point--text txt16">Система смыва стружки</div>
+                                </div>
+                                <div class="benchs__desk-point" style="top: 40.5rem; left: 28.5rem">
+                                  <div class="benchs__desk-point--circle"></div>
+                                  <div class="benchs__desk-point--text txt16">Система смыва стружки</div>
+                                </div>
+                              </div>
+                              <div class="benchs__desk-big">
+                                <img src="./assets/images/bench1.webp" alt="" />
+                              </div>
+                              <div class="benchs__desk-big">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                              <div class="benchs__desk-big">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                              <div class="benchs__desk-big">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                            </div>
+                            <div class="benchs__desk-right">
+                              <div class="benchs__desk-imgs">
+                                <div class="benchs__desk-img active">
+                                  <img src="./assets/images/bench2.webp" alt="" />
+                                </div>
+                                <div class="benchs__desk-img">
+                                  <img src="./assets/images/bench1.webp" alt="" />
+                                </div>
+                                <div class="benchs__desk-img" style="grid-column: 1">
+                                  <img src="./assets/images/bench2.webp" alt="" />
+                                </div>
+                                <div class="benchs__desk-img">
+                                  <img src="./assets/images/bench2.webp" alt="" />
+                                </div>
+                                <div class="benchs__desk-img">
+                                  <img src="./assets/images/bench2.webp" alt="" />
+                                </div>
+                              </div>
+                              <div class="benchs__desk-next-photo">
+                                <svg
+                                  width="60"
+                                  height="60"
+                                  viewBox="0 0 60 60"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <circle
+                                    cx="30"
+                                    cy="30"
+                                    r="29.25"
+                                    transform="rotate(-90 30 30)"
+                                    fill="#F3F3F3"
+                                    stroke="#676767"
+                                    stroke-width="1.5"
+                                  />
+                                  <rect
+                                    width="32"
+                                    height="32"
+                                    transform="translate(14 45.999) rotate(-90)"
+                                    fill="#F3F3F3"
+                                  />
+                                  <path
+                                    d="M18.6864 28.6854L17.6864 28.6854L17.6864 30.6854L18.6864 30.6854L18.6864 28.6854ZM39.8996 30.6854C40.4519 30.6854 40.8996 30.2377 40.8996 29.6854C40.8996 29.1331 40.4519 28.6854 39.8996 28.6854L39.8996 30.6854ZM18.6864 30.6854H39.8996L39.8996 28.6854H18.6864L18.6864 30.6854Z"
+                                    fill="#676767"
+                                  />
+                                  <path
+                                    d="M32.1211 20.4929L41.3135 29.6853L32.1211 38.8777"
+                                    stroke="#676767"
+                                    stroke-width="2"
+                                    stroke-linecap="square"
+                                    stroke-linejoin="round"
+                                  />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="benchs__btns swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide benchs__btn switcher__btn active">
+                            <span class="txt18 txt18_caps benchs__btn-text">Beavermill 3 и 4 оси</span>
+                          </div>
+                          <div class="swiper-slide benchs__btn switcher__btn">
+                            <span class="txt18 txt18_caps benchs__btn-text">Beavermill 5 осей</span>
+                          </div>
+                          <div class="swiper-slide benchs__btn switcher__btn">
+                            <span class="txt18 txt18_caps benchs__btn-text">Beavermill plus</span>
+                          </div>
+                          <div class="swiper-slide benchs__btn switcher__btn">
+                            <span class="txt18 txt18_caps benchs__btn-text">Beavermill mini</span>
+                          </div>
+                          <div class="swiper-slide benchs__btn switcher__btn">
+                            <span class="txt18 txt18_caps benchs__btn-text">BEAVERMILL PLUS (5 осей)</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="benchs__mob">
+                      <div class="benchs__mob-selector">
+                        <div class="benchs__mob-selector--top">
+                          <span>Beavermill 3 и 4 оси</span>
+                          <svg
+                            width="24"
+                            height="25"
+                            viewBox="0 0 24 25"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M6 9.5L12 15.5L18 9.5"
+                              stroke="#012028"
+                              stroke-width="1.5"
+                              stroke-linecap="square"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                        <div class="benchs__mob-selector--bottom">
+                          <div class="benchs__mob-selector--item active">Beavermill 3 и 4 оси</div>
+                          <div class="benchs__mob-selector--item">Beavermill 5 осей</div>
+                          <div class="benchs__mob-selector--item">Beavermill mini</div>
+                          <div class="benchs__mob-selector--item">Beavermill plus</div>
+                          <div class="benchs__mob-selector--item">BEAVERMILL PLUS (5 осей)</div>
+                        </div>
+                      </div>
+                      <div class="benchs__mob-container">
+                        <div class="benchs__mob-content active">
+                          <div class="benchs__mob-swiper swiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="benchs__mob-title">beavermill 3 оси</div>
+                          <div class="benchs__mob-subtitle txt20 txt20_caps">Дата покупки: 23.04.2024</div>
+                          <div class="benchs__mob-subtitle txt20 txt20_caps">
+                            Серийный номер: 18244654845657
+                          </div>
+                          <a href="#" class="benchs__mob-link">
+                            <div class="txt18 txt18_caps">связанные заявки</div>
+                            <div>
+                              <svg
+                                width="32"
+                                height="32"
+                                viewBox="0 0 32 32"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g clip-path="url(#clip0_3592_9759)">
+                                  <path
+                                    d="M8 24L23 9"
+                                    stroke="#013341"
+                                    stroke-width="2"
+                                    stroke-linecap="square"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M11 8L24 8L24 21"
+                                    stroke="#013341"
+                                    stroke-width="2"
+                                    stroke-linecap="square"
+                                    stroke-linejoin="round"
+                                  />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_3592_9759">
+                                    <rect width="32" height="32" fill="white" />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </div>
+                          </a>
+                          <div class="benchs__mob-info txt16">
+                            <div class="benchs__mob-info--container">
+                              <div class="benchs__mob-info--title">Габариты станка</div>
+                              <div class="benchs__mob-info--text">130/1855/1950 мм*</div>
+                            </div>
+                            <div class="benchs__mob-info--container">
+                              <div class="benchs__mob-info--title">Рабочая зона x/y/z</div>
+                              <div class="benchs__mob-info--text">500/350/400 мм</div>
+                            </div>
+                            <div class="benchs__mob-info--container">
+                              <div class="benchs__mob-info--title">Рабочий стол</div>
+                              <div class="benchs__mob-info--text">730/300 мм</div>
+                            </div>
+                            <div class="benchs__mob-info--container">
+                              <div class="benchs__mob-info--title">Вес</div>
+                              <div class="benchs__mob-info--text">2000 кг</div>
+                            </div>
+                            <div class="benchs__mob-info--container">
+                              <div class="benchs__mob-info--title">Рабочая подача</div>
+                              <div class="benchs__mob-info--text">25 м/мин</div>
+                            </div>
+                            <div class="benchs__mob-info--note">*Без полок и лампы индексации</div>
+                          </div>
+                          <a href="" class="benchs__mob-link button button-border txt20 txt20_caps"
+                            >Оставить заявку</a
+                          >
+                        </div>
+                        <div class="benchs__mob-content">
+                          <div class="benchs__mob-swiper swiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="benchs__mob-title">beavermill 3 оси</div>
+                          <div class="benchs__mob-subtitle txt20 txt20_caps">Дата покупки: 23.04.2024</div>
+                          <div class="benchs__mob-subtitle txt20 txt20_caps">
+                            Серийный номер: 18244654845657
+                          </div>
+                          <a href="#" class="benchs__mob-link">
+                            <div class="txt18 txt18_caps">связанные заявки</div>
+                            <div>
+                              <svg
+                                width="32"
+                                height="32"
+                                viewBox="0 0 32 32"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g clip-path="url(#clip0_3592_9759)">
+                                  <path
+                                    d="M8 24L23 9"
+                                    stroke="#013341"
+                                    stroke-width="2"
+                                    stroke-linecap="square"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M11 8L24 8L24 21"
+                                    stroke="#013341"
+                                    stroke-width="2"
+                                    stroke-linecap="square"
+                                    stroke-linejoin="round"
+                                  />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_3592_9759">
+                                    <rect width="32" height="32" fill="white" />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </div>
+                          </a>
+                          <div class="benchs__mob-info txt16">
+                            <div class="benchs__mob-info--container">
+                              <div class="benchs__mob-info--title">Габариты станка</div>
+                              <div class="benchs__mob-info--text">130/1855/1950 мм*</div>
+                            </div>
+                            <div class="benchs__mob-info--container">
+                              <div class="benchs__mob-info--title">Рабочая зона x/y/z</div>
+                              <div class="benchs__mob-info--text">500/350/400 мм</div>
+                            </div>
+                            <div class="benchs__mob-info--container">
+                              <div class="benchs__mob-info--title">Рабочий стол</div>
+                              <div class="benchs__mob-info--text">730/300 мм</div>
+                            </div>
+                            <div class="benchs__mob-info--container">
+                              <div class="benchs__mob-info--title">Вес</div>
+                              <div class="benchs__mob-info--text">2000 кг</div>
+                            </div>
+                            <div class="benchs__mob-info--container">
+                              <div class="benchs__mob-info--title">Рабочая подача</div>
+                              <div class="benchs__mob-info--text">25 м/мин</div>
+                            </div>
+                            <div class="benchs__mob-info--note">*Без полок и лампы индексации</div>
+                          </div>
+                          <a href="" class="benchs__mob-link button button-border txt20 txt20_caps"
+                            >Оставить заявку</a
+                          >
+                        </div>
+                        <div class="benchs__mob-content">
+                          <div class="benchs__mob-swiper swiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="benchs__mob-title">beavermill 3 оси</div>
+                          <div class="benchs__mob-subtitle txt20 txt20_caps">Дата покупки: 23.04.2024</div>
+                          <div class="benchs__mob-subtitle txt20 txt20_caps">
+                            Серийный номер: 18244654845657
+                          </div>
+                          <a href="#" class="benchs__mob-link">
+                            <div class="txt18 txt18_caps">связанные заявки</div>
+                            <div>
+                              <svg
+                                width="32"
+                                height="32"
+                                viewBox="0 0 32 32"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g clip-path="url(#clip0_3592_9759)">
+                                  <path
+                                    d="M8 24L23 9"
+                                    stroke="#013341"
+                                    stroke-width="2"
+                                    stroke-linecap="square"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M11 8L24 8L24 21"
+                                    stroke="#013341"
+                                    stroke-width="2"
+                                    stroke-linecap="square"
+                                    stroke-linejoin="round"
+                                  />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_3592_9759">
+                                    <rect width="32" height="32" fill="white" />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </div>
+                          </a>
+                          <div class="benchs__mob-info txt16">
+                            <div class="benchs__mob-info--container">
+                              <div class="benchs__mob-info--title">Габариты станка</div>
+                              <div class="benchs__mob-info--text">130/1855/1950 мм*</div>
+                            </div>
+                            <div class="benchs__mob-info--container">
+                              <div class="benchs__mob-info--title">Рабочая зона x/y/z</div>
+                              <div class="benchs__mob-info--text">500/350/400 мм</div>
+                            </div>
+                            <div class="benchs__mob-info--container">
+                              <div class="benchs__mob-info--title">Рабочий стол</div>
+                              <div class="benchs__mob-info--text">730/300 мм</div>
+                            </div>
+                            <div class="benchs__mob-info--container">
+                              <div class="benchs__mob-info--title">Вес</div>
+                              <div class="benchs__mob-info--text">2000 кг</div>
+                            </div>
+                            <div class="benchs__mob-info--container">
+                              <div class="benchs__mob-info--title">Рабочая подача</div>
+                              <div class="benchs__mob-info--text">25 м/мин</div>
+                            </div>
+                            <div class="benchs__mob-info--note">*Без полок и лампы индексации</div>
+                          </div>
+                          <a href="" class="benchs__mob-link button button-border txt20 txt20_caps"
+                            >Оставить заявку</a
+                          >
+                        </div>
+                        <div class="benchs__mob-content">
+                          <div class="benchs__mob-swiper swiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="benchs__mob-title">beavermill 3 оси</div>
+                          <div class="benchs__mob-subtitle txt20 txt20_caps">Дата покупки: 23.04.2024</div>
+                          <div class="benchs__mob-subtitle txt20 txt20_caps">
+                            Серийный номер: 18244654845657
+                          </div>
+                          <a href="#" class="benchs__mob-link">
+                            <div class="txt18 txt18_caps">связанные заявки</div>
+                            <div>
+                              <svg
+                                width="32"
+                                height="32"
+                                viewBox="0 0 32 32"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g clip-path="url(#clip0_3592_9759)">
+                                  <path
+                                    d="M8 24L23 9"
+                                    stroke="#013341"
+                                    stroke-width="2"
+                                    stroke-linecap="square"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M11 8L24 8L24 21"
+                                    stroke="#013341"
+                                    stroke-width="2"
+                                    stroke-linecap="square"
+                                    stroke-linejoin="round"
+                                  />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_3592_9759">
+                                    <rect width="32" height="32" fill="white" />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </div>
+                          </a>
+                          <div class="benchs__mob-info txt16">
+                            <div class="benchs__mob-info--container">
+                              <div class="benchs__mob-info--title">Габариты станка</div>
+                              <div class="benchs__mob-info--text">130/1855/1950 мм*</div>
+                            </div>
+                            <div class="benchs__mob-info--container">
+                              <div class="benchs__mob-info--title">Рабочая зона x/y/z</div>
+                              <div class="benchs__mob-info--text">500/350/400 мм</div>
+                            </div>
+                            <div class="benchs__mob-info--container">
+                              <div class="benchs__mob-info--title">Рабочий стол</div>
+                              <div class="benchs__mob-info--text">730/300 мм</div>
+                            </div>
+                            <div class="benchs__mob-info--container">
+                              <div class="benchs__mob-info--title">Вес</div>
+                              <div class="benchs__mob-info--text">2000 кг</div>
+                            </div>
+                            <div class="benchs__mob-info--container">
+                              <div class="benchs__mob-info--title">Рабочая подача</div>
+                              <div class="benchs__mob-info--text">25 м/мин</div>
+                            </div>
+                            <div class="benchs__mob-info--note">*Без полок и лампы индексации</div>
+                          </div>
+                          <a href="" class="benchs__mob-link button button-border txt20 txt20_caps"
+                            >Оставить заявку</a
+                          >
+                        </div>
+                        <div class="benchs__mob-content">
+                          <div class="benchs__mob-swiper swiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./assets/images/bench2.webp" alt="" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="benchs__mob-title">beavermill 3 оси</div>
+                          <div class="benchs__mob-subtitle txt20 txt20_caps">Дата покупки: 23.04.2024</div>
+                          <div class="benchs__mob-subtitle txt20 txt20_caps">
+                            Серийный номер: 18244654845657
+                          </div>
+                          <a href="#" class="benchs__mob-link">
+                            <div class="txt18 txt18_caps">связанные заявки</div>
+                            <div>
+                              <svg
+                                width="32"
+                                height="32"
+                                viewBox="0 0 32 32"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g clip-path="url(#clip0_3592_9759)">
+                                  <path
+                                    d="M8 24L23 9"
+                                    stroke="#013341"
+                                    stroke-width="2"
+                                    stroke-linecap="square"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M11 8L24 8L24 21"
+                                    stroke="#013341"
+                                    stroke-width="2"
+                                    stroke-linecap="square"
+                                    stroke-linejoin="round"
+                                  />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_3592_9759">
+                                    <rect width="32" height="32" fill="white" />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </div>
+                          </a>
+                          <div class="benchs__mob-info txt16">
+                            <div class="benchs__mob-info--container">
+                              <div class="benchs__mob-info--title">Габариты станка</div>
+                              <div class="benchs__mob-info--text">130/1855/1950 мм*</div>
+                            </div>
+                            <div class="benchs__mob-info--container">
+                              <div class="benchs__mob-info--title">Рабочая зона x/y/z</div>
+                              <div class="benchs__mob-info--text">500/350/400 мм</div>
+                            </div>
+                            <div class="benchs__mob-info--container">
+                              <div class="benchs__mob-info--title">Рабочий стол</div>
+                              <div class="benchs__mob-info--text">730/300 мм</div>
+                            </div>
+                            <div class="benchs__mob-info--container">
+                              <div class="benchs__mob-info--title">Вес</div>
+                              <div class="benchs__mob-info--text">2000 кг</div>
+                            </div>
+                            <div class="benchs__mob-info--container">
+                              <div class="benchs__mob-info--title">Рабочая подача</div>
+                              <div class="benchs__mob-info--text">25 м/мин</div>
+                            </div>
+                            <div class="benchs__mob-info--note">*Без полок и лампы индексации</div>
+                          </div>
+                          <a href="" class="benchs__mob-link button button-border txt20 txt20_caps"
+                            >Оставить заявку</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <include src="./components/_footer.html"></include>
+    </div>
+  </body>
+</html>

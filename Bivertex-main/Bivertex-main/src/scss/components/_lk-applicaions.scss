@@ -1,0 +1,174 @@
+.lk__applications {
+  &-tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4.8rem;
+
+    .tab {
+      width: auto;
+      padding: 1.7rem 3.6rem 1.6rem;
+      cursor: pointer;
+    }
+
+    &.mobile {
+      display: none;
+    }
+  }
+
+  &-list {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &-item {
+    background-color: $white;
+    border-radius: 6rem;
+    padding: 4rem;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    & > .button {
+      padding: 1.8rem 8rem;
+    }
+
+    &--head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 4rem;
+    }
+
+    &--body {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 4rem;
+    }
+
+    &--column {
+      flex: 0 0 28.6rem;
+    }
+
+    &--status {
+      padding: 0.6rem 1.2rem;
+      border: 1.5px solid $grew;
+      color: $grew;
+      border-radius: 2rem;
+
+      &.completed {
+        border: 1.5px solid $green;
+        color: $green;
+      }
+
+      &.in-work {
+        border: 1.5px solid $orange;
+        color: $orange;
+      }
+
+      &.refusal {
+        border: 1.5px solid $red;
+        color: $red;
+      }
+    }
+  }
+
+  @media (max-width: 48em) {
+    &-tabs {
+      flex-direction: column;
+      max-height: 10.6rem;
+      overflow: hidden;
+      transition: max-height 0.3s ease-in-out;
+
+      &.mobile {
+        display: block;
+      }
+
+      &--head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $turquoise;
+        border-radius: 2.4rem;
+        color: $black;
+        font-size: 2.4rem;
+        line-height: 3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 2.6rem 4.8rem 2.4rem;
+        margin-bottom: 2rem;
+
+        & > * {
+          pointer-events: none;
+        }
+      }
+
+      &--list {
+        padding: 4rem;
+        border: 1.5px solid $black;
+        border-radius: 3.2rem;
+        color: $black;
+
+        & > div {
+          &:not(:last-child) {
+            margin-bottom: 2.4rem;
+          }
+        }
+      }
+
+      .tab {
+        padding: 0;
+        width: 100%;
+      }
+    }
+
+    &-item {
+      &--head {
+        margin-bottom: 4.8rem;
+      }
+
+      &--body {
+        flex-direction: column;
+        row-gap: 2.4rem;
+      }
+
+      &--column {
+        flex: 0 0 auto;
+
+        div {
+          &:first-child {
+            font-size: 2.4rem;
+            line-height: 3rem;
+            font-weight: 700;
+            margin-bottom: 1.6rem;
+          }
+
+          &:last-child {
+            font-size: 2.8rem;
+            line-height: 4rem;
+          }
+        }
+      }
+
+      &--title {
+        font-size: 2.8rem;
+        max-width: 33.2rem;
+      }
+
+      &--status {
+        font-size: 2.4rem;
+        padding: 0.8rem 2rem;
+        border-radius: 4rem;
+      }
+
+      .button {
+        width: 100%;
+        padding: 3.2rem 0;
+        font-size: 2.8rem;
+      }
+    }
+  }
+}

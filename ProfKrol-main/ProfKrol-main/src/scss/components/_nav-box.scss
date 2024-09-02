@@ -1,0 +1,47 @@
+.nav-box {
+  padding: 3.6rem 0 0.4rem;
+
+  // .nav-box__list-wrap
+
+  &__list-wrap {
+  }
+
+  // .nav-box__list
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.8rem;
+    @include small-tablet {
+      gap: 1.6rem;
+    }
+  }
+
+  // .nav-box__link
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    &_grey {
+      color: $grey;
+    }
+    &:not(:last-child)::after {
+      display: inline-block;
+      content: '';
+      width: 0.4rem;
+      height: 0.4rem;
+      border-radius: 50%;
+      background-color: $black;
+    }
+
+    @include small-tablet {
+      gap: 1.6rem;
+      &:not(:last-child)::after {
+        width: 0.8rem;
+        height: 0.8rem;
+      }
+    }
+  }
+}

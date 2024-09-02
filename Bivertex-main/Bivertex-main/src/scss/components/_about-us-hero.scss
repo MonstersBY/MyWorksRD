@@ -1,0 +1,69 @@
+.about-us-hero {
+  margin-top: -8.5rem;
+  padding-top: 0;
+
+  @include small-tablet {
+    margin-top: -14.6rem;
+  }
+  // .about-us-hero__container
+
+  &__container {
+    max-width: 192rem;
+    width: 100%;
+    @include small-tablet {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  &__inner {
+    position: relative;
+  }
+
+  // .about-us-hero__img-box
+
+  &__img-box {
+    width: 100%;
+    height: 90rem;
+    border-radius: 0 0 6rem 6rem;
+    overflow: hidden;
+    position: relative;
+    & img, 
+    & video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @include small-tablet {
+      height: 128.8rem;
+    }
+  }
+
+  &__title-box {
+    position: absolute;
+    z-index: 5;
+    top: 37.1rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include small-tablet {
+      top: 59.5rem;
+    }
+  }
+
+  // .main-hero__title-svg-box
+
+  &__title-svg-box {
+    width: 108rem;
+    height: 16rem;
+    & img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include small-tablet {
+      width: 68.4rem;
+      height: 10rem;
+    }
+  }
+}

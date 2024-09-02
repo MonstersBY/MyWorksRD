@@ -1,0 +1,883 @@
+body .incoming-requests {
+    --normalTextColor: #101010;
+    --subTextColor: #acacac;
+    --switchBtn: #f4f4f4;
+    --switchBtnActive: #101010;
+    --switchBtnActiveColor: #fff;
+    --switchBtnSpan: #f9ec00;
+    --switchBtnSpanColor: #101010;
+    --switchBtnActiveSpan: #f9ec00;
+    --switchBtnActiveSpanColor: #101010;
+    --viewBg: #d7d7d7;
+    --viewCircle: #f4f4f4;
+    --viewColor: #aaaaaa;
+    --viewColorActive: #101010;
+    --ItemBg: #f4f4f4;
+    --itemColor: #101010;
+    --itemBorder: rgba(161, 172, 185, 0.2);
+    --statusAgreedBg: #f9ec00;
+    --statusAgreedText: #101010;
+    --statusWaitingBg: #d7d7d7;
+    --statusWaitingText: #101010;
+    --btnBg: #fff;
+    --btnBgActive: #101010;
+    --btnBgActiveSVG: #fff;
+    --btnBgActiveSVGrow: #101010;
+    --btnBorder: unset;
+    --searchBg: #f4f4f4;
+    --filterBg: #f4f4f4;
+    --filterBorder: unset;
+    --unreadBg: #f4f4f4;
+    --readBg: #ffffff;
+    --unreadBorder: none;
+    --readBorder: 0.1rem solid #d7d7d7;
+    --searchSmBg: #fff;
+    --highlightDateColor: #fff;
+    --settingsSwitchActive: #101010;
+    --cardTextColor: #101010;
+    --readTextColor: #101010;
+    --datapicker-prev: url("./../../assets/images/calendar/arrow-prew-black.svg");
+    --datapicker-next: url("./../../assets/images/calendar/arrow-next-black.svg")
+}
+body.color_yd .incoming-requests {
+    --normalTextColor: #ffffff;
+    --subTextColor: #acacac;
+    --switchBtn: #292929;
+    --switchBtnActive: #f9ec00;
+    --switchBtnActiveColor: #101010;
+    --switchBtnSpan: #f9ec00;
+    --switchBtnSpanColor: #f9ec00;
+    --switchBtnActiveSpan: #101010;
+    --switchBtnActiveSpanColor: #f9ec00;
+    --viewBg: #292929;
+    --viewCircle: #f9ec00;
+    --viewColor: #aaaaaa;
+    --viewColorActive: #101010;
+    --ItemBg: #101010;
+    --itemColor: #fff;
+    --itemBorder: rgba(161, 172, 185, 0.2);
+    --statusAgreedBg: #f9ec00;
+    --statusAgreedText: #101010;
+    --statusWaitingBg: #d7d7d7;
+    --statusWaitingText: #101010;
+    --btnBg: #fff;
+    --btnBgActive: #101010;
+    --btnBgActiveSVG: #f9ec00;
+    --btnBgActiveSVGrow: #fff;
+    --btnBorder: unset;
+    --searchBg: #f4f4f4;
+    --filterBg: #1d1d1d;
+    --filterBorder: 0.1rem solid rgba(255, 255, 255, 0.2);
+    --unreadBg: #101010;
+    --readBg: #1d1d1d;
+    --unreadBorder: none;
+    --readBorder: 0.1rem solid #acacac;
+    --searchSmBg: #fff;
+    --highlightDateColor: #101010;
+    --settingsSwitchActive: #f9ec00;
+    --cardTextColor: #fff;
+    --readTextColor: #fff;
+    --datapicker-prev: url("./../../assets/images/calendar/arrow-prew-y.svg");
+    --datapicker-next: url("./../../assets/images/calendar/arrow-next-y.svg")
+}
+body.color_pl .incoming-requests {
+    --normalTextColor: #101010;
+    --subTextColor: #acacac;
+    --switchBtn: #f4f4f4;
+    --switchBtnActive: #d01181;
+    --switchBtnActiveColor: #fff;
+    --switchBtnSpan: #101010;
+    --switchBtnSpanColor: #fff;
+    --switchBtnActiveSpan: #101010;
+    --switchBtnActiveSpanColor: #fff;
+    --viewBg: #a1acb9;
+    --ItemBgColor: #101010;
+    --viewCircle: #f1f4f6;
+    --viewColor: #6c747e;
+    --viewColorActive: #101010;
+    --ItemBg: #d5dce1;
+    --itemColor: #101010;
+    --itemBorder: rgba(161, 172, 185, 0.2);
+    --statusAgreedBg: #d01181;
+    --statusAgreedText: #ffffff;
+    --statusWaitingBg: #a1acb9;
+    --statusWaitingText: #ffffff;
+    --btnBg: #fff;
+    --btnBgActive: #101010;
+    --btnBgActiveSVG: #fff;
+    --btnBgActiveSVGrow: #101010;
+    --btnBorder: unset;
+    --searchBg: #f1f4f6;
+    --filterBg: #f1f4f6;
+    --filterBorder: unset;
+    --readBg: #ffffff;
+    --unreadBg: #d5dce1;
+    --readBorder: 0.1rem solid rgba(161, 172, 185, 0.2);
+    --unreadBorder: none;
+    --searchSmBg: #fff;
+    --highlightDateColor: #fff;
+    --settingsSwitchActive: #101010;
+    --cardTextColor: #101010;
+    --readTextColor: #101010;
+    --datapicker-prev: url("./../../assets/images/calendar/arrow-prew-black.svg");
+    --datapicker-next: url("./../../assets/images/calendar/arrow-next-black.svg")
+}
+body.color_pd .incoming-requests {
+    --normalTextColor: #ffffff;
+    --subTextColor: #acacac;
+    --switchBtn: #292929;
+    --switchBtnActive: #d01181;
+    --switchBtnActiveColor: #fff;
+    --switchBtnSpan: #d01181;
+    --switchBtnSpanColor: #fff;
+    --switchBtnActiveSpan: #fff;
+    --switchBtnActiveSpanColor: #d01181;
+    --viewBg: #a1acb9;
+    --ItemBgColor: #101010;
+    --viewCircle: #f1f4f6;
+    --viewColor: #6c747e;
+    --viewColorActive: #101010;
+    --ItemBg: #f1f4f6;
+    --itemColor: #101010;
+    --itemBorder: rgba(161, 172, 185, 0.2);
+    --statusAgreedBg: #d01181;
+    --statusAgreedText: #ffffff;
+    --statusWaitingBg: #a1acb9;
+    --statusWaitingText: #ffffff;
+    --btnBg: #fff;
+    --btnBgActive: #101010;
+    --btnBgActiveSVG: #d01181;
+    --btnBgActiveSVGrow: #fff;
+    --btnBorder: 0.1rem solid #101010;
+    --searchBg: #f1f4f6;
+    --filterBg: #101010;
+    --filterBorder: 0.1rem solid rgba(255, 255, 255, 0.2);
+    --readBg: #101010;
+    --unreadBg: #f1f4f6;
+    --readBorder: 0.1rem solid #acacac;
+    --unreadBorder: none;
+    --searchSmBg: #fff;
+    --highlightDateColor: #101010;
+    --settingsSwitchActive: #d01181;
+    --cardTextColor: #101010;
+    --readTextColor: #fff;
+    --datapicker-prev: url("./../../assets/images/calendar/arrow-prew-p.svg");
+    --datapicker-next: url("./../../assets/images/calendar/arrow-next-p.svg")
+}
+
+.incoming-requests {
+    &__top {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        margin-bottom: 3.2rem;
+    }
+
+    &__title {
+        font-size: 3.2rem;
+        letter-spacing: 0.032rem;
+        line-height: 100%;
+        font-weight: 500;
+        color: var(--normalTextColor);
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    &__search {
+        display: none !important;
+        display: flex;
+        gap: 1.4rem;
+        align-items: center;
+        background-color: var(--searchBg);
+        color: #101010;
+        padding: 1.4rem 2.4rem 1.3rem;
+        border-radius: 1.6rem;
+        width: 115.2rem;
+
+        input{
+            width: 100%;
+        }
+
+        .icon {
+            svg {
+                width: 2.4rem;
+                height: 2.4rem;
+            }
+        }
+    }
+
+    &__filters {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+    }
+
+    &__filter {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        width: 27.6rem;
+        position: relative;
+
+        &__title {
+            color: var(--subTextColor);
+            font-weight: 500;
+            line-height: 93.75%;
+        }
+
+        &__input-wrapper {
+            border-radius: 1.6rem;
+            background-color: var(--filterBg);
+            color: var(--normalTextColor);
+            border: var(--filterBorder);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.1rem 1.6rem;
+            cursor: pointer;
+
+            input {
+                width: 100%;
+            }
+
+            svg {
+                transition: transform 0.2s ease;
+                width: 1.4rem;
+                height: 0.8rem;
+                path {
+                    stroke: var(--settingsSwitchActive);
+                }
+            }
+
+            &.open {
+                svg {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        &__dropdown {
+            display: none;
+            position: absolute;
+            width: 100%;
+            border-radius: 1.6rem;
+            top: calc(100% + 0.8rem);
+            left: 0;
+            right: 0;
+            padding: 1.1rem 1.6rem;
+            background-color: var(--filterBg);
+            border: var(--filterBorder);
+            z-index: 100;
+            box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.08);
+
+            &--date {
+                right: unset;
+                height: 31.6rem;
+                width: 65.2rem;
+            }
+
+            &__search {
+                display: none !important;
+                background-color: var(--searchSmBg);
+                padding: 1rem 1.6rem;
+                border-radius: 0.8rem;
+                display: flex;
+                gap: 0.8rem;
+                align-items: center;
+                margin-bottom: 1.2rem;
+
+                svg {
+                    width: 2.4rem;
+                    height: 2.4rem;
+                }
+
+                input {
+                    flex: 1;
+                }
+            }
+
+            .request-filter-list {
+                max-height: 20rem;
+                overflow: auto;
+                margin-right: -0.8rem;
+                padding-right: 0.8rem;
+                color: var(--normalTextColor);
+
+                &__option {
+                    cursor: pointer;
+                    padding: 0.8rem 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-bottom: 0.1rem solid rgba(161, 172, 185, 0.2);
+                    line-height: 120%;
+                    font-weight: 500;
+                }
+
+                mark {
+                    font-weight: 600;
+                    background-color: transparent;
+                }
+
+                mark ~ span {
+                    color: var(--subTextColor);
+                }
+            }
+        }
+
+        &__date {
+            display: flex;
+            justify-content: space-between;
+            gap: 3.2rem;
+            height: 100%;
+            width: 100%;
+            padding: 2rem;
+
+            &__calendar {
+                width: 27.6rem;
+
+                .ui-datepicker-header {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0.4rem;
+                    margin-bottom: 1.2rem;
+                    color: var(--normalTextColor);
+                }
+
+                .ui-datepicker-calendar {
+                    width: 27.6rem;
+                    margin: 0 auto;
+                    color: var(--normalTextColor);
+                    border-collapse: collapse;
+
+                    td {
+                        height: 4.2rem;
+                        width: 4.2rem;
+                        text-align: center;
+                        font-weight: 500;
+                    }
+                }
+
+                .ui-datepicker-prev {
+                    order: 1;
+                    display: block;
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    background-image: var(--datapicker-prev);
+                    background-size: 2.4rem 2.4rem;
+                    background-repeat: no-repeat;
+                }
+
+                .ui-datepicker-title {
+                    order: 2;
+                    color: var(--normalTextColor);
+
+                    span {
+                        font-weight: 500;
+                    }
+                }
+
+                .ui-datepicker-next {
+                    order: 3;
+                    display: block;
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    background-image: var(--datapicker-next);
+                    background-size: 2.4rem 2.4rem;
+                    background-repeat: no-repeat;
+                }
+
+                .ui-datepicker-week-end {
+                    color: #acacac;
+                }
+
+                #ui-datepicker-div {
+                    display: none;
+                }
+
+                .ui-state-default,
+                .ui-widget-header,
+                .ui-widget-content a {
+                    color: unset;
+                    background-color: unset;
+                    border: unset;
+                }
+
+                .ui-widget.ui-widget-content {
+                    border: unset;
+                    background-color: unset;
+                    color: unset;
+                }
+
+                .dp-highlight {
+                    background: var(--normalTextColor);
+                    color: var(--highlightDateColor);
+
+                    &:last-child{
+                        border-radius: 0 100% 100% 0;
+                    }
+                    &:first-child{
+                        border-radius: 100% 0 0 100%;
+                    }
+                }
+
+                .dp-first-special {
+                    border-radius: 100% 0 0 100%;
+                }
+                
+                .dp-last-special {
+                    border-radius: 0 100% 100% 0;
+                }
+                
+                .dp-special{
+                    border-radius: 100%;
+                }
+            }
+
+            &__inputs {
+                width: 27.6rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1.6rem;
+                font-weight: 500;
+
+                .input-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.8rem;
+
+                    span {
+                        color: #acacac;
+                        line-height: 93.75%;
+                    }
+
+                    input {
+                        background-color: var(--btnBg);
+                        border-radius: 1.6rem;
+                        padding: 1.3rem 1.6rem;
+                    }
+                }
+
+                .btn__apply {
+                    margin-top: auto;
+                    width: 100%;
+                    padding: 1.6rem 9.6rem;
+                }
+            }
+        }
+
+        &--reset {
+            position: relative;
+            letter-spacing: 0.016rem;
+            padding-top: 2rem;
+            color: var(--normalTextColor);
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                background-color: var(--normalTextColor);
+                height: 0.1rem;
+            }
+        }
+    }
+
+    &__subtitle {
+        color: var(--subTextColor);
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 120%;
+
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 3.2rem;
+    }
+    &__box {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+
+        &--unread {
+            .incoming-requests__item {
+                background-color: var(--unreadBg);
+                border: var(--unreadBorder);
+                font-weight: 600;
+
+                &__title {
+                    font-weight: 600;
+                }
+
+                &__details {
+                    color: var(--cardTextColor);
+                }
+
+                &__subtitle .request-category {
+                    color: var(--cardTextColor);
+                }
+            }
+        }
+
+        &--read {
+            .incoming-requests__item {
+                background-color: var(--readBg);
+                border: var(--readBorder);
+
+                &__info {
+                    color: var(--readTextColor);
+                }
+            }
+        }
+    }
+    &__btns {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 4rem;
+    }
+    &__btn {
+        height: 4.5rem;
+        display: flex;
+        align-items: center;
+        padding: 0 3.2rem;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.016rem;
+        border-radius: 2rem;
+        color: var(--normalTextColor);
+        background: var(--switchBtn);
+        cursor: pointer;
+        gap: 1rem;
+
+        span {
+            width: 2.4rem;
+            height: 2.4rem;
+            color: var(--switchBtnSpanColor);
+            background: var(--switchBtnSpan);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 1.2rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.012rem;
+        }
+
+        &.active {
+            background: var(--switchBtnActive);
+            color: var(--switchBtnActiveColor);
+            font-weight: 500;
+
+            span {
+                color: var(--switchBtnActiveSpanColor);
+                background: var(--switchBtnActiveSpan);
+            }
+        }
+    }
+    &__change {
+        display: flex;
+        width: fit-content;
+        margin-left: auto;
+        height: 4.6rem;
+        background: var(--viewBg);
+        border-radius: 2.4rem;
+        align-items: center;
+        padding: 0 1.1rem;
+        gap: 1.7rem;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 4.2rem;
+            height: 4.2rem;
+            background: var(--viewCircle);
+            border-radius: 50%;
+            z-index: 0;
+            right: 4.2rem;
+            transition: right 0.5s ease-in-out;
+        }
+        &.right {
+            &::after {
+                right: 0.3rem;
+            }
+        }
+    }
+    &__view {
+        width: 2.4rem;
+        height: 2.4rem;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        svg {
+            path {
+                stroke: var(--viewColor);
+            }
+            circle {
+                fill: var(--viewColor);
+            }
+        }
+
+        &.active {
+            svg {
+                path {
+                    stroke: var(--viewColorActive);
+                }
+                circle {
+                    fill: var(--viewColorActive);
+                }
+            }
+        }
+
+        svg {
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+    }
+    &__other {
+        .incoming-requests {
+            &__box {
+                display: flex;
+                gap: 2rem;
+                flex-wrap: wrap;
+                max-height: calc(100vh - 33.6rem);
+                overflow: auto;
+
+                &--read {
+                    .incoming-requests__item__info,
+                    .incoming-requests__item__title--row,
+                    .incoming-requests__item__details {
+                        color: var(--readTextColor);
+                    }
+
+                    .request-archive svg {
+                        path {
+                            stroke: var(--readTextColor);
+                        }
+                    }
+                }
+            }
+            &__item {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 100%;
+                margin-right: 13.5rem;
+
+                &__img {
+                    display: none;
+                }
+
+                &__star {
+                    margin-right: 8rem;
+                    position: static;
+                    
+                }
+
+                &__info {
+                    flex-direction: row;
+                    align-items: center;
+                    gap: unset;
+                    width: 100%;
+                    padding: 2.1rem 2.5rem 2.2rem 2.4rem;
+                }
+
+                &__details {
+                    order: 3;
+                    margin-left: 4rem;
+                    color: var(--cardTextColor);
+
+                    .request-id {
+                        display: none;
+                    }
+                }
+
+                &__subtitle {
+                    align-items: flex-start;
+                    width: 16.5rem;
+                    margin-left: auto;
+                    .request-category {
+                        display: none;
+                    }
+                }
+
+                &__title {
+                    .request {
+                        display: none;
+                    }
+
+                    .company {
+                        width: 17.3rem;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                    &--row {
+                        margin-left: 8rem;
+                        display: block;
+                        max-width: 34rem;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        color: var(--cardTextColor);
+                    }
+                }
+
+                &__btn {
+                    display: none;
+                }
+            }
+        }
+    }
+    .switcher__container {
+        margin-top: 3.2rem;
+    }
+    &__item {
+        border-radius: 1.6rem;
+        overflow: hidden;
+        padding: unset;
+        width: 36.75rem;
+
+        &__img {
+            height: 16rem;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &__star {
+            // display: none;
+            position: absolute;
+            right: 2rem;
+            bottom: 9rem;
+            cursor: pointer;
+        }
+
+        &__info {
+            position: relative;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            color: var(--cardTextColor);
+        }
+
+        &__details {
+            // margin-left: auto;
+            display: flex;
+            justify-content: space-between;
+            color: #acacac;
+
+            .request-archive {
+                display: none;
+                width: 2.4rem;
+                height: 2.4rem;
+                justify-content: center;
+                align-items: center;
+                svg {
+                    width: 1.8rem;
+                    height: 1.8rem;
+
+                    path {
+                        stroke: var(--itemColor);
+                    }
+                }
+            }
+        }
+
+        &__title {
+            font-size: 1.8rem;
+            line-height: 120%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            font-weight: 500;
+
+            &--row {
+                display: none;
+            }
+        }
+
+        &__subtitle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .request-category {
+                color: #acacac;
+            }
+
+            .request-status {
+                border-radius: 1.6rem;
+                padding: 0.4rem 1.2rem;
+                letter-spacing: 0.014rem;
+                font-size: 1.4rem;
+                white-space: nowrap;
+
+                &.agreed {
+                    background-color: var(--statusAgreedBg);
+                    color: var(--statusAgreedText);
+                }
+
+                &.rejected {
+                    color: #fff;
+                    background: #bb2323;
+                }
+
+                &.waiting {
+                    background-color: var(--statusWaitingBg);
+                    color: var(--statusWaitingText);
+                }
+            }
+        }
+
+        &__btn {
+            margin-top: 1.2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--btnBg);
+            padding: 0.65rem 0.7rem 0.65rem 1.6rem;
+            border-radius: 3.2rem;
+            border: var(--btnBorder);
+
+            svg {
+                width: 3.6rem;
+                height: 3.6rem;
+            }
+
+            span {
+                color: #101010;
+            }
+        }
+    }
+}
+
+body.color_pl .incoming-requests__box--unread .star-ico {
+    // --starStroke: #ffffff;
+    --starStroke: #686868;
+}
+
+.incoming-requests ~ #ui-datepicker-div {
+    display: none !important;
+}

@@ -1,0 +1,123 @@
+.employees {
+    background-color: $green;
+    color: $Beige;
+    // .employees__inner
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 5.2rem;
+        @include small-tablet {
+            gap: 6.4rem;
+        }
+    }
+
+    // .employees__header-box
+
+    &__header-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include small-tablet {
+            flex-direction: column;
+            gap: 4rem;
+        }
+    }
+
+    // .employees__title
+
+    &__title {
+        width: 61.5rem;
+        @include small-tablet {
+            width: 100%;
+        }
+    }
+
+    // .employees__desk
+
+    &__desk {
+        width: 75.2rem;
+        @include small-tablet {
+            width: 100%;
+        }
+    }
+
+    // .employees__swiper-box
+
+    &__swiper-box {
+    }
+
+    // .employees__swiper
+
+    &__swiper {
+    }
+
+    // .employees__swiper-wrapper
+
+    &__swiper-wrapper {
+    }
+
+    // .employees__swiper-slide
+
+    &__swiper-slide {
+    }
+
+    // .employees__swiper-slide-img-box
+
+    &__swiper-slide-img-box {
+        width: 152rem;
+        height: 60.5rem;
+        -webkit-mask-image: url(./assets/images/picture/employees__mask.svg);
+        mask-image: url(./assets/images/picture/employees__mask.svg);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @include small-tablet {
+            -webkit-mask-image: url(./assets/images/picture/employees__mask-mob.svg);
+            mask-image: url(./assets/images/picture/employees__mask-mob.svg);
+            width: 68.6rem;
+            height: 40.4rem;
+        }
+    }
+
+    // .employees__slider-nav
+
+    &__slider-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2.4rem;
+        @include small-tablet {
+            margin-top: 4.8rem;
+        }
+    }
+
+    // .employees__fractions
+
+    &__fractions {
+    }
+
+    // .employees__navigation
+
+    &__navigation {
+    }
+
+    // .employees__btn-prev
+
+    &__btn-prev {
+    }
+
+    // .employees__btn-next
+
+    &__btn-next {
+    }
+
+
+    
+}

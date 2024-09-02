@@ -1,0 +1,126 @@
+.advantages {
+  // .advantages__inner
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    @include small-tablet {
+      gap: 5.6rem;
+    }
+  }
+
+  // .advantages__title
+
+  &__title {
+    text-align: center;
+    @include small-tablet {
+      text-align: left;
+    }
+  }
+
+  // .advantages__content-box
+
+  &__content-box {
+    display: flex;
+    gap: 6rem;
+    @include small-tablet {
+      flex-direction: column;
+      gap: 5.6rem;
+    }
+  }
+
+  // .advantages__img-box
+
+  &__img-box {
+    width: 70.5rem;
+    height: auto;
+    border-radius: 2rem;
+    border: 0.13rem solid $light-grey;
+    flex-shrink: 0;
+    overflow: hidden;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include small-tablet {
+      width: 68.6rem;
+      height: 68.8rem;
+      border-radius: 4rem;
+      border: 0.2rem solid $light-grey;
+    }
+  }
+
+  // .advantages__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4.5rem;
+    // list-style-position: inside;
+    @include small-tablet {
+    }
+  }
+
+  // .advantages__item
+
+  &__item {
+    padding-bottom: 1.6rem;
+    padding-left: 1rem;
+    position: relative;
+    &:not(:first-of-type) {
+      padding-top: 2.8rem;
+    }
+    &::marker {
+      transition: color 0.3s;
+    }
+
+    &:hover {
+      & .advantages__item-title {
+        color: $green;
+      }
+      &::marker {
+        color: $green;
+      }
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      left: -4.5rem;
+      right: 0;
+      bottom: 0;
+      height: 0.2rem;
+      background: url(./assets/images/line-advantages.svg) no-repeat top/cover;
+    }
+
+    @include small-tablet {
+      padding-bottom: 3.2rem;
+      &:not(:first-of-type) {
+        padding-top: 4rem;
+      }
+      &::before {
+        background: url(./assets/images/line.svg) no-repeat top/cover;
+      }
+    }
+  }
+
+  // .advantages__item-title
+
+  &__item-title {
+    transition: color 0.3s;
+  }
+
+  // .advantages__item-desc
+
+  &__item-desc {
+    margin-top: 1.6rem;
+    padding-left: 5rem;
+
+    @include small-tablet {
+      padding-left: 0;
+      font-size: 2.8rem;
+    }
+  }
+}

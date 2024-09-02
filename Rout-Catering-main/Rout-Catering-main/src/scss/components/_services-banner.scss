@@ -1,0 +1,119 @@
+.services-banner {
+  background-color: $green;
+  color: $Beige;
+  &__heading {
+    position: relative;
+    padding-top: 6.6rem;
+    margin-bottom: 4rem;
+    @include small-tablet {
+      padding-top: 4.6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 3.2rem;
+      margin-bottom: 6rem;
+    }
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    ._left {
+      align-self: flex-start;
+    }
+    ._right {
+      align-self: flex-end;
+    }
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    right: 8rem;
+    top: 10.5rem;
+    @include small-tablet {
+      position: relative;
+      top: auto;
+      right: auto;
+      font-size: 3.2rem;
+      gap: 1.8rem;
+    }
+  }
+  &__subtitle {
+    width: 25.7rem;
+    position: absolute;
+    top: 20.5rem;
+    left: 0rem;
+    @include small-tablet {
+      position: relative;
+      top: auto;
+      left: auto;
+      width: 100%;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  &__img {
+    &-box {
+      -webkit-mask-image: url(./assets/images/picture/services-banner__img-mask.svg);
+      mask-image: url(./assets/images/picture/services-banner__img-mask.svg);
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: contain;
+      mask-size: contain;
+      width: 131rem;
+      height: 47rem;
+      margin-left: 4rem;
+      @include small-tablet {
+        -webkit-mask-image: url(./assets/images/picture/main-banner__mask.svg);
+        mask-image: url(./assets/images/picture/main-banner__mask.svg);
+        width: 60.6rem;
+        height: 66rem;
+        margin-left: auto;
+        img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    &-menu {
+      position: absolute;
+      bottom: 15.5rem;
+      left: 8rem;
+      background-color: $Beige;
+      color: $green;
+      border-radius: 2rem;
+      height: 16rem;
+      display: flex;
+      align-items: flex-end;
+      padding: 2.5rem 1rem;
+      @include small-tablet {
+        bottom: 18rem;
+        left: 0rem;
+        height: 29rem;
+        padding: 3.5rem 1rem;
+      }
+      &-icon {
+        width: 7.7rem;
+        position: absolute;
+        top: 2.5rem;
+        right: calc(50% - 4rem);
+        @include small-tablet {
+          width: 15.7rem;
+          position: absolute;
+          top: 4.5rem;
+          right: calc(50% - 8rem);
+        }
+      }
+      &-text {
+        width: 15.5rem;
+        text-align: center;
+        @include small-tablet {
+          width: 28.5rem;
+        }
+      }
+    }
+  }
+}

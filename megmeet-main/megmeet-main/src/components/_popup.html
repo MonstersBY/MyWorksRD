@@ -1,0 +1,565 @@
+<div id="popup__success" aria-hidden="true" class="popup popup--success">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close type="button" class="popup__body-close-btn">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M28 4L4 28"
+              stroke="#191817"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M4 4L28 28"
+              stroke="#191817"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <p class="popup__body-content-box-title tl2">Заявка отправлена</p>
+          <p class="popup__body-content-box-desk txt20">
+            Ваша заявка успешно отправлена! Наш специалист
+            <br class="desktop" />
+            свяжется с вами в ближайшее время.
+          </p>
+          <button data-close class="popup__btn button txt18 txt18_bold">вернуться на главную</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__success-summary" aria-hidden="true" class="popup popup--success">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close type="button" class="popup__body-close-btn">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M28 4L4 28"
+              stroke="#191817"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M4 4L28 28"
+              stroke="#191817"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <p class="popup__body-content-box-title tl2">Заявка отправлена</p>
+          <p class="popup__body-content-box-desk txt20">
+            Ваша заявка успешно отправлена! После ознакомления
+            <br />
+            резюме, мы свяжемся с вами в ближайшее время.
+          </p>
+          <button data-close class="popup__btn button txt18 txt18_bold">вернуться на главную</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__feedback" aria-hidden="true" class="popup popup--form">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close type="button" class="popup__body-close-btn">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M28 4L4 28"
+              stroke="#191817"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M4 4L28 28"
+              stroke="#191817"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <p class="popup__body-content-box-title tl2">оставьте заявку</p>
+          <form
+            data-popup-message="#popup__success"
+            data-dev
+            action=""
+            class="popup__form popup__form--application"
+          >
+            <p class="popup__form-title txt20">
+              Наши менеджеры помогут подобрать оборудование под Ваши задачи
+            </p>
+            <div class="popup__form-input-wrapper">
+              <div class="popup__form-input-box txt20">
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input--name popup__form-input"
+                      type="text"
+                      data-validate
+                      data-required="name"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                    <span class="placeholder">Имя<span>*</span></span>
+                  </span>
+                  <span class="error-span">Данное значение должно состоять из букв</span>
+                </label>
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input--tel popup__form-input phone-mask"
+                      type="text"
+                      data-validate
+                      data-required="tel"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                    <span class="placeholder">Телефон<span>*</span></span>
+                  </span>
+                  <span class="error-span">Введите номер целиком</span>
+                </label>
+                <label class="popup__label popup__label--textarea input-group">
+                  <span class="form__input-wrapper">
+                    <textarea
+                      class="input--textarea"
+                      placeholder="Комментарий"
+                      autocomplete="off"
+                      name="form[]"
+                    ></textarea>
+                    <span class="error-span"></span>
+                  </span>
+                </label>
+              </div>
+              <div class="popup__btn-row">
+                <p class="popup__agreement-text txt16">
+                  Нажимая на кнопку, Вы принимаете
+                  <a href="#">условия пользовательского соглашения</a>
+                </p>
+                <button type="submit" class="popup__btn popup__btn--application button txt18 txt18_bold">
+                  оставить заявку
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__summary" aria-hidden="true" class="popup popup--form">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close type="button" class="popup__body-close-btn">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M28 4L4 28"
+              stroke="#191817"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M4 4L28 28"
+              stroke="#191817"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <p class="popup__body-content-box-title tl2">Хотите работать с нами?</p>
+          <form
+            data-popup-message="#popup__success"
+            data-dev
+            action=""
+            class="popup__form popup__form--summary"
+          >
+            <p class="popup__form-title txt20">
+              Оставьте заявку с вашим резюме и мы свяжемся с вами в ближайшее время
+            </p>
+            <div class="popup__form-input-wrapper">
+              <div class="popup__form-input-box txt20">
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input--name popup__form-input"
+                      type="text"
+                      data-validate
+                      data-required="name"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                    <span class="placeholder">Имя<span>*</span></span>
+                  </span>
+                  <span class="error-span">Данное значение должно состоять из букв</span>
+                </label>
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input--name popup__form-input"
+                      type="text"
+                      data-validate
+                      data-required="name"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                    <span class="placeholder">Фамилия<span>*</span></span>
+                  </span>
+                  <span class="error-span">Данное значение должно состоять из букв</span>
+                </label>
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input--mail popup__form-input"
+                      type="text"
+                      data-validate
+                      data-required="email"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                    <span class="placeholder">Электронная почта<span>*</span></span>
+                  </span>
+                  <span class="error-span">Введите электронную почту</span>
+                </label>
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input--tel-without-required popup__form-input phone-mask"
+                      type="text"
+                      placeholder="Телефон"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                  </span>
+                  <span class="error-span">Введите номер целиком</span>
+                </label>
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="popup__form-input"
+                      type="text"
+                      autocomplete="off"
+                      name="form[]"
+                      placeholder="Вакансия"
+                    />
+                  </span>
+                  <span class="error-span"></span>
+                </label>
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input--date popup__form-input"
+                      type="text"
+                      placeholder="Дата потенциального выхода"
+                    />
+                  </span>
+                  <span class="error-span"></span>
+                </label>
+
+                <div class="popup__file-box">
+                  <label class="popup__label-input-file label-input-file">
+                    <input class="popup__input-file input-file" type="file" multiple="" name="file_project" />
+                    <span class="popup__label-input-file-text-wrapper label-input-file-text-wrapper">
+                      <span class="popup__label-input-file-svg-box label-input-file-svg-box">
+                        <svg
+                          width="44"
+                          height="45"
+                          viewBox="0 0 44 45"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M27.9492 18.886L20.3829 26.4523"
+                            stroke="#00A499"
+                            stroke-width="2"
+                            stroke-linecap="square"
+                          />
+                          <path
+                            d="M21.1923 13.7486L24.2757 10.6652C27.4976 7.44335 32.7212 7.44335 35.943 10.6652L36.1652 10.8873C39.387 14.1092 39.387 19.3328 36.1652 22.5546L33.0817 25.638"
+                            stroke="#00A499"
+                            stroke-width="2"
+                            stroke-linecap="square"
+                          />
+                          <path
+                            d="M27.1397 31.5873L24.0563 34.6708C20.8345 37.8926 15.6109 37.8926 12.389 34.6708L12.1669 34.4486C8.94503 31.2268 8.94503 26.0032 12.1669 22.7813L15.2503 19.6979"
+                            stroke="#00A499"
+                            stroke-width="2"
+                            stroke-linecap="square"
+                          />
+                        </svg>
+                      </span>
+                      <span class="popup__label-input-file-text-box label-input-file-text-box">
+                        <span class="popup__label-input-file-text-title label-input-file-text-title txt20"
+                          >Прикрепите ваше резюме</span
+                        >
+                        <span class="popup__label-input-file-text-type label-input-file-text-type"
+                          >PDF, JPG, JPEG, PNG. Размер до 20 Мбайт</span
+                        >
+                      </span>
+                    </span>
+                    <span class="error-span"></span>
+                  </label>
+                  <div class="popup__form-files-items form-files-items file_project"></div>
+                </div>
+              </div>
+              <div class="popup__btn-row">
+                <p class="popup__agreement-text txt16">
+                  Нажимая на кнопку, Вы принимаете
+                  <a href="#">условия пользовательского соглашения</a>
+                </p>
+                <button type="submit" class="popup__btn popup__btn--summary button txt18 txt18_bold">
+                  оставить заявку
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__choice" aria-hidden="true" class="popup popup--form">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close type="button" class="popup__body-close-btn">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M28 4L4 28"
+              stroke="#191817"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M4 4L28 28"
+              stroke="#191817"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <p class="popup__body-content-box-title tl2">Поможем с выбором</p>
+          <form
+            data-popup-message="#popup__success"
+            data-dev
+            action=""
+            class="popup__form popup__form--choice"
+          >
+            <p class="popup__form-title txt20">
+              Наши менеджеры помогут подобрать оборудование под Ваши задачи
+            </p>
+            <div class="popup__form-input-wrapper">
+              <div class="popup__form-input-box txt20">
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input--name popup__form-input"
+                      type="text"
+                      data-validate
+                      data-required="name"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                    <span class="placeholder">Имя<span>*</span></span>
+                  </span>
+                  <span class="error-span">Данное значение должно состоять из букв</span>
+                </label>
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input--tel popup__form-input phone-mask"
+                      type="text"
+                      data-validate
+                      data-required="tel"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                    <span class="placeholder">Телефон<span>*</span></span>
+                  </span>
+                  <span class="error-span">Введите номер целиком</span>
+                </label>
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="popup__form-input"
+                      type="text"
+                      placeholder="Название компании"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                  </span>
+                  <span class="error-span">Данное значение должно состоять из букв</span>
+                </label>
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="popup__form-input"
+                      type="text"
+                      placeholder="E-mail"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                  </span>
+                  <span class="error-span">Данное значение должно состоять из букв</span>
+                </label>
+                <label class="popup__label popup__label--textarea input-group">
+                  <span class="form__input-wrapper">
+                    <textarea
+                      class="input--textarea"
+                      placeholder="Ваше техническое задание"
+                      autocomplete="off"
+                      name="form[]"
+                    ></textarea>
+                    <span class="error-span"></span>
+                  </span>
+                </label>
+              </div>
+              <div class="popup__btn-row">
+                <p class="popup__agreement-text txt16">
+                  Нажимая на кнопку, Вы принимаете
+                  <a href="#">условия пользовательского соглашения</a>
+                </p>
+                <button type="submit" class="popup__btn popup__btn--choice button txt18 txt18_bold">
+                  оставить заявку
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__demo" aria-hidden="true" class="popup popup--form">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close type="button" class="popup__body-close-btn">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M28 4L4 28"
+              stroke="#191817"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M4 4L28 28"
+              stroke="#191817"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <p class="popup__body-content-box-title tl2">Запишитесь <br />на демонстрацию</p>
+          <form data-popup-message="#popup__success" data-dev action="" class="popup__form popup__form--demo">
+            <p class="popup__form-title txt20">
+              Наши менеджеры помогут подобрать оборудование под Ваши задачи
+            </p>
+            <div class="popup__form-input-wrapper">
+              <div class="popup__form-input-box txt20">
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input--name popup__form-input"
+                      type="text"
+                      data-validate
+                      data-required="name"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                    <span class="placeholder">Имя<span>*</span></span>
+                  </span>
+                  <span class="error-span">Данное значение должно состоять из букв</span>
+                </label>
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input--tel popup__form-input phone-mask"
+                      type="text"
+                      data-validate
+                      data-required="tel"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                    <span class="placeholder">Телефон<span>*</span></span>
+                  </span>
+                  <span class="error-span">Введите номер целиком</span>
+                </label>
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="popup__form-input"
+                      type="text"
+                      placeholder="Название компании"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                  </span>
+                  <span class="error-span">Данное значение должно состоять из букв</span>
+                </label>
+                <label class="popup__label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="popup__form-input"
+                      type="text"
+                      placeholder="E-mail"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                  </span>
+                  <span class="error-span">Данное значение должно состоять из букв</span>
+                </label>
+                <label class="popup__label popup__label--textarea input-group">
+                  <span class="form__input-wrapper">
+                    <textarea
+                      class="input--textarea"
+                      placeholder="Ваше техническое задание"
+                      autocomplete="off"
+                      name="form[]"
+                    ></textarea>
+                    <span class="error-span"></span>
+                  </span>
+                </label>
+              </div>
+              <div class="popup__btn-row">
+                <p class="popup__agreement-text txt16">
+                  Нажимая на кнопку, Вы принимаете
+                  <a href="#">условия пользовательского соглашения</a>
+                </p>
+                <button type="submit" class="popup__btn popup__btn--demo button txt18 txt18_bold">
+                  оставить заявку
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

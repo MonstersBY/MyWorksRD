@@ -1,0 +1,113 @@
+.additional-features-min__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.additional-features-min__swiper {
+  width: 100%;
+}
+
+.additional-features-min__swiper-slide {
+  height: auto !important;
+}
+.additional-features-min__swiper-slide-inner {
+  height: 100%;
+  padding: 0 3.2rem 3.2rem 0;
+  border-bottom: 0.2rem solid #012028;
+  border-right: 0.2rem solid #012028;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.additional-features-min__swiper-slide-img-box {
+  display: block;
+  width: 100%;
+  height: 33.4rem;
+  border-radius: 3.2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.additional-features-min__swiper-slide-img-box img,
+.additional-features-min__swiper-slide-img-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.additional-features-min__video-play {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 8rem;
+  height: 8rem;
+  backdrop-filter: blur(9.6rem);
+  background: rgba(22, 23, 23, 0.01);
+  border-radius: 50%;
+}
+
+.additional-features-min__video-play svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.additional-features-min__swiper-slide-desc-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.additional-features-min__swiper-btn-box {
+  position: absolute;
+  top: 0;
+  right: 6rem;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.additional-features-min__swiper-btn--prev.swiper-button-prev,
+.additional-features-min__swiper-btn--next.swiper-button-next {
+  position: static;
+}
+
+@include small-tablet {
+  .additional-features-min__container {
+    overflow: hidden;
+  }
+  .additional-features-min__inner {
+    gap: 6.4rem;
+  }
+
+  .additional-features-min__swiper {
+    width: 100%;
+    overflow: visible !important;
+  }
+
+  .additional-features-min__swiper-slide-inner {
+    padding: 0 4.8rem 4.8rem 0;
+    border-bottom: 0.4rem solid #012028;
+    border-right: 0.4rem solid #012028;
+    gap: 4.8rem;
+  }
+  .additional-features-min__swiper-slide-img-box {
+    height: 43.4rem;
+    border-radius: 2.4rem;
+  }
+  .additional-features-min__video-play {
+    width: 12rem;
+    height: 12rem;
+  }
+  .additional-features-min__swiper-slide-desc-box {
+    gap: 3.2rem;
+  }
+
+  .additional-features-min__swiper-btn-box {
+    position: static;
+    width: 100%;
+    justify-content: center;
+  }
+}

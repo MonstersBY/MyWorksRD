@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Новости</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <include src="./components/_header.html"></include>
+      </header>
+      <include src="./components/_popup.html"></include>
+      <main>
+        <section class="nav-box">
+          <div class="container">
+            <nav class="nav-box__list-wrap title-h5">
+              <ul class="nav-box__list">
+                <li class="nav-box__link txt16"><a href="#">Главная</a></li>
+                <li class="nav-box__link nav-box__link_grey txt16">Новости</li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+
+        <include src="./components/_news.html"></include>
+      </main>
+      <include src="./components/_footer.html"></include>
+    </div>
+  </body>
+</html>

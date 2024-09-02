@@ -1,0 +1,138 @@
+.products-banner {
+  margin-top: -20rem;
+  @include small-tablet {
+    margin-top: -25rem;
+  }
+  &__container {
+    width: 100%;
+    max-width: 192rem;
+    @include small-tablet {
+      padding: 0;
+    }
+  }
+
+  // .products-banner__inner
+
+  &__inner {
+    padding: 27rem 12rem 6rem 11rem;
+    position: relative;
+    color: $white;
+    background-color: $green;
+    min-height: 90rem;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2.6rem;
+    @include small-tablet {
+      padding: 31.8rem 2rem 7.6rem;
+      gap: 4rem;
+    }
+  }
+
+  // .products-banner__img-wrapper
+
+  &__img-wrapper {
+    position: absolute;
+    width: 145.1rem;
+    height: 108.4rem;
+    top: 14.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    @include small-tablet {
+      width: 100%;
+      position: relative;
+      order: 3;
+      top: 0;
+      left: 0;
+      transform: translateX(0);
+      width: 71rem;
+      height: 53.2rem;
+    }
+  }
+
+  // .products-banner__img-bg-box
+
+  &__img-bg-box {
+    width: 145.1rem;
+    height: 108.4rem;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include small-tablet {
+      width: 71rem;
+      height: 53.2rem;
+    }
+  }
+
+  // .products-banner__img-box
+
+  &__img-box {
+    position: absolute;
+    top: -5.2rem;
+    left: 18.8rem;
+    width: 92.2rem;
+    height: 109.4rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include small-tablet {
+      width: 72.4rem;
+      height: 84.8rem;
+      top: -3.4rem;
+      left: -2rem;
+    }
+  }
+
+  // .products-banner__title
+
+  &__title {
+    text-transform: uppercase;
+    position: relative;
+    z-index: 5;
+    @include small-tablet {
+      font-size: 6rem;
+    }
+  }
+
+  // .products-banner__btn-box
+
+  &__btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 5;
+    @include small-tablet {
+      flex-direction: column-reverse;
+      gap: 4rem;
+      align-items: flex-start;
+    }
+  }
+
+  // .products-banner__btn
+
+  &__btn {
+    background-color: $white;
+    color: $green;
+    @include small-tablet {
+      font-size: 3.6rem;
+      padding: 3.8rem 10.4rem;
+    }
+  }
+
+  // .products-banner__text
+
+  &__text {
+    width: 39.2rem;
+    @include small-tablet {
+      width: 100%;
+      font-size: 3.2rem;
+    }
+  }
+}

@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="https://unpkg.com/fullpage.js/dist/fullpage.min.js"></script>
+    <script src="https://api-maps.yandex.ru/v3/?apikey=4d7b8985-4ebf-4fde-8884-668550d59df1&lang=ru_RU"></script>
+    <title>Главная</title>
+  <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="header-burger mobile">
+      <div></div>
+      <div></div>
+    </div>
+    <a class="header-logo">
+      <img src="../assets/images/logo-main.svg" alt="">
+    </a>
+    <div class="header-block">
+      <div class="header-block--wrapper">
+        <div class="header-list">
+          <a class=""><span>Наши услуги</span> </a>
+          <a class=""><span>О клинике</span></a>
+          <a class=""><span>Оборудование</span></a>
+          <a class=""><span>Специалисты</span></a>
+          <a class=""><span>Косметика</span></a>
+          <a class=""><span>Подарочные сертификаты</span></a>
+          <a class=""><span>Контакты</span></a>
+        </div>
+      </div>
+    </div>
+    <a class="header-phone">
+      <div class="header-phone_svg">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.1575 16.3734C11.9139 16.8621 12.8152 17.075 13.7099 16.9765C14.6046 16.8779 15.4381 16.4738 16.0703 15.8321L16.623 15.2909C16.8653 15.0427 17.001 14.7093 17.001 14.3622C17.001 14.015 16.8653 13.6817 16.623 13.4334L14.2771 11.1086C14.0314 10.8667 13.7006 10.7311 13.356 10.7311C13.0114 10.7311 12.6806 10.8667 12.4348 11.1086C12.187 11.3512 11.8541 11.4871 11.5075 11.4871C11.1609 11.4871 10.8281 11.3512 10.5802 11.1086L6.89564 7.4183C6.77273 7.29698 6.67512 7.1524 6.6085 6.99297C6.54187 6.83353 6.50756 6.66242 6.50756 6.48958C6.50756 6.31675 6.54187 6.14563 6.6085 5.9862C6.67512 5.82676 6.77273 5.68218 6.89564 5.56086C7.13717 5.31472 7.27251 4.98341 7.27251 4.6383C7.27251 4.29318 7.13717 3.96187 6.89564 3.71573L4.56206 1.37856C4.31422 1.13588 3.98138 1 3.63477 1C3.28816 1 2.95532 1.13588 2.70747 1.37856L2.16707 1.9321C1.52637 2.56528 1.12289 3.40009 1.02447 4.29617C0.926056 5.19225 1.1387 6.09494 1.62666 6.85246C4.16909 10.6051 7.40404 13.8367 11.1575 16.3734Z" fill="#D9D9D9" fill-opacity="0.1" stroke="#E5EFF7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </div>
+      <span class="desktop">+7 (988)-711-18-88</span>
+    </a>
+  </div>
+</header>
+
+
+    <div id="popup__success" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.50164 1.5L9.00164 8.64286L16.5016 1.5M16.5 16.5L9 9.35714L1.5 16.5" stroke="#2E2E2E" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-img-box">
+          <img src="./assets/images/modal.webp" alt="">
+        </div>
+        <div class="popup__body-content-box">
+          <div class="popup__body-content-box-text-box">
+            <p class="popup__body-content-box-title h3">
+              Ваша заявка <br>
+              отправлена
+            </p>
+            <p class="popup__body-content-box-desk popup__body-content-box-desk--short txt18">
+              Наш менеджер свяжется <br>
+              с Вами в ближайшее время!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__purchase" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.50164 1.5L9.00164 8.64286L16.5016 1.5M16.5 16.5L9 9.35714L1.5 16.5" stroke="#2E2E2E" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-img-box">
+          <img src="./assets/images/modal.webp" alt="">
+        </div>
+        <div class="popup__body-content-box">
+          <div class="popup__body-content-box-text-box">
+            <p class="popup__body-content-box-title h3">Спасибо <br>за покупку!</p>
+            <p class="popup__body-content-box-desk popup__body-content-box-desk--short txt18">
+              Сертификат отправлен на почту <br>
+              forexample@.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__feedback" aria-hidden="true" class="popup popup--feedback">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.50164 1.5L9.00164 8.64286L16.5016 1.5M16.5 16.5L9 9.35714L1.5 16.5" stroke="#2E2E2E" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-img-box popup__body-img-box--big desktop">
+          <img src="./assets/images/modal.webp" alt="">
+        </div>
+        <div class="popup__body-content-box popup__body-content-box--big">
+          <div class="sign_top">
+            <div class="sign_title h3">Запишитесь на прием</div>
+          </div>
+          <form class="form" data-popup-message="#popup__success" data-dev="" action="">
+    
+            <div class=" form__dropdown">
+                <div class="form__dropdown_top">
+                  <label for="" class="form_block input-group">
+                    <span class="form_input-wrapper">
+                      <input class="form_input input__field  input-dropdown" type="text" placeholder="Выберите услугу" data-validate="" data-required="dropdown" autocomplete="off" name="form[]" data-no-focus-classes="">
+    
+                      <span class="form__input-svg-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25" fill="none">
+                          <path d="M6 9.5L12 15.5L18 9.5" stroke="#0E1C15" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </span>
+                    </span>
+                    <span class="error-span subscription"></span>
+                  </label>
+                </div>
+                <div class="form__dropdown_bottom">
+                  <div class="form__dropdown_list">
+                    <label class="form__dropdown_item">
+                      <div class="form__dropdown_item_checkbox radio-wrapper">
+                        <input type="radio" name="service">
+                      </div>
+                      <span class="form__dropdown_item_name">Услуга1</span>
+                    </label>
+                    <label class="form__dropdown_item">
+                      <div class="form__dropdown_item_checkbox radio-wrapper">
+                        <input type="radio" name="service">
+                      </div>
+                      <span class="form__dropdown_item_name">Услуга2</span>
+                    </label>
+                    <label class="form__dropdown_item">
+                      <div class="form__dropdown_item_checkbox radio-wrapper">
+                        <input type="radio" name="service">
+                      </div>
+                      <span class="form__dropdown_item_name">Услуга3</span>
+                    </label>
+                    <label class="form__dropdown_item">
+                      <div class="form__dropdown_item_checkbox radio-wrapper">
+                        <input type="radio" name="service">
+                      </div>
+                      <span class="form__dropdown_item_name">Услуга4</span>
+                    </label>
+                    <label class="form__dropdown_item">
+                      <div class="form__dropdown_item_checkbox radio-wrapper">
+                        <input type="radio" name="service">
+                      </div>
+                      <span class="form__dropdown_item_name">Услуга5</span>
+                    </label>
+                    <label class="form__dropdown_item">
+                      <div class="form__dropdown_item_checkbox radio-wrapper">
+                        <input type="radio" name="service">
+                      </div>
+                      <span class="form__dropdown_item_name">Услуга6</span>
+                    </label>
+                    <label class="form__dropdown_item">
+                      <div class="form__dropdown_item_checkbox radio-wrapper">
+                        <input type="radio" name="service">
+                      </div>
+                      <span class="form__dropdown_item_name">Услуга7</span>
+                    </label>
+                  </div>
+                </div>
+            </div>
+    
+            <label class="form_block input-group">
+                <span class="form_input-wrapper">
+                  <input class="input--name form_input" type="text" placeholder="Имя" data-validate="" data-required="" autocomplete="off" name="form[]">
+                </span>
+                <span class="error-span">Ошибка</span>
+            </label>
+    
+            <label class="form_block input-group">
+                <span class="form_input-wrapper">
+                  <input class="input--mail form_input" type="text" placeholder="E-mail" autocomplete="off" name="form[]">
+                </span>
+                <span class="error-span">Ошибка</span>
+            </label>
+    
+    
+            <label class="form_block input-group">
+                <span class="form_input-wrapper">
+                  <input class="input--tel form_input phone-mask" type="text" placeholder="Номер телефона" data-validate="" data-required="tel" autocomplete="off" name="form[]">
+                </span>
+                <span class="error-span">Ошибка</span>
+            </label>
+    
+    
+            <label class="form_block input-group">
+                <span class="form_input-wrapper">
+                  <input class="form_input" type="text" placeholder="Ваш комментарий" autocomplete="off" name="form[]">
+                </span>
+                <span class="error-span"></span>
+            </label>
+            <div class="form_bottom">
+              <div class="form_bottom-text">Отправляя заявку, Вы соглашаетесь на обработку своих данных</div>
+              <button type="submit" class="btn btn-blue">Отправить заявку</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="preloader" style="position: fixed; inset: -10px; background: #001933">
+      <video muted playsinline id="preloader__video">
+        <source src="./assets/images/mobile-intro.mp4" type="video/mp4" media="(max-width: 768px)" />
+        <source src="./assets/images/intro.mp4" type="video/mp4" media="(min-width: 769px)" />
+      </video>
+    </div>
+
+    <main>
+      <section class="main-baner">
+    <div class="container">
+        <div class="main-baner_img">
+            <video autoplay="" muted="" loop="" src="../assets/images/Main-Video.webm"></video>
+            <!-- <img src="../assets/images/main/mainb.webp" alt=""> -->
+        </div>
+        <div class="main-baner_container">
+            <div class="main-baner_container-subtitle">Клиника врачебной косметологии, дерматологии и трихологии</div>
+            <div class="main-baner_container-title">
+                <span>æstetik</span>
+                <br>превратит вашу<br>красоту в искусство</div>
+            <div class="main-baner_container-btns">
+                <div class="btn btn-white">Наши услуги</div>
+                <div class="btn btn-blue" data-popup="#popup__feedback">Записаться</div>
+            </div>
+            <div class="main-baner_container-social">
+                <a href="">Instagram</a>
+                <a href="">Telegram</a>
+                <a href="">WhatsApp</a>
+            </div>
+        </div>
+    </div>
+</section>
+      <section class="main-space white-block">
+    <div class="container">
+        <div class="main-space_title">Наше пространство</div>
+        <div class="main-space_box">
+            <span>
+                Aestetik - это эстетика нового поколения, с оригинальным дизайном и сервисом премиального класса. Наше современное пространство, площадью 100 кв. м. расположилось на территории элитного жилого комплекса по ул. Первомайская, д.8. <br><br>
+                Каждый день к вашим услугам процедурные кабинеты, оснащенные инновационными аппаратами последнего поколения.
+            </span>
+            <div class="main-space_box--more mobile">Показать полностью</div>
+        </div>
+        <div class="main-space_list">
+            <div class="main-space_img">
+                <img src="../assets/images/main/main-space1.webp" alt="">
+            </div>
+            <div class="main-space_img">
+                <img src="../assets/images/main/main-space2.webp" alt="">
+            </div>
+            <div class="main-space_img">
+                <img src="../assets/images/main/main-space3.webp" alt="">
+            </div>
+            <div class="main-space_img">
+                <img src="../assets/images/main/main-space4.webp" alt="">
+            </div>
+        </div>
+        <div class="main-space_anim">пространство</div>
+        <div class="white-block-bg">
+            <!-- <img src="../assets/images/block-bg.webp" alt=""> -->
+        </div>
+    </div>
+</section>
+      <section class="main-equipment white-block">
+    <div class="container">
+        <div class="main-equipment_top">
+            <div class="main-equipment_top-title h2">Наше оборудование</div>
+            <a href="" class="btn btn-blue">Оборудование</a>
+        </div>
+        <div class="main-equipment_swiper show-content">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="main-equipment_container" data-href="1">
+                        <div class="main-equipment_container-left">
+                            <div class="main-equipment_container-img">
+                                <img src="../assets/images/main/main-equipment1.webp" alt="">
+                            </div>
+                            <div class="main-equipment_container--count txt20">
+                                <span>01</span><span>04</span>
+                            </div>
+                        </div>
+                        <div class="main-equipment_container-info ">
+                            <div class="main-equipment_container-title h3">DEKA (Италия)</div>
+                            <div class="show-text hideContent">
+                                <div class="main-equipment_container-text txt16">Эта система представляет собой универсальный аппарат нового поколения, который объединяет в себе технологии IPL, RF и лазеров для косметологии, дерматологии, эстетической хирургии, гинекологии.</div>
+                                <div class="main-equipment_container-detail">
+                                    <div class="main-equipment_container-detail--title h5">Применение</div>
+                                    <ul class="txt16">
+                                        <li>
+                                            <a href="">
+                                                – процедура обновления, очищения и отшелушивание кожи
+                                                <svg width="29" height="10" viewBox="0 0 29 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M28.4596 5.45962C28.7135 5.20578 28.7135 4.79422 28.4596 4.54038L24.323 0.403806C24.0692 0.149965 23.6576 0.149965 23.4038 0.403806C23.15 0.657647 23.15 1.0692 23.4038 1.32304L27.0808 5L23.4038 8.67696C23.15 8.9308 23.15 9.34235 23.4038 9.59619C23.6576 9.85003 24.0692 9.85003 24.323 9.59619L28.4596 5.45962ZM0 5.65H28V4.35H0V5.65Z" fill="#2E2E2E"></path>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                – глубокое очищение кожи
+                                                <svg width="29" height="10" viewBox="0 0 29 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M28.4596 5.45962C28.7135 5.20578 28.7135 4.79422 28.4596 4.54038L24.323 0.403806C24.0692 0.149965 23.6576 0.149965 23.4038 0.403806C23.15 0.657647 23.15 1.0692 23.4038 1.32304L27.0808 5L23.4038 8.67696C23.15 8.9308 23.15 9.34235 23.4038 9.59619C23.6576 9.85003 24.0692 9.85003 24.323 9.59619L28.4596 5.45962ZM0 5.65H28V4.35H0V5.65Z" fill="#2E2E2E"></path>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                – детоксикация, обновление и омоложение
+                                                <svg width="29" height="10" viewBox="0 0 29 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M28.4596 5.45962C28.7135 5.20578 28.7135 4.79422 28.4596 4.54038L24.323 0.403806C24.0692 0.149965 23.6576 0.149965 23.4038 0.403806C23.15 0.657647 23.15 1.0692 23.4038 1.32304L27.0808 5L23.4038 8.67696C23.15 8.9308 23.15 9.34235 23.4038 9.59619C23.6576 9.85003 24.0692 9.85003 24.323 9.59619L28.4596 5.45962ZM0 5.65H28V4.35H0V5.65Z" fill="#2E2E2E"></path>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="show-more mobile">Показать полностью</div>
+                            <div data-popup="#popup__main-equipment1" class="btn btn-more">Подробнее</div>
+                            <div class="main-equipment_container-bottom switcher">
+                                <div class="main-equipment_container-bottom--title h5">Насадки на оборудование</div>
+                                <div class="main-equipment_container-box">
+                                    <div class="main-equipment_container-box_swiper">
+
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide main-equipment_container-box__btn switcher__btn active">Lilac</div>
+                                            <div class="swiper-slide main-equipment_container-box__btn switcher__btn">Lazur</div>
+                                            <div class="swiper-slide main-equipment_container-box__btn switcher__btn">Erise</div>
+                                            <div class="swiper-slide main-equipment_container-box__btn switcher__btn">Sparks</div>
+                                            <div class="swiper-slide main-equipment_container-box__btn switcher__btn">Vivid</div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="main-equipment_container-box_swiper-left">
+                                        <svg width="48" height="40" viewBox="0 0 48 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="-0.5" width="47" height="39" rx="19.5" transform="matrix(1 0 0 -1 0 39)" fill="#E5EBEF"></rect>
+                                            <rect x="0.5" y="-0.5" width="47" height="39" rx="19.5" transform="matrix(1 0 0 -1 0 39)" stroke="#939CA9"></rect>
+                                            <path d="M12.5404 19.5404C12.2865 19.7942 12.2865 20.2058 12.5404 20.4596L16.677 24.5962C16.9308 24.85 17.3424 24.85 17.5962 24.5962C17.85 24.3424 17.85 23.9308 17.5962 23.677L13.9192 20L17.5962 16.323C17.85 16.0692 17.85 15.6576 17.5962 15.4038C17.3424 15.15 16.9308 15.15 16.677 15.4038L12.5404 19.5404ZM35 19.35L13 19.35V20.65L35 20.65V19.35Z" fill="#939CA9"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="main-equipment_container-box_swiper-right">
+                                        <svg width="48" height="40" viewBox="0 0 48 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="-0.5" y="0.5" width="47" height="39" rx="19.5" transform="matrix(-1 0 0 1 47 0)" fill="#E5EBEF"></rect>
+                                            <rect x="-0.5" y="0.5" width="47" height="39" rx="19.5" transform="matrix(-1 0 0 1 47 0)" stroke="#939CA9"></rect>
+                                            <path d="M35.4596 20.4596C35.7135 20.2058 35.7135 19.7942 35.4596 19.5404L31.323 15.4038C31.0692 15.15 30.6576 15.15 30.4038 15.4038C30.15 15.6576 30.15 16.0692 30.4038 16.323L34.0808 20L30.4038 23.677C30.15 23.9308 30.15 24.3424 30.4038 24.5962C30.6576 24.85 31.0692 24.85 31.323 24.5962L35.4596 20.4596ZM13 20.65L35 20.65V19.35L13 19.35V20.65Z" fill="#939CA9"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="switcher__container">
+                                        <div class="switcher__content active">
+                                            <div class="main-equipment_container-box--item">
+                                                <div class="main-equipment_container-box_img">
+                                                    <img src="../assets/images/main/nozzle1.webp" alt="">
+                                                </div>
+                                                <div class="main-equipment_container-box_text">
+                                                    <p class="txt16">Данная насадка подходит для:</p>
+                                                    <ul class="txt16-l">
+                                                        <li>- лечение гиперпигментации</li>
+                                                        <li>- лечение розацеа</li>
+                                                        <li>- фотоомоложение</li>
+                                                        <li>- термолифтинг</li>
+                                                        <li>- фотоэпиляция</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="switcher__content">
+                                            <div class="main-equipment_container-box--item">
+                                                <div class="main-equipment_container-box_img">
+                                                    <img src="../assets/images/main/nozzle1.webp" alt="">
+                                                </div>
+                                                <div class="main-equipment_container-box_text">
+                                                    <p class="txt16">2Данная насадка подходит для:</p>
+                                                    <ul class="txt16-l">
+                                                        <li>- лечение гиперпигментации</li>
+                                                        <li>- лечение розацеа</li>
+                                                        <li>- фотоомоложение</li>
+                                                        <li>- термолифтинг</li>
+                                                        <li>- фотоэпиляция</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="switcher__content">
+                                            <div class="main-equipment_container-box--item">
+                                                <div class="main-equipment_container-box_img">
+                                                    <img src="../assets/images/main/nozzle1.webp" alt="">
+                                                </div>
+                                                <div class="main-equipment_container-box_text">
+                                                    <p class="txt16">3Данная насадка подходит для:</p>
+                                                    <ul class="txt16-l">
+                                                        <li>- лечение гиперпигментации</li>
+                                                        <li>- лечение розацеа</li>
+                                                        <li>- фотоомоложение</li>
+                                                        <li>- термолифтинг</li>
+                                                        <li>- фотоэпиляция</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="switcher__content">
+                                            <div class="main-equipment_container-box--item">
+                                                <div class="main-equipment_container-box_img">
+                                                    <img src="../assets/images/main/nozzle1.webp" alt="">
+                                                </div>
+                                                <div class="main-equipment_container-box_text">
+                                                    <p class="txt16">4Данная насадка подходит для:</p>
+                                                    <ul class="txt16-l">
+                                                        <li>- лечение гиперпигментации</li>
+                                                        <li>- лечение розацеа</li>
+                                                        <li>- фотоомоложение</li>
+                                                        <li>- термолифтинг</li>
+                                                        <li>- фотоэпиляция</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="switcher__content">
+                                            <div class="main-equipment_container-box--item">
+                                                <div class="main-equipment_container-box_img">
+                                                    <img src="../assets/images/main/nozzle1.webp" alt="">
+                                                </div>
+                                                <div class="main-equipment_container-box_text">
+                                                    <p class="txt16">5Данная насадка подходит для:</p>
+                                                    <ul class="txt16-l">
+                                                        <li>- лечение гиперпигментации</li>
+                                                        <li>- лечение розацеа</li>
+                                                        <li>- фотоомоложение</li>
+                                                        <li>- термолифтинг</li>
+                                                        <li>- фотоэпиляция</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="main-equipment_container" data-href="2">
+                        <div class="main-equipment_container-left">
+                            <div class="main-equipment_container-img">
+                                <img src="../assets/images/main/main-equipment2.webp" alt="">
+                            </div>
+                            <div class="main-equipment_container--count txt20">
+                                <span>02</span><span>04</span>
+                            </div>
+                        </div>
+                        <div class="main-equipment_container-info">
+                            <div class="main-equipment_container-title h3">JANUS Pro Sunlike (Южная Корея)</div>
+                            <div class="show-text hideContent">
+                                <div class="main-equipment_container-text txt16">
+                                    <p>Janus Pro Sunlike – диагностический аппарат последнего поколения, которой визуализирует несовершенства кожи и определяет зоны, требующие особого ухода.</p>
+                                    <p>Аппарат позволяет проводить диагностику кожи по 18 параметрам с помощью усовершенствованной системы Sunlike LED и UV LED 385 нм.</p>
+                                </div>
+                                <div class="main-equipment_container-detail">
+                                    <div class="main-equipment_container-detail--title h5">Применение</div>
+                                    <ul class="txt16">
+                                        <li>
+                                            <a href="">
+                                                – процедура обновления, очищения и отшелушивание кожи
+                                                <svg width="29" height="10" viewBox="0 0 29 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M28.4596 5.45962C28.7135 5.20578 28.7135 4.79422 28.4596 4.54038L24.323 0.403806C24.0692 0.149965 23.6576 0.149965 23.4038 0.403806C23.15 0.657647 23.15 1.0692 23.4038 1.32304L27.0808 5L23.4038 8.67696C23.15 8.9308 23.15 9.34235 23.4038 9.59619C23.6576 9.85003 24.0692 9.85003 24.323 9.59619L28.4596 5.45962ZM0 5.65H28V4.35H0V5.65Z" fill="#2E2E2E"></path>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                – глубокое очищение кожи
+                                                <svg width="29" height="10" viewBox="0 0 29 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M28.4596 5.45962C28.7135 5.20578 28.7135 4.79422 28.4596 4.54038L24.323 0.403806C24.0692 0.149965 23.6576 0.149965 23.4038 0.403806C23.15 0.657647 23.15 1.0692 23.4038 1.32304L27.0808 5L23.4038 8.67696C23.15 8.9308 23.15 9.34235 23.4038 9.59619C23.6576 9.85003 24.0692 9.85003 24.323 9.59619L28.4596 5.45962ZM0 5.65H28V4.35H0V5.65Z" fill="#2E2E2E"></path>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                – детоксикация, обновление и омоложение
+                                                <svg width="29" height="10" viewBox="0 0 29 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M28.4596 5.45962C28.7135 5.20578 28.7135 4.79422 28.4596 4.54038L24.323 0.403806C24.0692 0.149965 23.6576 0.149965 23.4038 0.403806C23.15 0.657647 23.15 1.0692 23.4038 1.32304L27.0808 5L23.4038 8.67696C23.15 8.9308 23.15 9.34235 23.4038 9.59619C23.6576 9.85003 24.0692 9.85003 24.323 9.59619L28.4596 5.45962ZM0 5.65H28V4.35H0V5.65Z" fill="#2E2E2E"></path>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="show-more mobile">Показать полностью</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="main-equipment_container" data-href="3">
+                        <div class="main-equipment_container-left">
+                            <div class="main-equipment_container-img">
+                                <img src="../assets/images/main/main-equipment3.webp" alt="">
+                            </div>
+                            <div class="main-equipment_container--count txt20">
+                                <span>03</span><span>04</span>
+                            </div>
+                        </div>
+                        <div class="main-equipment_container-info">
+                            <div class="main-equipment_container-title h3">Hydrafacial (США)</div>
+                            <div class="show-text hideContent">
+                                <div class="main-equipment_container-text txt16">HydraFacial® позволяет провести целый комплекс процедур (лечение, омоложение, лифтинг, увлажнение, чистка) за один сеанс. Он подходит для любого типа кожи, любого возраста, любого времени года.</div>
+                                <div class="main-equipment_container-detail">
+                                    <div class="main-equipment_container-detail--title h5">Применение</div>
+                                    <ul class="txt16">
+                                        <li>
+                                            <a href="">
+                                                – процедура обновления, очищения и отшелушивание кожи
+                                                <svg width="29" height="10" viewBox="0 0 29 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M28.4596 5.45962C28.7135 5.20578 28.7135 4.79422 28.4596 4.54038L24.323 0.403806C24.0692 0.149965 23.6576 0.149965 23.4038 0.403806C23.15 0.657647 23.15 1.0692 23.4038 1.32304L27.0808 5L23.4038 8.67696C23.15 8.9308 23.15 9.34235 23.4038 9.59619C23.6576 9.85003 24.0692 9.85003 24.323 9.59619L28.4596 5.45962ZM0 5.65H28V4.35H0V5.65Z" fill="#2E2E2E"></path>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                – глубокое очищение кожи
+                                                <svg width="29" height="10" viewBox="0 0 29 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M28.4596 5.45962C28.7135 5.20578 28.7135 4.79422 28.4596 4.54038L24.323 0.403806C24.0692 0.149965 23.6576 0.149965 23.4038 0.403806C23.15 0.657647 23.15 1.0692 23.4038 1.32304L27.0808 5L23.4038 8.67696C23.15 8.9308 23.15 9.34235 23.4038 9.59619C23.6576 9.85003 24.0692 9.85003 24.323 9.59619L28.4596 5.45962ZM0 5.65H28V4.35H0V5.65Z" fill="#2E2E2E"></path>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                – детоксикация, обновление и омоложение
+                                                <svg width="29" height="10" viewBox="0 0 29 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M28.4596 5.45962C28.7135 5.20578 28.7135 4.79422 28.4596 4.54038L24.323 0.403806C24.0692 0.149965 23.6576 0.149965 23.4038 0.403806C23.15 0.657647 23.15 1.0692 23.4038 1.32304L27.0808 5L23.4038 8.67696C23.15 8.9308 23.15 9.34235 23.4038 9.59619C23.6576 9.85003 24.0692 9.85003 24.323 9.59619L28.4596 5.45962ZM0 5.65H28V4.35H0V5.65Z" fill="#2E2E2E"></path>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="show-more mobile">Показать полностью</div>
+                            <div data-popup="#popup__main-equipment2" class="btn btn-more">Подробнее</div>
+                            <div class="main-equipment_container-bottom switcher">
+                                <div class="main-equipment_container-bottom--title h5">Насадки на оборудование</div>
+                                <div class="main-equipment_container-box">
+                                    <div class="main-equipment_container-box_swiper">
+
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide main-equipment_container-box__btn switcher__btn active">Фиолетовый</div>
+                                            <div class="swiper-slide main-equipment_container-box__btn switcher__btn">бирюзовая</div>
+                                            <div class="swiper-slide main-equipment_container-box__btn switcher__btn">прозрачная</div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="main-equipment_container-box_swiper-left">
+                                        <svg width="48" height="40" viewBox="0 0 48 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="-0.5" width="47" height="39" rx="19.5" transform="matrix(1 0 0 -1 0 39)" fill="#E5EBEF"></rect>
+                                            <rect x="0.5" y="-0.5" width="47" height="39" rx="19.5" transform="matrix(1 0 0 -1 0 39)" stroke="#939CA9"></rect>
+                                            <path d="M12.5404 19.5404C12.2865 19.7942 12.2865 20.2058 12.5404 20.4596L16.677 24.5962C16.9308 24.85 17.3424 24.85 17.5962 24.5962C17.85 24.3424 17.85 23.9308 17.5962 23.677L13.9192 20L17.5962 16.323C17.85 16.0692 17.85 15.6576 17.5962 15.4038C17.3424 15.15 16.9308 15.15 16.677 15.4038L12.5404 19.5404ZM35 19.35L13 19.35V20.65L35 20.65V19.35Z" fill="#939CA9"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="main-equipment_container-box_swiper-right">
+                                        <svg width="48" height="40" viewBox="0 0 48 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="-0.5" y="0.5" width="47" height="39" rx="19.5" transform="matrix(-1 0 0 1 47 0)" fill="#E5EBEF"></rect>
+                                            <rect x="-0.5" y="0.5" width="47" height="39" rx="19.5" transform="matrix(-1 0 0 1 47 0)" stroke="#939CA9"></rect>
+                                            <path d="M35.4596 20.4596C35.7135 20.2058 35.7135 19.7942 35.4596 19.5404L31.323 15.4038C31.0692 15.15 30.6576 15.15 30.4038 15.4038C30.15 15.6576 30.15 16.0692 30.4038 16.323L34.0808 20L30.4038 23.677C30.15 23.9308 30.15 24.3424 30.4038 24.5962C30.6576 24.85 31.0692 24.85 31.323 24.5962L35.4596 20.4596ZM13 20.65L35 20.65V19.35L13 19.35V20.65Z" fill="#939CA9"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="switcher__container">
+                                        <div class="switcher__content active">
+                                            <div class="main-equipment_container-box--item">
+                                                <div class="main-equipment_container-box_img">
+                                                    <img src="../assets/images/main/nozzle2.webp" alt="">
+                                                </div>
+                                                <div class="main-equipment_container-box_text">
+                                                    <p class="txt16">Данная насадка подходит для:</p>
+                                                    <p class="txt16-l">Завершающего этапе аппаратного ухода за лицом HydraFacial®, позволяющая деликатно внедрить сыворотки в глубокие слои кожи.</p>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="switcher__content">
+                                            <div class="main-equipment_container-box--item">
+                                                <div class="main-equipment_container-box_img">
+                                                    <img src="../assets/images/main/nozzle2.webp" alt="">
+                                                </div>
+                                                <div class="main-equipment_container-box_text">
+                                                    <p class="txt16">Данная насадка подходит для:</p>
+                                                    <p class="txt16-l">Завершающего этапе аппаратного ухода за лицом HydraFacial®, позволяющая деликатно внедрить сыворотки в глубокие слои кожи.</p>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="switcher__content">
+                                            <div class="main-equipment_container-box--item">
+                                                <div class="main-equipment_container-box_img">
+                                                    <img src="../assets/images/main/nozzle2.webp" alt="">
+                                                </div>
+                                                <div class="main-equipment_container-box_text">
+                                                    <p class="txt16">Данная насадка подходит для:</p>
+                                                    <p class="txt16-l">Завершающего этапе аппаратного ухода за лицом HydraFacial®, позволяющая деликатно внедрить сыворотки в глубокие слои кожи.</p>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="main-equipment_container" data-href="4">
+                        <div class="main-equipment_container-left">
+                            <div class="main-equipment_container-img">
+                                <img src="../assets/images/main/main-equipment4.webp" alt="">
+                            </div>
+                            <div class="main-equipment_container--count txt20">
+                                <span>04</span><span>04</span>
+                            </div>
+                        </div>
+                        <div class="main-equipment_container-info">
+                            <div class="main-equipment_container-title h3">Virtue RF (Южная Корея)</div>
+                            <div class="show-text hideContent">
+                                <div class="main-equipment_container-text txt16">Эта система представляет собой универсальный аппарат нового поколения, который объединяет в себе технологии IPL, RF и лазеров для косметологии, дерматологии, эстетической хирургии, гинекологии.</div>
+                                <div class="main-equipment_container-detail">
+                                    <div class="main-equipment_container-detail--title h5">Применение</div>
+                                    <ul class="txt16">
+                                        <li>
+                                            <a href="">
+                                                – процедура обновления, очищения и отшелушивание кожи
+                                                <svg width="29" height="10" viewBox="0 0 29 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M28.4596 5.45962C28.7135 5.20578 28.7135 4.79422 28.4596 4.54038L24.323 0.403806C24.0692 0.149965 23.6576 0.149965 23.4038 0.403806C23.15 0.657647 23.15 1.0692 23.4038 1.32304L27.0808 5L23.4038 8.67696C23.15 8.9308 23.15 9.34235 23.4038 9.59619C23.6576 9.85003 24.0692 9.85003 24.323 9.59619L28.4596 5.45962ZM0 5.65H28V4.35H0V5.65Z" fill="#2E2E2E"></path>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                – глубокое очищение кожи
+                                                <svg width="29" height="10" viewBox="0 0 29 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M28.4596 5.45962C28.7135 5.20578 28.7135 4.79422 28.4596 4.54038L24.323 0.403806C24.0692 0.149965 23.6576 0.149965 23.4038 0.403806C23.15 0.657647 23.15 1.0692 23.4038 1.32304L27.0808 5L23.4038 8.67696C23.15 8.9308 23.15 9.34235 23.4038 9.59619C23.6576 9.85003 24.0692 9.85003 24.323 9.59619L28.4596 5.45962ZM0 5.65H28V4.35H0V5.65Z" fill="#2E2E2E"></path>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                – детоксикация, обновление и омоложение
+                                                <svg width="29" height="10" viewBox="0 0 29 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M28.4596 5.45962C28.7135 5.20578 28.7135 4.79422 28.4596 4.54038L24.323 0.403806C24.0692 0.149965 23.6576 0.149965 23.4038 0.403806C23.15 0.657647 23.15 1.0692 23.4038 1.32304L27.0808 5L23.4038 8.67696C23.15 8.9308 23.15 9.34235 23.4038 9.59619C23.6576 9.85003 24.0692 9.85003 24.323 9.59619L28.4596 5.45962ZM0 5.65H28V4.35H0V5.65Z" fill="#2E2E2E"></path>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="show-more mobile">Показать полностью</div>
+                            <div data-popup="#popup__main-equipment3" class="btn btn-more">Подробнее</div>
+                            <div class="main-equipment_container-bottom switcher">
+                                <div class="main-equipment_container-bottom--title h5">Насадки на оборудование</div>
+                                <div class="main-equipment_container-box">
+                                    <div class="main-equipment_container-box_swiper">
+
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide main-equipment_container-box__btn switcher__btn active">soft</div>
+                                            <div class="swiper-slide main-equipment_container-box__btn switcher__btn">strong</div>
+                                            <div class="swiper-slide main-equipment_container-box__btn switcher__btn">exact</div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="main-equipment_container-box_swiper-left">
+                                        <svg width="48" height="40" viewBox="0 0 48 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="-0.5" width="47" height="39" rx="19.5" transform="matrix(1 0 0 -1 0 39)" fill="#E5EBEF"></rect>
+                                            <rect x="0.5" y="-0.5" width="47" height="39" rx="19.5" transform="matrix(1 0 0 -1 0 39)" stroke="#939CA9"></rect>
+                                            <path d="M12.5404 19.5404C12.2865 19.7942 12.2865 20.2058 12.5404 20.4596L16.677 24.5962C16.9308 24.85 17.3424 24.85 17.5962 24.5962C17.85 24.3424 17.85 23.9308 17.5962 23.677L13.9192 20L17.5962 16.323C17.85 16.0692 17.85 15.6576 17.5962 15.4038C17.3424 15.15 16.9308 15.15 16.677 15.4038L12.5404 19.5404ZM35 19.35L13 19.35V20.65L35 20.65V19.35Z" fill="#939CA9"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="main-equipment_container-box_swiper-right">
+                                        <svg width="48" height="40" viewBox="0 0 48 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="-0.5" y="0.5" width="47" height="39" rx="19.5" transform="matrix(-1 0 0 1 47 0)" fill="#E5EBEF"></rect>
+                                            <rect x="-0.5" y="0.5" width="47" height="39" rx="19.5" transform="matrix(-1 0 0 1 47 0)" stroke="#939CA9"></rect>
+                                            <path d="M35.4596 20.4596C35.7135 20.2058 35.7135 19.7942 35.4596 19.5404L31.323 15.4038C31.0692 15.15 30.6576 15.15 30.4038 15.4038C30.15 15.6576 30.15 16.0692 30.4038 16.323L34.0808 20L30.4038 23.677C30.15 23.9308 30.15 24.3424 30.4038 24.5962C30.6576 24.85 31.0692 24.85 31.323 24.5962L35.4596 20.4596ZM13 20.65L35 20.65V19.35L13 19.35V20.65Z" fill="#939CA9"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="switcher__container">
+                                        <div class="switcher__content active">
+                                            <div class="main-equipment_container-box--item">
+                                                <div class="main-equipment_container-box_img">
+                                                    <img src="../assets/images/main/nozzle3.webp" alt="">
+                                                </div>
+                                                <div class="main-equipment_container-box_text">
+                                                    <p class="txt16">Данная насадка подходит для:</p>
+                                                    <p class="txt16-l">SMART-лифтинга, деликатного ухода за лицом, руками и зоной декольте.</p>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="switcher__content">
+                                            <div class="main-equipment_container-box--item">
+                                                <div class="main-equipment_container-box_img">
+                                                    <img src="../assets/images/main/nozzle3.webp" alt="">
+                                                </div>
+                                                <div class="main-equipment_container-box_text">
+                                                    <p class="txt16">Данная насадка подходит для:</p>
+                                                    <p class="txt16-l">SMART-лифтинга, деликатного ухода за лицом, руками и зоной декольте.</p>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="switcher__content">
+                                            <div class="main-equipment_container-box--item">
+                                                <div class="main-equipment_container-box_img">
+                                                    <img src="../assets/images/main/nozzle3.webp" alt="">
+                                                </div>
+                                                <div class="main-equipment_container-box_text">
+                                                    <p class="txt16">Данная насадка подходит для:</p>
+                                                    <p class="txt16-l">SMART-лифтинга, деликатного ухода за лицом, руками и зоной декольте.</p>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-equipment_pagin swiper-pading"></div>
+        <div class="btn btn-blue main-equipment_btn-blue mobile">Оборудование</div>
+    </div>
+</section>
+
+<div id="popup__main-equipment1" aria-hidden="true" class="popup popup-equipment">
+    <div class="popup__wrapper">
+        <div class="popup__content">
+            <div class="popup__body">
+                <button data-close="" type="button" class="popup__body-close-btn">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.50164 1.5L9.00164 8.64286L16.5016 1.5M16.5 16.5L9 9.35714L1.5 16.5" stroke="#2E2E2E" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <div class="popup__body-content-box switcher">
+                    <div class="popup-equipment_title">Насадки на оборудование</div>
+                    <div class="popup-equipment_btns">
+                        <div class="popup-equipment_btn switcher__btn active">Lilac</div>
+                        <div class="popup-equipment_btn switcher__btn">Lazur</div>
+                        <div class="popup-equipment_btn switcher__btn">Erise</div>
+                        <div class="popup-equipment_btn switcher__btn">Sparks</div>
+                        <div class="popup-equipment_btn switcher__btn">Vivid</div>
+                    </div>
+                    <div class="switcher__container">
+                        <div class="switcher__content active">
+                            <div class="popup-equipment_subtitle">Данная насадка подходит для:</div>
+                            <div class="popup-equipment_text">
+                                <ul>
+                                    <li>- лечение гиперпигментации</li>
+                                    <li>- лечение розацеа</li>
+                                    <li>- фотоомоложение</li>
+                                    <li>- термолифтинг</li>
+                                    <li>- фотоэпиляция</li>
+                                </ul>
+                            </div>
+                            <div class="popup-equipment_img">
+                                <img src="../assets/images/main/nozzle1.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="switcher__content">
+                            <div class="popup-equipment_title">Данная насадка подходит для:</div>
+                            <div class="popup-equipment_text">
+                                <ul>
+                                    <li>- лечение гиперпигментации</li>
+                                    <li>- лечение розацеа</li>
+                                    <li>- фотоомоложение</li>
+                                    <li>- термолифтинг</li>
+                                    <li>- фотоэпиляция</li>
+                                </ul>
+                            </div>
+                            <div class="popup-equipment_img">
+                                <img src="../assets/images/main/nozzle1.webp" alt="">
+                            </div>
+
+                        </div>
+                        <div class="switcher__content">
+                            <div class="popup-equipment_title">Данная насадка подходит для:</div>
+                            <div class="popup-equipment_text">
+                                <ul>
+                                    <li>- лечение гиперпигментации</li>
+                                    <li>- лечение розацеа</li>
+                                    <li>- фотоомоложение</li>
+                                    <li>- термолифтинг</li>
+                                    <li>- фотоэпиляция</li>
+                                </ul>
+                            </div>
+                            <div class="popup-equipment_img">
+                                <img src="../assets/images/main/nozzle1.webp" alt="">
+                            </div>
+
+                        </div>
+                        <div class="switcher__content">
+                            <div class="popup-equipment_title">Данная насадка подходит для:</div>
+                            <div class="popup-equipment_text">
+                                <ul>
+                                    <li>- лечение гиперпигментации</li>
+                                    <li>- лечение розацеа</li>
+                                    <li>- фотоомоложение</li>
+                                    <li>- термолифтинг</li>
+                                    <li>- фотоэпиляция</li>
+                                </ul>
+                            </div>
+                            <div class="popup-equipment_img">
+                                <img src="../assets/images/main/nozzle1.webp" alt="">
+                            </div>
+
+                        </div>
+                        <div class="switcher__content">
+                            <div class="popup-equipment_title">Данная насадка подходит для:</div>
+                            <div class="popup-equipment_text">
+                                <ul>
+                                    <li>- лечение гиперпигментации</li>
+                                    <li>- лечение розацеа</li>
+                                    <li>- фотоомоложение</li>
+                                    <li>- термолифтинг</li>
+                                    <li>- фотоэпиляция</li>
+                                </ul>
+                            </div>
+                            <div class="popup-equipment_img">
+                                <img src="../assets/images/main/nozzle1.webp" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="popup__main-equipment2" aria-hidden="true" class="popup popup-equipment">
+    <div class="popup__wrapper">
+        <div class="popup__content">
+            <div class="popup__body">
+                <button data-close="" type="button" class="popup__body-close-btn">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.50164 1.5L9.00164 8.64286L16.5016 1.5M16.5 16.5L9 9.35714L1.5 16.5" stroke="#2E2E2E" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <div class="popup__body-content-box switcher">
+                    <div class="popup-equipment_title">Насадки на оборудование</div>
+                    <div class="popup-equipment_btns">
+                        <div class="popup-equipment_btn switcher__btn active">Фиолетовый</div>
+                        <div class="popup-equipment_btn switcher__btn">бирюзовая</div>
+                        <div class="popup-equipment_btn switcher__btn">прозрачная</div>
+                    </div>
+                    <div class="switcher__container">
+                        <div class="switcher__content active">
+                            <div class="popup-equipment_subtitle">Данная насадка подходит для:</div>
+                            <div class="popup-equipment_text">
+                                <p>Завершающего этапе аппаратного ухода за лицом HydraFacial®, позволяющая деликатно внедрить сыворотки в глубокие слои кожи.</p>
+                            </div>
+                            <div class="popup-equipment_img">
+                                <img src="../assets/images/main/nozzle2.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="switcher__content">
+                            <div class="popup-equipment_subtitle">Данная насадка подходит для:</div>
+                            <div class="popup-equipment_text">
+                                <p>Завершающего этапе аппаратного ухода за лицом HydraFacial®, позволяющая деликатно внедрить сыворотки в глубокие слои кожи.</p>
+                            </div>
+                            <div class="popup-equipment_img">
+                                <img src="../assets/images/main/nozzle2.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="switcher__content">
+                            <div class="popup-equipment_subtitle">Данная насадка подходит для:</div>
+                            <div class="popup-equipment_text">
+                                <p>Завершающего этапе аппаратного ухода за лицом HydraFacial®, позволяющая деликатно внедрить сыворотки в глубокие слои кожи.</p>
+                            </div>
+                            <div class="popup-equipment_img">
+                                <img src="../assets/images/main/nozzle2.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="popup__main-equipment3" aria-hidden="true" class="popup popup-equipment">
+    <div class="popup__wrapper">
+        <div class="popup__content">
+            <div class="popup__body">
+                <button data-close="" type="button" class="popup__body-close-btn">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.50164 1.5L9.00164 8.64286L16.5016 1.5M16.5 16.5L9 9.35714L1.5 16.5" stroke="#2E2E2E" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <div class="popup__body-content-box switcher">
+                    <div class="popup-equipment_title">Насадки на оборудование</div>
+                    <div class="popup-equipment_btns">
+                        <div class="popup-equipment_btn switcher__btn active">SOFT</div>
+                        <div class="popup-equipment_btn switcher__btn">STRONG</div>
+                        <div class="popup-equipment_btn switcher__btn">EXACT</div>
+                    </div>
+                    <div class="switcher__container">
+                        <div class="switcher__content active">
+                            <div class="popup-equipment_subtitle">Данная насадка подходит для:</div>
+                            <div class="popup-equipment_text">
+                                <p>SMART-лифтинга, деликатного ухода за лицом, руками и зоной декольте.</p>
+                            </div>
+                            <div class="popup-equipment_img">
+                                <img src="../assets/images/main/nozzle3.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="switcher__content">
+                            <div class="popup-equipment_subtitle">Данная насадка подходит для:</div>
+                            <div class="popup-equipment_text">
+                                <p>SMART-лифтинга, деликатного ухода за лицом, руками и зоной декольте.</p>
+                            </div>
+                            <div class="popup-equipment_img">
+                                <img src="../assets/images/main/nozzle3.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="switcher__content">
+                            <div class="popup-equipment_subtitle">Данная насадка подходит для:</div>
+                            <div class="popup-equipment_text">
+                                <p>SMART-лифтинга, деликатного ухода за лицом, руками и зоной декольте.</p>
+                            </div>
+                            <div class="popup-equipment_img">
+                                <img src="../assets/images/main/nozzle3.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+      <section class="main-cosmetics white-block">
+    <div class="container">
+        <div class="main-cosmetics_top">
+            <div class="main-equipment_top-title h2">Косметика</div>
+            <a class="btn btn-blue">Вся косметика</a>
+        </div>
+        <div class="main-cosmetics_bottom">
+            <div class="main-cosmetics_swiper">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide">
+                        <a class="main-cosmetics_block active">
+                            <div class="main-cosmetics_img">
+                                <img src="../assets/images/main/cosmetic1.webp" alt="">
+                            </div>
+                            <div class="main-cosmetics_logo">
+                                <img src="../assets/images/main/cosmetic-logo1.webp" alt="">
+                            </div>
+                            <div class="main-cosmetics_bg">
+                                <img src="../assets/images/main/cosmetic-bg.webp" alt="">
+                            </div>
+                        </a>
+                        <div class="main-cosmetics_slide-text show-content">
+                            <p class="txt18 show-text hideContent">ZО skin health by Zein Obagi –&nbsp;бренд косметики, созданный Зейном Обаджи, легендарным американским ученым, дерматологом с 35 летним стажем, медицинским директором компании ZO Skin Health, Inc. <br>
+                                Это линии средств для профессионального и домашнего ухода, медицинские и космецевтические продукты. Медицинские оказывают эффективное лечебное воздействие на уровне клеток, космецевтические же восстанавливают естественный потенциал кожи.
+                            </p>
+                            <div class="show-more">Показать полностью</div>
+                            <a class="btn btn-more">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="main-cosmetics_block">
+                            <div class="main-cosmetics_img">
+                                <img src="../assets/images/main/cosmetic2.webp" alt="">
+                            </div>
+                            <div class="main-cosmetics_logo">
+                                <img src="../assets/images/main/cosmetic-logo2.webp" alt="">
+                            </div>
+                            <div class="main-cosmetics_bg">
+                                <img src="../assets/images/main/cosmetic-bg.webp" alt="">
+                            </div>
+                        </a>
+                        <div class="main-cosmetics_slide-text show-content">
+                            <p class="txt18 show-text hideContent">ZО skin health by Zein Obagi –&nbsp;бренд косметики, созданный Зейном Обаджи, легендарным американским ученым, дерматологом с 35 летним стажем, медицинским директором компании ZO Skin Health, Inc. <br>
+                                Это линии средств для профессионального и домашнего ухода, медицинские и космецевтические продукты. Медицинские оказывают эффективное лечебное воздействие на уровне клеток, космецевтические же восстанавливают естественный потенциал кожи.
+                            </p>
+                            <div class="show-more">Показать полностью</div>
+                            <a class="btn btn-more">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="main-cosmetics_block">
+                            <div class="main-cosmetics_img">
+                                <img src="../assets/images/main/cosmetic3.webp" alt="">
+                            </div>
+                            <div class="main-cosmetics_logo">
+                                <img src="../assets/images/main/cosmetic-logo3.webp" alt="">
+                            </div>
+                            <div class="main-cosmetics_bg">
+                                <img src="../assets/images/main/cosmetic-bg.webp" alt="">
+                            </div>
+                        </a>
+                        <div class="main-cosmetics_slide-text show-content">
+                            <p class="txt18 show-text hideContent">ZО skin health by Zein Obagi –&nbsp;бренд косметики, созданный Зейном Обаджи, легендарным американским ученым, дерматологом с 35 летним стажем, медицинским директором компании ZO Skin Health, Inc. <br>
+                                Это линии средств для профессионального и домашнего ухода, медицинские и космецевтические продукты. Медицинские оказывают эффективное лечебное воздействие на уровне клеток, космецевтические же восстанавливают естественный потенциал кожи.
+                            </p>
+                            <div class="show-more">Показать полностью</div>
+                            <a class="btn btn-more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-cosmetics_change">
+                <div class="main-cosmetics_item active">
+                    <div class="main-cosmetics_slide-text">
+                        <p class="txt18">ZО skin health by Zein Obagi –&nbsp;бренд косметики, созданный Зейном Обаджи, легендарным американским ученым, дерматологом с 35 летним стажем, медицинским директором компании ZO Skin Health, Inc. <br>
+                            Это линии средств для профессионального и домашнего ухода, медицинские и космецевтические продукты. Медицинские оказывают эффективное лечебное воздействие на уровне клеток, космецевтические же восстанавливают естественный потенциал кожи.
+                        </p>
+                        <a class="btn btn-more">Подробнее</a>
+                    </div>
+                </div>
+                <div class="main-cosmetics_item">
+                    <div class="main-cosmetics_slide-text">
+                        <p class="txt18">ZО skin health by Zein Obagi –&nbsp;бренд косметики, созданный Зейном Обаджи, легендарным американским ученым, дерматологом с 35 летним стажем, медицинским директором компании ZO Skin Health, Inc. <br>
+                            Это линии средств для профессионального и домашнего ухода, медицинские и космецевтические продукты. Медицинские оказывают эффективное лечебное воздействие на уровне клеток, космецевтические же восстанавливают естественный потенциал кожи.
+                        </p>
+                        <a class="btn btn-more">Подробнее</a>
+                    </div>
+                </div>
+                <div class="main-cosmetics_item">
+                    <div class="main-cosmetics_slide-text">
+                        <p class="txt18">ZО skin health by Zein Obagi –&nbsp;бренд косметики, созданный Зейном Обаджи, легендарным американским ученым, дерматологом с 35 летним стажем, медицинским директором компании ZO Skin Health, Inc. <br>
+                            Это линии средств для профессионального и домашнего ухода, медицинские и космецевтические продукты. Медицинские оказывают эффективное лечебное воздействие на уровне клеток, космецевтические же восстанавливают естественный потенциал кожи.
+                        </p>
+                        <a class="btn btn-more">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pading main-cosmetics_pagination"></div>
+        <a class="btn btn-blue">Вся косметика</a>
+    </div>
+</section>
+      <section class="sign">
+  <div class="container">
+    <div class="sign_img">
+      <img src="../assets/images/sign-bg-new.webp" alt="">
+    </div>
+    <div class="sign_container">
+      <div class="sign_top">
+        <div class="sign_title h2">Запишитесь <br> на прием</div>
+        <div class="sign_subtitle txt18">Наши специалисты помогут подобрать услугу</div>
+      </div>
+      <button data-popup="#popup__feedback" class="btn btn-blue">Отправить заявку</button>
+    </div>
+  </div>
+</section>
+
+      <section class="main-map">
+    <div class="container">
+        <div class="main-map_container">
+            <div class="main-map_top">
+                <div class="main-map_title h2">Контакты клиники</div>
+                <div class="main-map_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../assets/images/main/main-map.webp" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../assets/images/main/main-space1.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-map_box">
+                <div class="main-map_list">
+                    <div class="main-map_item txt18-l"><span class="txt18">Адрес:</span>г.Черкесск, ул Первомайская, д. 8</div>
+                    <div class="main-map_item txt18-l"><span class="txt18">Режим работы:</span>Пн-вс 09:00 - 21:00  </div>
+                    <div class="main-map_item txt18-l"><span class="txt18">Телефон для записи:</span>+7 (988)-711-18-88</div>
+                </div>
+                <div class="main-map_social">
+                    <a>
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30.7195 13.2691C28.5463 11.1035 25.6488 9.90039 22.5902 9.90039C16.2317 9.90039 11.0805 15.0337 11.0805 21.3702C11.0805 23.3754 11.6439 25.3806 12.6098 27.065L11 33.0004L17.1171 31.3962C18.8073 32.2785 20.6585 32.7598 22.5902 32.7598C28.9488 32.7598 34.1 27.6264 34.1 21.29C34.0195 18.3223 32.8927 15.4348 30.7195 13.2691ZM28.1439 25.4608C27.9024 26.1025 26.7756 26.7441 26.2122 26.8243C25.7293 26.9046 25.0854 26.9046 24.4415 26.7441C24.039 26.5837 23.4756 26.4233 22.8317 26.1025C19.9341 24.8994 18.0829 22.0118 17.922 21.7712C17.761 21.6108 16.7146 20.2473 16.7146 18.8035C16.7146 17.3598 17.439 16.7181 17.6805 16.3973C17.922 16.0764 18.2439 16.0764 18.4854 16.0764C18.6463 16.0764 18.8878 16.0764 19.0488 16.0764C19.2098 16.0764 19.4512 15.9962 19.6927 16.5577C19.9341 17.1191 20.4976 18.5629 20.578 18.6431C20.6585 18.8035 20.6585 18.9639 20.578 19.1243C20.4976 19.2848 20.4171 19.4452 20.2561 19.6056C20.0951 19.766 19.9341 20.0066 19.8537 20.0868C19.6927 20.2473 19.5317 20.4077 19.6927 20.6483C19.8537 20.9691 20.4171 21.8514 21.3024 22.6535C22.4293 23.616 23.3146 23.9369 23.6366 24.0973C23.9585 24.2577 24.1195 24.1775 24.2805 24.0171C24.4415 23.8566 25.0049 23.215 25.1659 22.8941C25.3268 22.5733 25.5683 22.6535 25.8098 22.7337C26.0512 22.8139 27.5 23.5358 27.7415 23.6962C28.0634 23.8566 28.2244 23.9368 28.3049 24.0171C28.3854 24.2577 28.3854 24.8191 28.1439 25.4608Z" fill="#2E2E2E"></path>
+                        </svg>
+                    </a>
+                    <a>
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 19C11 14.5817 14.5817 11 19 11H25C29.4183 11 33 14.5817 33 19V25C33 29.4183 29.4183 33 25 33H19C14.5817 33 11 29.4183 11 25V19ZM27.8668 22.0001C27.8668 25.2402 25.2402 27.8668 22.0001 27.8668C18.76 27.8668 16.1334 25.2402 16.1334 22.0001C16.1334 18.7601 18.76 16.1335 22.0001 16.1335C25.2402 16.1335 27.8668 18.7601 27.8668 22.0001ZM27.8667 17.6001C28.6768 17.6001 29.3334 16.9435 29.3334 16.1335C29.3334 15.3234 28.6768 14.6668 27.8667 14.6668C27.0567 14.6668 26.4001 15.3234 26.4001 16.1335C26.4001 16.9435 27.0567 17.6001 27.8667 17.6001Z" fill="#2E2E2E"></path>
+                        </svg>
+                    </a>
+                    <a>
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30.7999 13.8626L27.4939 31.1217C27.4939 31.1217 27.0314 32.3183 25.7607 31.7444L18.1329 25.688L18.0976 25.6702C19.1279 24.7121 27.1175 17.2731 27.4667 16.9359C28.0073 16.4137 27.6717 16.1028 27.0441 16.4973L15.2424 24.2585L10.6893 22.672C10.6893 22.672 9.97279 22.4081 9.90385 21.8342C9.83402 21.2594 10.7129 20.9485 10.7129 20.9485L29.2744 13.408C29.2744 13.408 30.7999 12.7139 30.7999 13.8626V13.8626Z" fill="#2E2E2E"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="main-map_yandex" class="main-map_yandex"></div>
+    </div>
+</section>
+    </main>
+    <footer class="footer">
+  <div class="footer-bg"></div>
+  <div class="container">
+    <div class="footer_top">
+      <div class="footer-logo">
+        <img src="../assets/images/logo-main.svg" alt="">
+      </div>
+      <div class="footer-social">
+        <a>
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24.7195 7.26914C22.5463 5.10351 19.6488 3.90039 16.5902 3.90039C10.2317 3.90039 5.08049 9.03372 5.08049 15.3702C5.08049 17.3754 5.6439 19.3806 6.60976 21.065L5 27.0004L11.1171 25.3962C12.8073 26.2785 14.6585 26.7598 16.5902 26.7598C22.9488 26.7598 28.1 21.6264 28.1 15.29C28.0195 12.3223 26.8927 9.43476 24.7195 7.26914ZM22.1439 19.4608C21.9024 20.1025 20.7756 20.7441 20.2122 20.8243C19.7293 20.9046 19.0854 20.9046 18.4415 20.7441C18.039 20.5837 17.4756 20.4233 16.8317 20.1025C13.9341 18.8994 12.0829 16.0118 11.922 15.7712C11.761 15.6108 10.7146 14.2473 10.7146 12.8035C10.7146 11.3598 11.439 10.7181 11.6805 10.3973C11.922 10.0764 12.2439 10.0764 12.4854 10.0764C12.6463 10.0764 12.8878 10.0764 13.0488 10.0764C13.2098 10.0764 13.4512 9.99622 13.6927 10.5577C13.9341 11.1191 14.4976 12.5629 14.578 12.6431C14.6585 12.8035 14.6585 12.9639 14.578 13.1243C14.4976 13.2848 14.4171 13.4452 14.2561 13.6056C14.0951 13.766 13.9341 14.0066 13.8537 14.0868C13.6927 14.2473 13.5317 14.4077 13.6927 14.6483C13.8537 14.9691 14.4171 15.8514 15.3024 16.6535C16.4293 17.616 17.3146 17.9369 17.6366 18.0973C17.9585 18.2577 18.1195 18.1775 18.2805 18.0171C18.4415 17.8566 19.0049 17.215 19.1659 16.8941C19.3268 16.5733 19.5683 16.6535 19.8098 16.7337C20.0512 16.8139 21.5 17.5358 21.7415 17.6962C22.0634 17.8566 22.2244 17.9368 22.3049 18.0171C22.3854 18.2577 22.3854 18.8191 22.1439 19.4608Z" fill="white"></path>
+          </svg>
+        </a>
+        <a>
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 13C5 8.58172 8.58172 5 13 5H19C23.4183 5 27 8.58172 27 13V19C27 23.4183 23.4183 27 19 27H13C8.58172 27 5 23.4183 5 19V13ZM21.8668 16.0001C21.8668 19.2402 19.2402 21.8668 16.0001 21.8668C12.76 21.8668 10.1334 19.2402 10.1334 16.0001C10.1334 12.7601 12.76 10.1335 16.0001 10.1335C19.2402 10.1335 21.8668 12.7601 21.8668 16.0001ZM21.8667 11.6001C22.6768 11.6001 23.3334 10.9435 23.3334 10.1335C23.3334 9.32345 22.6768 8.6668 21.8667 8.6668C21.0567 8.6668 20.4001 9.32345 20.4001 10.1335C20.4001 10.9435 21.0567 11.6001 21.8667 11.6001Z" fill="white"></path>
+          </svg>
+        </a>
+        <a>
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24.7999 7.86264L21.4939 25.1217C21.4939 25.1217 21.0314 26.3183 19.7607 25.7444L12.1329 19.688L12.0976 19.6702C13.1279 18.7121 21.1175 11.2731 21.4667 10.9359C22.0073 10.4137 21.6717 10.1028 21.0441 10.4973L9.24237 18.2585L4.6893 16.672C4.6893 16.672 3.97279 16.4081 3.90385 15.8342C3.83402 15.2594 4.71289 14.9485 4.71289 14.9485L23.2744 7.40804C23.2744 7.40804 24.7999 6.71392 24.7999 7.86264Z" fill="white"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="footer_top-list txt16">
+        <a>Наши услуги</a>
+        <a>О клинике</a>
+        <a>Оборудование</a>
+        <a>Специалисты</a>
+        <a>Косметика</a>
+        <a>Подарочные сертификаты</a>
+      </div>
+      <div class="footer_top-list txt16">
+        <a>Правовые документы</a>
+        <a>Как добраться</a>
+        <a>Блог</a>
+        <a>Наши партнеры</a>
+      </div>
+      <div class="footer_top-list txt16">
+        <a>Политика конфиденциальности</a>
+        <a>Политика обработки данных</a>
+      </div>
+      <div class="footer_top-infos ">
+        <div class="footer_top-info">
+          <span class="txt16">Адрес:</span>
+          <span class="txt16-l">г.Черкесск, ул Первомайская, д. 8</span>
+        </div>
+        <div class="footer_top-info">
+          <span class="txt16">Режим работы:</span>
+          <span class="txt16-l">Пн-вс 09:00 - 21:00  </span>
+        </div>
+        <div class="footer_top-info">
+          <span class="txt16">Телефон для записи: </span>
+          <a href="tel:+79887111888" class="txt16-l">+7 (988)-711-18-88</a>
+        </div>
+        <div class="footer_top-info">
+          <span class="txt16">Email: </span>
+          <a href="mailto: aestetik@aestetik.pro" class="txt16-l">aestetik@aestetik.pro</a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="footer_bottom">
+      <div class="footer_bottom-protect txt16">ООО  "АЕСТЕТИК КЛИНИКА ВРАЧЕБНОЙ КОСМЕТОЛОГИИ, ДЕРМАТОЛОГИИ И ТРИХОЛОГИИ".  Все права защищены</div>
+      <div class="rd-logo">
+        <img src="../assets/images/requestdesign-logo.svg" alt="">
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script>
+      initMap();
+      async function initMap() {
+        // Промис `ymaps3.ready` будет зарезолвлен, когда загрузятся все компоненты основного модуля API
+        await ymaps3.ready;
+
+        const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapMarker } = ymaps3;
+
+        // Иницилиазируем карту
+        const map = new YMap(
+          document.getElementById('main-map_yandex'),
+
+          // Передаём параметры инициализации карты
+          {
+            location: {
+              // Координаты центра карты
+              center: [37.44078981889843, 55.69098010599467],
+
+              // Уровень масштабирования
+              zoom: 12
+            }
+          }
+        );
+        map.addChild(new YMapDefaultFeaturesLayer());
+        const content = document.createElement('div');
+        content.className = 'main-map_yandex-box';
+        content.innerHTML = `<img src="../assets/images/icon/map-icon.webp" alt="">`;
+        const marker = new YMapMarker(
+          {
+            coordinates: [37.44078981889843, 55.69098010599467]
+          },
+          content
+        );
+
+        map.addChild(marker);
+        map.addChild(new YMapDefaultSchemeLayer());
+      }
+    
+     
+    
+    </script>
+  </body>
+</html>

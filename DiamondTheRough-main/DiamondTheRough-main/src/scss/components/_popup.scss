@@ -1,0 +1,305 @@
+body::before {
+    content: '';
+    position: fixed;
+    z-index: 250;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.8s ease 0s;
+    background: rgba(66, 66, 66, 0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+.popup-show body::before {
+    opacity: 1;
+}
+.popup_show {
+    z-index: 300;
+    visibility: visible !important;
+    overflow: auto;
+    pointer-events: auto;
+}
+.popup_show .popup__content {
+    visibility: visible;
+    transform: scale(1);
+}
+
+// --------------------------------------------------------------------------
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 3rem 2rem;
+    visibility: hidden;
+    // pointer-events: none;
+    transition: visibility 0.8s ease 0s;
+
+    ._loaded & {
+        display: block;
+    }
+
+    // .popup__wrapper
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1 1 auto;
+        min-height: 100%;
+        width: 100%;
+        // @media (max-width: 48em) {
+        //     overflow-y: scroll;
+        // }
+    }
+
+    // .popup__content
+
+    &__content {
+        width: 100%;
+        // max-width: 127.8rem;
+        max-width: fit-content;
+        background-color: $Beige;
+        border-radius: 4rem;
+        visibility: hidden;
+        transform: scale(0);
+        transition: transform 0.3s ease 0s;
+        position: relative;
+        .lock & {
+            visibility: visible;
+        }
+
+        // @media (max-width: 48em) {
+        //     border-radius: 3.6rem;
+        // }
+    }
+
+    // .popup__body
+
+    &__body {
+        padding: 10rem 23rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+        align-items: center;
+        color: $green;
+        @media (max-width: 48em) {
+            padding: 18rem 4rem;
+            gap: 6rem;
+        }
+    }
+
+    &__fields {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        @media (max-width: 48em) {
+            gap: 3rem;
+        }
+    }
+
+    // .popup__body-close-btn
+
+    &__body-close-btn {
+        position: absolute;
+        width: 6rem;
+        height: 6rem;
+        top: 2.4rem;
+        right: 2.4rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        color: $green;
+        border: solid 0.1rem $green;
+        & svg {
+            width: 3.2rem;
+            height: 3.2rem;
+            object-fit: contain;
+            pointer-events: none;
+        }
+        @media (max-width: 48em) {
+            width: 8rem;
+            height: 8rem;
+            top: 4.4rem;
+            right: 4.4rem;
+            & svg {
+                width: 4.4rem;
+                height: 4.4rem;
+            }
+        }
+    }
+
+    // .popup__body-title
+
+    &__body-title {
+    }
+
+    // .popup__body-form
+
+    &__body-form {
+    }
+
+    // .popup__body-btn
+
+    &__body-btn {
+        @media (max-width: 48em) {
+            // margin-top: 2.4rem;
+        }
+        & span {
+            pointer-events: none;
+        }
+    }
+
+    // ---------------------------------------success----------------------------
+
+    // .popup__success
+
+    &__success {
+    }
+
+    // .popup__body--success
+
+    &__body--success {
+        width: 119.7rem;
+        padding: 10rem 23rem;
+        gap: 5.2rem;
+        @media (max-width: 48em) {
+            padding: 18rem 4rem;
+            width: 70rem;
+            gap: 4rem;
+        }
+    }
+
+    // .popup__body--success-title
+
+    &__body--success-title {
+        text-align: center;
+    }
+    &__body--success-title-review {
+        width: 57.7rem;
+        @media (max-width: 48em) {
+            width: 100%;
+        }
+    }
+
+    // .popup__body--success-btn
+
+    &__body--success-btn {
+        @media (max-width: 48em) {
+            margin-top: 4rem;
+        }
+    }
+
+    // ---------------------------------------application----------------------------
+
+    // .popup__body-application
+
+    &__body-application {
+        width: 99.7rem;
+        padding: 10rem 23rem;
+        @media (max-width: 48em) {
+            padding: 18rem 4rem;
+            width: 70rem;
+        }
+    }
+
+    // .popup__application-header-box
+
+    &__application-header-box {
+        width: 58.4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 5.2rem;
+        align-items: center;
+        text-align: center;
+        @media (max-width: 48em) {
+            width: 53rem;
+            text-align: left;
+            align-items: flex-start;
+            gap: 4rem;
+        }
+    }
+
+    // .popup__application-title
+
+    &__application-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    // .popup__application-text
+
+    &__application-text {
+        text-align: center;
+        br {
+            @media (max-width: 48em) {
+                display: none;
+            }
+        }
+    }
+
+    // .popup__application-form
+
+    &__application-form {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        @media (max-width: 48em) {
+            width: 100%;
+            gap: 4rem;
+        }
+    }
+
+    // .popup__application-input-group
+
+    &__application-input-group {
+    }
+
+    // .popup__application-form-input-wrapper
+
+    &__application-form-input-wrapper {
+        width: 100%;
+    }
+
+    // .popup__application-input
+
+    &__application-input {
+        padding: 1.6rem 0rem;
+        width: 100%;
+    }
+
+    // .popup__application-subtitle
+
+    &__application-subtitle {
+        margin-top: 3.2rem;
+        width: 53.5rem;
+        text-align: center;
+    }
+
+    // .popup__application-form-button
+
+    &__application-form-button {
+        margin-top: 1rem;
+        span {
+            @media (max-width: 48em) {
+                display: none;
+            }
+        }
+        span.mob {
+            display: none;
+            @media (max-width: 48em) {
+                display: block;
+            }
+        }
+    }
+
+}

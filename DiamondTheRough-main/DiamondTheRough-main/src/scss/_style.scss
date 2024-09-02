@@ -1,0 +1,45 @@
+@import './mixins';
+
+// colors
+$white: #ffffff;
+$black: #000000;
+$body-color: #e5e5e5;
+$grey: #787878;
+$grey-text: #24231f;
+
+// body
+body {
+  background-color: $body-color;
+  &.lock {
+    overflow: hidden;
+    touch-action: none;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+// main
+main {
+  flex-grow: 1;
+}
+
+@import './ui/ui';
+@import './components/_header';
+@import './components/_footer';
+// section {
+//   padding: 15rem 0;
+//   @media (max-width: 48em) {
+//       padding: 18rem 0;
+//   }
+//   &._first {
+//       padding: 0 0 15rem;
+//       @media (max-width: 48em) {
+//           padding: 0 0 18rem;
+//       }
+//   }
+// }

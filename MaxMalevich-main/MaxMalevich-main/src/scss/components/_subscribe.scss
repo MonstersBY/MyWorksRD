@@ -1,0 +1,82 @@
+.subscribe {
+	&__title {
+		font-family: 'Roboto';
+		font-size: 3.6rem;
+		line-height: 4.2rem;
+		text-transform: uppercase;
+		margin: 0 auto 6rem;
+		text-align: center;
+		max-width: 110rem;
+	}
+
+	&__row {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		column-gap: 1.2rem;
+	}
+
+	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 5.4rem;
+		height: 5.4rem;
+		border-radius: 50%;
+		border: 1px solid rgb(255, 255, 255, 0.2);
+
+		img {
+			width: 3.2rem;
+			height: 3.2rem;
+		}
+	}
+
+	@media (max-width: 75em) {
+		&__title {
+			font-size: 7.2rem;
+			line-height: 8.4rem;
+			max-width: none;
+			margin-bottom: 12rem;
+			font-weight: 300;
+		}
+
+		&__row {
+			column-gap: 2.4rem;
+		}
+
+		&__link {
+			width: 10.8rem;
+			height: 10.8rem;
+
+			img {
+				width: 6.4rem;
+				height: 6.4rem;
+			}
+		}
+	}
+
+	@media (max-width: 47.9375em) {
+		&__title {
+			text-align: left;
+			font-size: 4rem;
+			line-height: 4.6rem;
+			margin-bottom: 6.4rem;
+		}
+
+		&__row {
+            row-gap: 2.4rem;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+		}
+
+		&__icon {
+			width: 9.6rem;
+			height: 9.6rem;
+
+			img {
+				width: 5.2rem;
+				height: 5.2rem;
+			}
+		}
+	}
+}

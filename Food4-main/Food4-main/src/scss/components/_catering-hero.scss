@@ -1,0 +1,156 @@
+.catering-hero {
+  // .catering-hero__inner
+
+  &__inner {
+    display: flex;
+    position: relative;
+    gap: 3.3rem;
+  @include small-tablet {
+      flex-direction: column-reverse;
+      padding-bottom: 38rem;
+      gap: 5.6rem;
+    }
+  }
+
+  // .catering-hero__circle
+
+  &__circle {
+    position: absolute;
+    right: 0;
+    top: 0;
+  @include small-tablet {
+        top: 2rem;
+      }
+  }
+
+  // .catering-hero__img-box
+
+  &__img-box {
+    border-radius: 7rem;
+    overflow: hidden;
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  // .catering-hero__img-box--big
+
+  &__img-box--big {
+    width: 63.1rem;
+    height: 70rem;
+  @include small-tablet {
+      width: 68.6rem;
+      height: 76rem;
+    }
+  }
+
+  // .catering-hero__info-box
+
+  &__info-box {
+    width: 55rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  @include small-tablet {
+      width: 100%;
+    }
+  }
+
+  // .catering-hero__info-title-box
+
+  &__info-title-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    padding-top: 13rem;
+  @include small-tablet {
+      width: 44.2rem;
+      gap: 4rem;
+      padding-top: 0;
+    }
+  }
+
+  // .catering-hero__info-title
+
+  &__info-title {
+  }
+
+  // .catering-hero__info-desk
+
+  &__info-desk {
+    &--mob {
+        display: none;
+    }
+  @include small-tablet {
+        &--desk {
+            display: none;
+        }
+        &--mob {
+            display: block;
+        }  
+    }
+  }
+
+  // .catering-hero__info-form
+
+  &__info-form {
+    width: 45.8rem;
+    border-radius: 7rem;
+    border: 1px solid $white;
+    padding: 4.6rem;
+    backdrop-filter: blur(36px);
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  @include small-tablet {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      padding: 5.2rem 3.2rem;
+      gap: 4rem;
+    }
+  }
+
+  // .catering-hero__info-form-title
+
+  &__info-form-title {
+  }
+
+  // .catering-hero__input-group
+
+  &__input-group {
+  }
+
+  // .catering-hero__form-input-wrapper
+
+  &__form-input-wrapper {
+  }
+
+  // .catering-hero__input
+
+  &__input {
+  }
+
+  // .catering-hero__item-desk-link
+
+  &__item-desk-link {
+  }
+
+  // .catering-hero__img-box--min
+
+  &__img-box--min {
+    width: 19.8rem;
+    height: 18rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 4rem;
+  @include small-tablet {
+      display: none;
+    }
+  }
+}

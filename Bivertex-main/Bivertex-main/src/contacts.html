@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://api-maps.yandex.ru/v3/?apikey=cb93da52-9741-4ffe-86ea-93a91ce99a1c&lang=ru_RU"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header" id="header">
+        <include src="./components/_header.html"></include>
+      </header>
+      <include src="./components/_popup.html"></include>
+      <main>
+        <include src="./components/_arrow-top.html"></include>
+        <include src="./components/_contacts.html"></include>
+      </main>
+      <include src="./components/_footer.html"></include>
+    </div>
+  </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      initMap();
+    });
+    async function initMap() {
+      // Промис `ymaps3.ready` будет зарезолвлен, когда загрузятся все компоненты основного модуля API
+      if (typeof ymaps3 !== 'undefined') {
+        await ymaps3.ready;
+        const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapMarker } = ymaps3;
+
+        // Initialize the map
+        let map = new YMap(
+          // Pass the link to the HTMLElement of the container
+          document.getElementById('contacts-map'),
+          // Pass the map initialization parameters
+          {
+            location: {
+              // Координаты центра карты
+              center: [37.628144, 55.733842],
+
+              // Уровень масштабирования
+              zoom: 12
+            }
+          },
+          [
+            // Add a map scheme layer
+            new YMapDefaultSchemeLayer({}),
+            // Add a layer of geo objects to display the markers
+            new YMapDefaultFeaturesLayer({})
+          ]
+        );
+
+        // Create markers with a custom icon and add them to the map
+
+        const markerElement = document.createElement('img');
+        markerElement.className = 'contacts__map-icon';
+        markerElement.src = '../../assets/images/map-icon.svg';
+        map.addChild(new YMapMarker({ coordinates: [37.588144, 55.733842] }, markerElement));
+      }
+    }
+  </script>
+</html>

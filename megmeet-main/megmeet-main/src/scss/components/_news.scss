@@ -1,0 +1,221 @@
+.news {
+  // .news__inner
+  margin-top: 4rem;
+  @include small-tablet {
+    margin-top: 9.6rem;
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    @include small-tablet {
+      margin-top: 5rem;
+    }
+  }
+
+  // .news__title
+
+  &__title {
+    @include small-tablet {
+      font-size: 6.8rem;
+    }
+  }
+
+  // .news__list-wrapper
+
+  &__list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    @include small-tablet {
+      gap: 6.4rem;
+    }
+  }
+
+  // .news__tabs-box
+
+  &__tabs-box {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    @include small-tablet {
+      width: 75rem;
+      overflow: auto;
+      margin: 0 -2rem;
+      padding: 0 2rem;
+      gap: 3.2rem;
+      &::-webkit-scrollbar,
+      &::-webkit-scrollbar-track,
+      &::-webkit-scrollbar-thumb {
+        display: none;
+      }
+    }
+  }
+
+  // .news__tab
+
+  &__tab {
+    position: relative;
+    width: 28.2rem;
+    text-align: center;
+    color: $gray-text;
+    text-transform: uppercase;
+    -webkit-clip-path: polygon(8% 0%, 100% 0%, 100% 0%, 100% 70%, 92% 100%, 0% 100%, 0% 100%, 0% 30%);
+    -moz-clip-path: polygon(8% 0%, 100% 0%, 100% 0%, 100% 70%, 92% 100%, 0% 100%, 0% 100%, 0% 30%);
+    clip-path: polygon(8% 0%, 100% 0%, 100% 0%, 100% 70%, 92% 100%, 0% 100%, 0% 100%, 0% 30%);
+    background-color: $gray-text;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.15rem;
+    transition: color 0.3s, background-color 0.3s;
+    &.active {
+      color: $black;
+      background-color: $green;
+    }
+    @include small-tablet {
+      width: fit-content;
+      flex-shrink: 0;
+      padding-bottom: 0.2rem;
+    }
+  }
+
+  // .news__tab-text
+
+  &__tab-text {
+    -webkit-clip-path: polygon(8% 0%, 100% 0%, 100% 0%, 100% 70%, 92% 100%, 0% 100%, 0% 100%, 0% 30%);
+    -moz-clip-path: polygon(8% 0%, 100% 0%, 100% 0%, 100% 70%, 92% 100%, 0% 100%, 0% 100%, 0% 30%);
+    clip-path: polygon(8% 0%, 100% 0%, 100% 0%, 100% 70%, 92% 100%, 0% 100%, 0% 100%, 0% 30%);
+    background-color: $background;
+    padding: 2.3rem 1.6rem 2.4rem 1.6rem;
+    width: calc(100% - 0.15rem);
+    @include small-tablet {
+      white-space: nowrap;
+      font-size: 3rem;
+      padding: 3.2rem 7rem;
+    }
+  }
+
+  // .news__list-box
+
+  &__list-box {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    @include small-tablet {
+      gap: 6.4rem;
+    }
+  }
+
+  // .news__list
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    @include small-tablet {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // .news__item
+
+  &__item {
+  }
+
+  // .news__inner
+
+  &__inner {
+  }
+
+  // .news__img-box
+
+  &__img-box {
+    @include small-tablet {
+      width: 71rem;
+      height: 49.2rem;
+    }
+  }
+
+  // .news__content-box
+
+  &__content-box {
+    @include small-tablet {
+      margin-top: -7rem;
+    }
+  }
+
+  // .news__time
+
+  &__time {
+  }
+
+  // .news__text-box
+
+  &__text-box {
+  }
+
+  // .news__title
+
+  &__title {
+  }
+
+  // .news__desc
+
+  &__desc {
+  }
+
+  // .news__row
+
+  &__row {
+  }
+
+  // .news__category
+
+  &__category {
+  }
+
+  // .news__signature
+
+  &__signature {
+  }
+
+  // .news__btn
+
+  &__btn {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    @include small-tablet {
+      align-self: flex-start;
+      gap: 1.6rem;
+    }
+  }
+
+  // .news__btn-text
+
+  &__btn-text {
+    text-transform: uppercase;
+    color: $green;
+    @include small-tablet {
+      font-size: 3.2rem;
+    }
+  }
+
+  // .news__btn-svg-box
+
+  &__btn-svg-box {
+    width: 4.2rem;
+    height: 1.7rem;
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include small-tablet {
+      width: 8.4rem;
+      height: 3.4rem;
+    }
+  }
+}

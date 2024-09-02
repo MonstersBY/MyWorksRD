@@ -1,0 +1,95 @@
+.tl1 {
+  font-family: 'Steelfish';
+  font-weight: 400;
+  font-size: 26.5rem;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  @media (max-width: 48em) {
+  }
+}
+.tl2 {
+  font-family: 'Steelfish';
+  font-weight: 400;
+  font-size: 19rem;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  @media (max-width: 48em) {
+  }
+}
+
+// --------------------------------------------------------------------------
+
+.txt60 {
+  font-family: 'Steelfish';
+  font-weight: 400;
+  font-size: 6rem;
+  line-height: 100%;
+  @include small-tablet {
+  }
+}
+.txt40 {
+  font-family: 'Steelfish';
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+  @include small-tablet {
+  }
+}
+.txt36 {
+  font-family: 'Steelfish';
+  font-weight: 400;
+  font-size: 3.6rem;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+  @include small-tablet {
+  }
+}
+.txt30 {
+  font-family: 'Steelfish';
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+  @include small-tablet {
+  }
+  &--lh {
+    line-height: 116%;
+  }
+}
+.txt20 {
+  font-family: 'Steelfish';
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+  @include small-tablet {
+  }
+}
+.txt18 {
+  font-family: 'Mont';
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  @include small-tablet {
+  }
+  &--lh {
+    line-height: 150%;
+  }
+  &--bold {
+    font-weight: 600;
+  }
+}
+
+.txt16 {
+  font-family: 'Mont';
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 100%;
+  letter-spacing: 0.1em;
+  @include small-tablet {
+  }
+}

@@ -1,0 +1,86 @@
+.how-order {
+  background-color: $LightGreen;
+  &__title {
+    text-align: center;
+    color: $green;
+    margin-bottom: 8rem;
+    @include small-tablet {
+      width: 38rem;
+      margin: 0 auto 8rem auto;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    @include small-tablet {
+      gap: 4.5rem;
+    }
+  }
+  &__item {
+    width: 75rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: $Beige;
+    border-radius: 2rem;
+    &-num {
+      position: relative;
+      width: 17rem;
+      height: 13rem;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      @include small-tablet {
+        align-items: flex-start;
+      }
+      &-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        @include small-tablet {
+          transform: rotate(180deg) scale(-1, 1);
+        }
+      }
+      &-text {
+        color: $Beige;
+        margin-bottom: 1.8rem;
+        position: relative;
+        z-index: 1;
+        @include small-tablet {
+          margin-top: 1.3rem;
+        }
+      }
+    }
+    &-info {
+      display: flex;
+      justify-content: space-between;
+      padding: 3rem 5rem 3rem 0;
+      @include small-tablet {
+        padding: 3rem;
+      }
+      &-content {
+        width: 36rem;
+        margin-right: 5rem;
+        @include small-tablet {
+          margin: 0;
+          width: 45.5rem;
+        }
+      }
+      &-title {
+        color: $green;
+        margin-bottom: 0.8rem;
+      }
+      &-subtitle {
+        color: $textAndLine;
+      }
+      &-img {
+        width: 6.6rem;
+        height: 6.6rem;
+        @include small-tablet {
+          display: none;
+        }
+      }
+    }
+  }
+}

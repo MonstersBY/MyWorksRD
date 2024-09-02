@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <include src="./components/_header.html"></include>
+      <include src="./components/_popup.html"></include>
+      <main>
+        <section class="contacts">
+          <div class="container contacts__container">
+            <div class="contacts__bg">
+              <img src="./assets/images/modal-bg.svg" alt="" />
+            </div>
+            <div class="contacts__inner">
+              <ul class="contacts__list">
+                <li class="contacts__item contacts__item--tel">
+                  <a href="tel:+74951650778" class="contacts__item-inner">
+                    <span class="contacts__item-text txt16">Телефон</span>
+                    <span class="contacts__item-info txt30">+7 495 165 - 07 - 78</span>
+                  </a>
+                </li>
+                <li class="contacts__item contacts__item--mail">
+                  <a href="mailto:info@ivansavelich.ru" class="contacts__item-inner">
+                    <span class="contacts__item-text txt16">E-mail</span>
+                    <span class="contacts__item-info txt30">info@ivansavelich.ru</span>
+                  </a>
+                </li>
+                <li class="contacts__item contacts__item--adress">
+                  <div class="contacts__item-inner">
+                    <span class="contacts__item-text txt16">Адрес</span>
+                    <span class="contacts__item-info txt30">улица Генерала Белова 8, Москва</span>
+                  </div>
+                </li>
+              </ul>
+              <div class="contacts__title-box">
+                <p class="contacts__title tl1">наши контакты</p>
+                <div class="contacts__img-wrapper">
+                  <div class="contacts__img-box">
+                    <img src="./assets/images/contacts-img.webp" alt="" />
+                  </div>
+                  <button data-popup="#popup__feedback" class="contacts__btn">
+                    <div class="contacts__btn-img-box">
+                      <img src="./assets/images/star.svg" alt="" />
+                    </div>
+                    <p class="contacts__btn-text txt36">Оставить заявку</p>
+                    <div class="contacts__btn-img-box">
+                      <img src="./assets/images/star.svg" alt="" />
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="contacts__text-wrapper">
+                <div class="contacts__text-img-box">
+                  <img src="./assets/images/contacts-leaves.webp" alt="" />
+                </div>
+                <div class="contacts__text-box">
+                  <p class="contacts__text-title txt36">Натуральное мороженое и профессиональный сервис</p>
+                  <p class="contacts__text-desk txt18">
+                    качество является главным приоритетом, воплощаясь в каждой детали и рецепте
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <include src="./components/_footer.html"></include>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,198 @@
+.service-head {
+  font-family: 'Jura';
+  padding-top: 22.1rem;
+  margin-bottom: 27.2rem;
+
+  &__container {
+    width: 162.6rem;
+  }
+
+  &__top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18.2rem;
+  }
+
+  &__info {
+    position: relative;
+    width: 41.1rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -1.6rem;
+      left: 0;
+      width: 100%;
+      height: 0.4rem;
+      background-color: $grey;
+    }
+
+    &-head {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5.6rem;
+    }
+
+    &-title {
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 3rem;
+      text-transform: uppercase;
+    }
+
+    &-number {
+      color: $grey;
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 3rem;
+    }
+
+    &-list {
+      max-width: 37.7rem;
+
+      li {
+        color: $grey;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 3rem;
+      }
+    }
+
+    &-img {
+      position: absolute;
+      top: -30.1rem;
+      left: 26.6rem;
+      width: 109.6rem;
+      height: 69.2rem;
+      z-index: -1;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__type {
+    &-title {
+      font-size: 5rem;
+      margin-bottom: 2rem;
+    }
+
+    &-text {
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 2rem;
+    }
+  }
+
+  &__title {
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 5.9rem;
+    max-width: 70rem;
+    text-align: center;
+
+    &.small-width {
+      max-width: 62rem;
+    }
+  }
+
+  @media (max-width: 48em) {
+    padding-top: 10rem;
+    margin-bottom: 24rem;
+
+    &__container {
+      display: flex;
+      flex-direction: column-reverse;
+      overflow-x: hidden;
+    }
+
+    &__top {
+      margin-bottom: 0;
+    }
+
+    &__bottom {
+      position: relative;
+      flex-direction: column;
+      margin-bottom: 74.12rem;
+      row-gap: 5.4rem;
+    }
+
+    &__title {
+      max-width: 59rem;
+    }
+
+    &__info {
+      width: 31.44rem;
+
+      &::before {
+        top: 5.4rem;
+        height: 0.6rem;
+      }
+
+      &-head {
+        flex-direction: column-reverse;
+        row-gap: 4.6rem;
+        margin-bottom: 1.6rem;
+      }
+
+      &-number,
+      &-title {
+        font-size: 2.8rem;
+        font-weight: 600;
+        line-height: 3.4rem;
+      }
+
+      &-list {
+        li {
+          font-size: 2.8rem;
+          font-weight: 600;
+          line-height: 3.4rem;
+        }
+      }
+
+      &-img {
+        left: -13.8rem;
+        top: -79.002rem;
+        width: 96.8rem;
+        height: 61.12rem;
+      }
+    }
+
+    &__type {
+      position: absolute;
+      bottom: -66.32rem;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row-reverse;
+      column-gap: 6rem;
+
+      &-title {
+        font-size: 5.8rem;
+        font-weight: 600;
+        line-height: 7rem;
+        margin: 0;
+        width: 34.4rem;
+      }
+
+      &-text {
+        font-size: 2.8rem;
+        font-weight: 600;
+        line-height: 3.4rem;
+        text-align: right;
+        width: 31.4rem;
+      }
+    }
+  }
+}

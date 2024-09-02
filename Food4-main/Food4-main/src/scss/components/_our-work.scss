@@ -1,0 +1,165 @@
+.our-work {
+  // .our-work__inner
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    @include small-tablet {
+        gap: 4rem;
+        flex-direction: column;
+    }
+  }
+
+  // .our-work__header-box
+
+  &__header-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // .our-work__title
+
+  &__title {
+  }
+
+  // .our-work__item-desk-link
+
+  &__item-desk-link {
+    @include small-tablet {
+       display: none;
+    }
+  }
+
+  // .our-work__content-box
+
+  &__content-box {
+    display: flex;
+    gap: 16.5rem;
+    @include small-tablet {
+       flex-direction: column;
+       gap: 5.6rem;
+     }
+  }
+
+  // .our-work__desk-box
+
+  &__desk-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 63rem;
+    flex-shrink: 0;
+    @include small-tablet {
+     width: 100%;
+     gap: 5.6rem;
+      }
+  }
+
+  // .our-work__desk
+
+  &__desk {
+  }
+
+  // .our-work__img-box
+
+  &__img-box {
+    border-radius: 7rem;
+    width: 49.9rem;
+    height: 47.2rem;
+    overflow: hidden;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include small-tablet {
+        border-radius: 7.2rem;
+        width: 68.6rem;
+        height: 64.8rem;
+         }
+  }
+
+  // .our-work__list
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+    @include small-tablet {
+        grid-template-columns:  1fr;
+        gap: 1.6rem;
+         }
+  }
+
+  // .our-work__item
+
+  &__item {
+    border-radius: 7rem;
+    overflow: hidden;
+    &:not(.our-work__item--img) {
+      padding: 4.6rem;
+      border: 1px solid $white;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+    @include small-tablet {
+        padding: 5.2rem 3.2rem;
+        gap: 1.6rem;
+    }
+  }
+
+  // .our-work__item-title
+
+  &__item-title {
+    padding-left: 1.8rem;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: $Blue;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      left: 0;
+      top: 1.1rem;
+
+    }
+    @include small-tablet {
+        padding-left: 3.6rem;
+        &::before {
+          width: 2rem;
+          height: 2rem;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+  }
+
+  // .our-work__item-desk
+
+  &__item-desk {
+  }
+
+  // .our-work__item--img
+
+  &__item--img {
+    @include small-tablet {
+       display: none;
+         }
+  }
+
+  // .our-work__item-img-box
+
+  &__item-img-box {
+    width: 100%;
+    height: 100%;
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+  }
+}

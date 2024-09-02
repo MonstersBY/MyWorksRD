@@ -1,0 +1,159 @@
+<section class="application">
+  <div class="container">
+    <div class="application__inner-wrapper">
+      <div class="application__inner">
+        <p class="application__title tl1"><span>Хотите работать с нами?</span></p>
+        <div class="application__form-wrapper">
+          <form data-popup-message="#popup__success" data-dev action="" class="application__form application__summary-form popup--form">
+            <p class="application__form-title txt20">
+              <span> Оставьте заявку с вашим резюме и мы свяжемся с вами в ближайшее время</span>
+            </p>
+            <div class="application__form-input-wrapper">
+              <div class="application__form-input-box txt20">
+                <label class="application__label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input--name application__form-input"
+                      type="text"
+                      data-validate
+                      data-required="name"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                    <span class="placeholder">Имя<span>*</span></span>
+                  </span>
+                  <span class="error-span">Данное значение должно состоять из букв</span>
+                </label>
+                <label class="application__label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input--name application__form-input"
+                      type="text"
+                      data-validate
+                      data-required="name"
+                      autocomplete="off"
+                      name="form[]"
+                    />
+                    <span class="placeholder">Фамилия<span>*</span></span>
+                  </span>
+                  <span class="error-span">Данное значение должно состоять из букв</span>
+                </label>
+                <label class="application__label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                    class="input--mail application__form-input"
+                    type="text"
+                    data-validate
+                    data-required="email"
+                    autocomplete="off"
+                    name="form[]"
+                  />
+                  <span class="placeholder">Электронная почта<span>*</span></span>
+                  </span>
+                  <span class="error-span">Введите электронную почту</span>
+                </label>
+                <label class="application__label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input--tel application__form-input phone-mask"
+                      type="text"
+                      autocomplete="off"
+                      name="form[]"
+                      placeholder="Телефон"
+                    />
+                
+                  </span>
+                  <span class="error-span">Введите номер целиком</span>
+                </label>
+
+                <label class="application__label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="application__form-input"
+                      type="text"
+                      autocomplete="off"
+                      name="form[]"
+                      placeholder="Вакансия"
+                    />
+      
+                  </span>
+                  <span class="error-span">Данное значение должно состоять из букв</span>
+                </label>
+
+                <label class="application__label input-group">
+                  <span class="form__input-wrapper">
+                    <input
+                      class="input--date application__form-input"
+                      type="text"
+                      placeholder="Дата потенциального выхода"
+                    />
+                  </span>
+                  <span class="error-span"></span>
+                </label>
+
+
+                <div class="popup__file-box">
+                  <label class="popup__label-input-file label-input-file">
+                    <input class="popup__input-file input-file" type="file" multiple="" name="file_application-project" />
+                    <span class="popup__label-input-file-text-wrapper label-input-file-text-wrapper">
+                      <span class="popup__label-input-file-svg-box label-input-file-svg-box">
+                        <svg
+                          width="44"
+                          height="45"
+                          viewBox="0 0 44 45"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M27.9492 18.886L20.3829 26.4523"
+                            stroke="#00A499"
+                            stroke-width="2"
+                            stroke-linecap="square"
+                          />
+                          <path
+                            d="M21.1923 13.7486L24.2757 10.6652C27.4976 7.44335 32.7212 7.44335 35.943 10.6652L36.1652 10.8873C39.387 14.1092 39.387 19.3328 36.1652 22.5546L33.0817 25.638"
+                            stroke="#00A499"
+                            stroke-width="2"
+                            stroke-linecap="square"
+                          />
+                          <path
+                            d="M27.1397 31.5873L24.0563 34.6708C20.8345 37.8926 15.6109 37.8926 12.389 34.6708L12.1669 34.4486C8.94503 31.2268 8.94503 26.0032 12.1669 22.7813L15.2503 19.6979"
+                            stroke="#00A499"
+                            stroke-width="2"
+                            stroke-linecap="square"
+                          />
+                        </svg>
+                      </span>
+                      <span class="popup__label-input-file-text-box label-input-file-text-box">
+                        <span class="popup__label-input-file-text-title label-input-file-text-title txt20"
+                          >Прикрепите ваше резюме</span
+                        >
+                        <span class="popup__label-input-file-text-type label-input-file-text-type"
+                          >PDF, JPG, JPEG, PNG. Размер до 20 Мбайт</span
+                        >
+                      </span>
+                    </span>
+                    <span class="error-span"></span>
+                  </label>
+                  <div class="popup__form-files-items form-files-items file_application-project"></div>
+                </div>
+              </div>
+              <div class="application__btn-row">
+                <p class="application__agreement-text txt16">
+                  Нажимая на кнопку, Вы принимаете
+                  <a href="#">условия пользовательского соглашения</a>
+                </p>
+                <button type="submit" class="application__btn application__summary-btn button txt18 txt18_bold">
+                  оставить заявку
+                </button>
+              </div>
+            </div>
+          </form>
+          <div class="application__form-img-box">
+            <img src="./assets/images/application-img.webp" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,126 @@
+.regulations {
+   
+
+    // .regulations__inner
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+        position: relative;
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-image: url(./assets/images/picture/bg-img-1.svg);
+            width: 50rem;
+            height: 50rem;
+            bottom:-27rem;
+            right: 6rem;
+            transform: rotate(179deg);
+        }
+
+        @include small-tablet {
+            &::after {
+                content: '';
+                width: 49rem;
+                height: 49rem;
+                bottom:-43rem;
+                right: 0;
+                transform: rotate(279deg);
+            }
+        }
+    }
+
+    // .regulations__title
+
+    &__title {
+        align-self: center;
+        text-align: center;
+        color: $green;
+    }
+
+    // .regulations__list
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.2rem;
+        color: $textAndLine;
+        @include small-tablet {
+            grid-template-columns: 1fr;
+            color: $green;
+            gap: 1.6rem;
+        }
+    }
+
+    // .regulations__item
+
+    &__item {
+        padding: 3.2rem 0.5rem 1.6rem 2rem ;
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        position: relative;
+        
+        @include small-tablet {
+            height: calc(100% - 1.6rem);
+            padding: 4rem 2.4rem 2.4rem ;
+        }
+        // border-top: 1px solid $green;
+        &::before {
+            content: '';
+            height: calc(100% - 1.2rem);
+            width: 1px;
+            border-left: 1px solid $textAndLine;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            @include small-tablet {
+                height: calc(100% - 3.2rem);
+            }
+        }
+
+        &:nth-child(2n + 2) {
+            ::after {
+                content: '';
+                height: 1px;
+                width: calc(100% - 1.2rem);
+                border-bottom: 1px solid $textAndLine;
+                position: absolute;
+                top: 0;
+                right: 0;
+
+                @include small-tablet {
+                    width: 100%;
+                }
+            }
+        }
+
+        &:nth-child(2n + 1) {
+            ::after {
+                content: '';
+                height: 1px;
+                width: 100%;
+                border-bottom: 1px solid $textAndLine;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+
+    // .regulations__item-num
+
+    &__item-num {
+    }
+
+    // .regulations__item-text
+
+    &__item-text {
+    }
+}
+

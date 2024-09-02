@@ -1,0 +1,981 @@
+body .adding_application_template,
+body .adding_application, 
+body .adding_application__item--imp {
+    --mainTheme: #f9ec00;
+    --mainThemeColor: #000;
+    --borderAdd: none;
+    --normalTextColor: #101010;
+    --subTextColor: #acacac;
+    --reversTextColor: #fff;
+    --switchBtn: #f4f4f4;
+    --switchBtnActive: #101010;
+    --switchBtnActiveColor: #fff;
+    --backgroundCard: #f4f4f4;
+    --settingsSwitchActive: #101010;
+    --settingsSwitchActiveColor: #fff;
+    --inputBg: #fff;
+    --tabs: #acacac;
+    --tabsActive: #292929;
+    --footerBorder: #d7d7d7;
+    --cross: #101010;
+    --crossIneer: #fff;
+    --appBG: #fff;
+    --appBGColor: #101010;
+    --bodyBg: #fff;
+    --appBtnBG: #d7d7d7;
+    --appBtnBGColor: #101010;
+    --btnDeleteFill: #101010;
+    --btnDeleteStroke: #fff;
+    --inputInnerBg: #f4f4f4;
+    --qrCircle: #fff;
+    --innerTagText: #101010;
+    --tabTextColor: #101010;
+    --tabBgColor: #f4f4f4;
+    --tabTextColorActive: #ffffff;
+    --tabBgColorActive: #101010;
+
+    --textColor: #101010;
+    --inputBorder: none;
+    --innerHintColor: #a1acb9;
+}
+body.color_yd .adding_application_template,
+body.color_yd .adding_application, 
+body.color_yd .adding_application__item--imp {
+    --mainTheme: #f9ec00;
+    --mainThemeColor: #101010;
+    --borderAdd: none;
+    --normalTextColor: #ffffff;
+    --subTextColor: #acacac;
+    --reversTextColor: #101010;
+    --switchBtn: #292929;
+    --switchBtnActive: #f9ec00;
+    --switchBtnActiveColor: #101010;
+    --backgroundCard: #101010;
+    --settingsSwitchActive: #f9ec00;
+    --settingsSwitchActiveColor: #101010;
+    --inputBg: #292929;
+    --tabs: rgba(255, 255, 255, 0.3);
+    --tabsActive: #fff;
+    --footerBorder: #292929;
+    --cross: #292929;
+    --crossIneer: #fff;
+    --appBG: #292929;
+    --appBGColor: #fff;
+    --bodyBg: #1d1d1d;
+    --appBtnBG: #fff;
+    --appBtnBGColor: #101010;
+    --btnDeleteFill: #f9ec00;
+    --btnDeleteStroke: #101010;
+    --inputInnerBg: #fff;
+    --qrCircle: #f9ec00;
+    --innerTagText: #101010;
+    --tabTextColor: #ffffff;
+    --tabBgColor: #292929;
+    --tabTextColorActive: #101010;
+    --tabBgColorActive: #ffffff;
+
+    --textColor: #ffffff;
+    --inputBorder: none;
+    --innerHintColor: #ffffff;
+}
+body.color_pl .adding_application_template,
+body.color_pl .adding_application, 
+body.color_pl .adding_application__item--imp {
+    --mainTheme: #d01181;
+    --mainThemeColor: #ffffff;
+    --borderAdd: none;
+    --normalTextColor: #101010;
+    --subTextColor: #acacac;
+    --reversTextColor: #fff;
+    --switchBtn: #f4f4f4;
+    --switchBtnActive: #d01181;
+    --switchBtnActiveColor: #fff;
+    --backgroundCard: #f1f4f6;
+    --settingsSwitchActive: #101010;
+    --settingsSwitchActiveColor: #fff;
+    --inputBg: #fff;
+    --tabs: #acacac;
+    --tabsActive: #292929;
+    --footerBorder: #d7d7d7;
+    --cross: #101010;
+    --crossIneer: #fff;
+    --appBG: #fff;
+    --appBGColor: #101010;
+    --bodyBg: #fff;
+    --appBtnBG: #a1acb9;
+    --appBtnBGColor: #fff;
+    --btnDeleteFill: #101010;
+    --btnDeleteStroke: #fff;
+    --inputInnerBg: #f1f4f6;
+    --qrCircle: #f4f4f4;
+    --innerTagText: #101010;
+    --tabTextColor: #101010;
+    --tabBgColor: #f4f4f4;
+    --tabTextColorActive: #ffffff;
+    --tabBgColorActive: #101010;
+
+    --textColor: #101010;
+    --inputBorder: none;
+    --innerHintColor: #a1acb9;
+}
+
+body.color_pd .adding_application_template,
+body.color_pd .adding_application, 
+body.color_pd .adding_application__item--imp {
+    --mainTheme: #d01181;
+    --mainThemeColor: #ffffff;
+    --borderAdd: 0.1rem solid rgba(255, 255, 255, 0.2);
+    --normalTextColor: #ffffff;
+    --subTextColor: #acacac;
+    --reversTextColor: #101010;
+    --switchBtn: #101010;
+    --switchBtnActive: #d01181;
+    --switchBtnActiveColor: #fff;
+    --backgroundCard: #101010;
+    --settingsSwitchActive: #d01181;
+    --settingsSwitchActiveColor: #fff;
+    --inputBg: #101010;
+    --tabs: rgba(255, 255, 255, 0.3);
+    --tabsActive: #fff;
+    --footerBorder: #292929;
+    --cross: #292929;
+    --crossIneer: #fff;
+    --appBG: #fff;
+    --appBGColor: #101010;
+    --bodyBg: #101010;
+    --appBtnBG: #fff;
+    --appBtnBGColor: #101010;
+    --btnDeleteFill: #d01181;
+    --btnDeleteStroke: #101010;
+    --inputInnerBg: #292929;
+    --qrCircle: #d01181;
+    --innerTagText: #fff;
+    --tabTextColor: #ffffff;
+    --tabBgColor: #292929;
+    --tabTextColorActive: #101010;
+    --tabBgColorActive: #ffffff;
+
+    --textColor: #ffffff;
+    --inputBorder: 0.1rem solid rgba(255, 255, 255, 0.2);
+    --innerHintColor: #ffffff;
+}
+
+.adding_application {
+    .main__title {
+        width: 122rem;
+    }
+
+    &_template__title {
+        font-size: 2.4rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%;
+        letter-spacing: 0.024rem;
+        color: var(--normalTextColor);
+    }
+
+    &__container {
+        display: flex;
+        gap: 2rem;
+    }
+    &__main {
+        flex: 1;
+        border-radius: 1.6rem;
+        background: var(--backgroundCard);
+        padding: 3.2rem 2.4rem;
+        position: relative;
+        z-index: 1;
+        border: var(--borderAdd);
+        height: fit-content;
+    }
+    &__photo {
+        width: 29rem;
+        height: 84.4rem;
+        border-radius: 1.6rem;
+        background: var(--backgroundCard);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        border: var(--borderAdd);
+
+        &_empty {
+            width: 8rem;
+            height: 8rem;
+
+            path {
+                stroke: var(--footerBorder);
+            }
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 1.6rem;
+        }
+
+        &_add {
+            width: 4rem;
+            height: 4rem;
+            position: absolute;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bodyBg);
+            cursor: pointer;
+            top: -0.4rem;
+            right: -0.4rem;
+
+            &::before {
+                content: "";
+                display: flex;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: var(--settingsSwitchActive);
+                width: 3.2rem;
+                height: 3.2rem;
+                border-radius: 50%;
+            }
+
+            svg {
+                width: 2.4rem;
+                height: 2.4rem;
+                z-index: 1;
+
+                path {
+                    stroke: var(--switchBtnActiveColor);
+                }
+            }
+            input {
+                display: none;
+            }
+        }
+    }
+
+    &__top {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    &__top-img {
+        position: relative;
+        width: 5.2rem;
+        height: 5.2rem;
+        background-color: #e0e0e0;
+        border-radius: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            object-fit: cover;
+        }
+
+        &.empty {
+            background-image: url("./../../assets/images/common/empty-pic-icon.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 1.6rem 1.6rem;
+        }
+
+        input {
+            display: none;
+        }
+
+        label {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--btnDeleteFill);
+            width: 2.4rem;
+            height: 2.4rem;
+            border-radius: 100%;
+            right: -0.5rem;
+            top: -0.5rem;
+            cursor: pointer;
+            z-index: 10;
+            border: 0.3rem solid var(--backgroundCard);
+
+            svg {
+                width: 1.2rem;
+                height: 1.2rem;
+                cursor: pointer;
+
+                path {
+                    stroke: var(--btnDeleteStroke);
+                }
+            }
+        }
+    }
+
+    &__subtitle {
+        font-size: 2.4rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%;
+        letter-spacing: 0.024rem;
+        margin-bottom: 3.2rem;
+        color: var(--normalTextColor);
+    }
+    &__title {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        color: var(--normalTextColor);
+        &:hover {
+            svg {
+                display: block;
+            }
+        }
+        span {
+            font-size: 3.2rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 100%;
+            letter-spacing: 0.032rem;
+            max-width: 94rem;
+        }
+        svg {
+            display: none;
+            cursor: pointer;
+            width: 2.4rem;
+            height: 2.4rem;
+
+            path {
+                fill: var(--settingsSwitchActive);
+                stroke: var(--settingsSwitchActive);
+            }
+        }
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 3.2rem;
+    }
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+
+        &_pic {
+            width: 4.8rem;
+            height: 4.8rem;
+            border-radius: 100%;
+            overflow: hidden;
+            margin-right: 1rem;
+
+            &.empty {
+                background-image: url("./../../assets/images/common/no-pic-circle-ico.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &_group {
+            .adding_application__item_hint {
+                margin-left: 26.4rem;
+                margin-top: 0.4rem;
+            }
+        }
+
+        &_top {
+            display: flex;
+            align-items: center;
+            position: relative;
+            width: 100%;
+        }
+
+        &--big {
+            .adding_application__item_input {
+                height: 13.3rem;
+                padding-bottom: 7.3rem;
+            }
+        }
+
+        &--interval {
+            .adding_application__item_input_inner {
+                background-color: var(--inputInnerBg);
+                border-radius: 1.2rem;
+                padding: 0.8rem;
+                width: 24rem;
+                margin-right: 1rem;
+            }
+        }
+
+        &--subtitle {
+            .adding_application__item_input {
+                height: 2.4rem;
+                min-height: unset;
+            }
+
+            .adding_application__item_name {
+                padding-top: 0.4rem;
+
+                svg {
+                    top: 0;
+                }
+            }
+
+            .adding_application__item_position {
+                padding-top: unset;
+            }
+
+            .adding_application__item_name span {
+                font-size: 1.8rem;
+                color: var(--normalTextColor);
+                font-weight: 500;
+                max-width: 100rem;
+            }
+        }
+
+        &--text {
+            .adding_application__item_input {
+                height: 2.4rem;
+                min-height: unset;
+            }
+
+            .adding_application__item_input-wrapper {
+                position: absolute;
+                right: 0;
+            }
+
+            .adding_application__item_name {
+                padding-top: 0.4rem;
+                width: fit-content;
+                min-width: 19.2rem;
+                z-index: 1;
+
+                span {
+                    color: var(--normalTextColor);
+                    width: unset;
+                    max-width: 100rem;
+                }
+
+                svg {
+                    top: 0;
+                }
+            }
+
+            .adding_application__item_position {
+                padding-top: unset;
+            }
+        }
+
+        &--checkbox {
+
+            .adding_application__item_name{
+                // margin-left: 4rem;
+            }
+            .adding_application__item_input {
+                // margin-left: 26.4rem;
+            }
+
+            & + & {
+                margin-top: 1rem;
+            }
+
+            .adding_application__item_input_text {
+                flex: 1;
+            }
+
+            .adding_application__item_input_tags {
+                max-width: 60rem;
+                width: fit-content;
+                margin-right: unset !important;
+            }
+
+            .swiper-button-next {
+                margin-left: unset !important;
+            }
+
+            .swiper-wrapper {
+                width: fit-content;
+                margin-left: auto;
+            }
+        }
+
+        &--link {
+            .adding_application__item_name {
+                padding-top: 1.5rem;
+                width: fit-content;
+                min-width: 11.2rem;
+
+                span {
+                    max-width: 100rem;
+                    color: var(--normalTextColor);
+                }
+
+                svg {
+                    top: 1rem;
+                }
+            }
+        }
+
+        &:hover {
+            .adding_application__item_name {
+                svg {
+                    display: block;
+                }
+            }
+        }
+
+        &_position {
+            width: 2.4rem;
+            height: 2.4rem;
+            margin-right: 1.6rem;
+            cursor: move;
+            flex: none;
+            padding-top: 2rem;
+
+            svg {
+                width: 2.4rem;
+                height: 2.4rem;
+            }
+        }
+
+        &_name {
+            padding-top: 2.4rem;
+            display: flex;
+            align-items: center;
+            width: 19.2rem;
+            margin-right: 3.2rem;
+            position: relative;
+
+            span {
+                color: #acacac;
+                font-size: 1.6rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 93.75%;
+                overflow-x: hidden;
+                text-overflow: ellipsis;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+            svg {
+                display: none;
+                cursor: pointer;
+                width: 2.4rem;
+                height: 2.4rem;
+                margin-left: auto;
+                flex: none;
+
+                position: absolute;
+                right: -2rem;
+                top: 2rem;
+
+                path {
+                    fill: var(--settingsSwitchActive);
+                    stroke: var(--settingsSwitchActive);
+                }
+            }
+        }
+
+        &_input-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            flex: 1;
+        }
+
+        &_hint {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.8rem 1.6rem;
+
+            input {
+                color: #acacac;
+                width: 95%;
+
+                &::placeholder {
+                    color: #acacac;
+                }
+            }
+        }
+
+        &_input {
+            // width: 89.6rem;
+            // height: 6rem;
+            min-height: 6rem;
+            height: fit-content;
+            border-radius: 1.6rem;
+            background: var(--inputBg);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.6rem;
+            position: relative;
+            border: var(--borderAdd);
+
+            &.transparent {
+                background-color: transparent;
+                border: none;
+            }
+
+            &_text {
+                height: 2rem;
+                color: #acacac;
+                font-size: 1.6rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 93.75%;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                &.required {
+                    background: url(../../assets/images/common/required.svg) no-repeat;
+                    background-position: right center;
+                    background-size: 2.4rem;
+                    height: 2rem;
+                }
+            }
+
+            &_tags {
+                width: 80.8rem;
+                overflow: hidden;
+
+                .swiper-slide {
+                    width: fit-content;
+                    height: fit-content;
+                    margin-right: 1rem;
+                }
+            }
+
+            .swiper-button-next {
+                display: none;
+                margin-left: auto;
+
+                &:disabled {
+                    background-color: transparent !important;
+                }
+
+                svg {
+                    width: 2.4rem;
+                    height: 2.4rem;
+
+                    path {
+                        stroke: var(--settingsSwitchActive);
+                    }
+                }
+            }
+        }
+        &_settings {
+            width: 2.4rem;
+            height: 2.4rem;
+            cursor: pointer;
+            margin-left: 1rem;
+
+            svg {
+                width: 2.4rem;
+                height: 2.4rem;
+
+                circle {
+                    fill: var(--settingsSwitchActive);
+                    stroke: var(--settingsSwitchActive);
+                }
+            }
+        }
+        &_box {
+            display: none;
+            position: absolute;
+            border-radius: 1.6rem;
+            background: var(--inputBg);
+            box-shadow: 0 0.3rem 1.4rem 0 rgba(0, 0, 0, 0.08);
+            padding: 1.6rem;
+            width: 28.9rem;
+            right: -20rem;
+            top: 4rem;
+            color: var(--normalTextColor);
+            border: var(--borderAdd);
+            z-index: 2;
+        }
+        &_choices {
+            display: flex;
+            flex-direction: column;
+        }
+        &_choice {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid rgba(161, 172, 185, 0.2);
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+
+            &:last-child {
+                border-bottom: unset;
+            }
+
+            input {
+                display: none;
+            }
+
+            label {
+                cursor: pointer;
+            }
+
+            .adding_application__item_choice--delete-pic {
+                display: none;
+            }
+        }
+
+        .file-icon {
+            width: 2.4rem;
+            height: 2.4rem;
+
+            path {
+                fill: var(--btnDeleteFill);
+                stroke: var(--btnDeleteFill);
+            }
+        }
+    }
+    &__bottom {
+        display: flex;
+        gap: 1.2rem;
+
+        &_add {
+            width: 5.1rem;
+            height: 5.1rem;
+            cursor: pointer;
+            margin-left: auto;
+
+            svg {
+                width: 5.1rem;
+                height: 5.1rem;
+
+                circle {
+                    fill: var(--mainTheme);
+                }
+                path {
+                    stroke: var(--mainThemeColor);
+                }
+            }
+        }
+        &_btn {
+            cursor: pointer;
+            height: 5.1rem;
+            padding: 0;
+            width: 41.7rem;
+            background: var(--appBtnBG);
+            color: var(--appBtnBGColor);
+        }
+    }
+
+    .inner-tag {
+        width: fit-content;
+        padding: 0.8rem;
+        background-color: var(--inputInnerBg);
+        display: flex;
+        gap: 0.9rem;
+        border-radius: 1.2rem;
+        font-weight: 500;
+
+        span {
+            white-space: nowrap;
+            max-width: 60rem;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            color: var(--innerTagText);
+        }
+
+        &.required {
+            b {
+                color: #f06767;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .inner-tag-hint {
+        margin-top: 0.4rem;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        font-weight: 500;
+        color: var(--innerHintColor);
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 14.6rem;
+    }
+
+    .delete-hint {
+        width: 2.4rem;
+        height: 2.4rem;
+        cursor: pointer;
+
+        circle {
+            fill: var(--btnDeleteFill);
+        }
+
+        path {
+            stroke: var(--btnDeleteStroke);
+        }
+    }
+
+    .qr {
+        margin-left: auto;
+        margin-right: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 2.4rem;
+        background-color: var(--appBtnBG);
+        height: 4.6rem;
+        width: 8.7rem;
+        padding: 1.1rem;
+        position: relative;
+        cursor: pointer;
+
+        svg,
+        img {
+            display: block;
+            width: 2.4rem;
+            height: 2.4rem;
+            z-index: 2;
+            position: relative;
+        }
+
+        &__indicator {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0.2rem;
+            width: 4.2rem;
+            height: 4.2rem;
+            background-color: var(--qrCircle);
+            border-radius: 100%;
+            z-index: 1;
+            transition: left 0.5s ease-in-out;
+        }
+
+        &__activated.active ~ .qr__indicator {
+            left: 4.2rem;
+        }
+    }
+
+    &__qr-field {
+        margin-bottom: 2rem;
+        .adding_application__item_input {
+            width: 116rem;
+        }
+
+        .adding_application__item_input_text {
+            color: var(--normalTextColor);
+        }
+
+        .radio-wrapper .radio-icon {
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+
+        .radio-wrapper input[type="checkbox"]:checked ~ .radio-icon {
+            background-size: 1.2rem 0.9rem;
+        }
+    }
+
+    &__tabs {
+        margin-left: auto;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    &__tab {
+        border-radius: 2rem;
+        width: fit-content;
+        height: 4.5rem;
+        padding: 1.3rem 3.2rem;
+        font-weight: 500;
+
+        background: var(--tabBgColor);
+        color: var(--tabTextColor);
+
+        &.active {
+            background: var(--tabBgColorActive);
+            color: var(--tabTextColorActive);
+        }
+    }
+}
+
+.adding_application__item--imp {
+    display: grid;
+    grid-template-columns: 19.2rem 1fr;
+    gap: 3.2rem;
+    align-items: center;
+
+    .inner-tag {
+        width: fit-content;
+        padding: 0.8rem;
+        background-color: var(--inputInnerBg);
+        display: flex;
+        gap: 0.9rem;
+        border-radius: 1.2rem;
+        font-weight: 500;
+
+        span {
+            white-space: nowrap;
+            max-width: 60rem;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            color: var(--innerTagText);
+        }
+
+        &.required {
+            b {
+                color: #f06767;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .inner-tag-hint {
+        margin-top: 0.4rem;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        font-weight: 500;
+        color: var(--innerHintColor);
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 14.6rem;
+    }
+
+    .delete-hint {
+        width: 2.4rem;
+        height: 2.4rem;
+        cursor: pointer;
+
+        circle {
+            fill: var(--btnDeleteFill);
+        }
+
+        path {
+            stroke: var(--btnDeleteStroke);
+        }
+    }
+    .adding_application__item_input_tags {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>История</title>
+  <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+  <body>
+    <div class="wrapper">
+      <div id="popup__lk" aria-hidden="true" class="popup popup--right">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.05078 7.05023L16.9503 16.9497" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M7.05078 16.9498L16.9503 7.05027" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__body-content-box-title-box">
+            <p class="popup__body-content-box-title txt60">Личный кабинет</p>
+            <p class="popup__body-content-box-desk txt18">Войдите в систему, чтобы добавить в избранное</p>
+          </div>
+          <form data-popup-message="#popup__code" data-dev="" action="" class="popup__body-form-wrapper">
+            <div class="popup__body-form-input-wrapper">
+              <div class="popup__body-form-input-box">
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--tel popup__body-form-input phone-mask txt18" type="text" placeholder="+ 7 (  ___  )  ___  -  __  -  __" data-placeholder="+ 7 (  ___  )  ___  -  __  -  __" data-validate="" data-required="tel" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите номер телефона</span>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="popup__body-btn">
+              <div class="popup__body-btn-img-box">
+                <img src="./assets/images/star.svg" alt="">
+              </div>
+              <p class="popup__body-btn-text txt36">Войти</p>
+              <div class="popup__body-btn-img-box">
+                <img src="./assets/images/star.svg" alt="">
+              </div>
+            </button>
+          </form>
+          <a href="#" class="popup__body-content-link">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__code" aria-hidden="true" class="popup popup--right">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.05078 7.05023L16.9503 16.9497" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M7.05078 16.9498L16.9503 7.05027" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__body-content-box-title-box">
+            <p class="popup__body-content-box-title txt60">Введите код</p>
+            <p class="popup__body-content-box-desk txt18">Через 30 секунд можно запросить код повторно</p>
+          </div>
+          <form data-popup-message="#popup__code" data-dev="" action="" class="popup__body-form-wrapper">
+            <div class="popup__body-form-input-wrapper">
+              <div class="popup__body-form-input-box">
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--code popup__body-form-input code-mask txt18" type="text" placeholder="___ ___" data-placeholder="___ ___" data-validate="" data-required="code" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите код из СМС</span>
+                </label>
+              </div>
+            </div>
+            <div class="popup__body-btn-box">
+              <button type="submit" class="popup__body-btn">
+                <div class="popup__body-btn-img-box">
+                  <img src="./assets/images/star.svg" alt="">
+                </div>
+                <p class="popup__body-btn-text txt36">Войти</p>
+                <div class="popup__body-btn-img-box">
+                  <img src="./assets/images/star.svg" alt="">
+                </div>
+              </button>
+              <button class="popup__body-btn-code" disabled="">Прислать повторно</button>
+            </div>
+          </form>
+          <a href="#" class="popup__body-content-link">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__success-application" aria-hidden="true" class="popup popup--big">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.05078 7.05023L16.9503 16.9497" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M7.05078 16.9498L16.9503 7.05027" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__bg">
+            <img src="./assets/images/modal-bg.svg" alt="">
+          </div>
+          <div class="popup__body-content-box-title-wrapper">
+            <div class="popup__body-content-box-title-box">
+              <p class="popup__body-content-box-title tl2">
+                Спасибо <br>
+                за заявку!
+              </p>
+              <div class="popup__body-content-box-title-img-box">
+                <img src="./assets/images/modal-img.webp" alt="">
+              </div>
+            </div>
+            <p class="popup__body-content-box-desk txt18">Совсем скоро мы с вами свяжемся!</p>
+          </div>
+          <button data-close="" type="submit" class="popup__body-btn">
+            <div class="popup__body-btn-img-box">
+              <img src="./assets/images/star.svg" alt="">
+            </div>
+            <p class="popup__body-btn-text txt36">вернуться на главную</p>
+            <div class="popup__body-btn-img-box">
+              <img src="./assets/images/star.svg" alt="">
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__success-order" aria-hidden="true" class="popup popup--big">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.05078 7.05023L16.9503 16.9497" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M7.05078 16.9498L16.9503 7.05027" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__bg">
+            <img src="./assets/images/modal-bg.svg" alt="">
+          </div>
+          <div class="popup__body-content-box-title-wrapper">
+            <p class="popup__body-content-box-desk popup__body-content-box-desk--order txt30">Заказ № 9203661507</p>
+            <div class="popup__body-content-box-title-box">
+              <p class="popup__body-content-box-title tl2">
+                Спасибо, <br>
+                что выбрали нас!
+              </p>
+              <div class="popup__body-content-box-title-img-box">
+                <img src="./assets/images/modal-img.webp" alt="">
+              </div>
+            </div>
+
+            <p class="popup__body-content-box-desk popup__body-content-box-desk--link txt18">
+              всю подробную информацию вы можете отследить в
+              <a href="#"> личном кабинете</a>
+            </p>
+          </div>
+          <button data-close="" type="submit" class="popup__body-btn">
+            <div class="popup__body-btn-img-box">
+              <img src="./assets/images/star.svg" alt="">
+            </div>
+            <p class="popup__body-btn-text txt36">вернуться на главную</p>
+            <div class="popup__body-btn-img-box">
+              <img src="./assets/images/star.svg" alt="">
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__feedback" aria-hidden="true" class="popup popup--big popup--big-feedback">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.05078 7.05023L16.9503 16.9497" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M7.05078 16.9498L16.9503 7.05027" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__bg">
+            <img src="./assets/images/modal-bg.svg" alt="">
+          </div>
+          <div class="popup__body-content-box-title-wrapper">
+            <p class="popup__body-content-box-title tl2">Обратная связь</p>
+          </div>
+
+          <form data-popup-message="#popup__success-application" data-dev="" action="" class="popup__body-form-wrapper">
+            <div class="popup__body-form-input-wrapper">
+              <div class="popup__body-form-input-box">
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--name popup__body-form-input txt18" type="text" placeholder="Ваше имя" data-validate="" data-required="" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите Ваше имя</span>
+                </label>
+
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--mail popup__body-form-input txt18" type="text" placeholder="E-mail" data-validate="" data-required="email" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите Ваш e-mail</span>
+                </label>
+
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--tel popup__body-form-input phone-mask txt18" type="text" placeholder="+ 7 (  ___  )  ___  -  __  -  __ " data-placeholder="+ 7 (  ___  )  ___  -  __  -  __ " data-validate="" data-required="tel" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите номер телефона</span>
+                </label>
+
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--textarea popup__body-form-input txt18" type="text" placeholder="Сообщение" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите Ваше имя</span>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="popup__body-btn">
+              <div class="popup__body-btn-img-box">
+                <img src="./assets/images/star.svg" alt="">
+              </div>
+              <p class="popup__body-btn-text txt36">Оставить заявку</p>
+              <div class="popup__body-btn-img-box">
+                <img src="./assets/images/star.svg" alt="">
+              </div>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <main class="main-history" id="fullpage">
+        <header class="header header--anim">
+  <div class="container">
+    <div class="header__inner">
+      <a href="#" class="header__logo">
+        <div class="header__logo-img-box">
+          <img src="./assets/images/logo.svg" alt="">
+        </div>
+      </a>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link txt18">Каталог</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link txt18">Horeca</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link txt18">О компании</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link txt18">Новости</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link txt18">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__btn-box">
+        <a href="" class="header__btn" data-popup="#popup__lk">
+          <img src="./assets/images/profile.svg" alt="">
+        </a>
+        <a href="" class="header__btn">
+          <img src="./assets/images/heart.svg" alt="">
+        </a>
+        <a href="" class="header__btn">
+          <img src="./assets/images/shopping-bag.svg" alt="">
+        </a>
+        <button class="header__btn burger mobile">
+          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 12.1H22" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M2 4.09998H22" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M2 20.1H22" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="header__mob">
+    <div class="header__mob-bg" style="position: absolute">
+      <img src="./assets/images/main-hero-bg.svg" alt="">
+    </div>
+    <div class="header__mob-header">
+      <a href="#" class="header__logo">
+        <div class="header__logo-img-box">
+          <img src="./assets/images/logo.svg" alt="">
+        </div>
+      </a>
+      <button class="header__close-btn close-burger">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </button>
+    </div>
+    <nav class="header__mob-nav">
+      <ul class="header__mob-nav-list">
+        <li class="header__mob-nav-item">
+          <a href="#" class="header__mob-nav-link txt18">Каталог</a>
+        </li>
+        <li class="header__mob-nav-item">
+          <a href="#" class="header__mob-nav-link txt18">Horeca</a>
+        </li>
+        <li class="header__mob-nav-item">
+          <a href="#" class="header__mob-nav-link txt18">О компании</a>
+        </li>
+        <li class="header__mob-nav-item">
+          <a href="#" class="header__mob-nav-link txt18">Новости</a>
+        </li>
+        <li class="header__mob-nav-item">
+          <a href="#" class="header__mob-nav-link txt18">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+        <section class="history-slide section desktop" id="history-slide" data-anchor="history-slide">
+          <div class="container history-slide__container">
+            <div class="history-slide__inner">
+              <div class="history-slide__bg">
+                <div class="history-slide__bg-img-box">
+                  <img src="./assets/images/history-bg.svg" alt="" />
+                </div>
+              </div>
+
+              <div class="history-slide__swiper swiper">
+                <div class="history-slide__swiper-wrapper swiper-wrapper">
+                  <div class="history-slide__swiper-slide swiper-slide">
+                    <div class="history-slide__slide-inner">
+                      <div class="history-slide__title-box">
+                        <p class="history-slide__title tl2">since 2005</p>
+                        <div class="history-slide__favorite-box">
+                          <p class="history-slide__favorite-text-desc txt18">
+                            <span>
+                              Наши коровы и козы живут в комфортных условиях, насыщенных свежим воздухом и
+                              зелеными пастбищами
+                            </span>
+                          </p>
+                          <button class="history-slide__favorite-btn">
+                            <div class="history-slide__favorite-btn-svg-box">
+                              <svg
+                                width="28"
+                                height="28"
+                                viewBox="0 0 28 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M19.1797 2.6167C17.173 2.6167 15.3422 3.41872 13.9997 4.71237C12.6571 3.41872 10.8264 2.6167 8.81967 2.6167C4.68106 2.6167 1.33301 5.98576 1.33301 10.1384C1.33301 11.6342 1.57199 13.0202 1.98717 14.3046C2.9808 17.4463 4.99533 19.9235 7.09309 21.7263C9.18502 23.5242 11.4167 24.7011 12.9495 25.2235C13.2867 25.3414 13.6676 25.3834 13.9997 25.3834C14.3317 25.3834 14.7127 25.3414 15.0499 25.2235C16.5826 24.7011 18.8143 23.5242 20.9063 21.7263C23.004 19.9235 25.0186 17.4463 26.0122 14.3046C26.4274 13.0202 26.6663 11.6342 26.6663 10.1384C26.6663 5.98576 23.3183 2.6167 19.1797 2.6167Z"
+                                  fill="#D15834"
+                                  stroke="white"
+                                  stroke-width="2"
+                                />
+                              </svg>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="history-slide__content-box">
+                        <p class="history-slide__content-title tl1">
+                          <span> Путь нашей компании </span>
+                        </p>
+                        <div class="history-slide__info-box">
+                          <div class="history-slide__img-wrapper">
+                            <div class="history-slide__img-box history-slide__img-box--big">
+                              <img src="./assets/images/production-gallery-1.webp" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="history-slide__swiper-slide swiper-slide">
+                    <div class="history-slide__slide-inner">
+                      <div class="history-slide__title-box">
+                        <p class="history-slide__title tl2">2005 год</p>
+                        <div class="history-slide__favorite-box">
+                          <p class="history-slide__favorite-text-desc txt18">
+                            Собственное производство мороженого, вдохновленные европейским опытом и своим
+                            любимым десертом.
+                          </p>
+                          <button class="history-slide__favorite-btn">
+                            <div class="history-slide__favorite-btn-svg-box">
+                              <svg
+                                width="28"
+                                height="28"
+                                viewBox="0 0 28 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M19.1797 2.6167C17.173 2.6167 15.3422 3.41872 13.9997 4.71237C12.6571 3.41872 10.8264 2.6167 8.81967 2.6167C4.68106 2.6167 1.33301 5.98576 1.33301 10.1384C1.33301 11.6342 1.57199 13.0202 1.98717 14.3046C2.9808 17.4463 4.99533 19.9235 7.09309 21.7263C9.18502 23.5242 11.4167 24.7011 12.9495 25.2235C13.2867 25.3414 13.6676 25.3834 13.9997 25.3834C14.3317 25.3834 14.7127 25.3414 15.0499 25.2235C16.5826 24.7011 18.8143 23.5242 20.9063 21.7263C23.004 19.9235 25.0186 17.4463 26.0122 14.3046C26.4274 13.0202 26.6663 11.6342 26.6663 10.1384C26.6663 5.98576 23.3183 2.6167 19.1797 2.6167Z"
+                                  fill="#D15834"
+                                  stroke="white"
+                                  stroke-width="2"
+                                />
+                              </svg>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="history-slide__content-box">
+                        <p class="history-slide__content-title tl1">Начало пути и открытие</p>
+                        <div class="history-slide__info-box">
+                          <p class="history-slide__info-text txt18">
+                            С первого дня уделяем особое внимание качеству продукции и выбору натуральных
+                            ингредиентов, чтобы создать уникальный продукт.
+                          </p>
+                          <div class="history-slide__img-wrapper">
+                            <div class="history-slide__img-box history-slide__img-box--min">
+                              <img src="./assets/images/production-gallery-1.webp" alt="" />
+                            </div>
+                            <div class="history-slide__img-box history-slide__img-box--min">
+                              <img src="./assets/images/production-gallery-1.webp" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="history-slide__swiper-slide swiper-slide">
+                    <div class="history-slide__slide-inner">
+                      <div class="history-slide__title-box">
+                        <p class="history-slide__title tl2">2008 год</p>
+                        <div class="history-slide__favorite-box">
+                          <p class="history-slide__favorite-text-desc txt18">
+                            Компания начинает свое развитие, расширяя ассортимент продукции и привлекая новых
+                            клиентов.
+                          </p>
+                          <button class="history-slide__favorite-btn">
+                            <div class="history-slide__favorite-btn-svg-box">
+                              <svg
+                                width="28"
+                                height="28"
+                                viewBox="0 0 28 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M19.1797 2.6167C17.173 2.6167 15.3422 3.41872 13.9997 4.71237C12.6571 3.41872 10.8264 2.6167 8.81967 2.6167C4.68106 2.6167 1.33301 5.98576 1.33301 10.1384C1.33301 11.6342 1.57199 13.0202 1.98717 14.3046C2.9808 17.4463 4.99533 19.9235 7.09309 21.7263C9.18502 23.5242 11.4167 24.7011 12.9495 25.2235C13.2867 25.3414 13.6676 25.3834 13.9997 25.3834C14.3317 25.3834 14.7127 25.3414 15.0499 25.2235C16.5826 24.7011 18.8143 23.5242 20.9063 21.7263C23.004 19.9235 25.0186 17.4463 26.0122 14.3046C26.4274 13.0202 26.6663 11.6342 26.6663 10.1384C26.6663 5.98576 23.3183 2.6167 19.1797 2.6167Z"
+                                  fill="#D15834"
+                                  stroke="white"
+                                  stroke-width="2"
+                                />
+                              </svg>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="history-slide__content-box">
+                        <p class="history-slide__content-title tl1">
+                          Рост <br />
+                          и рецептура
+                        </p>
+                        <div class="history-slide__info-box">
+                          <p class="history-slide__info-text history-slide__info-text--long txt18">
+                            Экспериментируем с изменениями в рецептуре, уменьшая количество сахара и добавляя
+                            больше свежих ягод и фруктов. Состав чистый и натуральными, без добавок.
+                          </p>
+                          <div class="history-slide__img-wrapper">
+                            <div class="history-slide__img-box history-slide__img-box--big">
+                              <img src="./assets/images/production-gallery-1.webp" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="history-slide__swiper-slide swiper-slide">
+                    <div class="history-slide__slide-inner">
+                      <div class="history-slide__title-box">
+                        <p class="history-slide__title tl2">2012 год</p>
+                        <div class="history-slide__favorite-box">
+                          <p class="history-slide__favorite-text-desc txt18">
+                            Семья решает создать собственное молочное хозяйство для обеспечения компании
+                            свежим молоком высокого качества.
+                          </p>
+                          <button class="history-slide__favorite-btn">
+                            <div class="history-slide__favorite-btn-svg-box">
+                              <svg
+                                width="28"
+                                height="28"
+                                viewBox="0 0 28 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M19.1797 2.6167C17.173 2.6167 15.3422 3.41872 13.9997 4.71237C12.6571 3.41872 10.8264 2.6167 8.81967 2.6167C4.68106 2.6167 1.33301 5.98576 1.33301 10.1384C1.33301 11.6342 1.57199 13.0202 1.98717 14.3046C2.9808 17.4463 4.99533 19.9235 7.09309 21.7263C9.18502 23.5242 11.4167 24.7011 12.9495 25.2235C13.2867 25.3414 13.6676 25.3834 13.9997 25.3834C14.3317 25.3834 14.7127 25.3414 15.0499 25.2235C16.5826 24.7011 18.8143 23.5242 20.9063 21.7263C23.004 19.9235 25.0186 17.4463 26.0122 14.3046C26.4274 13.0202 26.6663 11.6342 26.6663 10.1384C26.6663 5.98576 23.3183 2.6167 19.1797 2.6167Z"
+                                  fill="#D15834"
+                                  stroke="white"
+                                  stroke-width="2"
+                                />
+                              </svg>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="history-slide__content-box">
+                        <p class="history-slide__content-title tl1">Основание фермы</p>
+                        <div class="history-slide__info-box">
+                          <p class="history-slide__info-text history-slide__info-text--long txt18">
+                            Это позволяет контролировать процесс производства от начала до конца и обеспечить
+                            максимальную свежесть ингредиентов.
+                          </p>
+                          <div class="history-slide__img-wrapper">
+                            <div class="history-slide__img-box history-slide__img-box--min">
+                              <img src="./assets/images/production-gallery-1.webp" alt="" />
+                            </div>
+                            <div class="history-slide__img-box history-slide__img-box--min">
+                              <img src="./assets/images/production-gallery-1.webp" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="history-slide__swiper-slide swiper-slide">
+                    <div class="history-slide__slide-inner">
+                      <div class="history-slide__title-box">
+                        <p class="history-slide__title tl2">2022 год</p>
+                        <div class="history-slide__favorite-box">
+                          <p class="history-slide__favorite-text-desc txt18">
+                            Компания остается верной своим принципам, продолжая производить мороженое с
+                            любовью и вниманием к деталям.
+                          </p>
+                          <button class="history-slide__favorite-btn">
+                            <div class="history-slide__favorite-btn-svg-box">
+                              <svg
+                                width="28"
+                                height="28"
+                                viewBox="0 0 28 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M19.1797 2.6167C17.173 2.6167 15.3422 3.41872 13.9997 4.71237C12.6571 3.41872 10.8264 2.6167 8.81967 2.6167C4.68106 2.6167 1.33301 5.98576 1.33301 10.1384C1.33301 11.6342 1.57199 13.0202 1.98717 14.3046C2.9808 17.4463 4.99533 19.9235 7.09309 21.7263C9.18502 23.5242 11.4167 24.7011 12.9495 25.2235C13.2867 25.3414 13.6676 25.3834 13.9997 25.3834C14.3317 25.3834 14.7127 25.3414 15.0499 25.2235C16.5826 24.7011 18.8143 23.5242 20.9063 21.7263C23.004 19.9235 25.0186 17.4463 26.0122 14.3046C26.4274 13.0202 26.6663 11.6342 26.6663 10.1384C26.6663 5.98576 23.3183 2.6167 19.1797 2.6167Z"
+                                  fill="#D15834"
+                                  stroke="white"
+                                  stroke-width="2"
+                                />
+                              </svg>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="history-slide__content-box">
+                        <p class="history-slide__content-title tl1">расширение доставки</p>
+                        <div class="history-slide__info-box">
+                          <p class="history-slide__info-text history-slide__info-text--long txt18">
+                            И расширяет зону доставки: компания начинает осуществлять доставку своего
+                            мороженого в регионы при заказе от 300 кг.
+                          </p>
+                          <div class="history-slide__img-wrapper">
+                            <div class="history-slide__img-box history-slide__img-box--big">
+                              <img src="./assets/images/production-gallery-1.webp" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="history-slide__btn-box">
+                  <div class="history-slide__btn history-slide__btn--prev swiper-button swiper-button-prev">
+                    <div class="history-slide__btn-svg-box swiper-button-svg-box">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.5 21C9.5 19.5 8 13.5 2 12C8 10.5 9.5 4.5 9.5 3"
+                          stroke="#D15834"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          opacity="0.4"
+                          d="M19.5 21C19.5 19.5 18 13.5 12 12C18 10.5 19.5 4.5 19.5 3"
+                          stroke="#D15834"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="history-slide__btn history-slide__btn--next swiper-button swiper-button-next">
+                    <div class="history-slide__btn-svg-box swiper-button-svg-box">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M14.5 21C14.5 19.5 16 13.5 22 12C16 10.5 14.5 4.5 14.5 3"
+                          stroke="#D15834"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          opacity="0.4"
+                          d="M4.5 21C4.5 19.5 6 13.5 12 12C6 10.5 4.5 4.5 4.5 3"
+                          stroke="#D15834"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="history-slide__billet txt30">семейный бизнес</div>
+              </div>
+              <div class="history-slide__thumb-swiper swiper">
+                <div class="history-slide__thumb-swiper-wrapper swiper-wrapper">
+                  <div class="history-slide__thumb-swiper-slide swiper-slide txt36">История</div>
+                  <div class="history-slide__thumb-swiper-slide swiper-slide txt36">01</div>
+                  <div class="history-slide__thumb-swiper-slide swiper-slide txt36">02</div>
+                  <div class="history-slide__thumb-swiper-slide swiper-slide txt36">03</div>
+                  <div class="history-slide__thumb-swiper-slide swiper-slide txt36">04</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="history-slide-mob mobile">
+          <div class="container">
+            <div class="history-slide-mob__inner">
+              <div class="history-slide-mob__title-swiper-box">
+                <div class="history-slide-mob__btn-box">
+                  <div
+                    class="history-slide-mob__btn history-slide-mob__btn--prev swiper-button swiper-button-prev"
+                  >
+                    <div class="history-slide-mob__btn-svg-box swiper-button-svg-box">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.5 21C9.5 19.5 8 13.5 2 12C8 10.5 9.5 4.5 9.5 3"
+                          stroke="#D15834"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          opacity="0.4"
+                          d="M19.5 21C19.5 19.5 18 13.5 12 12C18 10.5 19.5 4.5 19.5 3"
+                          stroke="#D15834"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div
+                    class="history-slide-mob__btn history-slide-mob__btn--next swiper-button swiper-button-next"
+                  >
+                    <div class="history-slide-mob__btn-svg-box swiper-button-svg-box">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M14.5 21C14.5 19.5 16 13.5 22 12C16 10.5 14.5 4.5 14.5 3"
+                          stroke="#D15834"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          opacity="0.4"
+                          d="M4.5 21C4.5 19.5 6 13.5 12 12C6 10.5 4.5 4.5 4.5 3"
+                          stroke="#D15834"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="history-slide-mob__title-swiper swiper">
+                  <div class="history-slide-mob__title-swiper-wrapper swiper-wrapper">
+                    <div class="history-slide-mob__title-swiper-slide swiper-slide">
+                      <div class="history-slide-mob__title-swiper-slide-inner">
+                        <p class="history-slide-mob__title-swiper-slide-title">since 2005</p>
+                        <button class="history-slide-mob__favorite-btn">
+                          <div class="history-slide-mob__favorite-btn-svg-box">
+                            <svg
+                              width="28"
+                              height="28"
+                              viewBox="0 0 28 28"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M19.1797 2.6167C17.173 2.6167 15.3422 3.41872 13.9997 4.71237C12.6571 3.41872 10.8264 2.6167 8.81967 2.6167C4.68106 2.6167 1.33301 5.98576 1.33301 10.1384C1.33301 11.6342 1.57199 13.0202 1.98717 14.3046C2.9808 17.4463 4.99533 19.9235 7.09309 21.7263C9.18502 23.5242 11.4167 24.7011 12.9495 25.2235C13.2867 25.3414 13.6676 25.3834 13.9997 25.3834C14.3317 25.3834 14.7127 25.3414 15.0499 25.2235C16.5826 24.7011 18.8143 23.5242 20.9063 21.7263C23.004 19.9235 25.0186 17.4463 26.0122 14.3046C26.4274 13.0202 26.6663 11.6342 26.6663 10.1384C26.6663 5.98576 23.3183 2.6167 19.1797 2.6167Z"
+                                fill="#D15834"
+                                stroke="white"
+                                stroke-width="2"
+                              />
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="history-slide-mob__title-swiper-slide swiper-slide">
+                      <div class="history-slide-mob__title-swiper-slide-inner">
+                        <p class="history-slide-mob__title-swiper-slide-title">2005 год</p>
+                        <button class="history-slide-mob__favorite-btn">
+                          <div class="history-slide-mob__favorite-btn-svg-box">
+                            <svg
+                              width="28"
+                              height="28"
+                              viewBox="0 0 28 28"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M19.1797 2.6167C17.173 2.6167 15.3422 3.41872 13.9997 4.71237C12.6571 3.41872 10.8264 2.6167 8.81967 2.6167C4.68106 2.6167 1.33301 5.98576 1.33301 10.1384C1.33301 11.6342 1.57199 13.0202 1.98717 14.3046C2.9808 17.4463 4.99533 19.9235 7.09309 21.7263C9.18502 23.5242 11.4167 24.7011 12.9495 25.2235C13.2867 25.3414 13.6676 25.3834 13.9997 25.3834C14.3317 25.3834 14.7127 25.3414 15.0499 25.2235C16.5826 24.7011 18.8143 23.5242 20.9063 21.7263C23.004 19.9235 25.0186 17.4463 26.0122 14.3046C26.4274 13.0202 26.6663 11.6342 26.6663 10.1384C26.6663 5.98576 23.3183 2.6167 19.1797 2.6167Z"
+                                fill="#D15834"
+                                stroke="white"
+                                stroke-width="2"
+                              />
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="history-slide-mob__title-swiper-slide swiper-slide">
+                      <div class="history-slide-mob__title-swiper-slide-inner">
+                        <p class="history-slide-mob__title-swiper-slide-title">2005 год</p>
+                        <button class="history-slide-mob__favorite-btn">
+                          <div class="history-slide-mob__favorite-btn-svg-box">
+                            <svg
+                              width="28"
+                              height="28"
+                              viewBox="0 0 28 28"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M19.1797 2.6167C17.173 2.6167 15.3422 3.41872 13.9997 4.71237C12.6571 3.41872 10.8264 2.6167 8.81967 2.6167C4.68106 2.6167 1.33301 5.98576 1.33301 10.1384C1.33301 11.6342 1.57199 13.0202 1.98717 14.3046C2.9808 17.4463 4.99533 19.9235 7.09309 21.7263C9.18502 23.5242 11.4167 24.7011 12.9495 25.2235C13.2867 25.3414 13.6676 25.3834 13.9997 25.3834C14.3317 25.3834 14.7127 25.3414 15.0499 25.2235C16.5826 24.7011 18.8143 23.5242 20.9063 21.7263C23.004 19.9235 25.0186 17.4463 26.0122 14.3046C26.4274 13.0202 26.6663 11.6342 26.6663 10.1384C26.6663 5.98576 23.3183 2.6167 19.1797 2.6167Z"
+                                fill="#D15834"
+                                stroke="white"
+                                stroke-width="2"
+                              />
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="history-slide-mob__title-swiper-slide swiper-slide">
+                      <div class="history-slide-mob__title-swiper-slide-inner">
+                        <p class="history-slide-mob__title-swiper-slide-title">2008 год</p>
+                        <button class="history-slide-mob__favorite-btn">
+                          <div class="history-slide-mob__favorite-btn-svg-box">
+                            <svg
+                              width="28"
+                              height="28"
+                              viewBox="0 0 28 28"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M19.1797 2.6167C17.173 2.6167 15.3422 3.41872 13.9997 4.71237C12.6571 3.41872 10.8264 2.6167 8.81967 2.6167C4.68106 2.6167 1.33301 5.98576 1.33301 10.1384C1.33301 11.6342 1.57199 13.0202 1.98717 14.3046C2.9808 17.4463 4.99533 19.9235 7.09309 21.7263C9.18502 23.5242 11.4167 24.7011 12.9495 25.2235C13.2867 25.3414 13.6676 25.3834 13.9997 25.3834C14.3317 25.3834 14.7127 25.3414 15.0499 25.2235C16.5826 24.7011 18.8143 23.5242 20.9063 21.7263C23.004 19.9235 25.0186 17.4463 26.0122 14.3046C26.4274 13.0202 26.6663 11.6342 26.6663 10.1384C26.6663 5.98576 23.3183 2.6167 19.1797 2.6167Z"
+                                fill="#D15834"
+                                stroke="white"
+                                stroke-width="2"
+                              />
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="history-slide-mob__title-swiper-slide swiper-slide">
+                      <div class="history-slide-mob__title-swiper-slide-inner">
+                        <p class="history-slide-mob__title-swiper-slide-title">2008 год</p>
+                        <button class="history-slide-mob__favorite-btn">
+                          <div class="history-slide-mob__favorite-btn-svg-box">
+                            <svg
+                              width="28"
+                              height="28"
+                              viewBox="0 0 28 28"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M19.1797 2.6167C17.173 2.6167 15.3422 3.41872 13.9997 4.71237C12.6571 3.41872 10.8264 2.6167 8.81967 2.6167C4.68106 2.6167 1.33301 5.98576 1.33301 10.1384C1.33301 11.6342 1.57199 13.0202 1.98717 14.3046C2.9808 17.4463 4.99533 19.9235 7.09309 21.7263C9.18502 23.5242 11.4167 24.7011 12.9495 25.2235C13.2867 25.3414 13.6676 25.3834 13.9997 25.3834C14.3317 25.3834 14.7127 25.3414 15.0499 25.2235C16.5826 24.7011 18.8143 23.5242 20.9063 21.7263C23.004 19.9235 25.0186 17.4463 26.0122 14.3046C26.4274 13.0202 26.6663 11.6342 26.6663 10.1384C26.6663 5.98576 23.3183 2.6167 19.1797 2.6167Z"
+                                fill="#D15834"
+                                stroke="white"
+                                stroke-width="2"
+                              />
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="history-slide-mob__title-swiper-slide swiper-slide">
+                      <div class="history-slide-mob__title-swiper-slide-inner">
+                        <p class="history-slide-mob__title-swiper-slide-title">2012 год</p>
+                        <button class="history-slide-mob__favorite-btn">
+                          <div class="history-slide-mob__favorite-btn-svg-box">
+                            <svg
+                              width="28"
+                              height="28"
+                              viewBox="0 0 28 28"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M19.1797 2.6167C17.173 2.6167 15.3422 3.41872 13.9997 4.71237C12.6571 3.41872 10.8264 2.6167 8.81967 2.6167C4.68106 2.6167 1.33301 5.98576 1.33301 10.1384C1.33301 11.6342 1.57199 13.0202 1.98717 14.3046C2.9808 17.4463 4.99533 19.9235 7.09309 21.7263C9.18502 23.5242 11.4167 24.7011 12.9495 25.2235C13.2867 25.3414 13.6676 25.3834 13.9997 25.3834C14.3317 25.3834 14.7127 25.3414 15.0499 25.2235C16.5826 24.7011 18.8143 23.5242 20.9063 21.7263C23.004 19.9235 25.0186 17.4463 26.0122 14.3046C26.4274 13.0202 26.6663 11.6342 26.6663 10.1384C26.6663 5.98576 23.3183 2.6167 19.1797 2.6167Z"
+                                fill="#D15834"
+                                stroke="white"
+                                stroke-width="2"
+                              />
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="history-slide-mob__title-swiper-slide swiper-slide">
+                      <div class="history-slide-mob__title-swiper-slide-inner">
+                        <p class="history-slide-mob__title-swiper-slide-title">2012 год</p>
+                        <button class="history-slide-mob__favorite-btn">
+                          <div class="history-slide-mob__favorite-btn-svg-box">
+                            <svg
+                              width="28"
+                              height="28"
+                              viewBox="0 0 28 28"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M19.1797 2.6167C17.173 2.6167 15.3422 3.41872 13.9997 4.71237C12.6571 3.41872 10.8264 2.6167 8.81967 2.6167C4.68106 2.6167 1.33301 5.98576 1.33301 10.1384C1.33301 11.6342 1.57199 13.0202 1.98717 14.3046C2.9808 17.4463 4.99533 19.9235 7.09309 21.7263C9.18502 23.5242 11.4167 24.7011 12.9495 25.2235C13.2867 25.3414 13.6676 25.3834 13.9997 25.3834C14.3317 25.3834 14.7127 25.3414 15.0499 25.2235C16.5826 24.7011 18.8143 23.5242 20.9063 21.7263C23.004 19.9235 25.0186 17.4463 26.0122 14.3046C26.4274 13.0202 26.6663 11.6342 26.6663 10.1384C26.6663 5.98576 23.3183 2.6167 19.1797 2.6167Z"
+                                fill="#D15834"
+                                stroke="white"
+                                stroke-width="2"
+                              />
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="history-slide-mob__title-swiper-slide swiper-slide">
+                      <div class="history-slide-mob__title-swiper-slide-inner">
+                        <p class="history-slide-mob__title-swiper-slide-title">2022 год</p>
+                        <button class="history-slide-mob__favorite-btn">
+                          <div class="history-slide-mob__favorite-btn-svg-box">
+                            <svg
+                              width="28"
+                              height="28"
+                              viewBox="0 0 28 28"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M19.1797 2.6167C17.173 2.6167 15.3422 3.41872 13.9997 4.71237C12.6571 3.41872 10.8264 2.6167 8.81967 2.6167C4.68106 2.6167 1.33301 5.98576 1.33301 10.1384C1.33301 11.6342 1.57199 13.0202 1.98717 14.3046C2.9808 17.4463 4.99533 19.9235 7.09309 21.7263C9.18502 23.5242 11.4167 24.7011 12.9495 25.2235C13.2867 25.3414 13.6676 25.3834 13.9997 25.3834C14.3317 25.3834 14.7127 25.3414 15.0499 25.2235C16.5826 24.7011 18.8143 23.5242 20.9063 21.7263C23.004 19.9235 25.0186 17.4463 26.0122 14.3046C26.4274 13.0202 26.6663 11.6342 26.6663 10.1384C26.6663 5.98576 23.3183 2.6167 19.1797 2.6167Z"
+                                fill="#D15834"
+                                stroke="white"
+                                stroke-width="2"
+                              />
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="history-slide-mob__title-swiper-slide swiper-slide">
+                      <div class="history-slide-mob__title-swiper-slide-inner">
+                        <p class="history-slide-mob__title-swiper-slide-title">2022 год</p>
+                        <button class="history-slide-mob__favorite-btn">
+                          <div class="history-slide-mob__favorite-btn-svg-box">
+                            <svg
+                              width="28"
+                              height="28"
+                              viewBox="0 0 28 28"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M19.1797 2.6167C17.173 2.6167 15.3422 3.41872 13.9997 4.71237C12.6571 3.41872 10.8264 2.6167 8.81967 2.6167C4.68106 2.6167 1.33301 5.98576 1.33301 10.1384C1.33301 11.6342 1.57199 13.0202 1.98717 14.3046C2.9808 17.4463 4.99533 19.9235 7.09309 21.7263C9.18502 23.5242 11.4167 24.7011 12.9495 25.2235C13.2867 25.3414 13.6676 25.3834 13.9997 25.3834C14.3317 25.3834 14.7127 25.3414 15.0499 25.2235C16.5826 24.7011 18.8143 23.5242 20.9063 21.7263C23.004 19.9235 25.0186 17.4463 26.0122 14.3046C26.4274 13.0202 26.6663 11.6342 26.6663 10.1384C26.6663 5.98576 23.3183 2.6167 19.1797 2.6167Z"
+                                fill="#D15834"
+                                stroke="white"
+                                stroke-width="2"
+                              />
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="history-slide-mob__thumb-swiper-box">
+                <div class="history-slide-mob__thumb-swiper swiper">
+                  <div class="history-slide-mob__thumb-swiper-wrapper swiper-wrapper">
+                    <div class="history-slide-mob__thumb-swiper-slide swiper-slide txt36">История</div>
+
+                    <div class="history-slide-mob__thumb-swiper-slide swiper-slide txt36">01</div>
+                    <div class="history-slide-mob__thumb-swiper-slide swiper-slide txt36">01</div>
+
+                    <div class="history-slide-mob__thumb-swiper-slide swiper-slide txt36">02</div>
+                    <div class="history-slide-mob__thumb-swiper-slide swiper-slide txt36">02</div>
+
+                    <div class="history-slide-mob__thumb-swiper-slide swiper-slide txt36">03</div>
+                    <div class="history-slide-mob__thumb-swiper-slide swiper-slide txt36">03</div>
+
+                    <div class="history-slide-mob__thumb-swiper-slide swiper-slide txt36">04</div>
+                    <div class="history-slide-mob__thumb-swiper-slide swiper-slide txt36">04</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="history-slide-mob__main-swiper-box">
+                <div class="history-slide-mob__main-swiper swiper">
+                  <div class="history-slide-mob__main-swiper-wrapper swiper-wrapper">
+                    <div class="history-slide-mob__main-swiper-slide swiper-slide">
+                      <div class="history-slide-mob__main-swiper-slide-inner">
+                        <p class="history-slide-mob__main-swiper-slide-title">Путь нашей компании</p>
+                        <div class="history-slide-mob__main-swiper-slide-img-box">
+                          <img src="./assets/images/production-gallery-1.webp" alt="" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="history-slide-mob__main-swiper-slide swiper-slide">
+                      <div class="history-slide-mob__main-swiper-slide-inner">
+                        <p class="history-slide-mob__main-swiper-slide-title">Начало пути и открытие</p>
+                        <div class="history-slide-mob__main-swiper-slide-img-box">
+                          <img src="./assets/images/production-gallery-1.webp" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="history-slide-mob__main-swiper-slide swiper-slide">
+                      <div class="history-slide-mob__main-swiper-slide-inner">
+                        <p class="history-slide-mob__main-swiper-slide-text">
+                          С первого дня уделяем особое внимание качеству продукции и выбору натуральных
+                          ингредиентов, чтобы создать уникальный продукт.
+                        </p>
+                        <div class="history-slide-mob__main-swiper-slide-img-box">
+                          <img src="./assets/images/production-gallery-1.webp" alt="" />
+                        </div>
+                        <p class="history-slide-mob__main-swiper-slide-text">
+                          Собственное производство мороженого, вдохновленные европейским опытом и своим
+                          любимым десертом
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="history-slide-mob__main-swiper-slide swiper-slide">
+                      <div class="history-slide-mob__main-swiper-slide-inner">
+                        <p class="history-slide-mob__main-swiper-slide-title">Рост и рецептура</p>
+                        <div class="history-slide-mob__main-swiper-slide-img-box">
+                          <img src="./assets/images/production-gallery-1.webp" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="history-slide-mob__main-swiper-slide swiper-slide">
+                      <div class="history-slide-mob__main-swiper-slide-inner">
+                        <p class="history-slide-mob__main-swiper-slide-text">
+                          Экспериментируем с изменениями в рецептуре, уменьшая количество сахара и добавляя
+                          больше свежих ягод и фруктов. Состав чистый и натуральными, без добавок.
+                        </p>
+
+                        <p class="history-slide-mob__main-swiper-slide-text">
+                          Это позволяет контролировать процесс производства от начала до конца и обеспечить
+                          максимальную свежесть ингредиентов
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="history-slide-mob__main-swiper-slide swiper-slide">
+                      <div class="history-slide-mob__main-swiper-slide-inner">
+                        <p class="history-slide-mob__main-swiper-slide-title">основание фермы</p>
+                        <div class="history-slide-mob__main-swiper-slide-img-box">
+                          <img src="./assets/images/production-gallery-1.webp" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="history-slide-mob__main-swiper-slide swiper-slide">
+                      <div class="history-slide-mob__main-swiper-slide-inner">
+                        <p class="history-slide-mob__main-swiper-slide-text">
+                          Семья решает создать собственное молочное хозяйство для обеспечения компании свежим
+                          молоком высокого качества
+                        </p>
+                        <div class="history-slide-mob__main-swiper-slide-img-box">
+                          <img src="./assets/images/production-gallery-1.webp" alt="" />
+                        </div>
+                        <p class="history-slide-mob__main-swiper-slide-text">
+                          Это позволяет контролировать процесс производства от начала до конца и обеспечить
+                          макси-мальную свежесть ингредиентов
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="history-slide-mob__main-swiper-slide swiper-slide">
+                      <div class="history-slide-mob__main-swiper-slide-inner">
+                        <p class="history-slide-mob__main-swiper-slide-title">расширение доставки</p>
+                        <div class="history-slide-mob__main-swiper-slide-img-box">
+                          <img src="./assets/images/production-gallery-1.webp" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="history-slide-mob__main-swiper-slide swiper-slide">
+                      <div class="history-slide-mob__main-swiper-slide-inner">
+                        <p class="history-slide-mob__main-swiper-slide-text">
+                          Компания остается верной своим принципам, продолжая производить мороженое с любовью
+                          и вниманием к деталям.
+                        </p>
+
+                        <p class="history-slide-mob__main-swiper-slide-text">
+                          И расширяет зону доставки: компания начинает осуществлять доставку своего мороженого
+                          в регионы при заказе от 300 кг.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="history-slide-mob__billet txt30">семейный бизнес</div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer section footer--anim" data-anchor="footer">
+  <div class="container footer__container">
+    <div class="footer__inner">
+      <div class="footer__svg-wrapper">
+        <div class="footer__svg-box">
+          <img src="./assets/images/footer.svg" alt="">
+        </div>
+      </div>
+      <p class="footer__text tl2">FOOTER</p>
+    </div>
+  </div>
+</footer>
+
+      </main>
+    </div>
+  </body>
+</html>

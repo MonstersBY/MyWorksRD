@@ -1,0 +1,72 @@
+.pick-lunch {
+  background-color: $green;
+  color: $Beige;
+  .container {
+    display: grid;
+    gap: 4.2rem;
+    @include small-tablet {
+      gap: 8.2rem;
+    }
+  }
+  &__title {
+    grid-column: 1;
+    @include small-tablet {
+      grid-row: 1;
+      text-align: center;
+    }
+  }
+  &__text {
+    grid-column: 1;
+    width: 66rem;
+    @include small-tablet {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &__btn {
+    grid-column: 1;
+    width: fit-content;
+    @include small-tablet {
+      margin: -4rem auto 0 auto;
+    }
+  }
+  &__img {
+    grid-column: 2;
+    grid-row: 1 / 4;
+    width: 52rem;
+    height: 36rem;
+    margin-right: 12rem;
+    position: relative;
+    @include small-tablet {
+      grid-column: 1;
+      grid-row: 2;
+      width: 100%;
+      height: 100%;
+    }
+    &-menu {
+      position: absolute;
+      top: 8rem;
+      right: -12rem;
+      background-color: $Beige;
+      color: $green;
+      border-radius: 2rem;
+      height: 15rem;
+      display: flex;
+      align-items: flex-end;
+      padding: 2.5rem;
+      @include small-tablet {
+        display: none;
+      }
+      &-icon {
+        width: 11.5rem;
+        position: absolute;
+        top: 0;
+        right: 2rem;
+      }
+      &-text {
+        width: 12rem;
+        text-align: center;
+      }
+    }
+  }
+}

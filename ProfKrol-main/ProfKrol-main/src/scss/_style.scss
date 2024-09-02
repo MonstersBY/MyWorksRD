@@ -1,0 +1,67 @@
+@import './mixins';
+
+$white: #fff;
+$green: #6aa64c;
+$background: #f4f0ee;
+$black: #240403;
+$grey: #776868;
+$light-grey: #cbccca;
+
+
+// body
+body {
+  background-color: $background;
+  color: $black;
+  .lock & {
+    overflow: hidden;
+    touch-action: none;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+// main
+main {
+  flex-grow: 1;
+  height: fit-content;
+}
+
+.desktop {
+  display: block;
+
+  @media (max-width: 48em) {
+    display: none;
+  }
+}
+
+.mobile {
+  display: none;
+
+  @media (max-width: 48em) {
+    display: block;
+  }
+}
+
+@import './ui/ui';
+@import './components/_header';
+@import './components/_footer';
+
+section {
+  padding: 9rem 0;
+  @include small-tablet {
+    padding: 10rem 0;
+  }
+  &._first {
+    padding: 3.6rem 0 9rem;
+    @include small-tablet {
+     
+    }
+  }
+}

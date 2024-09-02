@@ -1,0 +1,119 @@
+.success {
+  padding: 16rem 0;
+
+  @include small-tablet {
+    padding: 19rem 0;
+  }
+  // .success__inner
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 12.6rem;
+    @include small-tablet {
+      gap: 9.6rem;
+    }
+  }
+
+  // .success__count-wrapper
+
+  &__count-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5.9rem;
+    text-align: center;
+    width: 66rem;
+    margin: 0 auto;
+    @include small-tablet {
+      gap: 6.6rem;
+      width: 100%;
+    }
+  }
+
+  // .success__count-box
+
+  &__count-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5.3rem;
+    align-items: center;
+    @include small-tablet {
+      gap: 5.4rem;
+    }
+  }
+
+  // .success__count-num
+
+  &__count-num {
+    width: 59.7rem;
+    height: 25.1rem;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      background: url(./assets/images/diamond.webp) no-repeat top/cover;
+      mix-blend-mode: hard-light;
+      width: 53.7rem;
+      height: 53.8rem;
+      left: 50%;
+      top: 45%;
+      transform: translate(-50%, -50%);
+    }
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @include small-tablet {
+      width: 65.2rem;
+      height: 27.4rem;
+      &::after {
+        width: 58.6rem;
+        height: 58.8rem;
+      }
+    }
+  }
+
+  // .success__count-text
+
+  &__count-text {
+  }
+
+  // .success__btn
+
+  &__btn {
+    width: fit-content;
+    align-self: center;
+  }
+
+  // .success__btn-text
+
+  &__btn-text {
+  }
+
+  // .success__btn-svg-box
+
+  &__btn-svg-box {
+  }
+
+  // .success__list
+
+  &__list {
+  }
+
+  &__count {
+    &-img {
+      margin-bottom: -13rem;
+      width: 59.782rem;
+      height: 53.8rem;
+    }
+  }
+
+  @media (max-width: 48em) {
+    &__count {
+      margin-bottom: -14rem;
+      width: 65.2rem;
+      height: 58.8rem;
+    }
+  }
+}

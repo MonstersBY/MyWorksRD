@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Карточка товара</title>
+  <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="#" class="header__logo">
+        <div class="header__logo-img-box">
+          <img src="./assets/images/logo.svg" alt="">
+        </div>
+      </a>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link txt18">Каталог</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link txt18">Horeca</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link txt18">О компании</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link txt18">Новости</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link txt18">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__btn-box">
+        <a href="" class="header__btn" data-popup="#popup__lk">
+          <img src="./assets/images/profile.svg" alt="">
+        </a>
+        <a href="" class="header__btn">
+          <img src="./assets/images/heart.svg" alt="">
+        </a>
+        <a href="" class="header__btn">
+          <img src="./assets/images/shopping-bag.svg" alt="">
+        </a>
+        <button class="header__btn burger mobile">
+          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 12.1H22" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M2 4.09998H22" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M2 20.1H22" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="header__mob">
+    <div class="header__mob-bg" style="position: absolute">
+      <img src="./assets/images/main-hero-bg.svg" alt="">
+    </div>
+    <div class="header__mob-header">
+      <a href="#" class="header__logo">
+        <div class="header__logo-img-box">
+          <img src="./assets/images/logo.svg" alt="">
+        </div>
+      </a>
+      <button class="header__close-btn close-burger">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </button>
+    </div>
+    <nav class="header__mob-nav">
+      <ul class="header__mob-nav-list">
+        <li class="header__mob-nav-item">
+          <a href="#" class="header__mob-nav-link txt18">Каталог</a>
+        </li>
+        <li class="header__mob-nav-item">
+          <a href="#" class="header__mob-nav-link txt18">Horeca</a>
+        </li>
+        <li class="header__mob-nav-item">
+          <a href="#" class="header__mob-nav-link txt18">О компании</a>
+        </li>
+        <li class="header__mob-nav-item">
+          <a href="#" class="header__mob-nav-link txt18">Новости</a>
+        </li>
+        <li class="header__mob-nav-item">
+          <a href="#" class="header__mob-nav-link txt18">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+      <div id="popup__lk" aria-hidden="true" class="popup popup--right">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.05078 7.05023L16.9503 16.9497" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M7.05078 16.9498L16.9503 7.05027" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__body-content-box-title-box">
+            <p class="popup__body-content-box-title txt60">Личный кабинет</p>
+            <p class="popup__body-content-box-desk txt18">Войдите в систему, чтобы добавить в избранное</p>
+          </div>
+          <form data-popup-message="#popup__code" data-dev="" action="" class="popup__body-form-wrapper">
+            <div class="popup__body-form-input-wrapper">
+              <div class="popup__body-form-input-box">
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--tel popup__body-form-input phone-mask txt18" type="text" placeholder="+ 7 (  ___  )  ___  -  __  -  __" data-placeholder="+ 7 (  ___  )  ___  -  __  -  __" data-validate="" data-required="tel" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите номер телефона</span>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="popup__body-btn">
+              <div class="popup__body-btn-img-box">
+                <img src="./assets/images/star.svg" alt="">
+              </div>
+              <p class="popup__body-btn-text txt36">Войти</p>
+              <div class="popup__body-btn-img-box">
+                <img src="./assets/images/star.svg" alt="">
+              </div>
+            </button>
+          </form>
+          <a href="#" class="popup__body-content-link">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__code" aria-hidden="true" class="popup popup--right">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.05078 7.05023L16.9503 16.9497" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M7.05078 16.9498L16.9503 7.05027" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__body-content-box-title-box">
+            <p class="popup__body-content-box-title txt60">Введите код</p>
+            <p class="popup__body-content-box-desk txt18">Через 30 секунд можно запросить код повторно</p>
+          </div>
+          <form data-popup-message="#popup__code" data-dev="" action="" class="popup__body-form-wrapper">
+            <div class="popup__body-form-input-wrapper">
+              <div class="popup__body-form-input-box">
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--code popup__body-form-input code-mask txt18" type="text" placeholder="___ ___" data-placeholder="___ ___" data-validate="" data-required="code" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите код из СМС</span>
+                </label>
+              </div>
+            </div>
+            <div class="popup__body-btn-box">
+              <button type="submit" class="popup__body-btn">
+                <div class="popup__body-btn-img-box">
+                  <img src="./assets/images/star.svg" alt="">
+                </div>
+                <p class="popup__body-btn-text txt36">Войти</p>
+                <div class="popup__body-btn-img-box">
+                  <img src="./assets/images/star.svg" alt="">
+                </div>
+              </button>
+              <button class="popup__body-btn-code" disabled="">Прислать повторно</button>
+            </div>
+          </form>
+          <a href="#" class="popup__body-content-link">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__success-application" aria-hidden="true" class="popup popup--big">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.05078 7.05023L16.9503 16.9497" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M7.05078 16.9498L16.9503 7.05027" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__bg">
+            <img src="./assets/images/modal-bg.svg" alt="">
+          </div>
+          <div class="popup__body-content-box-title-wrapper">
+            <div class="popup__body-content-box-title-box">
+              <p class="popup__body-content-box-title tl2">
+                Спасибо <br>
+                за заявку!
+              </p>
+              <div class="popup__body-content-box-title-img-box">
+                <img src="./assets/images/modal-img.webp" alt="">
+              </div>
+            </div>
+            <p class="popup__body-content-box-desk txt18">Совсем скоро мы с вами свяжемся!</p>
+          </div>
+          <button data-close="" type="submit" class="popup__body-btn">
+            <div class="popup__body-btn-img-box">
+              <img src="./assets/images/star.svg" alt="">
+            </div>
+            <p class="popup__body-btn-text txt36">вернуться на главную</p>
+            <div class="popup__body-btn-img-box">
+              <img src="./assets/images/star.svg" alt="">
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__success-order" aria-hidden="true" class="popup popup--big">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.05078 7.05023L16.9503 16.9497" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M7.05078 16.9498L16.9503 7.05027" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__bg">
+            <img src="./assets/images/modal-bg.svg" alt="">
+          </div>
+          <div class="popup__body-content-box-title-wrapper">
+            <p class="popup__body-content-box-desk popup__body-content-box-desk--order txt30">Заказ № 9203661507</p>
+            <div class="popup__body-content-box-title-box">
+              <p class="popup__body-content-box-title tl2">
+                Спасибо, <br>
+                что выбрали нас!
+              </p>
+              <div class="popup__body-content-box-title-img-box">
+                <img src="./assets/images/modal-img.webp" alt="">
+              </div>
+            </div>
+
+            <p class="popup__body-content-box-desk popup__body-content-box-desk--link txt18">
+              всю подробную информацию вы можете отследить в
+              <a href="#"> личном кабинете</a>
+            </p>
+          </div>
+          <button data-close="" type="submit" class="popup__body-btn">
+            <div class="popup__body-btn-img-box">
+              <img src="./assets/images/star.svg" alt="">
+            </div>
+            <p class="popup__body-btn-text txt36">вернуться на главную</p>
+            <div class="popup__body-btn-img-box">
+              <img src="./assets/images/star.svg" alt="">
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__feedback" aria-hidden="true" class="popup popup--big popup--big-feedback">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.05078 7.05023L16.9503 16.9497" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M7.05078 16.9498L16.9503 7.05027" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-content-box">
+          <div class="popup__bg">
+            <img src="./assets/images/modal-bg.svg" alt="">
+          </div>
+          <div class="popup__body-content-box-title-wrapper">
+            <p class="popup__body-content-box-title tl2">Обратная связь</p>
+          </div>
+
+          <form data-popup-message="#popup__success-application" data-dev="" action="" class="popup__body-form-wrapper">
+            <div class="popup__body-form-input-wrapper">
+              <div class="popup__body-form-input-box">
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--name popup__body-form-input txt18" type="text" placeholder="Ваше имя" data-validate="" data-required="" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите Ваше имя</span>
+                </label>
+
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--mail popup__body-form-input txt18" type="text" placeholder="E-mail" data-validate="" data-required="email" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите Ваш e-mail</span>
+                </label>
+
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--tel popup__body-form-input phone-mask txt18" type="text" placeholder="+ 7 (  ___  )  ___  -  __  -  __ " data-placeholder="+ 7 (  ___  )  ___  -  __  -  __ " data-validate="" data-required="tel" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите номер телефона</span>
+                </label>
+
+                <label class="popup__body-label input-group">
+                  <span class="form__input-wrapper">
+                    <input class="input--textarea popup__body-form-input txt18" type="text" placeholder="Сообщение" autocomplete="off" name="form[]">
+                  </span>
+                  <span class="error-span">Введите Ваше имя</span>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="popup__body-btn">
+              <div class="popup__body-btn-img-box">
+                <img src="./assets/images/star.svg" alt="">
+              </div>
+              <p class="popup__body-btn-text txt36">Оставить заявку</p>
+              <div class="popup__body-btn-img-box">
+                <img src="./assets/images/star.svg" alt="">
+              </div>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <main>
+        <section class="item-banner">
+  <div class="item-banner__container container">
+    <div class="item-banner__left">
+      <div class="item-banner__nav-box nav-box dark desktop">
+        <nav class="nav-box__list-wrap title-h5">
+          <ul class="nav-box__list">
+            <li class="nav-box__link txt16"><a href="#">Главная</a></li>
+            <li class="nav-box__link txt16"><a href="#">Каталог</a></li>
+            <li class="nav-box__link txt16"><a href="#">Мороженое</a></li>
+            <li class="nav-box__link txt16">Лесные ягоды</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="item-banner__type txt18">Мороженое</div>
+      <div class="item-banner__title txt60">Лесные ягоды</div>
+      <div class="item-banner__subtitle txt18">взбитый замороженный сорбет</div>
+      <div class="item-banner__weights mobile">
+        <div class="item-banner__weight txt30">80 г</div>
+        <div class="item-banner__weight txt30 active">100 г</div>
+        <div class="item-banner__weight txt30">300 г</div>
+        <div class="item-banner__weight txt30">500 г</div>
+        <div class="item-banner__weight txt30">1 кг</div>
+        <div class="item-banner__weight txt30">2.5 кг</div>
+      </div>
+      <div class="item-banner__descr txt18 desktop">
+        Вкус и аромат любимой летней ягоды добавляет сливочному пломбиру то самое, волшебное послевкусие. Это
+        мороженое, которое хочется ещё и ещё!
+      </div>
+    </div>
+    <div class="item-banner__middle">
+      <div class="item-banner__img">
+        <img src="./assets/images/catalog-hero-1.webp" alt="">
+      </div>
+      <button class="item-banner__button large-button cart txt36">
+        <div class="large-button__content">
+          <div>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.7083 8.75C16.23 8.75 15.8333 8.35333 15.8333 7.875V3.79167C15.8333 2.53167 15.0517 1.75 13.7917 1.75H10.2917C9.03167 1.75 8.25 2.53167 8.25 3.79167V7.875C8.25 8.35333 7.85333 8.75 7.375 8.75C6.89667 8.75 6.5 8.35333 6.5 7.875V3.79167C6.5 1.56333 8.06333 0 10.2917 0H13.7917C16.02 0 17.5833 1.56333 17.5833 3.79167V7.875C17.5833 8.35333 17.1867 8.75 16.7083 8.75Z" fill="#D15834"></path>
+              <path d="M7.33331 18.7433C6.85498 18.7433 6.45831 18.3467 6.45831 17.8683C6.45831 17.3783 6.85498 16.9933 7.33331 16.9933H21.0533C21.4033 16.9933 21.6716 16.69 21.6366 16.34L20.8433 10.1182C20.5633 7.85483 20.1667 5.99983 16.2 5.99983H7.79998C3.83331 5.99983 3.43665 7.85483 3.16831 10.1182L2.11831 18.4517C1.77998 21.3217 2.66665 23.6667 6.76165 23.6667H17.2383C20.925 23.6667 22.01 21.765 21.9516 19.2917C21.94 18.9767 21.6833 18.7433 21.3683 18.7433H7.33331Z" fill="#D15834"></path>
+            </svg>
+          </div>
+          <div>в корзину</div>
+        </div>
+        <div class="large-button__background">
+          <svg width="262" height="166" viewBox="0 0 262 166" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_b_2473_3098)">
+              <ellipse cx="131" cy="83" rx="131" ry="83" fill="white" fill-opacity="0.7"></ellipse>
+              <path d="M260 83C260 104.995 245.925 125.197 222.561 140C199.221 154.788 166.855 164 131 164C95.1453 164 62.7791 154.788 39.4394 140C16.075 125.197 2 104.995 2 83C2 61.0054 16.075 40.803 39.4394 25.9996C62.7791 11.2118 95.1453 2 131 2C166.855 2 199.221 11.2118 222.561 25.9996C245.925 40.803 260 61.0054 260 83Z" stroke="white" stroke-width="4"></path>
+            </g>
+            <defs>
+              <filter id="filter0_b_2473_3098" x="-100" y="-100" width="462" height="366" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                <feGaussianBlur in="BackgroundImageFix" stdDeviation="50"></feGaussianBlur>
+                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2473_3098"></feComposite>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2473_3098" result="shape"></feBlend>
+              </filter>
+            </defs>
+          </svg>
+        </div>
+      </button>
+    </div>
+    <div class="item-banner__right">
+      <div class="item-banner__tabs">
+        <div class="item-banner__tab txt30">
+          <span>Низкокалорийно</span>
+          <div class="item-banner__tab-background desktop">
+            <svg width="274" height="123" viewBox="0 0 274 123" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M128.763 16.911C184.615 9.35045 258.007 -20.994 272.658 28.0179C282.203 59.9479 207.521 93.9132 207.521 93.9132C207.521 93.9132 106.942 142.121 53.949 113.061C28.5911 99.1556 7.54345 88.9871 1.59535 60.6852C-9.20697 9.2862 76.7156 23.9564 128.763 16.911Z" fill="#C14824"></path>
+            </svg>
+          </div>
+          <div class="item-banner__tab-background mobile">
+            <svg width="162" height="100" viewBox="0 0 162 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M84.4374 23.5875C117.536 33.9246 166.892 33.3941 160.926 71.3702C157.039 96.1107 105.929 98.7856 105.929 98.7856C105.929 98.7856 36.3871 104.092 15.3908 69.228C5.34377 52.5451 -3.38998 39.6476 1.44638 18.4183C10.2296 -20.1359 53.5934 13.9546 84.4374 23.5875Z" fill="#C14824"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="item-banner__tab txt30">
+          <span>Натурально</span>
+          <div class="item-banner__tab-background desktop">
+            <svg width="267" height="131" viewBox="0 0 267 131" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M130.872 29.7762C75.9932 42.6205 -3.39406 40.4292 0.387281 91.4441C2.85073 124.679 84.7337 129.794 84.7337 129.794C84.7337 129.794 195.889 138.984 235.044 92.9438C253.779 70.9131 269.82 53.9101 265.289 25.347C257.061 -26.5264 182.012 17.8069 130.872 29.7762Z" fill="#C5C1DD"></path>
+            </svg>
+          </div>
+          <div class="item-banner__tab-background mobile">
+            <svg width="171" height="83" viewBox="0 0 171 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M85.1539 68.4718C120.339 62.9389 170.322 68.9836 170.184 34.2634C170.093 11.6439 118.665 3.47865 118.665 3.47865C118.665 3.47865 48.9493 -9.12557 22.2217 19.7624C9.4322 33.5856 -1.43566 44.1632 0.164288 63.7418C3.06995 99.2982 52.3662 73.6277 85.1539 68.4718Z" fill="#C5C1DD"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="item-banner__like-btn like-btn">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19.1802 3.61667C17.0685 3.61667 15.1785 4.64334 14.0002 6.21834C12.8218 4.64334 10.9318 3.61667 8.82016 3.61667C5.2385 3.61667 2.3335 6.53334 2.3335 10.1383C2.3335 11.5267 2.55516 12.81 2.94016 14C4.7835 19.8333 10.4652 23.3217 13.2768 24.2783C13.6735 24.4183 14.3268 24.4183 14.7235 24.2783C17.5352 23.3217 23.2168 19.8333 25.0602 14C25.4452 12.81 25.6668 11.5267 25.6668 10.1383C25.6668 6.53334 22.7618 3.61667 19.1802 3.61667Z" fill="white" fill-opacity="0.6"></path>
+        </svg>
+      </div>
+      <div class="item-banner__weights desktop">
+        <div class="item-banner__weight txt30">80 г</div>
+        <div class="item-banner__weight txt30 active">100 г</div>
+        <div class="item-banner__weight txt30">300 г</div>
+        <div class="item-banner__weight txt30">500 г</div>
+        <div class="item-banner__weight txt30">1 кг</div>
+        <div class="item-banner__weight txt30">2.5 кг</div>
+      </div>
+    </div>
+    <div class="item-banner__descr txt18 mobile">
+      Вкус и аромат любимой летней ягоды добавляет сливочному пломбиру то самое, волшебное послевкусие. Это
+      мороженое, которое хочется ещё и ещё!
+    </div>
+  </div>
+</section>
+
+        <section class="about-product">
+  <div class="about-product__container container">
+    <div class="about-product__title txt60">О продукте</div>
+    <div class="about-product__row">
+      <div class="about-product__column">
+        <div class="about-product__subtitle txt30">на 100 гр:</div>
+        <div class="about-product__characteristic txt30"><span>Белки</span><span>0.2</span></div>
+        <div class="about-product__characteristic txt30"><span>Жиры</span><span>0</span></div>
+        <div class="about-product__characteristic txt30"><span>Углеводы</span><span>30</span></div>
+        <div class="about-product__characteristic txt30">
+          <span>Энергетическая ценность</span><span>120</span>
+        </div>
+      </div>
+      <div class="about-product__column">
+        <div class="about-product__text-box">
+          <div class="about-product__subtitle txt30">Состав:</div>
+          <p class="txt18">
+            молоко коровье цельное, молоко цельное сгущенное с сахаром (молоко цельное, молоко обезжиренное,
+            сахароза, лактоза), масло сливочное, сахар, молоко сухое обезжиренное, глюкозный сироп,
+            комплексная пищевая добавка (эмульгатор – моно- и диглицериды жирных кислот, стабилизаторы: тары
+            камедь, гуаровая камедь, ксантановая камедь, каррагинан), ароматизатор ваниль.
+          </p>
+          <p class="txt18 italic">
+            Может содержать следы глютена, арахиса, орехов, сои, яиц и продуктов их переработки.
+          </p>
+        </div>
+        <div class="about-product__text-box">
+          <div class="about-product__subtitle txt30">
+            Состав клубничного наполнителя с кусочками клубники:
+          </div>
+          <p class="txt18">
+            сахар, вода, клубника, глюкозно-фруктозный сироп, регулятор кислотности – лимонная кислота,
+            антиокислитель – аскорбиновая кислота, консервант – сорбат калия, ароматизатор клубника.
+          </p>
+        </div>
+        <div class="about-product__text-box">
+          <div class="about-product__subtitle txt30">Срок годности:</div>
+          <p class="txt18">1 год</p>
+        </div>
+      </div>
+      <div class="about-product__column">
+        <div class="about-product__text-box">
+          <div class="about-product__subtitle txt30">Описание:</div>
+          <p class="txt18">
+            Это мороженое — одно из самых заманчивых лакомств от «Чистой линии». Нежный тающий десерт состоит
+            только из натурального молока. И ничего лишнего! А польза превосходит все ожидания, ведь в этом
+            мороженом содержится минимальное количество жира — 3,5 %, много белка и всего 140 ккал. Насыщенный
+            сливочный вкус десерта, без сомнения, понравится всей семье, поэтому любимое лакомство сейчас в
+            большой практичной упаковке. Мороженое подарит всем хорошее настроение и оставит удивительно
+            приятное ванильное послевкусие. Теперь даже в самую жаркую ночь вы можете приятно освежиться
+            любимым мороженым, и спокойно уснуть, зная, что вашей фигуре ничего не навредит.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="about-product__background desktop">
+    <svg width="1920" height="1756" viewBox="0 0 1920 1756" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1872.23 1578.74C1939.27 1582.18 2308.15 1634.61 2355.5 1613L2182.88 152.265C2048.02 114.969 1965.67 307.294 1812.23 330.664C1672.4 351.96 1446.11 87.7814 1205.82 151.453C1108.07 177.355 1085.36 282.483 982.822 292.304C896.977 300.527 855.689 206.419 763.822 206.419C619.322 206.419 547.916 268.587 427.331 206.419C316.918 149.497 194.915 128.047 133.138 151.453C71.3612 174.858 -38.0045 150.265 -106.497 228.377C-161.292 290.866 -136.004 395.176 -148.154 378.1L-146.668 1599.81C-56.5326 1594.95 123.153 1489.56 237.162 1476.43C351.17 1463.3 494.325 1529.5 542.173 1549.04C590.021 1568.58 641.136 1561.72 686.003 1564.02C746.419 1567.11 821.849 1630.05 899.823 1617.8C972.71 1606.36 1013.57 1507.1 1083.82 1508.8C1154.08 1510.51 1154.22 1540.59 1232.28 1580.67C1310.34 1620.74 1341.54 1589.91 1399.4 1598.74C1455.62 1607.32 1515.64 1671.7 1598.78 1673.52C1687.08 1675.45 1788.43 1574.44 1872.23 1578.74Z" fill="#C5C1DD"></path>
+      <path d="M1872.23 1578.74C1939.27 1582.18 2308.15 1634.61 2355.5 1613L2182.88 152.265C2048.02 114.969 1965.67 307.294 1812.23 330.664C1672.4 351.96 1446.11 87.7814 1205.82 151.453C1108.07 177.355 1085.36 282.483 982.822 292.304C896.977 300.527 855.689 206.419 763.822 206.419C619.322 206.419 547.916 268.587 427.331 206.419C316.918 149.497 194.915 128.047 133.138 151.453C71.3612 174.858 -38.0045 150.265 -106.497 228.377C-161.292 290.866 -136.004 395.176 -148.154 378.1L-146.668 1599.81C-56.5326 1594.95 123.153 1489.56 237.162 1476.43C351.17 1463.3 494.325 1529.5 542.173 1549.04C590.021 1568.58 641.136 1561.72 686.003 1564.02C746.419 1567.11 821.849 1630.05 899.823 1617.8C972.71 1606.36 1013.57 1507.1 1083.82 1508.8C1154.08 1510.51 1154.22 1540.59 1232.28 1580.67C1310.34 1620.74 1341.54 1589.91 1399.4 1598.74C1455.62 1607.32 1515.64 1671.7 1598.78 1673.52C1687.08 1675.45 1788.43 1574.44 1872.23 1578.74Z" fill="url(#paint0_linear_2214_5965)"></path>
+      <path d="M2014.13 237.276C2071.46 250.686 2112.62 248.573 2168.27 229.364L2204.52 1522.55C2155.68 1513.57 2037.95 1515.87 1957.68 1596.9C1857.35 1698.19 1754.54 1753.89 1662.25 1755C1458.84 1757.45 1424.29 1601.33 1253.25 1574.5C1141.95 1557.04 1094.6 1556.02 995.751 1574.5C843.385 1602.99 777.445 1755 642.251 1755C523.251 1755 432.751 1661 313.751 1661C171.466 1661 126.576 1513.28 35.5816 1513.46C-48.5672 1489.97 -162.754 1484.56 -177.123 1444.41L-130.084 87.0488C-89.1917 123.041 14.546 200.922 104.492 202.359C226.337 204.305 306.66 49.4626 432.742 24.5563C558.825 -0.350015 678.326 127.262 793.36 135.093C885.388 141.357 931.685 229.313 1025.92 211.148C1096.7 197.506 1131.84 121.122 1180.43 113.185C1252.1 101.48 1267.45 119.601 1369.44 87.1561C1464.88 56.7915 1500.25 2.78136 1632.63 1.08624C1836.03 -1.51819 1865.35 202.466 2014.13 237.276Z" fill="url(#paint1_linear_2214_5965)"></path>
+      <path d="M2014.13 237.276C2071.46 250.686 2112.62 248.573 2168.27 229.364L2204.52 1522.55C2155.68 1513.57 2037.95 1515.87 1957.68 1596.9C1857.35 1698.19 1754.54 1753.89 1662.25 1755C1458.84 1757.45 1424.29 1601.33 1253.25 1574.5C1141.95 1557.04 1094.6 1556.02 995.751 1574.5C843.385 1602.99 777.445 1755 642.251 1755C523.251 1755 432.751 1661 313.751 1661C171.466 1661 126.576 1513.28 35.5816 1513.46C-48.5672 1489.97 -162.754 1484.56 -177.123 1444.41L-130.084 87.0488C-89.1917 123.041 14.546 200.922 104.492 202.359C226.337 204.305 306.66 49.4626 432.742 24.5563C558.825 -0.350015 678.326 127.262 793.36 135.093C885.388 141.357 931.685 229.313 1025.92 211.148C1096.7 197.506 1131.84 121.122 1180.43 113.185C1252.1 101.48 1267.45 119.601 1369.44 87.1561C1464.88 56.7915 1500.25 2.78136 1632.63 1.08624C1836.03 -1.51819 1865.35 202.466 2014.13 237.276Z" fill="url(#paint2_linear_2214_5965)"></path>
+      <defs>
+        <linearGradient id="paint0_linear_2214_5965" x1="113.002" y1="84.0001" x2="187.111" y2="348.153" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#D15834"></stop>
+          <stop offset="0.114523" stop-color="#D05F3F"></stop>
+          <stop offset="0.442274" stop-color="#C5BAD2"></stop>
+          <stop offset="1" stop-color="#C5BAD2" stop-opacity="0"></stop>
+        </linearGradient>
+        <linearGradient id="paint1_linear_2214_5965" x1="1094" y1="344" x2="1028.5" y2="1978" gradientUnits="userSpaceOnUse">
+          <stop offset="0.666875" stop-color="#D9D9D9" stop-opacity="0"></stop>
+          <stop offset="1" stop-color="#C5C0DA"></stop>
+        </linearGradient>
+        <linearGradient id="paint2_linear_2214_5965" x1="815.5" y1="-188.5" x2="1050.25" y2="1205" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#C5C0DA"></stop>
+          <stop offset="0.508758" stop-color="#D9D9D9" stop-opacity="0"></stop>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+  <div class="about-product__background mobile">
+    <svg width="375" height="2074" viewBox="0 0 375 2074" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1190.23 1978.74C1257.27 1982.18 1626.14 2034.61 1673.5 2013L1500.88 152.266C1366.01 114.97 1283.67 307.295 1130.23 330.665C990.398 351.962 764.109 87.7826 523.82 151.454C426.069 177.356 403.354 282.484 300.82 292.305C214.974 300.528 173.686 206.421 81.8197 206.421C-62.6804 206.421 -134.086 268.588 -254.672 206.421C-365.084 149.498 -487.088 128.049 -548.865 151.454C-610.641 174.859 -720.007 150.266 -788.5 228.378C-843.294 290.868 -818.006 395.177 -830.157 378.101L-828.669 1999.81C-738.534 1994.95 -558.848 1889.56 -444.839 1876.43C-330.831 1863.3 -187.676 1929.5 -139.828 1949.04C-91.9802 1968.58 -40.8652 1961.72 4.00213 1964.02C64.4183 1967.11 139.848 2030.05 217.822 2017.8C290.709 2006.36 331.564 1907.09 401.822 1908.8C472.08 1910.51 472.218 1940.59 550.276 1980.67C628.335 2020.74 659.539 1989.91 717.396 1998.74C773.623 2007.32 833.638 2071.7 916.778 2073.52C1005.08 2075.45 1106.43 1974.44 1190.23 1978.74Z" fill="#C5C1DD"></path>
+      <path d="M1190.23 1978.74C1257.27 1982.18 1626.14 2034.61 1673.5 2013L1500.88 152.266C1366.01 114.97 1283.67 307.295 1130.23 330.665C990.398 351.962 764.109 87.7826 523.82 151.454C426.069 177.356 403.354 282.484 300.82 292.305C214.974 300.528 173.686 206.421 81.8197 206.421C-62.6804 206.421 -134.086 268.588 -254.672 206.421C-365.084 149.498 -487.088 128.049 -548.865 151.454C-610.641 174.859 -720.007 150.266 -788.5 228.378C-843.294 290.868 -818.006 395.177 -830.157 378.101L-828.669 1999.81C-738.534 1994.95 -558.848 1889.56 -444.839 1876.43C-330.831 1863.3 -187.676 1929.5 -139.828 1949.04C-91.9802 1968.58 -40.8652 1961.72 4.00213 1964.02C64.4183 1967.11 139.848 2030.05 217.822 2017.8C290.709 2006.36 331.564 1907.09 401.822 1908.8C472.08 1910.51 472.218 1940.59 550.276 1980.67C628.335 2020.74 659.539 1989.91 717.396 1998.74C773.623 2007.32 833.638 2071.7 916.778 2073.52C1005.08 2075.45 1106.43 1974.44 1190.23 1978.74Z" fill="url(#paint0_linear_2682_12941)"></path>
+      <path d="M1332.14 237.276C1389.46 250.686 1430.62 248.574 1486.27 229.364L1522.52 1832.55C1473.68 1823.57 1355.95 1825.86 1275.68 1906.9C1175.35 2008.19 1072.54 2063.89 980.254 2065C776.844 2067.45 742.286 1911.33 571.254 1884.5C459.948 1867.04 412.597 1866.01 313.75 1884.5C161.384 1912.99 95.4434 2065 -39.7502 2065C-158.75 2065 -249.25 1971 -368.25 1971C-510.535 1971 -555.425 1823.28 -646.42 1823.46C-730.568 1799.97 -844.755 1794.56 -859.124 1754.41L-812.084 87.0488C-771.192 123.041 -667.454 200.922 -577.508 202.359C-455.663 204.305 -284.082 254.27 -158 229.364C-31.9176 204.457 -3.67431 127.262 111.36 135.093C203.388 141.357 249.685 229.313 343.923 211.148C414.697 197.506 449.84 121.122 498.431 113.185C570.097 101.48 585.452 119.601 687.439 87.1561C782.885 56.7915 818.246 2.78136 950.632 1.08624C1154.03 -1.51818 1183.35 202.466 1332.14 237.276Z" fill="url(#paint1_linear_2682_12941)"></path>
+      <path d="M1332.14 237.276C1389.46 250.686 1430.62 248.574 1486.27 229.364L1522.52 1832.55C1473.68 1823.57 1355.95 1825.86 1275.68 1906.9C1175.35 2008.19 1072.54 2063.89 980.254 2065C776.844 2067.45 742.286 1911.33 571.254 1884.5C459.948 1867.04 412.597 1866.01 313.75 1884.5C161.384 1912.99 95.4434 2065 -39.7502 2065C-158.75 2065 -249.25 1971 -368.25 1971C-510.535 1971 -555.425 1823.28 -646.42 1823.46C-730.568 1799.97 -844.755 1794.56 -859.124 1754.41L-812.084 87.0488C-771.192 123.041 -667.454 200.922 -577.508 202.359C-455.663 204.305 -284.082 254.27 -158 229.364C-31.9176 204.457 -3.67431 127.262 111.36 135.093C203.388 141.357 249.685 229.313 343.923 211.148C414.697 197.506 449.84 121.122 498.431 113.185C570.097 101.48 585.452 119.601 687.439 87.1561C782.885 56.7915 818.246 2.78136 950.632 1.08624C1154.03 -1.51818 1183.35 202.466 1332.14 237.276Z" fill="url(#paint2_linear_2682_12941)"></path>
+      <defs>
+        <linearGradient id="paint0_linear_2682_12941" x1="-569" y1="84.0037" x2="-494.89" y2="348.156" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#D15834"></stop>
+          <stop offset="0.114523" stop-color="#D05F3F"></stop>
+          <stop offset="0.442274" stop-color="#C5BAD2"></stop>
+          <stop offset="1" stop-color="#C5BAD2" stop-opacity="0"></stop>
+        </linearGradient>
+        <linearGradient id="paint1_linear_2682_12941" x1="411.999" y1="344" x2="-41.5009" y2="2083.5" gradientUnits="userSpaceOnUse">
+          <stop offset="0.666875" stop-color="#D9D9D9" stop-opacity="0"></stop>
+          <stop offset="1" stop-color="#C5C0DA"></stop>
+        </linearGradient>
+        <linearGradient id="paint2_linear_2682_12941" x1="133.501" y1="-188.5" x2="368.253" y2="1205" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#C5C0DA"></stop>
+          <stop offset="0.508758" stop-color="#D9D9D9" stop-opacity="0"></stop>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer section" data-anchor="footer">
+  <div class="container footer__container">
+    <div class="footer__inner">
+      <div class="footer__svg-wrapper">
+        <div class="footer__svg-box">
+          <img src="./assets/images/footer.svg" alt="">
+        </div>
+      </div>
+      <p class="footer__text tl2">FOOTER</p>
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </body>
+</html>

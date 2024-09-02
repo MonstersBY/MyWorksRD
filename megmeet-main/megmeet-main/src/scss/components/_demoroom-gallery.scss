@@ -1,0 +1,104 @@
+.demoroom-gallery {
+    &__title {
+        margin-bottom: 6rem;
+        text-transform: uppercase;
+    }
+    .swiper-wrapper {
+        display: grid;
+        gap: 4rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    &__slide {
+        height: 39rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &--big {
+            grid-column: span 2;
+        }
+    }
+    &__show-more {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        margin: 6rem 0 0;
+        font-weight: 600;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        color: #00A499;
+        cursor: pointer;
+
+        svg {
+            width: 4.1rem;
+            height: 0.8rem;
+        }
+    }
+    &__swiper {
+        height: 100%;
+        &-hiden {
+            overflow: hidden;
+            height: 84rem;
+        }
+        &-show {
+            height: 100%;
+        }
+    }
+    .swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+        display: none;
+    }
+    .swiper-pagination-bullets-dynamic {
+        display: none;
+    }
+}
+
+@include small-tablet {
+    .demoroom-gallery {
+        &__title {
+            margin-bottom: 6rem;
+            text-transform: uppercase;
+        }
+        .swiper-wrapper {
+            display: flex;
+            gap: 0;
+        }
+        &__slide {
+            &.swiper-slide {
+                height: 71rem;
+            }
+            height: 71rem;
+    
+            &--big {
+                grid-column: span 2;
+            }
+        }
+        &__show-more {
+            display: none;
+        }
+        &__swiper {
+            height: 100%;
+            &-hiden {
+                overflow: hidden;
+                height: auto;
+            }
+            &-show {
+                height: 100%;
+            }
+        }
+        &__pagination {
+            margin: 8rem auto 0;
+        }
+        .swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+            transform: none;
+            margin: 8rem auto 0;
+            display: block;
+        }
+        .swiper-pagination-bullet-active {
+            background: #00A499;
+        }
+    }
+}

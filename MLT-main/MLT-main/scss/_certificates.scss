@@ -1,0 +1,129 @@
+.certificates {
+    background-color: #121820;
+    margin-bottom: 0;
+}
+.certificates__container {
+    padding-top: 14rem;
+    padding-bottom: 15rem;
+}
+.certificates__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+}
+.certificates__title {
+    color: #fff;
+    font-family: Gilroy;
+    font-size: 5.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 105%;
+}
+.certificates__panel {
+    width: 82rem;
+}
+.certificates__slide {
+    width: 37.4rem;
+    height: 46.3rem;
+    background-color: #fff;
+    padding: 2rem;
+}
+.certificates__box {
+    height: 32.3rem;
+    padding: 2.8rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: rgba(18, 24, 32, 0.1);
+    border-radius: 2rem;
+    margin-bottom: 2.8rem;
+    position: relative;
+}
+.certificates__name {
+    color: #121820;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 135%;
+    margin-bottom: 1.5rem;
+}
+.certificates__article {
+    color: #121820;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0%;
+}
+.certificates__img {
+    position: absolute;
+    top: 2.8rem;
+    left: 2.8rem;
+    z-index: 0;
+}
+.certificates__img img {
+    -o-object-fit: contain;
+    object-fit: contain;
+    width: 28rem;
+    height: 26.8rem;
+}
+.certificates__zoom {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 1.8rem;
+    background-color: #121820;
+    border-radius: 2rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+.certificates__zoom img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+@media (max-width: 48em) {
+    .certificates__slide {
+        width: 100%;
+        height: 83rem;
+        padding: 6rem;
+    }
+    .certificates__box {
+        height: 57rem;
+        margin-bottom: 4rem;
+    }
+    .certificates__zoom {
+        width: 9.6rem;
+        height: 9.6rem;
+        padding: 0rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3rem;
+    }
+    .certificates__zoom img {
+        width: 4rem;
+        height: 4rem;
+    }
+    .certificates__name {
+        font-size: 3.6rem;
+        margin-bottom: 0;
+    }
+    .certificates__article {
+        font-size: 3.6rem;
+        line-height: 135%;
+    }
+    .certificates__img {
+        top: 3.6rem;
+        left: 6rem;
+    }
+    .certificates__img img {
+        width: 47rem;
+        height: 50rem;
+    }
+}

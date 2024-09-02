@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мои покупки заказ</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <include src="./components/_header.html"></include>
+      <include src="./components/_popup.html"></include>
+      <main>
+        <div class="bc txt16">
+          <span>Главная</span><span>Профиль</span><span>Мои покупки</span>
+        </div>
+        <section class="lk">
+          <div class="container">
+            <div class="lk-sidebar">
+              <div class="lk-sidebar_box">
+                <div class="lk-sidebar_box-top txt16 mobile">
+                  <span>Мои покупки</span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 5L8 10L13 5" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="lk-sidebar_box-bottom txt16">
+                  <div class="lk-sidebar_box-list">
+                    <a class="lk-sidebar_box-link">Личные данные</a>
+                    <a class="lk-sidebar_box-link active">Мои покупки</a>
+                    <a class="lk-sidebar_box-link">Избранное</a>
+                    <a class="lk-sidebar_box-link">Выйти</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="lk-container lk-container_order">
+              <div class="lk-container_order-top">
+                <div class="lk-container_order-top--main delivery txt16">
+                  <span>12.04.2024</span>
+                  <span>В доставке</span>
+                </div>
+                <div class="lk-container_order-top--number txt36">Заказ № 9203661507</div>
+                <div class="lk-container_order-top--delivery txt16">
+                  <span>Курьерская доставка:</span>
+                  <span>20.04 / 10:00 - 13:00</span>
+                </div>
+              </div>
+              <div class="lk-container_order-list">
+                <div class="cart__item">
+                  <div class="cart__item-main">
+                    <div class="cart__item-main--img">
+                      <img src="./assets/images/cart/cart-item1.webp" alt="">
+                    </div>
+                    <div class="cart__item-main--back">
+                      <svg class="desktop" width="354" height="360" viewBox="0 0 354 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M161.937 318.118C210.816 320.399 267.355 387.43 310.606 347.136C348.607 311.732 335.24 263.335 323.298 213.842C310.719 161.709 363.326 107.03 352.529 82.393C332.381 36.4179 248.581 86.0618 200.985 64.198C139.719 36.0548 80.0585 -31.7053 32.6475 17.313C-2.47289 53.624 28.5531 83.9816 33.4385 143.562C37.3365 191.101 -25.5098 272.981 11.9753 315.202C50.8834 359.025 126.797 316.478 161.937 318.118Z" fill="white" />
+                      </svg>
+                      <svg class="mobile" width="283" height="259" viewBox="0 0 283 259" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M129.5 228.868C168.438 230.509 213.478 278.735 247.932 249.745C278.204 224.274 267.556 189.455 258.043 153.847C248.022 116.341 289.929 77.0018 281.328 59.2772C265.278 26.2007 198.522 61.9167 160.607 46.1869C111.802 25.9395 64.2754 -22.8102 26.5074 12.4558C-1.46992 38.5795 23.2457 60.4201 27.1374 103.285C30.2426 137.486 -19.8214 196.395 10.0396 226.77C41.0343 258.299 101.508 227.688 129.5 228.868Z" fill="white" />
+                      </svg>
+                    </div>
+                    <div class="cart__item-main--name txt40">Лесные ягоды</div>
+                  </div>
+                  <div class="cart__item-box">
+                    <div class="cart__item-box--text">
+                      <div class="cart__item-box--weight txt30">80гр</div>
+                      <div class="cart__item-box--name txt18">взбитый замороженный сорбет</div>
+                      <div class="cart__item-box--type txt16">мороженое</div>
+                    </div>
+                    <div class="cart__item-box--del">
+                      <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="74" height="74" rx="37" fill="white" fill-opacity="0.7"/>
+                        <rect x="1" y="1" width="72" height="72" rx="36" stroke="white" stroke-width="2"/>
+                        <path d="M43 31L31 43" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M31 31L43 43" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="cart__item-box--info">
+                      <span class="cart__item-box--info_amount txt30">2</span> <span class="cart__item-box--info_x txt18">x</span> <span class="cart__item-box--info_price txt40">150</span><br>
+                      <span class="cart__item-box--info_weight txt16">( 160 гр )</span>
+                    </div>
+                    <div class="cart__item-box--calc">
+                      <div class="cart__item-box--calc_price txt40">300</div>
+                      <div class="cart__item-box--change txt26">
+                        <div class="cart__item-box--change_minus">
+                          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12.5H19" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="cart__item-box--change_numb">2</div>
+                        <div class="cart__item-box--change_plus">
+                          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 5.5V19.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5 12.5H19" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart__item">
+                  <div class="cart__item-main">
+                    <div class="cart__item-main--img">
+                      <img src="./assets/images/cart/cart-item2.webp" alt="">
+                    </div>
+                    <div class="cart__item-main--back">
+                      <svg class="desktop" width="354" height="360" viewBox="0 0 354 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M161.937 318.118C210.816 320.399 267.355 387.43 310.606 347.136C348.607 311.732 335.24 263.335 323.298 213.842C310.719 161.709 363.326 107.03 352.529 82.393C332.381 36.4179 248.581 86.0618 200.985 64.198C139.719 36.0548 80.0585 -31.7053 32.6475 17.313C-2.47289 53.624 28.5531 83.9816 33.4385 143.562C37.3365 191.101 -25.5098 272.981 11.9753 315.202C50.8834 359.025 126.797 316.478 161.937 318.118Z" fill="white" />
+                      </svg>
+                      <svg class="mobile" width="283" height="259" viewBox="0 0 283 259" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M129.5 228.868C168.438 230.509 213.478 278.735 247.932 249.745C278.204 224.274 267.556 189.455 258.043 153.847C248.022 116.341 289.929 77.0018 281.328 59.2772C265.278 26.2007 198.522 61.9167 160.607 46.1869C111.802 25.9395 64.2754 -22.8102 26.5074 12.4558C-1.46992 38.5795 23.2457 60.4201 27.1374 103.285C30.2426 137.486 -19.8214 196.395 10.0396 226.77C41.0343 258.299 101.508 227.688 129.5 228.868Z" fill="white" />
+                      </svg>
+                    </div>
+                    <div class="cart__item-main--name txt40">Лесные ягоды</div>
+                  </div>
+                  <div class="cart__item-box">
+                    <div class="cart__item-box--text">
+                      <div class="cart__item-box--weight txt30">80гр</div>
+                      <div class="cart__item-box--name txt18">взбитый замороженный сорбет</div>
+                      <div class="cart__item-box--type txt16">мороженое</div>
+                    </div>
+                    <div class="cart__item-box--del">
+                      <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="74" height="74" rx="37" fill="white" fill-opacity="0.7"/>
+                        <rect x="1" y="1" width="72" height="72" rx="36" stroke="white" stroke-width="2"/>
+                        <path d="M43 31L31 43" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M31 31L43 43" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="cart__item-box--info">
+                      <span class="cart__item-box--info_amount txt30">2</span> <span class="cart__item-box--info_x txt18">x</span> <span class="cart__item-box--info_price txt40">150</span><br>
+                      <span class="cart__item-box--info_weight txt16">( 160 гр )</span>
+                    </div>
+                    <div class="cart__item-box--calc">
+                      <div class="cart__item-box--calc_price txt40">300</div>
+                      <div class="cart__item-box--change txt26">
+                        <div class="cart__item-box--change_minus">
+                          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12.5H19" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="cart__item-box--change_numb">2</div>
+                        <div class="cart__item-box--change_plus">
+                          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 5.5V19.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5 12.5H19" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart__item">
+                  <div class="cart__item-main">
+                    <div class="cart__item-main--img">
+                      <img src="./assets/images/cart/cart-item3.webp" alt="">
+                    </div>
+                    <div class="cart__item-main--back">
+                      <svg class="desktop" width="354" height="360" viewBox="0 0 354 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M161.937 318.118C210.816 320.399 267.355 387.43 310.606 347.136C348.607 311.732 335.24 263.335 323.298 213.842C310.719 161.709 363.326 107.03 352.529 82.393C332.381 36.4179 248.581 86.0618 200.985 64.198C139.719 36.0548 80.0585 -31.7053 32.6475 17.313C-2.47289 53.624 28.5531 83.9816 33.4385 143.562C37.3365 191.101 -25.5098 272.981 11.9753 315.202C50.8834 359.025 126.797 316.478 161.937 318.118Z" fill="white" />
+                      </svg>
+                      <svg class="mobile" width="283" height="259" viewBox="0 0 283 259" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M129.5 228.868C168.438 230.509 213.478 278.735 247.932 249.745C278.204 224.274 267.556 189.455 258.043 153.847C248.022 116.341 289.929 77.0018 281.328 59.2772C265.278 26.2007 198.522 61.9167 160.607 46.1869C111.802 25.9395 64.2754 -22.8102 26.5074 12.4558C-1.46992 38.5795 23.2457 60.4201 27.1374 103.285C30.2426 137.486 -19.8214 196.395 10.0396 226.77C41.0343 258.299 101.508 227.688 129.5 228.868Z" fill="white" />
+                      </svg>
+                    </div>
+                    <div class="cart__item-main--name txt40">Лесные ягоды</div>
+                  </div>
+                  <div class="cart__item-box">
+                    <div class="cart__item-box--text">
+                      <div class="cart__item-box--weight txt30">80гр</div>
+                      <div class="cart__item-box--name txt18">взбитый замороженный сорбет</div>
+                      <div class="cart__item-box--type txt16">мороженое</div>
+                    </div>
+                    <div class="cart__item-box--del">
+                      <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="74" height="74" rx="37" fill="white" fill-opacity="0.7"/>
+                        <rect x="1" y="1" width="72" height="72" rx="36" stroke="white" stroke-width="2"/>
+                        <path d="M43 31L31 43" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M31 31L43 43" stroke="#D15834" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="cart__item-box--info">
+                      <span class="cart__item-box--info_amount txt30">2</span> <span class="cart__item-box--info_x txt18">x</span> <span class="cart__item-box--info_price txt40">150</span><br>
+                      <span class="cart__item-box--info_weight txt16">( 160 гр )</span>
+                    </div>
+                    <div class="cart__item-box--calc">
+                      <div class="cart__item-box--calc_price txt40">300</div>
+                      <div class="cart__item-box--change txt26">
+                        <div class="cart__item-box--change_minus">
+                          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12.5H19" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <div class="cart__item-box--change_numb">2</div>
+                        <div class="cart__item-box--change_plus">
+                          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 5.5V19.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5 12.5H19" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="lk-container_order-bottom txt18">
+                <div class="lk-container_order-bottom--item">
+                  <span>Сумма заказа</span>
+                  <span>750 ₽</span>
+                </div>
+                <div class="lk-container_order-bottom--item">
+                  <span>Доставка</span>
+                  <span>Бесплатно</span>
+                </div>
+                <div class="lk-container_order-bottom--item">
+                  <span>Итого</span>
+                  <span>750 ₽</span>
+                </div>
+                <hr>
+                <div class="lk-container_order-bottom--item">
+                  <span>Способ оплаты</span>
+                  <span>Онлайн картой на сайте</span>
+                </div>
+                <div class="lk-container_order-bottom--item">
+                  <span>Способ доставки</span>
+                  <span>Курьерская доставка</span>
+                </div>
+                <div class="lk-container_order-bottom--item">
+                  <span>Адрес доставки</span>
+                  <span>г. Москва, ул. Покровка, д. 7, подъезд 15, кв 123</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <include src="./components/_footer.html"></include>
+    </div>
+  </body>
+</html>

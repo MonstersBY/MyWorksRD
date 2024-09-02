@@ -1,0 +1,366 @@
+.detailed-portfolio {
+    background-color: $green;
+    color: $Beige;
+    padding: 8rem 0 15rem;
+    @include small-tablet {
+        padding: 5rem 0 23rem;
+    }
+
+    // .article__inner
+
+    &__inner {
+        display: flex;
+        gap: 11rem;
+        position: relative;
+        @include small-tablet {
+          flex-direction: column-reverse;
+          gap: 18rem;
+        }
+    }
+
+    // .article__aside
+
+    &__aside {
+        // position: sticky;
+        top: 2rem;
+        left: 0;
+        height: fit-content;
+        width: 40.6rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4.4rem;
+        @include small-tablet {
+            position: static;
+            width: 100%;
+            gap: 8rem;
+          }
+       
+    }
+
+    // .article__aside-title
+
+    &__aside-title {
+    }
+
+    // .article__aside-list
+
+    &__aside-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 0 3rem 0 1.9rem;
+        border-right: 1px solid $textAndLine;
+        border-left: 1px solid $textAndLine;
+        @include small-tablet {
+            padding: 0;
+            border-right: none;
+            border-left: none;
+            gap: 0;
+          }
+    }
+
+    // .article__aside-item
+
+    &__aside-item {
+        padding: 2rem 0 3.2rem;
+        &:not(:last-of-type) {
+            border-bottom: 1px solid $textAndLine;
+        }
+        @include small-tablet {
+            padding: 4rem 0;    
+            border-top: 1px solid $Beige;
+            border-bottom: none;
+          }
+    }
+
+    // .article__aside-item-link
+
+    &__aside-item-link {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        @include small-tablet {
+            gap: 2.4rem;
+          }
+    }
+
+    // .article__aside-category-box
+
+    &__aside-category-box {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+        @include small-tablet {
+            gap: 1.6rem;
+        }
+    }
+
+    // .article__aside-category
+
+    &__aside-category {
+        padding: 0.4rem 1.2rem;
+        border-radius: 100rem;
+        border: 1px solid $Beige;
+        width: fit-content;
+        text-transform: uppercase;
+        @include small-tablet {
+            padding: 0.8rem 2.4rem;
+        }
+    }
+
+    // .article__aside-link-title
+
+    &__aside-link-title {
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Максимальное количество строк */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    // .article__content
+
+    &__content {
+        width: 100.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 5.2rem;
+        @include small-tablet {
+            gap: 6.4rem;
+            width: 100%;
+        }
+    }
+    &__content-header-box {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        @include small-tablet {
+            position: relative;
+            padding-top: 5rem;
+            flex-direction: column-reverse;
+            gap: 1.6rem;
+        }
+    }
+    &__content-header-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    &__time {
+        @include small-tablet {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+    // .article__category-box
+
+    &__category-box {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+        @include small-tablet {
+            gap: 1.6rem;
+        }
+    }
+
+    // .article__category
+
+    &__category {
+        padding: 0.4rem 1.2rem;
+        border-radius: 100rem;
+        border: 1px solid $Beige;
+        width: fit-content;
+        text-transform: uppercase;
+        @include small-tablet {
+            padding: 0.8rem 2.4rem;
+        }
+    }
+
+    // .article__title
+
+    &__title {
+    }
+
+    // .article__content-box
+
+    &__content-box {
+        display: flex;
+        flex-direction: column;
+        gap: 5.2rem;
+        @include small-tablet {
+            gap: 8rem;
+        }
+    }
+
+		// .detailed-portfolio__content-banner-box
+
+		&__content-banner-box {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            @include small-tablet {
+                gap: 2.4rem;
+            }
+		}
+
+		// .detailed-portfolio__banner
+
+		&__banner {
+            width: 9.2rem;
+            height: 9.2rem;
+            border-radius: 1.2rem;
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(7.5px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include small-tablet {
+                width: 12rem;
+            height: 12rem;
+            border-radius: 1.5rem;
+            }
+		}
+
+		// .detailed-portfolio__banner-img-box
+
+		&__banner-img-box {
+            width: 6rem;
+            height: 6rem;
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            @include small-tablet {
+                width: 8rem;
+                height: 8rem;
+            }
+		}
+
+		// .detailed-portfolio__content-banner-text-box
+
+		&__content-banner-text-box {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            @include small-tablet {
+                gap: 0.8rem;
+            }
+		}
+
+		// .detailed-portfolio__content-banner-text-title
+
+		&__content-banner-text-title {
+		}
+
+		// .detailed-portfolio__content-banner-text-desk
+
+		&__content-banner-text-desk {
+		}
+
+
+
+    // .article__content-img-box
+
+    &__content-img-box {
+    }
+
+    // .article__contentiimg-box--big
+
+    &__content-img-box--big {
+        width: 100.5rem;
+        height: 74.6rem;
+        -webkit-mask-image: url(./assets/images/picture/article__mask.svg);
+        mask-image: url(./assets/images/picture/article__mask.svg);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 100% 100%;
+        mask-size: 100% 100%;
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @include small-tablet {
+            width: 68.6rem;
+            height: 50.8rem;
+        }
+    }
+
+    // .article__contentiimg-box--min
+
+    &__content-img-box--min {
+    }
+
+    &__content-img--min-wrapper {
+        -webkit-mask-image: url(./assets/images/picture/article__mask.svg);
+        mask-image: url(./assets/images/picture/article__mask.svg);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 100% 100%;
+        mask-size: 100% 100%;
+        width: 49rem;
+        height: 36.3rem;
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @include small-tablet {
+            width: 68.6rem;
+            height: 50.8rem;
+        }
+    }
+
+    // .article__content-text-box
+
+    &__content-text-box {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        @include small-tablet {
+            gap: 4rem;
+        }
+    }
+
+    // .article__contenttext-title
+
+    &__content-text-title {
+    }
+
+    &__content-text-desk-box {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        @include small-tablet {
+            gap: 5rem;
+        }
+    }
+    &__content-text-list {
+        padding-left: 4rem;
+        & li {
+            list-style-type: disc;
+        }
+        @include small-tablet {
+            padding-left: 6rem;
+        }
+    }
+    // .article__contenttext-desk
+
+    &__content-text-desk {
+    }
+
+    &__swiper-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 0.4rem;
+        @include small-tablet {
+            padding-top: 4.8rem;
+        }
+    }
+}

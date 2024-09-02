@@ -1,0 +1,94 @@
+.fancybox__container {
+    --fancybox-bg: rgba(1, 32, 40, 0.4) !important;
+}
+.fancybox__backdrop {
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+}
+.f-button-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 6.2rem;
+    height: 6.2rem;
+    pointer-events: all;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    @include small-tablet {
+        width: 9.2rem;
+        height: 9.2rem;
+    }
+}
+.fancybox__toolbar__column.is-right {
+    // margin: 4rem 4rem 0 0;
+    @include small-tablet {
+        margin: 3.2rem 3.2rem 0 0;
+    }
+}
+.fancybox__footer {
+    display: none;
+}
+
+.has-image {
+    & img {
+        width: 90%;
+        height: 90%;
+        border-radius: 1.2rem;
+    }
+    @include small-tablet {
+        & img {
+            width: 100%;
+            height: 100%;
+            border-radius: 2.4rem;
+        }
+    }
+}
+.is-horizontal .f-carousel__nav .f-button.is-prev, .is-horizontal .f-carousel__nav .f-button.is-next, .is-horizontal .fancybox__nav .f-button.is-prev, .is-horizontal .fancybox__nav .f-button.is-next {
+
+    width: 6.2rem;
+    height: 6.2rem;
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+    @include small-tablet {
+        top: auto !important;
+        transform: unset !important;
+        position: inherit;
+        left: auto !important;
+        right: auto !important;
+        width: 9.2rem;
+        height: 9.2rem;
+    }
+
+}
+.fancybox__nav {
+
+    @include small-tablet {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 1.2rem;
+        width: fit-content;
+        margin: auto;
+        margin-top: 1.6rem;
+        margin-top: 0;
+        gap: 2.4rem;
+    }
+}
+.f-button:hover:not([disabled]) {
+    color:  unset !important;
+    background-color: unset !important;
+}
+.fancybox__nav .f-button:before {
+    content: unset !important;
+}
+.fancybox__viewport {
+    @include small-tablet {
+        margin-bottom: -10rem;
+        padding-bottom: 10rem;
+    }
+}

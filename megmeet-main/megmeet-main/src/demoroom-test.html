@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Демо-зал</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <include src="./components/_header.html"></include>
+      <include src="./components/_popup.html"></include>
+      <main>
+        <section class="nav-box _first">
+          <div class="container">
+            <nav class="nav-box__list-wrap title-h5">
+              <ul class="nav-box__list">
+                <li class="nav-box__link txt16"><a href="#">Главная</a></li>
+                <li class="nav-box__link nav-box__link_black txt16">Демо-зал</li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+        <section class="galery">
+          <div class="galery__container container">
+            <div class="galery__img" data-fancybox="gallery" data-src="./assets/images/galery-img-1.webp">
+              <img src="./assets/images/galery-img-1.webp" alt="" />
+            </div>
+            <div class="galery__img" data-fancybox="gallery" data-src="./assets/images/galery-img-2.webp">
+              <img src="./assets/images/galery-img-2.webp" alt="" />
+            </div>
+            <div class="galery__img" data-fancybox="gallery" data-src="./assets/images/galery-img-3.webp">
+              <img src="./assets/images/galery-img-3.webp" alt="" />
+            </div>
+            <div class="galery__img" data-fancybox="gallery" data-src="./assets/images/galery-img-4.webp">
+              <img src="./assets/images/galery-img-4.webp" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <include src="./components/_application_demo.html"></include> 
+      </main>
+      <include src="./components/_footer.html"></include>
+    </div>
+  </body>
+</html>

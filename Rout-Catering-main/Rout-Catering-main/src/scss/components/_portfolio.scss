@@ -1,0 +1,190 @@
+.portfolio {
+    background-color: $green;
+    color: $Beige;
+    padding: 8rem 0 15rem;
+
+    // .articles__inner
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+    }
+
+    // .articles__title
+
+    &__title {
+        align-self: center;
+    }
+
+    // .articles__list-wrapper
+
+    &__list-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        @include small-tablet {
+            gap: 4.8rem;
+        }
+    }
+
+    // .articles__list
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8rem 4rem;
+        @include small-tablet {
+            grid-template-columns: 1fr;
+            gap: 8rem;
+        }
+    }
+
+    // .articles__item
+
+    &__item {
+    }
+
+    // .articles__link
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        @include small-tablet {
+            gap: 2.4rem;
+        }
+    }
+    // .articles__category-box
+
+    &__category-box {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+    }
+    // .articles__category
+
+    &__category {
+        padding: 0.4rem 1.2rem;
+        border-radius: 100rem;
+        border: 1px solid $Beige;
+        width: fit-content;
+        text-transform: uppercase;
+        @include small-tablet {
+            padding: 0.8rem 2.4rem;
+        }
+    }
+
+    // .articles__img-box
+
+    &__img-box {
+        -webkit-mask-image: url(./assets/images/picture/article__mask.svg);
+        mask-image: url(./assets/images/picture/article__mask.svg);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 100% 100%;
+        mask-size: 100% 100%;
+        width: 74rem;
+        height: 55rem;
+        position: relative;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @include small-tablet {
+            width: 68.6rem;
+            height: 50.8rem;
+        }
+    }
+    &__banner {
+        position: absolute;
+        top: 3.2rem;
+        left: 3.2rem;
+        z-index: 1;
+        width: 9.2rem;
+        height: 9.2rem;
+        border-radius: 1.2rem;
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(7.5px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include small-tablet {
+            width: 12rem;
+        height: 12rem;
+        border-radius: 1.5rem;
+        }
+    }
+    &__banner-img-box {
+        width: 6rem;
+        height: 6rem;
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @include small-tablet {
+            width: 8rem;
+            height: 8rem;
+        }
+    }
+
+    // .articles__info-box
+
+    &__info-box {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.2rem;
+        margin-top: 0.4rem;
+        @include small-tablet {
+            margin-top: 0;
+            flex-direction: column;
+            gap: 1.6rem;
+        }
+    }
+
+    // .articles__info-title
+
+    &__info-title {
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Максимальное количество строк */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    // .articles__btn
+
+    &__btn {
+    }
+
+    // .articles__more-btn
+
+    &__more-btn {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        color: $LightGreen;
+        align-self: center;
+        transition: color 0.4s ease;
+        &:hover {
+            color: $textAndLine;
+            & svg {
+                stroke: $textAndLine;
+            }
+        }
+        & svg {
+            width: 3.2rem;
+            height: 3.2rem;
+            stroke: $LightGreen;
+            transition: stroke 0.4s ease;
+            @include small-tablet {
+                width: 6.4rem;
+                height: 6.4rem;
+            }
+        }
+    }
+}

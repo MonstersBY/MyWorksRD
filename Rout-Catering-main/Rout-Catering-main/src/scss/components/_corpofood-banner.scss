@@ -1,0 +1,151 @@
+.corpofood-banner {
+    background-color: $main;
+    color: $Beige;
+    padding-top: 8.6rem;
+
+    @include small-tablet {
+        padding-top: 4.8rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 5.2rem;
+
+        @include small-tablet {
+            gap: 6.4rem;
+        }
+    }
+
+    &__head {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @include small-tablet {
+            flex-direction: column-reverse;
+            gap: 6.4rem;
+        }
+
+        &-images {
+            display: flex;
+            align-items: center;
+            width: 61.9rem;
+
+            @include small-tablet {
+                width: 100%;
+            }
+
+            &-figure {
+                border-radius: 50%;
+                background-color: $blue;
+                width: 37.4rem;
+                height: 37.4rem;
+                min-width: 37.4rem;
+                min-height: 37.4rem;
+
+                @include small-tablet {
+                    width: 20.7rem * 2;
+                    height: 20.7rem * 2;
+                    min-width: 20.7rem * 2;
+                    min-height: 20.7rem * 2;
+                }
+            }
+
+            &-item {
+                min-width: 37.4rem;
+                min-height: 37.4rem;
+                border-radius: 50%;
+                overflow: hidden;
+                width: 37.4rem;
+                height: 37.4rem;
+                margin-left: -12.9rem;
+                border: 1px solid $Beige;
+
+                cursor: pointer;
+                transition: transform 0.25s ease-in-out;
+
+                @include small-tablet {
+                    width: 20.7rem * 2;
+                    height: 20.7rem * 2;
+                    min-width: 20.7rem * 2;
+                    min-height: 20.7rem * 2;
+                    margin-left: -7.1 * 2rem;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                }
+
+                &:hover {
+                    transform: scale(1.01);
+                }
+            }
+        }
+
+        &-content {
+            width: 74.8rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+
+            @include small-tablet {
+                width: 100%;
+                gap: 3.2rem;
+            }
+        }
+
+        &-subtitle {
+            padding-left: 26.2rem;
+            position: relative;
+
+            &::before {
+                top: 50%;
+                left: 0;
+                position: absolute;
+                content: '';
+                transform: translateY(-50%);
+                width: 21.2rem;
+                border-bottom: 1px solid $textAndLine;
+            }
+
+            @include small-tablet {
+                padding-left: 10.3 * 2rem;
+
+                &::before {
+                    width: 8.7rem * 2;
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        &-img {
+            width: 100%;
+            height: 46.9rem;
+            -webkit-mask-image: url(./assets/images/picture/corpofood-banner-main-img.webp);
+            mask-image: url(./assets/images/picture/corpofood-banner-main-img.webp);
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+            -webkit-mask-size: contain;
+            mask-size: contain;
+
+            @include small-tablet {
+                height: 20.1rem * 2;
+                -webkit-mask-image: url(./assets/images/picture/corpofood-banner-main-img-mob.webp);
+                mask-image: url(./assets/images/picture/corpofood-banner-main-img-mob.webp);
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+        }
+    }
+}

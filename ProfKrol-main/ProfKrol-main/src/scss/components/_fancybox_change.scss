@@ -1,0 +1,53 @@
+.fancybox__container {
+  --fancybox-bg: rgba(36, 4, 3, 0.5) !important;
+}
+.fancybox__backdrop {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+}
+
+.fancybox__footer {
+  display: none;
+}
+
+.fancybox__viewport {
+  @include small-tablet {
+    margin-bottom: 10rem;
+    padding-bottom: 10rem;
+  }
+}
+
+.has-image .fancybox__content {
+  width: 51.7rem !important;
+  height: 75rem !important;
+  @include small-tablet {
+    width: 68.6rem !important;
+    height: auto !important;
+  }
+}
+.fancybox__content > .f-button.is-close-btn {
+  top: -0.7rem !important;
+  right: -54rem !important;
+  opacity: 1 !important;
+  transform: translateY(-100%);
+  --f-button-width: 5.8rem !important;
+  --f-button-height: 5.8rem !important;
+  --f-button-border-radius: 1rem !important;
+  --f-button-color: #000 !important;
+  --f-button-hover-color: #000 !important;
+  --f-button-bg: #fff !important;
+  --f-button-hover-bg: #fff !important;
+  --f-button-active-bg: #fff !important;
+  --f-button-svg-width: 1.6rem !important;
+  --f-button-svg-height: 1.6rem !important;
+  @include small-tablet {
+    right: 0 !important;
+    top: 10rem !important;
+    // top: -13rem !important;
+    --f-button-width: 9.6rem !important;
+    --f-button-height: 9.6rem !important;
+    --f-button-border-radius: 2rem !important;
+    --f-button-svg-width: 2.4rem !important;
+    --f-button-svg-height: 2.4rem !important;
+  }
+}

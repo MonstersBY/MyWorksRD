@@ -1,0 +1,108 @@
+.generative-design {
+  // .generative-design__container
+
+  &__container {
+    max-width: 192rem;
+    width: 100%;
+    @include small-tablet {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  // .generative-design__inner
+
+  &__inner {
+    position: relative;
+    width: 100%;
+    // height: 90rem;
+    height: auto;
+    color: $white;
+    padding: 10rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include small-tablet {
+      // height: 162.4rem;
+      height: auto;
+      padding: 3.2rem;
+    }
+  }
+
+  // .product-card-hero__img-box
+
+  &__img-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    & img,
+    & video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .generative-design__title-box
+
+  &__title-box {
+    width: 89rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-bottom: 4rem;
+    @include small-tablet {
+      width: 68.6rem;
+      gap: 4.8rem;
+      margin-bottom: 4.8rem;
+    }
+  }
+
+  // .generative-design__title
+
+  &__title {
+  }
+
+  // .generative-design__desc
+
+  &__desc {
+    @include small-tablet {
+      font-size: 3.2rem;
+    }
+  }
+
+  // .generative-design__text-box
+
+  &__text-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    @include small-tablet {
+      grid-template-columns: 1fr;
+      flex-direction: column;
+    }
+  }
+
+  // .generative-design__text
+
+  &__text {
+    // &:nth-child(1) {
+    //   width: 53.5rem;
+    //   @include small-tablet {
+    //     width: 68.6rem;
+    //   }
+    // }
+    // &:nth-child(2) {
+    //   width: 55.9rem;
+    //   @include small-tablet {
+    //     width: 68.6rem;
+    //   }
+    // }
+    @include small-tablet {
+      font-size: 2.8rem;
+    }
+  }
+}

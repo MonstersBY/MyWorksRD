@@ -1,0 +1,80 @@
+.nav-box {
+  position: relative;
+  z-index: 5;
+  &._first {
+    @include small-tablet {
+      margin-top: 18.2rem;
+    }
+  }
+  &--white {
+    & .nav-box__link {
+      &_black {
+        color: $white;
+      }
+    }
+  }
+  &--vacancies._first {
+    @include small-tablet {
+      margin-top: 18.2rem;
+      margin-top: 60rem;
+    }
+  }
+  &--products._first {
+    & .nav-box__link {
+      color: rgba(255, 255, 255, 0.4);
+      &_black {
+        color: $white;
+      }
+    }
+  }
+
+  // .nav-box__list-wrap
+
+  &__list-wrap {
+  }
+
+  // .nav-box__list
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    @include small-tablet {
+      gap: 1.6rem;
+      width: 75rem;
+      margin: 0 -2rem;
+      padding: 0 2rem;
+      overflow-x: auto;
+      overflow-y: hidden;
+      &::-webkit-scrollbar,
+      &::-webkit-scrollbar-track,
+      &::-webkit-scrollbar-thumb {
+        display: none;
+      }
+    }
+  }
+
+  // .nav-box__link
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: $gray-text;
+    &_black {
+      color: $black;
+    }
+    &:not(:last-child)::after {
+      display: inline-block;
+      content: '/';
+    }
+
+    @include small-tablet {
+      gap: 1.6rem;
+      font-size: 3rem;
+      white-space: nowrap;
+      &:not(:last-child)::after {
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.input-group {
+  position: relative;
+  width: 100%;
+}
+.input-group input,
+.input-group textarea {
+  outline: 1px solid transparent;
+  transition: background-color 0.3s, color 0.3s;
+  border-bottom: solid 0.1rem $textAndLine;
+  &::placeholder {
+    color: $textAndLine;
+}
+}
+
+._form-error input,
+._form-error textarea {
+  color: #f3566a;
+  &::placeholder {
+      color: #f3566a;
+  }
+}
+
+.error-span {
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+  color: #f35656;
+  line-height: normal;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+
+  &.active {
+      visibility: visible;
+      opacity: 1;
+      line-height: normal;
+  }
+
+  @media (max-width: 48em) {
+      bottom: -3rem;
+  }
+}

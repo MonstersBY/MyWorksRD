@@ -1,0 +1,114 @@
+.button {
+  padding: 1.6rem 1.8rem 1.6rem 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+  background-color: $black;
+  color: $white;
+  transition: background-color 0.3s;
+
+  &:hover {
+    .button-svg-box {
+      transform: translateX(0.5rem);
+    }
+  }
+
+  & .button-text {
+    font-family: 'EuclidCircularA';
+  }
+  & .button-svg-box {
+    width: 2.4rem;
+    height: 2.4rem;
+    transition: 0.2s ease-in-out;
+
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @include small-tablet {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+  &:hover {
+    background-color: $grey;
+  }
+
+  @include small-tablet {
+    padding: 2.6rem 3rem 2.6rem 6rem;
+    gap: 6rem;
+  }
+}
+.link-service {
+  position: relative;
+  display: flex;
+  width: 33rem;
+
+  &:hover {
+    .link-service__arrow {
+      transform: translateX(0.75rem);
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -2.4rem;
+    left: 0;
+    width: 100%;
+    height: 0.4rem;
+    background-color: $grey;
+  }
+
+  &__type {
+    color: $grey;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-right: 0.4rem;
+  }
+
+  &__title {
+    color: $black;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  &__arrow {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-left: auto;
+    transition: 0.2s ease-in-out;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @media (max-width: 48em) {
+    width: 100%;
+
+    &::before {
+      top: -4rem;
+    }
+
+    &__type {
+      font-size: 2.8rem;
+      line-height: 4rem; /* 142.857% */
+      margin-right: 6.4rem;
+      min-width: 16.8rem;
+    }
+
+    &__title {
+      font-size: 2.8rem;
+      line-height: 4rem; /* 142.857% */
+    }
+
+    &__arrow {
+      width: 4.8rem;
+      height: 4.8rem;
+    }
+  }
+}

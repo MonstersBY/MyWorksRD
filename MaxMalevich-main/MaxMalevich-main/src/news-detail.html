@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Главная</title>
+	</head>
+	<body>
+		<include src="./components/header.html" data-text='{"header": {"class": "anim"}}'></include>
+		<include src="./components/modal.html"></include>
+		<main>
+			<section class="article">
+				<div class="article__container container">
+					<div class="article__date">13.03.2024</div>
+					<div class="article__title h5">Рабочий кабинет или место спокойствия— какие ассоциации знаете про ванные комнаты?</div>
+					<div class="article__img">
+						<img src="./assets/images/pages/news-detail/article-img.png" alt="" />
+					</div>
+					<div class="article__text text-18-r">Ванная комната для мужчин — это не просто комната быстрого использования, это священное место, где они проводят много времени. Несколько причин, почему она так важна:</div>
+					<ul class="article__list text-18-r">
+						<li>1. Место гигиенических процедур: бритье, уход за волосами и кожей. Это время, когда мужчина может уделить внимание себе и почувствовать себя ухоженными.</li>
+						<li>2. Место отдыха и расслабления, уединения, где можно и побыть наедине с собой, подумать о делах или просто отдохнуть после трудного дня.</li>
+						<li>3. Место саморазвития. Многие мужчины любят читать, просматривать новости или изучать что-то новое.</li>
+						<li>4. И наконец — место для саморефлексии и самоанализа, где в тихой обстановке можно задуматься о целях, планах и принять важные решения.</li>
+					</ul>
+					<div class="article__text text-18-r">Это не просто унитаз и раковина. Даже такому, кажется, обычному пространству, важно придать эстетику и необходимую функциональность.</div>
+				</div>
+			</section>
+
+			<section class="article-slider">
+				<div class="article-slider__container">
+					<div class="article-slider__swiper">
+						<div class="swiper-wrapper">
+							<div class="article-slider__swiper-slide swiper-slide">
+								<img src="./assets/images/pages/news-detail/article-slide-1.png" alt="" />
+							</div>
+							<div class="article-slider__swiper-slide swiper-slide">
+								<img src="./assets/images/pages/news-detail/article-slide-1.png" alt="" />
+							</div>
+							<div class="article-slider__swiper-slide swiper-slide">
+								<img src="./assets/images/pages/news-detail/article-slide-2.png" alt="" />
+							</div>
+							<div class="article-slider__swiper-slide swiper-slide">
+								<img src="./assets/images/pages/news-detail/article-slide-3.png" alt="" />
+							</div>
+							<div class="article-slider__swiper-slide swiper-slide">
+								<img src="./assets/images/pages/news-detail/article-slide-3.png" alt="" />
+							</div>
+							<div class="article-slider__swiper-slide swiper-slide">
+								<img src="./assets/images/pages/news-detail/article-slide-1.png" alt="" />
+							</div>
+							<div class="article-slider__swiper-slide swiper-slide">
+								<img src="./assets/images/pages/news-detail/article-slide-1.png" alt="" />
+							</div>
+							<div class="article-slider__swiper-slide swiper-slide">
+								<img src="./assets/images/pages/news-detail/article-slide-2.png" alt="" />
+							</div>
+							<div class="article-slider__swiper-slide swiper-slide">
+								<img src="./assets/images/pages/news-detail/article-slide-3.png" alt="" />
+							</div>
+							<div class="article-slider__swiper-slide swiper-slide">
+								<img src="./assets/images/pages/news-detail/article-slide-3.png" alt="" />
+							</div>
+						</div>
+					</div>
+					<div class="article-slider__swiper-pagination"></div>
+				</div>
+				<div class="article-slider__container container">
+					<include src="./components/ui/pagination.html"></include>
+					<include src="./components/ui/navigation.html"></include>
+				</div>
+			</section>
+
+			<include src="./components/news-list.html"></include>
+
+			<include src="./components/subscribe.html"></include>
+
+			<include src="./components/feedback.html"></include>
+		</main>
+		<include src="./components/ui/btn_top.html"></include>
+		<include src="./components/footer.html"></include>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+.publications-mini {
+  @include small-tablet {
+    font-size: 3.2rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 5.5rem;
+
+    @include small-tablet {
+      gap: 4.4*2rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+    padding-bottom: 10rem;
+  }
+
+  @include small-tablet {
+    gap: 4rem;
+  }
+}

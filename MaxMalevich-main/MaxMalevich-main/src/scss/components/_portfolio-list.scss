@@ -1,0 +1,284 @@
+.portfolio-list {
+	&__item {
+		display: flex;
+		justify-content: space-between;
+
+		&:not(:last-of-type) {
+			margin-bottom: 20rem;
+		}
+
+		&-left {
+			display: flex;
+			flex-direction: column;
+			width: 62.7rem;
+		}
+
+		&-right {
+			position: relative;
+			width: 107.5rem;
+			height: 72.5rem;
+			overflow: hidden;
+		}
+
+		&-name {
+			font-family: 'Roboto';
+			font-size: 2.8rem;
+			line-height: 3.9rem;
+			margin-bottom: 4rem;
+		}
+
+		&-title {
+			margin-bottom: 8rem;
+		}
+
+		.pagination {
+			margin-top: auto;
+			max-width: 36.6rem;
+		}
+
+		.navigation {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			z-index: 10;
+		}
+	}
+
+	&__swiper {
+		margin-right: auto;
+		position: relative;
+		overflow: visible;
+		list-style: none;
+		padding: 0;
+		z-index: 1;
+		display: block;
+		height: 100%;
+		width: 56.8rem;
+
+		&-slide {
+			width: 100%;
+			height: 100%;
+			border-radius: 2rem;
+			overflow: hidden;
+		}
+
+		&-pagination {
+			display: none;
+		}
+	}
+
+	&__more {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		column-gap: 3.8rem;
+		margin: 0 auto;
+
+		div {
+			&:first-child {
+				font-family: 'Roboto';
+			}
+
+			&:last-child {
+				width: 6.8rem;
+				height: 8.4rem;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: contain;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 75em) {
+		&__item {
+			position: relative;
+			flex-direction: column;
+			padding-bottom: 23.2rem;
+
+			&:not(:last-of-type) {
+				margin-bottom: 32rem;
+			}
+
+			&-left,
+			&-right {
+				width: 100%;
+			}
+
+			&-left {
+				margin-bottom: 6.4rem;
+			}
+
+			&-right {
+				position: static;
+				height: 108rem;
+			}
+
+			&-name {
+				font-size: 4.8rem;
+				line-height: 6.6rem;
+				margin-bottom: 4.8rem;
+			}
+
+			&-title {
+				font-size: 9.2rem;
+				line-height: 10rem;
+				margin-bottom: 4.8rem;
+			}
+
+			.btn__primary {
+				width: min-content;
+				padding: 3.2rem 3.2rem 3.2rem 8rem;
+				column-gap: 3.2rem;
+				font-size: 4rem;
+				line-height: 5.6rem;
+
+				img {
+					width: 17.2rem;
+					height: 13.6rem;
+				}
+			}
+
+			.navigation,
+			.pagination {
+				position: absolute;
+				bottom: 0;
+				z-index: 10;
+			}
+
+			.navigation {
+				column-gap: 4rem;
+
+				&-prev,
+				&-next {
+					padding: 4.5rem 4.8rem;
+
+					img {
+						width: 5.6rem;
+						height: 1.4rem;
+					}
+				}
+			}
+
+			.pagination {
+				max-width: 70.8rem;
+				column-gap: 9.2rem;
+
+				&__number {
+					font-size: 6.4rem;
+					line-height: 7.4rem;
+				}
+			}
+		}
+
+		&__swiper {
+			width: 88.8rem;
+		}
+
+		&__more {
+			div {
+				&:first-child {
+					font-size: 4rem;
+					line-height: 5.6rem;
+				}
+
+				&:last-child {
+					width: 13.6rem;
+					height: 16.8rem;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 47.9375em) {
+		&__item {
+			padding-bottom: 26.4rem;
+
+			&:not(:last-of-type) {
+				margin-bottom: 24rem;
+			}
+
+			&-left {
+				margin-bottom: 6.4rem;
+				max-width: 54.4rem;
+			}
+
+			&-right {
+				height: 67.8rem;
+			}
+
+			&-name {
+				font-size: 3.6rem;
+				line-height: 5rem;
+				margin-bottom: 4rem;
+			}
+
+			&-title {
+				font-size: 5.2rem;
+				line-height: 5.6rem;
+			}
+
+			.btn__primary {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				padding: 1.6rem 2.2rem 1.6rem 4.8rem;
+				font-size: 3.6rem;
+				line-height: 5rem;
+
+				img {
+					width: 11.2rem;
+					height: 9.8rem;
+				}
+			}
+
+			.pagination,
+			.navigation {
+				display: none;
+			}
+		}
+
+		&__swiper {
+			width: 55.2rem;
+
+			&-pagination {
+				display: flex;
+
+				&.swiper-pagination-bullets.swiper-pagination-horizontal {
+					display: flex;
+					position: absolute;
+					left: 50%;
+					bottom: 18.4rem;
+					transform: translateX(-50%);
+					width: auto;
+				}
+
+				.swiper-pagination-bullet {
+					background-color: $white;
+					opacity: 0.6;
+
+					&-active {
+						opacity: 1;
+					}
+				}
+			}
+		}
+
+		&__more {
+			div {
+				&:first-child {
+					font-size: 3.6rem;
+					line-height: 5rem;
+				}
+
+				&:last-child {
+					width: 8.8rem;
+					height: 11rem;
+				}
+			}
+		}
+	}
+}
